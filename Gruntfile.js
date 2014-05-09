@@ -264,6 +264,12 @@ module.exports = function ( grunt ) {
       build: {
         files: {
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.sass %>'
+        },
+        options: {
+          cleancss: true,
+          compress: false,
+          compass: true,
+          
         }
       },
       compile: {
@@ -272,7 +278,9 @@ module.exports = function ( grunt ) {
         },
         options: {
           cleancss: true,
-          compress: true
+          compress: true,
+          compass: true,
+
         }
       }
     },
