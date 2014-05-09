@@ -9,6 +9,7 @@ module.exports = {
    */
   build_dir: 'build',
   compile_dir: 'bin',
+  sass_dir: 'src/sass',
 
   /**
    * This is a collection of file patterns that refer to our app code (the
@@ -30,7 +31,8 @@ module.exports = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    less: 'src/less/main.less'
+    // less: 'src/less/main.less',
+    sass: 'src/sass/main.scss'
   },
 
   /**
@@ -66,7 +68,8 @@ module.exports = {
       'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/angular-ui-utils/modules/route/route.js'
+      'vendor/angular-ui-utils/modules/route/route.js',
+      'vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/*.js'
     ],
     css: [
     ],
