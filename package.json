@@ -12,7 +12,9 @@
     "type": "git",
     "url": "git@github.com:ngbp/ngbp.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jasmine-core": "^2.99.1"
+  },
   "devDependencies": {
     "grunt": "~1.0.2",
     "grunt-contrib-sass": "~1.0.0",
