@@ -266,9 +266,7 @@ module.exports = function ( grunt ) {
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.sass %>'
         },
         options: {
-          cleancss: true,
-          compress: false,
-          compass: true,
+          compass: true
           
         }
       },
@@ -277,9 +275,7 @@ module.exports = function ( grunt ) {
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.sass %>'
         },
         options: {
-          cleancss: true,
-          compress: true,
-          compass: true,
+          compass: true
 
         }
       }
