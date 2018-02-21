@@ -1,5 +1,6 @@
 *.sw*
 *~
+.idea/
 build/
 bin/
 node_modules/
