@@ -10,7 +10,8 @@
     "jquery": "^3.3.1"
   },
   "dependencies": {
-    "restangular": "^1.6.1"
+    "restangular": "^1.6.1",
+    "raven-js": "^3.22.3"
   },
   "resolutions": {
     "angular": "~1.6"

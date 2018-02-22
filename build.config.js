@@ -72,7 +72,8 @@ module.exports = {
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js',
       'vendor/lodash/dist/lodash.min.js',
-      'vendor/restangular/dist/restangular.min.js'
+      'vendor/restangular/dist/restangular.min.js',
+      'vendor/raven-js/dist/raven.min.js'
     ],
     css: [
     ],
