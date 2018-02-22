@@ -88,10 +88,15 @@ module.exports = function ( grunt ) {
     /**
      * The directories to delete when `grunt clean` is executed.
      */
-    clean: [ 
-      '<%= build_dir %>', 
-      '<%= compile_dir %>'
-    ],
+    clean:{
+      build: [
+        '<%= build_dir %>', 
+        '<%= compile_dir %>'
+      ],
+      js: [
+        '<%= build_dir %>/src/**/*.js'
+      ]
+    },
 
     /**
      * The `copy` task just copies files from A to B. We use it here to copy
@@ -471,7 +476,10 @@ module.exports = function ( grunt ) {
         files: [ 
           '<%= app_files.js %>'
         ],
-        tasks: [ 'jshint:src', 'karma:unit:run', 'copy:build_appjs' ]
+        tasks: [ 'clean:js', 'copy:build_appjs', 'jshint:src' ],
+        options: {
+          event: ['changed', 'added', 'deleted']
+        }
       },
 
       /**
@@ -591,7 +599,7 @@ module.exports = function ( grunt ) {
    * The `build` task gets your app ready to run for development and testing.
    */
   grunt.registerTask( 'build', [
-    'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'sass:build',
+    'clean:build', 'html2js', 'jshint', 'coffeelint', 'coffee', 'sass:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'index:build'//, 'karmaconfig',
     //'karma:continuous' 
