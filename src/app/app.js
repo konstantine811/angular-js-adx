@@ -5,6 +5,7 @@ angular.module( 'ixLayer', [
   'ixLayer.products',
   'ixLayer.FAQ',
   'ixLayer.contact',
+  'ixLayer.auth',
   'ui.router'
 ])
 
@@ -24,4 +25,3 @@ angular.module( 'ixLayer', [
 })
 
 ;
-

@@ -10,7 +10,7 @@ angular.module( 'ixLayer.FAQ', [
       views: {
         "main": {
           controller: 'FAQCtrl',
-          templateUrl: 'faq/faq.tpl.html'
+          templateUrl: 'components/faq/faq.tpl.html'
         }
       },
       data:{ pageTitle: 'FAQ' }

@@ -28,7 +28,7 @@ angular.module( 'ixLayer.home', [
     views: {
       "main": {
         controller: 'HomeCtrl',
-        templateUrl: 'home/home.tpl.html'
+        templateUrl: 'components/home/home.tpl.html'
       }
     },
     data:{ pageTitle: 'Home' }

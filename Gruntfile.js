@@ -453,7 +453,8 @@ module.exports = function ( grunt ) {
        * plugin should auto-detect.
        */
       options: {
-        livereload: true
+        livereload: true,
+        event: ['changed', 'added', 'deleted']
       },
 
       /**
@@ -476,7 +477,7 @@ module.exports = function ( grunt ) {
         files: [ 
           '<%= app_files.js %>'
         ],
-        tasks: [ 'clean:js', 'copy:build_appjs', 'jshint:src' ],
+        tasks: ['copy:build_appjs',  'jshint:src' ],
         options: {
           event: ['changed', 'added', 'deleted']
         }
@@ -588,7 +589,7 @@ module.exports = function ( grunt ) {
    * before watching for changes.
    */
   grunt.renameTask( 'watch', 'delta' );
-  grunt.registerTask( 'watch', [ 'build', /*'karma:unit',*/ 'connect:server', 'delta' ] );
+  grunt.registerTask( 'watch', ['clean:build', 'build', /*'karma:unit',*/ 'connect:server', 'delta'] );
 
   /**
    * The default task is to build and compile.

@@ -10,7 +10,7 @@ angular.module( 'ixLayer.contact', [
       views: {
         "main": {
           controller: 'ContactCtrl',
-          templateUrl: 'contact/contact.tpl.html'
+          templateUrl: 'components/contact/contact.tpl.html'
         }
       },
       data:{ pageTitle: 'Contact' }

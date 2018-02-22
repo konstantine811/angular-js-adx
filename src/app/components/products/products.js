@@ -10,7 +10,7 @@ angular.module( 'ixLayer.products', [
       views: {
         "main": {
           controller: 'ProductsCtrl',
-          templateUrl: 'products/products.tpl.html'
+          templateUrl: 'components/products/products.tpl.html'
         }
       },
       data:{ pageTitle: 'Products' }
