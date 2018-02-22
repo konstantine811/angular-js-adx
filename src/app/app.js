@@ -6,6 +6,9 @@ angular.module( 'ixLayer', [
   'ixLayer.FAQ',
   'ixLayer.contact',
   'ixLayer.auth',
+  'ixLayer.profile',
+  'ixLayer.login',
+  'ixLayer.legal',
   'ui.router'
 ])
 

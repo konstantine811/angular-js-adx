@@ -5,7 +5,7 @@ angular.module( 'ixLayer.auth', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'Auth', {
+    $stateProvider.state( 'auth', {
       url: '/auth',
       views: {
         "main": {
