@@ -33,8 +33,13 @@
                     <input type="password" name="confirm_password" class="form-control" ng-model="userForm.confirm_password" password-verify match-target="userForm.password" required>
                     <div class="error" ng-show="form.confirm_password.$error.match && form.confirm_password.$dirty">Passwords do not match.</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Submit</button>
             </form>
         </div>
+    </div>
+    <div class="verify-email">
+        <a href ui-sref="verify_email">
+            Verify Email
+        </a>
     </div>
 </div>

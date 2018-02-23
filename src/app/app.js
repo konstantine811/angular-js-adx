@@ -9,6 +9,9 @@ angular.module( 'ixLayer', [
   'ixLayer.profile',
   'ixLayer.login',
   'ixLayer.legal',
+  'ixLayer.dashboard',
+  'ixLayer.verifyEmail',
+  'ixLayer.forgotPassword',
   'ui.router'
 ])
 
