@@ -573,7 +573,8 @@ module.exports = function ( grunt ) {
           livereload: true,
           open: true,
           base: '<%= build_dir %>',
-                hostname: '*'
+                hostname: '*',
+          event: ['changed', 'added', 'deleted']
         }
       }
     }
