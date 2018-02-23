@@ -73,7 +73,8 @@ module.exports = {
       'vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js',
       'vendor/lodash/dist/lodash.min.js',
       'vendor/restangular/dist/restangular.min.js',
-      'vendor/raven-js/dist/raven.min.js'
+      'vendor/raven-js/dist/raven.min.js',
+      'vendor/angular-cookies/angular-cookies.min.js'
     ],
     css: [
     ],

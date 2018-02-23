@@ -3,12 +3,9 @@
  */
 
 
-angular.module('wanda.useraccess', [
+angular.module('ixlayer.useraccess', [
     'restangular',
-    'wanda.djangoAuth',
-    'wanda.api.collaborator',
-    'wanda.roles',
-    'wanda.api.saml'
+    'ixlayer.djangoAuth'
   ])
 
   .constant('URL_PATH', {
@@ -17,10 +14,8 @@ angular.module('wanda.useraccess', [
     MY_USERS: "me"
   })
 
-  .factory('userAccessSrv', ['Restangular', '$q', 'URL_PATH', '$log', '$state', 'djangoAuth', 'collaboratorService', 'samlAccessService',
-     function (Restangular, $q, URL_PATH, $log, $state, djangoAuth, collaboratorService, samlAccessService) {
-
-    var conditionResource = Restangular.all(URL_PATH.USERS);
+  .factory('userAccessSrv', ['Restangular', '$q', 'URL_PATH', '$log', '$state', 'djangoAuth',
+     function (Restangular, $q, URL_PATH, $log, $state, djangoAuth) {
 
     // callbacks
     var loginCallbacks = [];
@@ -52,11 +47,7 @@ angular.module('wanda.useraccess', [
         return djangoAuth.logout().then(function () {
           var promise = $q.resolve();
 
-          if (currentUser && currentUser.is_saml_user) {
-            samlAccessService.logout(currentUser.network.id);
-          }
-          else {
-            // This will trigger to cleanup the current view and scope, which may use the `currentUser()`
+          if (currentUser) {
             promise = $state.goLoginThenGoHomeState();
           }
 
@@ -110,22 +101,15 @@ angular.module('wanda.useraccess', [
     var requestCurrentUserDetails = function () {
       return Restangular.one('/me').get().then(function (response) {
 
-        return collaboratorService.getAllCollaboratorsOfUser(response).then(function (collaborators){
-
           currentUser = response;
-          currentUser.doctorName = doctorName;
 
           //TO MOCK PP QUESTIONNAIRE:
           // currentUser.network.config.enable_patient_questionnaires = 0;
           //TO MOCK THE RATING FEATURE:
           // currentUser.network.config.enable_treatmentplan_rating = 1;
 
-          currentUser.collaborators.forEach(function (doctor) {
-            doctor.doctorName = doctorName;
-          });
-
           Raven.setUserContext({
-            oncoverse_id: currentUser.oncoverse_id,
+            profiel_id: currentUser.profile_id,
             email: currentUser.user.email,
             token: djangoAuth.getToken()
           });
@@ -137,15 +121,6 @@ angular.module('wanda.useraccess', [
 
           return currentUser;
 
-        });
-
-      });
-    };
-
-    var updateUserAvailableForReview = function (availableForReview) {
-      //Restangular must update the user:
-      return currentUser.patch({'available_for_reviews': availableForReview}).then(function (result) {
-        currentUser.available_for_reviews = availableForReview;
       });
     };
 
@@ -161,36 +136,12 @@ angular.module('wanda.useraccess', [
 
     };
 
-    var doctorName = function (user) {
-      if (!user || !user.user) {
-        return "";
-      }
-
-      if (user.title) {
-        return user.title + ' ' + user.user.first_name + ' ' + user.user.last_name;
-      }
-      return user.user.first_name + ' ' + user.user.last_name;
-    };
-
-    var doctorInitial = function(user) {
-      if (!user || !user.user) {
-        return "";
-      }
-
-      return user.user.first_name.charAt(0) + ' ' + user.user.last_name.charAt(0);
-    };
-
     var currentUserName = function () {
       var name = this.currentUser();
       if (name.title) {
         return name.title + ' ' + name.user.first_name + ' ' + name.user.last_name;
       }
       return name.user.first_name + ' ' + name.user.last_name;
-    };
-
-    // This is because SAML token can be added
-    var samlLoginCompleted = function(token) {
-      djangoAuth.setToken(token);
     };
 
     var renewTokenIfNeeded = function () {
@@ -238,23 +189,14 @@ angular.module('wanda.useraccess', [
       getLoginPromise: function () {
         return loginPromise;
       },
-      getConfig : function() {
-        return currentUser.network.config || {};
-      },
       cleanUser: cleanUser,
       login: login,
       logout: logout,
       autoLogin: autoLogin,
       resetPassword: resetPassword,
-      updateUserAvailableForReview: updateUserAvailableForReview,
-      doctorName: doctorName,
-      doctorInitial: doctorInitial,
       currentUserName: currentUserName,
       changePassword: changePassword,
       requestCurrentUserDetails: requestCurrentUserDetails,
-      samlLogin: samlAccessService.login,
-      samlLoginCompleted: samlLoginCompleted,
-      samlLogout: samlAccessService.logout,
       getToken: getToken,
       addLoginCallback: addLoginCallback,
       addTokenRenewedCallback: addTokenRenewedCallback,

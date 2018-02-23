@@ -1,4 +1,5 @@
 angular.module( 'ixLayer.login', [
+    'ixlayer.useraccess',
     'ui.router',
     'placeholders',
     'ui.bootstrap'
@@ -17,6 +18,6 @@ angular.module( 'ixLayer.login', [
     });
   })
   
-  .controller( 'LoginCtrl', function LoginCtrl( $scope ) {
+  .controller( 'LoginCtrl', ['$scope', 'userAccessSrv', function LoginCtrl( $scope, userAccessSrv ) {
     
-  });
+  }]);
