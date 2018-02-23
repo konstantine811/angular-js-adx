@@ -17,9 +17,6 @@ angular.module( 'ixLayer.auth', [
     });
   })
   
-  .controller( 'AuthCtrl', function AuthCtrl( $scope ) {
-    
-    
-
-    
-  });
+  .controller( 'AuthCtrl', ['$scope', function AuthCtrl( $scope) {
+    $scope.userForm = {}; 
+  }]);
