@@ -569,7 +569,7 @@ module.exports = function ( grunt ) {
     connect: {
       server: {
         options: {
-          port: 8080,
+          port: 8001,
           livereload: true,
           open: true,
           base: '<%= build_dir %>',

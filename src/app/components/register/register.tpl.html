@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h1 class="page-header">Registration Form</h1>
+        <div id="todoPanel" class="panel" ng-controller="RegisterCtrl">
+            <form name="form"  ng-submit="submitForm(userForm)" novalidate>
+                <div ng-show="!complete">
+                    <div class="form-group">
+                        <label>Firstname</label>
+                        <input type="text" name="first_name" class="form-control" ng-model="userForm.first_name"  ng-minlength="3" required>
+                        <p ng-show="form.first_name.$error.minlength && !form.first_name.pristine" class="error">You firstname is too short</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Lastname</label>
+                        <input type="text" name="last_name" class="form-control" ng-model="userForm.last_name"  ng-minlength="3" required>
+                        <p ng-show="form.last_name.$error.minlength && !form.last_name.pristine" class="error">You lastname is too short</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" ng-model="userForm.email" required>
+                        <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
+                            <span ng-show="form.email.$error.email">Please enter a valid email address</span>
+                            <span ng-show="form.email.$error.required">Please enter a value</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" ng-model="userForm.password" ng-minlength="5" required>
+                        <div class="error" ng-show="form.password.$dirty">
+                            <div class="error" ng-show="form.password.$error.required">This field is required</div>
+                            <div class="error" ng-show="form.password.$error.minlength && !form.password.pristine">Password must be at least 5 characters long</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" name="confirm_password" class="form-control" ng-model="userForm.confirm_password" password-verify match-target="userForm.password" required>
+                        <div class="error" ng-show="form.confirm_password.$error.match && form.confirm_password.$dirty">Passwords do not match.</div>
+                    </div>
+                    <div class="checkbox m-b-md m-t-none" ng-show="!complete">
+                        <label class="i-checks">
+                            <input type="checkbox" ng-model="userForm.terms" required><i></i> Agree to the <a href="http://www.ixlayer.com/terms/" target="_blank">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Submit</button>
+                </div>
+
+                <br>
+
+                <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
+
+                <div ng-if="complete == true">
+                    <div class="alert alert-success">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="verify-email">
+        <a href ui-sref="verify_email">
+            Verify Email
+        </a>
+    </div>
+</div>

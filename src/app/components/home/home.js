@@ -13,8 +13,7 @@
  * specified, as shown below.
  */
 angular.module( 'ixLayer.home', [
-  'ui.router',
-  'plusOne'
+  'ui.router'
 ])
 
 /**
