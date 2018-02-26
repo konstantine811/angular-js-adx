@@ -1,6 +1,7 @@
 angular.module( 'ixLayer', [
   'templates-app',
   'ixlayer.config.restangular',
+  'ixlayer.config',
   'ixLayer.home',
   'ixLayer.about',
   'ixLayer.products',
