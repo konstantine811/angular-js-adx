@@ -18,6 +18,17 @@ angular.module( 'ixLayer.login', [
     });
   })
   
-  .controller( 'LoginCtrl', ['$scope', 'userAccessSrv', function LoginCtrl( $scope, userAccessSrv ) {
-    
+  .controller( 'LoginCtrl', ['$scope', '$state', 'userAccessSrv', function LoginCtrl( $scope, $state, userAccessSrv ) {
+      $scope.error = null;
+
+      $scope.loginUser = function (userForm) {
+          userAccessSrv.cleanUser();
+          userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
+                $state.go('home');
+              },
+              function (error) {
+                $scope.error = error;
+              }
+          );
+      };
   }]);

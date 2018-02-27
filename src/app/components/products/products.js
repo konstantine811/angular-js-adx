@@ -1,9 +1,10 @@
 angular.module( 'ixLayer.products', [
-    'ui.router',
-    'placeholders',
-    'ui.bootstrap'
-  ])
-  
+  'ui.router',
+  'placeholders',
+  'ui.bootstrap',
+  'ixlayer.api.products'
+])
+
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'products', {
       url: '/products',
@@ -13,10 +14,15 @@ angular.module( 'ixLayer.products', [
           templateUrl: 'components/products/products.tpl.html'
         }
       },
-      data:{ pageTitle: 'Products' }
+      data:{ pageTitle: 'Products' },
+      resolve: {
+        products: ['productsService', function (productsService) {
+          return productsService.getProducts();
+        }]
+      }
     });
   })
-  
-  .controller( 'ProductsCtrl', function ProductsCtrl( $scope ) {
-    
-  });
+
+  .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products ) {
+    $scope.products = products;
+  }]);

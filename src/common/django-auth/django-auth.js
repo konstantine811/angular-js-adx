@@ -82,8 +82,10 @@ angular.module('ixlayer.djangoAuth', [
             });
           return deferred.promise;
         },
-        register: function (username, password, email, more) {
+        register: function (first_name, last_name, username, password, email, more) {
           var data = {
+            'first_name': first_name,
+            'last_name': last_name,
             'username': username,
             'password': password,
             'email': email
@@ -99,9 +101,9 @@ angular.module('ixlayer.djangoAuth', [
           var djangoAuth = this;
           return this.request({
             'method': "POST",
-            'url': "/api-token-auth/",
+            'url': "/login/",
             'data': {
-              'username': username,
+              'email': username,
               'password': password
             }
           }).then(function (data) {
@@ -154,11 +156,11 @@ angular.module('ixlayer.djangoAuth', [
             'data': data
           });
         },
-        verify: function (uid, token) {
+        verifyEmail: function (token) {
           return this.request({
             'method': "POST",
-            'url': "/activate/",
-            'data': {'uid': uid, 'token': token}
+            'url': "/verify-email/" + token,
+            'data': {'activation_key': token}
           });
         },
         confirmReset: function (uid, token, password1, password2) {

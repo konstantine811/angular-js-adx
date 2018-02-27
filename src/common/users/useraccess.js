@@ -61,7 +61,7 @@ angular.module('ixlayer.useraccess', [
     };
 
     var initURL = function () {
-      return djangoAuth.initialize(restAPIBaseUrl + '/auth', false);
+      return djangoAuth.initialize(restAPIBaseUrl, false);
     };
 
     var resetPassword = function (username) {
@@ -157,11 +157,21 @@ angular.module('ixlayer.useraccess', [
       });
     };
 
+    var register = function (first_name, last_name, email, password, more) {
+      return initURL().then(function () {
+        return djangoAuth.register(first_name, last_name, email, password, email, more);
+      });
+    };
 
     var getToken = function () {
       return djangoAuth.getToken();
     };
 
+    var verifyEmail = function(activation_key) {
+      return initURL().then(function () {
+        return djangoAuth.verifyEmail(activation_key);
+      });
+    };
 
     /**
      * Outer services can register callback about logout & login!
@@ -201,7 +211,9 @@ angular.module('ixlayer.useraccess', [
       addLoginCallback: addLoginCallback,
       addTokenRenewedCallback: addTokenRenewedCallback,
       addLogoutCallback: addLogoutCallback,
-      renewTokenIfNeeded: renewTokenIfNeeded
+      renewTokenIfNeeded: renewTokenIfNeeded,
+      register: register,
+      verifyEmail: verifyEmail
     };
   }])
 
