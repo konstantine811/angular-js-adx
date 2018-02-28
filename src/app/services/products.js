@@ -8,6 +8,7 @@ angular.module('ixlayer.api.products', [
   var productsList = null;
 
   var getProducts = function() {
+    
     // cache products
     if (productsList) {
       return $q.when(productsList);

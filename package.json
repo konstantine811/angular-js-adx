@@ -3,10 +3,10 @@
   "name": "ixlayer-web-angular",
   "version": "0.0.1",
   "homepage": "https://www.ixlayer.com",
-  "licenses": {
+  "licenses": [{
     "type": "MIT",
     "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
-  },
+  }],
   "bugs": "https://github.com/ngbp/ngbp/issues",
   "repository": {
     "type": "git",

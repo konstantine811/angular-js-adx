@@ -138,10 +138,8 @@ angular.module('ixlayer.useraccess', [
 
     var currentUserName = function () {
       var name = this.currentUser();
-      if (name.title) {
-        return name.title + ' ' + name.user.first_name + ' ' + name.user.last_name;
-      }
-      return name.user.first_name + ' ' + name.user.last_name;
+      console.log(name);
+      // return name.user.first_name + ' ' + name.user.last_name;
     };
 
     var renewTokenIfNeeded = function () {
