@@ -42,7 +42,7 @@ angular.module( 'ixLayer.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', ['$scope', 'loggedInUser', '$rootScope', function HomeController( $scope, $rootScope, loggedInUser ) {
+.controller( 'HomeCtrl', ['$scope', '$rootScope', 'loggedInUser', function HomeController( $scope, $rootScope, loggedInUser ) {
   $rootScope.$on("user_logged_in", function(event, data) {
     console.log(data);
   });
