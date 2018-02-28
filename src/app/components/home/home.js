@@ -30,22 +30,14 @@ angular.module( 'ixLayer.home', [
         templateUrl: 'components/home/home.tpl.html'
       }
     },
-    data:{ pageTitle: 'Home' },
-    resolve: {
-      loggedInUser: ['userAccessSrv', function(userAccessSrv) {
-        return userAccessSrv.currentUserName();
-      }]
-    }
+    data:{ pageTitle: 'Home'}
   });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', ['$scope', '$rootScope', 'loggedInUser', function HomeController( $scope, $rootScope, loggedInUser ) {
-  $rootScope.$on("user_logged_in", function(event, data) {
-    console.log(data);
-  });
+.controller( 'HomeCtrl', ['$scope', function HomeController( $scope ) {
 }])
 
 ;

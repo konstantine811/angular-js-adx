@@ -146,13 +146,13 @@ angular.module('ixlayer.djangoAuth', [
         profile: function () {
           return this.request({
             'method': "GET",
-            'url': "/me/"
+            'url': "/profile/"
           });
         },
         updateProfile: function (data) {
           return this.request({
             'method': "PUT",
-            'url': "/me/",
+            'url': "/profile/",
             'data': data
           });
         },
@@ -184,7 +184,7 @@ angular.module('ixlayer.djangoAuth', [
           if (this.authPromise == null || force) {
             this.authPromise = this.request({
               'method': "GET",
-              'url': "/me/"
+              'url': "/profile/"
             });
           }
           var da = this;

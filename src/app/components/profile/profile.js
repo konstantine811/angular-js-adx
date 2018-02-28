@@ -13,10 +13,17 @@ angular.module( 'ixLayer.profile', [
           templateUrl: 'components/profile/profile.tpl.html'
         }
       },
-      data:{ pageTitle: 'Profile' }
+      data:{ pageTitle: 'Profile' },
+      resolve: {
+        userInfo: ['userAccessSrv', function(userAccessSrv) {
+          userAccessSrv.requestCurrentUserDetails();
+          return userAccessSrv.currentUserName();
+        }]
+      }
     });
   })
   
-  .controller( 'ProfileCtrl', function ProfileCtrl( $scope ) {
+  .controller( 'ProfileCtrl', ['$scope', 'userInfo', function ProfileCtrl( $scope, userInfo ) {
+    $scope.user = userInfo;
     
-  });
+  }]);

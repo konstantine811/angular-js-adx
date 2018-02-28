@@ -39,7 +39,7 @@
               Contact
             </a>
           </li>
-          <li ui-sref-active="active">
+          <li ng-if="logged" ui-sref-active="active">
               <a href ui-sref="profile">
                 Profile
               </a>
@@ -49,16 +49,21 @@
                   Legal 
                 </a>
               </li>
-          <li ui-sref-active="active">
+          <li ng-if="!logged" ui-sref-active="active">
             <a href ui-sref="register">
                 Registration
             </a>
           </li>
-          <li ui-sref-active="active">
+          <li ng-if="!logged" ui-sref-active="active">
               <a href ui-sref="login">
                 Login
               </a>
           </li>
+          <li ng-if="logged" ui-sref-active="active">
+            <a ng-click="logout()">
+              Logout
+            </a>
+        </li>
           <li ui-sref-active="active">
               <a href ui-sref="dashboard">
                 Dashboard

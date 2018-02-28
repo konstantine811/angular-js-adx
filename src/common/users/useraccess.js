@@ -99,7 +99,7 @@ angular.module('ixlayer.useraccess', [
 
     //To download the conditions recursively:
     var requestCurrentUserDetails = function () {
-      return Restangular.one('/me').get().then(function (response) {
+      return Restangular.one('/profile').get().then(function (response) {
 
           currentUser = response;
 
@@ -109,7 +109,7 @@ angular.module('ixlayer.useraccess', [
           // currentUser.network.config.enable_treatmentplan_rating = 1;
 
           Raven.setUserContext({
-            profiel_id: currentUser.profile_id,
+            profiel_id: currentUser.id,
             email: currentUser.user.email,
             token: djangoAuth.getToken()
           });
@@ -123,6 +123,7 @@ angular.module('ixlayer.useraccess', [
 
       });
     };
+
 
     var cleanUser = function () {
       djangoAuth.invalidateToken();
@@ -138,8 +139,7 @@ angular.module('ixlayer.useraccess', [
 
     var currentUserName = function () {
       var name = this.currentUser();
-      console.log(name);
-      // return name.user.first_name + ' ' + name.user.last_name;
+      return name.user.first_name + ' ' + name.user.last_name;
     };
 
     var renewTokenIfNeeded = function () {
