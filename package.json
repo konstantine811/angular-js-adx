@@ -3,17 +3,20 @@
   "name": "ixlayer-web-angular",
   "version": "0.0.1",
   "homepage": "https://www.ixlayer.com",
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    }
+  ],
   "bugs": "https://github.com/ngbp/ngbp/issues",
   "repository": {
     "type": "git",
     "url": "git@github.com:ngbp/ngbp.git"
   },
   "dependencies": {
-    "jasmine-core": "^2.99.1"
+    "jasmine-core": "^2.99.1",
+    "moment": "^2.20.1"
   },
   "devDependencies": {
     "grunt": "~1.0.2",
@@ -35,6 +38,7 @@
     "karma": "^2.0.0",
     "karma-coffee-preprocessor": "^1.0.1",
     "karma-firefox-launcher": "^1.1.0",
-    "karma-jasmine": "^1.1.1"
+    "karma-jasmine": "^1.1.1",
+    "moment": "^2.18.1"
   }
 }

@@ -12,7 +12,8 @@
   "dependencies": {
     "restangular": "^1.6.1",
     "raven-js": "^3.22.3",
-    "angular-cookies": "^1.6.9"
+    "angular-cookies": "^1.6.9",
+    "moment": "^2.20.1"
   },
   "resolutions": {
     "angular": "~1.6"

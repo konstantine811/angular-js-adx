@@ -74,7 +74,8 @@ module.exports = {
       'vendor/lodash/dist/lodash.min.js',
       'vendor/restangular/dist/restangular.min.js',
       'vendor/raven-js/dist/raven.min.js',
-      'vendor/angular-cookies/angular-cookies.min.js'
+      'vendor/angular-cookies/angular-cookies.min.js',
+      'vendor/moment/min/moment.min.js'
     ],
     css: [
     ],
