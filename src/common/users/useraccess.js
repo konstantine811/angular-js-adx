@@ -46,10 +46,11 @@ angular.module('ixlayer.useraccess', [
       return initURL().then(function () {
         return djangoAuth.logout().then(function () {
           var promise = $q.resolve();
+          console.log(promise);
 
-          if (currentUser) {
-            promise = $state.goLoginThenGoHomeState();
-          }
+          // if (currentUser) {
+          //   promise = $state.goLoginThenGoHomeState();
+          // }
 
           promise.then(function () {
             cleanUser();

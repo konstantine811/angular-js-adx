@@ -24,31 +24,16 @@
               About
             </a>
           </li>
-          <li ui-sref-active="active">
+          <li ng-if="logged" ui-sref-active="active">
             <a href ui-sref="products">
               Products
-            </a>
-          </li>
-          <li ui-sref-active="active">
-            <a href ui-sref="FAQ">
-              FAQ
-            </a>
-          </li>
-          <li ui-sref-active="active">
-            <a href ui-sref="contact">
-              Contact
             </a>
           </li>
           <li ng-if="logged" ui-sref-active="active">
               <a href ui-sref="profile">
                 Profile
               </a>
-            </li>
-            <li ui-sref-active="active">
-                <a href ui-sref="legal">
-                  Legal 
-                </a>
-              </li>
+          </li>
           <li ng-if="!logged" ui-sref-active="active">
             <a href ui-sref="register">
                 Registration

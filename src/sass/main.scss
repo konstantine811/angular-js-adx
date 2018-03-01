@@ -18,3 +18,7 @@
 @import '../app/shared/footer/footer.scss';
 @import './partials/form_style.scss';
 
+a[ng-click] {
+  cursor: pointer;
+}
+

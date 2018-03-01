@@ -16,14 +16,13 @@ angular.module( 'ixLayer.profile', [
       data:{ pageTitle: 'Profile' },
       resolve: {
         userInfo: ['userAccessSrv', function(userAccessSrv) {
-          userAccessSrv.requestCurrentUserDetails();
-          return userAccessSrv.currentUserName();
+            return userAccessSrv.requestCurrentUserDetails();
         }]
       }
     });
   })
   
   .controller( 'ProfileCtrl', ['$scope', 'userInfo', function ProfileCtrl( $scope, userInfo ) {
-    $scope.user = userInfo;
+    $scope.user = userInfo.user;
     
   }]);
