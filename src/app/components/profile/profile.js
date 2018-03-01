@@ -16,7 +16,7 @@ angular.module( 'ixLayer.profile', [
       data:{ pageTitle: 'Profile' },
       resolve: {
         userInfo: ['userAccessSrv', function(userAccessSrv) {
-            return userAccessSrv.requestCurrentUserDetails();
+          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
         }]
       }
     });
