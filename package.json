@@ -15,6 +15,7 @@
     "url": "git@github.com:ngbp/ngbp.git"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jasmine-core": "^2.99.1",
     "moment": "^2.20.1"
   },
