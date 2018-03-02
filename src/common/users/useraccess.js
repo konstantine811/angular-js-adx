@@ -46,11 +46,10 @@ angular.module('ixlayer.useraccess', [
       return initURL().then(function () {
         return djangoAuth.logout().then(function () {
           var promise = $q.resolve();
-          console.log(promise);
 
-          // if (currentUser) {
-          //   promise = $state.goLoginThenGoHomeState();
-          // }
+          if (currentUser) {
+            promise = $state.go('home');
+          }
 
           promise.then(function () {
             cleanUser();
@@ -86,7 +85,7 @@ angular.module('ixlayer.useraccess', [
 
         if (!authenticated && forceToAuthenticate) {
           $log.debug("User is not authenticated!");
-          $state.goLogin();
+          $state.go('login');
           return $q.reject();
         }
 
@@ -94,7 +93,7 @@ angular.module('ixlayer.useraccess', [
         return requestCurrentUserDetails();
       }, function (response) {
         $log.debug("autoLogin - failed");
-        $state.goLogin();
+        $state.go('login');
       });
     };
 
@@ -110,7 +109,7 @@ angular.module('ixlayer.useraccess', [
           // currentUser.network.config.enable_treatmentplan_rating = 1;
 
           Raven.setUserContext({
-            profiel_id: currentUser.id,
+            profile_id: currentUser.id,
             email: currentUser.user.email,
             token: djangoAuth.getToken()
           });
@@ -235,10 +234,10 @@ angular.module('ixlayer.useraccess', [
 
             if ($state.$current.name !== 'login') {
               //Maybe go to a 'not-authorized' page?
-              $state.goLoginThenGoHomeState();
+              $state.go('login');
             }
             else {
-              $state.goHome();
+              $state.go('home');
             }
           });
           defer.reject();
@@ -253,7 +252,7 @@ angular.module('ixlayer.useraccess', [
           //The user is not logged in, let's go login (keep the last unresolved state)
           $timeout(function () {
             //This function can be called during a state change. More secure to call the redirect in a timeout
-            $state.goLogin();
+            $state.go('login');
           });
           defer.reject();
         }
