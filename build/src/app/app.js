@@ -21,7 +21,7 @@ angular.module( 'ixLayer', [
   $urlRouterProvider.otherwise( '/home' );
 })
 
-/*
+
 // @if ENVIRONMENT == 'PROD'
 .config( function() {
   Raven.config('https://8dd8866b009e4720929420b24d838f1f@sentry.io/292860',{
@@ -37,8 +37,7 @@ angular.module( 'ixLayer', [
     }
   }).install();
 })
-// @endif
-*/
+
 
 
 .run( function run () {

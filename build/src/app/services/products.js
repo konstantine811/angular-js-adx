@@ -7,6 +7,7 @@ angular.module('ixlayer.api.products', [
 .factory('productsService',['productsResource', '$q', function (productResource, $q) {
   var productsList = null;
 
+
   var getProducts = function() {
     
     // cache products

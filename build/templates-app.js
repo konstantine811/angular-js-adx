@@ -123,10 +123,7 @@ angular.module("components/profile/profile.tpl.html", []).run(["$templateCache",
   $templateCache.put("components/profile/profile.tpl.html",
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "        <h1>Your data profile</h1>\n" +
-    "        <p>First name: {{user.first_name}}</p>\n" +
-    "        <p>Last name: {{user.last_name}}</p>\n" +
-    "        <p>Your email: {{user.email}}</p>\n" +
+    "        <div ui-view=\"content\"></div>\n" +
     "    </div>\n" +
     "</div>");
 }]);
