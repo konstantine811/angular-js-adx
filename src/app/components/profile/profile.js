@@ -38,7 +38,7 @@ angular.module( 'ixLayer.profile', [
                   userInfo: ['profileService', function (profileService) {
                       return profileService.getProfile();
                   }]
-              },
+              }
           }
       ];
     states.forEach(function(state) {

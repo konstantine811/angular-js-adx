@@ -21,8 +21,17 @@ angular.module('ixlayer.api.products', [
     }
   };
 
+  var detailProduct = function(id) {
+    if(productsList) {
+      return productsList.find(function(product) {
+        return product.id === id;
+      });
+    }
+  };
+
   return {
-    getProducts: getProducts
+    getProducts: getProducts,
+    detailProduct: detailProduct
   };
 
 }]);

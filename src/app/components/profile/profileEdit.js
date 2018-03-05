@@ -8,5 +8,5 @@ angular.module('ixLayer.profile').controller('ProfileEditCtrl', ['$scope', 'user
      profileService.updateProfile(data).then(function(result) {
          console.log(result);
      });
- }
+ };
 }]);

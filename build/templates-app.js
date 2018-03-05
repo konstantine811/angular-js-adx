@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/profile/profile.tpl.html", "components/profile/profileEdit.tpl.html", "components/register/register.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profile.tpl.html", "components/profile/profileEdit.tpl.html", "components/register/register.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -110,13 +110,21 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
     "        <h1>This is page Products</h1>\n" +
     "    </div>\n" +
     "\n" +
-    "    <div ng-repeat=\"product in products\">\n" +
-    "        <div>{{ product.name }}</div>\n" +
-    "        <div>{{ product.description }}</div>\n" +
-    "        <div>{{ product.price }}</div>\n" +
-    "        <hr>\n" +
+    "    <div class=\"col-md-12\">\n" +
+    "        <div ng-repeat=\"product in products\">\n" +
+    "            <div>{{ product.name }}</div>\n" +
+    "            <div>{{ product.description }}</div>\n" +
+    "            <div>{{ product.price }}</div>\n" +
+    "            <a class=\"btn btn-primary\" ui-sref=\"productDetail({ productId: product.id })\">Detail {{product.id}}</a>\n" +
+    "            <hr>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
+}]);
+
+angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/products/productsDetail.tpl.html",
+    "{{product.id}}");
 }]);
 
 angular.module("components/profile/profile.tpl.html", []).run(["$templateCache", function($templateCache) {
