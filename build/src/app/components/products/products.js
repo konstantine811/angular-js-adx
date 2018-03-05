@@ -25,4 +25,5 @@ angular.module( 'ixLayer.products', [
 
   .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products ) {
     $scope.products = products;
+    console.log(products);
   }]);

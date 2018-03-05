@@ -57,3 +57,4 @@ angular.module( 'ixlayer.endpoints', [
 .factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource]);
 
 
+

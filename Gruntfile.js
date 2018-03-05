@@ -571,7 +571,6 @@ module.exports = function ( grunt ) {
         options: {
           port: 8001,
           livereload: true,
-          open: true,
           base: '<%= build_dir %>',
                 hostname: '*',
           event: ['changed', 'added', 'deleted']

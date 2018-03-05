@@ -1,8 +1,12 @@
-angular.module('ixlayer.api.profile', ['ixlayer.useraccess'])
+angular.module('ixlayer.api.profile', ['ixlayer.useraccess','restangular',
+    'ixlayer.djangoAuth'])
 
-.factory('profileService', ['userAccessSrv', '$q', function(userAccessSrv, $q) {
+.factory('profileService', ['Restangular', 'userAccessSrv', '$q', 'djangoAuth', function(Restangular, userAccessSrv, $q, djangoAuth) {
     var profile = null;
 
+    var initURL = function () {
+        return djangoAuth.initialize(restAPIBaseUrl, false);
+    };
 
     var getProfile = function() {
         if (profile) {
@@ -12,7 +16,16 @@ angular.module('ixlayer.api.profile', ['ixlayer.useraccess'])
         }
     };
 
+    var updateProfile = function(data) {
+        if(data) {
+            return initURL().then(function () {
+                return  djangoAuth.updateProfile(data);
+            });
+        }
+    };
+
     return {
-        getProfile: getProfile
+        getProfile: getProfile,
+        updateProfile: updateProfile
     };
 }]);

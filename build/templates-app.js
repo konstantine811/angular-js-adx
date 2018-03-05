@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/profile/profile.tpl.html", "components/register/register.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/profile/profile.tpl.html", "components/profile/profileEdit.tpl.html", "components/register/register.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -123,7 +123,44 @@ angular.module("components/profile/profile.tpl.html", []).run(["$templateCache",
   $templateCache.put("components/profile/profile.tpl.html",
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "        <div ui-view=\"content\"></div>\n" +
+    "        <p>First Name: {{user.first_name}}</p>\n" +
+    "        <p>Last Name: {{ user.last_name }}</p>\n" +
+    "        <p>Email: {{ user.email }}</p>\n" +
+    "        <button class=\"btn btn-primary\" ui-sref=\"profileEdit\">Edit</button>\n" +
+    "    </div>\n" +
+    "</div>");
+}]);
+
+angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/profile/profileEdit.tpl.html",
+    "<div class=\"container\">\n" +
+    "    <div class=\"row\">\n" +
+    "        <h1>Edit Profile</h1>\n" +
+    "        <form name=\"form\"  ng-submit=\"submitForm(user)\" novalidate>\n" +
+    "            <div ng-show=\"!complete\">\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Firstname</label>\n" +
+    "                    <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"user.first_name\"  ng-minlength=\"3\" required>\n" +
+    "                    <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Lastname</label>\n" +
+    "                    <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"user.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                    <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Email</label>\n" +
+    "                    <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"user.email\" required>\n" +
+    "                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                        <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n" +
+    "            </div>\n" +
+    "        </form>\n" +
+    "        <br>\n" +
+    "        <button class=\"btn btn-primary\" ui-sref=\"profile\">Back on profile</button>\n" +
     "    </div>\n" +
     "</div>");
 }]);

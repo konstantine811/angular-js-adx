@@ -1,5 +1,8 @@
 <div class="container">
     <div class="row">
-        <div ui-view="content"></div>
+        <p>First Name: {{user.first_name}}</p>
+        <p>Last Name: {{ user.last_name }}</p>
+        <p>Email: {{ user.email }}</p>
+        <button class="btn btn-primary" ui-sref="profileEdit">Edit</button>
     </div>
 </div>

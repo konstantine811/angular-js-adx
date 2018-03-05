@@ -11,29 +11,34 @@ angular.module( 'ixLayer.profile', [
       states = [
           {
               name: 'profile',
-              url: '/profile',
+              url: '/profile/view',
               views: {
                   "main": {
                       controller: 'ProfileCtrl',
                       templateUrl: 'components/profile/profile.tpl.html'
                   }
               },
-              data: {pageTitle: 'Profile'},
               resolve: {
                   userInfo: ['profileService', function (profileService) {
                       return profileService.getProfile();
                   }]
-              }
+              },
+              data: {pageTitle: 'Profile'}
           },
           {
-              name: 'profile.profileView',
-              url: '/view',
+              name: 'profileEdit',
+              url: '/profile/edit',
               views: {
-                  "content@": {
-                      controller: 'ProfileViewCtrl',
-                      templateUrl: 'components/profile-view/profileView.html'
+                  "main": {
+                      controller: 'ProfileEditCtrl',
+                      templateUrl: 'components/profile/profileEdit.tpl.html'
                   }
-              }
+              },
+              resolve: {
+                  userInfo: ['profileService', function (profileService) {
+                      return profileService.getProfile();
+                  }]
+              },
           }
       ];
     states.forEach(function(state) {
@@ -42,6 +47,5 @@ angular.module( 'ixLayer.profile', [
   })
   
   .controller( 'ProfileCtrl', ['$scope', 'userInfo', function ProfileCtrl( $scope, userInfo ) {
-    $scope.user = userInfo.user;
-    
+      $scope.user = userInfo.user;
   }]);
