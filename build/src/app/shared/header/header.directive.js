@@ -3,7 +3,7 @@ angular.module("ixLayer")
   .directive('appHeader', function() {
     return {
       templateUrl: "shared/header/header.tpl.html",
-      controller: ['$scope', 'djangoAuth', 'userAccessSrv', function($scope, djangoAuth, userAccessSrv) {
+      controller: ['$scope', '$rootScope', 'djangoAuth',  'userAccessSrv', function($scope, $rootScope, djangoAuth, userAccessSrv) {
 
         $scope.logged = function() {
           var token = djangoAuth.getToken();
@@ -13,6 +13,14 @@ angular.module("ixLayer")
             return false;
           }
         };
+
+        $rootScope.$on("user_logged_in", function(data) {
+          if(data) {
+            $scope.logged = true;
+          } else {
+            $scope.logged = false;
+          }
+        });
 
         $scope.logout = function() {
           userAccessSrv.logout();
