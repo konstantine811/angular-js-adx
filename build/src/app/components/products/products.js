@@ -30,10 +30,8 @@ angular.module( 'ixLayer.products', [
 
   .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products ) {
     $scope.products = products;
-    console.log(products);
   }])
 
   .controller('ProductDetailCtrl', ['$scope', '$stateParams', 'productsService', function ProductDetailCtrl($scope, $stateParams, productsService) {
     $scope.product = productsService.getProduct(parseInt($stateParams.productId));
-    console.log($scope.product);
   }]);
