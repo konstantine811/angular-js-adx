@@ -11,12 +11,8 @@ angular.module( 'ixLayer.products', [
           {
               name: 'products',
               url: '/products',
-              views: {
-                  "main": {
-                      controller: 'ProductsCtrl',
-                      templateUrl: 'components/products/products.tpl.html'
-                  }
-              },
+              controller: 'ProductsCtrl',
+              templateUrl: 'components/products/products.tpl.html',
               data:{ pageTitle: 'Products' },
               resolve: {
                   products: ['productsService', function (productsService) {
@@ -27,12 +23,8 @@ angular.module( 'ixLayer.products', [
           {
               name: 'productDetail',
               ulr: '/products/{productId}',
-              views: {
-                  "main": {
-                      controller: 'ProductDetailCtrl',
-                      templateUrl: 'components/products/productsDetail.tpl.html'
-                  }
-              },
+              controller: 'ProductDetailCtrl',
+              templateUrl: 'components/products/productsDetail.tpl.html',
               resolve: {
                   product: ['productsService', function(productsService, $stateParams) {
                       return productsService.detailProduct($stateParams.id);

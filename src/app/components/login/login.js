@@ -8,12 +8,8 @@ angular.module( 'ixLayer.login', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'login', {
       url: '/login',
-      views: {
-        "main": {
-          controller: 'LoginCtrl',
-          templateUrl: 'components/login/login.tpl.html'
-        }
-      },
+      controller: 'LoginCtrl',
+      templateUrl: 'components/login/login.tpl.html',
       data:{ pageTitle: 'Login' }
     });
   })

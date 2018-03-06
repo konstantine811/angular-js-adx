@@ -7,12 +7,8 @@ angular.module( 'ixLayer.legal', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'legal', {
       url: '/legal',
-      views: {
-        "main": {
-          controller: 'LegalCtrl',
-          templateUrl: 'components/legal/legal.tpl.html'
-        }
-      },
+      controller: 'LegalCtrl',
+      templateUrl: 'components/legal/legal.tpl.html',
       data:{ pageTitle: 'Login' }
     });
   })

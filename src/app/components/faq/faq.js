@@ -7,12 +7,8 @@ angular.module( 'ixLayer.FAQ', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'FAQ', {
       url: '/FAQ',
-      views: {
-        "main": {
-          controller: 'FAQCtrl',
-          templateUrl: 'components/faq/faq.tpl.html'
-        }
-      },
+      controller: 'FAQCtrl',
+      templateUrl: 'components/faq/faq.tpl.html',
       data:{ pageTitle: 'FAQ' }
     });
   })

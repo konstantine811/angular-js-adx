@@ -8,12 +8,8 @@ angular.module( 'ixLayer.verifyEmail', [
     .config(function config( $stateProvider ) {
         $stateProvider.state( 'verify_email', {
             url: '/verify-email/:activation_key',
-            views: {
-                "main": {
-                    controller: 'VerifyEmailCtrl',
-                    templateUrl: 'components/verify_email/verify_email.tpl.html'
-                }
-            },
+            controller: 'VerifyEmailCtrl',
+            templateUrl: 'components/verify_email/verify_email.tpl.html',
             data:{ pageTitle: 'verifyEmail' }
         });
     })

@@ -8,12 +8,8 @@ angular.module( 'ixLayer.register', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'register', {
       url: '/register',
-      views: {
-        "main": {
-          controller: 'RegisterCtrl',
-          templateUrl: 'components/register/register.tpl.html'
-        }
-      },
+      controller: 'RegisterCtrl',
+      templateUrl: 'components/register/register.tpl.html',
       data:{ pageTitle: 'Register' }
     });
   })

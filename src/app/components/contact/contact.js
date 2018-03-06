@@ -7,12 +7,8 @@ angular.module( 'ixLayer.contact', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'contact', {
       url: '/contact',
-      views: {
-        "main": {
-          controller: 'ContactCtrl',
-          templateUrl: 'components/contact/contact.tpl.html'
-        }
-      },
+      controller: 'ContactCtrl',
+      templateUrl: 'components/contact/contact.tpl.html',
       data:{ pageTitle: 'Contact' }
     });
   })

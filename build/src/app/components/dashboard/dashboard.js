@@ -7,12 +7,8 @@ angular.module( 'ixLayer.dashboard', [
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'dashboard', {
       url: '/dashboard',
-      views: {
-        "main": {
-          controller: 'DashboardCtrl',
-          templateUrl: 'components/dashboard/dashboard.tpl.html'
-        }
-      },
+      controller: 'DashboardCtrl',
+      templateUrl: 'components/dashboard/dashboard.tpl.html',
       data:{ pageTitle: 'Dashboard' }
     });
   })

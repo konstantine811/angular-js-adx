@@ -24,12 +24,8 @@ angular.module( 'ixLayer.home', [
 .config(function config( $stateProvider ) {
   $stateProvider.state( 'home', {
     url: '/home',
-    views: {
-      "main": {
-        controller: 'HomeCtrl',
-        templateUrl: 'components/home/home.tpl.html'
-      }
-    },
+    controller: 'HomeCtrl',
+    templateUrl: 'components/home/home.tpl.html',
     data:{ pageTitle: 'Home'}
   });
 })
