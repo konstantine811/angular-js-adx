@@ -39,4 +39,9 @@ angular.module( 'ixLayer.products', [
 
   .controller('ProductDetailCtrl', ['$scope', 'product', function ProductDetailCtrl($scope, product) {
     $scope.product = product;
+    var contentEmpty = (function() {
+      var obj = product.content;
+      return JSON.stringify(obj) === '{}';
+    }());
+    $scope.metadata = product.content.metadata;
   }]);

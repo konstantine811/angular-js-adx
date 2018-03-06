@@ -126,10 +126,16 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
   $templateCache.put("components/products/productsDetail.tpl.html",
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "        <p>Product ID {{product.id}}</p>\n" +
-    "        <p>Product Name {{ product.name}}</p>\n" +
-    "        <p>Product Description {{ product.description}}</p>\n" +
-    "        <p>Price {{ product.price}}</p>\n" +
+    "        <div class=\"col-sm-12\">\n" +
+    "            <div ng-show=\"!contentEmpty\">\n" +
+    "                <img ng-src=\"{{metadata.product_image}}\" alt=\"\">\n" +
+    "                <p>{{metadata.product_summary}}</p>\n" +
+    "            </div>\n" +
+    "            <p>Product ID {{product.id}}</p>\n" +
+    "            <p>Product Name {{ product.name}}</p>\n" +
+    "            <p>Product Description {{ product.description}}</p>\n" +
+    "            <p>Price {{ product.price}}</p>\n" +
+    "        </div>\n" +
     "        <a ui-sref=\"products\" class=\"btn btn-primary\">All products</a>\n" +
     "    </div>\n" +
     "</div>");
