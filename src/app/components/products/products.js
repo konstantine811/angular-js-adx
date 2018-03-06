@@ -24,7 +24,12 @@ angular.module( 'ixLayer.products', [
       url: '/product/{productId}',
       controller: 'ProductDetailCtrl',
       templateUrl: 'components/products/productsDetail.tpl.html',
-      data:{ pageTitle: 'Product Detail' }
+      data:{ pageTitle: 'Product Detail' },
+      resolve: {
+        product: ['productsService', '$stateParams', function (productsService, $stateParams) {
+           return productsService.getProduct(parseInt($stateParams.productId));
+        }]
+      }
     });
   })
 
@@ -32,6 +37,6 @@ angular.module( 'ixLayer.products', [
     $scope.products = products;
   }])
 
-  .controller('ProductDetailCtrl', ['$scope', '$stateParams', 'productsService', function ProductDetailCtrl($scope, $stateParams, productsService) {
-    $scope.product = productsService.getProduct(parseInt($stateParams.productId));
+  .controller('ProductDetailCtrl', ['$scope', 'product', function ProductDetailCtrl($scope, product) {
+    $scope.product = product;
   }]);
