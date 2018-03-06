@@ -7,12 +7,8 @@ angular.module( 'ixLayer.about', [
 .config(function config( $stateProvider ) {
   $stateProvider.state( 'about', {
     url: '/about',
-    views: {
-      "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'components/about/about.tpl.html'
-      }
-    },
+    controller: 'AboutCtrl',
+    templateUrl: 'components/about/about.tpl.html',
     data:{ pageTitle: 'About' }
   });
 })

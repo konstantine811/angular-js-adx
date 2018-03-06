@@ -5,47 +5,35 @@ angular.module( 'ixLayer.products', [
   'ixlayer.api.products'
 ])
 
-  .config(function config( $stateProvider ) {
-      var states;
-      states = [
-          {
-              name: 'products',
-              url: '/products',
-              views: {
-                  "main": {
-                      controller: 'ProductsCtrl',
-                      templateUrl: 'components/products/products.tpl.html'
-                  }
-              },
-              data:{ pageTitle: 'Products' },
-              resolve: {
-                  products: ['productsService', function (productsService) {
-                      return productsService.getProducts();
-                  }]
-              }
-          },
-          {
-              name: 'productDetail',
-              ulr: '/products/{productId}',
-              views: {
-                  "main": {
-                      controller: 'ProductDetailCtrl',
-                      templateUrl: 'components/products/productsDetail.tpl.html'
-                  }
-              },
-              resolve: {
-                  product: ['productsService', function(productsService, $stateParams) {
-                      return productsService.detailProduct($stateParams.id);
-                  }]
-              }
-          }
-      ];
-    states.forEach(function(state) {
-        $stateProvider.state(state);
+  .config(function config($stateProvider) {
+    $stateProvider.state('products', {
+      url: '/products',
+      controller: 'ProductsCtrl',
+      templateUrl: 'components/products/products.tpl.html',
+      data:{ pageTitle: 'Products' },
+      resolve: {
+          products: ['productsService', function (productsService) {
+              return productsService.getProducts();
+          }]
+      }
     });
+  })
 
+  .config(function config($stateProvider) {
+    $stateProvider.state('productDetail', {
+      url: '/product/{productId}',
+      controller: 'ProductDetailCtrl',
+      templateUrl: 'components/products/productsDetail.tpl.html',
+      data:{ pageTitle: 'Product Detail' }
+    });
   })
 
   .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products ) {
     $scope.products = products;
+    console.log(products);
+  }])
+
+  .controller('ProductDetailCtrl', ['$scope', '$stateParams', 'productsService', function ProductDetailCtrl($scope, $stateParams, productsService) {
+    $scope.product = productsService.getProduct(parseInt($stateParams.productId));
+    console.log($scope.product);
   }]);

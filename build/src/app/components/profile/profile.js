@@ -1,51 +1,61 @@
 angular.module( 'ixLayer.profile', [
-    'ui.router',
-    'placeholders',
-    'ui.bootstrap',
-    'ixlayer.api.profile'
-  ])
-  
+  'ui.router',
+  'placeholders',
+  'ixlayer.useraccess',
+  'ui.bootstrap',
+  'ixlayer.api.profile'
+])
+
   .config(function config( $stateProvider ) {
 
-      var states;
-      states = [
-          {
-              name: 'profile',
-              url: '/profile/view',
-              views: {
-                  "main": {
-                      controller: 'ProfileCtrl',
-                      templateUrl: 'components/profile/profile.tpl.html'
-                  }
-              },
-              resolve: {
-                  userInfo: ['profileService', function (profileService) {
-                      return profileService.getProfile();
-                  }]
-              },
-              data: {pageTitle: 'Profile'}
-          },
-          {
-              name: 'profileEdit',
-              url: '/profile/edit',
-              views: {
-                  "main": {
-                      controller: 'ProfileEditCtrl',
-                      templateUrl: 'components/profile/profileEdit.tpl.html'
-                  }
-              },
-              resolve: {
-                  userInfo: ['profileService', function (profileService) {
-                      return profileService.getProfile();
-                  }]
-              }
-          }
-      ];
+    var states;
+    states = [
+      {
+        name: 'profile',
+        url: '/profile/view',
+        controller: 'ProfileViewCtrl',
+        templateUrl: 'components/profile/profileView.tpl.html',
+        resolve: {
+          userInfo: ['userAccessSrv', function (userAccessSrv) {
+            return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+          }],
+          profile: ['profileService', function (profileService) {
+            return profileService.getProfile();
+          }]
+        },
+        data: {pageTitle: 'View Profile'}
+      },
+      {
+        name: 'profileEdit',
+        url: '/profile/edit',
+        controller: 'ProfileEditCtrl',
+        templateUrl: 'components/profile/profileEdit.tpl.html',
+        resolve: {
+          userInfo: ['userAccessSrv', function (userAccessSrv) {
+            return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+          }],
+          profile: ['profileService', function (profileService) {
+            return profileService.getProfile();
+          }]
+        },
+        data: {pageTitle: 'Edit Profile'}
+      }
+    ];
     states.forEach(function(state) {
-        $stateProvider.state(state);
+      $stateProvider.state(state);
     });
   })
-  
-  .controller( 'ProfileCtrl', ['$scope', 'userInfo', function ProfileCtrl( $scope, userInfo ) {
-      $scope.user = userInfo.user;
+
+  .controller('ProfileViewCtrl', ['$scope', 'profile', function ProfileViewCtrl($scope, profile) {
+    $scope.profile = profile;
+  }])
+
+  .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService', function ProfileEditCtrl($scope, $state, profile, profileService) {
+    $scope.profile = profile;
+
+    $scope.submitForm = function(data) {
+      profileService.updateProfile(data).then(function(result) {
+        $state.go('profile');
+      });
+    };
   }]);
