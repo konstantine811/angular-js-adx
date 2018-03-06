@@ -7,6 +7,7 @@ angular.module("ixLayer")
 
         $scope.logged = false;
         $rootScope.$on("user_logged_in", function(event, data) {
+          console.log(data);
           if(data.token) {
             $scope.logged = true;
           }
