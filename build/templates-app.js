@@ -124,7 +124,14 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/productsDetail.tpl.html",
-    "{{product.id}}");
+    "<div class=\"container\">\n" +
+    "    <div class=\"row\">\n" +
+    "        <p>Product ID {{product.id}}</p>\n" +
+    "        <p>Product Name {{ product.name}}</p>\n" +
+    "        <p>Product Description {{ product.description}}</p>\n" +
+    "        <p>Price {{ product.price}}</p>\n" +
+    "    </div>\n" +
+    "</div>");
 }]);
 
 angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCache", function($templateCache) {

@@ -21,12 +21,8 @@ angular.module('ixlayer.api.products', [
     }
   };
 
-  var getProduct = function(id) {
-    getProducts().then(function() {
-      return productsList.find(function (product) {
-        return product.id === id;
-      });
-    });
+  var getProduct = function(productId) {
+    return productResource.service.one(productId).get();
   };
 
   return {
