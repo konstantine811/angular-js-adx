@@ -22,7 +22,11 @@ angular.module('ixlayer.api.products', [
   };
 
   var getProduct = function(productId) {
-    return productResource.service.one(productId).get();
+    return getProducts().then(function(products) {
+      return products.find(function(product) {
+        return product.id === productId;
+      });
+    });
   };
 
   return {
