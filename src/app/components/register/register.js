@@ -33,10 +33,10 @@ angular.module( 'ixLayer.register', [
 
     $scope.complete = $stateParams.complete;
     $scope.errors = $stateParams.errors;
-
+    console.log($scope.errors);
 
     $scope.submitForm = function (form) {
-        $state.go('register.userConsent', {form: form });
+      $state.go('register.userConsent', {form: form });
     };
 
   }])
@@ -45,6 +45,7 @@ angular.module( 'ixLayer.register', [
     var $ctrl = this;
     $scope.checked = false;
     $scope.notChecked = false;
+
 
     $ctrl.agree = function() {
       if($scope.checked) {
