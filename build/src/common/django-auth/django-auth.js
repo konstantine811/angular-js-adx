@@ -93,13 +93,7 @@ angular.module('ixlayer.djangoAuth', [
           data = angular.extend(data, more);
           return this.request({
             'method': "POST",
-            'url': "" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "",
+            'url': "/register/",
             'data': data
           });
         },

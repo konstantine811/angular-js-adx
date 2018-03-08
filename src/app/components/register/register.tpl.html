@@ -1,7 +1,7 @@
 <div class="container">
     <div class="col-sm-8 col-sm-offset-2">
         <h1 class="page-header">Registration Form</h1>
-        <div id="todoPanel" class="panel" ng-controller="RegisterCtrl">
+        <div id="todoPanel" class="panel" ng-controller="RegisterCtrl as $ctrl">
             <form name="form"  ng-submit="submitForm(userForm)" novalidate>
                 <div ng-show="!complete">
                     <div class="form-group">
@@ -58,4 +58,5 @@
             Verify Email
         </a>
     </div>
+    <div class="view-side-form" ui-view></div>
 </div>
