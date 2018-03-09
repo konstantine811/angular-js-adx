@@ -188,98 +188,100 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
-    "<div class=\"container\">\n" +
-    "    <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "        <h1 class=\"page-header\">Registration Form</h1>\n" +
-    "        <div id=\"todoPanel\" class=\"panel\" ng-controller=\"RegisterCtrl as $ctrl\">\n" +
-    "            <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
-    "                <div ng-show=\"!complete\">\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Firstname</label>\n" +
-    "                        <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                        <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Lastname</label>\n" +
-    "                        <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                        <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Email</label>\n" +
-    "                        <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
-    "                        <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                            <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                            <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "<div class=\"container\" ng-controller=\"RegisterCtrl as $ctrl\">\n" +
+    "    <div class=\"row\">\n" +
+    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "            <h1 class=\"page-header\">Registration Form</h1>\n" +
+    "            <div id=\"todoPanel\" class=\"panel\">\n" +
+    "                <form name=\"form\"  ng-submit=\"$ctrl.submitForm(userForm)\" novalidate>\n" +
+    "                    <div ng-show=\"!complete\">\n" +
+    "                        <div class=\"form-group\">\n" +
+    "                            <label>Firstname</label>\n" +
+    "                            <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
+    "                            <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
     "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Password</label>\n" +
-    "                        <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
-    "                        <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
-    "                            <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
-    "                            <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
+    "                        <div class=\"form-group\">\n" +
+    "                            <label>Lastname</label>\n" +
+    "                            <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                            <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
     "                        </div>\n" +
+    "                        <div class=\"form-group\">\n" +
+    "                            <label>Email</label>\n" +
+    "                            <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
+    "                            <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                                <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                                <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"form-group\">\n" +
+    "                            <label>Password</label>\n" +
+    "                            <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
+    "                            <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
+    "                                <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
+    "                                <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"form-group\">\n" +
+    "                            <label>Confirm Password</label>\n" +
+    "                            <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
+    "                            <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"checkbox m-b-md m-t-none\" ng-show=\"!complete\">\n" +
+    "                            <label class=\"i-checks\">\n" +
+    "                                <input type=\"checkbox\" ng-model=\"userForm.terms\" required><i></i> Agree to the <a href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
+    "                            </label>\n" +
+    "                        </div>\n" +
+    "                        <button type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
     "                    </div>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Confirm Password</label>\n" +
-    "                        <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
-    "                        <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
+    "                \n" +
+    "                    <br>\n" +
+    "                \n" +
+    "                    <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
+    "                \n" +
+    "                    <div ng-if=\"complete == true\">\n" +
+    "                        <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
     "                    </div>\n" +
-    "                    <div class=\"checkbox m-b-md m-t-none\" ng-show=\"!complete\">\n" +
-    "                        <label class=\"i-checks\">\n" +
-    "                            <input type=\"checkbox\" ng-model=\"userForm.terms\" required><i></i> Agree to the <a href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
-    "                        </label>\n" +
-    "                    </div>\n" +
-    "                    <button type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
-    "                </div>\n" +
-    "\n" +
-    "                <br>\n" +
-    "\n" +
-    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
-    "\n" +
-    "                <div ng-if=\"complete == true\">\n" +
-    "                    <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
-    "                </div>\n" +
-    "            </form>\n" +
+    "                </form>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"verify-email\">\n" +
+    "            <a href ui-sref=\"verify_email\">\n" +
+    "                Verify Email\n" +
+    "            </a>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"verify-email\">\n" +
-    "        <a href ui-sref=\"verify_email\">\n" +
-    "            Verify Email\n" +
-    "        </a>\n" +
+    "    <div class=\"popup\" ng-if=\"showPopup\">\n" +
+    "        <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
+    "            <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
+    "                <p class=\"popup-condition-txt__inner\">\n" +
+    "                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "            <form class=\"form-popup\">\n" +
+    "                <div class=\"row\">\n" +
+    "                    <div class=\"col-sm-6\">\n" +
+    "                        <div class=\"form-check\">\n" +
+    "                            <label class=\"i-checks\">\n" +
+    "                                <input type=\"checkbox\" ng-model=\"$ctrl.checked\" required> <span>I agree</span>\n" +
+    "                            </label>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-sm-6\">\n" +
+    "                        <button class=\"btn btn-primary\" type=\"button\" ng-click=\"$ctrl.agree()\">OK</button>\n" +
+    "                        <button class=\"btn btn-warning\" type=\"button\" ng-click=\"$ctrl.noAgree()\">Cancel</button>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"error\" ng-show=\"notChecked\">You have not confirmed terms and condition</div>\n" +
+    "            </form>\n" +
+    "        </div>\n" +
+    "        <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background-animation'\"></div>\n" +
     "    </div>\n" +
-    "    <div class=\"view-side-form\" ui-view></div>\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("components/register/user-consent.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/user-consent.tpl.html",
-    "<div class=\"popup\" ng-controller=\"UserConsentCtrl as $ctrl\">\n" +
-    " <div class=\"popup-content\">\n" +
-    "  <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
-    "    <p class=\"popup-condition-txt__inner\">\n" +
-    "      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
-    "    </p>\n" +
-    "  </div>\n" +
-    "   <form class=\"form-popup\">\n" +
-    "     <div class=\"row\">\n" +
-    "       <div class=\"col-sm-6\">\n" +
-    "         <div class=\"form-check\">\n" +
-    "           <label class=\"i-checks\">\n" +
-    "             <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
-    "           </label>\n" +
-    "         </div>\n" +
-    "       </div>\n" +
-    "       <div class=\"col-sm-6\">\n" +
-    "         <button class=\"btn btn-primary\" type=\"button\" ng-click=\"$ctrl.agree()\">OK</button>\n" +
-    "         <button class=\"btn btn-warning\" type=\"button\" ng-click=\"$ctrl.noAgree()\">Cancel</button>\n" +
-    "       </div>\n" +
-    "     </div>\n" +
-    "     <div class=\"error\" ng-show=\"notChecked\">You have not confirmed terms and condition</div>\n" +
-    "   </form>\n" +
-    " </div>\n" +
-    "  <div class=\"popup-background\"></div>\n" +
-    "</div>\n" +
     "");
 }]);
 
