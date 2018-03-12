@@ -21,8 +21,7 @@ angular.module( 'ixLayer.dashboard', [
     });
   })
   
-  .controller( 'DashboardCtrl', ['$scope', 'profile', function DashboardCtrl( $scope, profile ) {
+  .controller( 'DashboardCtrl', ['$scope', 'profile', function DashboardCtrl( $scope, profile) {
       var helix_profile = profile.helix_profile;
       $scope.status = helix_profile;
-      console.log(helix_profile);
   }]);

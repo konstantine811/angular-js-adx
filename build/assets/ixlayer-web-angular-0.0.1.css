@@ -7625,9 +7625,6 @@ span.summary.ng-valid {
   width: 100%;
   padding: 0px 37px 0px 17px; }
 
-a[ng-click] {
-  cursor: pointer; }
-
 .ngsb-wrap {
   -ms-touch-action: none; }
 
@@ -7709,3 +7706,6 @@ a[ng-click] {
   filter: "alpha(opacity=60)";
   -ms-filter: "alpha(opacity=60)";
   /* old ie */ }
+
+a[ng-click] {
+  cursor: pointer; }

@@ -2,9 +2,10 @@ angular.module( 'ixLayer.products', [
   'ui.router',
   'placeholders',
   'ui.bootstrap',
-  'ixlayer.api.products'
+  'ixlayer.api.products',
+  'ngAnimate',
+  'ngScrollbar'
 ])
-
   .config(function config($stateProvider) {
     $stateProvider.state('products', {
       url: '/products',
@@ -38,11 +39,32 @@ angular.module( 'ixLayer.products', [
   }])
 
   .controller('ProductDetailCtrl', ['$scope', 'product', function ProductDetailCtrl($scope, product) {
+
     $scope.product = product;
+    $scope.showPopup = false;
+    $scope.metadata = product.content.metadata;
+    $scope.notChecked = false;
+
     var contentEmpty = (function() {
       var obj = product.content;
       return JSON.stringify(obj) === '{}';
     }());
-    $scope.metadata = product.content.metadata;
-    console.log(product);
+
+    $scope.popup = function() {
+      $scope.showPopup = true;
+    };
+
+    $scope.agree = function(checked) {
+      if(checked)  {
+        $scope.showPopup = false;
+      } else {
+        $scope.notChecked = true;
+      }
+    };
+
+    $scope.noAgree = function() {
+      $scope.showPopup = false;
+    }
+
+
   }]);

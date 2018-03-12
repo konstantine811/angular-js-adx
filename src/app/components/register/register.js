@@ -6,7 +6,6 @@ angular.module( 'ixLayer.register', [
     'ngAnimate',
     'ngScrollbar'
   ])
-  
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'register', {
       url: '/register',
@@ -20,7 +19,7 @@ angular.module( 'ixLayer.register', [
     });
   })
   
-  .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv', function RegisterCtrl($scope, userAccessSrv) {
+  .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv',  function RegisterCtrl($scope, userAccessSrv) {
     var $ctrl = this;
     var vm = $scope;
 

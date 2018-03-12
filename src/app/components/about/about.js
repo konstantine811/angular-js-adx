@@ -13,6 +13,5 @@ angular.module( 'ixLayer.about', [
   });
 })
 
-.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
-  
-});
+.controller( 'AboutCtrl', ['$scope', function AboutCtrl( $scope ) {
+}]);
