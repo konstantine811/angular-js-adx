@@ -22,7 +22,15 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
   $templateCache.put("components/dashboard/dashboard.tpl.html",
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "        <h1>Dashboard</h1>\n" +
+    "        <h1>Status: {{ status.seq_status }}</h1>\n" +
+    "        <ul>\n" +
+    "            <li ng-repeat=\"product in status.product_status\">\n" +
+    "                <p>product Id: {{product.product_id}}</p>\n" +
+    "                <p ng-if=\"product.product_consent_agreed_date\"> Product consent agreed date{{ product.product_consent_agreed_date }}</p>\n" +
+    "                <p>Product status {{ product.product_status}}</p>\n" +
+    "                <p>Submitted date {{ product.ldt_submitted_date }}</p>\n" +
+    "            </li>\n" +
+    "        </ul>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -340,63 +348,63 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
     "<div class=\"container\">\n" +
-    "    <div class=\"navbar navbar-default\">\n" +
-    "      <div class=\"navbar-header\">\n" +
-    "        <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
-    "          ng-click=\"menuCollapsed = ! menuCollapsed\">\n" +
-    "          <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "          <span class=\"icon-bar\"></span>\n" +
-    "          <span class=\"icon-bar\"></span>\n" +
-    "          <span class=\"icon-bar\"></span>\n" +
-    "        </button>\n" +
-    "        <div class=\"navbar-brand\">\n" +
-    "          ixlayer\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "      <div class=\"collapse navbar-collapse\" collapse=\"menuCollapsed\">\n" +
-    "        <ul class=\"nav navbar-nav\">\n" +
-    "          <li ui-sref-active=\"active\">\n" +
-    "            <a href ui-sref=\"home\">\n" +
-    "              Home\n" +
-    "            </a>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\">\n" +
-    "            <a href ui-sref=\"about\">\n" +
-    "              About\n" +
-    "            </a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "            <a href ui-sref=\"products\">\n" +
-    "              Products\n" +
-    "            </a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "              <a href ui-sref=\"profile\">\n" +
-    "                Profile\n" +
-    "              </a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "            <a href ui-sref=\"register\">\n" +
-    "                Registration\n" +
-    "            </a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "              <a href ui-sref=\"login\">\n" +
-    "                Login\n" +
-    "              </a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "            <a ng-click=\"logout()\">\n" +
-    "              Logout\n" +
-    "            </a>\n" +
-    "        </li>\n" +
-    "          <li ui-sref-active=\"active\">\n" +
-    "              <a href ui-sref=\"dashboard\">\n" +
-    "                Dashboard\n" +
-    "              </a>\n" +
-    "          </li>\n" +
-    "        </ul>\n" +
+    "  <div class=\"navbar navbar-default\">\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
+    "              ng-click=\"menuCollapsed = ! menuCollapsed\">\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <div class=\"navbar-brand\">\n" +
+    "        ixlayer\n" +
     "      </div>\n" +
     "    </div>\n" +
-    "  </div>");
+    "    <div class=\"collapse navbar-collapse\" collapse=\"menuCollapsed\">\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"home\">\n" +
+    "            Home\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"about\">\n" +
+    "            About\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"products\">\n" +
+    "            Products\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"profile\">\n" +
+    "            Profile\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"dashboard\">\n" +
+    "            Dashboard\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"register\">\n" +
+    "            Registration\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
+    "          <a href ui-sref=\"login\">\n" +
+    "            Login\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
+    "          <a ng-click=\"logout()\">\n" +
+    "            Logout\n" +
+    "          </a>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>");
 }]);

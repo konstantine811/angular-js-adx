@@ -9,10 +9,20 @@ angular.module( 'ixLayer.dashboard', [
       url: '/dashboard',
       controller: 'DashboardCtrl',
       templateUrl: 'components/dashboard/dashboard.tpl.html',
-      data:{ pageTitle: 'Dashboard' }
+      data:{ pageTitle: 'Dashboard' },
+      resolve: {
+        userInfo: ['userAccessSrv', function (userAccessSrv) {
+          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+        }],
+        profile: ['profileService', function (profileService) {
+          return profileService.getProfile();
+        }]
+      }
     });
   })
   
-  .controller( 'DashboardCtrl', function DashboardCtrl( $scope ) {
-    
-  });
+  .controller( 'DashboardCtrl', ['$scope', 'profile', function DashboardCtrl( $scope, profile ) {
+      var helix_profile = profile.helix_profile;
+      $scope.status = helix_profile;
+      console.log(helix_profile);
+  }]);

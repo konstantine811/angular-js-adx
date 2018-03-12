@@ -44,4 +44,5 @@ angular.module( 'ixLayer.products', [
       return JSON.stringify(obj) === '{}';
     }());
     $scope.metadata = product.content.metadata;
+    console.log(product);
   }]);

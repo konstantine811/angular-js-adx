@@ -1,5 +1,13 @@
 <div class="container">
     <div class="row">
-        <h1>Dashboard</h1>
+        <h1>Status: {{ status.seq_status }}</h1>
+        <ul>
+            <li ng-repeat="product in status.product_status">
+                <p>product Id: {{product.product_id}}</p>
+                <p ng-if="product.product_consent_agreed_date"> Product consent agreed date{{ product.product_consent_agreed_date }}</p>
+                <p>Product status {{ product.product_status}}</p>
+                <p>Submitted date {{ product.ldt_submitted_date }}</p>
+            </li>
+        </ul>
     </div>
 </div>
