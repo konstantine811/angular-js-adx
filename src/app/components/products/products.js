@@ -64,7 +64,7 @@ angular.module( 'ixLayer.products', [
 
     $scope.noAgree = function() {
       $scope.showPopup = false;
-    }
+    };
 
 
   }]);
