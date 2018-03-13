@@ -29,9 +29,16 @@ angular.module('ixlayer.api.products', [
     });
   };
 
+  var postConsentProduct = function(productId) {
+    productResource.service.all('api/product/' + productId + '/consent_to_product')
+      .withHttpConfig({transformRequest: angular.identity})
+      .customPOST(undefined, undefined, undefined, {'Content-Type': undefined});
+  };
+
   return {
     getProducts: getProducts,
-    getProduct: getProduct
+    getProduct: getProduct,
+    postConsentProduct: postConsentProduct
   };
 
 }]);

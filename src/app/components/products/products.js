@@ -38,12 +38,13 @@ angular.module( 'ixLayer.products', [
     $scope.products = products;
   }])
 
-  .controller('ProductDetailCtrl', ['$scope', 'product', function ProductDetailCtrl($scope, product) {
+  .controller('ProductDetailCtrl', ['$scope', 'productsService', 'product', function ProductDetailCtrl($scope, productsService, product) {
 
     $scope.product = product;
     $scope.showPopup = false;
     $scope.metadata = product.content.metadata;
     $scope.notChecked = false;
+    console.log();
 
     var contentEmpty = (function() {
       var obj = product.content;
@@ -56,6 +57,8 @@ angular.module( 'ixLayer.products', [
 
     $scope.agree = function(checked) {
       if(checked)  {
+        var id = $scope.product.id;
+        productsService.postConsentProduct(id);
         $scope.showPopup = false;
         $scope.notChecked = false;
       } else {
