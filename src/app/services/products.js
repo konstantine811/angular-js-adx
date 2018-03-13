@@ -4,7 +4,7 @@ angular.module('ixlayer.api.products', [
   'ixlayer.endpoints'
 ])
 
-.factory('productsService',['productsResource', '$q', function (productResource, $q) {
+.factory('productsService', ['productsResource', '$q', function (productResource, $q) {
   var productsList = null;
 
 

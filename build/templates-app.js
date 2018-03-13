@@ -136,7 +136,7 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-12\">\n" +
     "            <div ng-show=\"!contentEmpty\">\n" +
-    "                <img ng-src=\"{{metadata.product_image}}\" alt=\"\">\n" +
+    "                <img ng-src=\"{{metadata.product_image}}\">\n" +
     "                <p>{{metadata.product_summary}}</p>\n" +
     "            </div>\n" +
     "            <p>Product ID {{product.id}}</p>\n" +
@@ -225,12 +225,12 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
-    "<div class=\"container\" ng-controller=\"RegisterCtrl as $ctrl\">\n" +
+    "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1 class=\"page-header\">Registration Form</h1>\n" +
     "            <div id=\"todoPanel\" class=\"panel\">\n" +
-    "                <form name=\"form\"  ng-submit=\"$ctrl.submitForm(userForm)\" novalidate>\n" +
+    "                <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
     "                    <div ng-show=\"!complete\">\n" +
     "                        <div class=\"form-group\">\n" +
     "                            <label>Firstname</label>\n" +
@@ -299,13 +299,13 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                    <div class=\"col-sm-6\">\n" +
     "                        <div class=\"form-check\">\n" +
     "                            <label class=\"i-checks\">\n" +
-    "                                <input type=\"checkbox\" ng-model=\"$ctrl.checked\" required> <span>I agree</span>\n" +
+    "                                <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
     "                            </label>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"col-sm-6\">\n" +
-    "                        <button class=\"btn btn-primary\" type=\"button\" ng-click=\"$ctrl.agree()\">OK</button>\n" +
-    "                        <button class=\"btn btn-warning\" type=\"button\" ng-click=\"$ctrl.noAgree()\">Cancel</button>\n" +
+    "                        <button class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
+    "                        <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"error\" ng-show=\"notChecked\">You have not confirmed terms and condition</div>\n" +

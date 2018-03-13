@@ -57,6 +57,7 @@ angular.module( 'ixLayer.products', [
     $scope.agree = function(checked) {
       if(checked)  {
         $scope.showPopup = false;
+        $scope.notChecked = false;
       } else {
         $scope.notChecked = true;
       }
@@ -64,7 +65,8 @@ angular.module( 'ixLayer.products', [
 
     $scope.noAgree = function() {
       $scope.showPopup = false;
-    }
+      $scope.notChecked = false;
+    };
 
 
   }]);

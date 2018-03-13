@@ -1,9 +1,9 @@
-<div class="container" ng-controller="RegisterCtrl as $ctrl">
+<div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <h1 class="page-header">Registration Form</h1>
             <div id="todoPanel" class="panel">
-                <form name="form"  ng-submit="$ctrl.submitForm(userForm)" novalidate>
+                <form name="form"  ng-submit="submitForm(userForm)" novalidate>
                     <div ng-show="!complete">
                         <div class="form-group">
                             <label>Firstname</label>
@@ -72,13 +72,13 @@
                     <div class="col-sm-6">
                         <div class="form-check">
                             <label class="i-checks">
-                                <input type="checkbox" ng-model="$ctrl.checked" required> <span>I agree</span>
+                                <input type="checkbox" ng-model="checked" required> <span>I agree</span>
                             </label>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <button class="btn btn-primary" type="button" ng-click="$ctrl.agree()">OK</button>
-                        <button class="btn btn-warning" type="button" ng-click="$ctrl.noAgree()">Cancel</button>
+                        <button class="btn btn-primary" type="button" ng-click="agree(checked)">OK</button>
+                        <button class="btn btn-warning" type="button" ng-click="noAgree()">Cancel</button>
                     </div>
                 </div>
                 <div class="error" ng-show="notChecked">You have not confirmed terms and condition</div>

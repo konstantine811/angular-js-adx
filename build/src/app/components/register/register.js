@@ -20,17 +20,17 @@ angular.module( 'ixLayer.register', [
   })
   
   .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv',  function RegisterCtrl($scope, userAccessSrv) {
-    var $ctrl = this;
     var vm = $scope;
 
     vm.complete = false;
     vm.errors = null;
     vm.showPopup = false;
+    vm.notChecked = false;
 
-    $ctrl.submitForm = function (form) {
+    vm.submitForm = function (form) {
       vm.showPopup = true;
-      $ctrl.agree = function() {
-        if($ctrl.checked) {
+      vm.agree = function(checked) {
+        if(checked) {
           vm.showPopup = false;
           userAccessSrv.register(form.first_name, form.last_name,
             form.email, form.password,
@@ -38,7 +38,9 @@ angular.module( 'ixLayer.register', [
             vm.complete = true;
           }, function(error) {
             vm.errors = error;
+
           });
+          vm.notChecked = false;
         } else {
           vm.notChecked = true;
         }
@@ -46,8 +48,9 @@ angular.module( 'ixLayer.register', [
     };
 
 
-    $ctrl.noAgree = function() {
+    vm.noAgree = function() {
       vm.showPopup = false;
+      vm.notChecked = false;
     };
 
   }]);
