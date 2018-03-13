@@ -4,7 +4,9 @@ angular.module('ixlayer.api.products', [
   'ixlayer.endpoints'
 ])
 
-.factory('productsService', ['productsResource', '$q', function (productResource, $q) {
+.factory('productsService', [
+  'productsResource', 'productStatusResource', 'URL_PRODUCTSTATUS', '$q',
+  function (productResource, productStatusResource, URL_PRODUCTSTATUS, $q) {
   var productsList = null;
 
 
@@ -30,7 +32,7 @@ angular.module('ixlayer.api.products', [
   };
 
   var postConsentProduct = function(productId) {
-    productResource.service.all('api/product/' + productId + '/consent_to_product')
+    productStatusResource.service.all(URL_PRODUCTSTATUS + productId + '/consent_to_product/')
       .withHttpConfig({transformRequest: angular.identity})
       .customPOST(undefined, undefined, undefined, {'Content-Type': undefined});
   };

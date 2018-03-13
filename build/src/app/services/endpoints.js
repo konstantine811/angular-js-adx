@@ -57,7 +57,9 @@ angular.module( 'ixlayer.endpoints', [
 .factory('profileResource',['ServiceFactory',   'URL_PROFILE', createResource])
 
 .constant('URL_PRODUCT', '/helix/product')
-.factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource]);
+.factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource])
 
+.constant('URL_PRODUCTSTATUS', '/helix/product-status')
+.factory('productStatusResource',['ServiceFactory',   'URL_PRODUCTSTATUS', createResource]);
 
 

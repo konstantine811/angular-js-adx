@@ -143,11 +143,11 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
     "            <p>Product Name {{ product.name}}</p>\n" +
     "            <p>Product Description {{ product.description}}</p>\n" +
     "            <p>Price {{ product.price}}</p>\n" +
-    "            <button ng-if=\"product.product_consent_needed\" ng-click=\"popup()\" class=\"btn btn-default\">Consent</button>\n" +
+    "            <button ng-if=\"product.product_consent_needed\" ng-click=\"popup()\" class=\"btn btn-default\">Show Status</button>\n" +
+    "            &nbsp;&nbsp;\n" +
+    "            <a ui-sref=\"products\" class=\"btn btn-primary\">Back to Products</a>\n" +
     "        </div>\n" +
-    "        <div>\n" +
-    "          <a ui-sref=\"products\" class=\"btn btn-primary\">All products</a>\n" +
-    "        </div>\n" +
+    "\n" +
     "        <div class=\"popup\" ng-if=\"showPopup\">\n" +
     "            <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
     "                <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
