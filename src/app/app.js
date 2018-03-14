@@ -2,6 +2,7 @@ angular.module( 'ixLayer', [
   'templates-app',
   'ixlayer.config.restangular',
   'ixlayer.config',
+  'ixlayer.config.routing',
   'ixLayer.home',
   'ixLayer.about',
   'ixLayer.products',
