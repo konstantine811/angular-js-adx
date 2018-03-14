@@ -5,7 +5,7 @@ angular.module('ixlayer.api.results', [
   .factory('resultsService', ['resultsResource', 'productStatusResource', function (resultsResource, productStatusResource) {
 
       var getResults = function(id) {
-        resultsResource.service.all().get("product", {product: id}).then(function(result) {
+        resultsResource.service.one().get({product: id}).then(function(result) {
           console.log(result);
 
         });
