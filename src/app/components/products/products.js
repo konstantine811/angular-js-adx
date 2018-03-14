@@ -13,9 +13,9 @@ angular.module( 'ixLayer.products', [
       templateUrl: 'components/products/products.tpl.html',
       data:{ pageTitle: 'Products' },
       resolve: {
-          products: ['productsService', function (productsService) {
-              return productsService.getProducts();
-          }]
+        products: ['productsService', function (productsService) {
+          return productsService.getProducts();
+        }]
       }
     });
   })
@@ -25,10 +25,23 @@ angular.module( 'ixLayer.products', [
       url: '/product/{productId}',
       controller: 'ProductDetailCtrl',
       templateUrl: 'components/products/productsDetail.tpl.html',
-      data:{ pageTitle: 'Product Detail' },
+      data: {pageTitle: 'Product Detail'},
       resolve: {
         product: ['productsService', '$stateParams', function (productsService, $stateParams) {
-           return productsService.getProduct(parseInt($stateParams.productId));
+          return productsService.getProduct(parseInt($stateParams.productId));
+        }]
+      }
+    });
+  })
+  .config(function config($stateProvider) {
+    $stateProvider.state('productDetail.results', {
+      url: '/results',
+      controller: 'ProductResultsCtrl',
+      templateUrl: 'components/products/productResults.tpl.html',
+      data:{ pageTitle: 'Products Results' },
+      resolve: {
+        userInfo: ['userAccessSrv', function (userAccessSrv) {
+          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
         }]
       }
     });
@@ -38,38 +51,35 @@ angular.module( 'ixLayer.products', [
     $scope.products = products;
   }])
 
-  .controller('ProductDetailCtrl', ['$scope', 'productsService', 'product', function ProductDetailCtrl($scope, productsService, product) {
+  .controller('ProductDetailCtrl', ['$scope',  'product', function ProductDetailCtrl($scope, product) {
 
     $scope.product = product;
-    $scope.showPopup = false;
     $scope.metadata = product.content.metadata;
-    $scope.notChecked = false;
-    console.log();
 
     var contentEmpty = (function() {
       var obj = product.content;
       return JSON.stringify(obj) === '{}';
     }());
 
-    $scope.popup = function() {
-      $scope.showPopup = true;
-    };
 
-    $scope.agree = function(checked) {
-      if(checked)  {
-        var id = $scope.product.id;
-        productsService.postConsentProduct(id);
-        $scope.showPopup = false;
-        $scope.notChecked = false;
-      } else {
-        $scope.notChecked = true;
-      }
-    };
+  }])
+    .controller('ProductResultsCtrl', ['$scope', '$state', 'productsService', function ProductResultsCtrl($scope, $state, productsService) {
 
-    $scope.noAgree = function() {
-      $scope.showPopup = false;
       $scope.notChecked = false;
-    };
 
+      $scope.agree = function(checked) {
+        if(checked)  {
+          var id = $scope.product.id;
+          productsService.postConsentProduct(id);
+          $state.go('productDetail');
+          $scope.notChecked = false;
+        } else {
+          $scope.notChecked = true;
+        }
+      };
 
+      $scope.noAgree = function() {
+        $state.go('productDetail');
+        $scope.notChecked = false;
+      };
   }]);
