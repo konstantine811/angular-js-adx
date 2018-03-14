@@ -15,11 +15,14 @@ angular.module( 'ixLayer.results', [
       resolve: {
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+        }],
+        results: ['resultsService', '$stateParams', function(resultsService, $stateParams) {
+          return resultsService.getResults($stateParams.id);
         }]
       }
     });
   })
-  .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', function ProductResultsCtrl($scope, $stateParams, resultsService) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', 'results', function ProductResultsCtrl($scope, $stateParams, resultsService, results) {
 
     $scope.notChecked = false;
     $scope.showPopup = false;

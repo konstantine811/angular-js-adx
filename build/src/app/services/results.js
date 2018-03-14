@@ -2,8 +2,14 @@ angular.module('ixlayer.api.results', [
   'ixlayer.endpoints'
 ])
 
-  .factory('resultsService', ['productStatusResource', function ( productStatusResource) {
+  .factory('resultsService', ['resultsResource', 'productStatusResource', function (resultsResource, productStatusResource) {
 
+      var getResults = function(id) {
+        resultsResource.service.all().get("product", {product: id}).then(function(result) {
+          console.log(result);
+
+        });
+      };
 
       var postConsentProduct = function(productId) {
         productStatusResource.service.all().one(productId + '/consent_to_product/')
@@ -12,7 +18,8 @@ angular.module('ixlayer.api.results', [
       };
 
       return {
-        postConsentProduct: postConsentProduct
+        postConsentProduct: postConsentProduct,
+        getResults: getResults
       };
 
     }]);

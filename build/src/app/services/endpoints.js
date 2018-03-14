@@ -60,6 +60,9 @@ angular.module( 'ixlayer.endpoints', [
 .factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource])
 
 .constant('URL_PRODUCTSTATUS', '/helix/product-status')
-.factory('productStatusResource',['ServiceFactory',   'URL_PRODUCTSTATUS', createResource]);
+.factory('productStatusResource',['ServiceFactory',   'URL_PRODUCTSTATUS', createResource])
+
+.constant('URL_RESULTS', '/helix/results')
+  .factory('resultsResource',['ServiceFactory',   'URL_RESULTS', createResource]);
 
 
