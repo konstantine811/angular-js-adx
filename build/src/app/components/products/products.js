@@ -33,19 +33,6 @@ angular.module( 'ixLayer.products', [
       }
     });
   })
-  .config(function config($stateProvider) {
-    $stateProvider.state('productDetail.results', {
-      url: '/results',
-      controller: 'ProductResultsCtrl',
-      templateUrl: 'components/products/productResults.tpl.html',
-      data:{ pageTitle: 'Products Results' },
-      resolve: {
-        userInfo: ['userAccessSrv', function (userAccessSrv) {
-          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
-        }]
-      }
-    });
-  })
 
   .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products) {
     $scope.products = products;
@@ -62,24 +49,4 @@ angular.module( 'ixLayer.products', [
     }());
 
 
-  }])
-    .controller('ProductResultsCtrl', ['$scope', '$state', 'productsService', function ProductResultsCtrl($scope, $state, productsService) {
-
-      $scope.notChecked = false;
-
-      $scope.agree = function(checked) {
-        if(checked)  {
-          var id = $scope.product.id;
-          productsService.postConsentProduct(id);
-          $state.go('productDetail');
-          $scope.notChecked = false;
-        } else {
-          $scope.notChecked = true;
-        }
-      };
-
-      $scope.noAgree = function() {
-        $state.go('productDetail');
-        $scope.notChecked = false;
-      };
   }]);

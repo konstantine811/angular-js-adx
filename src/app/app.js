@@ -14,6 +14,7 @@ angular.module( 'ixLayer', [
   'ixLayer.dashboard',
   'ixLayer.verifyEmail',
   'ixLayer.forgotPassword',
+  'ixLayer.results',
   'ui.router'
 ])
 
