@@ -676,6 +676,8 @@ module.exports = function ( grunt ) {
         });
       }
     });
+    grunt.file.copy('src/sitemap.xml', this.data.dir + '/sitemap.xml', {
+    });
   });
 
   /**
