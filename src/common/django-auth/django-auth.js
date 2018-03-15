@@ -124,20 +124,20 @@ angular.module('ixlayer.djangoAuth', [
 
           return $q.resolve();
         },
-        changePassword: function (password1, password2) {
+        changePassword: function (activation_key, password) {
           return this.request({
             'method': "POST",
-            'url': "/password/",
+            'url': "/change-password/",
             'data': {
-              'new_password': password1,
-              'current_password': password2
+              'activation_key': activation_key,
+              'password': password
             }
           });
         },
         resetPassword: function (email) {
           return this.request({
             'method': "POST",
-            'url': "/password/reset/",
+            'url': "/reset-password/",
             'data': {
               'email': email
             }

@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -6,6 +6,40 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"row\">\n" +
     "    <h1>This is page About</h1>\n" +
     "  </div>\n" +
+    "</div>");
+}]);
+
+angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/change_password/change_password.tpl.html",
+    "<div class=\"container\">\n" +
+    "    <div class=\"row\">\n" +
+    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "            <h1>Change Password</h1>\n" +
+    "            <div class=\"panel\" ng-controller=\"ChangePasswordCtrl\">\n" +
+    "                <div ng-show=\"!success\">\n" +
+    "                <form name=\"form\" novalidate ng-submit=\"changeSubmit(userForm)\">\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>New Password</label>\n" +
+    "                    <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
+    "                    <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
+    "                        <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
+    "                        <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Confirm Password</label>\n" +
+    "                    <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
+    "                    <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
+    "                </div>\n" +
+    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "                </form>\n" +
+    "                </div>\n" +
+    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "                <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "                <div class=\"alert alert-success\" ng-if=\"success\">Great! Your password was changed successfully.</div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
     "</div>");
 }]);
 
@@ -48,7 +82,28 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "        <h1>forgot password</h1>\n" +
+    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "            <h1>Forgot Password</h1>\n" +
+    "            <div class=\"panel\" ng-controller=\"ForgotPasswordCtrl\">\n" +
+    "                <div ng-show=\"!success\">\n" +
+    "                <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
+    "                    <p>Please enter your email address below:</p>\n" +
+    "                    <div class=\"form-group\">\n" +
+    "                        <label>Email</label>\n" +
+    "                        <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
+    "                        <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                            <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                            <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "                </form>\n" +
+    "                </div>\n" +
+    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "                <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "                <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);

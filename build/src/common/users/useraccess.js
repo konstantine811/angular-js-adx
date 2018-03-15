@@ -71,10 +71,10 @@ angular.module('ixlayer.useraccess', [
       });
     };
 
-    var changePassword = function (new_password, current_password) {
+    var changePassword = function (activation_key, password) {
       $log.debug("Initiated the change password");
       return initURL().then(function () {
-        return djangoAuth.changePassword(new_password, current_password);
+        return djangoAuth.changePassword(activation_key, password);
       });
     };
 

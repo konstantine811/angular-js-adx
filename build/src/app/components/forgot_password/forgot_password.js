@@ -9,10 +9,22 @@ angular.module( 'ixLayer.forgotPassword', [
       url: '/forgot_password',
       controller: 'ForgotPasswordCtrl',
       templateUrl: 'components/forgot_password/forgot_password.tpl.html',
-      data:{ pageTitle: 'ForgotPassword' }
+      data:{ pageTitle: 'Forgot Password' }
     });
   })
   
-  .controller( 'ForgotPassword', function ForgotPasswordCtrl( $scope ) {
-    
-  });
+  .controller( 'ForgotPasswordCtrl',  ['$scope', '$state', 'userAccessSrv', function ForgotPasswordCtrl( $scope, $state, userAccessSrv ) {
+      $scope.error = null;
+      $scope.success = false;
+
+      $scope.forgotSubmit = function () {
+          userAccessSrv.resetPassword($scope.forgotForm.email).then(function (result) {
+                $scope.success = true;
+              },
+              function (error) {
+                $scope.error = error;
+              }
+          );
+      };
+
+  }]);
