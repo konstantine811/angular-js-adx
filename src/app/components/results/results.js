@@ -16,35 +16,48 @@ angular.module( 'ixLayer.results', [
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
         }],
-        results: ['resultsService', '$stateParams', function(resultsService, $stateParams) {
-          return resultsService.getResults($stateParams.id);
+        product: ['productsService', '$stateParams', function (productsService, $stateParams) {
+          return productsService.getProduct(parseInt($stateParams.id));
+        }],
+        productStatus: ['productsService', '$stateParams', function (productsService, $stateParams) {
+          return productsService.getProductStatus(parseInt($stateParams.id));
         }]
       }
     });
   })
-  .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', 'results', function ProductResultsCtrl($scope, $stateParams, resultsService, results) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', 'product', 'productStatus',
+    function ResultsCtrl($scope, $stateParams, resultsService, product, productStatus) {
 
-    $scope.notChecked = false;
-    $scope.showPopup = false;
-    $scope.results = results;
+      $scope.results = null;
+      $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
+      if ($scope.consentAgreed) {
+        $scope.needPopup = false;
+      } else {
+        $scope.needPopup = product.product_consent_needed;
+      }
 
-    $scope.showingPopup = function() {
-      $scope.showPopup = true;
+      $scope.$watch('consentAgreed', function () {
+        if ($scope.consentAgreed) {
+          resultsService.getResults(parseInt($stateParams.id)).then(function (result) {
+            $scope.results = result;
+          });
+        }
+      });
+
       $scope.agree = function(checked) {
         if(checked)  {
           var id = $stateParams.id;
           resultsService.postConsentProduct(id);
-          $scope.showPopup = false;
-          $scope.notChecked = false;
+          $scope.needPopup = false;
+          $scope.consentAgreed = true;
         } else {
-          $scope.notChecked = true;
+          $scope.consentAgreed = false;
         }
       };
-    };
 
-    $scope.noAgree = function() {
-      $scope.showPopup = false;
-      $scope.notChecked = false;
-    };
+      $scope.noAgree = function() {
+        $scope.needPopup = false;
+        $scope.consentAgreed = false;
+      };
 
-}]);
+    }]);

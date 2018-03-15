@@ -353,15 +353,17 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div class=\"container\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>Results page:</h1>\n" +
-    "    <div ng-repeat=\"result in results\">\n" +
-    "      <p>Product id: {{result.id}}</p>\n" +
-    "      <p>Product: {{result.product}}</p>\n" +
-    "      <p>Insight score: {{result.result.insight_score}}</p>\n" +
-    "      <p>Last update: {{result.last_updated}}</p>\n" +
+    "    <div class=\"error\" ng-show=\"!consentAgreed\">You have not confirmed results consent</div>\n" +
+    "    <div ng-show=\"consentAgreed\">\n" +
+    "      <div ng-repeat=\"result in results\">\n" +
+    "        <p>Product id: {{result.id}}</p>\n" +
+    "        <p>Product: {{result.product}}</p>\n" +
+    "        <p>Insight score: {{result.result.insight_score}}</p>\n" +
+    "        <p>Last update: {{result.last_updated}}</p>\n" +
+    "      </div>\n" +
     "    </div>\n" +
-    "    <button class=\"btn btn-primary\" ng-click=\"showingPopup()\">Consent</button>\n" +
     "  </div>\n" +
-    "  <div class=\"popup\" ng-if=\"showPopup\">\n" +
+    "  <div class=\"popup\" ng-if=\"needPopup && !consentAgreed\">\n" +
     "    <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
     "      <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
     "        <p class=\"popup-condition-txt__inner\">\n" +
@@ -382,7 +384,6 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "            <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"error\" ng-show=\"notChecked\">You have not confirmed terms and condition</div>\n" +
     "      </form>\n" +
     "    </div>\n" +
     "    <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background-animation'\"></div>\n" +

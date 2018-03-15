@@ -2,14 +2,15 @@ angular.module('ixlayer.api.results', [
   'ixlayer.endpoints'
 ])
 
-  .factory('resultsService', ['resultsResource', 'productStatusResource', '$q', function (resultsResource, productStatusResource, $q) {
-    var results = null;
+  .factory('resultsService', ['resultsResource', 'productStatusResource', '$q',
+    function (resultsResource, productStatusResource, $q) {
+      var results = null;
 
       var getResults = function(id) {
         if(results) {
           return $q.when(results);
         } else {
-          return resultsResource.service.one().get({product: id}).then(function(result) {
+          return resultsResource.service.getList({product: id}).then(function(result) {
             var results = result.plain();
             return results;
           });

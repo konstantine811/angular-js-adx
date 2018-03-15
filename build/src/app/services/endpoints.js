@@ -3,66 +3,66 @@
  */
 
 function createResource(ServiceFactory, url) {
-    return {
-        service: ServiceFactory.createService(url)
-    };
+  return {
+    service: ServiceFactory.createService(url)
+  };
 }
 
 angular.module( 'ixlayer.endpoints', [
-    'restangular'
+  'restangular'
 ])
 
 /**
  * Factory to create Restangular services for a given route. Also extend the service with utility functions.
  **/
-.factory('ServiceFactory', ['Restangular', function(Restangular){
+  .factory('ServiceFactory', ['Restangular', function(Restangular){
 
-  return {
-    createService : function(route) {
-      var service = Restangular.service(route);
+    return {
+      createService : function(route) {
+        var service = Restangular.service(route);
 
-      /** Hide Restangular extendModel **/
-      service.extendModel = function(extenderFn) {
-        Restangular.extendModel(route, extenderFn);
-      };
+        /** Hide Restangular extendModel **/
+        service.extendModel = function(extenderFn) {
+          Restangular.extendModel(route, extenderFn);
+        };
 
-      //In the RestAngular 1.5, the service has no all function: https://github.com/mgonto/restangular/issues/46
-      service.all = function() {
-        return Restangular.all(route);
-      };
+        //In the RestAngular 1.5, the service has no all function: https://github.com/mgonto/restangular/issues/46
+        service.all = function() {
+          return Restangular.all(route);
+        };
 
-      service.uploadForm = function(uploadData) {
+        service.uploadForm = function(uploadData) {
 
-        var formData = new FormData();
+          var formData = new FormData();
 
-        for (var key in uploadData) {
-          if (uploadData.hasOwnProperty(key)) {
-            formData.append(key, uploadData[key]);
+          for (var key in uploadData) {
+            if (uploadData.hasOwnProperty(key)) {
+              formData.append(key, uploadData[key]);
+            }
           }
-        }
 
-        return service.one()
+          return service.one()
             .withHttpConfig({transformRequest: angular.identity})
             .customPOST(formData, undefined, undefined, { 'Content-Type': undefined });
 
-      };
+        };
 
-      return service;
-    }
-  };
+        return service;
+      }
+    };
 
-}])
+  }])
 
-.constant('URL_PROFILE', '/profile')
-.factory('profileResource',['ServiceFactory',   'URL_PROFILE', createResource])
+  .constant('URL_PROFILE', '/profile')
+  .factory('profileResource',['ServiceFactory',   'URL_PROFILE', createResource])
 
-.constant('URL_PRODUCT', '/helix/product')
-.factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource])
+  .constant('URL_PRODUCT', '/helix/product')
+  .factory('productsResource',['ServiceFactory',   'URL_PRODUCT', createResource])
 
-.constant('URL_PRODUCTSTATUS', '/helix/product-status')
-.factory('productStatusResource',['ServiceFactory',   'URL_PRODUCTSTATUS', createResource])
+  .constant('URL_PRODUCTSTATUS', '/helix/product-status')
+  .factory('productStatusResource',['ServiceFactory',   'URL_PRODUCTSTATUS', createResource])
 
-.constant('URL_RESULTS', '/helix/results')
+  .constant('URL_RESULTS', '/helix/results')
   .factory('resultsResource',['ServiceFactory',   'URL_RESULTS', createResource]);
 
 
