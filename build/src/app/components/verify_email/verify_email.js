@@ -1,7 +1,6 @@
 angular.module( 'ixLayer.verifyEmail', [
     'ixlayer.useraccess',
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
 ])
 

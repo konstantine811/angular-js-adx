@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.dashboard', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
   

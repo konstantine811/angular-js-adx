@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.FAQ', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
   

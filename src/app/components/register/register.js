@@ -1,7 +1,6 @@
 angular.module( 'ixLayer.register', [
     'ui.router',
     'ixlayer.djangoAuth',
-    'placeholders',
     'ui.bootstrap',
     'ngAnimate',
     'ngScrollbar'

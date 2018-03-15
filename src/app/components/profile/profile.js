@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.profile', [
   'ui.router',
-  'placeholders',
   'ixlayer.useraccess',
   'ui.bootstrap',
   'ixlayer.api.profile'

@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.forgotPassword', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
   

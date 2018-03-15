@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.about', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

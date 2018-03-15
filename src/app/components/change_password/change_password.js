@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.changePassword', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
 

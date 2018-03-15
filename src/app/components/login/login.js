@@ -1,7 +1,6 @@
 angular.module( 'ixLayer.login', [
     'ixlayer.useraccess',
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
   

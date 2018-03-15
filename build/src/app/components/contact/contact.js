@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.contact', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
   ])
   

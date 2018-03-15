@@ -1,6 +1,5 @@
 angular.module( 'ixLayer.products', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap',
   'ixlayer.api.products',
   'ngAnimate',
