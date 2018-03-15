@@ -2,13 +2,18 @@ angular.module('ixlayer.api.results', [
   'ixlayer.endpoints'
 ])
 
-  .factory('resultsService', ['resultsResource', 'productStatusResource', function (resultsResource, productStatusResource) {
+  .factory('resultsService', ['resultsResource', 'productStatusResource', '$q', function (resultsResource, productStatusResource, $q) {
+    var results = null;
 
       var getResults = function(id) {
-        resultsResource.service.one().get({product: id}).then(function(result) {
-          console.log(result);
-
-        });
+        if(results) {
+          return $q.when(results);
+        } else {
+          return resultsResource.service.one().get({product: id}).then(function(result) {
+            var results = result.plain();
+            return results;
+          });
+        }
       };
 
       var postConsentProduct = function(productId) {

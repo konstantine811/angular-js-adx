@@ -1,6 +1,12 @@
 <div class="container">
   <div class="row">
-    <h1>Results page: </h1>
+    <h1>Results page:</h1>
+    <div ng-repeat="result in results">
+      <p>Product id: {{result.id}}</p>
+      <p>Product: {{result.product}}</p>
+      <p>Insight score: {{result.result.insight_score}}</p>
+      <p>Last update: {{result.last_updated}}</p>
+    </div>
     <button class="btn btn-primary" ng-click="showingPopup()">Consent</button>
   </div>
   <div class="popup" ng-if="showPopup">

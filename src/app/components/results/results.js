@@ -26,6 +26,7 @@ angular.module( 'ixLayer.results', [
 
     $scope.notChecked = false;
     $scope.showPopup = false;
+    $scope.results = results;
 
     $scope.showingPopup = function() {
       $scope.showPopup = true;

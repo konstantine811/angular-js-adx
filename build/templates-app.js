@@ -352,7 +352,13 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
   $templateCache.put("components/results/results.tpl.html",
     "<div class=\"container\">\n" +
     "  <div class=\"row\">\n" +
-    "    <h1>Results page: </h1>\n" +
+    "    <h1>Results page:</h1>\n" +
+    "    <div ng-repeat=\"result in results\">\n" +
+    "      <p>Product id: {{result.id}}</p>\n" +
+    "      <p>Product: {{result.product}}</p>\n" +
+    "      <p>Insight score: {{result.result.insight_score}}</p>\n" +
+    "      <p>Last update: {{result.last_updated}}</p>\n" +
+    "    </div>\n" +
     "    <button class=\"btn btn-primary\" ng-click=\"showingPopup()\">Consent</button>\n" +
     "  </div>\n" +
     "  <div class=\"popup\" ng-if=\"showPopup\">\n" +
