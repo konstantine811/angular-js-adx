@@ -7,9 +7,13 @@ var hosts = {
     schema:   'https',
     host:     'app.ixlayer.com'
   },
+  stage: {
+    schema:   'https',
+    host:     'stage.ixlayer.com'
+  },
   dev: {
     schema:   'https',
-    host:     'prod.ixlayer.com'
+    host:     'dev.ixlayer.com'
   },
   local: {
     schema:   'http',
@@ -18,7 +22,7 @@ var hosts = {
 };
 
 /** Select the base host to be used **/
-var currentHost = hosts.dev;
+var currentHost = hosts.stage;
 
 var restAPIBaseUrl = currentHost.schema + '://' + currentHost.host + '/api';
 
