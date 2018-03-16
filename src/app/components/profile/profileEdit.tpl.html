@@ -21,6 +21,18 @@
                         <span ng-show="form.email.$error.required">Please enter a value</span>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="gender" name="gender" class="form-control" ng-model="profile.gender">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date_of_birth" name="date_of_birth" class="form-control" ng-model="profile.date_of_birth">
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="phone" name="phone" class="form-control" ng-model="profile.phone">
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;
                 <button class="btn btn-primary" ui-sref="profile">Cancel</button>
             </div>

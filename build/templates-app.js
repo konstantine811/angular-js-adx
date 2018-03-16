@@ -234,6 +234,18 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
     "                    </div>\n" +
     "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Gender</label>\n" +
+    "                    <input type=\"gender\" name=\"gender\" class=\"form-control\" ng-model=\"profile.gender\">\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Date of Birth</label>\n" +
+    "                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\">\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label>Phone</label>\n" +
+    "                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
+    "                </div>\n" +
     "                <button type=\"submit\" class=\"btn btn-primary\">Submit</button>&nbsp;&nbsp;\n" +
     "                <button class=\"btn btn-primary\" ui-sref=\"profile\">Cancel</button>\n" +
     "            </div>\n" +
@@ -249,6 +261,9 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "        <p>First Name: {{profile.user.first_name}}</p>\n" +
     "        <p>Last Name: {{ profile.user.last_name }}</p>\n" +
     "        <p>Email: {{ profile.user.email }}</p>\n" +
+    "        <p>Gender: {{ profile.gender }}</p>\n" +
+    "        <p>Date of Birth: {{ profile.date_of_birth }}</p>\n" +
+    "        <p>Phone: {{ profile.phone }}</p>\n" +
     "        <button class=\"btn btn-primary\" ui-sref=\"profileEdit\">Edit</button>\n" +
     "    </div>\n" +
     "</div>");
