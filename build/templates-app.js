@@ -235,8 +235,14 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
-    "                    <label>Gender</label>\n" +
-    "                    <input type=\"gender\" name=\"gender\" class=\"form-control\" ng-model=\"profile.gender\">\n" +
+    "                    <label for=\"gender\">Gender</label>\n" +
+    "                    <div>\n" +
+    "                        <select class=\"form-control\" name=\"gender\" id=\"gender\" ng-model=\"profile.gender\" required title=\"Gender\">\n" +
+    "                            <option value=\"\" selected>Select Gender</option>\n" +
+    "                            <option value=\"male\">Male</option>\n" +
+    "                            <option value=\"female\">Female</option>\n" +
+    "                        </select>\n" +
+    "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                    <label>Date of Birth</label>\n" +
