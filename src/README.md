@@ -46,3 +46,18 @@ a Grunt template, so variables from `Gruntfile.js` and `package.json` can be
 referenced from within it. Changing `name` in `package.json` from
 "ng-boilerplate" will rename the resultant CSS and JavaScript placed in `build/`,
 so this HTML references them by variable for convenience.
+
+
+## Configuring the environment
+1. Checkout the code from bitbucket
+2. `npm install`
+3. `npm -g install grunt-cli karma bower protractor`
+5. `bower install`
+6. `grunt watch`
+7. `webddriver-manager update`
+
+## To run end-to-end tests
+1. Start `grunt watch` from one command window
+2. `webdriver-manager start` from another command window
+3. `npm run protractor` (this will runy only the tests on chrome)
+

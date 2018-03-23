@@ -41,7 +41,7 @@
                                 <input type="checkbox" ng-model="userForm.terms" required><i></i> Agree to the <a href="http://www.ixlayer.com/terms/" target="_blank">Terms and Conditions</a>
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Submit</button>
+                        <button test-hook="submit-register" type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Submit</button>
                     </div>
                 
                     <br>
@@ -60,7 +60,7 @@
             </a>
         </div>
     </div>
-    <div class="popup" ng-if="showPopup">
+    <div class="popup" ng-if="showPopup" test-hook="tour-start-popover">
         <div class="popup-content" ng-class="showPopup = 'popup-content-animation'">
             <div class="popup-condition-txt scrollme" ng-scrollbar is-bar-shown="barShown">
                 <p class="popup-condition-txt__inner">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <button class="btn btn-primary" type="button" ng-click="agree(checked)">OK</button>
+                        <button test-hook="tour-end-button" class="btn btn-primary" type="button" ng-click="agree(checked)">OK</button>
                         <button class="btn btn-warning" type="button" ng-click="noAgree()">Cancel</button>
                     </div>
                 </div>

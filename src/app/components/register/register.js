@@ -26,6 +26,7 @@ angular.module( 'ixLayer.register', [
     vm.showPopup = false;
     vm.notChecked = false;
 
+
     vm.submitForm = function (form) {
       vm.showPopup = true;
       vm.agree = function(checked) {
@@ -37,6 +38,7 @@ angular.module( 'ixLayer.register', [
             vm.complete = true;
           }, function(error) {
             vm.errors = error;
+            console.log(vm.errors);
 
           });
           vm.notChecked = false;

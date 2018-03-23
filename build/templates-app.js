@@ -132,7 +132,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "   <div class=\"row\">\n" +
     "       <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1>Login</h1>\n" +
-    "            <div class=\"panel\" ng-controller=\"LoginCtrl\">\n" +
+    "            <div class=\"panel\">\n" +
     "                <form name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "                    <div class=\"form-group\">\n" +
     "                        <label>Email</label>\n" +
@@ -146,7 +146,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "                        <label>Password</label>\n" +
     "                        <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" required>\n" +
     "                    </div>\n" +
-    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Login</button>\n" +
+    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\">Login</button>\n" +
     "                </form>\n" +
     "\n" +
     "                <br>\n" +
@@ -158,7 +158,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "\n" +
     "            <div class=\"forgot-password\">\n" +
     "                <a href ui-sref=\"forgot_password\">\n" +
-    "                    forgot password\n" +
+    "                    Forgot Password\n" +
     "                </a>\n" +
     "            </div>\n" +
     "       </div>\n" +
@@ -214,7 +214,7 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "<div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Edit Profile</h1>\n" +
-    "        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate>\n" +
+    "        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
     "            <div ng-show=\"!complete\">\n" +
     "                <div class=\"form-group\">\n" +
     "                    <label>Firstname</label>\n" +
@@ -246,13 +246,13 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                    <label>Date of Birth</label>\n" +
-    "                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\">\n" +
+    "                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\" placeholder=\"YYYY-MM-DD\" required>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                    <label>Phone</label>\n" +
     "                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
     "                </div>\n" +
-    "                <button type=\"submit\" class=\"btn btn-primary\">Submit</button>&nbsp;&nbsp;\n" +
+    "                <button test-hook=\"update-profile\" type=\"submit\" class=\"btn btn-primary\">Submit</button>&nbsp;&nbsp;\n" +
     "                <button class=\"btn btn-primary\" ui-sref=\"profile\">Cancel</button>\n" +
     "            </div>\n" +
     "        </form>\n" +
@@ -320,7 +320,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                                <input type=\"checkbox\" ng-model=\"userForm.terms\" required><i></i> Agree to the <a href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
     "                            </label>\n" +
     "                        </div>\n" +
-    "                        <button type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "                        <button test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
     "                    </div>\n" +
     "                \n" +
     "                    <br>\n" +
@@ -339,7 +339,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            </a>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"popup\" ng-if=\"showPopup\">\n" +
+    "    <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
     "        <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
     "            <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
     "                <p class=\"popup-condition-txt__inner\">\n" +
@@ -356,7 +356,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"col-sm-6\">\n" +
-    "                        <button class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
+    "                        <button test-hook=\"tour-end-button\" class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
     "                        <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
     "                    </div>\n" +
     "                </div>\n" +
@@ -385,7 +385,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"popup\" ng-if=\"needPopup && !consentAgreed\">\n" +
-    "    <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
+    "    <div class=\"popup-content\" ng-class=\"needPopup = 'popup-content-animation'\">\n" +
     "      <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
     "        <p class=\"popup-condition-txt__inner\">\n" +
     "          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
@@ -407,7 +407,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "        </div>\n" +
     "      </form>\n" +
     "    </div>\n" +
-    "    <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background-animation'\"></div>\n" +
+    "    <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
     "  </div>\n" +
     "</div>");
 }]);
@@ -518,7 +518,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </a>\n" +
     "        </li>\n" +
     "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a ng-click=\"logout()\">\n" +
+    "          <a test-hook=\"logout-button\" ng-click=\"logout()\">\n" +
     "            Logout\n" +
     "          </a>\n" +
     "        </li>\n" +

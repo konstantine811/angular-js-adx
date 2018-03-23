@@ -5,6 +5,8 @@ angular.module("ixLayer")
       templateUrl: "shared/header/header.tpl.html",
       controller: ['$scope', '$rootScope', 'djangoAuth',  'userAccessSrv', function($scope, $rootScope, djangoAuth, userAccessSrv) {
 
+        $scope.logged = false;
+
         $scope.logged = function() {
           var token = djangoAuth.getToken();
           if(token) {

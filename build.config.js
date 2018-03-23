@@ -32,7 +32,9 @@ module.exports = {
 
     html: [ 'src/index.html' ],
     // less: 'src/less/main.less',
-    sass: 'src/sass/main.scss'
+    sass: [
+      'src/sass/main.scss'
+    ]
   },
 
   /**

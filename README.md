@@ -6,18 +6,17 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 
 ## Quick Start
 
-Install Node.js and then:
+0. Install nvm
+1. `nvm use v7.0.0`
+3. `npm install`
+4. `npm -g install grunt-cli karma bower protractor`
+5. `bower install`
+6. `webddriver-manager update`
+7. `grunt watch`
 
-```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
-$ sudo npm -g install grunt-cli karma bower
-$ npm install
-$ bower install
-$ grunt watch
-```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+
+Finally, open http://localhost:8001 in your browser.
 
 Happy hacking!
 

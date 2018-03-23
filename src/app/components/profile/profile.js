@@ -45,11 +45,13 @@ angular.module( 'ixLayer.profile', [
     });
   })
 
-  .controller('ProfileViewCtrl', ['$scope', 'profile', function ProfileViewCtrl($scope, profile) {
+  .controller('ProfileViewCtrl', ['$scope', 'profile',
+    function ProfileViewCtrl($scope, profile) {
     $scope.profile = profile;
   }])
 
-  .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService', function ProfileEditCtrl($scope, $state, profile, profileService) {
+  .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService',
+    function ProfileEditCtrl($scope, $state, profile, profileService) {
     $scope.profile = profile;
 
     $scope.submitForm = function(data) {
@@ -57,4 +59,5 @@ angular.module( 'ixLayer.profile', [
         $state.go('profile');
       });
     };
+
   }]);
