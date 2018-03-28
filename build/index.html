@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html ng-app="ixLayer" ng-controller="AppCtrl">
-  <head>
-    <base href="/" />
+<head>
+  <base href="/" />
+  
+  <title ng-bind="pageTitle"></title>
+  
+  <!-- social media tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="ixLayer">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:image:src" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- compiled CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/ixlayer-web-angular-0.0.1.css" />
+  
+  <!-- compiled JavaScript -->
+  <script type="text/javascript" src="vendor/angular/angular.js"></script>
+  <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+  <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="vendor/angular-animate/angular-animate.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+  <script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script>
+  <script type="text/javascript" src="vendor/restangular/dist/restangular.min.js"></script>
+  <script type="text/javascript" src="vendor/raven-js/dist/raven.min.js"></script>
+  <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="vendor/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="vendor/ng-scrollbar/dist/ng-scrollbar.min.js"></script>
+  <script type="text/javascript" src="src/app/app.js"></script>
+  <script type="text/javascript" src="src/app/components/about/about.js"></script>
+  <script type="text/javascript" src="src/app/components/change_password/change_password.js"></script>
+  <script type="text/javascript" src="src/app/components/contact/contact.js"></script>
+  <script type="text/javascript" src="src/app/components/dashboard/dashboard.js"></script>
+  <script type="text/javascript" src="src/app/components/faq/faq.js"></script>
+  <script type="text/javascript" src="src/app/components/forgot_password/forgot_password.js"></script>
+  <script type="text/javascript" src="src/app/components/home/home.js"></script>
+  <script type="text/javascript" src="src/app/components/legal/legal.js"></script>
+  <script type="text/javascript" src="src/app/components/login/login.js"></script>
+  <script type="text/javascript" src="src/app/components/products/products.js"></script>
+  <script type="text/javascript" src="src/app/components/profile/profile.js"></script>
+  <script type="text/javascript" src="src/app/components/register/register.js"></script>
+  <script type="text/javascript" src="src/app/components/results/results.js"></script>
+  <script type="text/javascript" src="src/app/components/verify_email/verify_email.js"></script>
+  <script type="text/javascript" src="src/app/services/endpoints.js"></script>
+  <script type="text/javascript" src="src/app/services/error-handling.js"></script>
+  <script type="text/javascript" src="src/app/services/products.js"></script>
+  <script type="text/javascript" src="src/app/services/profile.js"></script>
+  <script type="text/javascript" src="src/app/services/results.js"></script>
+  <script type="text/javascript" src="src/app/shared/footer/footer.directive.js"></script>
+  <script type="text/javascript" src="src/app/shared/header/header.directive.js"></script>
+  <script type="text/javascript" src="src/app/shared/side-navbar/side-navbar.directive.js"></script>
+  <script type="text/javascript" src="src/app/shared/validators/password_verify.directive.js"></script>
+  <script type="text/javascript" src="src/common/config/conf-app.js"></script>
+  <script type="text/javascript" src="src/common/config/conf-restangular.js"></script>
+  <script type="text/javascript" src="src/common/config/conf-routing.js"></script>
+  <script type="text/javascript" src="src/common/django-auth/django-auth.js"></script>
+  <script type="text/javascript" src="src/common/users/useraccess.js"></script>
+  <script type="text/javascript" src="templates-app.js"></script>
 
-    <title ng-bind="pageTitle"></title>
-
-    <!-- social media tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="ixLayer">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:image:src" content="">
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- compiled CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/ixlayer-web-angular-0.0.1.css" />
-
-    <!-- compiled JavaScript -->
-    <script type="text/javascript" src="vendor/angular/angular.js"></script>
-    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
-    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
-    <script type="text/javascript" src="vendor/angular-animate/angular-animate.min.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
-    <script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script>
-    <script type="text/javascript" src="vendor/restangular/dist/restangular.min.js"></script>
-    <script type="text/javascript" src="vendor/raven-js/dist/raven.min.js"></script>
-    <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
-    <script type="text/javascript" src="vendor/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="vendor/ng-scrollbar/dist/ng-scrollbar.min.js"></script>
-    <script type="text/javascript" src="src/app/app.js"></script>
-    <script type="text/javascript" src="src/app/components/about/about.js"></script>
-    <script type="text/javascript" src="src/app/components/change_password/change_password.js"></script>
-    <script type="text/javascript" src="src/app/components/contact/contact.js"></script>
-    <script type="text/javascript" src="src/app/components/dashboard/dashboard.js"></script>
-    <script type="text/javascript" src="src/app/components/faq/faq.js"></script>
-    <script type="text/javascript" src="src/app/components/forgot_password/forgot_password.js"></script>
-    <script type="text/javascript" src="src/app/components/home/home.js"></script>
-    <script type="text/javascript" src="src/app/components/legal/legal.js"></script>
-    <script type="text/javascript" src="src/app/components/login/login.js"></script>
-    <script type="text/javascript" src="src/app/components/products/products.js"></script>
-    <script type="text/javascript" src="src/app/components/profile/profile.js"></script>
-    <script type="text/javascript" src="src/app/components/register/register.js"></script>
-    <script type="text/javascript" src="src/app/components/results/results.js"></script>
-    <script type="text/javascript" src="src/app/components/verify_email/verify_email.js"></script>
-    <script type="text/javascript" src="src/app/services/endpoints.js"></script>
-    <script type="text/javascript" src="src/app/services/error-handling.js"></script>
-    <script type="text/javascript" src="src/app/services/products.js"></script>
-    <script type="text/javascript" src="src/app/services/profile.js"></script>
-    <script type="text/javascript" src="src/app/services/results.js"></script>
-    <script type="text/javascript" src="src/app/shared/footer/footer.directive.js"></script>
-    <script type="text/javascript" src="src/app/shared/header/header.directive.js"></script>
-    <script type="text/javascript" src="src/app/shared/validators/password_verify.directive.js"></script>
-    <script type="text/javascript" src="src/common/config/conf-app.js"></script>
-    <script type="text/javascript" src="src/common/config/conf-restangular.js"></script>
-    <script type="text/javascript" src="src/common/config/conf-routing.js"></script>
-    <script type="text/javascript" src="src/common/django-auth/django-auth.js"></script>
-    <script type="text/javascript" src="src/common/users/useraccess.js"></script>
-    <script type="text/javascript" src="templates-app.js"></script>
-
-  </head>
-  <body>
-    <div app-header></div>
-    <div class="container" ui-view></div>
-    <div app-footer></div>
-  </body>
+</head>
+<body>
+<div app-side-navbar></div>
+<div class="page">
+  <div app-header></div>
+  <div ui-view></div>
+</div>
+</body>
 </html>

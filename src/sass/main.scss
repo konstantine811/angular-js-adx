@@ -13,7 +13,11 @@
 @import '../../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
 
+@import './partials/variables.scss';
+@import './partials/logo.scss';
 
+
+@import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
 @import '../app/components/products/products.scss';
 @import '../app/shared/footer/footer.scss';
@@ -24,6 +28,21 @@
 
 a[ng-click] {
   cursor: pointer;
+}
+
+.body {
+  overflow-y: hidden;
+}
+
+
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: width 0.3s linear;
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 

@@ -1,7 +1,8 @@
 angular.module("ixLayer")
-  .directive('appHeader', function() {
+// footer height
+  .directive('appSideNavbar', function() {
     return {
-      templateUrl: "shared/header/header.tpl.html",
+      templateUrl: "shared/side-navbar/side-navbar.tpl.html",
       controller: ['$scope', '$rootScope', 'djangoAuth',  'userAccessSrv', function($scope, $rootScope, djangoAuth, userAccessSrv) {
 
         $scope.logged = false;

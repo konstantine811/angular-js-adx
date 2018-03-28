@@ -1,8 +1,8 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>This is page About</h1>\n" +
     "  </div>\n" +
@@ -11,7 +11,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/change_password/change_password.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1>Change Password</h1>\n" +
@@ -45,7 +45,7 @@ angular.module("components/change_password/change_password.tpl.html", []).run(["
 
 angular.module("components/contact/contact.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/contact/contact.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Contacts</h1>\n" +
     "    </div>\n" +
@@ -54,7 +54,7 @@ angular.module("components/contact/contact.tpl.html", []).run(["$templateCache",
 
 angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/dashboard/dashboard.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Status: {{ status.seq_status }}</h1>\n" +
     "        <ul>\n" +
@@ -71,7 +71,7 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
 
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/faq/faq.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Frequently asked questions.</h1>\n" +
     "    </div>\n" +
@@ -80,7 +80,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1>Forgot Password</h1>\n" +
@@ -110,7 +110,7 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
 
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>Home</h1>\n" +
     "  </div>\n" +
@@ -119,7 +119,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
 
 angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/legal/legal.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>This is page Legal</h1>\n" +
     "    </div>\n" +
@@ -128,7 +128,7 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/login/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/login/login.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "   <div class=\"row\">\n" +
     "       <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1>Login</h1>\n" +
@@ -168,7 +168,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>This is page Products</h1>\n" +
     "    </div>\n" +
@@ -187,7 +187,7 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/productsDetail.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-12\">\n" +
     "            <div ng-show=\"!contentEmpty\">\n" +
@@ -211,7 +211,7 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
 
 angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileEdit.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Edit Profile</h1>\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
@@ -262,7 +262,7 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
 
 angular.module("components/profile/profileView.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileView.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <p>First Name: {{profile.user.first_name}}</p>\n" +
     "        <p>Last Name: {{ profile.user.last_name }}</p>\n" +
@@ -277,7 +277,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1 class=\"page-header\">Registration Form</h1>\n" +
@@ -371,7 +371,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>Results page:</h1>\n" +
     "    <div class=\"error\" ng-show=\"!consentAgreed\">You have not confirmed results consent</div>\n" +
@@ -414,7 +414,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/verify_email/verify_email.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Verify Email</h1>\n" +
     "        <div ng-show=\"complete\">Great! You email address has been verified</div>\n" +
@@ -426,7 +426,7 @@ angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templ
 angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/footer/footer.tpl.html",
     "<footer class=\"footer\">\n" +
-    "    <div class=\"container\">\n" +
+    "    <div class=\"container-fluid\">\n" +
     "        <div class=\"navbar navbar-default\">\n" +
     "            <div class=\"navbar-header\">\n" +
     "                <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
@@ -466,7 +466,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"navbar navbar-default\">\n" +
     "    <div class=\"navbar-header\">\n" +
     "      <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
@@ -526,4 +526,42 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "    </div>\n" +
     "  </div>\n" +
     "</div>");
+}]);
+
+angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("shared/side-navbar/side-navbar.tpl.html",
+    "<nav class=\"side-navbar\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"side-navbar-header\">\n" +
+    "        <div class=\"side-navbar-header__logo\">\n" +
+    "          <div class=\"header-logo header-logo--small animation\">\n" +
+    "            <div class=\"rect rect-top\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-first\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-second\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-bottom\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
+    "          <p class=\"header-about-txt\">Analytics Platform</p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav>");
 }]);

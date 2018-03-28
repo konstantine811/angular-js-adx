@@ -1,0 +1,31 @@
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  text-align: left;
+  background: $blue;
+  color: white;
+  z-index: 999;
+  overflow-y: auto;
+}
+.header-logo.header-logo--small {
+  transform: scale(0.4);
+  width: 36px;
+  height: 39px;
+}
+
+.side-navbar-header__logo {
+  padding-left: 25%;
+}
+
+.header-logo-txt {
+  display: inline-block;
+  font-size: 17px;
+}
+.header-about-txt {
+  text-align: left;
+  font-size: 13px;
+  padding-left: 11px;
+}
