@@ -533,6 +533,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "<nav class=\"side-navbar\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
+    "      <!--logo header-->\n" +
     "      <div class=\"side-navbar-header\">\n" +
     "        <div class=\"side-navbar-header__logo\">\n" +
     "          <div class=\"header-logo header-logo--small animation\">\n" +
@@ -560,6 +561,35 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
     "          <p class=\"header-about-txt\">Analytics Platform</p>\n" +
     "        </div>\n" +
+    "        <!--end logo header-->\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <!--nav-top-->\n" +
+    "      <div class=\"side-navbar-link\">\n" +
+    "        <ul class=\"side-navbar-link__top\">\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\"><i class=\"fa fa-image\"></i>Dashboard</a>\n" +
+    "          </li>\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\">Overeiew</a>\n" +
+    "          </li>\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\">Users</a>\n" +
+    "          </li>\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\">Customiztions</a>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
+    "        <!--nav-bottom-->\n" +
+    "        <ul class=\"side-navbar-link__bottom\">\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\">Account</a>\n" +
+    "          </li>\n" +
+    "          <li class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\">Log out</a>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
