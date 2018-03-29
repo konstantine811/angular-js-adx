@@ -476,7 +476,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "      <div class=\"col-sm-6\">\n" +
     "        <div class=\"notifications\">\n" +
-    "          <i class=\"fa fa-image\"></i> Notifications\n" +
+    "          <i class=\"fa fa-bell\"></i> Notifications\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -525,16 +525,16 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar-link\">\n" +
     "        <ul class=\"side-navbar-link__top\">\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Home</a>\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-home\"></i>Home</a>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"about\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Overview</a>\n" +
+    "            <a href ui-sref=\"about\" class=\"nav-link\"><i class=\"fa fa-bar-chart\"></i>Overview</a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"profile\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Users</a>\n" +
+    "            <a href ui-sref=\"profile\" class=\"nav-link\"><i class=\"fa fa-users\"></i>Users</a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Dashboard</a>\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-gear\"></i>Dashboard</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "        <!--nav-bottom-->\n" +
@@ -546,10 +546,10 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "            <a href ui-sref=\"login\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Login</a>\n" +
     "          </li>\n" +
     "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\"><i class=\"fa fa-image\"></i>Account</a>\n" +
+    "            <a class=\"nav-link\"><i class=\"fa fa-user-circle-o\"></i>Account</a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Log out</a>\n" +
+    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><i class=\"fa fa-sign-out\"></i>Logout</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </div>\n" +
