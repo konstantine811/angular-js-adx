@@ -122,8 +122,15 @@ module.exports = function ( grunt ) {
             cwd: '.',
             expand: true,
             flatten: true
+          },
+          {
+              src: [ '<%= vendor_files.font %>' ],
+              dest: '<%= build_dir %>/fonts/',
+              flatten: true,
+              cwd: '.',
+              expand: true
           }
-       ]   
+       ]
       },
       build_appjs: {
         files: [
