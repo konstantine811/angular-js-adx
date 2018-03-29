@@ -30,3 +30,30 @@
   padding-left: 11px;
 }
 
+.side-navbar-link__item {
+  list-style: none;
+  padding-bottom: 18px;
+}
+
+.nav-link {
+  color: $white;
+  transition: color 0.3s ease;
+  &:hover {
+    color: silver;
+    cursor: pointer;
+  }
+}
+
+i.fa {
+  padding-right: 8px;
+}
+
+.side-navbar-link__top {
+  margin-top: 30%;
+}
+
+.side-navbar-link__bottom {
+  position: absolute;
+  bottom: 7%;
+}
+

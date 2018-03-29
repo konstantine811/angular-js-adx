@@ -568,26 +568,32 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <!--nav-top-->\n" +
     "      <div class=\"side-navbar-link\">\n" +
     "        <ul class=\"side-navbar-link__top\">\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\"><i class=\"fa fa-image\"></i>Dashboard</a>\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Home</a>\n" +
     "          </li>\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\">Overeiew</a>\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"about\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Overview</a>\n" +
     "          </li>\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\">Users</a>\n" +
+    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"profile\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Users</a>\n" +
     "          </li>\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\">Customiztions</a>\n" +
+    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Dashboard</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "        <!--nav-bottom-->\n" +
     "        <ul class=\"side-navbar-link__bottom\">\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\">Account</a>\n" +
+    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"register\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Registration</a>\n" +
     "          </li>\n" +
-    "          <li class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\">Log out</a>\n" +
+    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"login\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Login</a>\n" +
+    "          </li>\n" +
+    "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\"><i class=\"fa fa-image\"></i>Account</a>\n" +
+    "          </li>\n" +
+    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Log out</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </div>\n" +
