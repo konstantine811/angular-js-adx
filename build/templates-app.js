@@ -466,66 +466,22 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "  <div class=\"navbar navbar-default\">\n" +
-    "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
-    "              ng-click=\"menuCollapsed = ! menuCollapsed\">\n" +
-    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "      </button>\n" +
-    "      <div class=\"navbar-brand\">\n" +
-    "        ixlayer\n" +
+    "<header class=\"header-page\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"col-sm-6\">\n" +
+    "        <div class=\"bread-crumbs\">\n" +
+    "          Overview\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"col-sm-6\">\n" +
+    "        <div class=\"notifications\">\n" +
+    "          <i class=\"fa fa-image\"></i> Notifications\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
-    "    <div class=\"collapse navbar-collapse\" collapse=\"menuCollapsed\">\n" +
-    "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"home\">\n" +
-    "            Home\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"about\">\n" +
-    "            About\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"products\">\n" +
-    "            Products\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"profile\">\n" +
-    "            Profile\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"dashboard\">\n" +
-    "            Dashboard\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"register\">\n" +
-    "            Registration\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"login\">\n" +
-    "            Login\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a test-hook=\"logout-button\" ng-click=\"logout()\">\n" +
-    "            Logout\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
-    "    </div>\n" +
     "  </div>\n" +
-    "</div>");
+    "</header>");
 }]);
 
 angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
