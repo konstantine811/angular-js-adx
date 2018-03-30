@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 200px;
+  width: 278px;
   text-align: left;
   background: $blue;
   color: white;
@@ -17,26 +17,34 @@
 }
 
 .side-navbar-header__logo {
-  padding-left: 25%;
+  padding-left: 73px;
 }
 
 .header-logo-txt {
   display: inline-block;
   font-size: 17px;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
 }
 .header-about-txt {
   text-align: left;
-  font-size: 13px;
+  font-size: 12pt;
   padding-left: 11px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .side-navbar-link__item {
   list-style: none;
-  padding-bottom: 18px;
+  padding-bottom: 26px;
 }
 
 .nav-link {
   color: $white;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
   transition: color 0.3s ease;
   &:hover {
     color: silver;
@@ -49,7 +57,8 @@ i.fa {
 }
 
 .side-navbar-link__top {
-  margin-top: 30%;
+  margin-top: 93px;
+  padding: 0 0 0 36px;
 }
 
 .side-navbar-link__bottom {

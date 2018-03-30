@@ -7527,6 +7527,24 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../../assets/fonts/Raleway/Raleway-MediumItalic.eot");
+  src: url("../../assets/fonts/Raleway/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway/Raleway-MediumItalic.ttf") format("truetype"), url("../../assets/fonts/Raleway/Raleway-MediumItalic.svg") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: "Raleway";
+  src: url("../../assets/fonts/Raleway/Raleway-Regular.eot");
+  src: url("../../assets/fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../../assets/fonts/Raleway/Raleway-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: regular; }
+@font-face {
+  font-family: "Raleway";
+  src: url("../../assets/fonts/Raleway/Raleway-Bold.eot");
+  src: url("../../assets/fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway/Raleway-Bold.ttf") format("truetype"), url("../../assets/fonts/Raleway/Raleway-Bold.svg") format("svg");
+  font-weight: 600;
+  font-style: bold; }
 .header-logo {
   display: inline-block;
   position: relative;
@@ -7620,7 +7638,7 @@ button.close {
   top: 0;
   left: 0;
   height: 100%;
-  width: 200px;
+  width: 278px;
   text-align: left;
   background: #2E6CFF;
   color: white;
@@ -7633,23 +7651,31 @@ button.close {
   height: 39px; }
 
 .side-navbar-header__logo {
-  padding-left: 25%; }
+  padding-left: 73px; }
 
 .header-logo-txt {
   display: inline-block;
-  font-size: 17px; }
+  font-size: 17px;
+  font-family: Raleway, sans-serif;
+  font-weight: 400; }
 
 .header-about-txt {
   text-align: left;
-  font-size: 13px;
-  padding-left: 11px; }
+  font-size: 12pt;
+  padding-left: 11px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-style: italic; }
 
 .side-navbar-link__item {
   list-style: none;
-  padding-bottom: 18px; }
+  padding-bottom: 26px; }
 
 .nav-link {
   color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
   transition: color 0.3s ease; }
   .nav-link:hover {
     color: silver;
@@ -7659,7 +7685,8 @@ i.fa {
   padding-right: 8px; }
 
 .side-navbar-link__top {
-  margin-top: 30%; }
+  margin-top: 93px;
+  padding: 0 0 0 36px; }
 
 .side-navbar-link__bottom {
   position: absolute;
@@ -7870,8 +7897,14 @@ a:hover, a:focus {
   top: 0;
   right: 0;
   transition: width 0.3s linear;
-  width: calc(100% - 200px);
+  width: calc(100% - 278px);
   min-height: 100vh;
   padding-bottom: 50px; }
+
+.container-page {
+  width: 100%;
+  height: auto;
+  padding-left: 24px;
+  padding-right: 29px; }
 
 /*# sourceMappingURL=ixlayer-web-angular-0.0.1.css.map */

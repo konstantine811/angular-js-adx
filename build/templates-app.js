@@ -525,7 +525,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar-link\">\n" +
     "        <ul class=\"side-navbar-link__top\">\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-home\"></i>Home</a>\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-home\"></i>Dashboard</a>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a href ui-sref=\"about\" class=\"nav-link\"><i class=\"fa fa-bar-chart\"></i>Overview</a>\n" +
@@ -534,7 +534,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "            <a href ui-sref=\"profile\" class=\"nav-link\"><i class=\"fa fa-users\"></i>Users</a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-gear\"></i>Dashboard</a>\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-gear\"></i>Customizations</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "        <!--nav-bottom-->\n" +

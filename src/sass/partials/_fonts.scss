@@ -1,0 +1,15 @@
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('../../assets/fonts/#{$path}.eot');
+    src: url('../../assets/fonts/#{$path}.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/#{$path}.ttf') format('truetype'),
+    url('../../assets/fonts/#{$path}.svg') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+};
+
+@include font-face('Raleway', 'Raleway/Raleway-MediumItalic', 500, italic);
+@include font-face('Raleway', 'Raleway/Raleway-Regular', 400, regular);
+@include font-face('Raleway', 'Raleway/Raleway-Bold', 600, bold);
