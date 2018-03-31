@@ -7693,8 +7693,10 @@ i.fa {
   bottom: 7%; }
 
 .header-page {
+  position: relative;
   min-height: 60px;
-  background-color: #F9FBFD; }
+  background-color: #F9FBFD;
+  z-index: 1000; }
 
 .bread-crumbs {
   font-size: 22px;
@@ -7896,15 +7898,41 @@ a:hover, a:focus {
   position: absolute;
   top: 0;
   right: 0;
-  transition: width 0.3s linear;
   width: calc(100% - 278px);
   min-height: 100vh;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  transition: all 0.5s ease; }
 
 .container-page {
   width: 100%;
   height: auto;
   padding-left: 24px;
-  padding-right: 29px; }
+  padding-right: 29px;
+  position: absolute;
+  z-index: 100;
+  transition: all 0.5s ease; }
+
+.container-page.ng-enter {
+  animation: fade-in 0.5s both ease; }
+
+.container-page.ng-leave {
+  animation: fade-out 0.5s both ease; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, -140px); }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0); }
+  100% {
+    opacity: 0;
+    transform: translate(0, 140px); } }
 
 /*# sourceMappingURL=ixlayer-web-angular-0.0.1.css.map */

@@ -17,7 +17,8 @@ angular.module( 'ixLayer', [
   'ixLayer.forgotPassword',
   'ixLayer.changePassword',
   'ixLayer.results',
-  'ui.router'
+  'ui.router',
+  'ngAnimate'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
