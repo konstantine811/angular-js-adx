@@ -7671,15 +7671,25 @@ button.close {
   list-style: none;
   padding-bottom: 26px; }
 
+.side-navbar-link__item.active {
+  transition: font-weight 0.4s ease; }
+  .side-navbar-link__item.active .nav-link {
+    font-weight: 600; }
+  .side-navbar-link__item.active i.fa {
+    color: #fff; }
+
 .nav-link {
   color: #fff;
   font-family: Raleway, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12pt;
   transition: color 0.3s ease; }
   .nav-link:hover {
     color: silver;
     cursor: pointer; }
+  .nav-link i.fa {
+    color: #a8bbe9;
+    transition: color 0.6s ease; }
 
 i.fa {
   padding-right: 8px; }
@@ -7698,11 +7708,12 @@ i.fa {
   background-color: #F9FBFD;
   z-index: 1000; }
 
-.bread-crumbs {
+.header-page__title {
   font-size: 22px;
   color: #2E6CFF;
   padding-top: 12px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  transition: all 0.5s ease; }
 
 .notifications {
   font-size: 22px;
@@ -7882,6 +7893,16 @@ span.summary.ng-valid {
   filter: "alpha(opacity=60)";
   -ms-filter: "alpha(opacity=60)";
   /* old ie */ }
+
+[animation-on-change] {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translate(0px, 0); }
+
+[animation-on-change].changed {
+  opacity: 0;
+  transform: translate(-20px, 0);
+  transition: none; }
 
 a[ng-click] {
   cursor: pointer; }

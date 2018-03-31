@@ -2,7 +2,7 @@ angular.module("ixLayer")
   .directive('appHeader', function() {
     return {
       templateUrl: "shared/header/header.tpl.html",
-      controller: ['$scope', '$location', function($scope, $location) {
+      controller: ['$scope', '$location', '$timeout', function($scope, $location) {
           $scope.title = function() {
             var path = $location.$$path.substring(1);
             var title;

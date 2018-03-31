@@ -28,6 +28,9 @@
 @import './partials/scroll_bar.scss';
 @import '../app/components/register/register.scss';
 
+//animation for directives
+@import '../app/shared/animation-directive/animation.directive.scss';
+
 a[ng-click] {
   cursor: pointer;
 }

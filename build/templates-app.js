@@ -470,7 +470,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"col-sm-6\">\n" +
-    "        <div class=\"bread-crumbs\">\n" +
+    "        <div class=\"header-page__title\" animation-on-change=\"title()\">\n" +
     "          {{ title() }}\n" +
     "        </div>\n" +
     "      </div>\n" +

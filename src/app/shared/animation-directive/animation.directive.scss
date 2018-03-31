@@ -1,0 +1,11 @@
+[animation-on-change] {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translate(0px, 0);
+}
+
+[animation-on-change].changed {
+  opacity: 0;
+  transform: translate(-20px, 0);
+  transition: none;
+}

@@ -40,15 +40,29 @@
   padding-bottom: 26px;
 }
 
+.side-navbar-link__item.active {
+  transition: font-weight 0.4s ease;
+  .nav-link {
+    font-weight: 600;
+  }
+  i.fa {
+    color: $white;
+  }
+}
+
 .nav-link {
   color: $white;
   font-family: Raleway, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12pt;
   transition: color 0.3s ease;
   &:hover {
     color: silver;
     cursor: pointer;
+  }
+  i.fa {
+    color: $white-blue;
+    transition: color 0.6s ease;
   }
 }
 
