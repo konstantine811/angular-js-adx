@@ -111,8 +111,168 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
     "<div class=\"container-fluid\">\n" +
+    "  <!--section head-->\n" +
     "  <div class=\"row\">\n" +
-    "    <h1>Home</h1>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent red\"><i class=\"fa fa-arrow-down\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--section main-->\n" +
+    "  <div class=\"row\">\n" +
+    "    <div class=\"col-sm-8\">\n" +
+    "       <div class=\"container-title-section\">\n" +
+    "         <div class=\"container-title-section-top border-silver\">\n" +
+    "           <div class=\"container-title-section-top__title\">\n" +
+    "             <h3 class=\"container-title\">Title of section</h3>\n" +
+    "           </div>\n" +
+    "           <div class=\"container-title-section__bottom\">\n" +
+    "             <div class=\"row\">\n" +
+    "               <div class=\"col-sm-6\">\n" +
+    "                 <div class=\"container-title__button\">\n" +
+    "                   <button class=\"bt green\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "               <div class=\"col-sm-6\">\n" +
+    "                 <div class=\"container-title__button\">\n" +
+    "                   <button class=\"bt green\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "         <div class=\"container-title-section-bottom\">\n" +
+    "           <div class=\"row\">\n" +
+    "             <div class=\"col-sm-6\">\n" +
+    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
+    "                 <div class=\"container-title-section-top__title\">\n" +
+    "                   <h3 class=\"container-title\">Title of section</h3>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"container-title-section__bottom\">\n" +
+    "                   <button class=\"bt grey\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "             <div class=\"col-sm-6\">\n" +
+    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
+    "                 <div class=\"container-title-section-top__title\">\n" +
+    "                   <h3 class=\"container-title\">Title of section</h3>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"container-title-section__bottom\">\n" +
+    "                   <button class=\"bt grey\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "       </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-title-ixlayer\">\n" +
+    "        <div class=\"container-title-ixlayer__header\">\n" +
+    "          <div class=\"header-logo header-logo--small animation\">\n" +
+    "            <div class=\"rect rect-top\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-first\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-second\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-bottom\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
+    "        </div>\n" +
+    "        <div class=\"container-title-ixlayer__about-txt\">\n" +
+    "        \n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
     "  </div>\n" +
     "</div>");
 }]);

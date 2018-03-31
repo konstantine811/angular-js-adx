@@ -1,0 +1,25 @@
+body {
+  font-family: 'Open Sans', Raleway, sans-serif;
+  font-weight: 400;
+}
+
+//common fonts style
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  padding: 0;
+  margin: 0;
+}
+
+//common styling
+.border-silver {
+  border: 1px solid $silver-4;
+}
