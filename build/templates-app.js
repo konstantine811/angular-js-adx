@@ -471,7 +471,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "    <div class=\"row\">\n" +
     "      <div class=\"col-sm-6\">\n" +
     "        <div class=\"bread-crumbs\">\n" +
-    "          Overview\n" +
+    "          {{ title() }}\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"col-sm-6\">\n" +
