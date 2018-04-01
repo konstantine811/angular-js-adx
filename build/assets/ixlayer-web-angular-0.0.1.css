@@ -7549,17 +7549,40 @@ body {
   font-family: 'Open Sans', Raleway, sans-serif;
   font-weight: 400; }
 
+.txt-color-blue {
+  color: #5F83DA; }
+
+.txt-bold {
+  font-weight: 600; }
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 9pt; }
+  font-size: 9pt;
+  color: #fff; }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 12pt;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #fff; }
+
+.txt {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: #fff; }
+
+.header-logo-txt {
+  display: inline-block;
+  font-size: 12pt;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+.header-logo-txt-large {
+  font-size: 14pt; }
 
 .border-silver {
   border: 1px solid #8898AA; }
@@ -7704,6 +7727,19 @@ a.bt.grey, button.bt.grey {
 a.bt.grey:hover, button.bt.grey:hover {
   background: #F5F5F5; }
 
+button.button-border-rounded {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 35px;
+  padding: 5px 31px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 9pt;
+  white-space: nowrap; }
+
 .side-navbar {
   position: fixed;
   top: 0;
@@ -7723,12 +7759,6 @@ a.bt.grey:hover, button.bt.grey:hover {
 
 .side-navbar-header__logo {
   padding-left: 73px; }
-
-.header-logo-txt {
-  display: inline-block;
-  font-size: 17px;
-  font-family: Raleway, sans-serif;
-  font-weight: 400; }
 
 .header-about-txt {
   text-align: left;
@@ -7839,6 +7869,32 @@ a.bt.grey:hover, button.bt.grey:hover {
   position: relative;
   min-height: 324px;
   width: 100%; }
+
+.container-title-ixlayer {
+  width: 95%;
+  background-color: #223761;
+  padding: 20px;
+  margin-top: 14px;
+  float: right; }
+
+.container-title-ixlayer__about-txt {
+  margin-top: 34px; }
+
+.ixlayer-about__txt {
+  width: 100%;
+  height: auto;
+  padding-top: 18px; }
+
+.container-about-button {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column; }
+
+.ixlayer-about__button {
+  width: 50%;
+  height: auto;
+  padding-top: 15px;
+  padding-right: 15px; }
 
 .header-page {
   position: relative;

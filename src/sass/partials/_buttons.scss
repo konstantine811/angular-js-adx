@@ -59,3 +59,20 @@ a.bt.grey, button.bt.grey {
 a.bt.grey:hover, button.bt.grey:hover {
   background: $white-grey;
 }
+
+//border button
+button.button-border-rounded {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 35px;
+  padding: 5px 31px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 9pt;
+  white-space: nowrap;
+}
+
+

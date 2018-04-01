@@ -4,11 +4,19 @@ body {
 }
 
 //common fonts style
+.txt-color-blue {
+  color: $blue-2;
+}
+
+.txt-bold {
+  font-weight: 600;
+}
 
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 9pt;
+  color: $white;
 }
 
 h3 {
@@ -17,9 +25,29 @@ h3 {
   font-size: 12pt;
   padding: 0;
   margin: 0;
+  color: $white;
+}
+
+.txt {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: $white;
+}
+
+.header-logo-txt {
+  display: inline-block;
+  font-size: 12pt;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  color: $white;
+}
+
+.header-logo-txt-large {
+  font-size: 14pt;
 }
 
 //common styling
 .border-silver {
   border: 1px solid $silver-4;
 }
+

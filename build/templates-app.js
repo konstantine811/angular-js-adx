@@ -198,7 +198,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "       <div class=\"container-title-section\">\n" +
     "         <div class=\"container-title-section-top border-silver\">\n" +
     "           <div class=\"container-title-section-top__title\">\n" +
-    "             <h3 class=\"container-title\">Title of section</h3>\n" +
+    "             <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
     "           </div>\n" +
     "           <div class=\"container-title-section__bottom\">\n" +
     "             <div class=\"row\">\n" +
@@ -220,7 +220,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "             <div class=\"col-sm-6\">\n" +
     "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
     "                 <div class=\"container-title-section-top__title\">\n" +
-    "                   <h3 class=\"container-title\">Title of section</h3>\n" +
+    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
     "                 </div>\n" +
     "                 <div class=\"container-title-section__bottom\">\n" +
     "                   <button class=\"bt grey\">Button</button>\n" +
@@ -230,7 +230,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "             <div class=\"col-sm-6\">\n" +
     "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
     "                 <div class=\"container-title-section-top__title\">\n" +
-    "                   <h3 class=\"container-title\">Title of section</h3>\n" +
+    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
     "                 </div>\n" +
     "                 <div class=\"container-title-section__bottom\">\n" +
     "                   <button class=\"bt grey\">Button</button>\n" +
@@ -243,33 +243,63 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "    </div>\n" +
     "    <div class=\"col-sm-4\">\n" +
     "      <div class=\"container-title-ixlayer\">\n" +
-    "        <div class=\"container-title-ixlayer__header\">\n" +
-    "          <div class=\"header-logo header-logo--small animation\">\n" +
-    "            <div class=\"rect rect-top\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "        <div class=\"container-title-ixlayer__inner\">\n" +
+    "          <div class=\"container-title-ixlayer__header\">\n" +
+    "            <div class=\"header-logo header-logo--small animation\">\n" +
+    "              <div class=\"rect rect-top\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-middle-first\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-middle-second\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-bottom\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"rect rect-middle-first\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
-    "              </div>\n" +
+    "            <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
+    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
+    "              About IxLayer\n" +
+    "            </h3>\n" +
+    "            <div class=\"ixlayer-about__txt\">\n" +
+    "              <p class=\"txt\">\n" +
+    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
+    "              </p>\n" +
     "            </div>\n" +
-    "            <div class=\"rect rect-middle-second\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
-    "              </div>\n" +
+    "            <div class=\"ixlayer-about__button\">\n" +
+    "              <button class=\"button-border-rounded\">Visit website</button>\n" +
     "            </div>\n" +
-    "            <div class=\"rect rect-bottom\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
+    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
+    "              Need help?\n" +
+    "            </h3>\n" +
+    "            <div class=\"ixlayer-about__txt\">\n" +
+    "              <p class=\"txt\">\n" +
+    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"container-about-button\">\n" +
+    "              <div class=\"ixlayer-about__button\">\n" +
+    "                <button class=\"button-border-rounded\">Email</button>\n" +
+    "              </div>\n" +
+    "              <div class=\"ixlayer-about__button\">\n" +
+    "                <button class=\"button-border-rounded\">Call: 415-254-2454</button>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
-    "        </div>\n" +
-    "        <div class=\"container-title-ixlayer__about-txt\">\n" +
-    "        \n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

@@ -81,4 +81,35 @@
   width: 100%;
 }
 
+.container-title-ixlayer {
+  width: 95%;
+  background-color: $violet;
+  padding: 20px;
+  margin-top: 14px;
+  float: right;
+}
+
+.container-title-ixlayer__about-txt {
+  margin-top: 34px;
+}
+
+.ixlayer-about__txt {
+  width: 100%;
+  height: auto;
+  padding-top: 18px;
+}
+
+.container-about-button {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.ixlayer-about__button {
+  width: 50%;
+  height: auto;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
 
