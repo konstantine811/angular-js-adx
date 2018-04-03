@@ -11,5 +11,11 @@
 };
 
 @include font-face('Raleway', 'Raleway/Raleway-MediumItalic', 500, italic);
-@include font-face('Raleway', 'Raleway/Raleway-Regular', 400, regular);
-@include font-face('Raleway', 'Raleway/Raleway-Bold', 600, bold);
+@include font-face('Raleway', 'Raleway/Raleway-Regular', 400);
+@include font-face('Raleway', 'Raleway/Raleway-Bold', 600);
+
+@include font-face('Quicksank', 'Quicksank/Quicksank-Bold', 600);
+@include font-face('Quicksank', 'Quicksank/Quicksank-Medium', 500);
+@include font-face('Quicksank', 'Quicksank/Quicksank-Regular', 400);
+@include font-face('Quicksank', 'Quicksank/Quicksank-Light', 100);
+

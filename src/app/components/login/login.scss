@@ -1,0 +1,32 @@
+.login-section {
+  height: 100vh;
+  width: 100%;
+  background-color: $white;
+}
+
+.head-sign {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.head-sign__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 167px;
+}
+
+.panel--login {
+  margin-top: 18%;
+}
+
+.forgot-password {
+  display: inline-block;
+}
+
+.login-button {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 207px;
+}

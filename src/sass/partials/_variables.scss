@@ -1,12 +1,19 @@
 $black-light: #464646;
 $blue: #2E6CFF;
 $blue-2: #5F83DA;
+$blue-4: #62B1D9;
+$blue_back-bottom: #36508D;
+$blue_back-top: #223761;
+$blue-dark: #657E97;
 $blue-light-2: #D7F5FD;
 $blue-light-3: #88c5fc;
+$blue-light-4: #83CBF1;
 $green: #67ff67;
 $green-2: #3AC69D;
 $green-light: #4BDBB1;
 $grey: #E1F0FF;
+$grey-6: #829BA5;
+$grey-white-2: #97C0CF;
 $pink-2: #f9a18a;
 $purple: #CF3095;
 $purple-4: #BD7ABD;
@@ -15,10 +22,20 @@ $silver: #F9FBFD;
 $silver-2: #a8abad;
 $silver-3: #a1a1a1;
 $silver-4: #8898AA;
+$silver-blue: #333F4C;
 $violet: #223761;
 $white: #fff;
+$white-2: #F6F9FC;
+$white-3: #F7F9FC;
 $white-blue: #a8bbe9;
 $white-grey: #F5F5F5;
 $yellow: #f7e88b;
+
+
+$background-blue: linear-gradient(to bottom, $blue_back-top, $blue_back-bottom);
+$background-blue-light: linear-gradient(to left, $blue-4, $blue-light-4);
+$background-grey: linear-gradient(to bottom, $blue-dark, $silver-blue);
+$background-grey-2: linear-gradient(to bottom, $grey-6, $grey-white-2);
+$background-grey-light: linear-gradient(to bottom, $white-2, $white);
 
 

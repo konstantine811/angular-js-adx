@@ -21,6 +21,8 @@
 
 @import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
+@import '../app/components/login/login.scss';
+@import '../app/components/forgot_password/forgot_password.scss';
 @import '../app/components/products/products.scss';
 @import '../app/shared/header/header.scss';
 @import '../app/shared/footer/footer.scss';
@@ -51,19 +53,35 @@ a:hover, a:focus {
   top: 0;
   right: 0;
   width: calc(100% - 278px);
-  min-height: 100vh;
-  padding-bottom: 50px;
-  transition: all 0.5s ease;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login.page {
+  position: relative;
+  width: 100%;
+  .container-page {
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+  .container-page.ng-enter {
+    animation: fade-in-simple 0.5s both ease;
+  }
+
+  .container-page.ng-leave {
+    animation: fade-out-simple 0.5s both ease;
+  }
 }
 
 .container-page {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-left: 24px;
   padding-right: 29px;
-  position: absolute;
   z-index: 100;
   transition: all 0.5s ease;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 .container-page.ng-enter {
@@ -72,6 +90,7 @@ a:hover, a:focus {
 
 .container-page.ng-leave {
   animation: fade-out 0.5s both ease;
+  overflow: hidden;
 }
 
 @keyframes fade-in {
@@ -96,6 +115,27 @@ a:hover, a:focus {
   100% {
     opacity: 0;
     transform: translate(0, 140px);
+  }
+}
+
+@keyframes fade-in-simple {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-simple {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
