@@ -12,6 +12,7 @@
 
 @import '../../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 @import "../../vendor/font-awesome/scss/font-awesome.scss";
+@import "../../vendor/c3/src/scss/main.scss";
 
 @import './partials/variables.scss';
 @import './partials/fonts.scss';
@@ -53,6 +54,7 @@ a:hover, a:focus {
   top: 0;
   right: 0;
   width: calc(100% - 278px);
+  padding-bottom: 80px;
   height: 100vh;
   overflow: hidden;
 }
@@ -62,14 +64,13 @@ a:hover, a:focus {
   width: 100%;
   .container-page {
     padding: 0;
-    transition: all 0.5s ease;
   }
   .container-page.ng-enter {
-    animation: fade-in-simple 0.5s both ease;
+    animation: fade-in-simple 0.5s both ease-in;
   }
 
   .container-page.ng-leave {
-    animation: fade-out-simple 0.5s both ease;
+    animation: fade-out-simple 0.5s both ease-in;
   }
 }
 
@@ -120,9 +121,6 @@ a:hover, a:focus {
 
 @keyframes fade-in-simple {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 0;
   }
   100% {

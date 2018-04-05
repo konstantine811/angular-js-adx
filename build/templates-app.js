@@ -176,7 +176,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "            <div class=\"col-sm-6\">\n" +
     "              <div class=\"data-content__chart\">\n" +
-    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "                <div class=\"chart\" id=\"chart\">There will be a chart</div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +

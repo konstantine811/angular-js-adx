@@ -10,7 +10,8 @@
     "jquery": "^3.3.1",
     "angular-animate": "^1.6.9",
     "ng-scrollbar": "^0.0.8",
-    "font-awesome": "fontawesome#~4.7.0"
+    "font-awesome": "fontawesome#~4.7.0",
+    "c3": "^0.5.2"
   },
   "dependencies": {
     "restangular": "^1.6.1",

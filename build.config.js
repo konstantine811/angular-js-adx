@@ -79,7 +79,9 @@ module.exports = {
       'vendor/raven-js/dist/raven.min.js',
       'vendor/angular-cookies/angular-cookies.min.js',
       'vendor/moment/min/moment.min.js',
-      'vendor/ng-scrollbar/dist/ng-scrollbar.min.js'
+      'vendor/ng-scrollbar/dist/ng-scrollbar.min.js',
+      'vendor/d3/d3.min.js',
+      'vendor/c3/c3.min.js'
     ],
     css: [
     ],
