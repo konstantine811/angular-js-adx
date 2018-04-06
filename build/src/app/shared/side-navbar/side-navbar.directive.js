@@ -6,6 +6,7 @@ angular.module("ixLayer")
       controller: ['$scope', '$rootScope', 'djangoAuth',  'userAccessSrv', function($scope, $rootScope, djangoAuth, userAccessSrv) {
 
         $scope.logged = false;
+        $scope.showUserInfo = false;
 
         $scope.logged = function() {
           var token = djangoAuth.getToken();
@@ -28,6 +29,8 @@ angular.module("ixLayer")
           userAccessSrv.logout();
           $scope.logged = false;
         };
+
       }]
     };
+
   });

@@ -494,12 +494,12 @@ module.exports = function ( grunt ) {
        * When our CoffeeScript source files change, we want to run lint them and
        * run our unit tests.
        */
-      coffeesrc: {
-        files: [ 
-          '<%= app_files.coffee %>'
-        ],
-        tasks: [ 'coffeelint:src', 'coffee:source', 'karma:unit:run', 'copy:build_appjs' ]
-      },
+      // coffeesrc: {
+      //   files: [
+      //     '<%= app_files.coffee %>'
+      //   ],
+      //   tasks: [ 'coffeelint:src', 'coffee:source', 'karma:unit:run', 'copy:build_appjs' ]
+      // },
 
       /**
        * When assets are changed, copy them. Note that this will *not* copy new
@@ -534,10 +534,10 @@ module.exports = function ( grunt ) {
       /**
        * When the CSS files change, we need to compile and minify them.
        */
-      less: {
-        files: [ 'src/**/*.less' ],
-        tasks: [ 'less:build' ]
-      },
+      // less: {
+      //   files: [ 'src/**/*.less' ],
+      //   tasks: [ 'less:build' ]
+      // },
 
       sass: {
         files: [ 'src/**/*.scss' ],
@@ -562,15 +562,15 @@ module.exports = function ( grunt ) {
        * When a CoffeeScript unit test file changes, we only want to lint it and
        * run the unit tests. We don't want to do any live reloading.
        */
-      coffeeunit: {
-        files: [
-          '<%= app_files.coffeeunit %>'
-        ],
-        tasks: [ 'coffeelint:test', 'karma:unit:run' ],
-        options: {
-          livereload: false
-        }
-      }
+      // coffeeunit: {
+      //   files: [
+      //     '<%= app_files.coffeeunit %>'
+      //   ],
+      //   tasks: [ 'coffeelint:test', 'karma:unit:run' ],
+      //   options: {
+      //     livereload: false
+      //   }
+      // }
     },
 
     connect: {

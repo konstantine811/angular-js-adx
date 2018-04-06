@@ -803,31 +803,39 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar-link\">\n" +
     "        <ul class=\"side-navbar-link__top\">\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"home\" class=\"nav-link\"><i class=\"fa fa-home\"></i>Dashboard</a>\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-home\"></i>Dashboard</span></a>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"about\" class=\"nav-link\"><i class=\"fa fa-bar-chart\"></i>Overview</a>\n" +
+    "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview</span></a>\n" +
+    "          </li>\n" +
+    "          <li  ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
+    "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down\"></i></span></a>\n" +
+    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"profile\" class=\"nav-link\"><i class=\"fa fa-users\"></i>Users</a>\n" +
-    "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><i class=\"fa fa-gear\"></i>Customizations</a>\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations</span></a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "        <!--nav-bottom-->\n" +
     "        <ul class=\"side-navbar-link__bottom\">\n" +
     "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"register\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Registration</a>\n" +
+    "            <a href ui-sref=\"register\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Registration</span></a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"login\" class=\"nav-link\"><i class=\"fa fa-image\"></i>Login</a>\n" +
+    "            <a href ui-sref=\"login\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Login</span></a>\n" +
     "          </li>\n" +
     "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\"><i class=\"fa fa-user-circle-o\"></i>Account</a>\n" +
+    "            <a class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-circle-o\"></i>Account</span></a>\n" +
     "          </li>\n" +
     "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><i class=\"fa fa-sign-out\"></i>Logout</a>\n" +
+    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-sign-out\"></i>Logout</span></a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </div>\n" +

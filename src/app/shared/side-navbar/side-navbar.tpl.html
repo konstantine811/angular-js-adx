@@ -37,31 +37,39 @@
       <div class="side-navbar-link">
         <ul class="side-navbar-link__top">
           <li ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="home" class="nav-link"><i class="fa fa-home"></i>Dashboard</a>
+            <a href ui-sref="home" class="nav-link"><span class="link-txt"><i class="fa fa-home"></i>Dashboard</span></a>
           </li>
           <li ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="about" class="nav-link"><i class="fa fa-bar-chart"></i>Overview</a>
+            <a href ui-sref="about" class="nav-link"><span class="link-txt"><i class="fa fa-bar-chart"></i>Overview</span></a>
+          </li>
+          <li  ng-if="logged" ui-sref-active="active" class="side-navbar-link__item side-navbar-link__item--users">
+            <a href ui-sref="profile" class="nav-link"><span class="link-txt"><i class="fa fa-user-o"></i>Users<i class="fa fa-angle-down"></i></span></a>
+            <ul  class="side-navbar-link__dropdown side-navbar-link__dropdown--users">
+              <li class="dropdown-item">
+                <a href  class="nav-link-dropdown">All users</a>
+              </li>
+              <li class="dropdown-item">
+                <a href  class="nav-link-dropdown">Gender</a>
+              </li>
+            </ul>
           </li>
           <li ng-if="logged" ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="profile" class="nav-link"><i class="fa fa-users"></i>Users</a>
-          </li>
-          <li ng-if="logged" ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="dashboard" class="nav-link"><i class="fa fa-gear"></i>Customizations</a>
+            <a href ui-sref="dashboard" class="nav-link"><span class="link-txt"><i class="fa fa-gear"></i>Customizations</span></a>
           </li>
         </ul>
         <!--nav-bottom-->
         <ul class="side-navbar-link__bottom">
           <li ng-if="!logged" ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="register" class="nav-link"><i class="fa fa-image"></i>Registration</a>
+            <a href ui-sref="register" class="nav-link"><span class="link-txt"><i class="fa fa-image"></i>Registration</span></a>
           </li>
           <li ng-if="!logged" ui-sref-active="active" class="side-navbar-link__item">
-            <a href ui-sref="login" class="nav-link"><i class="fa fa-image"></i>Login</a>
+            <a href ui-sref="login" class="nav-link"><span class="link-txt"><i class="fa fa-image"></i>Login</span></a>
           </li>
           <li  ui-sref-active="active" class="side-navbar-link__item">
-            <a class="nav-link"><i class="fa fa-user-circle-o"></i>Account</a>
+            <a class="nav-link"><span class="link-txt"><i class="fa fa-user-circle-o"></i>Account</span></a>
           </li>
           <li ng-if="logged" ui-sref-active="active" class="side-navbar-link__item">
-            <a test-hook="logout-button" ng-click="logout()" class="nav-link"><i class="fa fa-sign-out"></i>Logout</a>
+            <a test-hook="logout-button" ng-click="logout()" class="nav-link"><span class="link-txt"><i class="fa fa-sign-out"></i>Logout</span></a>
           </li>
         </ul>
       </div>
