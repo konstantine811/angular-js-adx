@@ -374,7 +374,9 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div class=\"container\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>Results page:</h1>\n" +
-    "    <div class=\"error\" ng-show=\"!consentAgreed\">You have not confirmed results consent</div>\n" +
+    "    <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
+    "\n" +
+    "    <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
     "    <div ng-show=\"consentAgreed\">\n" +
     "      <div ng-repeat=\"result in results\">\n" +
     "        <p>Product id: {{result.id}}</p>\n" +
@@ -384,7 +386,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <div class=\"popup\" ng-if=\"needPopup && !consentAgreed\">\n" +
+    "  <div class=\"popup\" ng-if=\"!noProducts && needPopup && !consentAgreed\">\n" +
     "    <div class=\"popup-content\" ng-class=\"needPopup = 'popup-content-animation'\">\n" +
     "      <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
     "        <p class=\"popup-condition-txt__inner\">\n" +
