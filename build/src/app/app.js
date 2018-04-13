@@ -17,7 +17,9 @@ angular.module( 'ixLayer', [
   'ixLayer.forgotPassword',
   'ixLayer.changePassword',
   'ixLayer.results',
-  'ui.router'
+  'ui.router',
+  'ngAnimate',
+  'ngScrollbar'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
@@ -46,13 +48,29 @@ angular.module( 'ixLayer', [
 .run( function run () {
 })
 
-.controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-    if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
-    }
-  });
-});
+  .controller( 'AppCtrl', ['$scope', '$location', function AppCtrl ( $scope, $location ) {
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+      if ( angular.isDefined( toState.data.pageTitle ) ) {
+        $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
+      }
+    });
+
+    $scope.hide = function() {
+      var path = $location.$$path.substring(1);
+      switch(path) {
+        case 'login':
+          return true;
+        case 'forgot_password':
+          return true;
+        case 'register':
+          return true;
+        default:
+          return false;
+      }
+      return false;
+    };
+  }
+  ]);
 
 // global error handling goes here
 angular.module('exceptionOverride', []).factory('$exceptionHandler', function() {

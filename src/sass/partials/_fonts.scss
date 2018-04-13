@@ -1,0 +1,17 @@
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('../../assets/fonts/#{$path}.eot');
+    src: url('../../assets/fonts/#{$path}.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/#{$path}.ttf') format('truetype'),
+    url('../../assets/fonts/#{$path}.svg') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+};
+
+@include font-face('Quicksand', 'Quicksand/Quicksand-Bold', 600);
+@include font-face('Quicksand', 'Quicksand/Quicksand-Medium', 500);
+@include font-face('Quicksand', 'Quicksand/Quicksand-Regular', 400);
+@include font-face('Quicksand', 'Quicksand/Quicksand-Light', 100);
+

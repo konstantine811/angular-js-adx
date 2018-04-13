@@ -1,8 +1,8 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>This is page About</h1>\n" +
     "  </div>\n" +
@@ -11,7 +11,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/change_password/change_password.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1>Change Password</h1>\n" +
@@ -45,7 +45,7 @@ angular.module("components/change_password/change_password.tpl.html", []).run(["
 
 angular.module("components/contact/contact.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/contact/contact.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Contacts</h1>\n" +
     "    </div>\n" +
@@ -54,7 +54,7 @@ angular.module("components/contact/contact.tpl.html", []).run(["$templateCache",
 
 angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/dashboard/dashboard.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Status: {{ status.seq_status }}</h1>\n" +
     "        <ul>\n" +
@@ -71,7 +71,7 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
 
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/faq/faq.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Frequently asked questions.</h1>\n" +
     "    </div>\n" +
@@ -80,46 +80,280 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<div class=\"container\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "            <h1>Forgot Password</h1>\n" +
-    "            <div class=\"panel\" ng-controller=\"ForgotPasswordCtrl\">\n" +
-    "                <div ng-show=\"!success\">\n" +
-    "                <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
-    "                    <p>Please enter your email address below:</p>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Email</label>\n" +
-    "                        <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
-    "                        <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                            <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                            <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "<section class=\"fp-section\">\n" +
+    "    <div class=\"fp-head\">\n" +
+    "        <div class=\"head-fp__background\">\n" +
+    "            <div class=\"main-background main-background--grey-second\"></div>\n" +
+    "        </div>\n" +
+    "        <div class=\"container\">\n" +
+    "            <div class=\"row\">\n" +
+    "                <div class=\"col-sm-12\">\n" +
+    "                    <div class=\"header-logo header-logo--small animation\">\n" +
+    "                        <div class=\"rect rect-top\">\n" +
+    "                            <div class=\"rect-txt\">\n" +
+    "                                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"rect rect-middle-first\">\n" +
+    "                            <div class=\"rect-txt\">\n" +
+    "                                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"rect rect-middle-second\">\n" +
+    "                            <div class=\"rect-txt\">\n" +
+    "                                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"rect rect-bottom\">\n" +
+    "                            <div class=\"rect-txt\">\n" +
+    "                                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
-    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
-    "                </form>\n" +
+    "                    <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
     "                </div>\n" +
-    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "                <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
-    "                <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
+    "            </div>\n" +
+    "            <div class=\"row\">\n" +
+    "                <div class=\"col-sm-12\">\n" +
+    "                    <div class=\"fp-section__title-txt\">\n" +
+    "                        <h1 class=\"title\">Forgot Password</h1>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"row\">\n" +
+    "                <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "                    <div class=\"panel panel--fp\" ng-controller=\"ForgotPasswordCtrl\">\n" +
+    "                        <div ng-show=\"!success\">\n" +
+    "                            <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
+    "                                <p class=\"about-title-txt txt-black-light\">Please enter your email address below:</p>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label class=\"form-label\">Email</label>\n" +
+    "                                    <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
+    "                                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                                        <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"fp-form-button\">\n" +
+    "                                    <div class=\"fp-form-button__wrap\">\n" +
+    "                                        <button class=\"bt blue not-margin\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </form>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "                        <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "                        <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "</section>");
 }]);
 
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
+    "  <!--section head-->\n" +
     "  <div class=\"row\">\n" +
-    "    <h1>Home</h1>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\" id=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent red\"><i class=\"fa fa-arrow-down\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-box-shadow\">\n" +
+    "        <div class=\"container-box-shadow__inner\">\n" +
+    "          <h4 class=\"title-box\">Total Views</h4>\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content\">\n" +
+    "                <div class=\"data-content__count\">\n" +
+    "                  <div class=\"data-content__top\">\n" +
+    "                    <div class=\"data-count-title\">226K</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"data-content__bottom\">\n" +
+    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"data-content__chart\">\n" +
+    "                <div class=\"chart\">There will be a chart</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--section main-->\n" +
+    "  <div class=\"row\">\n" +
+    "    <div class=\"col-sm-8\">\n" +
+    "       <div class=\"container-title-section\">\n" +
+    "         <div class=\"container-title-section-top border-silver\">\n" +
+    "           <div class=\"container-title-section-top__title\">\n" +
+    "             <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
+    "           </div>\n" +
+    "           <div class=\"container-title-section__bottom\">\n" +
+    "             <div class=\"row\">\n" +
+    "               <div class=\"col-sm-6\">\n" +
+    "                 <div class=\"container-title__button\">\n" +
+    "                   <button class=\"bt green\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "               <div class=\"col-sm-6\">\n" +
+    "                 <div class=\"container-title__button\">\n" +
+    "                   <button class=\"bt green\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "         <div class=\"container-title-section-bottom\">\n" +
+    "           <div class=\"row\">\n" +
+    "             <div class=\"col-sm-6\">\n" +
+    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
+    "                 <div class=\"container-title-section-top__title\">\n" +
+    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"container-title-section__bottom\">\n" +
+    "                   <button class=\"bt grey\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "             <div class=\"col-sm-6\">\n" +
+    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
+    "                 <div class=\"container-title-section-top__title\">\n" +
+    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"container-title-section__bottom\">\n" +
+    "                   <button class=\"bt grey\">Button</button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "       </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "      <div class=\"container-title-ixlayer\">\n" +
+    "        <div class=\"container-title-ixlayer__inner\">\n" +
+    "          <div class=\"container-title-ixlayer__header\">\n" +
+    "            <div class=\"header-logo header-logo--small animation\">\n" +
+    "              <div class=\"rect rect-top\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-middle-first\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-middle-second\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"rect rect-bottom\">\n" +
+    "                <div class=\"rect-txt\">\n" +
+    "                  <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
+    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
+    "              About IxLayer\n" +
+    "            </h3>\n" +
+    "            <div class=\"ixlayer-about__txt\">\n" +
+    "              <p class=\"txt\">\n" +
+    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"ixlayer-about__button\">\n" +
+    "              <button class=\"button-border-rounded\">Visit website</button>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
+    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
+    "              Need help?\n" +
+    "            </h3>\n" +
+    "            <div class=\"ixlayer-about__txt\">\n" +
+    "              <p class=\"txt\">\n" +
+    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"container-about-button\">\n" +
+    "              <div class=\"ixlayer-about__button\">\n" +
+    "                <button class=\"button-border-rounded\">Email</button>\n" +
+    "              </div>\n" +
+    "              <div class=\"ixlayer-about__button\">\n" +
+    "                <button class=\"button-border-rounded\">Call: 415-254-2454</button>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
     "  </div>\n" +
     "</div>");
 }]);
 
 angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/legal/legal.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>This is page Legal</h1>\n" +
     "    </div>\n" +
@@ -128,47 +362,91 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/login/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/login/login.tpl.html",
-    "<div class=\"container\">\n" +
-    "   <div class=\"row\">\n" +
-    "       <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "            <h1>Login</h1>\n" +
-    "            <div class=\"panel\">\n" +
-    "                <form name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Email</label>\n" +
-    "                        <input type=\"email\" name=\"email\" class=\"form-control\" required ng-model=\"userForm.email\">\n" +
-    "                        <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                            <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                            <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"form-group\">\n" +
-    "                        <label>Password</label>\n" +
-    "                        <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" required>\n" +
-    "                    </div>\n" +
-    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\">Login</button>\n" +
-    "                </form>\n" +
-    "\n" +
-    "                <br>\n" +
-    "\n" +
-    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.non_field_errors\">{{::error}}</div>\n" +
-    "                <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "<section class=\"login-section\">\n" +
+    "  <div class=\"head-sign\">\n" +
+    "    <div class=\"head-sign__background\">\n" +
+    "      <div class=\"main-background main-background--grey-second\"></div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-12\">\n" +
+    "          <div class=\"header-logo header-logo--small animation\">\n" +
+    "            <div class=\"rect rect-top\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "              </div>\n" +
     "            </div>\n" +
-    "\n" +
-    "            <div class=\"forgot-password\">\n" +
-    "                <a href ui-sref=\"forgot_password\">\n" +
+    "            <div class=\"rect rect-middle-first\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-second\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-bottom\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-12\">\n" +
+    "          <div class=\"login-section__title-txt\">\n" +
+    "            <h1 class=\"title\">Sign in to our Analytics Platform</h1>\n" +
+    "          </div>\n" +
+    "          <div class=\"login-section__about-txt\">\n" +
+    "            <p class=\"about-title-txt\">Log into your account to view product progress, statistics and tracktion informaion.</p>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "          <div class=\"panel panel--login\">\n" +
+    "            <form name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
+    "              <div class=\"form-group\">\n" +
+    "                <label class=\"form-label\">Email</label>\n" +
+    "                <input type=\"email\" name=\"email\" class=\"form-control\" required ng-model=\"userForm.email\">\n" +
+    "                <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                  <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                  <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                <label class=\"form-label\">Password</label>\n" +
+    "                <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" required>\n" +
+    "              </div>\n" +
+    "              <div class=\"login-button\">\n" +
+    "                <div class=\"forgot-password\">\n" +
+    "                  <a href ui-sref=\"forgot_password\">\n" +
     "                    Forgot Password\n" +
-    "                </a>\n" +
-    "            </div>\n" +
-    "       </div>\n" +
-    "   </div>\n" +
-    "</div>");
+    "                  </a>\n" +
+    "                </div>\n" +
+    "                <div class=\"login-button__wrap\">\n" +
+    "                  <button class=\"bt blue not-margin\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\">Login</button>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </form>\n" +
+    "            <br>\n" +
+    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.non_field_errors\">{{::error}}</div>\n" +
+    "            <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</section>");
 }]);
 
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>This is page Products</h1>\n" +
     "    </div>\n" +
@@ -187,7 +465,7 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/productsDetail.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-12\">\n" +
     "            <div ng-show=\"!contentEmpty\">\n" +
@@ -211,7 +489,7 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
 
 angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileEdit.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Edit Profile</h1>\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
@@ -262,7 +540,7 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
 
 angular.module("components/profile/profileView.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileView.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <p>First Name: {{profile.user.first_name}}</p>\n" +
     "        <p>Last Name: {{ profile.user.last_name }}</p>\n" +
@@ -277,7 +555,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
     "            <h1 class=\"page-header\">Registration Form</h1>\n" +
@@ -371,7 +649,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <h1>Results page:</h1>\n" +
     "    <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
@@ -416,7 +694,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/verify_email/verify_email.tpl.html",
-    "<div class=\"container\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "        <h1>Verify Email</h1>\n" +
     "        <div ng-show=\"complete\">Great! You email address has been verified</div>\n" +
@@ -428,7 +706,7 @@ angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templ
 angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/footer/footer.tpl.html",
     "<footer class=\"footer\">\n" +
-    "    <div class=\"container\">\n" +
+    "    <div class=\"container-fluid\">\n" +
     "        <div class=\"navbar navbar-default\">\n" +
     "            <div class=\"navbar-header\">\n" +
     "                <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
@@ -468,64 +746,102 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
-    "<div class=\"container\">\n" +
-    "  <div class=\"navbar navbar-default\">\n" +
-    "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
-    "              ng-click=\"menuCollapsed = ! menuCollapsed\">\n" +
-    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "      </button>\n" +
-    "      <div class=\"navbar-brand\">\n" +
-    "        ixlayer\n" +
+    "<header class=\"header-page\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"col-sm-6\">\n" +
+    "        <div class=\"header-page__title\" animation-on-change=\"title()\">\n" +
+    "          {{ title() }}\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"col-sm-6\">\n" +
+    "        <div class=\"notifications\">\n" +
+    "          <i class=\"fa fa-bell\"></i> Notifications\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
-    "    <div class=\"collapse navbar-collapse\" collapse=\"menuCollapsed\">\n" +
-    "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"home\">\n" +
-    "            Home\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"about\">\n" +
-    "            About\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"products\">\n" +
-    "            Products\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"profile\">\n" +
-    "            Profile\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"dashboard\">\n" +
-    "            Dashboard\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"register\">\n" +
-    "            Registration\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"!logged\" ui-sref-active=\"active\">\n" +
-    "          <a href ui-sref=\"login\">\n" +
-    "            Login\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "        <li ng-if=\"logged\" ui-sref-active=\"active\">\n" +
-    "          <a test-hook=\"logout-button\" ng-click=\"logout()\">\n" +
-    "            Logout\n" +
-    "          </a>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
+    "  </div>\n" +
+    "</header>");
+}]);
+
+angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("shared/side-navbar/side-navbar.tpl.html",
+    "<nav class=\"side-navbar\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <!--logo header-->\n" +
+    "      <div class=\"side-navbar-header\">\n" +
+    "        <div class=\"side-navbar-header__logo\">\n" +
+    "          <div class=\"header-logo header-logo--small animation\">\n" +
+    "            <div class=\"rect rect-top\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-first\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-middle-second\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"rect rect-bottom\">\n" +
+    "              <div class=\"rect-txt\">\n" +
+    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
+    "          <p class=\"header-about-txt\">Analytics Platform</p>\n" +
+    "        </div>\n" +
+    "        <!--end logo header-->\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <!--nav-top-->\n" +
+    "      <div class=\"side-navbar-link\">\n" +
+    "        <ul class=\"side-navbar-link__top\">\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-home\"></i>Dashboard</span></a>\n" +
+    "          </li>\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview</span></a>\n" +
+    "          </li>\n" +
+    "          <li  ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
+    "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down\"></i></span></a>\n" +
+    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "          </li>\n" +
+    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations</span></a>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
+    "        <!--nav-bottom-->\n" +
+    "        <ul class=\"side-navbar-link__bottom\">\n" +
+    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"register\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Registration</span></a>\n" +
+    "          </li>\n" +
+    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"login\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Login</span></a>\n" +
+    "          </li>\n" +
+    "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-circle-o\"></i>Account</span></a>\n" +
+    "          </li>\n" +
+    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-sign-out\"></i>Logout</span></a>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
+    "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</div>");
+    "</nav>");
 }]);

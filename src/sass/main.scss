@@ -11,20 +11,132 @@
  */
 
 @import '../../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
-@import '../../node_modules/font-awesome/scss/font-awesome.scss';
+@import "../../vendor/font-awesome/scss/font-awesome.scss";
+@import "../../vendor/c3/src/scss/main.scss";
 
+@import './partials/variables.scss';
+@import './partials/fonts.scss';
+@import './partials/_common-styling.scss';
+@import './partials/logo.scss';
+@import './partials/_buttons.scss';
 
+@import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
+@import '../app/components/login/login.scss';
+@import '../app/components/forgot_password/forgot_password.scss';
 @import '../app/components/products/products.scss';
+@import '../app/shared/header/header.scss';
 @import '../app/shared/footer/footer.scss';
 @import './partials/form_style.scss';
 @import './partials/popup.scss';
 @import './partials/scroll_bar.scss';
 @import '../app/components/register/register.scss';
 
+//animation for directives
+@import '../app/shared/animation-directive/animation.directive.scss';
+
 a[ng-click] {
   cursor: pointer;
 }
+
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.body {
+  overflow-y: hidden;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 278px);
+  padding-bottom: 80px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login.page {
+  position: relative;
+  width: 100%;
+  .container-page {
+    padding: 0;
+  }
+  .container-page.ng-enter {
+    animation: fade-in-simple 0.5s both ease-in;
+  }
+
+  .container-page.ng-leave {
+    animation: fade-out-simple 0.5s both ease-in;
+  }
+}
+
+.container-page {
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 29px;
+  z-index: 100;
+  transition: all 0.5s ease;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.container-page.ng-enter {
+  animation: fade-in 0.5s both ease;
+}
+
+.container-page.ng-leave {
+  animation: fade-out 0.5s both ease;
+  overflow: hidden;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, -140px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 140px);
+  }
+}
+
+@keyframes fade-in-simple {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-simple {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 
 

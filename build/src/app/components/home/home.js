@@ -33,8 +33,44 @@ angular.module( 'ixLayer.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', ['$scope', function HomeCtrl( $scope ) {
-}])
+.controller( 'HomeCtrl', ['$scope', '$timeout', function HomeCtrl( $scope, $timeout ) {
+  var chart = c3.generate({
+    bindto: '#chart',
+    size: {
+      height: 42
+    },
+    data: {
+      columns: [
+      ],
+      colors: {
+        data: '#74DFFE'
+      },
+      types: {
+        data: 'bar'
+      }
+    },
+    legend: {
+      show: false
+    },
+    axis: {
+      x: {
+        show: false
+      },
+      y: {
+        show: false
+      }
+    },
+    transition: {
+      duration: 500
+    }
+  });
 
-;
+  $timeout(function() {
+    chart.load({
+      columns: [
+        ['data', 30, 30, 20, 34, 43, 43, 23, 50, 34, 20, 54, 30, 53, 12]
+      ]
+    });
+  }, 500);
+}]);
 
