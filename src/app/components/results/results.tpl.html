@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
     <h1>Results page:</h1>
-    <div class="error" ng-show="!consentAgreed">You have not confirmed results consent</div>
+    <div class="error" ng-show="noProducts">You have not purchased any products</div>
+
+    <div class="error" ng-show="!noProducts && !consentAgreed">You did not consent to viewing the results</div>
     <div ng-show="consentAgreed">
       <div ng-repeat="result in results">
         <p>Product id: {{result.id}}</p>
@@ -11,7 +13,7 @@
       </div>
     </div>
   </div>
-  <div class="popup" ng-if="needPopup && !consentAgreed">
+  <div class="popup" ng-if="!noProducts && needPopup && !consentAgreed">
     <div class="popup-content" ng-class="needPopup = 'popup-content-animation'">
       <div class="popup-condition-txt scrollme" ng-scrollbar is-bar-shown="barShown">
         <p class="popup-condition-txt__inner">

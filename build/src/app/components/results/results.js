@@ -28,7 +28,13 @@ angular.module( 'ixLayer.results', [
     function ResultsCtrl($scope, $stateParams, resultsService, product, productStatus) {
 
       $scope.results = null;
-      $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
+      $scope.noProducts = productStatus === undefined;
+
+      if ($scope.noProducts === false) {
+        $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
+      } else {
+        $scope.consentAgreed = false;
+      }
       if ($scope.consentAgreed) {
         $scope.needPopup = false;
       } else {
