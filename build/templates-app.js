@@ -746,17 +746,36 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
-    "<header class=\"header-page\">\n" +
-    "  <div class=\"container-fluid\">\n" +
+    "<header class=\"header\">\n" +
+    "  <div class=\"container\">\n" +
     "    <div class=\"row\">\n" +
-    "      <div class=\"col-sm-6\">\n" +
-    "        <div class=\"header-page__title\" animation-on-change=\"title()\">\n" +
-    "          {{ title() }}\n" +
+    "      <div class=\"header__wrap\">\n" +
+    "        <!--logo-->\n" +
+    "        <div class=\"header__logo\">\n" +
+    "          <div class=\"logo-affirmativ__wrap\">\n" +
+    "            <div class=\"logo-affirmativ\"><span class=\"logo-affirmativ-cross\"></span></div>\n" +
+    "          </div>\n" +
+    "          <div class=\"logo-txt\">affirmativ</div>\n" +
     "        </div>\n" +
-    "      </div>\n" +
-    "      <div class=\"col-sm-6\">\n" +
-    "        <div class=\"notifications\">\n" +
-    "          <i class=\"fa fa-bell\"></i> Notifications\n" +
+    "        <!--navigation-->\n" +
+    "        <div class=\"header-nav\">\n" +
+    "          <nav class=\"header-nav__wrap\">\n" +
+    "            <ul class=\"header-nav-wrap__inner\">\n" +
+    "              <li class=\"header-nav-item\">\n" +
+    "                <a ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"header-nav-item\">\n" +
+    "                <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"header-nav-item\">\n" +
+    "                <a ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"header-nav-item\">\n" +
+    "                <a ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "          </nav>\n" +
+    "          <div class=\"header__button\"></div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -810,7 +829,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview</span></a>\n" +
     "          </li>\n" +
-    "          <li  ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
     "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down\"></i></span></a>\n" +
     "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
     "              <li class=\"dropdown-item\">\n" +
@@ -821,22 +840,22 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "              </li>\n" +
     "            </ul>\n" +
     "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations</span></a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "        <!--nav-bottom-->\n" +
     "        <ul class=\"side-navbar-link__bottom\">\n" +
-    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a href ui-sref=\"register\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Registration</span></a>\n" +
     "          </li>\n" +
-    "          <li ng-if=\"!logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a href ui-sref=\"login\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Login</span></a>\n" +
     "          </li>\n" +
     "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-circle-o\"></i>Account</span></a>\n" +
     "          </li>\n" +
-    "          <li ng-if=\"logged\" ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-sign-out\"></i>Logout</span></a>\n" +
     "          </li>\n" +
     "        </ul>\n" +

@@ -42,7 +42,7 @@
           <li ui-sref-active="active" class="side-navbar-link__item">
             <a href ui-sref="about" class="nav-link"><span class="link-txt"><i class="fa fa-bar-chart"></i>Overview</span></a>
           </li>
-          <li  ng-if="logged" ui-sref-active="active" class="side-navbar-link__item side-navbar-link__item--users">
+          <li ui-sref-active="active" class="side-navbar-link__item side-navbar-link__item--users">
             <a href ui-sref="profile" class="nav-link"><span class="link-txt"><i class="fa fa-user-o"></i>Users<i class="fa fa-angle-down"></i></span></a>
             <ul  class="side-navbar-link__dropdown side-navbar-link__dropdown--users">
               <li class="dropdown-item">
@@ -53,22 +53,22 @@
               </li>
             </ul>
           </li>
-          <li ng-if="logged" ui-sref-active="active" class="side-navbar-link__item">
+          <li ui-sref-active="active" class="side-navbar-link__item">
             <a href ui-sref="dashboard" class="nav-link"><span class="link-txt"><i class="fa fa-gear"></i>Customizations</span></a>
           </li>
         </ul>
         <!--nav-bottom-->
         <ul class="side-navbar-link__bottom">
-          <li ng-if="!logged" ui-sref-active="active" class="side-navbar-link__item">
+          <li  ui-sref-active="active" class="side-navbar-link__item">
             <a href ui-sref="register" class="nav-link"><span class="link-txt"><i class="fa fa-image"></i>Registration</span></a>
           </li>
-          <li ng-if="!logged" ui-sref-active="active" class="side-navbar-link__item">
+          <li ui-sref-active="active" class="side-navbar-link__item">
             <a href ui-sref="login" class="nav-link"><span class="link-txt"><i class="fa fa-image"></i>Login</span></a>
           </li>
           <li  ui-sref-active="active" class="side-navbar-link__item">
             <a class="nav-link"><span class="link-txt"><i class="fa fa-user-circle-o"></i>Account</span></a>
           </li>
-          <li ng-if="logged" ui-sref-active="active" class="side-navbar-link__item">
+          <li ui-sref-active="active" class="side-navbar-link__item">
             <a test-hook="logout-button" ng-click="logout()" class="nav-link"><span class="link-txt"><i class="fa fa-sign-out"></i>Logout</span></a>
           </li>
         </ul>

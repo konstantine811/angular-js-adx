@@ -1,22 +1,31 @@
-.header-page {
+.header {
   position: relative;
   min-height: 60px;
   background-color: $silver;
   z-index: 1000;
 }
 
-.header-page__title {
-  font-size: 22px;
-  color: $blue;
-  padding-top: 12px;
-  padding-left: 30px;
-  transition: all 0.5s ease;
+.header__wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.notifications {
-  font-size: 22px;
-  padding-top: 12px;
-  padding-right: 30px;
-  color: $blue;
-  text-align: right;
+.header__logo {
+  position: relative;
+  width: auto;
+  height: fit-content;
+  cursor: pointer;
+  &:hover {
+    .logo-affirmativ-cross {
+      animation: anim-affirmativ-cross 2s 1 forwards cubic-bezier(0, 0.63, 0.17, 1.16);
+    }
+  }
+}
+
+.header-nav-wrap__inner {
+  list-style: none;
+  width: 100%;
+  height: auto;
 }

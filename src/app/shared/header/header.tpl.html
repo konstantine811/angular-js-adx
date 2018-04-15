@@ -1,14 +1,33 @@
-<header class="header-page">
-  <div class="container-fluid">
+<header class="header">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <div class="header-page__title" animation-on-change="title()">
-          {{ title() }}
+      <div class="header__wrap">
+        <!--logo-->
+        <div class="header__logo">
+          <div class="logo-affirmativ__wrap">
+            <div class="logo-affirmativ"><span class="logo-affirmativ-cross"></span></div>
+          </div>
+          <div class="logo-txt">affirmativ</div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="notifications">
-          <i class="fa fa-bell"></i> Notifications
+        <!--navigation-->
+        <div class="header-nav">
+          <nav class="header-nav__wrap">
+            <ul class="header-nav-wrap__inner">
+              <li class="header-nav-item">
+                <a ui-sref="about" class="header-nav-link">About</a>
+              </li>
+              <li class="header-nav-item">
+                <a ui-sref="products" class="header-nav-link">Products</a>
+              </li>
+              <li class="header-nav-item">
+                <a ui-sref="FAQ" class="header-nav-link">FAQ</a>
+              </li>
+              <li class="header-nav-item">
+                <a ui-sref="contact" class="header-nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__button"></div>
         </div>
       </div>
     </div>

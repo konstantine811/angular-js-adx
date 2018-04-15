@@ -7889,6 +7889,47 @@ h3 {
   top: 6px;
   left: 42px; }
 
+.logo-affirmativ__wrap {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  top: 5px; }
+
+.logo-affirmativ {
+  width: 25px;
+  height: 25px;
+  background-color: #5ACDD6;
+  border-radius: 50%;
+  position: relative; }
+
+.logo-affirmativ-cross {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  transform-origin: 50%; }
+  .logo-affirmativ-cross:before, .logo-affirmativ-cross:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20%;
+    width: 3px;
+    height: 16px;
+    top: 4px;
+    left: 11px; }
+  .logo-affirmativ-cross:after {
+    transform: rotate(90deg); }
+
+.logo-txt {
+  font-family: Quicksand, sans-serif;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  font-size: 24px;
+  font-weight: 600;
+  color: #464646; }
+
 @keyframes anim-rect-top {
   0% {
     transform: rotateX(67deg) rotateY(0deg) rotateZ(46deg) translate3d(0px, 0px, 300px) skewY(7deg) skewX(9deg);
@@ -7921,6 +7962,15 @@ h3 {
   100% {
     transform: rotateX(67deg) rotateY(0deg) rotateZ(46deg) translate3d(0px, 0px, 120px) skewY(7deg) skewX(9deg);
     opacity: 1; } }
+@keyframes anim-affirmativ-cross {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  60% {
+    transform: rotate(180deg) scale(1.3); }
+  90% {
+    transform: rotate(280deg) scale(1); }
+  100% {
+    transform: rotate(360deg) scale(1); } }
 a.bt, button.bt {
   margin: 10px;
   padding: 14px 24px;
@@ -8240,25 +8290,30 @@ a.nav-link-dropdown {
 .panel--fp {
   margin-top: 18%; }
 
-.header-page {
+.header {
   position: relative;
   min-height: 60px;
   background-color: #F9FBFD;
   z-index: 1000; }
 
-.header-page__title {
-  font-size: 22px;
-  color: #2E6CFF;
-  padding-top: 12px;
-  padding-left: 30px;
-  transition: all 0.5s ease; }
+.header__wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between; }
 
-.notifications {
-  font-size: 22px;
-  padding-top: 12px;
-  padding-right: 30px;
-  color: #2E6CFF;
-  text-align: right; }
+.header__logo {
+  position: relative;
+  width: auto;
+  height: fit-content;
+  cursor: pointer; }
+  .header__logo:hover .logo-affirmativ-cross {
+    animation: anim-affirmativ-cross 2s 1 forwards cubic-bezier(0, 0.63, 0.17, 1.16); }
+
+.header-nav-wrap__inner {
+  list-style: none;
+  width: 100%;
+  height: auto; }
 
 .footer {
   margin-top: 50px; }

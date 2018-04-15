@@ -53,6 +53,7 @@
   <script type="text/javascript" src="src/app/components/register/register.js"></script>
   <script type="text/javascript" src="src/app/components/results/results.js"></script>
   <script type="text/javascript" src="src/app/components/verify_email/verify_email.js"></script>
+  <script type="text/javascript" src="src/app/ios.js"></script>
   <script type="text/javascript" src="src/app/services/endpoints.js"></script>
   <script type="text/javascript" src="src/app/services/error-handling.js"></script>
   <script type="text/javascript" src="src/app/services/products.js"></script>
@@ -72,9 +73,9 @@
 
 </head>
 <body>
-<div app-side-navbar ng-if="!hide()"></div>
-<div class="page" ng-class="{'login' : hide()}">
-  <div app-header ng-if="!hide()"></div>
+<div app-side-navbar ng-if="logged"></div>
+<div class="page" ng-class="{'login' : !logged}">
+  <div app-header ng-if="!logged"></div>
   <div class="container-page" ui-view></div>
 </div>
 </body>

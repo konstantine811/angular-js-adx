@@ -27,9 +27,9 @@
 
 </head>
 <body>
-<div app-side-navbar ng-if="!hide()"></div>
-<div class="page" ng-class="{'login' : hide()}">
-  <div app-header ng-if="!hide()"></div>
+<div app-side-navbar ng-if="logged"></div>
+<div class="page" ng-class="{'login' : !logged}">
+  <div app-header ng-if="!logged"></div>
   <div class="container-page" ui-view></div>
 </div>
 </body>
