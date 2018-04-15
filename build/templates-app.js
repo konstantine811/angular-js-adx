@@ -447,10 +447,6 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
     "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>This is page Products</h1>\n" +
-    "    </div>\n" +
-    "\n" +
     "    <div class=\"col-md-12\">\n" +
     "        <div ng-repeat=\"product in products\">\n" +
     "            <div>{{ product.name }}</div>\n" +
@@ -775,7 +771,14 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
-    "          <div class=\"header__button\"></div>\n" +
+    "          <div class=\"header__button\">\n" +
+    "            <div class=\"button__register\">\n" +
+    "              <a ui-sref=\"register\" class=\"bt-round bt-round--blue\">Register a kit</a>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__login\">\n" +
+    "              <a ui-sref=\"login\" class=\"bt-round bt-round--brown\">Sign in</a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

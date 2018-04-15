@@ -52,7 +52,10 @@ angular.module( 'ixLayer.profile', [
 
   .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService',
     function ProfileEditCtrl($scope, $state, profile, profileService) {
+
     $scope.profile = profile;
+
+
 
     $scope.submitForm = function(data) {
       profileService.updateProfile(data).then(function(result) {

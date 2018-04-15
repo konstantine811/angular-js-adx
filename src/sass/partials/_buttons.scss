@@ -77,4 +77,29 @@ button.button-border-rounded {
   font-size: 9pt;
 }
 
+.bt-round {
+  color: $white;
+  background-color: black;
+  border-radius: 17px;
+  padding: 5px 22px;
+  transition: all 0.4s ease-in;
+  outline: none;
+  font-weight: 500;
+  text-decoration: transparent;
+  &:hover, &:focus {
+    color: $white;
+    outline: none;
+    text-decoration: transparent;
+  }
+}
+
+.bt-round.bt-round--blue {
+  background-color: $blue-5;
+}
+
+.bt-round.bt-round--brown {
+  background-color: $brown;
+}
+
+
 
