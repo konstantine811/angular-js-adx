@@ -7743,8 +7743,18 @@ body {
 .txt-black-light {
   color: #464646 !important; }
 
+.txt-brown {
+  color: #EFD091 !important; }
+
 .txt-bold {
   font-weight: 600; }
+
+.txt-middle {
+  font-weight: 500; }
+
+.txt-link {
+  text-decoration: underline;
+  color: #5ACDD6; }
 
 h1 {
   font-family: Quicksand, sans-serif;
@@ -7805,33 +7815,6 @@ h3 {
 
 .main-background--light-blue {
   background: linear-gradient(to left, #62B1D9, #83CBF1); }
-
-.panel {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 50px 50px 30px;
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
-
-.form-control {
-  font-size: 15pt;
-  font-family: Quicksand, sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  display: inline-block;
-  height: 43px;
-  width: 68%;
-  border: none;
-  box-shadow: none;
-  background-color: #F7F9FC;
-  color: #5F83DA; }
-
-.form-label {
-  font-size: 13pt;
-  font-weight: 500;
-  font-family: Quicksand, sans-serif;
-  color: #657E97;
-  min-width: 100px;
-  width: 31%; }
 
 .header-logo {
   display: inline-block;
@@ -8041,13 +8024,18 @@ button.button-border-rounded {
 .bt-round {
   color: #fff;
   background-color: black;
-  border-radius: 17px;
-  padding: 5px 22px;
+  border-radius: 100px;
+  padding: 9px 34px;
+  display: inline-block;
   transition: all 0.4s ease-in;
   outline: none;
   font-weight: 500;
-  text-decoration: transparent; }
+  text-decoration: transparent;
+  border: none;
+  min-width: 121px;
+  text-align: center; }
   .bt-round:hover, .bt-round:focus {
+    border: none;
     color: #fff;
     outline: none;
     text-decoration: transparent; }
@@ -8260,10 +8248,19 @@ a.nav-link-dropdown {
   height: auto;
   padding-top: 15px; }
 
-.login-section {
+.login-page {
+  position: relative;
   height: 100vh;
   width: 100%;
   background-color: #fff; }
+
+.login-page__image-bgc {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/images/back_1.png);
+  background-size: cover;
+  filter: blur(6px); }
 
 .head-sign {
   width: 100%;
@@ -8286,6 +8283,22 @@ a.nav-link-dropdown {
   display: flex;
   justify-content: space-between;
   padding-left: 207px; }
+
+.form--login {
+  padding-top: 30px; }
+
+.login-button__wrap {
+  padding-top: 14px;
+  text-align: center; }
+
+.login-link {
+  text-align: center; }
+
+.login-link__inner {
+  padding-top: 15px; }
+
+.login-link--register {
+  font-size: 14pt; }
 
 .fp-section {
   height: 100vh;
@@ -8358,7 +8371,6 @@ a.nav-link-dropdown {
 .header__button {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
   padding-left: 25px; }
 
 .button__register {
@@ -8366,6 +8378,49 @@ a.nav-link-dropdown {
 
 .footer {
   margin-top: 50px; }
+
+.panel {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 50px 50px 30px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+
+.form-control {
+  font-size: 15pt;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: #F7F9FC;
+  color: #5F83DA;
+  border-radius: 42px;
+  padding-left: 25px; }
+
+.form-label {
+  font-size: 13pt;
+  font-weight: 500;
+  font-family: Quicksand, sans-serif;
+  color: #657E97;
+  min-width: 100px;
+  width: 31%; }
+
+.form-input {
+  width: 100%;
+  height: auto; }
+
+.form-input__wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.form-group--col {
+  width: 47%; }
+
+.panel__title {
+  width: 100%;
+  text-align: center; }
 
 form .ng-valid-required.ng-dirty {
   background-color: lightpink; }
@@ -8388,7 +8443,9 @@ span.summary.ng-valid {
 
 .error {
   color: red;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: 12px;
+  padding-top: 10px; }
 
 .popup {
   position: fixed;
@@ -8536,6 +8593,23 @@ span.summary.ng-valid {
   -ms-filter: "alpha(opacity=60)";
   /* old ie */ }
 
+.register-page {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.register-page__image-bgc {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/images/back_1.png);
+  background-size: cover;
+  filter: blur(6px); }
+
+.panel--register {
+  position: relative;
+  top: 88px; }
+
 [animation-on-change] {
   transition: all 0.4s;
   opacity: 1;
@@ -8562,7 +8636,7 @@ a:hover, a:focus {
   top: 0;
   right: 0;
   width: calc(100% - 278px);
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   height: 100vh;
   overflow: hidden; }
 

@@ -1,4 +1,22 @@
+.register-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.register-page__image-bgc {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/images/back_1.png);
+  background-size: cover;
+  filter: blur(6px);
+}
+
+.panel--register {
+  position: relative;
+  top: 88px;
+}
 
 
 

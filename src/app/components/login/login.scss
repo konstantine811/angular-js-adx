@@ -1,7 +1,17 @@
-.login-section {
+.login-page {
+  position: relative;
   height: 100vh;
   width: 100%;
   background-color: $white;
+}
+
+.login-page__image-bgc {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/images/back_1.png);
+  background-size: cover;
+  filter: blur(6px);
 }
 
 .head-sign {
@@ -29,4 +39,25 @@
   display: flex;
   justify-content: space-between;
   padding-left: 207px;
+}
+
+.form--login {
+  padding-top: 30px;
+}
+
+.login-button__wrap {
+  padding-top: 14px;
+  text-align: center;
+}
+
+.login-link {
+  text-align: center;
+}
+
+.login-link__inner {
+  padding-top: 15px;
+}
+
+.login-link--register {
+  font-size: 14pt;
 }

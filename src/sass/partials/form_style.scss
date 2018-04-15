@@ -1,29 +1,83 @@
+//form styling
+.panel {
+  background-color: $white;
+  border-radius: 12px;
+  padding: 50px 50px 30px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.form-control {
+  font-size: 15pt;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: $white-3;
+  color: $blue-2;
+  border-radius: 42px;
+  padding-left: 25px;
+}
+
+.form-label {
+  font-size: 13pt;
+  font-weight: 500;
+  font-family: Quicksand, sans-serif;
+  color: $blue-dark;
+  min-width: 100px;
+  width: 31%;
+}
+
+.form-input {
+  width: 100%;
+  height: auto;
+}
+
+.form-input__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group--col {
+  width: 47%;
+}
+
+//form title
+.panel__title {
+  width: 100%;
+  text-align: center;
+}
+
 form .ng-valid-required.ng-dirty {
-    background-color: lightpink;
+  background-color: lightpink;
 }
 
 form .ng-invalid-email.ng-dirty {
-    background-color: lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
 }
 
 form .ng-invalid.ng-diry {
-    background-color: lightpink;
+  background-color: lightpink;
 }
 
 form .ng-valid.ng-dirty {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 span.summary.ng-invalid {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 span.summary.ng-valid {
-    color: green;
+  color: green;
 }
 
 .error {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
+  padding-left: 12px;
+  padding-top: 10px;
 }

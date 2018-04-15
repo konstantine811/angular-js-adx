@@ -1,70 +1,41 @@
-<section class="login-section">
+<section class="login-page">
   <div class="head-sign">
-    <div class="head-sign__background">
-      <div class="main-background main-background--grey-second"></div>
-    </div>
+    <div class="login-page__image-bgc"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="header-logo header-logo--small animation">
-            <div class="rect rect-top">
-              <div class="rect-txt">
-                <span class="rect-top__txt"> Platform layer</span>
-              </div>
-            </div>
-            <div class="rect rect-middle-first">
-              <div class="rect-txt">
-                <span class="rect-middle-first__txt"> Backend layer</span>
-              </div>
-            </div>
-            <div class="rect rect-middle-second">
-              <div class="rect-txt">
-                <span class="rect-middle-second__txt"> Operation layer</span>
-              </div>
-            </div>
-            <div class="rect rect-bottom">
-              <div class="rect-txt">
-                <span class="rect-bottom__txt"> Helath service layer</span>
-              </div>
-            </div>
-          </div>
-          <h2 class="header-logo-txt header-logo-txt-large">ixlayer</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="login-section__title-txt">
-            <h1 class="title">Sign in to our Analytics Platform</h1>
-          </div>
-          <div class="login-section__about-txt">
-            <p class="about-title-txt">Log into your account to view product progress, statistics and tracktion informaion.</p>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="panel panel--login">
-            <form name="form" novalidate ng-submit="loginUser(userForm)">
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" required ng-model="userForm.email">
-                <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
-                  <span ng-show="form.email.$error.email">Please enter a valid email address</span>
-                  <span ng-show="form.email.$error.required">Please enter a value</span>
+            <div class="panel__title">
+              <h1 class="txt-brown txt-middle not-margin">Create account for Affirmativ</h1>
+            </div>
+            <form class="form--login" name="form" novalidate ng-submit="loginUser(userForm)">
+              <div class="form-input">
+                <div class="form-input__wrap">
+                  <div class="form-group form-group--col">
+                    <input placeholder="Email address" type="email" name="email" class="form-control" required ng-model="userForm.email">
+                    <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
+                      <span ng-show="form.email.$error.email">Please enter a valid email address</span>
+                      <span ng-show="form.email.$error.required">Please enter a value</span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group--col">
+                    <input placeholder="Password" type="password" name="password" class="form-control" ng-model="userForm.password" required>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" ng-model="userForm.password" required>
+              <div class="login-button__wrap">
+                <button class="bt-round bt-round--blue" type="submit" ng-disabled="form.$invalid" test-hook="login-button">Sign in</button>
               </div>
-              <div class="login-button">
-                <div class="forgot-password">
-                  <a href ui-sref="forgot_password">
-                    Forgot Password
+              <div class="login-link">
+                <div class="login-link__inner">
+                  <a href ui-sref="register" class="txt-link txt-bold login-link--register">
+                    I need to create a Affirmativ account
                   </a>
                 </div>
-                <div class="login-button__wrap">
-                  <button class="bt blue not-margin" type="submit" ng-disabled="form.$invalid" test-hook="login-button">Login</button>
+                <div class="login-link__inner">
+                  <a href ui-sref="forgot_password" class="txt-link">
+                    Forgot your password ?
+                  </a>
                 </div>
               </div>
             </form>

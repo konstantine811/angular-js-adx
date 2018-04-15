@@ -17,8 +17,21 @@ body {
   color: $black-light !important;
 }
 
+.txt-brown {
+  color: $brown !important;
+}
+
 .txt-bold {
   font-weight: 600;
+}
+
+.txt-middle {
+  font-weight: 500;
+}
+
+.txt-link {
+  text-decoration: underline;
+  color: $blue-5;
 }
 
 h1 {
@@ -94,36 +107,6 @@ h3 {
 
 .main-background--light-blue {
   background: $background-blue-light;
-}
-//form styling
-.panel {
-  background-color: $white;
-  border-radius: 12px;
-  padding: 50px 50px 30px;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-}
-
-.form-control {
-  font-size: 15pt;
-  font-family: Quicksand, sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  display: inline-block;
-  height: 43px;
-  width: 68%;
-  border: none;
-  box-shadow: none;
-  background-color: $white-3;
-  color: $blue-2;
-}
-
-.form-label {
-  font-size: 13pt;
-  font-weight: 500;
-  font-family: Quicksand, sans-serif;
-  color: $blue-dark;
-  min-width: 100px;
-  width: 31%;
 }
 
 
