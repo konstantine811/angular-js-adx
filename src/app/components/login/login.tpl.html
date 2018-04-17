@@ -3,14 +3,14 @@
     <div class="login-page__image-bgc"></div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="login-form">
           <div class="panel panel--login">
             <div class="panel__title">
-              <h1 class="txt-brown txt-middle not-margin">Create account for Affirmativ</h1>
+              <h2 class="txt-brown txt-middle not-margin">Sign in to Affirmativ</h2>
             </div>
             <form class="form--login" name="form" novalidate ng-submit="loginUser(userForm)">
               <div class="form-input">
-                <div class="form-input__wrap">
+                <div class="form-input__login-wrap">
                   <div class="form-group form-group--col">
                     <input placeholder="Email address" type="email" name="email" class="form-control" required ng-model="userForm.email">
                     <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
@@ -24,7 +24,7 @@
                 </div>
               </div>
               <div class="login-button__wrap">
-                <button class="bt-round bt-round--blue" type="submit" ng-disabled="form.$invalid" test-hook="login-button">Sign in</button>
+                <button class="bt-round bt-round--blue" type="submit" ng-disabled="form.$invalid" test-hook="login-button"><span class="bt-content">Sign in</span></button>
               </div>
               <div class="login-link">
                 <div class="login-link__inner">

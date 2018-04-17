@@ -77,34 +77,122 @@ button.button-border-rounded {
   font-size: 9pt;
 }
 
+button[disabled].bt-round {
+  cursor: not-allowed;
+  &:hover, &:focus {
+    &:before {
+      transform: none;
+    }
+
+    &:after {
+      transform: none;
+    }
+    .bt-content {
+      color: red;
+      animation: none;
+    }
+  }
+}
+
 .bt-round {
   color: $white;
-  background-color: black;
+  background-color: transparent;
   border-radius: 100px;
   padding: 9px 34px;
   display: inline-block;
   transition: all 0.4s ease-in;
   outline: none;
   font-weight: 500;
+  font-size: 9pt;
   text-decoration: transparent;
   border: none;
   min-width: 121px;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
   &:hover, &:focus {
     border: none;
     color: $white;
     outline: none;
     text-decoration: transparent;
   }
+
+  &:hover {
+    &:before {
+      transform: translate(0, -150%);
+    }
+
+    &:after {
+      transform: translate(0, 150%);
+    }
+
+    .bt-content {
+      animation: anim-text-btn-round 0.3s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+  }
 }
 
 .bt-round.bt-round--blue {
-  background-color: $blue-5;
+  &:before, &:after {
+    background-color: $blue-5;
+  }
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px $blue-5;
+    .bt-content {
+      color:  $blue-5;
+    }
+  }
+
 }
 
 .bt-round.bt-round--brown {
-  background-color: $brown;
+  &:before, &:after {
+    background-color: $brown;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px $brown;
+    .bt-content {
+      color: $brown;
+    }
+  }
 }
+
+.bt-content {
+  color: $white;
+  display: inline-block;
+  z-index: 100;
+  position: relative;
+}
+
+//animation
+@keyframes anim-text-btn-round {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 
 

@@ -8021,31 +8021,80 @@ button.button-border-rounded {
   font-family: "Open Sans", sans-serif;
   font-size: 9pt; }
 
+button[disabled].bt-round {
+  cursor: not-allowed; }
+  button[disabled].bt-round:hover:before, button[disabled].bt-round:focus:before {
+    transform: none; }
+  button[disabled].bt-round:hover:after, button[disabled].bt-round:focus:after {
+    transform: none; }
+  button[disabled].bt-round:hover .bt-content, button[disabled].bt-round:focus .bt-content {
+    color: red;
+    animation: none; }
+
 .bt-round {
   color: #fff;
-  background-color: black;
+  background-color: transparent;
   border-radius: 100px;
   padding: 9px 34px;
   display: inline-block;
   transition: all 0.4s ease-in;
   outline: none;
   font-weight: 500;
+  font-size: 9pt;
   text-decoration: transparent;
   border: none;
   min-width: 121px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
+  .bt-round:before, .bt-round:after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .bt-round:before {
+    top: 0; }
+  .bt-round:after {
+    bottom: 0; }
   .bt-round:hover, .bt-round:focus {
     border: none;
     color: #fff;
     outline: none;
     text-decoration: transparent; }
+  .bt-round:hover:before {
+    transform: translate(0, -150%); }
+  .bt-round:hover:after {
+    transform: translate(0, 150%); }
+  .bt-round:hover .bt-content {
+    animation: anim-text-btn-round 0.3s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
 
-.bt-round.bt-round--blue {
+.bt-round.bt-round--blue:before, .bt-round.bt-round--blue:after {
   background-color: #5ACDD6; }
+.bt-round.bt-round--blue:hover {
+  box-shadow: inset 0px 0px 0px 1px #5ACDD6; }
+  .bt-round.bt-round--blue:hover .bt-content {
+    color: #5ACDD6; }
 
-.bt-round.bt-round--brown {
+.bt-round.bt-round--brown:before, .bt-round.bt-round--brown:after {
   background-color: #EFD091; }
+.bt-round.bt-round--brown:hover {
+  box-shadow: inset 0px 0px 0px 1px #EFD091; }
+  .bt-round.bt-round--brown:hover .bt-content {
+    color: #EFD091; }
 
+.bt-content {
+  color: #fff;
+  display: inline-block;
+  z-index: 100;
+  position: relative; }
+
+@keyframes anim-text-btn-round {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
 .side-navbar {
   position: fixed;
   top: 0;
@@ -8250,14 +8299,14 @@ a.nav-link-dropdown {
 
 .login-page {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #fff; }
 
 .login-page__image-bgc {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 60px);
   background-image: url(../../../assets/images/back_1.png);
   background-size: cover;
   filter: blur(6px); }
@@ -8284,8 +8333,20 @@ a.nav-link-dropdown {
   justify-content: space-between;
   padding-left: 207px; }
 
+.login-form {
+  z-index: 1000;
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 9%; }
+
 .form--login {
   padding-top: 30px; }
+
+.form-input__login-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column; }
 
 .login-button__wrap {
   padding-top: 14px;
@@ -8381,7 +8442,7 @@ a.nav-link-dropdown {
 
 .panel {
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 1px;
   padding: 50px 50px 30px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
 
@@ -8411,11 +8472,10 @@ a.nav-link-dropdown {
   width: 100%;
   height: auto; }
 
-.form-input__wrap {
-  display: flex;
-  justify-content: space-between; }
-
 .form-group--col {
+  width: 100%; }
+
+.form-group--col-2 {
   width: 47%; }
 
 .panel__title {
@@ -8447,6 +8507,72 @@ span.summary.ng-valid {
   padding-left: 12px;
   padding-top: 10px; }
 
+.checkbox input.checkbox-input[type="checkbox"] {
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  display: none; }
+  .checkbox input.checkbox-input[type="checkbox"]:checked + label.checkbox-label:before {
+    animation: checkbox-left 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .checkbox input.checkbox-input[type="checkbox"]:checked + label.checkbox-label:after {
+    animation: checkbox-right 0.2s 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .checkbox input.checkbox-input[type="checkbox"]:not(:checked) + label.checkbox-label:before {
+    animation: checkbox-left-hide 0.3s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .checkbox input.checkbox-input[type="checkbox"]:not(:checked) + label.checkbox-label:after {
+    animation: checkbox-right-hide 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.checkbox-label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 20px;
+  padding: 0;
+  top: 5px;
+  border: 1px solid #5ACDD6;
+  border-radius: 2px; }
+  .checkbox-label:after, .checkbox-label:before {
+    content: '';
+    display: inline-block;
+    left: 1px;
+    position: absolute;
+    bottom: 4px; }
+  .checkbox-label:before {
+    border-top: 2px solid #5ACDD6;
+    height: 20px;
+    width: 0px;
+    top: 8px;
+    left: 3px;
+    transform-origin: top left;
+    transform: rotate(45deg); }
+  .checkbox-label:after {
+    border-right: 2px solid #5ACDD6;
+    height: 0px;
+    width: 10px;
+    left: 2px;
+    bottom: 7px;
+    transform-origin: left bottom;
+    transform: rotate(34deg); }
+
+@keyframes checkbox-left {
+  0% {
+    width: 0; }
+  100% {
+    width: 10px; } }
+@keyframes checkbox-right {
+  0% {
+    height: 0; }
+  100% {
+    height: 16px; } }
+@keyframes checkbox-left-hide {
+  0% {
+    width: 10px; }
+  100% {
+    width: 0; } }
+@keyframes checkbox-right-hide {
+  0% {
+    height: 18px; }
+  100% {
+    height: 0; } }
 .popup {
   position: fixed;
   top: 0;
@@ -8609,6 +8735,24 @@ span.summary.ng-valid {
 .panel--register {
   position: relative;
   top: 88px; }
+
+.form-input__register-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 30px; }
+
+.register-checkbox__wrap {
+  text-align: center; }
+
+.register-button__wrap {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px; }
+
+.register-link__inner {
+  text-align: center;
+  padding-top: 15px; }
 
 [animation-on-change] {
   transition: all 0.4s;

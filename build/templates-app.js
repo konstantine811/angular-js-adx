@@ -367,14 +367,14 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "    <div class=\"login-page__image-bgc\"></div>\n" +
     "    <div class=\"container\">\n" +
     "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "        <div class=\"login-form\">\n" +
     "          <div class=\"panel panel--login\">\n" +
     "            <div class=\"panel__title\">\n" +
-    "              <h1 class=\"txt-brown txt-middle not-margin\">Create account for Affirmativ</h1>\n" +
+    "              <h2 class=\"txt-brown txt-middle not-margin\">Sign in to Affirmativ</h2>\n" +
     "            </div>\n" +
     "            <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "              <div class=\"form-input\">\n" +
-    "                <div class=\"form-input__wrap\">\n" +
+    "                <div class=\"form-input__login-wrap\">\n" +
     "                  <div class=\"form-group form-group--col\">\n" +
     "                    <input placeholder=\"Email address\" type=\"email\" name=\"email\" class=\"form-control\" required ng-model=\"userForm.email\">\n" +
     "                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
@@ -388,7 +388,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"login-button__wrap\">\n" +
-    "                <button class=\"bt-round bt-round--blue\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\">Sign in</button>\n" +
+    "                <button class=\"bt-round bt-round--blue\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"bt-content\">Sign in</span></button>\n" +
     "              </div>\n" +
     "              <div class=\"login-link\">\n" +
     "                <div class=\"login-link__inner\">\n" +
@@ -531,61 +531,59 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                    <div class=\"panel__title\">\n" +
     "                        <h1 class=\"txt-brown txt-middle\">Create account for Affirmativ</h1>\n" +
     "                    </div>\n" +
-    "                    <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
-    "                        <div ng-show=\"!complete\">\n" +
-    "                            <div class=\"form-group\">\n" +
-    "                                <label>Firstname</label>\n" +
-    "                                <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                                <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                  <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
+    "                    <div ng-show=\"!complete\">\n" +
+    "                      <div class=\"form-input\">\n" +
+    "                        <div class=\"form-input__register-wrap\">\n" +
+    "                          <div class=\"form-group form-group--col-2\">\n" +
+    "                            <input placeholder=\"Email address\" type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
+    "                            <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                              <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                              <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
     "                            </div>\n" +
-    "                            <div class=\"form-group\">\n" +
-    "                                <label>Lastname</label>\n" +
-    "                                <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                                <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                          </div>\n" +
+    "                          <div class=\"form-group form-group--col-2\">\n" +
+    "                            <input placeholder=\"First name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
+    "                            <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                          </div>\n" +
+    "                          <div class=\"form-group form-group--col-2\">\n" +
+    "                            <input placeholder=\"Password\" type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
+    "                            <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
+    "                              <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
+    "                              <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
     "                            </div>\n" +
-    "                            <div class=\"form-group\">\n" +
-    "                                <label>Email</label>\n" +
-    "                                <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
-    "                                <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                                </div>\n" +
-    "                            </div>\n" +
-    "                            <div class=\"form-group\">\n" +
-    "                                <label>Password</label>\n" +
-    "                                <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
-    "                                <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
-    "                                    <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
-    "                                    <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
-    "                                </div>\n" +
-    "                            </div>\n" +
-    "                            <div class=\"form-group\">\n" +
-    "                                <label>Confirm Password</label>\n" +
-    "                                <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
-    "                                <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
-    "                            </div>\n" +
-    "                            <div class=\"checkbox m-b-md m-t-none\" ng-show=\"!complete\">\n" +
-    "                                <label class=\"i-checks\">\n" +
-    "                                    <input type=\"checkbox\" ng-model=\"userForm.terms\" required><i></i> Agree to the <a href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
-    "                                </label>\n" +
-    "                            </div>\n" +
-    "                            <button test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "                          </div>\n" +
+    "                          <div class=\"form-group form-group--col-2\">\n" +
+    "                            <input placeholder=\"Last name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                            <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                          </div>\n" +
     "                        </div>\n" +
-    "                        \n" +
-    "                        <br>\n" +
-    "                        \n" +
-    "                        <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
-    "                        \n" +
-    "                        <div ng-if=\"complete == true\">\n" +
-    "                            <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"register-checkbox__wrap\">\n" +
+    "                        <div class=\"checkbox m-b-md m-t-none\" ng-show=\"!complete\">\n" +
+    "                          <input class=\"checkbox-input\" type=\"checkbox\" id=\"agree\" ng-model=\"userForm.terms\" required>\n" +
+    "                          <label for=\"agree\" class=\"checkbox-label\"></label>\n" +
+    "                          Agree to the\n" +
+    "                          <a class=\"txt-link txt-bold\" href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
     "                        </div>\n" +
-    "                    </form>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"register-button__wrap\">\n" +
+    "                        <button class=\"bt-round bt-round--blue\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"bt-content\">Submit</span></button>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
+    "                    <div ng-if=\"complete == true\">\n" +
+    "                      <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
+    "                    </div>\n" +
+    "                  </form>\n" +
+    "                  <div class=\"register-link\">\n" +
+    "                    <div class=\"register-link__inner\">\n" +
+    "                      <a href ui-sref=\"verify_email\" class=\"txt-link txt-bold\">\n" +
+    "                        Verify Email\n" +
+    "                      </a>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"verify-email\">\n" +
-    "                <a href ui-sref=\"verify_email\">\n" +
-    "                    Verify Email\n" +
-    "                </a>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
@@ -749,10 +747,10 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </nav>\n" +
     "          <div class=\"header__button\">\n" +
     "            <div class=\"button__register\">\n" +
-    "              <a ui-sref=\"register\" class=\"bt-round bt-round--blue\">Register a kit</a>\n" +
+    "              <a ui-sref=\"register\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Register a kit</span></a>\n" +
     "            </div>\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"login\" class=\"bt-round bt-round--brown\">Sign in</a>\n" +
+    "              <a ui-sref=\"login\" class=\"bt-round bt-round--brown\"><span class=\"bt-content\">Sign in</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +

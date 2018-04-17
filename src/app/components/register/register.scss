@@ -18,6 +18,27 @@
   top: 88px;
 }
 
+.form-input__register-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.register-checkbox__wrap {
+  text-align: center;
+}
+
+.register-button__wrap {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.register-link__inner {
+  text-align: center;
+  padding-top: 15px;
+}
 
 
 

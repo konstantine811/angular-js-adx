@@ -1,7 +1,7 @@
 //form styling
 .panel {
   background-color: $white;
-  border-radius: 12px;
+  border-radius: 1px;
   padding: 50px 50px 30px;
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
 }
@@ -35,12 +35,11 @@
   height: auto;
 }
 
-.form-input__wrap {
-  display: flex;
-  justify-content: space-between;
+.form-group--col {
+  width: 100%;
 }
 
-.form-group--col {
+.form-group--col-2 {
   width: 47%;
 }
 
@@ -80,4 +79,84 @@ span.summary.ng-valid {
   font-weight: bold;
   padding-left: 12px;
   padding-top: 10px;
+}
+
+//styling checkbox
+.checkbox input.checkbox-input[type="checkbox"] {
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  &:checked + label.checkbox-label:before {
+    animation: checkbox-left 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:checked + label.checkbox-label:after {
+    animation: checkbox-right 0.2s 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:not(:checked) + label.checkbox-label:before {
+    animation: checkbox-left-hide 0.3s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:not(:checked) + label.checkbox-label:after {
+    animation: checkbox-right-hide 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+}
+
+.checkbox-label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 20px;
+  padding: 0;
+  top: 5px;
+  border: 1px solid $blue-5;
+  border-radius: 2px;
+  &:after, &:before {
+    content: '';
+    display: inline-block;
+    left: 1px;
+    position: absolute;
+    bottom: 4px;
+  }
+
+  &:before {
+    border-top: 2px solid $blue-5;
+    height: 20px;
+    width: 0px;
+    top: 8px;
+    left: 3px;
+    transform-origin: top left;
+    transform: rotate(45deg);
+  }
+  &:after {
+    border-right: 2px solid $blue-5;
+    height: 0px;
+    width: 10px;
+    left: 2px;
+    bottom: 7px;
+    transform-origin: left bottom;
+    transform: rotate(34deg);
+  }
+}
+
+
+//animation
+@keyframes checkbox-left {
+  0% { width: 0; }
+  100% { width: 10px; }
+}
+
+@keyframes checkbox-right {
+  0% { height: 0; }
+  100% { height: 16px; }
+}
+
+@keyframes checkbox-left-hide {
+  0% { width: 10px; }
+  100% { width: 0; }
+}
+
+@keyframes checkbox-right-hide {
+  0% { height: 18px; }
+  100% { height: 0; }
 }
