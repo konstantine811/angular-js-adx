@@ -8754,6 +8754,11 @@ span.summary.ng-valid {
   text-align: center;
   padding-top: 15px; }
 
+.register-form__wrap {
+  width: 942px;
+  margin: 0 auto;
+  padding-top: 9%; }
+
 [animation-on-change] {
   transition: all 0.4s;
   opacity: 1;

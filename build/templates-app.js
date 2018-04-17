@@ -526,7 +526,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "    <div class=\"register-page__image-bgc\"></div>\n" +
     "    <div class=\"container-fluid\">\n" +
     "        <div class=\"row\">\n" +
-    "            <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "            <div class=\"register-form__wrap\">\n" +
     "                <div id=\"todoPanel\" class=\"panel panel--register\">\n" +
     "                    <div class=\"panel__title\">\n" +
     "                        <h1 class=\"txt-brown txt-middle\">Create account for Affirmativ</h1>\n" +
