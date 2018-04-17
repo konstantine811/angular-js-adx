@@ -65,13 +65,6 @@ a:hover, a:focus {
   .container-page {
     padding: 0;
   }
-  .container-page.ng-enter {
-    animation: fade-in-simple 0.5s both ease-in;
-  }
-
-  .container-page.ng-leave {
-    animation: fade-out-simple 0.5s both ease-in;
-  }
 }
 
 .container-page {
@@ -80,62 +73,45 @@ a:hover, a:focus {
   padding-left: 24px;
   padding-right: 29px;
   z-index: 100;
-  transition: all 0.5s ease;
+  transition: all 1.5s ease-in;
   overflow-y: visible;
   overflow-x: hidden;
 }
 
-.container-page.ng-enter {
-  animation: fade-in 0.5s both ease;
+.container-page.ng-enter{
+  position: absolute;
+  animation: fade-in 0.5s both linear;
 }
 
 .container-page.ng-leave {
-  animation: fade-out 0.5s both ease;
+  animation: fade-out-blur 0.5s both ease-in-out;
   overflow: hidden;
 }
 
 @keyframes fade-in {
   0% {
-    opacity: 0;
-    transform: translate(0, -140px);
+    height: 0;
+    filter: blur(5px);
+    box-shadow: 0 0 40px 1px $blue-5;
   }
-  50% {
-    opacity: 0;
-  }
+
+
   100% {
-    opacity: 1;
-    transform: translate(0, 0);
+    height: 100%;
+    filter: blur(0px);
+    box-shadow: 0 0 1000px 60px $white;
   }
 }
 
-@keyframes fade-out {
+@keyframes fade-out-blur {
   0% {
-    opacity: 1;
-    transform: translate(0, 0);
+    filter: blur(0px);
   }
   100% {
-    opacity: 0;
-    transform: translate(0, 140px);
+    filter: blur(33px);
   }
 }
 
-@keyframes fade-in-simple {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out-simple {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 
 

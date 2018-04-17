@@ -8794,10 +8794,6 @@ a:hover, a:focus {
   width: 100%; }
   .login.page .container-page {
     padding: 0; }
-  .login.page .container-page.ng-enter {
-    animation: fade-in-simple 0.5s both ease-in; }
-  .login.page .container-page.ng-leave {
-    animation: fade-out-simple 0.5s both ease-in; }
 
 .container-page {
   width: 100%;
@@ -8805,42 +8801,31 @@ a:hover, a:focus {
   padding-left: 24px;
   padding-right: 29px;
   z-index: 100;
-  transition: all 0.5s ease;
+  transition: all 1.5s ease-in;
   overflow-y: visible;
   overflow-x: hidden; }
 
 .container-page.ng-enter {
-  animation: fade-in 0.5s both ease; }
+  position: absolute;
+  animation: fade-in 0.5s both linear; }
 
 .container-page.ng-leave {
-  animation: fade-out 0.5s both ease;
+  animation: fade-out-blur 0.5s both ease-in-out;
   overflow: hidden; }
 
 @keyframes fade-in {
   0% {
-    opacity: 0;
-    transform: translate(0, -140px); }
-  50% {
-    opacity: 0; }
+    height: 0;
+    filter: blur(5px);
+    box-shadow: 0 0 40px 1px #5ACDD6; }
   100% {
-    opacity: 1;
-    transform: translate(0, 0); } }
-@keyframes fade-out {
+    height: 100%;
+    filter: blur(0px);
+    box-shadow: 0 0 1000px 60px #fff; } }
+@keyframes fade-out-blur {
   0% {
-    opacity: 1;
-    transform: translate(0, 0); }
+    filter: blur(0px); }
   100% {
-    opacity: 0;
-    transform: translate(0, 140px); } }
-@keyframes fade-in-simple {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes fade-out-simple {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+    filter: blur(33px); } }
 
 /*# sourceMappingURL=ixlayer-web-angular-0.0.1.css.map */
