@@ -587,14 +587,41 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
-    "            <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content--animation'\">\n" +
+    "            <div class=\"popup-content\">\n" +
     "               <div class=\"popup-content__wrap\">\n" +
     "                 <div class=\"popup-content__image-logo\" ng-class=\"showPopup = 'popup-content__image-logo--animation'\">\n" +
     "                   <div class=\"popup-content__image\">\n" +
     "                     <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
     "                   </div>\n" +
     "                   <div class=\"popup-content__logo\">\n" +
-    "                     <div class=\"logo-affirmativ-large\"></div>\n" +
+    "                     <div class=\"logo-affirmativ-large\">\n" +
+    "                       <span class=\"logo-affirmativ-large-cross\"></span>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"popup-content__title-txt\">\n" +
+    "                   <div class=\"popup-content__title\">\n" +
+    "                     <h2 class=\"txt-bold txt-green\">User consent</h2>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"popup-content__about-title\">\n" +
+    "                     <h3 class=\"txt-middle txt-black-light txt-uppercase\">Client for Affirmativ</h3>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"popup-content__about-txt\">\n" +
+    "                     <p class=\"txt txt-middle txt-black-light\">Hi \"User Name\", Affirmativ is requesting access to your \"App\" account</p>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"popup-content__txt-with-logo\">\n" +
+    "                   <div class=\"txt-with-logo\">\n" +
+    "                     <div class=\"txt-with-logo__wrap\">\n" +
+    "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-user fa--logo-with-txt\"></i></span>\n" +
+    "                       <p class=\"txt txt-black-light txt-inline-block\">Profile: access to your email profile</p>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt-with-logo\">\n" +
+    "                     <div class=\"txt-with-logo__wrap\">\n" +
+    "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-shopping-bag fa--logo-with-txt\"></i></span>\n" +
+    "                       <p class=\"txt txt-black-light txt-inline-block\">Posts: read and write your posts</p>\n" +
+    "                     </div>\n" +
     "                   </div>\n" +
     "                 </div>\n" +
     "                 <div class=\"popup-content__button\">\n" +
@@ -602,7 +629,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                 </div>\n" +
     "               </div>\n" +
     "            </div>\n" +
-    "            <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background--animation'\"></div>\n" +
+    "            <div class=\"popup-background\"></div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "\n" +

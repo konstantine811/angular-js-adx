@@ -88,6 +88,8 @@ a:hover, a:focus {
   overflow: hidden;
 }
 
+
+//animation
 @keyframes fade-in {
   0% {
     height: 0;
@@ -111,6 +113,26 @@ a:hover, a:focus {
     filter: blur(33px);
   }
 }
+
+@keyframes bg-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
+@keyframes bg-fade-out {
+  0% {
+    opacity: .9;
+  }
+  100% {
+    opacity: .0;
+  }
+}
+
+
 
 
 

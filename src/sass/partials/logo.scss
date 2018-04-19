@@ -108,17 +108,24 @@
   position: relative;
   width: 55px;
   height: 55px;
+  border-radius: 50%;
   background-color: $blue-5;
+}
+
+.logo-affirmativ-large-cross {
+  position: absolute;
+  transform-origin: 50%;
   display: inline-block;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
   &:before, &:after {
     content: '';
     position: absolute;
     background-color: $white;
-    height: 69%;
-    width: 10%;
-    left: 44%;
-    top: 16%;
+    height: 35px;
+    width: 5px;
+    left: 25px;
+    top: 10px;
   }
   &:after {
     transform: rotate(90deg);
