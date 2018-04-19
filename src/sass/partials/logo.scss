@@ -104,6 +104,27 @@
   }
 }
 
+.logo-affirmativ-large {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-color: $blue-5;
+  display: inline-block;
+  border-radius: 100%;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-color: $white;
+    height: 69%;
+    width: 10%;
+    left: 44%;
+    top: 16%;
+  }
+  &:after {
+    transform: rotate(90deg);
+  }
+}
+
 .logo-txt {
   font-family: Quicksand, sans-serif;
   display: inline-block;

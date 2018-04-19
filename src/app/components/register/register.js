@@ -29,23 +29,26 @@ angular.module( 'ixLayer.register', [
 
     vm.submitForm = function (form) {
       vm.showPopup = true;
-      vm.agree = function(checked) {
-        if(checked) {
-          vm.showPopup = false;
-          userAccessSrv.register(form.first_name, form.last_name,
-            form.email, form.password,
-            {'consent':1, 'terms':1}).then(function(result) {
-            vm.complete = true;
-          }, function(error) {
-            vm.errors = error;
-            console.log(vm.errors);
-
-          });
-          vm.notChecked = false;
-        } else {
-          vm.notChecked = true;
-        }
-      };
+      vm.signConsent = function() {
+        vm.showPopup = false;
+      }
+      // vm.agree = function(checked) {
+      //   if(checked) {
+      //     vm.showPopup = false;
+      //     userAccessSrv.register(form.first_name, form.last_name,
+      //       form.email, form.password,
+      //       {'consent':1, 'terms':1}).then(function(result) {
+      //       vm.complete = true;
+      //     }, function(error) {
+      //       vm.errors = error;
+      //       console.log(vm.errors);
+      //
+      //     });
+      //     vm.notChecked = false;
+      //   } else {
+      //     vm.notChecked = true;
+      //   }
+      // };
     };
 
 

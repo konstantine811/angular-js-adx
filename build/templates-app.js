@@ -587,30 +587,22 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
-    "            <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content-animation'\">\n" +
-    "                <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
-    "                    <p class=\"popup-condition-txt__inner\">\n" +
-    "                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
-    "                    </p>\n" +
-    "                </div>\n" +
-    "                <form class=\"form-popup\">\n" +
-    "                    <div class=\"row\">\n" +
-    "                        <div class=\"col-sm-6\">\n" +
-    "                            <div class=\"form-check\">\n" +
-    "                                <label class=\"i-checks\">\n" +
-    "                                    <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
-    "                                </label>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"col-sm-6\">\n" +
-    "                            <button test-hook=\"tour-end-button\" class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
-    "                            <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"error\" ng-show=\"notChecked\">You have not confirmed terms and condition</div>\n" +
-    "                </form>\n" +
+    "            <div class=\"popup-content\" ng-class=\"showPopup = 'popup-content--animation'\">\n" +
+    "               <div class=\"popup-content__wrap\">\n" +
+    "                 <div class=\"popup-content__image-logo\" ng-class=\"showPopup = 'popup-content__image-logo--animation'\">\n" +
+    "                   <div class=\"popup-content__image\">\n" +
+    "                     <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"popup-content__logo\">\n" +
+    "                     <div class=\"logo-affirmativ-large\"></div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 <div class=\"popup-content__button\">\n" +
+    "                   <button class=\"bt-round bt-round--blue\" class=\"btn btn-primary\" ng-click=\"signConsent()\"><span class=\"bt-content\">Sign in</span></button>\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
     "            </div>\n" +
-    "            <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background-animation'\"></div>\n" +
+    "            <div class=\"popup-background\" ng-class=\"showPopup = 'popup-background--animation'\"></div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "\n" +

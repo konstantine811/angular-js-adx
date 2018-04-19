@@ -5,50 +5,51 @@
   right: 0;
   bottom: 0;
   z-index: 1000;
+  transition: all 4.4s ease;
 }
 .popup-content {
   position: absolute;
   z-index: 100;
-  top: 10%;
+  top: 27%;
   right: 0;
   left: 0;
-  width: 50%;
-  height: 80%;
+  width: 30%;
+  height: auto;
   overflow: hidden;
   background: #fff;
   padding: 20px;
   border-left: 1px solid #e0e0e0;
   margin: 0 auto;
-  border-radius: 7px;
-  transform: translate(0, -100%);
-  opacity: 0;
+  border-radius: 1px;
+  transition: all 4.4s ease;
 }
 .popup-background {
   background: #000;
   opacity: 0;
   width: 100%;
+  transition: all 4.4s ease;
   height: 100%;
 }
 
 .popup.ng-animate {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
   .popup-content {
-    transition: all 0.2s ease-out;
+    transition: all 0.6s ease-out;
   }
   .popup-background {
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
   }
 }
 
-.popup-content-animation {
-  transform: translate(0, 0%);
-  opacity: 1;
-}
-
-.popup-background-animation {
+.popup-background--animation {
   opacity: .8;
 }
 
+.popup.ng-enter.ng-enter-active {
+  .popup-content--animation {
+    animation: show-popup-anim 0.6s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
 .popup.ng-leave.ng-leave-active .popup-content {
   transform: translate(0, -100%);
   opacity: 0;
@@ -58,11 +59,39 @@
   opacity: 0;
 }
 
-
 .popup-condition-txt {
   position: relative;
   height: 85%;
   overflow-y: scroll;
+}
+
+.popup-content__image-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 4%;
+  transition: all 0.5s ease-in-out
+}
+
+.popup-content__image {
+  position: relative;
+  left: 30%;
+  z-index: 100;
+}
+
+.popup-content__logo {
+  position: relative;
+  right: 30%;
+}
+
+.popup-content__image-logo--animation {
+  .popup-content__image {
+    left: 3%;
+  }
+
+  .popup-content__logo {
+    right: 3%;
+  }
 }
 
 .form-popup {
@@ -72,4 +101,16 @@
 .popup-condition-txt__inner {
   width: 100%;
   padding: 0px 37px 0px 17px;
+}
+
+//animation
+@keyframes show-popup-anim {
+  0% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }

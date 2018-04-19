@@ -109,4 +109,12 @@ h3 {
   background: $background-blue-light;
 }
 
+//images
+.image-rounded {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+}
 
