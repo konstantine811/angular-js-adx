@@ -367,7 +367,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "    <div class=\"login-page__image-bgc\"></div>\n" +
     "    <div class=\"container\">\n" +
     "      <div class=\"row\">\n" +
-    "        <div class=\"login-form\">\n" +
+    "        <div class=\"login-form anim-content-transition\">\n" +
     "          <div class=\"panel panel--login\">\n" +
     "            <div class=\"panel__title\">\n" +
     "              <h2 class=\"txt-brown txt-middle not-margin\">Sign in to Affirmativ</h2>\n" +
@@ -526,7 +526,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "    <div class=\"register-page__image-bgc\"></div>\n" +
     "    <div class=\"container-fluid\">\n" +
     "        <div class=\"row\">\n" +
-    "            <div class=\"register-form__wrap\">\n" +
+    "            <div class=\"register-form__wrap anim-content-transition\">\n" +
     "                <div id=\"todoPanel\" class=\"panel panel--register\">\n" +
     "                    <div class=\"panel__title\">\n" +
     "                        <h1 class=\"txt-brown txt-middle\">Create account for Affirmativ</h1>\n" +
@@ -787,32 +787,53 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <!--logo header-->\n" +
     "      <div class=\"side-navbar-header\">\n" +
     "        <div class=\"side-navbar-header__logo\">\n" +
-    "          <div class=\"header-logo header-logo--small animation\">\n" +
-    "            <div class=\"rect rect-top\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"rect rect-middle-first\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"rect rect-middle-second\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"rect rect-bottom\">\n" +
-    "              <div class=\"rect-txt\">\n" +
-    "                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
+    "          <div class=\"logo-affirmativ__wrap logo-affirmativ__wrap--sidb-navbar\">\n" +
+    "            <div class=\"logo-affirmativ-middle\"><span class=\"logo-affirmativ-middle-cross\"></span></div>\n" +
     "          </div>\n" +
-    "          <h2 class=\"header-logo-txt\">ixlayer</h2>\n" +
-    "          <p class=\"header-about-txt\">Analytics Platform</p>\n" +
+    "          <div class=\"logo-txt logo-txt-large\">affirmativ</div>\n" +
     "        </div>\n" +
     "        <!--end logo header-->\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"side-navbar__admin\">\n" +
+    "        <div class=\"side-navbar__admin-photo\">\n" +
+    "          <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
+    "        </div>\n" +
+    "        <div class=\"side-navbar__admin-txt\">\n" +
+    "          <h2 class=\"side-navbar__admin-name txt txt-black-light txt-bold not-margin\">\n" +
+    "            Maria Gomez\n" +
+    "          </h2>\n" +
+    "          <p class=\"side-navbar__admin-status txt txt-black-light txt-uppercase not-margin\">\n" +
+    "            Administrator\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "        <div class=\"side-navbar__admin-button\">\n" +
+    "          <div class=\"dropdown-icon-circle\">\n" +
+    "            <i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"side-navbar__admin-buttons\">\n" +
+    "        <div class=\"admin-buttons__message icon-large--blue\">\n" +
+    "          <i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i>\n" +
+    "        </div>\n" +
+    "        <div class=\"admin-buttons__config icon-large--blue\">\n" +
+    "          <i class=\"fa fa-cog\" aria-hidden=\"true\"></i>\n" +
+    "        </div>\n" +
+    "        <div class=\"admin-buttons__info icon-large--blue\">\n" +
+    "          <i class=\"fa fa-info-circle\" aria-hidden=\"true\"></i>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"side-navbar__search-form\">\n" +
+    "        <div class=\"search-form\">\n" +
+    "          <div class=\"search-form__icon\">\n" +
+    "            <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n" +
+    "          </div>\n" +
+    "          <input class=\"form-control form-control--search\" type=\"text\" placeholder=\"Start typing to search...\">\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"row\">\n" +
@@ -820,13 +841,70 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar-link\">\n" +
     "        <ul class=\"side-navbar-link__top\">\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"home\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-home\"></i>Dashboard</span></a>\n" +
+    "            <a href ui-sref=\"home\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-home\"></i>Dashboard<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
+    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview</span></a>\n" +
+    "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
+    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
-    "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down\"></i></span></a>\n" +
+    "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
+    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"dropdown-item\">\n" +
+    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "          </li>\n" +
+    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
+    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
     "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
     "              <li class=\"dropdown-item\">\n" +
     "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
@@ -835,21 +913,6 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations</span></a>\n" +
-    "          </li>\n" +
-    "        </ul>\n" +
-    "        <!--nav-bottom-->\n" +
-    "        <ul class=\"side-navbar-link__bottom\">\n" +
-    "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"register\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Registration</span></a>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"login\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-image\"></i>Login</span></a>\n" +
-    "          </li>\n" +
-    "          <li  ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-circle-o\"></i>Account</span></a>\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
     "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-sign-out\"></i>Logout</span></a>\n" +

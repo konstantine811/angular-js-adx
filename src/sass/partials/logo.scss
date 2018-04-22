@@ -132,6 +132,35 @@
   }
 }
 
+.logo-affirmativ-middle {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $blue-5;
+}
+
+.logo-affirmativ-middle-cross {
+  position: absolute;
+  transform-origin: 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-color: $white;
+    height: 24px;
+    width: 4px;
+    left: 16px;
+    top: 6px;
+    border-radius: 2px;
+  }
+  &:after {
+    transform: rotate(90deg);
+  }
+}
+
 .logo-txt {
   font-family: Quicksand, sans-serif;
   display: inline-block;
@@ -140,6 +169,11 @@
   font-size: 24px;
   font-weight: 600;
   color: $black-light;
+}
+
+.logo-txt-large {
+  font-size: 24pt;
+  color: $grey-8;
 }
 
 @keyframes anim-rect-top {

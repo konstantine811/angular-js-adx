@@ -5,10 +5,11 @@
   height: 100%;
   width: 278px;
   text-align: left;
-  background: $blue;
+  background: $white;
   color: white;
   z-index: 999;
-  overflow-y: auto;
+  overflow-y: hidden;
+  box-shadow: -1px 0px 12px 0px $black-light;
 }
 .header-logo.header-logo--small {
   transform: scale(0.4);
@@ -17,7 +18,14 @@
 }
 
 .side-navbar-header__logo {
-  padding-left: 73px;
+  padding-left: 30px;
+  padding-top: 30px;
+  cursor: pointer;
+  &:hover {
+    .logo-affirmativ-cross {
+      animation: anim-affirmativ-cross 2s 1 forwards cubic-bezier(0, 0.63, 0.17, 1.16);
+    }
+  }
 }
 
 .header-about-txt {
@@ -30,9 +38,9 @@
 }
 
 .side-navbar-link {
-  display: flex;
-  flex-flow: wrap;
-  height: 91vh;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .side-navbar-link__item {
@@ -45,15 +53,14 @@
 
 .side-navbar-link__item.active {
   .nav-link {
-    color: $white;
-    background-color: $blue-dark-2;
+    color: $black-light;
     &:before {
       content: '';
       position: absolute;
       top: 0;
       width: 4px;
       height: 100%;
-      background-color: $silver-5;
+      background-color: $blue-5;
     }
   }
 }
@@ -64,43 +71,59 @@
   height: 100%;
   display: inline-block;
   padding: 14px 0;
-  color: $white;
+  color: $black-light;
   font-family: Quicksand, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12pt;
   transition: all 0.3s ease;
-  &:hover {
+  &:hover, &:focus {
     cursor: pointer;
+    color: $blue-5;
   }
   i.fa {
-    color: $white;
-    transition: color 0.6s ease;
+    transition: all 0.6s ease;
     padding-right: 8px;
+  }
+  i.fa.dropdown-icon-circle__inner {
+    float: right;
+    margin-right: 25px;
+    position: relative;
   }
 }
 .link-txt {
   padding-left: 29px;
+  width: 100%;
+  display: inline-block;
 }
 
 
 .side-navbar-link__top {
   width: 100%;
-  max-height: 63vh;
+  height: 100%;
   margin-top: 93px;
   padding: 0;
 }
 
-.side-navbar-link__bottom {
-  width: 100%;
-  height: auto;
-  padding: 0 0 30px 0px;
-  align-self: flex-end;
+.side-navbar-link__item {
+  transition: all 0.6s ease;
 }
 
-.side-navbar-link__item--users.active {
-  .side-navbar-link__dropdown--users {
+.side-navbar-link__item.active {
+  .side-navbar-link__dropdown {
     display: block;
   }
+  .nav-link i.fa.dropdown-icon-circle__inner {
+    transform: scaleY(-1);
+    top: 3px;
+  }
+  @for $i from 1 through 10 {
+    .dropdown-item:nth-child(#{$i}) {
+      a.nav-link-dropdown {
+        animation: fade-in-dropdown 0.6s $i * 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+    }
+  }
+
 }
 
 .side-navbar-link__dropdown {
@@ -111,14 +134,94 @@
   list-style: none;
   display: inline-block;
   width: 100%;
-  padding: 14px 0;
-  background-color: $blue-dark-2;
+  padding: 4px 0;
   margin-top: 5px;
+  height: 100%;
 }
 
 a.nav-link-dropdown {
   padding-left: 10px;
   font-size: 12pt;
-  color: white;
+  font-weight: 500;
+  color: $black-light;
+  transition: color 0.3s ease;
+  display: inline-block;
+  transform: translate(0px, -30px);
+  opacity: 0;
+  &:hover, &:focus {
+    color: $blue-5;
+  }
 }
+
+.side-navbar__admin {
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  margin: 50px auto 0;
+}
+
+.side-navbar__admin-txt {
+  padding-top: 7px;
+}
+
+.side-navbar__admin-button {
+  padding-top: 9px;
+}
+
+.side-navbar__admin-status {
+  padding-top: 5px;
+}
+
+.side-navbar__admin-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 69%;
+  margin: 20px auto 0;
+}
+
+.side-navbar__search-form {
+  width: 100%;
+  height: auto;
+  background-color: $grey-7;
+  text-align: center;
+  margin-top: 20px;
+  padding: 21px 14px;
+}
+.logo-affirmativ__wrap--sidb-navbar {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  top: 7px;
+}
+
+.search-form {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.search-form__icon {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 9px;
+  left: 24px;
+  color: $grey-8;
+  font-size: 17pt;
+}
+
+@keyframes fade-in-dropdown {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
 
