@@ -9,6 +9,8 @@
 .header__wrap {
   width: 100%;
   height: auto;
+  padding-left: 7%;
+  padding-right: 7%;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -17,14 +19,10 @@
 
 .header__logo {
   position: relative;
-  width: auto;
-  height: fit-content;
+  width: 236px;
+  height: 62px;
   cursor: pointer;
-  &:hover {
-    .logo-affirmativ-cross {
-      animation: anim-affirmativ-cross 2s 1 forwards cubic-bezier(0, 0.63, 0.17, 1.16);
-    }
-  }
+  margin: 6px 0px;
 }
 
 .header-nav-item {
@@ -51,6 +49,7 @@
 
 .header-nav {
   display: flex;
+  align-self: center;
   width: auto;
   height: auto;
 }

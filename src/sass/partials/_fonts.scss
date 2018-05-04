@@ -10,8 +10,5 @@
   }
 };
 
-@include font-face('Quicksand', 'Quicksand/Quicksand-Bold', 600);
-@include font-face('Quicksand', 'Quicksand/Quicksand-Medium', 500);
-@include font-face('Quicksand', 'Quicksand/Quicksand-Regular', 400);
-@include font-face('Quicksand', 'Quicksand/Quicksand-Light', 100);
+@include font-face('CircularStd-Book', 'CircularStd-Book', 400);
 

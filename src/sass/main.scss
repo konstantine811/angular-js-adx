@@ -49,6 +49,11 @@ a:hover, a:focus {
   overflow-y: hidden;
 }
 
+.container-fluid.container-fluid--section {
+  padding-left: 62px;
+  padding-right: 62px;
+}
+
 .page {
   position: absolute;
   top: 0;

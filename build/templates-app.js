@@ -154,197 +154,12 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
 
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "  <!--section head-->\n" +
-    "  <div class=\"row\">\n" +
-    "    <div class=\"col-sm-4\">\n" +
-    "      <div class=\"container-box-shadow\">\n" +
-    "        <div class=\"container-box-shadow__inner\">\n" +
-    "          <h4 class=\"title-box\">Total Views</h4>\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content\">\n" +
-    "                <div class=\"data-content__count\">\n" +
-    "                  <div class=\"data-content__top\">\n" +
-    "                    <div class=\"data-count-title\">226K</div>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"data-content__bottom\">\n" +
-    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content__chart\">\n" +
-    "                <div class=\"chart\" id=\"chart\">There will be a chart</div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-sm-4\">\n" +
-    "      <div class=\"container-box-shadow\">\n" +
-    "        <div class=\"container-box-shadow__inner\">\n" +
-    "          <h4 class=\"title-box\">Total Views</h4>\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content\">\n" +
-    "                <div class=\"data-content__count\">\n" +
-    "                  <div class=\"data-content__top\">\n" +
-    "                    <div class=\"data-count-title\">226K</div>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"data-content__bottom\">\n" +
-    "                  <div class=\"data-count-percent red\"><i class=\"fa fa-arrow-down\"></i>13,8%</div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content__chart\">\n" +
-    "                <div class=\"chart\">There will be a chart</div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-sm-4\">\n" +
-    "      <div class=\"container-box-shadow\">\n" +
-    "        <div class=\"container-box-shadow__inner\">\n" +
-    "          <h4 class=\"title-box\">Total Views</h4>\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content\">\n" +
-    "                <div class=\"data-content__count\">\n" +
-    "                  <div class=\"data-content__top\">\n" +
-    "                    <div class=\"data-count-title\">226K</div>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"data-content__bottom\">\n" +
-    "                  <div class=\"data-count-percent green\"><i class=\"fa fa-arrow-up\"></i>13,8%</div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"data-content__chart\">\n" +
-    "                <div class=\"chart\">There will be a chart</div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--section main-->\n" +
-    "  <div class=\"row\">\n" +
-    "    <div class=\"col-sm-8\">\n" +
-    "       <div class=\"container-title-section\">\n" +
-    "         <div class=\"container-title-section-top border-silver\">\n" +
-    "           <div class=\"container-title-section-top__title\">\n" +
-    "             <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
-    "           </div>\n" +
-    "           <div class=\"container-title-section__bottom\">\n" +
-    "             <div class=\"row\">\n" +
-    "               <div class=\"col-sm-6\">\n" +
-    "                 <div class=\"container-title__button\">\n" +
-    "                   <button class=\"bt green\">Button</button>\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "               <div class=\"col-sm-6\">\n" +
-    "                 <div class=\"container-title__button\">\n" +
-    "                   <button class=\"bt green\">Button</button>\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "         </div>\n" +
-    "         <div class=\"container-title-section-bottom\">\n" +
-    "           <div class=\"row\">\n" +
-    "             <div class=\"col-sm-6\">\n" +
-    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
-    "                 <div class=\"container-title-section-top__title\">\n" +
-    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
-    "                 </div>\n" +
-    "                 <div class=\"container-title-section__bottom\">\n" +
-    "                   <button class=\"bt grey\">Button</button>\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "             <div class=\"col-sm-6\">\n" +
-    "               <div class=\"container-title-section-bottom-box border-silver\">\n" +
-    "                 <div class=\"container-title-section-top__title\">\n" +
-    "                   <h3 class=\"container-title txt-color-blue\">Title of section</h3>\n" +
-    "                 </div>\n" +
-    "                 <div class=\"container-title-section__bottom\">\n" +
-    "                   <button class=\"bt grey\">Button</button>\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "         </div>\n" +
-    "       </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-sm-4\">\n" +
-    "      <div class=\"container-title-ixlayer\">\n" +
-    "        <div class=\"container-title-ixlayer__inner\">\n" +
-    "          <div class=\"container-title-ixlayer__header\">\n" +
-    "            <div class=\"header-logo header-logo--small animation\">\n" +
-    "              <div class=\"rect rect-top\">\n" +
-    "                <div class=\"rect-txt\">\n" +
-    "                  <span class=\"rect-top__txt\"> Platform layer</span>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"rect rect-middle-first\">\n" +
-    "                <div class=\"rect-txt\">\n" +
-    "                  <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"rect rect-middle-second\">\n" +
-    "                <div class=\"rect-txt\">\n" +
-    "                  <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"rect rect-bottom\">\n" +
-    "                <div class=\"rect-txt\">\n" +
-    "                  <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
-    "          </div>\n" +
-    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
-    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
-    "              About IxLayer\n" +
-    "            </h3>\n" +
-    "            <div class=\"ixlayer-about__txt\">\n" +
-    "              <p class=\"txt\">\n" +
-    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
-    "              </p>\n" +
-    "            </div>\n" +
-    "            <div class=\"ixlayer-about__button\">\n" +
-    "              <button class=\"button-border-rounded\">Visit website</button>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"container-title-ixlayer__about-txt\">\n" +
-    "            <h3 class=\"ixlayer-about__title txt-bold\">\n" +
-    "              Need help?\n" +
-    "            </h3>\n" +
-    "            <div class=\"ixlayer-about__txt\">\n" +
-    "              <p class=\"txt\">\n" +
-    "                IxLayer End-to-end solution is everything you need to launch a genetic product. All that is needed from your side is the scientific claims and Ixlayer will provide you best in class, web and mobile, user friendly genetic products with in 3 weeks.\n" +
-    "              </p>\n" +
-    "            </div>\n" +
-    "            <div class=\"container-about-button\">\n" +
-    "              <div class=\"ixlayer-about__button\">\n" +
-    "                <button class=\"button-border-rounded\">Email</button>\n" +
-    "              </div>\n" +
-    "              <div class=\"ixlayer-about__button\">\n" +
-    "                <button class=\"button-border-rounded\">Call: 415-254-2454</button>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
+    "<div class=\"container-fluid container-fluid--section\">\n" +
+    "  <div class=\"head-wrap\">\n" +
+    "    <div class=\"head-title__wrap\">\n" +
+    "      <div class=\"head-title\">\n" +
+    "        <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
+    "        </h1>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -736,15 +551,12 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
     "<header class=\"header\">\n" +
-    "  <div class=\"container\">\n" +
+    "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"header__wrap\">\n" +
     "        <!--logo-->\n" +
     "        <div class=\"header__logo\">\n" +
-    "          <div class=\"logo-affirmativ__wrap\">\n" +
-    "            <div class=\"logo-affirmativ\"><span class=\"logo-affirmativ-cross\"></span></div>\n" +
-    "          </div>\n" +
-    "          <div class=\"logo-txt\">affirmativ</div>\n" +
+    "          <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
     "        </div>\n" +
     "        <!--navigation-->\n" +
     "        <div class=\"header-nav\">\n" +
