@@ -185,7 +185,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "        <div class=\"login-form anim-content-transition\">\n" +
     "          <div class=\"panel panel--login\">\n" +
     "            <div class=\"panel__title\">\n" +
-    "              <h2 class=\"txt-brown txt-middle not-margin\">Sign in to Affirmativ</h2>\n" +
+    "              <h2 class=\"txt-middle not-margin\">Sign in to Affirmativ</h2>\n" +
     "            </div>\n" +
     "            <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "              <div class=\"form-input\">\n" +
@@ -344,7 +344,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            <div class=\"register-form__wrap anim-content-transition\">\n" +
     "                <div id=\"todoPanel\" class=\"panel panel--register\">\n" +
     "                    <div class=\"panel__title\">\n" +
-    "                        <h1 class=\"txt-brown txt-middle\">Create account for Affirmativ</h1>\n" +
+    "                        <h1 class=\"txt-middle\">Create account for Affirmativ</h1>\n" +
     "                    </div>\n" +
     "                  <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
     "                    <div ng-show=\"!complete\">\n" +
@@ -416,26 +416,26 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                 </div>\n" +
     "                 <div class=\"popup-content__title-txt\">\n" +
     "                   <div class=\"popup-content__title\">\n" +
-    "                     <h2 class=\"txt-bold txt-green\">User consent</h2>\n" +
+    "                     <h2 class=\"txt-bold\">User consent</h2>\n" +
     "                   </div>\n" +
     "                   <div class=\"popup-content__about-title\">\n" +
-    "                     <h3 class=\"txt-middle txt-black-light txt-uppercase\">Client for Affirmativ</h3>\n" +
+    "                     <h3 class=\"txt-middle  txt-uppercase\">Client for Affirmativ</h3>\n" +
     "                   </div>\n" +
     "                   <div class=\"popup-content__about-txt\">\n" +
-    "                     <p class=\"txt txt-middle txt-black-light\">Hi \"User Name\", Affirmativ is requesting access to your \"App\" account</p>\n" +
+    "                     <p class=\"txt txt-middle\">Hi \"User Name\", Affirmativ is requesting access to your \"App\" account</p>\n" +
     "                   </div>\n" +
     "                 </div>\n" +
     "                 <div class=\"popup-content__txt-with-logo\">\n" +
     "                   <div class=\"txt-with-logo\">\n" +
     "                     <div class=\"txt-with-logo__wrap\">\n" +
     "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-user fa--logo-with-txt\"></i></span>\n" +
-    "                       <p class=\"txt txt-black-light txt-inline-block\">Profile: access to your email profile</p>\n" +
+    "                       <p class=\"txt txt-inline-block\">Profile: access to your email profile</p>\n" +
     "                     </div>\n" +
     "                   </div>\n" +
     "                   <div class=\"txt-with-logo\">\n" +
     "                     <div class=\"txt-with-logo__wrap\">\n" +
     "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-shopping-bag fa--logo-with-txt\"></i></span>\n" +
-    "                       <p class=\"txt txt-black-light txt-inline-block\">Posts: read and write your posts</p>\n" +
+    "                       <p class=\"txt txt-inline-block\">Posts: read and write your posts</p>\n" +
     "                     </div>\n" +
     "                   </div>\n" +
     "                 </div>\n" +
@@ -556,7 +556,9 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"header__wrap\">\n" +
     "        <!--logo-->\n" +
     "        <div class=\"header__logo\">\n" +
-    "          <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
+    "          <a ui-sref=\"home\" class=\"header-logo__link\">\n" +
+    "            <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "        <!--navigation-->\n" +
     "        <div class=\"header-nav\">\n" +
@@ -597,13 +599,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <!--logo header-->\n" +
-    "      <div class=\"side-navbar-header\">\n" +
-    "        <div class=\"side-navbar-header__logo\">\n" +
-    "          <div class=\"logo-affirmativ__wrap logo-affirmativ__wrap--sidb-navbar\">\n" +
-    "            <div class=\"logo-affirmativ-middle\"><span class=\"logo-affirmativ-middle-cross\"></span></div>\n" +
-    "          </div>\n" +
-    "          <div class=\"logo-txt logo-txt-large\">affirmativ</div>\n" +
-    "        </div>\n" +
+    "      \n" +
     "        <!--end logo header-->\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -613,10 +609,10 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
     "        </div>\n" +
     "        <div class=\"side-navbar__admin-txt\">\n" +
-    "          <h2 class=\"side-navbar__admin-name txt txt-black-light txt-bold not-margin\">\n" +
+    "          <h2 class=\"side-navbar__admin-name txt-bold not-margin\">\n" +
     "            Maria Gomez\n" +
     "          </h2>\n" +
-    "          <p class=\"side-navbar__admin-status txt txt-black-light txt-uppercase not-margin\">\n" +
+    "          <p class=\"side-navbar__admin-status txt-uppercase not-margin\">\n" +
     "            Administrator\n" +
     "          </p>\n" +
     "        </div>\n" +
@@ -624,17 +620,6 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"dropdown-icon-circle\">\n" +
     "            <i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i>\n" +
     "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "      <div class=\"side-navbar__admin-buttons\">\n" +
-    "        <div class=\"admin-buttons__message icon-large--blue\">\n" +
-    "          <i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i>\n" +
-    "        </div>\n" +
-    "        <div class=\"admin-buttons__config icon-large--blue\">\n" +
-    "          <i class=\"fa fa-cog\" aria-hidden=\"true\"></i>\n" +
-    "        </div>\n" +
-    "        <div class=\"admin-buttons__info icon-large--blue\">\n" +
-    "          <i class=\"fa fa-info-circle\" aria-hidden=\"true\"></i>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

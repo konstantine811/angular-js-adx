@@ -1,1 +1,140 @@
 
+svg {
+
+  .cls-1 {
+    fill: transparent;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: fade-in-fill-blue-dark 3s forwards ease-in;
+  }
+
+
+  @for $i from 1 through 10 {
+    .cls-1:nth-child(#{$i}) {
+      animation-delay: .1s * $i;
+    }
+  }
+
+  .cls-2 {
+    fill: transparent;
+    animation: fade-in-fill-blue 3s .5s forwards ease;
+  }
+
+  @for $i from 1 through 10 {
+    .cls-2:nth-child(#{$i}) {
+      animation-delay: .5s * $i;
+    }
+  }
+
+
+  .cls-3 {
+    fill: url(#linear-gradient);
+  }
+  .cls-3, .cls-4, .cls-5, .cls-6 {
+    opacity: 0;
+    animation: fade-in-x 3s .9s forwards ease-out;
+  }
+
+
+  .cls-4 {
+    fill: url(#linear-gradient-2);
+  }
+
+  .cls-5 {
+    fill: url(#linear-gradient-3);
+  }
+
+  .cls-6 {
+    fill: url(#linear-gradient-4);
+  }
+
+  .container-row-circle circle {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+  }
+
+  .circle-row-2 {
+    z-index: 1;
+    fill: #41c5eb;
+    animation: vertical1 2.7s ease-in-out backwards infinite;
+  }
+
+  .circle-row-1 {
+    fill: #41c5eb;
+    animation:  vertical2 2.7s ease-in-out backwards infinite;
+  }
+
+  @for $i from 1 through 10 {
+    .circle-row-1:nth-of-type(#{$i}), .circle-row-2:nth-of-type(#{$i}) {
+      animation-delay: .3s * $i;
+    }
+  }
+
+  .circle-row-2:nth-of-type(2) {
+    fill: $blue-green;
+  }
+
+  .circle-row-2:nth-of-type(3) {
+    fill: $blue-green-2;
+  }
+
+  .circle-row-2:nth-of-type(4) {
+    fill: $blue-1;
+  }
+
+  .circle-row-2:nth-of-type(5) {
+    fill: $purple-1;
+  }
+
+  .circle-row-2:nth-of-type(6){
+    fill: $purple-1;
+  }
+
+  .circle-row-2:nth-of-type(7){
+    fill: $purple-2;
+  }
+
+  .circle-row-2:nth-of-type(8){
+    fill: $red-light;
+  }
+
+
+  @keyframes vertical1 {
+    0%,
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+
+    50% {
+      transform: translateX(9.5px) scale(.45);
+    }
+  }
+
+  @keyframes vertical2 {
+    0%,
+    100% {
+      transform: translateX(0px) scale(.45);
+    }
+
+    50% {
+      transform: translate(-9.5px) scale(1);
+    }
+  }
+}
+
+@keyframes fade-in-fill-blue-dark {
+  100% {
+    fill: $blue-dark;
+  }
+}
+@keyframes fade-in-fill-blue {
+  100% {
+    fill: $blue-6;
+  }
+}
+
+@keyframes fade-in-x {
+  100% {
+    opacity: 1;
+  }
+}
