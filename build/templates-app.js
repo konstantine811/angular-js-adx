@@ -176,11 +176,11 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"home-head-bottom\">\n" +
-    "    <div class=\"home-head-bottom__wrap\">\n" +
+    "    <div class=\"home-head-bottom__wrap anim-content-transition\">\n" +
     "     <div class=\"home-head-bottom__title\">\n" +
     "       <h2>Get an ApoE genetic test today</h2>\n" +
     "     </div>\n" +
-    "      <div class=\"home-head-bottom__button\">\n" +
+    "      <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "        <div class=\"button__purchase\">\n" +
     "          <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "        </div>\n" +

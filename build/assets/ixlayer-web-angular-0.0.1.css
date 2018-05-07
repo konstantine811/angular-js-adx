@@ -8427,7 +8427,7 @@ a.nav-link-dropdown {
 .header {
   position: relative;
   min-height: 60px;
-  height: 133px;
+  height: 100px;
   background-color: #F9FBFD;
   z-index: 1000;
   box-shadow: 0 0 14px -1px #464646; }
@@ -8439,7 +8439,7 @@ a.nav-link-dropdown {
   padding-right: 7%;
   display: flex;
   justify-content: space-between;
-  padding-top: 36px; }
+  padding-top: 10px; }
 
 .header__logo {
   position: relative;
