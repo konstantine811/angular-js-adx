@@ -1,5 +1,5 @@
 body {
-  font-family: Quicksand, sans-serif;
+  font-family: 'CircularStd-Medium', sans-serif;
   font-weight: 400;
 }
 
@@ -25,9 +25,83 @@ body {
   font-weight: 500 !important;
 }
 
+//title txt
+h1 {
+  width: 100%;
+  height: 100%;
+  font-family: Quicksand, sans-serif;
+  font-size: 46.5pt;
+  font-weight: 300;
+  line-height: 75px;
+  color: $white;
+}
 
+h2 {
+  font-size: 28pt;
+  font-family: 'CircularStd-Medium', sans-serif;
+  color: $white;
+  font-weight: 300;
+  line-height: 44px;
+}
 
+h3 {
+  font-size: 22pt;
+  font-weight: 500;
+  color: $white;
+  font-family: Quicksand;
+  line-height: 28px;
+}
+h4 {
+  font-family: Quicksand, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  color: $white;
+}
 
+h5 {
+  font-family: Quicksand, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  color: $white;
+}
 
+h6 {
+  font-family: Quicksand, sans-serif;
+  font-size: 10pt;
+  color: $white;
+}
 
+.txt-main-title {
+  font-family: Quicksand, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 
+.txt-about {
+  font-family: Quicksand, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.txt-about-small {
+  font-family: Quicksand, sans-serif;
+  font-size: 12pt;
+  margin: 22px 0;
+  color: $white;
+}
+
+.txt-about-least {
+  font-family: Quicksand, sans-serif;
+  font-size: 10pt;
+  color: $white;
+}

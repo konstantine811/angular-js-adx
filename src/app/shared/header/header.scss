@@ -1,6 +1,7 @@
 .header {
   position: relative;
   min-height: 60px;
+  height: 133px;
   background-color: $silver;
   z-index: 1000;
   box-shadow: 0 0 14px -1px $black-light;
@@ -13,7 +14,7 @@
   padding-right: 7%;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 36px;
 }
 
 
@@ -25,6 +26,10 @@
   margin: 6px 0px;
 }
 
+.header-nav__wrap {
+  padding-right: 17px;
+}
+
 .header-nav-item {
   list-style: none;
   width: auto;
@@ -34,12 +39,14 @@
 }
 
 .header-nav-link {
-  color: $black-light;
-  font-weight: 500;
+  color: $blue-dark;
+  font-family: 'CircularStd-Medium', sans-serif;
+  font-size: 16.5pt;
+  font-weight: 400;
   cursor: pointer;
   transition: color 0.3s ease;
   &:hover {
-    color: $blue-5;
+    color: $blue-6;
   }
 }
 
@@ -49,7 +56,7 @@
 
 .header-nav {
   display: flex;
-  align-self: center;
+  align-self: flex-end;
   width: auto;
   height: auto;
 }
@@ -60,6 +67,6 @@
   padding-left: 25px;
 }
 
-.button__register {
-  padding-right: 15px;
+.button__login {
+  padding-right: 17px;
 }

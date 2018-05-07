@@ -155,11 +155,44 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
     "<div class=\"container-fluid container-fluid--section\">\n" +
-    "  <div class=\"head-wrap\">\n" +
-    "    <div class=\"head-title__wrap\">\n" +
-    "      <div class=\"head-title\">\n" +
-    "        <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
-    "        </h1>\n" +
+    "  <div class=\"home-head\">\n" +
+    "    <div class=\"home-head__wrap\">\n" +
+    "      <div class=\"head-title__wrap\">\n" +
+    "        <div class=\"head-title anim-content-transition\">\n" +
+    "          <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
+    "          </h1>\n" +
+    "          <h2>Get an ApoE genetic test today</h2>\n" +
+    "        </div>\n" +
+    "        <div class=\"head-button__wrap anim-content-transition\">\n" +
+    "          <button class=\"button-border-rounded\">Order test</button>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"head-image__wrap anim-content-transition\">\n" +
+    "        <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
+    "      <div ng-include=\"'./assets/images/svg/arrow-down.svg'\" class=\"arrow-down\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <div class=\"home-head-bottom\">\n" +
+    "    <div class=\"home-head-bottom__wrap\">\n" +
+    "     <div class=\"home-head-bottom__title\">\n" +
+    "       <h2>Get an ApoE genetic test today</h2>\n" +
+    "     </div>\n" +
+    "      <div class=\"home-head-bottom__button\">\n" +
+    "        <div class=\"button__purchase\">\n" +
+    "          <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section second-->\n" +
+    "  <div class=\"home-section-first\">\n" +
+    "    <div class=\"home-section-first__wrap\">\n" +
+    "      <div class=\"home-section-first__title\">\n" +
+    "        <h1>Information about the product</h1>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -565,10 +598,13 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          <nav class=\"header-nav__wrap\">\n" +
     "            <ul class=\"header-nav-wrap__inner\">\n" +
     "              <li class=\"header-nav-item\">\n" +
+    "                <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "              </li>\n" +
+    "              <li class=\"header-nav-item\">\n" +
     "                <a ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "                <a ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
     "                <a ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
@@ -579,11 +615,11 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button\">\n" +
-    "            <div class=\"button__register\">\n" +
-    "              <a ui-sref=\"register\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Register a kit</span></a>\n" +
-    "            </div>\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"login\" class=\"bt-round bt-round--brown\"><span class=\"bt-content\">Sign in</span></a>\n" +
+    "              <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__purchase\">\n" +
+    "              <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +

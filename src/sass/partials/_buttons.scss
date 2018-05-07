@@ -44,7 +44,7 @@ a.bt.purple:hover, button.bt.purple:hover {
 }
 
 a.bt.blue, button.bt.blue {
-  background: $blue-2;
+  background: $blue-6;
 }
 
 a.bt.blue:hover, button.bt.blue:hover {
@@ -66,15 +66,21 @@ button.button-border-rounded {
   min-width: 165px;
   height: auto;
   background-color: transparent;
-  color: white;
+  color: $white;
   outline: none;
-  border: 1px solid silver;
+  border: 2px solid $white;
   border-radius: 35px;
-  padding: 5px 31px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  font-size: 9pt;
+  padding: 7px 54px;
+  font-weight: 400;
+  font-family: 'CircularStd-Medium', sans-serif;
+  font-size: 19pt;
+  transition: all .5s ease-out;
+
+  &:hover {
+    box-shadow: 3px 8px 19px 0px $black-light-2, inset 4px 3px 15px 1px $white-silver-2;
+    transform: translate(-4px, -4px);
+    text-shadow: 6px 5px 4px $white-silver;
+  }
 }
 
 button[disabled].bt-round {
@@ -102,8 +108,9 @@ button[disabled].bt-round {
   display: inline-block;
   transition: all 0.4s ease-in;
   outline: none;
-  font-weight: 500;
-  font-size: 9pt;
+  font-weight: 400;
+  font-size: 16.5pt;
+  font-family: 'CircularStd-Medium', sans-serif;
   text-decoration: transparent;
   border: none;
   min-width: 121px;
@@ -151,26 +158,26 @@ button[disabled].bt-round {
 
 .bt-round.bt-round--blue {
   &:before, &:after {
-    background-color: $blue-5;
+    background-color: $blue-6;
   }
   &:hover {
-    box-shadow: inset 0px 0px 0px 1px $blue-5;
+    box-shadow: inset 0px 0px 0px 1px $blue-6;
     .bt-content {
-      color:  $blue-5;
+      color:  $blue-6;
     }
   }
 
 }
 
-.bt-round.bt-round--brown {
+.bt-round.bt-round--blue-dark {
   &:before, &:after {
-    background-color: $brown;
+    background-color: $blue-dark;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 0px 1px $brown;
+    box-shadow: inset 0px 0px 0px 1px $blue-dark;
     .bt-content {
-      color: $brown;
+      color: $blue-dark;
     }
   }
 }
@@ -180,6 +187,28 @@ button[disabled].bt-round {
   display: inline-block;
   z-index: 100;
   position: relative;
+}
+
+.arrow-down {
+  height: 56px;
+  transition: .5s ease-in;
+  perspective: 1200px;
+  perspective-origin: center;
+  &:hover {
+    cursor: pointer;
+    .arrow-down-svg {
+      animation: trans-arrow .9s forwards ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes trans-arrow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  80% {
+    transform: translate3d(0, 20px, 100px);
+  }
 }
 
 //animation

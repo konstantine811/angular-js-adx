@@ -3,6 +3,7 @@
     font-family: $family;
     src: url('../../assets/fonts/#{$path}.eot');
     src: url('../../assets/fonts/#{$path}.eot?#iefix') format('embedded-opentype'),
+    url("../../assets/fonts/#{$path}.otf") format("opentype"),
     url('../../assets/fonts/#{$path}.ttf') format('truetype'),
     url('../../assets/fonts/#{$path}.svg') format('svg');
     font-weight: $weight;
@@ -10,5 +11,6 @@
   }
 };
 
-@include font-face('CircularStd-Book', 'CircularStd-Book', 400);
+@include font-face('circular-book', 'CircularStd-Book', 400);
+@include font-face('circular-medium', 'CircularStd-Medium', 400);
 

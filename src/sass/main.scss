@@ -35,6 +35,13 @@
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 
+//responsive media query
+@import 'responsive/common-styling-media';
+//responsive media query components
+@import "../app/components/home/_home-media.scss";
+@import "../app/shared/header/header-media.scss";
+@import "./responsive/_buttons-media.scss";
+
 a[ng-click] {
   cursor: pointer;
 }
@@ -52,6 +59,8 @@ a:hover, a:focus {
 .container-fluid.container-fluid--section {
   padding-left: 62px;
   padding-right: 62px;
+  padding-bottom: 62px;
+  position: relative;
 }
 
 .page {
@@ -87,7 +96,13 @@ a:hover, a:focus {
   animation: fade-in 0.5s both ease;
 
   .anim-content-transition {
-    animation: fade-in-content .8s 0.15s both cubic-bezier(0, 0.6, 0.2, 1);
+    animation: fade-in-content .8s 0.15s both ease;
+  }
+
+  @for $i from 1 through 10 {
+    .anim-content-transition:nth-of-type(#{$i}) {
+      animation-delay: .1s * $i;
+    }
   }
 }
 
@@ -137,10 +152,12 @@ a:hover, a:focus {
 
 @keyframes fade-in-content {
   0% {
-    transform: translate(0, -20%) scale(0.8);
+    transform: translate(0px, -100px);
+    opacity: 0;
   }
   100% {
-    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
