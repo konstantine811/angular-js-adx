@@ -197,7 +197,7 @@ button[disabled].bt-round {
   &:hover {
     cursor: pointer;
     .arrow-down-svg {
-      animation: trans-arrow .9s forwards ease-in-out infinite;
+      animation: trans-arrow 1.5s forwards ease-in-out infinite;
     }
   }
 }

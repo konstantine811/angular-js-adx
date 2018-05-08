@@ -1,0 +1,16 @@
+<svg class="arrow-down-svg" xmlns="http://www.w3.org/2000/svg" width="110" height="32">
+  <defs>
+    <style>
+      .arrow-down-svg__inner {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2.835px;
+      }
+    </style>
+  </defs>
+  <g id="Group_454" data-name="Group 454">
+    <line id="Line_1" data-name="Line 1" class="arrow-down-svg__inner" x2="55.452" y2="27.978" transform="translate(0.6 1.3)"/>
+    <line id="Line_2" data-name="Line 2" class="arrow-down-svg__inner" x1="55.452" y2="28.104" transform="translate(55.548 1.3)"/>
+  </g>
+</svg>
