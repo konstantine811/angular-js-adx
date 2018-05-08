@@ -7707,31 +7707,19 @@ button.close {
   opacity: 1; }
 
 @font-face {
-  font-family: "CircularStd-Book";
-  src: url("../../assets/fonts/circular-book.eot");
-  src: url("../../assets/fonts/circular-book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/circular-book.otf") format("opentype"), url("../../assets/fonts/circular-book.ttf") format("truetype"), url("../../assets/fonts/circular-book.svg") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: "CircularStd-Medium";
-  src: url("../../assets/fonts/circular-medium.eot");
-  src: url("../../assets/fonts/circular-medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/circular-medium.otf") format("opentype"), url("../../assets/fonts/circular-medium.ttf") format("truetype"), url("../../assets/fonts/circular-medium.svg") format("svg");
-  font-weight: 400;
+  font-family: "Montserrat-SemiBold";
+  src: url("../../assets/fonts/Montserrat.eot");
+  src: url("../../assets/fonts/Montserrat.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat.otf") format("opentype"), url("../../assets/fonts/Montserrat.ttf") format("truetype"), url("../../assets/fonts/Montserrat.svg") format("svg");
+  font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Light.eot");
-  src: url("../../assets/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Light.otf") format("opentype"), url("../../assets/fonts/Roboto-Light.ttf") format("truetype"), url("../../assets/fonts/Roboto-Light.svg") format("svg");
+  src: url("../../assets/fonts/Roboto.eot");
+  src: url("../../assets/fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto.otf") format("opentype"), url("../../assets/fonts/Roboto.ttf") format("truetype"), url("../../assets/fonts/Roboto.svg") format("svg");
   font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.eot");
-  src: url("../../assets/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Regular.otf") format("opentype"), url("../../assets/fonts/Roboto-Regular.ttf") format("truetype"), url("../../assets/fonts/Roboto-Regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal; }
+  font-style: light; }
 body {
-  font-family: 'CircularStd-Medium', sans-serif;
+  font-family: Roboto, Montserrat, sans-serif;
   font-weight: 400; }
 
 .not-margin {
@@ -7767,46 +7755,47 @@ body {
 h1 {
   width: 100%;
   height: 100%;
-  font-family: 'CircularStd-Book', sans-serif;
-  font-size: 46.5pt;
-  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
   line-height: 75px;
   color: #fff; }
 
 h2 {
-  font-size: 28pt;
-  font-family: 'CircularStd-Medium', sans-serif;
+  font-size: 50px;
+  font-family: Montserrat, sans-serif;
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 44px; }
 
 h3 {
-  font-size: 22pt;
-  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
   color: #fff;
-  font-family: Quicksand;
   line-height: 28px; }
 
 h4 {
-  font-family: Quicksand, sans-serif;
-  font-size: 15pt;
-  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
   color: #fff; }
 
 h5 {
-  font-family: Quicksand, sans-serif;
-  font-size: 14pt;
-  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
   color: #fff; }
 
 h6 {
-  font-family: Quicksand, sans-serif;
-  font-size: 10pt;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
   color: #fff; }
 
-.txt-main-title {
+.sub-header-txt {
   font-family: Roboto, sans-serif;
-  font-size: 26pt;
+  font-size: 35px;
   font-weight: 300;
   line-height: 26px;
   color: #fff;
@@ -7815,25 +7804,14 @@ h6 {
   margin: 0 auto; }
 
 .txt {
-  font-family: Quicksand, sans-serif;
-  font-size: 16pt;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
   font-weight: 300;
   line-height: 26px;
   color: #fff;
   width: 100%;
   height: auto;
   margin: 0 auto; }
-
-.txt-about-small {
-  font-family: Quicksand, sans-serif;
-  font-size: 12pt;
-  margin: 22px 0;
-  color: #fff; }
-
-.txt-about-least {
-  font-family: Quicksand, sans-serif;
-  font-size: 10pt;
-  color: #fff; }
 
 svg .cls-1 {
   fill: transparent;
@@ -8044,7 +8022,7 @@ button[disabled].bt-round {
   color: #fff;
   background-color: transparent;
   border-radius: 100px;
-  padding: 9px 34px;
+  padding: 9px 57px;
   display: inline-block;
   transition: all 0.4s ease-in;
   outline: none;
