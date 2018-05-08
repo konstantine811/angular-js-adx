@@ -77,9 +77,9 @@ button.button-border-rounded {
   transition: all .5s ease-out;
 
   &:hover {
-    box-shadow: 3px 8px 19px 0px $black-light-2, inset 4px 3px 15px 1px $white-silver-2;
+    box-shadow: 3px 8px 19px 0px $blue-dark, inset 4px 3px 15px 1px $blue-dark;
     transform: translate(-4px, -4px);
-    text-shadow: 6px 5px 4px $white-silver;
+    text-shadow: 6px 5px 4px $blue-dark;
   }
 }
 

@@ -8026,9 +8026,9 @@ button.button-border-rounded {
   font-size: 19pt;
   transition: all .5s ease-out; }
   button.button-border-rounded:hover {
-    box-shadow: 3px 8px 19px 0px #616161, inset 4px 3px 15px 1px #c5c0c0;
+    box-shadow: 3px 8px 19px 0px #063f5f, inset 4px 3px 15px 1px #063f5f;
     transform: translate(-4px, -4px);
-    text-shadow: 6px 5px 4px #c4c4c4; }
+    text-shadow: 6px 5px 4px #063f5f; }
 
 button[disabled].bt-round {
   cursor: not-allowed; }
