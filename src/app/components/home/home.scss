@@ -59,8 +59,76 @@
   display: flex;
   padding: 23px 0 23px 9%;
 }
+.home-head-bottom__title {
+  padding-top: 11px;
+}
 
 .home-head-bottom__button {
   align-self: flex-end;
   padding-left: 9%;
+}
+
+
+//styling for the section first
+.home-section-first {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 46px 2px rgba($black, .2);
+  margin-top: 36px;
+}
+
+.home-section-first__wrap {
+  width: 100%;
+  height: auto;
+  max-width: 1442px;
+  margin: 0 auto;
+  padding: 133px 0 200px;
+}
+
+.home-section-first__title {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.home-section-first__title-about {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1058px;
+  padding-top: 48px;
+}
+
+.home-section-first__content {
+  width: 100%;
+  height: auto;
+  padding-top: 117px;
+}
+
+.home-section-first-content__first, .home-section-first-content__second  {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.home-section-first-content__second {
+  flex-flow: row-reverse;
+  padding-top: 45px;
+}
+
+.home-section-first-content__txt-content {
+  width: 50%;
+  padding-top: 50px;
+}
+
+.home-section-first-content__image {
+  width: 50%;
+}
+
+.home-section-first-content__txt {
+  width: 100%;
+  height: auto;
+  padding-top: 37px;
 }

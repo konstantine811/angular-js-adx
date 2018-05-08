@@ -161,7 +161,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        <div class=\"head-title anim-content-transition\">\n" +
     "          <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
     "          </h1>\n" +
-    "          <h3>Get an ApoE genetic test today</h3>\n" +
+    "          <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "        </div>\n" +
     "        <div class=\"head-button__wrap anim-content-transition\">\n" +
     "          <button class=\"button-border-rounded\">Order test</button>\n" +
@@ -200,7 +200,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "      <div class=\"home-section-first__content\">\n" +
     "        <div class=\"home-section-first-content__first\">\n" +
-    "          <div class=\"home-section-first-content__txt\">\n" +
+    "          <div class=\"home-section-first-content__txt-content\">\n" +
     "            <div class=\"home-section-first-content__title\">\n" +
     "              <h3 class=\"txt-blue-dark\">Why should I take this test?</h3>\n" +
     "            </div>\n" +
@@ -208,6 +208,31 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              <div class=\"txt txt-black\">\n" +
     "                Changes begin happening in the brain about two decades before the first symptoms of memory decline. Your lifestyle, environment, and other medical conditions, along with your genetics and age influence your cognitive health. Don’t wait until your memory begins to fade. Find out your genetic risk for late-onset Alzheimer’s disease early, so you have the time to consider your options and make lifestyle changes that feel right for you. For individuals at high risk for Alzheimer’s disease, early action can make a difference.\n" +
     "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"home-section-first-content__image\">\n" +
+    "            <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--float-right\">\n" +
+    "              <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"home-section-first-content__second\">\n" +
+    "          <div class=\"home-section-first-content__txt-content\">\n" +
+    "            <div class=\"home-section-first-content__title\">\n" +
+    "              <h3 class=\"txt-blue-dark\">What will the test tell me</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"home-section-first-content__txt\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Your ApoE test results will explain which combination of the ApoE alleles you have, and what the associated risk of Alzheimer’s disease development is based on your ApoE alleles.\n" +
+    "                <div class=\"span txt--indent\">\n" +
+    "                  The test will also tell you how your lifetime risk for developing Alzheimer’s disease changes as you age.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"home-section-first-content__image\">\n" +
+    "            <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--blue\">\n" +
+    "              <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-notebook.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
