@@ -11,8 +11,8 @@
   }
 };
 
-@include font-face('circular-book', 'CircularStd-Book', 400);
-@include font-face('circular-medium', 'CircularStd-Medium', 400);
-@include font-face('Roboto-Light', 'Roboto', 300);
-@include font-face('Roboto-Regular', 'Roboto', 400);
+@include font-face('CircularStd-Book', 'circular-book', 400);
+@include font-face('CircularStd-Medium', 'circular-medium', 400);
+@include font-face('Roboto', 'Roboto-Light', 300);
+@include font-face('Roboto', 'Roboto-Regular', 400);
 

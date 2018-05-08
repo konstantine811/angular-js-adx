@@ -7707,27 +7707,27 @@ button.close {
   opacity: 1; }
 
 @font-face {
-  font-family: "circular-book";
-  src: url("../../assets/fonts/CircularStd-Book.eot");
-  src: url("../../assets/fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CircularStd-Book.otf") format("opentype"), url("../../assets/fonts/CircularStd-Book.ttf") format("truetype"), url("../../assets/fonts/CircularStd-Book.svg") format("svg");
+  font-family: "CircularStd-Book";
+  src: url("../../assets/fonts/circular-book.eot");
+  src: url("../../assets/fonts/circular-book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/circular-book.otf") format("opentype"), url("../../assets/fonts/circular-book.ttf") format("truetype"), url("../../assets/fonts/circular-book.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: "circular-medium";
-  src: url("../../assets/fonts/CircularStd-Medium.eot");
-  src: url("../../assets/fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CircularStd-Medium.otf") format("opentype"), url("../../assets/fonts/CircularStd-Medium.ttf") format("truetype"), url("../../assets/fonts/CircularStd-Medium.svg") format("svg");
+  font-family: "CircularStd-Medium";
+  src: url("../../assets/fonts/circular-medium.eot");
+  src: url("../../assets/fonts/circular-medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/circular-medium.otf") format("opentype"), url("../../assets/fonts/circular-medium.ttf") format("truetype"), url("../../assets/fonts/circular-medium.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: "Roboto-Light";
-  src: url("../../assets/fonts/Roboto.eot");
-  src: url("../../assets/fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto.otf") format("opentype"), url("../../assets/fonts/Roboto.ttf") format("truetype"), url("../../assets/fonts/Roboto.svg") format("svg");
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Light.eot");
+  src: url("../../assets/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Light.otf") format("opentype"), url("../../assets/fonts/Roboto-Light.ttf") format("truetype"), url("../../assets/fonts/Roboto-Light.svg") format("svg");
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../../assets/fonts/Roboto.eot");
-  src: url("../../assets/fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto.otf") format("opentype"), url("../../assets/fonts/Roboto.ttf") format("truetype"), url("../../assets/fonts/Roboto.svg") format("svg");
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.eot");
+  src: url("../../assets/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Regular.otf") format("opentype"), url("../../assets/fonts/Roboto-Regular.ttf") format("truetype"), url("../../assets/fonts/Roboto-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
 body {
@@ -7805,9 +7805,9 @@ h6 {
   color: #fff; }
 
 .txt-main-title {
-  font-family: 'Roboto', serif;
+  font-family: Roboto, sans-serif;
   font-size: 26pt;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 26px;
   color: #fff;
   width: 100%;
