@@ -7926,7 +7926,40 @@ h6 {
   max-width: 508px;
   height: 448px;
   background-color: white;
-  margin: 0 15px; }
+  margin: 0 15px;
+  padding-left: 50px; }
+
+.box-orange {
+  box-shadow: inset 0px 17px 0px 0px #FDB954; }
+
+.box-blue-dark {
+  box-shadow: inset 0px 17px 0px 0px #063f5f; }
+
+.box-blue {
+  box-shadow: inset 0px 17px 0px 0px #41c5eb; }
+
+.box-title__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 100px; }
+
+.box-txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 27px; }
+
+.box-data__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 50px; }
+
+.data {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #41c5eb;
+  margin: 0;
+  padding: 0; }
 
 svg .cls-1 {
   fill: transparent;
@@ -8538,6 +8571,11 @@ a.nav-link-dropdown {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 134px 0 125px; }
+
+.home-section-third__boxes {
+  width: 100%;
+  height: auto;
+  padding-top: 140px; }
 
 .login-page {
   position: relative;

@@ -252,4 +252,44 @@ h6 {
   height: 448px;
   background-color: white;
   margin: 0 15px;
+  padding-left: 50px
+}
+
+.box-orange {
+  box-shadow: inset 0px 17px 0px 0px $orange;
+}
+
+.box-blue-dark {
+  box-shadow: inset 0px 17px 0px 0px $blue-dark;
+}
+
+.box-blue {
+  box-shadow: inset 0px 17px 0px 0px $blue-6;
+}
+
+.box-title__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+.box-txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 27px;
+}
+
+.box-data__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.data {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: $blue-6;
+  margin: 0;
+  padding: 0;
 }

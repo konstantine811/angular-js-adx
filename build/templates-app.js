@@ -424,7 +424,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "    </div>\n" +
     "    <div class=\"home-section-third__boxes\">\n" +
     "      <div class=\"boxes__wrap\">\n" +
-    "        <div class=\"box\">\n" +
+    "        <div class=\"box box-orange\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Tracy Smith</h3>\n" +
     "          </div>\n" +
@@ -437,7 +437,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box\">\n" +
+    "        <div class=\"box box-blue-dark\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Daniel Trevor</h3>\n" +
     "          </div>\n" +
@@ -450,7 +450,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box\">\n" +
+    "        <div class=\"box box-blue\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Gloria Sanchez</h3>\n" +
     "          </div>\n" +
