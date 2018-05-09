@@ -60,6 +60,10 @@ a.bt.gray:hover, button.bt.gray:hover {
   background: $white-gray;
 }
 
+.button__wrap {
+  padding-top: 27px;
+}
+
 //border button
 button.button-border-rounded {
   width: auto;

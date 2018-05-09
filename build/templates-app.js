@@ -156,89 +156,317 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
   $templateCache.put("components/home/home.tpl.html",
     "<div class=\"container-fluid container-fluid--section\">\n" +
     "  <div class=\"home-head\">\n" +
-    "    <div class=\"home-head__wrap\">\n" +
-    "      <div class=\"head-title__wrap\">\n" +
-    "        <div class=\"head-title anim-content-transition\">\n" +
-    "          <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
-    "          </h1>\n" +
-    "          <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
-    "        </div>\n" +
-    "        <div class=\"head-button__wrap anim-content-transition\">\n" +
-    "          <button class=\"button-border-rounded\">Order test</button>\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div class=\"home-head__wrap\">\n" +
+    "          <div class=\"head-title__wrap\">\n" +
+    "            <div class=\"head-title anim-content-transition\">\n" +
+    "              <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
+    "              </h1>\n" +
+    "              <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"head-button__wrap anim-content-transition\">\n" +
+    "              <button class=\"button-border-rounded\">Order test</button>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"head-image__wrap anim-content-transition\">\n" +
+    "            <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"head-image__wrap anim-content-transition\">\n" +
-    "        <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
-    "      </div>\n" +
-    "    </div>\n" +
     "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
     "      <div ng-include=\"'./assets/images/svg/arrow-down.svg'\" class=\"arrow-down\"></div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"home-head-bottom\">\n" +
-    "    <div class=\"home-head-bottom__wrap anim-content-transition\">\n" +
-    "     <div class=\"home-head-bottom__title\">\n" +
-    "       <h3 class=\"txt-fonts-circular-book\">Get an ApoE genetic test today</h3>\n" +
-    "     </div>\n" +
-    "      <div class=\"home-head-bottom__button anim-content-transition\">\n" +
-    "        <div class=\"button__purchase\">\n" +
-    "          <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "    <div class=\"container-lg\">\n" +
+    "      <div class=\"home-head-bottom__wrap\">\n" +
+    "        <div class=\"home-head-bottom__title anim-content-transition\">\n" +
+    "          <h3 class=\"txt-fonts-circular-book\">Get an ApoE genetic test today</h3>\n" +
+    "        </div>\n" +
+    "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
+    "          <div class=\"button__purchase\">\n" +
+    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  \n" +
     "  <!--section second-->\n" +
-    "  <div class=\"home-section-first\">\n" +
-    "    <div class=\"home-section-first__wrap\">\n" +
-    "      <div class=\"home-section-first__title\">\n" +
-    "        <h1 class=\"txt-blue\">Information about the product</h1>\n" +
-    "      </div>\n" +
-    "      <div class=\"home-section-first__title-about\">\n" +
-    "        <div class=\"sub-header-txt txt-black\">Whether you are 35 or 75, your Alzheimer’s genetics are the same.\n" +
-    "          <br> It is never too early or too late to learn your genetic risk for late-onset Alzheimer’s disease!</div>\n" +
-    "      </div>\n" +
-    "      <div class=\"home-section-first__content\">\n" +
-    "        <div class=\"home-section-first-content__first\">\n" +
-    "          <div class=\"home-section-first-content__txt-content\">\n" +
-    "            <div class=\"home-section-first-content__title\">\n" +
-    "              <h3 class=\"txt-blue-dark\">Why should I take this test?</h3>\n" +
-    "            </div>\n" +
-    "            <div class=\"home-section-first-content__txt\">\n" +
-    "              <div class=\"txt txt-black\">\n" +
-    "                Changes begin happening in the brain about two decades before the first symptoms of memory decline. Your lifestyle, environment, and other medical conditions, along with your genetics and age influence your cognitive health. Don’t wait until your memory begins to fade. Find out your genetic risk for late-onset Alzheimer’s disease early, so you have the time to consider your options and make lifestyle changes that feel right for you. For individuals at high risk for Alzheimer’s disease, early action can make a difference.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"home-section-first-content__image\">\n" +
-    "            <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--float-right\">\n" +
-    "              <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
+    "  <div class=\"section-box-shadow home-section-first\">\n" +
+    "    <div class=\"container-lg\">\n" +
+    "      <div class=\"home-section-first__wrap\">\n" +
+    "        <div class=\"home-section-first__title\">\n" +
+    "          <h1 class=\"txt-blue\">Information about the product</h1>\n" +
     "        </div>\n" +
-    "        <div class=\"home-section-first-content__second\">\n" +
-    "          <div class=\"home-section-first-content__txt-content\">\n" +
-    "            <div class=\"home-section-first-content__title\">\n" +
-    "              <h3 class=\"txt-blue-dark\">What will the test tell me</h3>\n" +
-    "            </div>\n" +
-    "            <div class=\"home-section-first-content__txt\">\n" +
-    "              <div class=\"txt txt-black\">\n" +
-    "                Your ApoE test results will explain which combination of the ApoE alleles you have, and what the associated risk of Alzheimer’s disease development is based on your ApoE alleles.\n" +
-    "                <div class=\"span txt--indent\">\n" +
-    "                  The test will also tell you how your lifetime risk for developing Alzheimer’s disease changes as you age.\n" +
+    "        <div class=\"home-section-first__title-about\">\n" +
+    "          <div class=\"sub-header-txt txt-black\">Whether you are 35 or 75, your Alzheimer’s genetics are the same.\n" +
+    "            <br> It is never too early or too late to learn your genetic risk for late-onset Alzheimer’s disease!</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"home-section-first__content\">\n" +
+    "          <div class=\"home-section-first-content__first\">\n" +
+    "            <div class=\"home-section-first-content__txt-content\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">Why should I take this test?</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Changes begin happening in the brain about two decades before the first symptoms of memory decline. Your lifestyle, environment, and other medical conditions, along with your genetics and age influence your cognitive health. Don’t wait until your memory begins to fade. Find out your genetic risk for late-onset Alzheimer’s disease early, so you have the time to consider your options and make lifestyle changes that feel right for you. For individuals at high risk for Alzheimer’s disease, early action can make a difference.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
+    "            <div class=\"home-section-first-content__image\">\n" +
+    "              <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--float-right\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"home-section-first-content__image\">\n" +
-    "            <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--blue\">\n" +
-    "              <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-notebook.svg'\"></ng-include>\n" +
+    "          <div class=\"home-section-first-content__second\">\n" +
+    "            <div class=\"home-section-first-content__txt-content\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">What will the test tell me</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Your ApoE test results will explain which combination of the ApoE alleles you have, and what the associated risk of Alzheimer’s disease development is based on your ApoE alleles.\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    The test will also tell you how your lifetime risk for developing Alzheimer’s disease changes as you age.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"home-section-first-content__image\">\n" +
+    "              <div class=\"img-bgc-wrap__rounded bgc-blue\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-notebook.svg'\"></ng-include>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "  <div class=\"section-box-shadow home-section-second\">\n" +
+    "    <div class=\"home-section-second__head-img\">\n" +
+    "      <img class=\"img\" src=\"./assets/images/home-page/img-section-second.png\" alt=\"\">\n" +
+    "    </div>\n" +
+    "    <div class=\"home-section-second__wrap\">\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div class=\"row\">\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__test-info\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">Test info</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  From start to finish, you are never alone in the process. Like other genetic testing companies, we offer an easy at home test. However, our genetic test is paired with the oversight of physician review and support of genetic counseling. We make sure the test is a good fit for you, and that you understand the test you are ordering and what your results reveal.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"home-section-second__physician\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">Physician approved</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__fast-results\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">Fast results</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  We offer private pay when ordering your test, giving you greater control over your healthcare. Insurance companies have yet to catch up with advancements in genetic health, and we do not want to be limited by what your insurance will cover.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"home-section-second__genes\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h3 class=\"txt-blue-dark\">\n" +
+    "                  Your Genes. Your Privacy.\n" +
+    "                </h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Once your results are ready, an electronic copy of your report will be delivered on our secure platform. A printable copy of your results will also be available. It is up to you whom you share your test results with.  A genetic counselor is available at no additional cost if you want to ask questions about your results.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"home-section-second__title-blue\">\n" +
+    "        <div class=\"title-blue__inner\">\n" +
+    "          <h1 class=\"txt-blue-dark\">From the privacy of your own home.  Simple saliva test.</h1>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"container-lg\">\n" +
+    "         <div class=\"row row-padding-top\">\n" +
+    "           <div class=\"col-sm-6\">\n" +
+    "             <div class=\"home-section-second__physician-review\">\n" +
+    "               <div class=\"img-bgc-wrap-middle__rounded\">\n" +
+    "                 <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "               </div>\n" +
+    "               <div class=\"title__wrap txt-center\">\n" +
+    "                 <h3 class=\"txt-blue-dark\">\n" +
+    "                   Physician review\n" +
+    "                 </h3>\n" +
+    "               </div>\n" +
+    "               <div class=\"txt__wrap txt-center\">\n" +
+    "                 <div class=\"txt txt-black\">\n" +
+    "                   A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.  If they need any additional information, they will reach out to you.\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "           <div class=\"col-sm-6\">\n" +
+    "             <div class=\"home-section-second__spit\">\n" +
+    "               <div class=\"img-bgc-wrap-middle__rounded bgc-blue\">\n" +
+    "                 <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "               </div>\n" +
+    "               <div class=\"title__wrap txt-center\">\n" +
+    "                 <h3 class=\"txt-blue-dark txt-center\">\n" +
+    "                   Spit\n" +
+    "                 </h3>\n" +
+    "               </div>\n" +
+    "               <div class=\"txt__wrap txt-center\">\n" +
+    "                 <div class=\"txt txt-black txt-center\">\n" +
+    "                   Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
+    "                 </div>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "        <div class=\"row row-padding-top\">\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__results\">\n" +
+    "              <div class=\"img-bgc-wrap-middle__rounded bgc-yellow\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h3 class=\"txt-blue-dark\">\n" +
+    "                  Results\n" +
+    "                </h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Obtain your results privately and securely online. We’ll help you schedule your free genetic counseling session if you would like to review your results with a genetic counselor. You can also print a copy of your results if you want to share them with family or your doctor.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__take-action\">\n" +
+    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h3 class=\"txt-blue-dark\">\n" +
+    "                  Take action\n" +
+    "                </h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Get started reducing your risk for Alzheimer’s disease and improving your cognitive health by understanding your genetic risk.\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    The Alzheimer’s ApoE genetic test assesses the most common gene associated with genetic risk for late-onset (occurring after age 65) Alzheimer’s disease.  This test does not evaluate the rare “familial” Alzheimer’s disease mutations in PS1, PS2 or APP, which are associated with autosomal dominant early-onset Alzheimer’s disease, a rare subtype of the disease.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"home-section-second__bottom\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div class=\"home-section-second-bottom__wrap\">\n" +
+    "            <div class=\"home-section-second-bottom__img\">\n" +
+    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"home-section-second-bottom__content\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h1 class=\"txt-blue-dark\">Science</h1>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap\">\n" +
+    "                <div class=\"txt\">\n" +
+    "                  The Alzheimer’s ApoE test is a single gene test that looks at your ApoE-related genetic risk for Alzheimer’s disease. In addition to genetics, your Alzheimer’s disease risk is also influenced by your  other medical conditions, age, gender, and environmental and lifestyle factors.\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    ApoE comes in three forms: ApoE-e2, ApoE-e3, and ApoE-e4. Our Alzheimer’s ApoE genetic test combines your ApoE - related genetics with your age to help assess your Alzheimer’s disease risk. Other factors such as gender, medical health and lifestyle habits also influence your Alzheimer’s disease risk. We do not take these factors into your genetics risk.  Identifying your overall risk can help you decide how aggressively you want to address your cognitive health.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"button__wrap\">\n" +
+    "                <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Learn more</span></a>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section third-->\n" +
+    "  <div class=\"home-section-third section-box-shadow\">\n" +
+    "    <div class=\"title__wrap txt-center\">\n" +
+    "      <h1 class=\"txt-blue-dark\">What people say about us</h1>\n" +
+    "    </div>\n" +
+    "    <div class=\"sub-header-txt__wrap txt-center\">\n" +
+    "      <div class=\"sub-header-txt txt-black\">\n" +
+    "        ApoE is the most important piece of the puzzle.\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"home-section-third__boxes\">\n" +
+    "      <div class=\"boxes__wrap\">\n" +
+    "        <div class=\"box\">\n" +
+    "          <div class=\"box-title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark\">Tracy Smith</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              ApoE testing must be approved by your physician or other qualified health care provider. If you don't have a health care provider AFFIRMATIV diagnostics.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-data__wrap\">\n" +
+    "            <div class=\"data\">2018.01.12</div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"box\">\n" +
+    "          <div class=\"box-title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark\">Daniel Trevor</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              ApoE testing must be approved by your physician or other qualified health care provider. If you don't have a health care provider AFFIRMATIV diagnostics.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-data__wrap\">\n" +
+    "            <div class=\"data\">2018.01.12</div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"box\">\n" +
+    "          <div class=\"box-title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark\">Gloria Sanchez</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              ApoE testing must be approved by your physician or other qualified health care provider. If you don't have a health care provider AFFIRMATIV diagnostics.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-data__wrap\">\n" +
+    "            <div class=\"data\">2018.01.12</div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
     "</div>");
 }]);
 
