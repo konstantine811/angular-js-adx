@@ -18,8 +18,7 @@ angular.module( 'ixLayer', [
   'ixLayer.changePassword',
   'ixLayer.results',
   'ui.router',
-  'ngAnimate',
-  'ngScrollbar'
+  'ngAnimate'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

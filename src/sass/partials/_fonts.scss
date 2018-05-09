@@ -3,7 +3,6 @@
     font-family: $family;
     src: url('../../assets/fonts/#{$path}.eot');
     src: url('../../assets/fonts/#{$path}.eot?#iefix') format('embedded-opentype'),
-    url("../../assets/fonts/#{$path}.otf") format("opentype"),
     url('../../assets/fonts/#{$path}.ttf') format('truetype'),
     url('../../assets/fonts/#{$path}.svg') format('svg');
     font-weight: $weight;
@@ -11,6 +10,6 @@
   }
 };
 
-@include font-face('Montserrat-SemiBold', 'Montserrat', 600);
-@include font-face('Roboto', 'Roboto', 300, light);
+@include font-face('Montserrat', 'Montserrat-SemiBold', 600);
+@include font-face('Roboto', 'Roboto-Light', 300, light);
 

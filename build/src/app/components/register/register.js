@@ -2,8 +2,7 @@ angular.module( 'ixLayer.register', [
     'ui.router',
     'ixlayer.djangoAuth',
     'ui.bootstrap',
-    'ngAnimate',
-    'ngScrollbar'
+    'ngAnimate'
   ])
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'register', {

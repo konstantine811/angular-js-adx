@@ -174,7 +174,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "      </div>\n" +
     "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
-    "      <div ng-include=\"'./assets/images/svg/arrow-down.svg'\" class=\"arrow-down\"></div>\n" +
+    "      <a href=\"#anchor\" ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"home-head-bottom\">\n" +
@@ -464,6 +464,43 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section fourth-->\n" +
+    "  <div id=\"anchor\" class=\"home-section-fourth section-box-shadow\">\n" +
+    "    <div class=\"home-section-fourth__head\">\n" +
+    "      <div class=\"home-section-fourth-head__title\">\n" +
+    "        <h3 class=\"txt-blue txt-center\">Frequently asked questions</h3>\n" +
+    "        <h1 class=\"txt-blue txt-center\">We care about you</h1>\n" +
+    "        <div class=\"sub-header-txt__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-center\">\n" +
+    "            Our customer support team is available\n" +
+    "            by email or chat, and is happy to answer your\n" +
+    "            questions about your test kit, results, and more.\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"home-section-fourth__content\">\n" +
+    "       <div class=\"container-lg\">\n" +
+    "          <div class=\"home-section-fourth-content__row\">\n" +
+    "            <div class=\"cross-button-open__wrap\">\n" +
+    "              <div class=\"cross-button-open\"></div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-title__wrap\">\n" +
+    "              <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "         <div class=\"home-section-fourth-content__row\">\n" +
+    "           <div class=\"cross-button-open__wrap\">\n" +
+    "             <div class=\"cross-button-open\"></div>\n" +
+    "           </div>\n" +
+    "           <div class=\"content-title__wrap\">\n" +
+    "             <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "       </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  \n" +

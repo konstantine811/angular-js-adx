@@ -168,3 +168,29 @@
   height: auto;
   padding-top: 140px;
 }
+
+//section fourth
+.home-section-fourth__head {
+  width: 100%;
+  height: auto;
+  background-image: url('../assets/images/home-page/bgc-section-fourth.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 197px;
+  padding-bottom: 162px;
+}
+
+.home-section-fourth-head__title {
+  width: 100%;
+  max-width: 743px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.home-section-fourth-content__row {
+  width: 100%;
+  height: auto;
+  padding-top: 87px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid $silver;
+}

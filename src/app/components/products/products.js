@@ -2,8 +2,7 @@ angular.module( 'ixLayer.products', [
   'ui.router',
   'ui.bootstrap',
   'ixlayer.api.products',
-  'ngAnimate',
-  'ngScrollbar'
+  'ngAnimate'
 ])
   .config(function config($stateProvider) {
     $stateProvider.state('products', {
