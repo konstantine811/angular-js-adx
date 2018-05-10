@@ -9135,6 +9135,9 @@ span.summary.ng-valid {
   .container-fluid.container-fluid--section {
     padding-left: 0 !important;
     padding-right: 0 !important; } }
+@media (max-width: 960px) {
+  .container-page {
+    padding-top: 77px !important; } }
 @media (max-width: 1596px) {
   h1 {
     font-size: 50px;
@@ -9173,9 +9176,21 @@ span.summary.ng-valid {
   h4 {
     font-size: 25px; }
 
+  .title__wrap--md-center {
+    text-align: center; }
+
   .sub-header-txt {
     font-size: 25px;
-    line-height: 22px; } }
+    line-height: 22px; }
+
+  .section-box-shadow {
+    margin-top: 25px; }
+
+  .boxes__wrap {
+    flex-flow: wrap; }
+
+  .box {
+    margin: 25px 15px; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -9251,8 +9266,47 @@ span.summary.ng-valid {
   .home-head-image__wrap {
     top: 89px; }
 
-  .header__logo {
-    width: 180px; } }
+  .home-section-first-content__txt-content {
+    padding-top: 0; }
+
+  .home-section-first-content__image {
+    align-self: center; }
+
+  .head-button__wrap {
+    padding-bottom: 35px; }
+
+  .head-image {
+    height: auto; }
+
+  .home-head-bottom__wrap {
+    padding: 15px 0; }
+
+  .home-section-first__title-about {
+    padding-top: 25px; }
+
+  .home-section-first__content {
+    padding-top: 25px; }
+
+  .img-bgc-wrap__rounded {
+    height: 360px;
+    max-width: 360px; }
+
+  .svg-inner-rounded-big {
+    width: 178px; }
+
+  .home-section-second-bottom__wrap {
+    flex-flow: column-reverse; }
+
+  .home-section-second-bottom__img {
+    width: auto;
+    padding-top: 0; }
+
+  .home-section-second-bottom__content {
+    width: auto; }
+
+  .button__wrap {
+    text-align: center;
+    padding-bottom: 27px; } }
 @media (max-width: 1596px) {
   .header-nav-link {
     font-size: 12pt; }
@@ -9268,7 +9322,25 @@ span.summary.ng-valid {
     padding-right: 15px; } }
 @media (max-width: 960px) {
   .header {
-    height: 77px; } }
+    height: 77px; }
+
+  .header-nav-wrap__inner {
+    padding-right: 0;
+    padding-left: 0; }
+
+  .header-nav {
+    align-self: center;
+    padding-top: 10px; }
+
+  .header__logo {
+    width: 19%;
+    height: auto; }
+
+  .header-nav__wrap {
+    padding-right: 0; }
+
+  .header__button {
+    padding-left: 10px; } }
 @media (max-width: 1200px) {
   .footer {
     margin-top: 0; }
@@ -9281,6 +9353,9 @@ span.summary.ng-valid {
 
   .footer-submit__wrap {
     padding-top: 10px; } }
+@media (max-width: 960px) {
+  .footer-title-blue__wrap {
+    padding-right: 25px; } }
 @media (max-width: 1596px) {
   a.bt-round, button.button-border-rounded {
     font-size: 12pt; }

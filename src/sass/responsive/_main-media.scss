@@ -4,3 +4,9 @@
     padding-right: 0 !important;
   }
 }
+
+@media (max-width: $breakpoint-md) {
+  .container-page {
+    padding-top: 77px !important;
+  }
+}

@@ -392,7 +392,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "            <div class=\"home-section-second-bottom__content\">\n" +
     "              <div class=\"title__wrap\">\n" +
-    "                <h1 class=\"txt-blue-dark\">Science</h1>\n" +
+    "                <h1 class=\"txt-blue-dark title__wrap--md-center\">Science</h1>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt\">\n" +

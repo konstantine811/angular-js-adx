@@ -12,3 +12,9 @@
     padding-top: 10px;
   }
 }
+
+@media (max-width: $breakpoint-md) {
+  .footer-title-blue__wrap {
+    padding-right: 25px;
+  }
+}

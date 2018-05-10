@@ -47,8 +47,20 @@
   h4 {
     font-size: 25px;
   }
+  .title__wrap--md-center {
+    text-align: center;
+  }
   .sub-header-txt {
     font-size: 25px;
     line-height: 22px;
+  }
+  .section-box-shadow {
+    margin-top: 25px;
+  }
+  .boxes__wrap {
+    flex-flow: wrap;
+  }
+  .box {
+    margin: 25px 15px;
   }
 }

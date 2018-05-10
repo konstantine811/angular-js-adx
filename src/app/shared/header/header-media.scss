@@ -21,4 +21,22 @@
   .header {
     height: 77px;
   }
+  .header-nav-wrap__inner {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .header-nav {
+    align-self: center;
+    padding-top: 10px
+  }
+  .header__logo {
+    width: 19%;
+    height: auto;
+  }
+  .header-nav__wrap {
+    padding-right: 0;
+  }
+  .header__button {
+    padding-left: 10px;
+  }
 }
