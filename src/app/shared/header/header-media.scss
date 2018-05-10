@@ -1,4 +1,4 @@
-@media (max-width: $breakpoint-middle) {
+@media (max-width: $breakpoint) {
   .header-nav-link {
     font-size: 12pt;
   }
@@ -7,12 +7,5 @@
   }
   .header__wrap {
     padding-top: 12px;
-  }
-  .home-head__wrap {
-    padding: 87px 0 0;
-  }
-  .head-image__wrap {
-    left: calc(83% - 807px);
-    top: 131px;
   }
 }

@@ -35,6 +35,7 @@
 @import '../app/shared/animation-directive/animation.directive.scss';
 
 //responsive media query
+@import 'responsive/main-media';
 @import 'responsive/common-styling-media';
 //responsive media query components
 @import "../app/components/home/_home-media.scss";

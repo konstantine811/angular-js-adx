@@ -1,5 +1,27 @@
-@media (max-width: $breakpoint-middle) {
+@media (max-width: $breakpoint) {
+  .home-head {
+    padding: 61px 0 0;
+  }
+
   .head-title__wrap {
-    max-width: 558px;
+    max-width: 64%;
+  }
+
+  .home-head__wrap {
+    padding: 87px 0 0;
+  }
+  .home-head-image__wrap {
+    left: calc(6% - 38px);
+    top: 139px;
+  }
+
+  .home-head-bottom__button {
+    padding-top: 7px;
+    padding-left: 10px;
+  }
+
+  .img-bgc-wrap__rounded {
+    height: 512px;
+    max-width: 512px;
   }
 }

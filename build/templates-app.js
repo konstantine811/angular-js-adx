@@ -168,7 +168,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <button class=\"button-border-rounded\">Order test</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"head-image__wrap anim-content-transition\">\n" +
+    "        <div class=\"home-head-image__wrap anim-content-transition\">\n" +
     "          <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
     "        </div>\n" +
     "      </div>\n" +
