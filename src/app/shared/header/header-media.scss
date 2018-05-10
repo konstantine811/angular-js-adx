@@ -9,3 +9,10 @@
     padding-top: 12px;
   }
 }
+
+@media (max-width: $breakpoint-lg) {
+  .header__wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

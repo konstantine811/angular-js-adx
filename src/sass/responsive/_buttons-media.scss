@@ -1,8 +1,15 @@
 @media (max-width: $breakpoint) {
-  .bt-round, .button-border-rounded {
+  a.bt-round, button.button-border-rounded {
     font-size: 12pt
   }
   button.button-border-rounded {
     padding: 5px 34px;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  button.button-border-rounded, a.bt-round {
+    padding: 5px 20px;
+    min-width: 112px;
   }
 }

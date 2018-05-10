@@ -25,3 +25,9 @@
     max-width: 512px;
   }
 }
+
+@media (max-width: $breakpoint-lg) {
+  .home-head-image__wrap {
+    width: 47%;
+  }
+}
