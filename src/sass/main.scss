@@ -9,16 +9,16 @@
  * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
  * project should be imported as the rest are just wasting space.
  */
-
+//libs
 @import '../../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 @import "../../vendor/font-awesome/scss/font-awesome.scss";
-
+//partials
 @import './partials/variables.scss';
 @import './partials/fonts.scss';
 @import './partials/_common-styling.scss';
 @import './partials/logo.scss';
 @import './partials/_buttons.scss';
-
+//components
 @import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
 @import '../app/components/login/login.scss';
@@ -30,16 +30,15 @@
 @import './partials/popup.scss';
 @import './partials/scroll_bar.scss';
 @import '../app/components/register/register.scss';
-
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
-
 //responsive media query
 @import 'responsive/main-media';
 @import 'responsive/common-styling-media';
 //responsive media query components
 @import "../app/components/home/_home-media.scss";
 @import "../app/shared/header/header-media.scss";
+@import "../app/shared/footer/footer-media.scss";
 @import "./responsive/_buttons-media.scss";
 
 a[ng-click] {

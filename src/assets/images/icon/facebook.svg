@@ -1,0 +1,10 @@
+<svg class="facebook-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-20777.4 12555.256 46.049 46.048">
+  <defs>
+    <style>
+      .facebook-svg-1 {
+        fill: #063f5f;
+      }
+    </style>
+  </defs>
+  <path id="Path_1" data-name="Path 1" class="facebook-svg-1" d="M23.024,0A23.024,23.024,0,1,0,46.048,23.024,23.092,23.092,0,0,0,23.024,0Zm4.893,23.024H24.751V34.536H20V23.024H17.7V18.995H20V16.4c0-1.871.863-4.893,4.893-4.893h3.6V15.4H25.9c-.432,0-1.007.144-1.007,1.151v2.446h3.6Z" transform="translate(-20777.4 12555.256)"/>
+</svg>

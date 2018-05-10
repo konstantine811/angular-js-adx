@@ -8524,7 +8524,7 @@ a.nav-link-dropdown {
 .login-page__image-bgc {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 100%;
   background-size: cover;
   filter: blur(6px); }
 
@@ -9132,9 +9132,9 @@ span.summary.ng-valid {
   transition: none; }
 
 @media (max-width: 1200px) {
-  .container-page .container-fluid.container-fluid--section {
-    padding-left: 0;
-    padding-right: 0; } }
+  .container-fluid.container-fluid--section {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 @media (max-width: 1596px) {
   h1 {
     font-size: 50px;
@@ -9152,6 +9152,30 @@ span.summary.ng-valid {
 
   h5 {
     font-size: 25px; } }
+@media (max-width: 1200px) {
+  .box {
+    height: auto; }
+
+  .box-data__wrap {
+    padding-bottom: 30px; } }
+@media (max-width: 960px) {
+  h1 {
+    font-size: 35px;
+    line-height: 44px; }
+
+  h2 {
+    font-size: 35px;
+    line-height: 28px; }
+
+  h3 {
+    font-size: 30px; }
+
+  h4 {
+    font-size: 25px; }
+
+  .sub-header-txt {
+    font-size: 25px;
+    line-height: 22px; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -9175,7 +9199,60 @@ span.summary.ng-valid {
     max-width: 512px; } }
 @media (max-width: 1200px) {
   .home-head-image__wrap {
-    width: 47%; } }
+    width: 47%; }
+
+  .home-section-first__content {
+    padding-top: 50px; }
+
+  .home-section-first__wrap {
+    padding: 50px 0; }
+
+  .img-bgc-wrap__rounded {
+    height: 400px;
+    max-width: 400px; }
+
+  .svg-inner-rounded-big {
+    width: 200px; }
+
+  .home-section-second__wrap {
+    padding-top: 0; }
+
+  .home-section-second__title-blue {
+    margin-top: 50px; }
+
+  .row-padding-top {
+    padding-top: 50px; }
+
+  .home-section-second__bottom {
+    margin-top: 50px; }
+
+  .home-section-second-bottom__wrap {
+    padding-top: 0; }
+
+  .home-section-second-bottom__img {
+    align-self: center; }
+
+  .home-section-third {
+    padding: 50px 0; }
+
+  .home-section-third__boxes {
+    padding-top: 50px; }
+
+  .home-section-fourth__head {
+    padding: 100px 0; }
+
+  .home-section-fourth-content__row.panel {
+    padding-top: 10px;
+    padding-bottom: 29px; }
+
+  .home-section-fourth__content {
+    padding-bottom: 50px; } }
+@media (max-width: 960px) {
+  .home-head-image__wrap {
+    top: 89px; }
+
+  .header__logo {
+    width: 180px; } }
 @media (max-width: 1596px) {
   .header-nav-link {
     font-size: 12pt; }
@@ -9189,6 +9266,21 @@ span.summary.ng-valid {
   .header__wrap {
     padding-left: 15px;
     padding-right: 15px; } }
+@media (max-width: 960px) {
+  .header {
+    height: 77px; } }
+@media (max-width: 1200px) {
+  .footer {
+    margin-top: 0; }
+
+  .footer-blue__wrap {
+    margin-top: 50px; }
+
+  .footer-bottom__wrap {
+    padding-top: 0; }
+
+  .footer-submit__wrap {
+    padding-top: 10px; } }
 @media (max-width: 1596px) {
   a.bt-round, button.button-border-rounded {
     font-size: 12pt; }

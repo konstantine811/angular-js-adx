@@ -174,7 +174,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
-    "      <a href=\"#anchor\" ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
+    "      <a  ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"home-head-bottom\">\n" +
@@ -468,7 +468,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "  </div>\n" +
     "  \n" +
     "  <!--section fourth-->\n" +
-    "  <div id=\"anchor\" class=\"home-section-fourth section-box-shadow\">\n" +
+    "  <div class=\"home-section-fourth section-box-shadow\">\n" +
     "    <div class=\"home-section-fourth__head\">\n" +
     "      <div class=\"home-section-fourth-head__title\">\n" +
     "        <h3 class=\"txt-blue txt-center\">Frequently asked questions</h3>\n" +

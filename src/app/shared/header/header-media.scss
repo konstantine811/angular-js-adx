@@ -16,3 +16,9 @@
     padding-right: 15px;
   }
 }
+
+@media (max-width: $breakpoint-md) {
+  .header {
+    height: 77px;
+  }
+}

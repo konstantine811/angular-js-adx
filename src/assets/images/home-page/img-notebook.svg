@@ -1,0 +1,50 @@
+<svg class="svg-notebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-21202 3025 211.973 242.618">
+  <defs>
+    <style>
+      .svg-notebook-1 {
+        fill: #fff;
+      }
+
+      .svg-notebook-2 {
+        fill: #87d2f3;
+      }
+
+      .svg-notebook-3 {
+        fill: #2170a6;
+      }
+
+      .svg-notebook-4 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_364" data-name="Rectangle 364" width="211.973" height="242.618"/>
+    </clipPath>
+  </defs>
+  <g id="Group_633" data-name="Group 633" transform="translate(-21202 3025)">
+    <rect id="Rectangle_356" data-name="Rectangle 356" class="svg-notebook-1" width="25.212" height="231.753" transform="translate(5.373 5.255)"/>
+    <rect id="Rectangle_357" data-name="Rectangle 357" class="svg-notebook-2" width="161.253" height="231.753" transform="translate(30.586 5.255)"/>
+    <path id="Path_463" data-name="Path 463" class="svg-notebook-1" d="M216.994,300.5a10.1,10.1,0,1,1-10.1-10.1,10.092,10.092,0,0,1,10.1,10.1Zm0,0" transform="translate(-80.599 -118.932)"/>
+    <path id="Path_464" data-name="Path 464" class="svg-notebook-1" d="M148.694,300.5a10.1,10.1,0,1,1-10.1-10.1,10.092,10.092,0,0,1,10.1,10.1Zm0,0" transform="translate(-52.627 -118.932)"/>
+    <path id="Path_465" data-name="Path 465" class="svg-notebook-1" d="M182.894,240.8a10.1,10.1,0,1,1-10.1-10.1,10.092,10.092,0,0,1,10.1,10.1Zm0,0" transform="translate(-66.633 -94.482)"/>
+    <rect id="Rectangle_358" data-name="Rectangle 358" class="svg-notebook-1" width="110.828" height="50.366" transform="translate(55.798 30.408)"/>
+    <rect id="Rectangle_359" data-name="Rectangle 359" class="svg-notebook-1" width="20.134" height="25.212" transform="translate(186.761 211.796)"/>
+    <path id="Path_466" data-name="Path 466" class="svg-notebook-1" d="M336.534,114.334V250.375H316.4V114.334L326.5,94.2Zm0,0" transform="translate(-129.58 -38.579)"/>
+    <path id="Path_467" data-name="Path 467" class="svg-notebook-3" d="M.6,5.378V237.131a5.015,5.015,0,0,0,5.019,5.019H20.734v-10.1H10.7V10.4h10.1V.3H5.619A5.028,5.028,0,0,0,.6,5.378Zm0,0" transform="translate(-0.246 -0.123)"/>
+    <path id="Path_468" data-name="Path 468" class="svg-notebook-3" d="M53.338,10.4H204.494V40.628h10.1V10.4A10.092,10.092,0,0,0,204.494.3H48.319A5.015,5.015,0,0,0,43.3,5.319V221.956H53.4V10.4Zm0,0" transform="translate(-17.733 -0.123)"/>
+    <rect id="Rectangle_360" data-name="Rectangle 360" class="svg-notebook-3" width="141.059" height="10.097" transform="translate(30.586 231.989)"/>
+    <rect id="Rectangle_361" data-name="Rectangle 361" class="svg-notebook-3" width="10.097" height="10.097" transform="translate(50.72 95.949)"/>
+    <rect id="Rectangle_362" data-name="Rectangle 362" class="svg-notebook-3" width="10.097" height="10.097" transform="translate(70.914 95.949)"/>
+    <rect id="Rectangle_363" data-name="Rectangle 363" class="svg-notebook-3" width="60.463" height="10.097" transform="translate(111.183 95.949)"/>
+    <path id="Path_469" data-name="Path 469" class="svg-notebook-3" d="M135.216,287.611a15.072,15.072,0,0,0,14.171-10.1h11.927A15.4,15.4,0,1,0,173.3,257.557L166.51,247.4a15.127,15.127,0,1,0-22.26-.059L137.4,257.557c-.709-.118-1.476-.177-2.185-.236a15.145,15.145,0,0,0,0,30.29Zm20.134-35.25a13.733,13.733,0,0,0,2.185-.236l6.849,10.215a15.394,15.394,0,0,0-3.07,5.078H149.387a14.464,14.464,0,0,0-3.07-5.078l6.849-10.215a13.729,13.729,0,0,0,2.185.236ZM180.563,272.5a5.019,5.019,0,1,1-5.019-5.019,5.015,5.015,0,0,1,5.019,5.019ZM155.35,232.226a5.019,5.019,0,1,1-5.019,5.019,5.015,5.015,0,0,1,5.019-5.019Zm-20.134,35.25A5.019,5.019,0,1,1,130.2,272.5a5.015,5.015,0,0,1,5.019-5.019Zm0,0" transform="translate(-49.186 -90.93)"/>
+    <g id="Group_504" data-name="Group 504">
+      <g id="Group_502" data-name="Group 502" class="svg-notebook-4">
+        <path id="Path_470" data-name="Path 470" class="svg-notebook-3" d="M201.847,43H91.019A5.015,5.015,0,0,0,86,48.019V98.385a5.015,5.015,0,0,0,5.019,5.019H201.847a5.015,5.015,0,0,0,5.019-5.019V48.019A5.015,5.015,0,0,0,201.847,43Zm-5.019,50.366H96.038V53.1H196.828Zm0,0" transform="translate(-35.221 -17.61)"/>
+      </g>
+      <g id="Group_503" data-name="Group 503" class="svg-notebook-4">
+        <path id="Path_471" data-name="Path 471" class="svg-notebook-3" d="M337.459,108.757l-10.1-20.134a5.277,5.277,0,0,0-7.2-1.83,5.428,5.428,0,0,0-1.83,1.83l-10.1,20.134A5.012,5.012,0,0,0,307.7,111V272.253a5.015,5.015,0,0,0,5.019,5.019h20.134a5.015,5.015,0,0,0,5.019-5.019V111a3.74,3.74,0,0,0-.413-2.244Zm-14.584-6.613,5.019,10.1V242.081H317.8v-129.9Zm-5.019,165.091V252.119h10.1v15.116Zm0,0" transform="translate(-126.017 -35.245)"/>
+      </g>
+    </g>
+    <path id="Path_472" data-name="Path 472" class="svg-notebook-3" d="M130.138,87.2h10.1V77.1H125.119a5.015,5.015,0,0,0-5.019,5.019V97.234h10.1V87.2Zm0,0" transform="translate(-49.186 -31.576)"/>
+  </g>
+</svg>
