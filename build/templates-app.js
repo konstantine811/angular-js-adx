@@ -156,23 +156,23 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
   $templateCache.put("components/home/home.tpl.html",
     "<div class=\"container-fluid container-fluid--section\">\n" +
     "  <div class=\"home-head\">\n" +
-    "      <div class=\"container-lg\">\n" +
-    "        <div class=\"home-head__wrap\">\n" +
-    "          <div class=\"head-title__wrap\">\n" +
-    "            <div class=\"head-title anim-content-transition\">\n" +
-    "              <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
-    "              </h1>\n" +
-    "              <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
-    "            </div>\n" +
-    "            <div class=\"head-button__wrap anim-content-transition\">\n" +
-    "              <button class=\"button-border-rounded\">Order test</button>\n" +
-    "            </div>\n" +
+    "    <div class=\"container-lg\">\n" +
+    "      <div class=\"home-head__wrap\">\n" +
+    "        <div class=\"head-title__wrap\">\n" +
+    "          <div class=\"head-title anim-content-transition\">\n" +
+    "            <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
+    "            </h1>\n" +
+    "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
-    "          <div class=\"head-image__wrap anim-content-transition\">\n" +
-    "            <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "          <div class=\"head-button__wrap anim-content-transition\">\n" +
+    "            <button class=\"button-border-rounded\">Order test</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
+    "        <div class=\"head-image__wrap anim-content-transition\">\n" +
+    "          <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
     "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
     "      <a href=\"#anchor\" ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
     "    </div>\n" +
@@ -306,42 +306,42 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"container-lg\">\n" +
-    "         <div class=\"row row-padding-top\">\n" +
-    "           <div class=\"col-sm-6\">\n" +
-    "             <div class=\"home-section-second__physician-review\">\n" +
-    "               <div class=\"img-bgc-wrap-middle__rounded\">\n" +
-    "                 <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
-    "               </div>\n" +
-    "               <div class=\"title__wrap txt-center\">\n" +
-    "                 <h3 class=\"txt-blue-dark\">\n" +
-    "                   Physician review\n" +
-    "                 </h3>\n" +
-    "               </div>\n" +
-    "               <div class=\"txt__wrap txt-center\">\n" +
-    "                 <div class=\"txt txt-black\">\n" +
-    "                   A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.  If they need any additional information, they will reach out to you.\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "           <div class=\"col-sm-6\">\n" +
-    "             <div class=\"home-section-second__spit\">\n" +
-    "               <div class=\"img-bgc-wrap-middle__rounded bgc-blue\">\n" +
-    "                 <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
-    "               </div>\n" +
-    "               <div class=\"title__wrap txt-center\">\n" +
-    "                 <h3 class=\"txt-blue-dark txt-center\">\n" +
-    "                   Spit\n" +
-    "                 </h3>\n" +
-    "               </div>\n" +
-    "               <div class=\"txt__wrap txt-center\">\n" +
-    "                 <div class=\"txt txt-black txt-center\">\n" +
-    "                   Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "         </div>\n" +
+    "        <div class=\"row row-padding-top\">\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__physician-review\">\n" +
+    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h3 class=\"txt-blue-dark\">\n" +
+    "                  Physician review\n" +
+    "                </h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.  If they need any additional information, they will reach out to you.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"home-section-second__spit\">\n" +
+    "              <div class=\"img-bgc-wrap-middle__rounded bgc-blue\">\n" +
+    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h3 class=\"txt-blue-dark txt-center\">\n" +
+    "                  Spit\n" +
+    "                </h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <div class=\"txt txt-black txt-center\">\n" +
+    "                  Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
     "        <div class=\"row row-padding-top\">\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__results\">\n" +
@@ -483,28 +483,109 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"home-section-fourth__content\">\n" +
-    "       <div class=\"container-lg\">\n" +
-    "          <div class=\"home-section-fourth-content__row\">\n" +
-    "            <div class=\"cross-button-open__wrap\">\n" +
-    "              <div class=\"cross-button-open\"></div>\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div uib-accordion close-others=\"false\">\n" +
+    "          <div uib-accordion-group class=\"home-section-fourth-content__row\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"content-title__wrap\">\n" +
-    "              <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
+    "                  ordering a test, completing your kit, or interpreting your results.\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "         <div class=\"home-section-fourth-content__row\">\n" +
-    "           <div class=\"cross-button-open__wrap\">\n" +
-    "             <div class=\"cross-button-open\"></div>\n" +
-    "           </div>\n" +
-    "           <div class=\"content-title__wrap\">\n" +
-    "             <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
-    "           </div>\n" +
-    "         </div>\n" +
-    "       </div>\n" +
+    "          <div uib-accordion-group class=\"home-section-fourth-content__row\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                You will receive your test results in a clear, electronic report. However, if you have additional questions about what these results mean to you or your family, we have Genetics Counselors available to discuss your results with you, for no additional charge. Also, we encourage you to share your report with your health care provider and review with them any additional questions or concerns you may have.\n" +
+    "              \n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"home-section-fourth-content__row\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h2 class=\"txt-blue-dark\">Power of emotions</h2>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Genetics is only one part of your risk for developing Alzheimer’s disease. For many people, it can be hard to be motivated to exercise.  For others, nutrition is a struggle with busy work and family schedules.  For yet others, sleep is often viewed as an inconvenience and not given much priority. Finally, stress management is an issue for many, as approximately 55% of Americans reported not even taking all their paid vacation days. (source: http://www.projecttimeoff.com/research/state-american-vacation-2016).  Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  Having the ApoE-e4 variant  (high genetic risk for Alzheimer’s disease) does not guarantee you will develop late-onset Alzheimer’s disease.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"home-section-fourth-content__row\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h2 class=\"txt-blue-dark\">Lifestyle changes</h2>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Sleep, stress, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc.), and environmental toxins each can impact your cognitive health.  Living an overall healthier life may also help you reduce your risk for Alzheimer’s disease.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"home-section-fourth-content__row\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h2 class=\"txt-blue-dark\">Connecting with community</h2>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
+    "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
+    "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Blog</a>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  \n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -851,42 +932,110 @@ angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templ
 angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/footer/footer.tpl.html",
     "<footer class=\"footer\">\n" +
-    "    <div class=\"container-fluid\">\n" +
-    "        <div class=\"navbar navbar-default\">\n" +
-    "            <div class=\"navbar-header\">\n" +
-    "                <button type=\"button\" class=\"navbar-toggle\" ng-init=\"menuCollapsed = true\"\n" +
-    "                        ng-click=\"menuCollapsed = ! menuCollapsed\">\n" +
-    "                    <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "                    <span class=\"icon-bar\"></span>\n" +
-    "                    <span class=\"icon-bar\"></span>\n" +
-    "                    <span class=\"icon-bar\"></span>\n" +
-    "                </button>\n" +
-    "                <div class=\"navbar-brand\">\n" +
-    "                    Footer\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "            <div class=\"row\">\n" +
+    "                <div class=\"col-sm-4\">\n" +
+    "                    <div class=\"title__wrap\">\n" +
+    "                        <h6 class=\"txt-blue txt-uppercase\">Provider order required</h6>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <div class=\"txt txt-black\">\n" +
+    "                            ApoE testing must be approved by your physician or other qualified health care provider.\n" +
+    "                            If you don’t have a health care provider ADx diagnostics can assist in helping you find a licensed provider.\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-sm-3\">\n" +
+    "                    <div class=\"title__wrap\">\n" +
+    "                        <h6 class=\"txt-blue txt-uppercase\">PARTNER WITH US</h6>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <a href=\"\" class=\"txt txt-black\">Affiliates</a>\n" +
+    "                       <div class=\"link--indent\">\n" +
+    "                           <a href=\"\" class=\"txt txt-black\">Providers</a>\n" +
+    "                       </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-sm-2\">\n" +
+    "                    <div class=\"title__wrap\">\n" +
+    "                        <h6 class=\"txt-blue txt-uppercase\">LEGAL</h6>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <a href=\"\" class=\"txt txt-black\">Tems of Service</a>\n" +
+    "                        <div class=\"link--indent\">\n" +
+    "                            <a href=\"\" class=\"txt txt-black\">Privacy Policy</a>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"link--indent\">\n" +
+    "                            <a href=\"\" class=\"txt txt-black\">Informed Consent</a>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"link--indent\">\n" +
+    "                            <a href=\"\" class=\"txt txt-black\">Research Consent</a>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-sm-3\">\n" +
+    "                    <div class=\"title__wrap\">\n" +
+    "                        <h6 class=\"txt-blue txt-uppercase\">JOIN OUR EMAIL LIST</h6>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <div class=\"txt txt-black\">\n" +
+    "                            Join our email list to receive news and updates on various advances in Alzheimer's disease research.\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
-    "            <div class=\"collapse navbar-collapse\" collapse=\"menuCollapsed\">\n" +
-    "                <ul class=\"nav navbar-nav\">\n" +
-    "                    <li ui-sref-active=\"active\">\n" +
-    "                        <a href ui-sref=\"FAQ\">\n" +
-    "                            FAQ\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\">\n" +
-    "                        <a href ui-sref=\"contact\">\n" +
-    "                            Contact\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\">\n" +
-    "                        <a href ui-sref=\"legal\">\n" +
-    "                            Legal\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                </ul>\n" +
-    "            </div>\n" +
     "        </div>\n" +
+    "      \n" +
+    "      <!--title blue-->\n" +
+    "      <div class=\"footer-blue__wrap\">\n" +
+    "        <div class=\"footer-title-blue__wrap\">\n" +
+    "          <h3>Join our email list</h3>\n" +
+    "        </div>\n" +
+    "        <form action=\"\" class=\"footer-form\">\n" +
+    "          <div class=\"footer-form__wrap\">\n" +
+    "            <div class=\"footer-input__wrap\">\n" +
+    "              <input class=\"form-control\" type=\"text\" placeholder=\"Email adress\">\n" +
+    "            </div>\n" +
+    "            <div class=\"footer-submit__wrap\">\n" +
+    "              <button type=\"submit\" class=\"button-border-rounded button-border-rounded--small\">Submit</button>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </form>\n" +
+    "      </div>\n" +
+    "      <!--title blue end-->\n" +
+    "      <div class=\"footer-bottom\">\n" +
+    "        <div class=\"footer-bottom__wrap\">\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h6 class=\"txt-blue-dark txt-center\">© 2017 ADx diagnostics. All rights reserved.</h6>\n" +
+    "          </div>\n" +
+    "          <div class=\"footer-bottom__link txt-center\">\n" +
+    "            <a href=\"\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
+    "            <a href=\"\" class=\"txt txt-blue-dark\">About Us</a>\n" +
+    "          </div>\n" +
+    "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"\" class=\"link-icon facebook\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"\" class=\"link-icon twitter\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"\" class=\"link-icon linkedIn\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"\" class=\"link-icon social\"></a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"footer-bottom__content-bottom\">\n" +
+    "            <div class=\"txt-small txt-black txt-center\">Good.life lets you chat with customers and give them real-time support.</div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
     "    </div>\n" +
-    "  </footer>");
+    "  <div class=\"footer-bgc__bottom\">\n" +
+    "  </div>\n" +
+    "</footer>");
 }]);
 
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {

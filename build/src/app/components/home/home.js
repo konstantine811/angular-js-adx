@@ -34,5 +34,6 @@ angular.module( 'ixLayer.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', ['$scope', function HomeCtrl($scope) {
+
 }]);
 

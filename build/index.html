@@ -35,7 +35,6 @@
   <script type="text/javascript" src="vendor/raven-js/dist/raven.min.js"></script>
   <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
   <script type="text/javascript" src="vendor/moment/min/moment.min.js"></script>
-  <script type="text/javascript" src="vendor/angular-scroll/angular-scroll.min.js"></script>
   <script type="text/javascript" src="src/app/app.js"></script>
   <script type="text/javascript" src="src/app/components/about/about.js"></script>
   <script type="text/javascript" src="src/app/components/change_password/change_password.js"></script>
@@ -75,6 +74,7 @@
 <div class="page" ng-class="{'login' : !logged}">
   <div app-header ng-if="!logged"></div>
   <div class="container-page" ui-view></div>
+  <div app-footer></div>
 </div>
 </body>
 </html>

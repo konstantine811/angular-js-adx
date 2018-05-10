@@ -184,6 +184,25 @@ h6 {
   padding-top: 48px;
 }
 
+.link-padding-right {
+  padding-right: 15px;
+}
+
+.link--indent {
+  padding-top: 20px;
+}
+
+.txt-small {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 34px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 
 //common styling for images
 .bgc-blue {
@@ -292,4 +311,30 @@ h6 {
   color: $blue-6;
   margin: 0;
   padding: 0;
+}
+
+
+//icon styling
+.link-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 46px;
+  cursor: pointer;
+}
+
+.facebook {
+  background-image: url('../assets/images/icon/facebook.svg');
+}
+
+.twitter {
+  background-image: url('../assets/images/icon/twitter.svg');
+}
+
+.linkedIn {
+  background-image: url('../assets/images/icon/linkedIn.svg');
+}
+
+.social {
+  background-image: url('../assets/images/icon/social.svg');
 }

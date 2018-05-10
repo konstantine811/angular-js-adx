@@ -87,6 +87,10 @@ button.button-border-rounded {
   }
 }
 
+.button-border-rounded.button-border-rounded--small {
+  padding: 4px 39px;
+}
+
 button[disabled].bt-round {
   cursor: not-allowed;
   &:hover, &:focus {
@@ -202,6 +206,39 @@ button[disabled].bt-round {
     cursor: pointer;
     .arrow-down-svg {
       animation: trans-arrow 1.5s forwards ease-in-out infinite;
+    }
+  }
+}
+
+//cross-button for open menu
+
+.cross-button-open__wrap {
+  display: inline-block;
+}
+
+.cross-button-open {
+  width: 66px;
+  height: 66px;
+  position: relative;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 66px;
+    background-color: $silver-2;
+    top: 48px;
+    transition: all .3s ease-in-out;
+  }
+  &:after {
+    transform: rotate(90deg);
+  }
+}
+
+.panel-open {
+  .cross-button-open {
+    &:after {
+      opacity: 0;
+      transform: rotate(180deg);
     }
   }
 }
