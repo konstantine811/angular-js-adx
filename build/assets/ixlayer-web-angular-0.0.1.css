@@ -9400,43 +9400,42 @@ a:hover, a:focus {
   height: 100%;
   padding-top: 100px;
   z-index: 100;
-  transition: all .8s ease;
+  transition: all 1.8s ease-out;
   overflow-y: visible;
   overflow-x: hidden; }
 
 .container-page.ng-enter {
-  animation: fade-in 0.5s both ease; }
+  animation: fade-in 0.6s both ease-out; }
   .container-page.ng-enter .anim-content-transition {
-    animation: fade-in-content .8s 0.15s both ease; }
+    animation: fade-in-content 1.2s 0.15s both ease-out; }
   .container-page.ng-enter .anim-content-transition:nth-of-type(1) {
-    animation-delay: 0.1s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(2) {
     animation-delay: 0.2s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(3) {
-    animation-delay: 0.3s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(4) {
+  .container-page.ng-enter .anim-content-transition:nth-of-type(2) {
     animation-delay: 0.4s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(5) {
-    animation-delay: 0.5s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(6) {
+  .container-page.ng-enter .anim-content-transition:nth-of-type(3) {
     animation-delay: 0.6s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(7) {
-    animation-delay: 0.7s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(8) {
+  .container-page.ng-enter .anim-content-transition:nth-of-type(4) {
     animation-delay: 0.8s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(9) {
-    animation-delay: 0.9s; }
-  .container-page.ng-enter .anim-content-transition:nth-of-type(10) {
+  .container-page.ng-enter .anim-content-transition:nth-of-type(5) {
     animation-delay: 1s; }
+  .container-page.ng-enter .anim-content-transition:nth-of-type(6) {
+    animation-delay: 1.2s; }
+  .container-page.ng-enter .anim-content-transition:nth-of-type(7) {
+    animation-delay: 1.4s; }
+  .container-page.ng-enter .anim-content-transition:nth-of-type(8) {
+    animation-delay: 1.6s; }
+  .container-page.ng-enter .anim-content-transition:nth-of-type(9) {
+    animation-delay: 1.8s; }
+  .container-page.ng-enter .anim-content-transition:nth-of-type(10) {
+    animation-delay: 2s; }
 
 .container-page.ng-leave {
-  animation: bg-fade-out .2s both ease;
-  overflow: hidden; }
+  display: none; }
 
 @keyframes fade-in {
   0% {
-    opacity: 0.5;
-    transform: translate(0, -10%); }
+    opacity: 0;
+    transform: translate(0, -3%); }
   100% {
     opacity: 1;
     transform: translate(0, 0); } }
@@ -9447,9 +9446,11 @@ a:hover, a:focus {
     filter: blur(33px); } }
 @keyframes bg-fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    filter: blur(13px); }
   100% {
-    opacity: .8; } }
+    opacity: 1;
+    filter: blur(0px); } }
 @keyframes bg-fade-out {
   0% {
     opacity: .9; }

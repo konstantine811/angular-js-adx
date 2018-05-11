@@ -649,21 +649,22 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</section>");
+    "</section>\n" +
+    "");
 }]);
 
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
     "<div class=\"container-fluid\">\n" +
-    "    <div class=\"col-md-12\">\n" +
-    "        <div ng-repeat=\"product in products\">\n" +
-    "            <div>{{ product.name }}</div>\n" +
-    "            <div>{{ product.description }}</div>\n" +
-    "            <div>{{ product.price }}</div>\n" +
-    "            <a class=\"btn btn-primary\" ui-sref=\"productDetail({ productId: product.id })\">Detail {{product.id}}</a>\n" +
-    "            <hr>\n" +
-    "        </div>\n" +
+    "  <div class=\"col-md-12\">\n" +
+    "    <div ng-repeat=\"product in products\">\n" +
+    "      <div>{{ product.name }}</div>\n" +
+    "      <div>{{ product.description }}</div>\n" +
+    "      <div>{{ product.price }}</div>\n" +
+    "      <a class=\"btn btn-primary\" ui-sref=\"productDetail({ productId: product.id })\">Detail {{product.id}}</a>\n" +
+    "      <hr>\n" +
     "    </div>\n" +
+    "  </div>\n" +
     "</div>");
 }]);
 

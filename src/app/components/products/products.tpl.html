@@ -1,11 +1,11 @@
 <div class="container-fluid">
-    <div class="col-md-12">
-        <div ng-repeat="product in products">
-            <div>{{ product.name }}</div>
-            <div>{{ product.description }}</div>
-            <div>{{ product.price }}</div>
-            <a class="btn btn-primary" ui-sref="productDetail({ productId: product.id })">Detail {{product.id}}</a>
-            <hr>
-        </div>
+  <div class="col-md-12">
+    <div ng-repeat="product in products">
+      <div>{{ product.name }}</div>
+      <div>{{ product.description }}</div>
+      <div>{{ product.price }}</div>
+      <a class="btn btn-primary" ui-sref="productDetail({ productId: product.id })">Detail {{product.id}}</a>
+      <hr>
     </div>
+  </div>
 </div>
