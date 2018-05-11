@@ -168,7 +168,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <button class=\"button-border-rounded\">Order test</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"home-head-image__wrap anim-content-transition\">\n" +
+    "        <div class=\"hide-mobile home-head-image__wrap anim-content-transition\">\n" +
     "          <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -1053,7 +1053,46 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <!--navigation-->\n" +
     "        <div class=\"header-nav\">\n" +
-    "          <nav class=\"header-nav__wrap\">\n" +
+    "          <div class=\"header-nav__mobile-menu hide-desktop\">\n" +
+    "            <div class=\"mobile-button\" ng-click=\"showMenu()\"><span ng-class=\"{'mobile-button--close': show}\" class=\"mobile-button__inner\"></span></div>\n" +
+    "            <div class=\"mobile-menu\" ng-class=\"{'mobile-menu-show-anim': show}\">\n" +
+    "              \n" +
+    "              <!--mobile menu-->\n" +
+    "              <div class=\"mobile-menu__wrap\" ng-class=\"{'mobile-menu-show': show}\">\n" +
+    "                <nav class=\"header-nav__wrap\">\n" +
+    "                  <ul class=\"header-nav-wrap__inner\">\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
+    "                </nav>\n" +
+    "                <div class=\"header__button\">\n" +
+    "                  <div class=\"button__login\">\n" +
+    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"button__purchase\">\n" +
+    "                    <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <!--end mobile menu-->\n" +
+    "              \n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <!--desktop menu-->\n" +
+    "          <nav class=\"header-nav__wrap hide-mobile\">\n" +
     "            <ul class=\"header-nav-wrap__inner\">\n" +
     "              <li class=\"header-nav-item\">\n" +
     "                <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
@@ -1072,7 +1111,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
-    "          <div class=\"header__button\">\n" +
+    "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
     "              <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
     "            </div>\n" +
@@ -1080,6 +1119,9 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
+    "          \n" +
+    "          <!--end desktop menu-->\n" +
+    "          \n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

@@ -10,7 +10,46 @@
         </div>
         <!--navigation-->
         <div class="header-nav">
-          <nav class="header-nav__wrap">
+          <div class="header-nav__mobile-menu hide-desktop">
+            <div class="mobile-button" ng-click="showMenu()"><span ng-class="{'mobile-button--close': show}" class="mobile-button__inner"></span></div>
+            <div class="mobile-menu" ng-class="{'mobile-menu-show-anim': show}">
+              
+              <!--mobile menu-->
+              <div class="mobile-menu__wrap" ng-class="{'mobile-menu-show': show}">
+                <nav class="header-nav__wrap">
+                  <ul class="header-nav-wrap__inner">
+                    <li class="header-nav-item">
+                      <a ui-sref="products" class="header-nav-link">Products</a>
+                    </li>
+                    <li class="header-nav-item">
+                      <a ui-sref="about" class="header-nav-link">About</a>
+                    </li>
+                    <li class="header-nav-item">
+                      <a ui-sref=" " class="header-nav-link">Science</a>
+                    </li>
+                    <li class="header-nav-item">
+                      <a ui-sref="FAQ" class="header-nav-link">FAQ</a>
+                    </li>
+                    <li class="header-nav-item">
+                      <a ui-sref="contact" class="header-nav-link">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__button">
+                  <div class="button__login">
+                    <a ui-sref="login" class="bt-round bt-round--blue"><span class="bt-content">Account</span></a>
+                  </div>
+                  <div class="button__purchase">
+                    <a ui-sref="" class="bt-round bt-round--blue-dark"><span class="bt-content">Purchase</span></a>
+                  </div>
+                </div>
+              </div>
+              <!--end mobile menu-->
+              
+            </div>
+          </div>
+          <!--desktop menu-->
+          <nav class="header-nav__wrap hide-mobile">
             <ul class="header-nav-wrap__inner">
               <li class="header-nav-item">
                 <a ui-sref="products" class="header-nav-link">Products</a>
@@ -29,7 +68,7 @@
               </li>
             </ul>
           </nav>
-          <div class="header__button">
+          <div class="header__button hide-mobile">
             <div class="button__login">
               <a ui-sref="login" class="bt-round bt-round--blue"><span class="bt-content">Account</span></a>
             </div>
@@ -37,6 +76,9 @@
               <a ui-sref="" class="bt-round bt-round--blue-dark"><span class="bt-content">Purchase</span></a>
             </div>
           </div>
+          
+          <!--end desktop menu-->
+          
         </div>
       </div>
     </div>

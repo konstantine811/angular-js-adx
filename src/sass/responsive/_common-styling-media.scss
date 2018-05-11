@@ -19,6 +19,10 @@
   h5 {
     font-size: 25px;
   }
+  .img-bgc-wrap__rounded {
+    height: 512px;
+    max-width: 512px;
+  }
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -27,6 +31,13 @@
   }
   .box-data__wrap {
     padding-bottom: 30px;
+  }
+  .img-bgc-wrap__rounded {
+    height: 400px;
+    max-width: 400px;
+  }
+  .svg-inner-rounded-big {
+    width: 200px;
   }
 }
 
@@ -62,5 +73,54 @@
   }
   .box {
     margin: 25px 15px;
+  }
+  .img-bgc-wrap__rounded {
+    height: 360px;
+    max-width: 360px;
+  }
+  .svg-inner-rounded-big {
+    width: 178px;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container-page {
+    padding-top: 55px !important;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .hide-desktop {
+    display: inline-block !important;
+  }
+  //svg
+  .img-bgc-wrap__rounded, .img-bgc-wrap-middle__rounded {
+    height: 57vw;
+    width: 57vw;
+    min-width: 257px;
+    min-height: 257px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+  }
+  .svg-inner-rounded-big, .svg-inner-rounded-middle svg {
+    width: 28vw;
+    min-width: 130px;
+  }
+  .img-bgc-wrap__rounded--float-right {
+    float: none;
+  }
+  .svg-inner-rounded-middle svg {
+    position: absolute;
+    left: 24%;
+    top: 23%;
+  }
+  .txt--indent {
+    padding-top: 20px;
+  }
+  .box {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

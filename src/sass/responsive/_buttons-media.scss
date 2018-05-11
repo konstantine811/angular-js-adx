@@ -13,3 +13,25 @@
     min-width: 112px;
   }
 }
+
+@media (max-width: $breakpoint-sm) {
+  .bt-round:before, .bt-round:after {
+    height: 52%;
+  }
+  .bt-round.bt-round--blue-dark:hover {
+     box-shadow: inset 0px 0px 3px 2px $blue-dark;
+   }
+  .bt-round.bt-round--blue:hover {
+    box-shadow: inset 0px 0px 3px 2px $blue-6;
+  }
+  .cross-button-open {
+    width: 32px;
+    height: 36px;
+    &:before, &:after {
+      width: 38px;
+    }
+  }
+  .button-border-rounded.button-border-rounded--small {
+    padding: 10px 48px;
+  }
+}

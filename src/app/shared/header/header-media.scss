@@ -40,3 +40,32 @@
     padding-left: 10px;
   }
 }
+
+@media (max-width: $breakpoint-sm) {
+  .header {
+    height: 55px;
+    min-height: 50px;
+  }
+  .header__wrap {
+    padding-top: 2px;
+  }
+  .header__logo {
+    width: 136px;
+  }
+  .header-nav {
+    padding-top: 3px;
+    align-self: start;
+  }
+  .header__button {
+    justify-content: end;
+    padding-left: 22px;
+  }
+  .header-nav-wrap__inner {
+    display: flex;
+    flex-flow: column;
+    padding-left: 21px;
+  }
+  .header-nav-item {
+    padding-top: 9px;
+  }
+}

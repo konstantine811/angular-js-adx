@@ -7560,6 +7560,9 @@ body {
 .row-padding-top {
   padding-top: 133px; }
 
+.hide-desktop {
+  display: none !important; }
+
 .img {
   width: 100%;
   height: auto; }
@@ -8009,7 +8012,9 @@ button.button-border-rounded {
   font-weight: 400;
   font-family: 'CircularStd-Medium', sans-serif;
   font-size: 19pt;
-  transition: all .5s ease-out; }
+  transition: all .5s ease-out;
+  z-index: 100;
+  position: relative; }
   button.button-border-rounded:hover {
     box-shadow: 3px 8px 19px 0px #063f5f, inset 4px 3px 15px 1px #063f5f;
     transform: translate(-4px, -4px);
@@ -8044,7 +8049,8 @@ button[disabled].bt-round {
   min-width: 121px;
   text-align: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  z-index: 100; }
   .bt-round:before, .bt-round:after {
     content: '';
     position: absolute;
@@ -8089,10 +8095,12 @@ button[disabled].bt-round {
   position: relative; }
 
 .arrow-down {
+  position: relative;
   height: 56px;
   transition: .5s ease-in;
   perspective: 1200px;
-  perspective-origin: center; }
+  perspective-origin: center;
+  z-index: 10; }
   .arrow-down:hover {
     cursor: pointer; }
     .arrow-down:hover .arrow-down-svg {
@@ -8663,6 +8671,80 @@ a.nav-link-dropdown {
 .button__login {
   padding-right: 17px; }
 
+.mobile-button {
+  display: inline-block;
+  background-color: #F9FBFD;
+  box-shadow: 0px 2px 10px -2px #063f5f;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  z-index: 100;
+  position: relative; }
+
+.mobile-button__inner {
+  display: inherit;
+  width: 82%;
+  height: 3px;
+  background-color: #41c5eb;
+  border-radius: 5px;
+  position: relative;
+  left: 9%;
+  top: -2px;
+  transition: all .3s ease-out; }
+  .mobile-button__inner:before, .mobile-button__inner:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #41c5eb; }
+  .mobile-button__inner:before {
+    top: 10px; }
+  .mobile-button__inner:after {
+    top: 20px;
+    transition: all .3s ease-out; }
+
+.mobile-button--close {
+  transform: rotate(45deg);
+  top: 8px; }
+  .mobile-button--close:before {
+    opacity: 0; }
+  .mobile-button--close:after {
+    top: 0;
+    transform: rotate(-90deg);
+    transform-origin: center; }
+
+.header-nav__mobile-menu {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.mobile-menu {
+  position: absolute;
+  width: 101vw;
+  height: 0;
+  background: linear-gradient(to bottom, #F9FBFD 46%, transparent 98%);
+  right: -16px;
+  top: 49px;
+  padding: 0;
+  transition: all .5s ease-in;
+  z-index: 99; }
+
+.mobile-menu-show-anim-add-remove {
+  height: 0;
+  padding: 0; }
+
+.mobile-menu-show-anim {
+  height: auto;
+  padding: 0 0 220px;
+  border-radius: 0; }
+
+.mobile-menu__wrap {
+  display: none; }
+
+.mobile-menu__wrap.mobile-menu-show {
+  display: block; }
+
 .footer {
   position: relative;
   margin-top: 50px;
@@ -9154,13 +9236,24 @@ span.summary.ng-valid {
     font-size: 30px; }
 
   h5 {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  .img-bgc-wrap__rounded {
+    height: 512px;
+    max-width: 512px; } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
 
   .box-data__wrap {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+
+  .img-bgc-wrap__rounded {
+    height: 400px;
+    max-width: 400px; }
+
+  .svg-inner-rounded-big {
+    width: 200px; } }
 @media (max-width: 960px) {
   h1 {
     font-size: 35px;
@@ -9190,7 +9283,51 @@ span.summary.ng-valid {
     flex-flow: wrap; }
 
   .box {
-    margin: 25px 15px; } }
+    margin: 25px 15px; }
+
+  .img-bgc-wrap__rounded {
+    height: 360px;
+    max-width: 360px; }
+
+  .svg-inner-rounded-big {
+    width: 178px; } }
+@media (max-width: 768px) {
+  .container-page {
+    padding-top: 55px !important; }
+
+  .hide-mobile {
+    display: none !important; }
+
+  .hide-desktop {
+    display: inline-block !important; }
+
+  .img-bgc-wrap__rounded, .img-bgc-wrap-middle__rounded {
+    height: 57vw;
+    width: 57vw;
+    min-width: 257px;
+    min-height: 257px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative; }
+
+  .svg-inner-rounded-big, .svg-inner-rounded-middle svg {
+    width: 28vw;
+    min-width: 130px; }
+
+  .img-bgc-wrap__rounded--float-right {
+    float: none; }
+
+  .svg-inner-rounded-middle svg {
+    position: absolute;
+    left: 24%;
+    top: 23%; }
+
+  .txt--indent {
+    padding-top: 20px; }
+
+  .box {
+    padding-left: 15px;
+    padding-right: 15px; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -9207,11 +9344,7 @@ span.summary.ng-valid {
 
   .home-head-bottom__button {
     padding-top: 7px;
-    padding-left: 10px; }
-
-  .img-bgc-wrap__rounded {
-    height: 512px;
-    max-width: 512px; } }
+    padding-left: 10px; } }
 @media (max-width: 1200px) {
   .home-head-image__wrap {
     width: 47%; }
@@ -9221,13 +9354,6 @@ span.summary.ng-valid {
 
   .home-section-first__wrap {
     padding: 50px 0; }
-
-  .img-bgc-wrap__rounded {
-    height: 400px;
-    max-width: 400px; }
-
-  .svg-inner-rounded-big {
-    width: 200px; }
 
   .home-section-second__wrap {
     padding-top: 0; }
@@ -9287,13 +9413,6 @@ span.summary.ng-valid {
   .home-section-first__content {
     padding-top: 25px; }
 
-  .img-bgc-wrap__rounded {
-    height: 360px;
-    max-width: 360px; }
-
-  .svg-inner-rounded-big {
-    width: 178px; }
-
   .home-section-second-bottom__wrap {
     flex-flow: column-reverse; }
 
@@ -9307,6 +9426,41 @@ span.summary.ng-valid {
   .button__wrap {
     text-align: center;
     padding-bottom: 27px; } }
+@media (max-width: 768px) {
+  .head-title__wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+
+  .home-head__wrap {
+    padding: 25px 0 71px; }
+
+  .home-head-bottom__title {
+    padding-top: 0;
+    align-self: center; }
+
+  .home-head-bottom__button {
+    align-self: center;
+    padding-top: 0; }
+
+  .home-section-first-content__first, .home-section-first-content__second {
+    flex-flow: column; }
+
+  .home-section-first-content__txt-content, .home-section-first-content__image {
+    width: 100%; }
+
+  .home-section-first-content__image {
+    padding-top: 20px; }
+
+  .home-section-first-content__second {
+    padding-top: 0px; }
+
+  .content-title__wrap {
+    padding-left: 50px; }
+
+  .content-txt__wrap {
+    padding-left: 0;
+    padding-top: 15px; } }
 @media (max-width: 1596px) {
   .header-nav-link {
     font-size: 12pt; }
@@ -9341,6 +9495,32 @@ span.summary.ng-valid {
 
   .header__button {
     padding-left: 10px; } }
+@media (max-width: 768px) {
+  .header {
+    height: 55px;
+    min-height: 50px; }
+
+  .header__wrap {
+    padding-top: 2px; }
+
+  .header__logo {
+    width: 136px; }
+
+  .header-nav {
+    padding-top: 3px;
+    align-self: start; }
+
+  .header__button {
+    justify-content: end;
+    padding-left: 22px; }
+
+  .header-nav-wrap__inner {
+    display: flex;
+    flex-flow: column;
+    padding-left: 21px; }
+
+  .header-nav-item {
+    padding-top: 9px; } }
 @media (max-width: 1200px) {
   .footer {
     margin-top: 0; }
@@ -9356,6 +9536,18 @@ span.summary.ng-valid {
 @media (max-width: 960px) {
   .footer-title-blue__wrap {
     padding-right: 25px; } }
+@media (max-width: 768px) {
+  .footer-blue__wrap {
+    padding: 25px 25px;
+    flex-flow: column; }
+
+  .footer-form__wrap {
+    flex-flow: column;
+    padding-top: 25px; }
+
+  .footer-submit__wrap {
+    padding-top: 25px;
+    margin: 0 auto; } }
 @media (max-width: 1596px) {
   a.bt-round, button.button-border-rounded {
     font-size: 12pt; }
@@ -9366,6 +9558,24 @@ span.summary.ng-valid {
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
     min-width: 112px; } }
+@media (max-width: 768px) {
+  .bt-round:before, .bt-round:after {
+    height: 52%; }
+
+  .bt-round.bt-round--blue-dark:hover {
+    box-shadow: inset 0px 0px 3px 2px #063f5f; }
+
+  .bt-round.bt-round--blue:hover {
+    box-shadow: inset 0px 0px 3px 2px #41c5eb; }
+
+  .cross-button-open {
+    width: 32px;
+    height: 36px; }
+    .cross-button-open:before, .cross-button-open:after {
+      width: 38px; }
+
+  .button-border-rounded.button-border-rounded--small {
+    padding: 10px 48px; } }
 a[ng-click] {
   cursor: pointer; }
 
