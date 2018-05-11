@@ -7,7 +7,7 @@ angular.module("ixLayer")
         $scope.show = false;
           $scope.showMenu = function() {
             if (!$scope.show) {
-              $scope.show = true
+              $scope.show = true;
             } else {
               $scope.show = false;
             }
