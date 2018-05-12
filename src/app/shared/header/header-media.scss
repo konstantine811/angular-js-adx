@@ -57,13 +57,23 @@
     align-self: start;
   }
   .header__button {
-    justify-content: end;
-    padding-left: 22px;
+    justify-content: center;
+    padding-left: 0;
   }
   .header-nav-wrap__inner {
     display: flex;
     flex-flow: column;
-    padding-left: 21px;
+    padding: 0;
+    text-align: center;
+  }
+  .header-nav-item {
+    border-bottom: 1px solid $silver;
+    padding: 5px 0;
+    background-color: $silver;
+    color: white;
+  }
+  .header-nav-link {
+    color: $silver;
   }
   .header-nav-item {
     padding-top: 9px;

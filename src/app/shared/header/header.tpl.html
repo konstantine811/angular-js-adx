@@ -11,7 +11,11 @@
         <!--navigation-->
         <div class="header-nav">
           <div class="header-nav__mobile-menu hide-desktop">
-            <div class="mobile-button" ng-click="showMenu()"><span ng-class="{'mobile-button--close': show}" class="mobile-button__inner"></span></div>
+            <div class="mobile-button" ng-click="showMenu()" ng-class="{'toggle': show}">
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+              <span class="line-3"></span>
+            </div>
             <div class="mobile-menu" ng-class="{'mobile-menu-show-anim': show}">
               
               <!--mobile menu-->
@@ -36,10 +40,10 @@
                   </ul>
                 </nav>
                 <div class="header__button">
-                  <div class="button__login">
+                  <div class="button__login button-anim">
                     <a ui-sref="login" class="bt-round bt-round--blue"><span class="bt-content">Account</span></a>
                   </div>
-                  <div class="button__purchase">
+                  <div class="button__purchase button-anim">
                     <a ui-sref="" class="bt-round bt-round--blue-dark"><span class="bt-content">Purchase</span></a>
                   </div>
                 </div>

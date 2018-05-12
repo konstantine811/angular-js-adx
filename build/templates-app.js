@@ -1054,7 +1054,11 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "        <!--navigation-->\n" +
     "        <div class=\"header-nav\">\n" +
     "          <div class=\"header-nav__mobile-menu hide-desktop\">\n" +
-    "            <div class=\"mobile-button\" ng-click=\"showMenu()\"><span ng-class=\"{'mobile-button--close': show}\" class=\"mobile-button__inner\"></span></div>\n" +
+    "            <div class=\"mobile-button\" ng-click=\"showMenu()\" ng-class=\"{'toggle': show}\">\n" +
+    "              <span class=\"line-1\"></span>\n" +
+    "              <span class=\"line-2\"></span>\n" +
+    "              <span class=\"line-3\"></span>\n" +
+    "            </div>\n" +
     "            <div class=\"mobile-menu\" ng-class=\"{'mobile-menu-show-anim': show}\">\n" +
     "              \n" +
     "              <!--mobile menu-->\n" +
@@ -1079,10 +1083,10 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                  </ul>\n" +
     "                </nav>\n" +
     "                <div class=\"header__button\">\n" +
-    "                  <div class=\"button__login\">\n" +
+    "                  <div class=\"button__login button-anim\">\n" +
     "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
     "                  </div>\n" +
-    "                  <div class=\"button__purchase\">\n" +
+    "                  <div class=\"button__purchase button-anim\">\n" +
     "                    <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
