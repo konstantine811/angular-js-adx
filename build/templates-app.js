@@ -165,7 +165,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap anim-content-transition\">\n" +
-    "            <button class=\"button-border-rounded\">Order test</button>\n" +
+    "            <button jq-slider class=\"button-border-rounded\">Order test</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"hide-mobile home-head-image__wrap anim-content-transition\">\n" +
@@ -174,7 +174,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"home-arrow-down__wrap anim-content-transition\">\n" +
-    "      <a  ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
+    "      <a href=\"#anchor\" smooth-scroll ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <div class=\"home-head-bottom\">\n" +
@@ -193,7 +193,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "  </div>\n" +
     "  \n" +
     "  <!--section second-->\n" +
-    "  <div class=\"section-box-shadow home-section-first\">\n" +
+    "  <div id=\"anchor\" class=\"section-box-shadow home-section-first\">\n" +
     "    <div class=\"container-lg\">\n" +
     "      <div class=\"home-section-first__wrap\">\n" +
     "        <div class=\"home-section-first__title\">\n" +
