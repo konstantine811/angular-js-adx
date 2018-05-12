@@ -8016,9 +8016,7 @@ button.button-border-rounded {
   z-index: 100;
   position: relative; }
   button.button-border-rounded:hover {
-    box-shadow: 3px 8px 19px 0px #063f5f, inset 4px 3px 15px 1px #063f5f;
-    transform: translate(-4px, -4px);
-    text-shadow: 6px 5px 4px #063f5f; }
+    background-color: rgba(255, 255, 255, 0.3); }
 
 .button-border-rounded.button-border-rounded--small {
   padding: 4px 39px; }
@@ -8039,7 +8037,6 @@ button[disabled].bt-round {
   border-radius: 100px;
   padding: 9px 57px;
   display: inline-block;
-  transition: all 0.4s ease-in;
   outline: none;
   font-weight: 400;
   font-size: 16.5pt;
@@ -8050,43 +8047,23 @@ button[disabled].bt-round {
   text-align: center;
   overflow: hidden;
   position: relative;
-  z-index: 100; }
-  .bt-round:before, .bt-round:after {
-    content: '';
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    left: 0;
-    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
-  .bt-round:before {
-    top: 0; }
-  .bt-round:after {
-    bottom: 0; }
+  z-index: 100;
+  transition: background-color .3s ease-out; }
   .bt-round:hover, .bt-round:focus {
     border: none;
     color: #fff;
     outline: none;
     text-decoration: transparent; }
-  .bt-round:hover:before {
-    transform: translate(0, -150%); }
-  .bt-round:hover:after {
-    transform: translate(0, 150%); }
-  .bt-round:hover .bt-content {
-    animation: anim-text-btn-round 0.3s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
 
-.bt-round.bt-round--blue:before, .bt-round.bt-round--blue:after {
+.bt-round.bt-round--blue {
   background-color: #41c5eb; }
-.bt-round.bt-round--blue:hover {
-  box-shadow: inset 0px 0px 0px 1px #41c5eb; }
-  .bt-round.bt-round--blue:hover .bt-content {
-    color: #41c5eb; }
+  .bt-round.bt-round--blue:hover {
+    background-color: #7cd9f4; }
 
-.bt-round.bt-round--blue-dark:before, .bt-round.bt-round--blue-dark:after {
+.bt-round.bt-round--blue-dark {
   background-color: #063f5f; }
-.bt-round.bt-round--blue-dark:hover {
-  box-shadow: inset 0px 0px 0px 1px #063f5f; }
-  .bt-round.bt-round--blue-dark:hover .bt-content {
-    color: #063f5f; }
+  .bt-round.bt-round--blue-dark:hover {
+    background-color: #295873; }
 
 .bt-content {
   color: #fff;
@@ -8853,6 +8830,9 @@ a.nav-link-dropdown {
   left: 27%;
   z-index: -1;
   overflow: hidden; }
+
+.footer-submit__wrap {
+  align-self: center; }
 
 .panel {
   background-color: #fff;
