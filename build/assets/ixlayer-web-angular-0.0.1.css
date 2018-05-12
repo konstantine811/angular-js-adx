@@ -9600,10 +9600,15 @@ span.summary.ng-valid {
     width: 32px;
     height: 36px; }
     .cross-button-open:before, .cross-button-open:after {
-      width: 38px; }
+      width: 29px;
+      top: 19px; }
 
   .button-border-rounded.button-border-rounded--small {
-    padding: 10px 48px; } }
+    padding: 10px 48px; }
+
+  .cross-button-open__wrap {
+    position: absolute;
+    margin: -9px 0px; } }
 a[ng-click] {
   cursor: pointer; }
 
