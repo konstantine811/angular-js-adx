@@ -1139,122 +1139,61 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <!--logo header-->\n" +
-    "      \n" +
-    "        <!--end logo header-->\n" +
+    "      <div class=\"side-navbar__logo\">\n" +
+    "        <a ui-sref=\"home\" class=\"header-logo__link\">\n" +
+    "          <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
+    "        </a>\n" +
     "      </div>\n" +
+    "      <!--end logo header-->\n" +
     "    </div>\n" +
     "    <div class=\"row\">\n" +
-    "      <div class=\"side-navbar__admin\">\n" +
-    "        <div class=\"side-navbar__admin-photo\">\n" +
-    "          <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
-    "        </div>\n" +
-    "        <div class=\"side-navbar__admin-txt\">\n" +
-    "          <h2 class=\"side-navbar__admin-name txt-bold not-margin\">\n" +
-    "            Maria Gomez\n" +
-    "          </h2>\n" +
-    "          <p class=\"side-navbar__admin-status txt-uppercase not-margin\">\n" +
-    "            Administrator\n" +
-    "          </p>\n" +
-    "        </div>\n" +
-    "        <div class=\"side-navbar__admin-button\">\n" +
-    "          <div class=\"dropdown-icon-circle\">\n" +
-    "            <i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i>\n" +
+    "      <div class=\"side-navbar__account\">\n" +
+    "        <div class=\"bgc-wrap-content\">\n" +
+    "          <div class=\"side-navbar-account__name\">\n" +
+    "            <div class=\"txt txt-blue-dark txt-ellipsis\">\n" +
+    "              {{ user.first_name }}\n" +
+    "              {{ user.last_name }}\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"side-navbar-account__button\">\n" +
+    "            <a href=\"\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "            <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"row\">\n" +
-    "      <div class=\"side-navbar__search-form\">\n" +
-    "        <div class=\"search-form\">\n" +
-    "          <div class=\"search-form__icon\">\n" +
-    "            <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n" +
+    "      <div class=\"side-navbar__navigation\">\n" +
+    "        <div class=\"side-navbar-navigation__wrap\">\n" +
+    "          <div class=\"bgc-wrap-content bgc-wrap-content--blue bgc-wrap-content--justify-left\">\n" +
+    "            <div class=\"status-icon__wrap\">\n" +
+    "              <i class=\"fa fa-user\" aria-hidden=\"true\"></i>\n" +
+    "            </div>\n" +
+    "            <div class=\"status-txt__wrap\">\n" +
+    "              <div class=\"txt\">Your result</div>\n" +
+    "            </div>\n" +
     "          </div>\n" +
-    "          <input class=\"form-control form-control--search\" type=\"text\" placeholder=\"Start typing to search...\">\n" +
+    "          <div class=\"side-navbar-navigation__link\">\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"number-bgc\">1</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt txt-blue-dark\">Your result</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"number-bgc\">2</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt txt-blue-dark\">How to use this test</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "          </div>\n" +
     "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "      <!--nav-top-->\n" +
-    "      <div class=\"side-navbar-link\">\n" +
-    "        <ul class=\"side-navbar-link__top\">\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"home\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-home\"></i>Dashboard<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
-    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"about\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-bar-chart\"></i>Overview<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
-    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item side-navbar-link__item--users\">\n" +
-    "            <a href ui-sref=\"profile\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-user-o\"></i>Users<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
-    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a href ui-sref=\"dashboard\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-gear\"></i>Customizations<i class=\"fa fa-angle-down dropdown-icon-circle__inner\"></i></span></a>\n" +
-    "            <ul  class=\"side-navbar-link__dropdown side-navbar-link__dropdown--users\">\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">All users</a>\n" +
-    "              </li>\n" +
-    "              <li class=\"dropdown-item\">\n" +
-    "                <a href  class=\"nav-link-dropdown\">Gender</a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" class=\"side-navbar-link__item\">\n" +
-    "            <a test-hook=\"logout-button\" ng-click=\"logout()\" class=\"nav-link\"><span class=\"link-txt\"><i class=\"fa fa-sign-out\"></i>Logout</span></a>\n" +
-    "          </li>\n" +
-    "        </ul>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +

@@ -48,16 +48,33 @@ angular.module( 'ixLayer', [
 .run( function run () {
 })
 
-  .controller( 'AppCtrl', ['$scope', '$location', '$rootScope', 'djangoAuth',  'userAccessSrv', function AppCtrl ( $scope, $location, $rootScope, djangoAuth, userAccessSrv ) {
+  .controller( 'AppCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv', function AppCtrl ( $scope, $location, $state, $rootScope, djangoAuth, userAccessSrv ) {
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
       if ( angular.isDefined( toState.data.pageTitle ) ) {
         $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
       }
     });
 
-    $scope.logged = false;
 
-    $scope.logged = (function() {
+    $scope.logged = false;
+    $scope.hideSideNavBar = true;
+
+    $scope.$watch(function() {
+      return $location.path();
+    }, function(value) {
+      var path = value.slice(1);
+      switch(path) {
+        case 'home' :
+          $scope.hideSideNavBar = false;
+          break;
+        default:
+          $scope.hideSideNavBar = true;
+          break;
+      }
+    });
+
+
+      $scope.logged = (function() {
       var token = djangoAuth.getToken();
       if(token) {
         return true;
@@ -75,7 +92,6 @@ angular.module( 'ixLayer', [
     });
 
     $rootScope.$on("user_logged_out", function(data) {
-      console.log(data);
       if(data) {
         $scope.logged = false;
       } else {

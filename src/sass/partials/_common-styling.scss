@@ -84,6 +84,12 @@ body {
   font-family: 'CircularStd-Medium', sans-serif !important;
 }
 
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 //title txt
 .title__wrap {
   position: relative;
@@ -315,6 +321,39 @@ h6 {
   color: $blue-6;
   margin: 0;
   padding: 0;
+}
+
+//bgc with content
+.bgc-wrap-content {
+  display: flex;
+  width: 93%;
+  height: auto;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-radius: 34px;
+  padding: 9px 8px 9px 27px;
+  background-color: $silver;
+}
+
+.bgc-wrap-content.bgc-wrap-content--blue {
+  background-color: $blue-6;
+}
+
+.bgc-wrap-content.bgc-wrap-content--justify-left {
+  justify-content: left;
+}
+
+.number-bgc {
+  width: 30px;
+  height: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-top: 3px;
+  background-color: $silver;
+  color: $silver-dark;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
 }
 
 

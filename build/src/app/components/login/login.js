@@ -19,7 +19,7 @@ angular.module( 'ixLayer.login', [
       $scope.loginUser = function (userForm) {
           userAccessSrv.cleanUser();
           userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
-                $state.go('home');
+                $state.go('dashboard');
               },
               function (error) {
                 $scope.error = error;

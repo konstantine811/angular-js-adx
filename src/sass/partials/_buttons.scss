@@ -257,6 +257,25 @@ button[disabled].bt-round {
 
 }
 
+
+.button-circle {
+  width: 32px;
+  height: 32px;
+  background-color: $blue-6;
+  display: inline-block;
+  color: $white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 4px;
+  transition: background-color 0.3s ease-out;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: $blue-light-6;
+  }
+}
+
 @keyframes trans-arrow {
   0% {
     transform: translate3d(0, 0, 0);

@@ -55,8 +55,6 @@ angular.module( 'ixLayer.profile', [
 
     $scope.profile = profile;
 
-
-
     $scope.submitForm = function(data) {
       profileService.updateProfile(data).then(function(result) {
         $state.go('profile');

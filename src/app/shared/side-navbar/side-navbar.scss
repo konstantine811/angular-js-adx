@@ -3,211 +3,66 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 278px;
+  width: 337px;
   text-align: left;
   background: $white;
   color: white;
   z-index: 999;
-  overflow-y: hidden;
+  overflow-x: hidden;
   box-shadow: -1px 0px 12px 0px $black-light;
 }
-.header-logo.header-logo--small {
-  transform: scale(0.4);
-  width: 36px;
-  height: 39px;
+
+
+.side-navbar__logo {
+  width: 70%;
+  max-width: 209px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
-.side-navbar-header__logo {
-  padding-left: 30px;
-  padding-top: 30px;
-  cursor: pointer;
-}
-
-.header-about-txt {
-  text-align: left;
-  font-size: 12pt;
-  padding-left: 11px;
-  font-family: Quicksand, sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.side-navbar-link {
-  position: relative;
+.side-navbar__account {
   width: 100%;
   height: auto;
+  padding: 85px 0 40px;
+  border-bottom: 6px solid $silver;
 }
 
-.side-navbar-link__item {
-  list-style: none;
-  padding: 0;
-  position: relative;
-  margin-bottom: 1px;
-  transition: all 0.5s ease-in-out;
+.side-navbar-account__name {
+  width: 74%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.side-navbar-link__item.active {
-  .nav-link {
-    color: $black-light;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 4px;
-      height: 100%;
-      background-color: $blue-5;
-    }
-  }
-}
-
-.nav-link {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  padding: 14px 0;
-  color: $black-light;
-  font-family: Quicksand, sans-serif;
-  font-weight: 500;
-  font-size: 12pt;
-  transition: all 0.3s ease;
-  i.fa {
-    transition: all 0.6s ease;
-    padding-right: 8px;
-  }
-  i.fa.dropdown-icon-circle__inner {
-    float: right;
-    margin-right: 25px;
-    position: relative;
-  }
-}
-.link-txt {
-  padding-left: 29px;
-  width: 100%;
-  display: inline-block;
-}
-
-
-.side-navbar-link__top {
-  width: 100%;
-  height: 100%;
-  margin-top: 93px;
-  padding: 0;
-}
-
-.side-navbar-link__item {
-  transition: all 0.6s ease;
-}
-
-.side-navbar-link__item.active {
-  .side-navbar-link__dropdown {
-    display: block;
-  }
-  .nav-link i.fa.dropdown-icon-circle__inner {
-    transform: scaleY(-1);
-    top: 3px;
-  }
-  @for $i from 1 through 10 {
-    .dropdown-item:nth-child(#{$i}) {
-      a.nav-link-dropdown {
-        animation: fade-in-dropdown 0.6s $i * 0.2s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-    }
-  }
-
-}
-
-.side-navbar-link__dropdown {
-  display: none;
-}
-
-.dropdown-item {
-  list-style: none;
-  display: inline-block;
-  width: 100%;
-  padding: 4px 0;
-  margin-top: 5px;
-  height: 100%;
-}
-
-a.nav-link-dropdown {
-  padding-left: 10px;
-  font-size: 12pt;
-  font-weight: 500;
-  color: $black-light;
-  transition: color 0.3s ease;
-  display: inline-block;
-  transform: translate(0px, -30px);
-  opacity: 0;
-}
-
-.side-navbar__admin {
-  display: flex;
-  justify-content: space-between;
-  width: 89%;
-  margin: 50px auto 0;
-}
-
-.side-navbar__admin-txt {
-  padding-top: 7px;
-}
-
-.side-navbar__admin-button {
-  padding-top: 9px;
-}
-
-.side-navbar__admin-status {
-  padding-top: 5px;
-}
-
-.side-navbar__admin-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 69%;
-  margin: 20px auto 0;
-}
-
-.side-navbar__search-form {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 20px;
-  padding: 21px 14px;
-}
-.logo-affirmativ__wrap--sidb-navbar {
-  position: relative;
-  display: inline-block;
+.status-icon__wrap {
+  font-size: 24px;
   width: auto;
   height: auto;
-  top: 7px;
 }
 
-.search-form {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-.search-form__icon {
-  position: absolute;
+.status-txt__wrap {
   width: auto;
   height: auto;
-  top: 9px;
-  left: 24px;
-  font-size: 17pt;
+  padding-left: 23px;
 }
 
-@keyframes fade-in-dropdown {
-  0% {
-    opacity: 0;
-    transform: translate(0px, -30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
+.side-navbar-navigation__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 36px;
 }
 
+.side-navbar-navigation-link__wrap {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.side-navbar-navigation-link__item {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 14px 35px 0;
+}
 
 
 
