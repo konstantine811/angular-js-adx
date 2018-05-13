@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -56,13 +56,13 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
   $templateCache.put("components/dashboard/dashboard.tpl.html",
     "<div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
-    "        <h1>Status: {{ status.seq_status }}</h1>\n" +
+    "        <h1 class=\"txt-blue-dark\">Status: {{ status.seq_status }}</h1>\n" +
     "        <ul>\n" +
     "            <li ng-repeat=\"product in status.product_status\">\n" +
-    "                <p>product Id: {{product.product_id}}</p>\n" +
-    "                <p ng-if=\"product.product_consent_agreed_date\"> Product consent agreed date{{ product.product_consent_agreed_date }}</p>\n" +
-    "                <p>Product status {{ product.product_status}}</p>\n" +
-    "                <p>Submitted date {{ product.ldt_submitted_date }}</p>\n" +
+    "                <p class=\"txt-blue-dark\">product Id: {{product.product_id}}</p>\n" +
+    "                <p class=\"txt-blue-dark\" ng-if=\"product.product_consent_agreed_date\"> Product consent agreed date{{ product.product_consent_agreed_date }}</p>\n" +
+    "                <p class=\"txt-blue-dark\">Product status {{ product.product_status}}</p>\n" +
+    "                <p class=\"txt-blue-dark\">Submitted date {{ product.ldt_submitted_date }}</p>\n" +
     "            </li>\n" +
     "        </ul>\n" +
     "    </div>\n" +
@@ -874,13 +874,31 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "</div>");
 }]);
 
+angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p1.tpl.html",
+    "<h1 class=\"txt-blue-dark\">This page 1</h1>");
+}]);
+
+angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p2.tpl.html",
+    "<h1 class=\"txt-blue-dark\">This page 2</h1>");
+}]);
+
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
     "<div class=\"container-fluid\">\n" +
+    "  <!--this is new-->\n" +
+    "  <div ng-if=\"preResult\">\n" +
+    "    <div class=\"pre-result-head\">\n" +
+    "    \n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <div ui-view ng-if=\"!preResult\"></div>\n" +
+    "  <!--this is new end-->\n" +
+    "  \n" +
+    "  <!--this is old-->\n" +
     "  <div class=\"row\">\n" +
-    "    <h1>Results page:</h1>\n" +
     "    <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
-    "\n" +
     "    <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
     "    <div ng-show=\"consentAgreed\">\n" +
     "      <div ng-repeat=\"result in results\">\n" +
@@ -1176,7 +1194,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                <a href=\"results/1\" class=\"side-navbar__link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt txt-blue-dark\">Your result</span>\n" +

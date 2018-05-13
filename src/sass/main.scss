@@ -76,6 +76,7 @@ a:hover, a:focus {
   width: 100%;
   .container-page {
     padding-top: 100px;
+    border-top: none;
   }
 }
 
@@ -86,6 +87,7 @@ a:hover, a:focus {
   z-index: 100;
   overflow-y: visible;
   overflow-x: hidden;
+  border-top: 10px solid $blue-6;
   transition: transform 1.2s ease-out, opacity 1.2s ease-out;
 }
 

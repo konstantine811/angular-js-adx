@@ -9555,7 +9555,8 @@ a:hover, a:focus {
   position: relative;
   width: 100%; }
   .logged-out.page .container-page {
-    padding-top: 100px; }
+    padding-top: 100px;
+    border-top: none; }
 
 .container-page {
   padding: 0;
@@ -9564,6 +9565,7 @@ a:hover, a:focus {
   z-index: 100;
   overflow-y: visible;
   overflow-x: hidden;
+  border-top: 10px solid #41c5eb;
   transition: transform 1.2s ease-out, opacity 1.2s ease-out; }
 
 .container-page.ng-enter {

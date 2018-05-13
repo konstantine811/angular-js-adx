@@ -1,8 +1,16 @@
 <div class="container-fluid">
+  <!--this is new-->
+  <div ng-if="preResult">
+    <div class="pre-result-head">
+    
+    </div>
+  </div>
+  <div ui-view ng-if="!preResult"></div>
+  <!--this is new end-->
+  
+  <!--this is old-->
   <div class="row">
-    <h1>Results page:</h1>
     <div class="error" ng-show="noProducts">You have not purchased any products</div>
-
     <div class="error" ng-show="!noProducts && !consentAgreed">You did not consent to viewing the results</div>
     <div ng-show="consentAgreed">
       <div ng-repeat="result in results">

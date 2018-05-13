@@ -40,6 +40,7 @@ angular.module( 'ixLayer.products', [
 
     $scope.product = product;
     $scope.metadata = product.content.metadata;
+    console.log(product);
 
     var contentEmpty = (function() {
       var obj = product.content;

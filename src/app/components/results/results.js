@@ -21,12 +21,21 @@ angular.module( 'ixLayer.results', [
           return productsService.getProductStatus(parseInt($stateParams.id));
         }]
       }
-    });
+    })
+      .state('results.p1', {
+        url: '/p1',
+        templateUrl: 'components/results/pages/result-p1.tpl.html'
+      })
+      .state('results.p2', {
+        url: '/p2',
+        templateUrl: 'components/results/pages/result-p2.tpl.html'
+      });
   })
   .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', 'product', 'productStatus',
     function ResultsCtrl($scope, $stateParams, resultsService, product, productStatus) {
 
       $scope.results = null;
+      console.log(productStatus);
       $scope.noProducts = productStatus === undefined;
 
       if ($scope.noProducts === false) {
@@ -63,5 +72,8 @@ angular.module( 'ixLayer.results', [
         $scope.needPopup = false;
         $scope.consentAgreed = false;
       };
+
+      //this is test logic for template and deleted after markup tpl step...
+      $scope.preResult = true;
 
     }]);
