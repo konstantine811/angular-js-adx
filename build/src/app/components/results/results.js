@@ -2,7 +2,8 @@ angular.module( 'ixLayer.results', [
   'ui.router',
   'ui.bootstrap',
   'ixlayer.api.results',
-  'ngAnimate'
+  'ngAnimate',
+  'gridshore.c3js.chart'
 ])
   .config(function config($stateProvider) {
     $stateProvider.state('results', {
@@ -31,8 +32,8 @@ angular.module( 'ixLayer.results', [
         templateUrl: 'components/results/pages/result-p2.tpl.html'
       });
   })
-  .controller('ResultsCtrl', ['$scope', '$stateParams', 'resultsService', 'product', 'productStatus',
-    function ResultsCtrl($scope, $stateParams, resultsService, product, productStatus) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus',
+    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus) {
 
       $scope.results = null;
       console.log(productStatus);
@@ -75,5 +76,9 @@ angular.module( 'ixLayer.results', [
 
       //this is test logic for template and deleted after markup tpl step...
       $scope.preResult = true;
+      $scope.preResultSumbit = function() {
+        $state.go('results.p1');
+        $scope.preResult = false;
+      }
 
     }]);

@@ -136,6 +136,10 @@ button[disabled].bt-round {
   }
 }
 
+.bt-round.bt-round--large {
+  padding: 9px 95px;
+}
+
 .bt-round.bt-round--blue {
   background-color: $blue-6;
   &:hover {

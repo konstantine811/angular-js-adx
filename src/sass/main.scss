@@ -12,6 +12,7 @@
 //libs
 @import '../../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 @import "../../vendor/font-awesome/scss/font-awesome.scss";
+@import "../../vendor/c3/src/scss/main.scss";
 //partials
 @import './partials/variables.scss';
 @import './partials/fonts.scss';
@@ -30,6 +31,7 @@
 @import './partials/popup.scss';
 @import './partials/scroll_bar.scss';
 @import '../app/components/register/register.scss';
+@import '../app/components/results/results.scss';
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 //responsive media query
@@ -40,6 +42,7 @@
 @import "../app/shared/header/header-media.scss";
 @import "../app/shared/footer/footer-media.scss";
 @import "./responsive/_buttons-media.scss";
+@import '../app/components/results/results-media.scss';
 
 a[ng-click] {
   cursor: pointer;

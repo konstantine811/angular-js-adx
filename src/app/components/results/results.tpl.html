@@ -1,49 +1,269 @@
-<div class="container-fluid">
-  <!--this is new-->
-  <div ng-if="preResult">
-    <div class="pre-result-head">
-    
-    </div>
-  </div>
-  <div ui-view ng-if="!preResult"></div>
-  <!--this is new end-->
-  
-  <!--this is old-->
-  <div class="row">
-    <div class="error" ng-show="noProducts">You have not purchased any products</div>
-    <div class="error" ng-show="!noProducts && !consentAgreed">You did not consent to viewing the results</div>
-    <div ng-show="consentAgreed">
-      <div ng-repeat="result in results">
-        <p>Product id: {{result.id}}</p>
-        <p>Product: {{result.product}}</p>
-        <p>Insight score: {{result.result.insight_score}}</p>
-        <p>Last update: {{result.last_updated}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="popup" ng-if="!noProducts && needPopup && !consentAgreed">
-    <div class="popup-content" ng-class="needPopup = 'popup-content-animation'">
-      <div class="popup-condition-txt scrollme" ng-scrollbar is-bar-shown="barShown">
-        <p class="popup-condition-txt__inner">
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>
-        </p>
-      </div>
-      <form class="form-popup">
+<!--this is new-->
+<div class="pre-result" ng-if="preResult">
+  <div class="pre-result-head">
+    <div class="container-fluid">
+      <div class="pre-result-head__wrap">
+        <div class="txt-rubric__wrap">
+          <div class="sub-header-txt txt-bold txt-gray">Pre-Result</div>
+        </div>
         <div class="row">
-          <div class="col-sm-6">
-            <div class="form-check">
-              <label class="i-checks">
-                <input type="checkbox" ng-model="checked" required> <span>I agree</span>
-              </label>
+          <div class="pre-result-head__content">
+            <div class="col-md-12 col-lg-7">
+              <div class="pre-result-head__title">
+                <h2 class="txt-blue">What will my results tell me?</h2>
+                <div class="pre-result-head__txt">
+                  <div class="sub-header-txt txt-black sub-header-txt--large-line-height">
+                    <span class="txt-bold">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+              <div class="pre-result-head__img">
+                <div class="img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white">
+                  <ng-include class="svg-inner-rounded-middle svg-inner-rounded-middle--larger" src="'./assets/images/svg/svg-table.svg'"></ng-include>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <button class="btn btn-primary" type="button" ng-click="agree(checked)">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="noAgree()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--section first with chart-->
+  <div class="pre-result-section-first">
+    <div class="container-fluid">
+      <div class="pre-result-section-first__title">
+        <div class="title__wrap">
+          <h2 class="txt-blue txt-center">In summery</h2>
+        </div>
+        <div class="txt__wrap">
+          <div class="pre-result-section-first__sub-header">
+            <div class="sub-header-txt txt-black txt-center">
+              Alzheimer's disease is characterized by memory loss,
+              cognitive decline, and personality changes.
+            </div>
           </div>
+          <div class="txt txt-black txt-center">
+            Late-onset Alzheimer's disease is the most common form of Alzheimer's disease, developing after age 65. Many factors, including genetics, can influence a person's chances of developing the condition. This test includes the most common genetic variant associated with late-onset Alzheimer's disease.
+          </div>
+        </div>
+      </div>
+      <div class="pre-result-section-first__image">
+        <img class="img" src="./assets/images/results-page/img-results-1.png" alt="">
+      </div>
+      <div class="pre-result-section-first__chart">
+        <div class="title__wrap">
+          <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
+        </div>
+        <div class="chart__wrap">
+          <c3chart class="chart-bar chart-scroll-x" bindto-id="stacked-bar-plot1-chart">
+            <chart-size chart-height="400" chart-width="1180px"/>
+            <chart-column column-id="x"
+                          column-values="e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4"/>
+            <chart-column column-id="data 1"
+                          column-name="65 years"
+                          column-color="#41C5EB"
+                          column-values="7, 10, 28, 31, 65"
+                          column-type="bar"/>
+            <chart-column column-id="data 2"
+                          column-name="75 years"
+                          column-color="#063F5F"
+                          column-values="1, 2, 5, 8, 30"
+                          column-type="bar"/>
+            <chart-column column-id="data 3"
+                          column-name="85 years"
+                          column-color="#FFBD24"
+                          column-values="0, 0, 0, 1, 2" column-type="bar" />
+            <chart-axes values-x="x"/>
+            <chart-axis>
+              <chart-axis-x axis-position="outer-center"
+                            axis-type="category">
+              </chart-axis-x>
+              <chart-axis-y axis-position="center"
+                            range-max="70">
+              </chart-axis-y>
+            </chart-axis>
+            <chart-grid show-x="false" show-y="true">
+              <chart-grid-optional axis-id="y" grid-value="0" class="grid-bar"/>
+              <chart-grid-optional class="grid-bar" axis-id="y" grid-value="10"/>
+              <chart-grid-optional axis-id="y" grid-value="20"/>
+              <chart-grid-optional axis-id="y" grid-value="30"/>
+              <chart-grid-optional axis-id="y" grid-value="40"/>
+              <chart-grid-optional axis-id="y" grid-value="50"/>
+              <chart-grid-optional axis-id="y" grid-value="60"/>
+              <chart-grid-optional axis-id="y" grid-value="70"/>
+            </chart-grid>
+          </c3chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end section first with chart-->
+  
+  <!--section second with boxes-->
+  <div class="pre-result-section-second">
+    <div class="container-fluid">
+      <div class="pre-result-section-second__wrap">
+        <div class="boxes-row__wrap">
+            <div class="boxes__wrap boxes__wrap--large">
+              <div class="box-half-column box-shadow">
+                  <div class="box-image__wrap">
+                    <img class="img" src="./assets/images/stop-green.png" alt="">
+                  </div>
+                  <div class="box-title__wrap">
+                    <h5 class="txt-blue txt-center">Low risk does not mean no risk.</h5>
+                  </div>
+                <div class="box-txt__wrap">
+                  <div class="sub-header-txt txt-black sub-header-txt--small txt-center">
+                    Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.
+                  </div>
+                </div>
+              </div>
+              <div class="box-half-column box-shadow">
+                <div class="box-image__wrap boxes__wrap--large">
+                  <img class="img" src="./assets/images/cross-blue.png" alt="">
+                </div>
+                <div class="box-title__wrap">
+                  <h5 class="txt-blue txt-center">High risk does not mean certain development of Alzheimer’s disease.</h5>
+                </div>
+                <div class="box-txt__wrap">
+                  <div class="sub-header-txt txt-black sub-header-txt--small txt-center">
+                    Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="boxes__wrap boxes__wrap--large">
+            <div class="box-half-column box-shadow">
+              <div class="box-image__wrap">
+                <img class="img" src="./assets/images/exclamation-point-silver.png" alt="">
+              </div>
+              <div class="box-title__wrap">
+                <h5 class="txt-blue txt-center">Other factors influence your risk.</h5>
+              </div>
+              <div class="box-txt__wrap">
+                <div class="sub-header-txt txt-black sub-header-txt--small txt-center">
+                  Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.
+                </div>
+              </div>
+            </div>
+            <div class="box-half-column box-shadow">
+              <div class="box-image__wrap boxes__wrap--large">
+                <img class="img" src="./assets/images/exclamation-point-yellow.png" alt="">
+              </div>
+              <div class="box-title__wrap">
+                <h5 class="txt-blue txt-center">Knowledge is power.</h5>
+              </div>
+              <div class="box-txt__wrap">
+                <div class="sub-header-txt txt-black sub-header-txt--small txt-center">
+                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end section second with boxes-->
+  
+  <!--section third with boxes agreed-submit-->
+  <div class="pre-result-section-third">
+    <div class="container-fluid">
+      <div class="pre-result-section-third__title">
+        <div class="sub-header-txt sub-header-txt--small txt-black">How do you want to view your results? Select one of the options.</div>
+      </div>
+      <form action="">
+        <div class="boxes__wrap boxes__wrap--large">
+          <div class="box-half-column box-half-column--less-padding box-shadow">
+            <div class="row">
+              <div class="box-checkbox__wrap checkbox">
+                <input type="checkbox" id="checkbox-receive" class="checkbox-input">
+                <label for="checkbox-receive" class="checkbox-label"></label>
+              </div>
+              <div class="box-txt__wrap--inline-block">
+                <div class="sub-header-txt txt-black sub-header-txt--small">
+                  <span class="txt-bold">I would like to wait to receive my results with a genetic counselor.</span>
+                  <div class="txt__wrap">
+                    Select this option to consent to sharing your report with the genetics counselor and to schedule a counseling session.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-half-column box-half-column--less-padding box-shadow">
+            <div class="row">
+              <div class="box-checkbox__wrap checkbox">
+                <input type="checkbox" id="checkbox-results" class="checkbox-input">
+                <label for="checkbox-results" class="checkbox-label"></label>
+              </div>
+              <div class="box-txt__wrap--inline-block">
+                <div class="sub-header-txt txt-black sub-header-txt--small">
+                  <span class="txt-bold">I would like to review the results on my own..</span> I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.
+                </div>
+              </div>
+            </div>
+            <div class="row box-row-padding">
+              <div class="box-checkbox__wrap checkbox">
+                <input type="checkbox" id="checkbox-private" class="checkbox-input">
+                <label for="checkbox-private" class="checkbox-label"></label>
+              </div>
+              <div class="box-txt__wrap--inline-block">
+                <div class="sub-header-txt txt-black sub-header-txt--small">
+                  I am in a private, comfortable place and wish to view my results
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pre-result-section-third__form-button">
+          <button ng-click="preResultSumbit()" type="submit" class="bt-round bt-round--large bt-round--blue">I consent</button>
         </div>
       </form>
     </div>
-    <div class="popup-background" ng-class="needPopup = 'popup-background-animation'"></div>
   </div>
+  <!--end section third with boxes agreed-submit-->
+</div>
+<div ui-view ng-if="!preResult"></div>
+<!--this is new end-->
+
+<!--this is old-->
+<div class="row">
+  <div class="error" ng-show="noProducts">You have not purchased any products</div>
+  <div class="error" ng-show="!noProducts && !consentAgreed">You did not consent to viewing the results</div>
+  <div ng-show="consentAgreed">
+    <div ng-repeat="result in results">
+      <p>Product id: {{result.id}}</p>
+      <p>Product: {{result.product}}</p>
+      <p>Insight score: {{result.result.insight_score}}</p>
+      <p>Last update: {{result.last_updated}}</p>
+    </div>
+  </div>
+</div>
+<div class="popup" ng-if="!noProducts && needPopup && !consentAgreed">
+  <div class="popup-content" ng-class="needPopup = 'popup-content-animation'">
+    <div class="popup-condition-txt scrollme" ng-scrollbar is-bar-shown="barShown">
+      <p class="popup-condition-txt__inner">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>
+      </p>
+    </div>
+    <form class="form-popup">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-check">
+            <label class="i-checks">
+              <input type="checkbox" ng-model="checked" required> <span>I agree</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-primary" type="button" ng-click="agree(checked)">OK</button>
+          <button class="btn btn-warning" type="button" ng-click="noAgree()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="popup-background" ng-class="needPopup = 'popup-background-animation'"></div>
 </div>

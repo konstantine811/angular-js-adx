@@ -886,54 +886,274 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "  <!--this is new-->\n" +
-    "  <div ng-if=\"preResult\">\n" +
-    "    <div class=\"pre-result-head\">\n" +
-    "    \n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <div ui-view ng-if=\"!preResult\"></div>\n" +
-    "  <!--this is new end-->\n" +
-    "  \n" +
-    "  <!--this is old-->\n" +
-    "  <div class=\"row\">\n" +
-    "    <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
-    "    <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
-    "    <div ng-show=\"consentAgreed\">\n" +
-    "      <div ng-repeat=\"result in results\">\n" +
-    "        <p>Product id: {{result.id}}</p>\n" +
-    "        <p>Product: {{result.product}}</p>\n" +
-    "        <p>Insight score: {{result.result.insight_score}}</p>\n" +
-    "        <p>Last update: {{result.last_updated}}</p>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <div class=\"popup\" ng-if=\"!noProducts && needPopup && !consentAgreed\">\n" +
-    "    <div class=\"popup-content\" ng-class=\"needPopup = 'popup-content-animation'\">\n" +
-    "      <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
-    "        <p class=\"popup-condition-txt__inner\">\n" +
-    "          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
-    "        </p>\n" +
-    "      </div>\n" +
-    "      <form class=\"form-popup\">\n" +
+    "<!--this is new-->\n" +
+    "<div class=\"pre-result\" ng-if=\"preResult\">\n" +
+    "  <div class=\"pre-result-head\">\n" +
+    "    <div class=\"container-fluid\">\n" +
+    "      <div class=\"pre-result-head__wrap\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Pre-Result</div>\n" +
+    "        </div>\n" +
     "        <div class=\"row\">\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"form-check\">\n" +
-    "              <label class=\"i-checks\">\n" +
-    "                <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
-    "              </label>\n" +
+    "          <div class=\"pre-result-head__content\">\n" +
+    "            <div class=\"col-md-12 col-lg-7\">\n" +
+    "              <div class=\"pre-result-head__title\">\n" +
+    "                <h2 class=\"txt-blue\">What will my results tell me?</h2>\n" +
+    "                <div class=\"pre-result-head__txt\">\n" +
+    "                  <div class=\"sub-header-txt txt-black sub-header-txt--large-line-height\">\n" +
+    "                    <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-md-12 col-lg-5\">\n" +
+    "              <div class=\"pre-result-head__img\">\n" +
+    "                <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white\">\n" +
+    "                  <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--larger\" src=\"'./assets/images/svg/svg-table.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <button class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
-    "            <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first with chart-->\n" +
+    "  <div class=\"pre-result-section-first\">\n" +
+    "    <div class=\"container-fluid\">\n" +
+    "      <div class=\"pre-result-section-first__title\">\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue txt-center\">In summery</h2>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <div class=\"pre-result-section-first__sub-header\">\n" +
+    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
+    "              Alzheimer's disease is characterized by memory loss,\n" +
+    "              cognitive decline, and personality changes.\n" +
+    "            </div>\n" +
     "          </div>\n" +
+    "          <div class=\"txt txt-black txt-center\">\n" +
+    "            Late-onset Alzheimer's disease is the most common form of Alzheimer's disease, developing after age 65. Many factors, including genetics, can influence a person's chances of developing the condition. This test includes the most common genetic variant associated with late-onset Alzheimer's disease.\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"pre-result-section-first__image\">\n" +
+    "        <img class=\"img\" src=\"./assets/images/results-page/img-results-1.png\" alt=\"\">\n" +
+    "      </div>\n" +
+    "      <div class=\"pre-result-section-first__chart\">\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
+    "        </div>\n" +
+    "        <div class=\"chart__wrap\">\n" +
+    "          <c3chart class=\"chart-bar chart-scroll-x\" bindto-id=\"stacked-bar-plot1-chart\">\n" +
+    "            <chart-size chart-height=\"400\" chart-width=\"1180px\"/>\n" +
+    "            <chart-column column-id=\"x\"\n" +
+    "                          column-values=\"e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4\"/>\n" +
+    "            <chart-column column-id=\"data 1\"\n" +
+    "                          column-name=\"65 years\"\n" +
+    "                          column-color=\"#41C5EB\"\n" +
+    "                          column-values=\"7, 10, 28, 31, 65\"\n" +
+    "                          column-type=\"bar\"/>\n" +
+    "            <chart-column column-id=\"data 2\"\n" +
+    "                          column-name=\"75 years\"\n" +
+    "                          column-color=\"#063F5F\"\n" +
+    "                          column-values=\"1, 2, 5, 8, 30\"\n" +
+    "                          column-type=\"bar\"/>\n" +
+    "            <chart-column column-id=\"data 3\"\n" +
+    "                          column-name=\"85 years\"\n" +
+    "                          column-color=\"#FFBD24\"\n" +
+    "                          column-values=\"0, 0, 0, 1, 2\" column-type=\"bar\" />\n" +
+    "            <chart-axes values-x=\"x\"/>\n" +
+    "            <chart-axis>\n" +
+    "              <chart-axis-x axis-position=\"outer-center\"\n" +
+    "                            axis-type=\"category\">\n" +
+    "              </chart-axis-x>\n" +
+    "              <chart-axis-y axis-position=\"center\"\n" +
+    "                            range-max=\"70\">\n" +
+    "              </chart-axis-y>\n" +
+    "            </chart-axis>\n" +
+    "            <chart-grid show-x=\"false\" show-y=\"true\">\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"0\" class=\"grid-bar\"/>\n" +
+    "              <chart-grid-optional class=\"grid-bar\" axis-id=\"y\" grid-value=\"10\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"20\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"30\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"40\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"50\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"60\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"70\"/>\n" +
+    "            </chart-grid>\n" +
+    "          </c3chart>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section first with chart-->\n" +
+    "  \n" +
+    "  <!--section second with boxes-->\n" +
+    "  <div class=\"pre-result-section-second\">\n" +
+    "    <div class=\"container-fluid\">\n" +
+    "      <div class=\"pre-result-section-second__wrap\">\n" +
+    "        <div class=\"boxes-row__wrap\">\n" +
+    "            <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "              <div class=\"box-half-column box-shadow\">\n" +
+    "                  <div class=\"box-image__wrap\">\n" +
+    "                    <img class=\"img\" src=\"./assets/images/stop-green.png\" alt=\"\">\n" +
+    "                  </div>\n" +
+    "                  <div class=\"box-title__wrap\">\n" +
+    "                    <h5 class=\"txt-blue txt-center\">Low risk does not mean no risk.</h5>\n" +
+    "                  </div>\n" +
+    "                <div class=\"box-txt__wrap\">\n" +
+    "                  <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                    Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-half-column box-shadow\">\n" +
+    "                <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "                  <img class=\"img\" src=\"./assets/images/cross-blue.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "                <div class=\"box-title__wrap\">\n" +
+    "                  <h5 class=\"txt-blue txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h5>\n" +
+    "                </div>\n" +
+    "                <div class=\"box-txt__wrap\">\n" +
+    "                  <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                    Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "            <div class=\"box-half-column box-shadow\">\n" +
+    "              <div class=\"box-image__wrap\">\n" +
+    "                <img class=\"img\" src=\"./assets/images/exclamation-point-silver.png\" alt=\"\">\n" +
+    "              </div>\n" +
+    "              <div class=\"box-title__wrap\">\n" +
+    "                <h5 class=\"txt-blue txt-center\">Other factors influence your risk.</h5>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                  Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-half-column box-shadow\">\n" +
+    "              <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "                <img class=\"img\" src=\"./assets/images/exclamation-point-yellow.png\" alt=\"\">\n" +
+    "              </div>\n" +
+    "              <div class=\"box-title__wrap\">\n" +
+    "                <h5 class=\"txt-blue txt-center\">Knowledge is power.</h5>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section second with boxes-->\n" +
+    "  \n" +
+    "  <!--section third with boxes agreed-submit-->\n" +
+    "  <div class=\"pre-result-section-third\">\n" +
+    "    <div class=\"container-fluid\">\n" +
+    "      <div class=\"pre-result-section-third__title\">\n" +
+    "        <div class=\"sub-header-txt sub-header-txt--small txt-black\">How do you want to view your results? Select one of the options.</div>\n" +
+    "      </div>\n" +
+    "      <form action=\"\">\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-half-column--less-padding box-shadow\">\n" +
+    "            <div class=\"row\">\n" +
+    "              <div class=\"box-checkbox__wrap checkbox\">\n" +
+    "                <input type=\"checkbox\" id=\"checkbox-receive\" class=\"checkbox-input\">\n" +
+    "                <label for=\"checkbox-receive\" class=\"checkbox-label\"></label>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap--inline-block\">\n" +
+    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                  <span class=\"txt-bold\">I would like to wait to receive my results with a genetic counselor.</span>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    Select this option to consent to sharing your report with the genetics counselor and to schedule a counseling session.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-half-column--less-padding box-shadow\">\n" +
+    "            <div class=\"row\">\n" +
+    "              <div class=\"box-checkbox__wrap checkbox\">\n" +
+    "                <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\">\n" +
+    "                <label for=\"checkbox-results\" class=\"checkbox-label\"></label>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap--inline-block\">\n" +
+    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                  <span class=\"txt-bold\">I would like to review the results on my own..</span> I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"row box-row-padding\">\n" +
+    "              <div class=\"box-checkbox__wrap checkbox\">\n" +
+    "                <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
+    "                <label for=\"checkbox-private\" class=\"checkbox-label\"></label>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap--inline-block\">\n" +
+    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                  I am in a private, comfortable place and wish to view my results\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"pre-result-section-third__form-button\">\n" +
+    "          <button ng-click=\"preResultSumbit()\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue\">I consent</button>\n" +
     "        </div>\n" +
     "      </form>\n" +
     "    </div>\n" +
-    "    <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
     "  </div>\n" +
+    "  <!--end section third with boxes agreed-submit-->\n" +
+    "</div>\n" +
+    "<div ui-view ng-if=\"!preResult\"></div>\n" +
+    "<!--this is new end-->\n" +
+    "\n" +
+    "<!--this is old-->\n" +
+    "<div class=\"row\">\n" +
+    "  <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
+    "  <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
+    "  <div ng-show=\"consentAgreed\">\n" +
+    "    <div ng-repeat=\"result in results\">\n" +
+    "      <p>Product id: {{result.id}}</p>\n" +
+    "      <p>Product: {{result.product}}</p>\n" +
+    "      <p>Insight score: {{result.result.insight_score}}</p>\n" +
+    "      <p>Last update: {{result.last_updated}}</p>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "<div class=\"popup\" ng-if=\"!noProducts && needPopup && !consentAgreed\">\n" +
+    "  <div class=\"popup-content\" ng-class=\"needPopup = 'popup-content-animation'\">\n" +
+    "    <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
+    "      <p class=\"popup-condition-txt__inner\">\n" +
+    "        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
+    "      </p>\n" +
+    "    </div>\n" +
+    "    <form class=\"form-popup\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"form-check\">\n" +
+    "            <label class=\"i-checks\">\n" +
+    "              <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
+    "            </label>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <button class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
+    "          <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </form>\n" +
+    "  </div>\n" +
+    "  <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
     "</div>");
 }]);
 
@@ -1168,7 +1388,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar__account\">\n" +
     "        <div class=\"bgc-wrap-content\">\n" +
     "          <div class=\"side-navbar-account__name\">\n" +
-    "            <div class=\"txt txt-blue-dark txt-ellipsis\">\n" +
+    "            <div class=\"txt txt-medium txt-blue-dark txt-ellipsis\">\n" +
     "              {{ user.first_name }}\n" +
     "              {{ user.last_name }}\n" +
     "            </div>\n" +

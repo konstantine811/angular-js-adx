@@ -9,7 +9,9 @@
     "angular-ui-router": "~1.0",
     "jquery": "^3.3.1",
     "angular-animate": "^1.6.9",
-    "font-awesome": "fontawesome#~4.7.0"
+    "font-awesome": "fontawesome#~4.7.0",
+    "c3": "^0.5.4",
+    "c3-angular": "^1.4.0"
   },
   "dependencies": {
     "restangular": "^1.6.1",

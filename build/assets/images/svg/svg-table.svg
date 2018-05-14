@@ -1,0 +1,40 @@
+<svg class="svg-table" xmlns="http://www.w3.org/2000/svg" viewBox="-8931.539 -6277.539 156.539 156.539">
+  <defs>
+    <style>
+      .svg-table-1 {
+        fill: #87d2f3;
+      }
+
+      .svg-table-2 {
+        fill: #fff;
+      }
+
+      .svg-table-3 {
+        fill: #2170a6;
+      }
+    </style>
+  </defs>
+  <g id="Group_692" data-name="Group 692" transform="translate(-8931.539 -6277.539)">
+    <rect id="Rectangle_342" data-name="Rectangle 342" class="svg-table-1" width="136.972" height="88.053" transform="translate(9.784 29.351)"/>
+    <rect id="Rectangle_343" data-name="Rectangle 343" class="svg-table-2" width="150.004" height="13.032" transform="translate(3.248 16.319)"/>
+    <rect id="Rectangle_344" data-name="Rectangle 344" class="svg-table-1" width="32.6" height="13.032" transform="translate(61.951 3.248)"/>
+    <rect id="Rectangle_345" data-name="Rectangle 345" class="svg-table-2" width="52.167" height="13.032" transform="translate(52.167 110.869)"/>
+    <rect id="Rectangle_346" data-name="Rectangle 346" class="svg-table-2" width="13.032" height="35.886" transform="translate(22.816 117.404)"/>
+    <rect id="Rectangle_347" data-name="Rectangle 347" class="svg-table-2" width="13.032" height="35.886" transform="translate(120.653 117.404)"/>
+    <rect id="Rectangle_348" data-name="Rectangle 348" class="svg-table-2" width="32.6" height="13.032" transform="translate(22.816 45.67)"/>
+    <path id="Path_456" data-name="Path 456" class="svg-table-2" d="M307.764,120.684v13.032L294.732,143.5,281.7,133.716V120.684l13.032-9.784Zm0,0" transform="translate(-174.041 -68.517)"/>
+    <path id="Path_457" data-name="Path 457" class="svg-table-2" d="M273.564,180.484v13.032L260.532,203.3,247.5,193.516V180.484l13.032-9.784Zm0,0" transform="translate(-152.912 -105.463)"/>
+    <path id="Path_458" data-name="Path 458" class="svg-table-2" d="M239.464,120.684v13.032L226.432,143.5,213.4,133.716V120.684l13.032-9.784Zm0,0" transform="translate(-131.844 -68.517)"/>
+    <path id="Path_459" data-name="Path 459" class="svg-table-3" d="M153.291,13.032H97.837V3.248A3.246,3.246,0,0,0,94.588,0h-32.6A3.246,3.246,0,0,0,58.74,3.248v9.784H3.248A3.279,3.279,0,0,0,0,16.319V29.351A3.246,3.246,0,0,0,3.248,32.6H58.7V26.1H6.535V19.567H150.042V26.1H97.837v6.535h55.454a3.246,3.246,0,0,0,3.248-3.248V16.319a3.279,3.279,0,0,0-3.248-3.287Zm-88.053,0v-6.5h26.1V13.07h-26.1Zm0,0"/>
+    <path id="Path_460" data-name="Path 460" class="svg-table-3" d="M154.072,177.421H118.185v-3.248a3.246,3.246,0,0,0-3.248-3.249H62.732a3.246,3.246,0,0,0-3.248,3.249v3.248H23.6V102.4H17.1v75.021a6.532,6.532,0,0,0,6.535,6.535H30.17v32.6a3.246,3.246,0,0,0,3.248,3.249H46.451a3.246,3.246,0,0,0,3.248-3.249V203.524h78.27v13.032a3.246,3.246,0,0,0,3.248,3.249H144.25a3.246,3.246,0,0,0,3.248-3.249v-32.6h6.535a6.532,6.532,0,0,0,6.535-6.535V102.4h-6.535l.038,75.021ZM43.164,213.269h-6.5V183.918H43.2v29.351Zm22.854-35.848h45.67v6.535H66.018ZM49.7,196.988V183.956h9.784V187.2a3.246,3.246,0,0,0,3.248,3.249H114.9a3.246,3.246,0,0,0,3.248-3.249v-3.249h9.784v13.032ZM141,213.269h-6.535V183.918H141Zm0,0" transform="translate(-10.565 -63.265)"/>
+    <rect id="Rectangle_349" data-name="Rectangle 349" class="svg-table-3" width="26.103" height="6.535" transform="translate(65.237 26.103)"/>
+    <path id="Path_461" data-name="Path 461" class="svg-table-3" d="M247.931,131.148a3.276,3.276,0,0,0,1.3-2.6V115.517a3.276,3.276,0,0,0-1.3-2.6L234.9,103.134a3.211,3.211,0,0,0-3.9,0l-11.083,8.331-11.083-8.331a3.211,3.211,0,0,0-3.9,0l-10.777,8.1-7.8-7.8-4.663,4.586,8.828,8.828v10.357L181.7,136.04l4.624,4.624,7.8-7.8,9.478,7.108v10.051l-8.866,8.828,4.624,4.624,7.8-7.8,10.777,8.1a3.211,3.211,0,0,0,3.9,0l10.777-8.1,7.8,7.8,4.624-4.624-8.828-8.828V139.976Zm-15.02-21.364,9.784,7.338v9.784l-9.784,7.338-9.784-7.338v-9.784Zm-35.848,7.338,9.784-7.338,9.784,7.338v9.784l-9.784,7.338-9.784-7.338Zm22.816,39.937-9.784-7.338v-9.784l9.784-7.338,9.784,7.338v9.784Zm0,0" transform="translate(-112.259 -63.312)"/>
+    <path id="Path_462" data-name="Path 462" class="svg-table-3" d="M90.335,114.248A3.246,3.246,0,0,0,87.086,111H54.448a3.246,3.246,0,0,0-3.248,3.248v13.032a3.246,3.246,0,0,0,3.248,3.248h32.6a3.246,3.246,0,0,0,3.249-3.248V114.248ZM83.8,124.032H57.735V117.5h26.1l-.038,6.535Zm0,0" transform="translate(-31.633 -68.579)"/>
+    <rect id="Rectangle_350" data-name="Rectangle 350" class="svg-table-3" width="6.535" height="6.535" transform="translate(19.567 68.486)"/>
+    <rect id="Rectangle_351" data-name="Rectangle 351" class="svg-table-3" width="6.535" height="6.535" transform="translate(32.6 68.486)"/>
+    <rect id="Rectangle_352" data-name="Rectangle 352" class="svg-table-3" width="13.032" height="6.535" transform="translate(45.67 68.486)"/>
+    <rect id="Rectangle_353" data-name="Rectangle 353" class="svg-table-3" width="29.351" height="6.535" transform="translate(19.567 81.518)"/>
+    <rect id="Rectangle_354" data-name="Rectangle 354" class="svg-table-3" width="6.535" height="6.535" transform="translate(19.567 94.588)"/>
+    <rect id="Rectangle_355" data-name="Rectangle 355" class="svg-table-3" width="6.535" height="6.535" transform="translate(32.6 94.588)"/>
+  </g>
+</svg>

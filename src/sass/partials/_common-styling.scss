@@ -60,8 +60,11 @@ body {
   font-weight: 600 !important;
 }
 
-.txt-middle {
+.txt-medium {
   font-weight: 500 !important;
+}
+.txt-regular {
+  font-weight: 400 !important;
 }
 
 .txt-blue {
@@ -74,6 +77,10 @@ body {
 
 .txt-black {
   color: $black !important;
+}
+
+.txt-gray {
+  color: $gray-2 !important;
 }
 
 .txt-fonts-circular-book {
@@ -125,7 +132,6 @@ h3 {
   font-size: 40px;
   font-weight: 600;
   color: $white;
-  line-height: 28px;
   margin: 0;
   padding: 0;
 }
@@ -165,6 +171,14 @@ h6 {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.sub-header-txt.sub-header-txt--small {
+  font-size: 30px;
+}
+
+.sub-header-txt.sub-header-txt--large-line-height {
+  line-height: 67px;
 }
 
 .sub-header-txt__wrap {
@@ -255,6 +269,11 @@ h6 {
   margin: 0 auto;
 }
 
+.img-bgc-wrap-middle__rounded.img-bgc-wrap-middle__rounded--white {
+  background-color: $white;
+  box-shadow: $box-shadow;
+}
+
 .svg-inner-rounded-middle {
   width: 100%;
   height: auto;
@@ -267,13 +286,40 @@ h6 {
   }
 }
 
-//boxes styling
+.svg-inner-rounded-middle.svg-inner-rounded-middle--larger {
+  svg {
+    width: 156px;
+    left: 29%;
+  }
+}
+
+  //boxes styling
 .boxes__wrap {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-evenly;
   padding: 0 15px;
+}
+
+.box-half-column {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  padding: 65px 90px;
+  margin: 4px 4px;
+  box-shadow: $box-shadow;
+}
+
+.box-half-column.box-half-column--less-padding {
+  padding: 65px 50px 90px 65px;
+}
+
+.box-image__wrap {
+  max-width: 158px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .box {
@@ -283,6 +329,11 @@ h6 {
   margin: 0 15px;
   padding-left: 50px
 }
+
+.box-row-padding {
+  padding-top: 30px;
+}
+
 
 .box-orange {
   box-shadow: inset 0px 17px 0px 0px $orange;
@@ -306,6 +357,20 @@ h6 {
   width: 100%;
   height: auto;
   padding-top: 27px;
+}
+
+.box-txt__wrap--inline-block {
+  width: 86%;
+  display: inline-block;
+  padding-top: 0;
+  padding-left: 40px;
+}
+
+.box-checkbox__wrap {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  vertical-align: top;
 }
 
 .box-data__wrap {
@@ -380,4 +445,13 @@ h6 {
 
 .social {
   background-image: url('../assets/images/icon/social.svg');
+}
+
+
+//styling for bar
+.chart-scroll-x {
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
