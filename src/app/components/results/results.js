@@ -79,6 +79,6 @@ angular.module( 'ixLayer.results', [
       $scope.preResultSumbit = function() {
         $state.go('results.p1');
         $scope.preResult = false;
-      }
+      };
 
     }]);
