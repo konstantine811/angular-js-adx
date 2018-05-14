@@ -8439,16 +8439,80 @@ button[disabled].bt-round {
   .button-circle:hover {
     background-color: #7cd9f4; }
 
-@keyframes trans-arrow {
-  0% {
-    transform: translate3d(0, 0, 0); }
-  80% {
-    transform: translate3d(0, 20px, 100px); } }
+.download-button {
+  display: inline-block;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-image: url("../assets/images/svg/download-svg.svg");
+  background-color: #063f5f;
+  background-repeat: no-repeat;
+  background-size: 47px;
+  background-position: 50% 48%; }
+
+.progressbar-wrap {
+  counter-reset: step;
+  max-width: 997px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+.progressbar-item {
+  list-style-type: none;
+  width: 13%;
+  position: relative;
+  text-align: center;
+  display: inline-block; }
+  .progressbar-item:before {
+    content: counter(step);
+    counter-increment: step;
+    font-size: 37px;
+    font-family: Montserrat, sans-serif;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+    position: relative;
+    z-index: 2; }
+  .progressbar-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #E6E6E6;
+    top: 29px;
+    left: -50%;
+    z-index: 1; }
+  .progressbar-item:first-child:after {
+    content: none; }
+  .progressbar-item.active:first-child::before {
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    bottom: 0;
+    margin: 0 auto 10px auto; }
+  .progressbar-item.active::before {
+    background-color: #41c5eb;
+    width: 92px;
+    height: 92px;
+    bottom: 4px;
+    line-height: 92px;
+    margin: -13px auto 10px auto; }
+
 @keyframes anim-text-btn-round {
   0% {
     transform: scale(0.3); }
   100% {
     transform: scale(1); } }
+@keyframes trans-arrow {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  80% {
+    transform: translate3d(0, 20px, 100px); } }
 .side-navbar {
   position: fixed;
   top: 0;
@@ -9365,12 +9429,37 @@ span.summary.ng-valid {
   margin: 0 auto;
   padding-top: 9%; }
 
-.pre-result-head {
+.result-head__over {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: auto;
-  background-image: url("../assets/images/results-page/bgc-preresults-page.png");
+  padding: 25px 25px 0; }
+
+.result-head {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.result-head__title {
+  width: 100%;
+  max-width: 1249px;
+  text-align: center;
+  margin: 0 auto; }
+
+.result-head.pre-result-head {
+  background-image: url("../assets/images/results-page/bgc-preresults-page.png"); }
+
+.result-head.result-head--p1 {
+  background-image: url("../assets/images/results-page/bgc-result-head--p1.png"); }
+
+.result-progressbar__wrap {
+  width: 100%;
+  height: auto;
+  background-color: #F9FBFD;
+  padding: 41px 0 31px; }
 
 .pre-result-head__wrap {
   width: 100%;

@@ -876,7 +876,41 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p1.tpl.html",
-    "<h1 class=\"txt-blue-dark\">This page 1</h1>");
+    "<div class=\"result-p1\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-fluid\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">Your result </h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-black sub-header-txt--large-line-height\">\n" +
+    "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--result-p1 progress-bar-->\n" +
+    "  <div class=\"result-progressbar__wrap\">\n" +
+    "    <ul class=\"progressbar-wrap\">\n" +
+    "      <li class=\"progressbar-item active\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "    </ul>\n" +
+    "  </div>\n" +
+    "</div>");
 }]);
 
 angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -888,7 +922,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
   $templateCache.put("components/results/results.tpl.html",
     "<!--this is new-->\n" +
     "<div class=\"pre-result\" ng-if=\"preResult\">\n" +
-    "  <div class=\"pre-result-head\">\n" +
+    "  <div class=\"result-head pre-result-head\">\n" +
     "    <div class=\"container-fluid\">\n" +
     "      <div class=\"pre-result-head__wrap\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
