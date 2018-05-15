@@ -7744,6 +7744,9 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
+.container-md {
+  max-width: 1200px; }
+
 .container-lg--dashboard {
   width: 100%;
   height: auto;
@@ -7758,8 +7761,15 @@ body {
   box-shadow: 0 4px 46px 2px rgba(0, 0, 0, 0.2);
   margin-top: 36px; }
 
-.row-padding-top {
-  padding-top: 133px; }
+.section__wrap {
+  padding-top: 130px; }
+
+.section__wrap.section__wrap--small-pad-top {
+  padding-top: 25px; }
+
+.section-bgc--silver {
+  background-color: #F9FBFD;
+  padding: 94px 0; }
 
 .hide-desktop, .hide-desktop-md {
   display: none !important; }
@@ -7990,6 +8000,9 @@ h6 {
   justify-content: space-evenly;
   padding: 0 15px; }
 
+.boxes__wrap.boxes__wrap--padding-top {
+  padding: 25px 15px 0; }
+
 .box-half-column {
   width: 50%;
   height: auto;
@@ -8119,7 +8132,7 @@ h6 {
   background-image: url("../assets/images/icon/social.svg"); }
 
 .dna {
-  background-image: url("../assets/images/icon/dna.svg"); }
+  background-image: url("../assets/images/icon/dna-blue.svg"); }
 
 .users {
   background-image: url("../assets/images/icon/users.svg"); }
@@ -8132,6 +8145,12 @@ h6 {
   height: auto;
   overflow-x: scroll;
   overflow-y: hidden; }
+
+.navbar-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer; }
 
 svg .cls-1 {
   fill: transparent;
@@ -8316,7 +8335,15 @@ a.bt.gray:hover, button.bt.gray:hover {
   background: #F5F5F5; }
 
 .button__wrap {
+  width: 100%;
+  height: auto;
   padding-top: 27px; }
+
+.button__wrap--large-top {
+  padding-top: 67px; }
+
+.button--center {
+  text-align: center; }
 
 button.button-border-rounded {
   width: auto;
@@ -8373,6 +8400,8 @@ button[disabled].bt-round {
     color: #fff;
     outline: none;
     text-decoration: transparent; }
+  .bt-round.bt-round-left-icon.bt-round-right-icon {
+    padding: 9px 110px; }
 
 .bt-round.bt-round--large {
   padding: 9px 95px; }
@@ -8386,6 +8415,32 @@ button[disabled].bt-round {
   background-color: #063f5f; }
   .bt-round.bt-round--blue-dark:hover {
     background-color: #295873; }
+
+.bt-round-left-icon:before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 25px;
+  top: 14px; }
+
+.bt-round-right-icon:after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 25px;
+  top: 14px; }
+
+.bt-round-left-icon--dna::before {
+  background-image: url("../assets/images/icon/dna-white.svg"); }
+
+.bt-round-right-icon--arrow::after {
+  background-image: url("../assets/images/icon/arrow-right.svg"); }
 
 .bt-content {
   color: #fff;
@@ -8488,11 +8543,12 @@ button[disabled].bt-round {
   max-width: 997px;
   width: 100%;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
 
 .progressbar-item {
   list-style-type: none;
-  width: 13%;
+  width: 24%;
   position: relative;
   text-align: center;
   display: inline-block; }
@@ -9480,7 +9536,7 @@ span.summary.ng-valid {
   justify-content: space-between;
   width: 100%;
   height: auto;
-  padding: 25px 25px 0; }
+  padding-top: 25px; }
 
 .result-head {
   width: 100%;
@@ -9507,10 +9563,17 @@ span.summary.ng-valid {
   background-color: #F9FBFD;
   padding: 41px 0 31px; }
 
+.chart__wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  padding-top: 50px; }
+
 .pre-result-head__wrap {
   width: 100%;
   height: auto;
-  padding: 50px 27px; }
+  padding: 50px 0; }
 
 .pre-result-head__content {
   width: 100%;
@@ -9521,20 +9584,10 @@ span.summary.ng-valid {
   height: auto;
   padding-top: 50px; }
 
-.pre-result-section-first {
+.result-section-first {
   width: 100%;
   height: auto;
-  padding: 0 27px; }
-
-.pre-result-head__txt {
-  padding-top: 50px; }
-
-.pre-result-section-first__title {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: auto;
-  padding-top: 24px; }
+  padding-top: 90px; }
 
 .pre-result-section-first__sub-header {
   max-width: 822px;
@@ -9549,18 +9602,6 @@ span.summary.ng-valid {
   height: auto;
   padding-top: 74px; }
 
-.chart__wrap {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: auto;
-  padding-top: 50px; }
-
-.pre-result-section-second__wrap {
-  width: 100%;
-  height: auto;
-  padding-top: 111px; }
-
 .pre-result-section-third__title {
   width: 100%;
   height: auto;
@@ -9568,12 +9609,8 @@ span.summary.ng-valid {
   padding-left: 62px;
   padding-bottom: 20px; }
 
-.pre-result-section-third__form-button {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 67px; }
+.title-wrap__pre-results--left-space {
+  padding-left: 62px; }
 
 [animation-on-change] {
   transition: all 0.4s;
@@ -9619,6 +9656,9 @@ span.summary.ng-valid {
     max-width: 512px; }
 
   .container-lg--dashboard {
+    padding: 0 25px; }
+
+  .container-lg--dashboard.container-lg--dashboard--not-space-exlg {
     padding: 0; } }
 @media (max-width: 1200px) {
   .box {

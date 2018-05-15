@@ -32,11 +32,11 @@ angular.module( 'ixLayer.results', [
         templateUrl: 'components/results/pages/result-p2.tpl.html'
       });
   })
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus',
-    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',
+    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo) {
 
       $scope.results = null;
-      console.log(productStatus);
+      $scope.user = userInfo.user;
       $scope.noProducts = productStatus === undefined;
 
       if ($scope.noProducts === false) {

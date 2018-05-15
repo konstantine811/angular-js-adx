@@ -14,6 +14,10 @@ body {
   padding: 0 15px;
 }
 
+.container-md {
+  max-width: 1200px;
+}
+
 .container-lg--dashboard {
   width: 100%;
   height: auto;
@@ -23,6 +27,10 @@ body {
   margin: 0 auto;
 }
 
+//end styling container
+
+//section staling
+
 .section-box-shadow {
   width: 100%;
   height: auto;
@@ -30,9 +38,21 @@ body {
   margin-top: 36px;
 }
 
-.row-padding-top {
-  padding-top: 133px
+.section__wrap {
+  padding-top: 130px;
 }
+
+.section__wrap.section__wrap--small-pad-top {
+  padding-top: 25px;
+}
+
+.section-bgc--silver {
+  background-color: $silver;
+  padding: 94px 0;
+}
+
+//end section staling
+
 
 //common styling
 .hide-desktop, .hide-desktop-md {
@@ -240,6 +260,8 @@ h6 {
   margin: 0 auto;
 }
 
+//end common fonts stling txt
+
 
 //common styling for images
 .bgc-blue {
@@ -306,6 +328,8 @@ h6 {
   }
 }
 
+//end common stylin for images
+
   //boxes styling
 .boxes__wrap {
   width: 100%;
@@ -313,6 +337,10 @@ h6 {
   display: flex;
   justify-content: space-evenly;
   padding: 0 15px;
+}
+
+.boxes__wrap.boxes__wrap--padding-top {
+  padding: 25px 15px 0;
 }
 
 .box-half-column {
@@ -391,6 +419,8 @@ h6 {
   height: auto;
   padding-top: 50px;
 }
+
+//end boxes styling
 
 .data {
   font-family: Montserrat, sans-serif;
@@ -472,7 +502,7 @@ h6 {
 }
 
 .dna {
-  background-image: url('../assets/images/icon/dna.svg');
+  background-image: url('../assets/images/icon/dna-blue.svg');
 }
 
 .users {
@@ -482,12 +512,24 @@ h6 {
 .question {
   background-image: url('../assets/images/icon/question.svg');
 }
+//end icon styling
 
-
-//styling for bar
+//styling for charts
 .chart-scroll-x {
   width: 100%;
   height: auto;
   overflow-x: scroll;
   overflow-y: hidden;
 }
+//end styling for charts
+
+//common styling for the link
+.navbar-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+//end common styling for the link
+
+

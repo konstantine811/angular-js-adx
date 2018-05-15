@@ -306,7 +306,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"container-lg\">\n" +
-    "        <div class=\"row row-padding-top\">\n" +
+    "        <div class=\"row section__wrap\">\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__physician-review\">\n" +
     "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
@@ -878,7 +878,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
   $templateCache.put("components/results/pages/result-p1.tpl.html",
     "<div class=\"result-p1\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-fluid\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
@@ -890,7 +890,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      <div class=\"result-head__title\">\n" +
     "        <h2 class=\"txt-blue\">Your result </h2>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-black sub-header-txt--large-line-height\">\n" +
+    "          <div class=\"sub-header-txt txt-black\">\n" +
     "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -905,10 +905,112 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      <li class=\"progressbar-item\"></li>\n" +
     "      <li class=\"progressbar-item\"></li>\n" +
     "      <li class=\"progressbar-item\"></li>\n" +
-    "      <li class=\"progressbar-item\"></li>\n" +
-    "      <li class=\"progressbar-item\"></li>\n" +
-    "      <li class=\"progressbar-item\"></li>\n" +
     "    </ul>\n" +
+    "  </div>\n" +
+    "  <!--end result-p1 progress-bar-->\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div class=\"result-section-first\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-7\">\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue\">{{ user.first_name }},</h3>\n" +
+    "            <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genotype is &lte2/e4&gt.</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-5\">\n" +
+    "          <div class=\"result-section-first__img\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      \n" +
+    "      <!--chart-->\n" +
+    "      <div class=\"result-chart__wrap\">\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
+    "        </div>\n" +
+    "        <div class=\"chart__wrap\">\n" +
+    "          <c3chart class=\"chart-bar chart-scroll-x\" bindto-id=\"stacked-bar-plot1-chart\">\n" +
+    "            <chart-size chart-height=\"400\" chart-width=\"1180px\"/>\n" +
+    "            <chart-column column-id=\"x\"\n" +
+    "                          column-values=\"e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4\"/>\n" +
+    "            <chart-column column-id=\"data 1\"\n" +
+    "                          column-name=\"65 years\"\n" +
+    "                          column-color=\"#41C5EB\"\n" +
+    "                          column-values=\"7, 10, 28, 31, 65\"\n" +
+    "                          column-type=\"bar\"/>\n" +
+    "            <chart-column column-id=\"data 2\"\n" +
+    "                          column-name=\"75 years\"\n" +
+    "                          column-color=\"#063F5F\"\n" +
+    "                          column-values=\"1, 2, 5, 8, 30\"\n" +
+    "                          column-type=\"bar\"/>\n" +
+    "            <chart-column column-id=\"data 3\"\n" +
+    "                          column-name=\"85 years\"\n" +
+    "                          column-color=\"#FFBD24\"\n" +
+    "                          column-values=\"0, 0, 0, 1, 2\" column-type=\"bar\" />\n" +
+    "            <chart-axes values-x=\"x\"/>\n" +
+    "            <chart-axis>\n" +
+    "              <chart-axis-x axis-position=\"outer-center\"\n" +
+    "                            axis-type=\"category\">\n" +
+    "              </chart-axis-x>\n" +
+    "              <chart-axis-y axis-position=\"center\"\n" +
+    "                            range-max=\"70\">\n" +
+    "              </chart-axis-y>\n" +
+    "            </chart-axis>\n" +
+    "            <chart-grid show-x=\"false\" show-y=\"true\">\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"0\" class=\"grid-bar\"/>\n" +
+    "              <chart-grid-optional class=\"grid-bar\" axis-id=\"y\" grid-value=\"10\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"20\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"30\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"40\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"50\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"60\"/>\n" +
+    "              <chart-grid-optional axis-id=\"y\" grid-value=\"70\"/>\n" +
+    "            </chart-grid>\n" +
+    "          </c3chart>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <!--charts end-->\n" +
+    "      \n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--section first end-->\n" +
+    "  \n" +
+    "  <!--section second-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-6 hide-mobile\">\n" +
+    "          <div class=\"image__wrap\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/cake.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h2 class=\"txt-blue-dark\">Detailed view and explanation</h2>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap\">\n" +
+    "            <div class=\"txt__wrap\">\n" +
+    "              This is coming I asked ADx\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--section second end -->\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver txt-center\">\n" +
+    "      <button class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</button>\n" +
+    "    </div>\n" +
     "  </div>\n" +
     "</div>");
 }]);
@@ -933,14 +1035,14 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "            <h2 class=\"txt-blue\">What will my results tell me?</h2>\n" +
     "          </div>\n" +
     "          <div class=\"pre-result-head__content\">\n" +
-    "            <div class=\"col-xs-12 col-sm-7 col-md-7 col-lg-7\">\n" +
-    "              <div class=\"pre-result-head__txt\">\n" +
+    "            <div class=\"col-xs-12 col-sm-7\">\n" +
+    "              <div class=\"title__wrap\">\n" +
     "                <div class=\"sub-header-txt txt-black\">\n" +
     "                  <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"hide-mobile col-xs-12 col-sm-5 col-md-5 col-lg-5\">\n" +
+    "            <div class=\"hide-mobile col-xs-12 col-sm-5\">\n" +
     "              <div class=\"pre-result-head__img\">\n" +
     "                <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white\">\n" +
     "                  <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--larger\" src=\"'./assets/images/svg/svg-table.svg'\"></ng-include>\n" +
@@ -954,9 +1056,9 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  </div>\n" +
     "  \n" +
     "  <!--section first with chart-->\n" +
-    "  <div class=\"pre-result-section-first\">\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"pre-result-section-first__title\">\n" +
+    "      <div class=\"container-md\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue txt-center\">In summery</h2>\n" +
     "        </div>\n" +
@@ -1025,63 +1127,61 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  <!--end section first with chart-->\n" +
     "  \n" +
     "  <!--section second with boxes-->\n" +
-    "  <div class=\"pre-result-section-second\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"pre-result-section-second__wrap\">\n" +
-    "        <div class=\"boxes-row__wrap\">\n" +
-    "            <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "              <div class=\"box-half-column box-shadow\">\n" +
-    "                  <div class=\"box-image__wrap\">\n" +
-    "                    <img class=\"img\" src=\"./assets/images/stop-green.png\" alt=\"\">\n" +
-    "                  </div>\n" +
-    "                  <div class=\"box-title__wrap\">\n" +
-    "                    <h5 class=\"txt-blue txt-center\">Low risk does not mean no risk.</h5>\n" +
-    "                  </div>\n" +
-    "                <div class=\"box-txt__wrap\">\n" +
-    "                  <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
-    "                    Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-half-column box-shadow\">\n" +
-    "                <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "                  <img class=\"img\" src=\"./assets/images/cross-blue.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "                <div class=\"box-title__wrap\">\n" +
-    "                  <h5 class=\"txt-blue txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h5>\n" +
-    "                </div>\n" +
-    "                <div class=\"box-txt__wrap\">\n" +
-    "                  <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
-    "                    Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
+    "      <div class=\"boxes-row__wrap\">\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <div class=\"box-image__wrap\">\n" +
+    "              <img class=\"img\" src=\"./assets/images/stop-green.png\" alt=\"\">\n" +
+    "            </div>\n" +
+    "            <div class=\"box-title__wrap\">\n" +
+    "              <h5 class=\"txt-blue txt-center\">Low risk does not mean no risk.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt__wrap\">\n" +
+    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "          <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "            <div class=\"box-half-column box-shadow\">\n" +
-    "              <div class=\"box-image__wrap\">\n" +
-    "                <img class=\"img\" src=\"./assets/images/exclamation-point-silver.png\" alt=\"\">\n" +
-    "              </div>\n" +
-    "              <div class=\"box-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue txt-center\">Other factors influence your risk.</h5>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-txt__wrap\">\n" +
-    "                <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
-    "                  Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
-    "                </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "              <img class=\"img\" src=\"./assets/images/cross-blue.png\" alt=\"\">\n" +
+    "            </div>\n" +
+    "            <div class=\"box-title__wrap\">\n" +
+    "              <h5 class=\"txt-blue txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt__wrap\">\n" +
+    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"box-half-column box-shadow\">\n" +
-    "              <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "                <img class=\"img\" src=\"./assets/images/exclamation-point-yellow.png\" alt=\"\">\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <div class=\"box-image__wrap\">\n" +
+    "              <img class=\"img\" src=\"./assets/images/exclamation-point-silver.png\" alt=\"\">\n" +
+    "            </div>\n" +
+    "            <div class=\"box-title__wrap\">\n" +
+    "              <h5 class=\"txt-blue txt-center\">Other factors influence your risk.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt__wrap\">\n" +
+    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
     "              </div>\n" +
-    "              <div class=\"box-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue txt-center\">Knowledge is power.</h5>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-txt__wrap\">\n" +
-    "                <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
-    "                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
-    "                </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "              <img class=\"img\" src=\"./assets/images/exclamation-point-yellow.png\" alt=\"\">\n" +
+    "            </div>\n" +
+    "            <div class=\"box-title__wrap\">\n" +
+    "              <h5 class=\"txt-blue txt-center\">Knowledge is power.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt__wrap\">\n" +
+    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "                Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1092,13 +1192,13 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  <!--end section second with boxes-->\n" +
     "  \n" +
     "  <!--section third with boxes agreed-submit-->\n" +
-    "  <div class=\"pre-result-section-third\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"pre-result-section-third__title\">\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
+    "      <div class=\"title__wrap title-wrap__pre-results--left-space\">\n" +
     "        <div class=\"sub-header-txt sub-header-txt--small txt-black\">How do you want to view your results? Select one of the options.</div>\n" +
     "      </div>\n" +
     "      <form action=\"\">\n" +
-    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large boxes__wrap--padding-top\">\n" +
     "          <div class=\"box-half-column box-half-column--less-padding box-shadow\">\n" +
     "            <div class=\"row\">\n" +
     "              <div class=\"box-checkbox__wrap checkbox\">\n" +
@@ -1140,7 +1240,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"pre-result-section-third__form-button\">\n" +
+    "        <div class=\"button__wrap--large-top button--center\">\n" +
     "          <button ng-click=\"preResultSumbit()\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue\">I consent</button>\n" +
     "        </div>\n" +
     "      </form>\n" +
@@ -1457,7 +1557,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"results/1\" class=\"side-navbar__link\">\n" +
+    "                <a ui-sref=\"results.p1\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt txt--small txt-blue-dark\">Your result</span>\n" +
@@ -1465,7 +1565,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                <a ui-sref=\"results.p2\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt txt--small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
@@ -1473,7 +1573,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                <a ui-sref=\"results.p3\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt txt--small txt-blue-dark\">Lifestyle & other factor</span>\n" +
@@ -1481,7 +1581,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                <a ui-sref=\"results.p4\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt txt--small txt-blue-dark\">Next steps</span>\n" +
@@ -1497,13 +1597,13 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                <a href=\"\" class=\"navbar-link\">\n" +
     "                  <span class=\"link-icon-inline users\"></span>\n" +
     "                  <span class=\"txt txt-black\">Share results</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"sie-navbar__link\">\n" +
+    "                <a href=\"\" class=\"navbar-link\">\n" +
     "                  <span class=\"link-icon-inline question\"></span>\n" +
     "                  <span class=\"txt txt-black\">General questions</span>\n" +
     "                </a>\n" +

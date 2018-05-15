@@ -1,6 +1,6 @@
 <div class="result-p1">
   <div class="result-head result-head--p1">
-    <div class="container-fluid">
+    <div class="container-lg--dashboard">
       <div class="result-head__over">
         <div class="txt-rubric__wrap">
           <div class="sub-header-txt txt-bold txt-gray">Overview</div>
@@ -12,7 +12,7 @@
       <div class="result-head__title">
         <h2 class="txt-blue">Your result </h2>
         <div class="title__wrap">
-          <div class="sub-header-txt txt-black sub-header-txt--large-line-height">
+          <div class="sub-header-txt txt-black">
             Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.
           </div>
         </div>
@@ -27,9 +27,111 @@
       <li class="progressbar-item"></li>
       <li class="progressbar-item"></li>
       <li class="progressbar-item"></li>
-      <li class="progressbar-item"></li>
-      <li class="progressbar-item"></li>
-      <li class="progressbar-item"></li>
     </ul>
+  </div>
+  <!--end result-p1 progress-bar-->
+  
+  <!--section first-->
+  <div class="result-section-first">
+    <div class="container-lg--dashboard">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="title__wrap">
+            <h3 class="txt-blue">{{ user.first_name }},</h3>
+            <h3 class="txt-blue-dark txt-padding-top">Your ApoE Genotype is &lte2/e4&gt.</h3>
+          </div>
+          <div class="txt__wrap">
+            <div class="txt txt-black">
+              Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="result-section-first__img">
+            <ng-include src="'./assets/images/svg/e2-e4.svg'"></ng-include>
+          </div>
+        </div>
+      </div>
+      
+      <!--chart-->
+      <div class="result-chart__wrap">
+        <div class="title__wrap">
+          <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
+        </div>
+        <div class="chart__wrap">
+          <c3chart class="chart-bar chart-scroll-x" bindto-id="stacked-bar-plot1-chart">
+            <chart-size chart-height="400" chart-width="1180px"/>
+            <chart-column column-id="x"
+                          column-values="e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4"/>
+            <chart-column column-id="data 1"
+                          column-name="65 years"
+                          column-color="#41C5EB"
+                          column-values="7, 10, 28, 31, 65"
+                          column-type="bar"/>
+            <chart-column column-id="data 2"
+                          column-name="75 years"
+                          column-color="#063F5F"
+                          column-values="1, 2, 5, 8, 30"
+                          column-type="bar"/>
+            <chart-column column-id="data 3"
+                          column-name="85 years"
+                          column-color="#FFBD24"
+                          column-values="0, 0, 0, 1, 2" column-type="bar" />
+            <chart-axes values-x="x"/>
+            <chart-axis>
+              <chart-axis-x axis-position="outer-center"
+                            axis-type="category">
+              </chart-axis-x>
+              <chart-axis-y axis-position="center"
+                            range-max="70">
+              </chart-axis-y>
+            </chart-axis>
+            <chart-grid show-x="false" show-y="true">
+              <chart-grid-optional axis-id="y" grid-value="0" class="grid-bar"/>
+              <chart-grid-optional class="grid-bar" axis-id="y" grid-value="10"/>
+              <chart-grid-optional axis-id="y" grid-value="20"/>
+              <chart-grid-optional axis-id="y" grid-value="30"/>
+              <chart-grid-optional axis-id="y" grid-value="40"/>
+              <chart-grid-optional axis-id="y" grid-value="50"/>
+              <chart-grid-optional axis-id="y" grid-value="60"/>
+              <chart-grid-optional axis-id="y" grid-value="70"/>
+            </chart-grid>
+          </c3chart>
+        </div>
+      </div>
+      <!--charts end-->
+      
+    </div>
+  </div>
+  <!--section first end-->
+  
+  <!--section second-->
+  <div class="section__wrap">
+    <div class="container-lg--dashboard">
+      <div class="row">
+        <div class="col-sm-6 hide-mobile">
+          <div class="image__wrap">
+            <ng-include src="'./assets/images/svg/cake.svg'"></ng-include>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="title__wrap">
+            <h2 class="txt-blue-dark">Detailed view and explanation</h2>
+          </div>
+          <div class="txt__wrap">
+            <div class="txt__wrap">
+              This is coming I asked ADx
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--section second end -->
+  
+  <div class="section__wrap">
+    <div class="section-bgc--silver txt-center">
+      <button class="bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow">Next step</button>
+    </div>
   </div>
 </div>

@@ -63,7 +63,17 @@ a.bt.gray:hover, button.bt.gray:hover {
 }
 
 .button__wrap {
+  width: 100%;
+  height: auto;
   padding-top: 27px;
+}
+
+.button__wrap--large-top {
+  padding-top: 67px;
+}
+
+.button--center {
+  text-align: center
 }
 
 //border button
@@ -134,6 +144,9 @@ button[disabled].bt-round {
     outline: none;
     text-decoration: transparent;
   }
+  &.bt-round-left-icon.bt-round-right-icon {
+    padding: 9px 110px;
+  }
 }
 
 .bt-round.bt-round--large {
@@ -155,6 +168,42 @@ button[disabled].bt-round {
     background-color: $blue-dark-light;
   }
 }
+
+//styling for the bt-round with icon
+.bt-round-left-icon {
+  &:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 25px;
+    top: 14px;
+  }
+}
+
+.bt-round-right-icon {
+  &:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 25px;
+    top: 14px;
+  }
+}
+
+.bt-round-left-icon--dna::before {
+  background-image: url("../assets/images/icon/dna-white.svg");
+}
+
+.bt-round-right-icon--arrow::after {
+  background-image: url("../assets/images/icon/arrow-right.svg");
+}
+//end styling for the bt-round with icon
 
 .bt-content {
   color: $white;
@@ -298,11 +347,12 @@ button[disabled].bt-round {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding: 0;
 }
 
 .progressbar-item {
   list-style-type: none;
-  width: 13%;
+  width: 24%;
   position: relative;
   text-align: center;
   display: inline-block;

@@ -23,6 +23,10 @@
     max-width: 512px;
   }
   .container-lg--dashboard {
+    padding: 0 25px;
+  }
+
+  .container-lg--dashboard.container-lg--dashboard--not-space-exlg {
     padding: 0;
   }
 }

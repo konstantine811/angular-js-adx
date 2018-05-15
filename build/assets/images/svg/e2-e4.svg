@@ -1,0 +1,56 @@
+<svg class="e2-e4" xmlns="http://www.w3.org/2000/svg" viewBox="-6841 -5841 555 715">
+  <defs>
+    <style>
+      .e2-e4-1 {
+        fill: #f2f2f2;
+      }
+
+      .e2-e4-2 {
+        fill: #42c5e9;
+      }
+
+      .e2-e4-3 {
+        fill: #fff;
+        stroke: #41c5eb;
+        stroke-width: 10px;
+      }
+
+      .e2-e4-4 {
+        font-size: 33px;
+      }
+
+      .e2-e4-4, .e2-e4-5 {
+        font-family: CircularStd-Medium, Circular Std Medium;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+      }
+
+      .e2-e4-5 {
+        fill: #063f5f;
+        font-size: 111px;
+      }
+
+      .e2-e4-6 {
+        stroke: none;
+      }
+
+      .e2-e4-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_773" data-name="Group 773" transform="translate(-8086 -6572)">
+    <circle id="Ellipse_155" data-name="Ellipse 155" class="e2-e4-1" cx="56.715" cy="56.715" r="56.715" transform="translate(1686.569 780)"/>
+    <circle id="Ellipse_156" data-name="Ellipse 156" class="e2-e4-1" cx="72.92" cy="72.92" r="72.92" transform="translate(1600.687 1300.161)"/>
+    <circle id="Ellipse_157" data-name="Ellipse 157" class="e2-e4-1" cx="46.993" cy="46.993" r="46.993" transform="translate(1245 1228.051)"/>
+    <circle id="Ellipse_158" data-name="Ellipse 158" class="e2-e4-1" cx="26.737" cy="26.737" r="26.737" transform="translate(1334.935 858.591)"/>
+    <circle id="Ellipse_116" data-name="Ellipse 116" class="e2-e4-2" cx="205" cy="205" r="205" transform="translate(1323 881)"/>
+    <g id="Ellipse_159" data-name="Ellipse 159" class="e2-e4-3" transform="translate(1356 914)">
+      <circle class="e2-e4-6" cx="172.5" cy="172.5" r="172.5"/>
+      <circle class="e2-e4-7" cx="172.5" cy="172.5" r="167.5"/>
+    </g>
+    <text id="ApoE_Genotype" data-name="ApoE Genotype" class="e2-e4-4" transform="translate(1528 1171)"><tspan x="-116.869" y="0">ApoE Genotype</tspan></text>
+    <text id="e2_e4" data-name="e2/e4" class="e2-e4-5" transform="translate(1395 1092)"><tspan x="0" y="0">e2/e4</tspan></text>
+    <circle id="Ellipse_1381" data-name="Ellipse 1381" class="e2-e4-1" cx="41.715" cy="41.715" r="41.715" transform="translate(1290.569 731)"/>
+  </g>
+</svg>
