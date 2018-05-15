@@ -97,28 +97,33 @@ svg {
   .circle-row-2:nth-of-type(8){
     fill: $red-light;
   }
+}
 
+.logo-img {
+  max-width: 159px;
+  width: 100%;
+  height: auto;
+}
 
-  @keyframes vertical1 {
-    0%,
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-
-    50% {
-      transform: translateX(9.5px) scale(.45);
-    }
+@keyframes vertical1 {
+  0%,
+  100% {
+    transform: translateX(0px) scale(1);
   }
 
-  @keyframes vertical2 {
-    0%,
-    100% {
-      transform: translateX(0px) scale(.45);
-    }
+  50% {
+    transform: translateX(9.5px) scale(.45);
+  }
+}
 
-    50% {
-      transform: translate(-9.5px) scale(1);
-    }
+@keyframes vertical2 {
+  0%,
+  100% {
+    transform: translateX(0px) scale(.45);
+  }
+
+  50% {
+    transform: translate(-9.5px) scale(1);
   }
 }
 

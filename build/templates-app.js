@@ -923,24 +923,24 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<!--this is new-->\n" +
     "<div class=\"pre-result\" ng-if=\"preResult\">\n" +
     "  <div class=\"result-head pre-result-head\">\n" +
-    "    <div class=\"container-fluid\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-head__wrap\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-bold txt-gray\">Pre-Result</div>\n" +
     "        </div>\n" +
     "        <div class=\"row\">\n" +
+    "          <div class=\"col-lg-12 title__wrap\">\n" +
+    "            <h2 class=\"txt-blue\">What will my results tell me?</h2>\n" +
+    "          </div>\n" +
     "          <div class=\"pre-result-head__content\">\n" +
-    "            <div class=\"col-md-12 col-lg-7\">\n" +
-    "              <div class=\"pre-result-head__title\">\n" +
-    "                <h2 class=\"txt-blue\">What will my results tell me?</h2>\n" +
-    "                <div class=\"pre-result-head__txt\">\n" +
-    "                  <div class=\"sub-header-txt txt-black sub-header-txt--large-line-height\">\n" +
-    "                    <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
-    "                  </div>\n" +
+    "            <div class=\"col-xs-12 col-sm-7 col-md-7 col-lg-7\">\n" +
+    "              <div class=\"pre-result-head__txt\">\n" +
+    "                <div class=\"sub-header-txt txt-black\">\n" +
+    "                  <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"col-md-12 col-lg-5\">\n" +
+    "            <div class=\"hide-mobile col-xs-12 col-sm-5 col-md-5 col-lg-5\">\n" +
     "              <div class=\"pre-result-head__img\">\n" +
     "                <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white\">\n" +
     "                  <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--larger\" src=\"'./assets/images/svg/svg-table.svg'\"></ng-include>\n" +
@@ -955,7 +955,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  \n" +
     "  <!--section first with chart-->\n" +
     "  <div class=\"pre-result-section-first\">\n" +
-    "    <div class=\"container-fluid\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-section-first__title\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue txt-center\">In summery</h2>\n" +
@@ -1026,7 +1026,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  \n" +
     "  <!--section second with boxes-->\n" +
     "  <div class=\"pre-result-section-second\">\n" +
-    "    <div class=\"container-fluid\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-section-second__wrap\">\n" +
     "        <div class=\"boxes-row__wrap\">\n" +
     "            <div class=\"boxes__wrap boxes__wrap--large\">\n" +
@@ -1093,7 +1093,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  \n" +
     "  <!--section third with boxes agreed-submit-->\n" +
     "  <div class=\"pre-result-section-third\">\n" +
-    "    <div class=\"container-fluid\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-section-third__title\">\n" +
     "        <div class=\"sub-header-txt sub-header-txt--small txt-black\">How do you want to view your results? Select one of the options.</div>\n" +
     "      </div>\n" +
@@ -1407,30 +1407,39 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
 
 angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/side-navbar/side-navbar.tpl.html",
-    "<nav class=\"side-navbar\">\n" +
+    "<nav class=\"side-navbar\" ng-class=\"{'open': show}\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <!--logo header-->\n" +
     "      <div class=\"side-navbar__logo\">\n" +
     "        <a ui-sref=\"home\" class=\"header-logo__link\">\n" +
-    "          <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
+    "          <img class=\"logo-img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
     "        </a>\n" +
     "      </div>\n" +
     "      <!--end logo header-->\n" +
+    "      \n" +
+    "      <!--mobile button-->\n" +
+    "      <div class=\"side-navbar__mobile-button hide-desktop-md\">\n" +
+    "        <div class=\"mobile-button\" ng-click=\"showMenu()\" ng-class=\"{'toggle': show}\">\n" +
+    "          <span class=\"line-1\"></span>\n" +
+    "          <span class=\"line-2\"></span>\n" +
+    "          <span class=\"line-3\"></span>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <!--end mobile button-->\n" +
+    "      \n" +
     "    </div>\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"side-navbar__account\">\n" +
-    "        <div class=\"bgc-wrap-content\">\n" +
-    "          <div class=\"side-navbar-account__name\">\n" +
-    "            <div class=\"txt txt-medium txt-blue-dark txt-ellipsis\">\n" +
-    "              {{ user.first_name }}\n" +
-    "              {{ user.last_name }}\n" +
-    "            </div>\n" +
+    "        <div class=\"side-navbar-account__name\">\n" +
+    "          <div class=\"txt txt-medium txt-blue-dark txt-ellipsis\">\n" +
+    "            {{ user.first_name }}\n" +
+    "            {{ user.last_name }}\n" +
     "          </div>\n" +
-    "          <div class=\"side-navbar-account__button\">\n" +
-    "            <a href=\"\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
-    "            <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
-    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"side-navbar-account__button\">\n" +
+    "          <a href=\"\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -1451,7 +1460,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a href=\"results/1\" class=\"side-navbar__link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt-blue-dark\">Your result</span>\n" +
+    "                    <span class=\"txt txt--small txt-blue-dark\">Your result</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +
@@ -1459,8 +1468,44 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a href=\"\" class=\"side-navbar__link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt-blue-dark\">How to use this test</span>\n" +
+    "                    <span class=\"txt txt--small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
     "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"number-bgc\">3</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt txt--small txt-blue-dark\">Lifestyle & other factor</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"number-bgc\">4</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt txt--small txt-blue-dark\">Next steps</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"link-icon-inline dna\"></span>\n" +
+    "                  <span class=\"txt txt-black\">Science</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"side-navbar__link\">\n" +
+    "                  <span class=\"link-icon-inline users\"></span>\n" +
+    "                  <span class=\"txt txt-black\">Share results</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a href=\"\" class=\"sie-navbar__link\">\n" +
+    "                  <span class=\"link-icon-inline question\"></span>\n" +
+    "                  <span class=\"txt txt-black\">General questions</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
     "            </ul>\n" +

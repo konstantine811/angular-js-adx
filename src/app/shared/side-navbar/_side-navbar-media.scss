@@ -1,0 +1,27 @@
+@media (max-width: $breakpoint-md) {
+  .side-navbar {
+    height: 65px;
+    width: 100%;
+    border-bottom: 10px solid $blue-6;
+    transition: height 0.7s ease-out;
+    overflow: hidden;
+    &.open {
+      height: 100%;
+    }
+  }
+
+  .side-navbar__logo {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-left: 29px;
+    float: left;
+  }
+
+  .side-navbar__mobile-button {
+    float: right;
+    padding-right: 21px;
+    padding-top: 5px;
+  }
+
+}

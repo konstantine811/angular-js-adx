@@ -17,6 +17,15 @@ angular.module("ixLayer")
           userAccessSrv.logout();
           $scope.logged = false;
         };
+
+        $scope.show = false;
+        $scope.showMenu = function() {
+          if (!$scope.show) {
+            $scope.show = true;
+          } else {
+            $scope.show = false;
+          }
+        };
       }]
     };
 

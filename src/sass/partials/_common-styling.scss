@@ -14,6 +14,15 @@ body {
   padding: 0 15px;
 }
 
+.container-lg--dashboard {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin: 0 auto;
+}
+
 .section-box-shadow {
   width: 100%;
   height: auto;
@@ -26,7 +35,7 @@ body {
 }
 
 //common styling
-.hide-desktop {
+.hide-desktop, .hide-desktop-md {
   display: none !important;
 }
 
@@ -204,6 +213,10 @@ h6 {
   margin: 0 auto;
 }
 
+.txt.txt--small {
+  font-size: 14px;
+}
+
 .txt--indent {
   padding-top: 48px;
 }
@@ -306,13 +319,13 @@ h6 {
   width: 50%;
   height: auto;
   background-color: white;
-  padding: 65px 90px;
+  padding: 65px  4%;
   margin: 4px 4px;
   box-shadow: $box-shadow;
 }
 
 .box-half-column.box-half-column--less-padding {
-  padding: 65px 50px 90px 65px;
+  padding: 65px 4%;
 }
 
 .box-image__wrap {
@@ -360,10 +373,10 @@ h6 {
 }
 
 .box-txt__wrap--inline-block {
-  width: 86%;
+  width: 83%;
   display: inline-block;
   padding-top: 0;
-  padding-left: 40px;
+  padding-left: 8%;
 }
 
 .box-checkbox__wrap {
@@ -414,6 +427,7 @@ h6 {
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   padding-top: 3px;
+  margin-right: 3px;
   background-color: $silver;
   color: $silver-dark;
   border-radius: 50%;
@@ -431,6 +445,16 @@ h6 {
   cursor: pointer;
 }
 
+.link-icon-inline {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0 9px -2px 5px;
+}
+
 .facebook {
   background-image: url('../assets/images/icon/facebook.svg');
 }
@@ -445,6 +469,18 @@ h6 {
 
 .social {
   background-image: url('../assets/images/icon/social.svg');
+}
+
+.dna {
+  background-image: url('../assets/images/icon/dna.svg');
+}
+
+.users {
+  background-image: url('../assets/images/icon/users.svg');
+}
+
+.question {
+  background-image: url('../assets/images/icon/question.svg');
 }
 
 
