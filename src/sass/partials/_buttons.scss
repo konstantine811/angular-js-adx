@@ -196,12 +196,18 @@ button[disabled].bt-round {
   }
 }
 
-.bt-round-left-icon--dna::before {
+.bt-round-left-icon--dna::before, .bt-round-right-icon--dna::after  {
   background-image: url("../assets/images/icon/dna-white.svg");
 }
 
-.bt-round-right-icon--arrow::after {
+.bt-round-right-icon--arrow::after, .bt-round-left-icon--arrow::before {
   background-image: url("../assets/images/icon/arrow-right.svg");
+}
+
+.bt-round-left-icon--arrow::before {
+  transform: scale(-1);
+  transform-origin: center left;
+  left: 32px;
 }
 //end styling for the bt-round with icon
 
@@ -385,20 +391,8 @@ button[disabled].bt-round {
   &:first-child:after {
     content: none;
   }
-  &.active:first-child::before {
-    width: 66px;
-    height: 66px;
-    line-height: 66px;
-    bottom: 0;
-    margin: 0 auto 10px auto;
-  }
   &.active::before {
     background-color: $blue-6;
-    width: 92px;
-    height: 92px;
-    bottom: 4px;
-    line-height: 92px;
-    margin: -13px auto 10px auto;
   }
 }
 

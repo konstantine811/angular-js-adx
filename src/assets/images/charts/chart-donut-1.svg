@@ -1,0 +1,55 @@
+<svg class="donut-chart-first" xmlns="http://www.w3.org/2000/svg" viewBox="-5327 -3574 1301.199 303.458">
+  <defs>
+    <style>
+      .donut-chart-first-1, .donut-chart-first-7 {
+        fill: #41c5eb;
+      }
+
+      .donut-chart-first-2, .donut-chart-first-5 {
+        fill: #063f5f;
+      }
+
+      .donut-chart-first-3, .donut-chart-first-6 {
+        fill: #dd972a;
+      }
+
+      .donut-chart-first-4 {
+        fill: #f2f2f2;
+        opacity: 0.29;
+      }
+
+      .donut-chart-first-5, .donut-chart-first-6, .donut-chart-first-7, .donut-chart-first-8 {
+        font-size: 26px;
+        font-family: CircularStd-Medium, Circular Std Medium;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="Group_775" data-name="Group 775" transform="translate(-5807 -4422)">
+    <g id="Group_745" data-name="Group 745" transform="translate(10 -2164)">
+      <path id="Path_684" data-name="Path 684" class="donut-chart-first-1" d="M219.556-129.894A151.642,151.642,0,1,1,69.277,42.036L219.556,21.749Z" transform="translate(402.104 3141.894)"/>
+      <path id="Path_685" data-name="Path 685" class="donut-chart-first-2" d="M70.325,41.12A151.643,151.643,0,0,1,200.316-129.447q.593-.08,1.187-.155L220.6,20.832Z" transform="translate(401.056 3142.81)"/>
+      <path id="Path_686" data-name="Path 686" class="donut-chart-first-3" d="M100.945-128.686a151.639,151.639,0,0,1,19.1-1.208V21.749Z" transform="translate(501.614 3141.894)"/>
+    </g>
+    <path id="Path_687" data-name="Path 687" class="donut-chart-first-2" d="M318.691-144.929a151.643,151.643,0,1,1-55.823,292.636L318.691,6.714Z" transform="translate(1310.866 992.929)"/>
+    <path id="Path_689" data-name="Path 689" class="donut-chart-first-3" d="M315.455,44.225a151.643,151.643,0,0,1-77.062-67.939L371.279-96.768Z" transform="translate(1258.278 1096.411)"/>
+    <path id="Path_688" data-name="Path 688" class="donut-chart-first-1" d="M251.212,79.768A151.643,151.643,0,0,1,384.1-144.929V6.714Z" transform="translate(1245.459 992.929)"/>
+    <rect id="Rectangle_637" data-name="Rectangle 637" class="donut-chart-first-4" width="355.5" height="303.457" rx="54" transform="translate(953 848)"/>
+    <g id="Group_748" data-name="Group 748" transform="translate(4.626 -2164)">
+      <text id="_25_" data-name="25%" class="donut-chart-first-5" transform="translate(853.374 3086.038)"><tspan x="0" y="0">25%</tspan></text>
+      <text id="_56_" data-name="56%" class="donut-chart-first-5" transform="translate(1348.374 3086.038)"><tspan x="0" y="0">56%</tspan></text>
+      <text id="_2_" data-name="2%" class="donut-chart-first-6" transform="translate(867.374 3172.038)"><tspan x="0" y="0">2%</tspan></text>
+      <text id="_11_" data-name="11%" class="donut-chart-first-6" transform="translate(1348.374 3172.038)"><tspan x="0" y="0">11%</tspan></text>
+      <text id="_73_" data-name="73%" class="donut-chart-first-7" transform="translate(854.374 3258.038)"><tspan x="0" y="0">73%</tspan></text>
+      <text id="_33_" data-name="33%" class="donut-chart-first-7" transform="translate(1349.374 3258.038)"><tspan x="0" y="0">33%</tspan></text>
+    </g>
+    <g id="Group_749" data-name="Group 749" transform="translate(-1 -2164)">
+      <text id="One_copy_of_e4" data-name="One copy of e4" class="donut-chart-first-8" transform="translate(1058.374 3088.038)"><tspan x="0" y="0">One copy of e4</tspan></text>
+      <circle id="Ellipse_1642" data-name="Ellipse 1642" class="donut-chart-first-2" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3057)"/>
+      <text id="Two_copies_of_e4" data-name="Two copies of e4" class="donut-chart-first-8" transform="translate(1058.374 3174.038)"><tspan x="0" y="0">Two copies of e4</tspan></text>
+      <circle id="Ellipse_1642-2" data-name="Ellipse 1642" class="donut-chart-first-3" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3143)"/>
+      <text id="No_copies_of_e4" data-name="No copies of e4" class="donut-chart-first-8" transform="translate(1058.374 3260.038)"><tspan x="0" y="0">No copies of e4</tspan></text>
+      <circle id="Ellipse_1642-3" data-name="Ellipse 1642" class="donut-chart-first-1" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3229)"/>
+    </g>
+  </g>
+</svg>

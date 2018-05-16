@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -876,7 +876,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p1.tpl.html",
-    "<div class=\"result-p1\">\n" +
+    "<div class=\"result\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
@@ -910,7 +910,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <!--end result-p1 progress-bar-->\n" +
     "  \n" +
     "  <!--section first-->\n" +
-    "  <div class=\"result-section-first\">\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"row\">\n" +
     "        <div class=\"col-sm-7\">\n" +
@@ -1002,7 +1002,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver txt-center\">\n" +
-    "      <button class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</button>\n" +
+    "      <a ui-sref=\"results.p2\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>");
@@ -1010,7 +1010,287 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
 
 angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p2.tpl.html",
-    "<h1 class=\"txt-blue-dark\">This page 2</h1>");
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">About page</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">About Alzheimer’s disease</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-black\">\n" +
+    "            What do we know about Late-onset Alzheimer’s disease?\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--result-p2 progress-bar-->\n" +
+    "  <div class=\"result-progressbar__wrap\">\n" +
+    "    <ul class=\"progressbar-wrap\">\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item active\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "    </ul>\n" +
+    "  </div>\n" +
+    "  <!--end result-p2 progress-bar-->\n" +
+    "  \n" +
+    "  <!--section second-->\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark txt-center\">ApoE Status of US Population</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"chart__wrap\">\n" +
+    "        <ng-include src=\"'./assets/images/charts/chart-donut-1.svg'\"></ng-include>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section second -->\n" +
+    "  \n" +
+    "  <!--section third-->\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark\">Understand ApoE</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"txt__wrap\">\n" +
+    "        <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype &lte2/e3&gt.</span>There are three common variants of the ApoE gene:</p>\n" +
+    "        <ul class=\"txt--indent-small \">\n" +
+    "          <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
+    "          <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +
+    "          <li><p class=\"txt txt-black\">ApoE-e4</p></li>\n" +
+    "        </ul>\n" +
+    "        <div class=\"txt--indent-small\">\n" +
+    "          <p class=\"txt txt-black\">Like all genes, you have two copies of ApoE, one from your mother and one from your father.  If you receive a different variant of the gene from your mother than from your father, then you are “heterozygous” for that gene (such as e3/e4). If you receive the same variant from each parent, then you have a “homozygous” genotype (such as e3/e3).\n" +
+    "            It is estimated that about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51 However,  when you look at the population based on disease status, two-thirds of the US population living with Alzheimer’s disease carry at least one copy of the ApoE-e4 variant.52,53 Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have a higher risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors.</p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section third-->\n" +
+    "  \n" +
+    "  <!--section fourth-->\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark txt-space-left-exlg\">Understand this test</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"boxes-row__wrap\">\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
+    "            <div class=\"box-txt-column__wrap\">\n" +
+    "              <h5 class=\"txt-blue-dark\">How it’s inherited</h5>\n" +
+    "              <div class=\"txt-padding-top\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
+    "                  Tests for the ε4 variant in the APOE gene associated with an increased risk of developing late-onset Alzheimer's disease.\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-image-column__wrap\">\n" +
+    "              <ng-include class=\"box-image-column__inner\" src=\"'./assets/images/svg/gray-puzzle.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
+    "            <div class=\"box-txt-column__wrap\">\n" +
+    "              <h5 class=\"txt-blue-dark\">Limitations</h5>\n" +
+    "              <div class=\"txt-padding-top\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
+    "                  The ε4 variant included in this test is found and has been studied in many ethnicities. Detailed risk estimates have been studied the most in people of European descent.\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-image-column__wrap\">\n" +
+    "              <ng-include class=\"box-image-column__inner\" src=\"'./assets/images/svg/blue-puzzle.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <h5 class=\"txt-blue-dark\">Late onset test</h5>\n" +
+    "            <div class=\"box-txt__wrap\">\n" +
+    "              <ul>\n" +
+    "                <li class=\"txt--indent-small\"><p class=\"txt txt-black\">Does not include all possible variants or genes associated with late-onset Alzheimer's disease.\n" +
+    "                </p></li>\n" +
+    "                <li class=\"txt--indent-small\"><p class=\"txt txt-black\">Does not include all possible variants or genes associated with late-onset Alzheimer's disease.\n" +
+    "                </p></li>\n" +
+    "                <li class=\"txt--indent-small\"><p class=\"txt txt-black\">Does not determine a person's full APOE genotype.\n" +
+    "                </p></li>\n" +
+    "              </ul>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
+    "            <div class=\"txt-wrap__border\">\n" +
+    "              <h5 class=\"txt-blue-dark\">This test does not diagnose Alzheimer's disease or any other health conditions.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt__wrap txt--indent-small\">\n" +
+    "              <p class=\"txt txt-black\">Please talk to a healthcare professional if this condition runs in your family, you think you might have this condition, or you have any concerns about your results.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt--indent-small\">\n" +
+    "              <div class=\"txt--indent-small\"><a href=\"\" class=\"txt txt-blue link-underline\">See Scientific Details</a></div>\n" +
+    "              <div class=\"txt--indent-small\"><a href=\"\" class=\"txt txt-blue link-underline\">See Frequently Asked Questions</a></div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section fourth-->\n" +
+    "  \n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-md container-md-button-flex\">\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p1\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p3\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p3.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">Lifestyle & other factors</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-black\">\n" +
+    "            Lifestyle and other factors can also influence the\n" +
+    "            chances of developing late-onset Alzheimer's disease.\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <p class=\"txt txt-blue\">Consult with a healthcare professional before making any major lifestyle changes.</p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--result-p2 progress-bar-->\n" +
+    "  <div class=\"result-progressbar__wrap\">\n" +
+    "    <ul class=\"progressbar-wrap\">\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item active\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "    </ul>\n" +
+    "  </div>\n" +
+    "  <!--end result-p2 progress-bar-->\n" +
+    "  \n" +
+    "  <!--section second-->\n" +
+    "   <div class=\"section__wrap\">\n" +
+    "     <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
+    "       <div class=\"row\">\n" +
+    "         <div class=\"col-sm-6\">\n" +
+    "           <div class=\"boxes__wrap boxes__wrap--padding-top\">\n" +
+    "             <div class=\"box-shadow\">\n" +
+    "               <div class=\"title-wrap\">\n" +
+    "                 <h3 class=\"txt-blue-dark txt-center\">Family history</h3>\n" +
+    "               </div>\n" +
+    "               <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                 <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
+    "               </div>\n" +
+    "               <div class=\"txt__wrap\">\n" +
+    "                 <p class=\"txt txt-black txt-center\">\n" +
+    "                   Parents, siblings, and children of an individual with late-onset Alzheimer's disease have a higher chance of developing the disease themselves.\n" +
+    "                 </p>\n" +
+    "               </div>\n" +
+    "               <div class=\"button__wrap txt-center\">\n" +
+    "                 <button class=\"bt-round bt-round--blue\">See Scientific Details</button>\n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "         </div>\n" +
+    "         <div class=\"col-sm-6\">\n" +
+    "            <div class=\"row-image-flex\">\n" +
+    "              <div class=\"row__wrap\">\n" +
+    "              <h5 class=\"txt-blue-dark\">Age</h5>\n" +
+    "              <div class=\"row-image__wrap\">\n" +
+    "                <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/cake-orange.png\" alt=\"\">\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "              <div class=\"row__wrap\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Sex</h5>\n" +
+    "                <div class=\"row-image__wrap\">\n" +
+    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/people-blue-dark.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Family history</h5>\n" +
+    "                <div class=\"row-image__wrap\">\n" +
+    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/dna-blue.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Hearth health</h5>\n" +
+    "                <div class=\"row-image__wrap\">\n" +
+    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Diet</h5>\n" +
+    "                <div class=\"row-image__wrap\">\n" +
+    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/cake-blue-dark.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Intellectual activity</h5>\n" +
+    "                <div class=\"row-image__wrap\">\n" +
+    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/horse-blue.png\" alt=\"\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "         </div>\n" +
+    "       </div>\n" +
+    "     </div>\n" +
+    "   </div>\n" +
+    "  <!--end section second-->\n" +
+    "  \n" +
+    "  <!--section third-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <img class=\"img\" src=\"./assets/images/results-page/img-results-1.png\" alt=\"\">\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section third-->\n" +
+    "  \n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-md container-md-button-flex\">\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p2\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p4\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -1155,7 +1435,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "      </div>\n" +
     "      <form action=\"\">\n" +
     "        <div class=\"boxes__wrap boxes__wrap--large boxes__wrap--padding-top\">\n" +
-    "          <div class=\"box-half-column box-half-column--less-padding box-shadow\">\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
     "            <div class=\"row\">\n" +
     "              <div class=\"box-checkbox__wrap checkbox\">\n" +
     "                <input type=\"checkbox\" id=\"checkbox-receive\" class=\"checkbox-input\">\n" +
@@ -1171,7 +1451,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"box-half-column box-half-column--less-padding box-shadow\">\n" +
+    "          <div class=\"box-half-column box-shadow\">\n" +
     "            <div class=\"row\">\n" +
     "              <div class=\"box-checkbox__wrap checkbox\">\n" +
     "                <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\">\n" +

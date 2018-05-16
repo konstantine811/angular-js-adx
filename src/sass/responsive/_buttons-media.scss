@@ -5,6 +5,11 @@
   button.button-border-rounded {
     padding: 5px 34px;
   }
+  .bt-round-right-icon {
+    &::before, &::after {
+      top: 10px;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -39,5 +44,19 @@
   .cross-button-open__wrap {
     position: absolute;
     margin: -9px 0px;
+  }
+  .bt-round.bt-round-left-icon.bt-round-right-icon {
+    padding: 9px 65px;
+  }
+}
+
+
+@media (max-width: $breakpoint-exs) {
+  .container-md-button-flex {
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  .button__wrap--step {
+    margin: 14px auto;
   }
 }
