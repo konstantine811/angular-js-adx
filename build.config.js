@@ -66,8 +66,6 @@ module.exports = {
    */
   vendor_files: {
     js: [
-      'vendor/d3/d3.min.js',
-      'vendor/c3/c3.min.js',
       'vendor/angular/angular.js',
       'vendor/jquery/dist/jquery.min.js',
       'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
@@ -80,8 +78,7 @@ module.exports = {
       'vendor/restangular/dist/restangular.min.js',
       'vendor/raven-js/dist/raven.min.js',
       'vendor/angular-cookies/angular-cookies.min.js',
-      'vendor/moment/min/moment.min.js',
-      'vendor/c3-angular/c3-angular.min.js'
+      'vendor/moment/min/moment.min.js'
     ],
     css: [
     ],

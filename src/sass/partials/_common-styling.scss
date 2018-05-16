@@ -533,3 +533,8 @@ h6 {
 //end common styling for the link
 
 
+//styling table
+.table, .table > thead > tr > th, .table > tbody > tr > td {
+  border-bottom: 2px solid $silver-3;
+}
+//end styling table

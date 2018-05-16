@@ -2,8 +2,7 @@ angular.module( 'ixLayer.results', [
   'ui.router',
   'ui.bootstrap',
   'ixlayer.api.results',
-  'ngAnimate',
-  'gridshore.c3js.chart'
+  'ngAnimate'
 ])
   .config(function config($stateProvider) {
     $stateProvider.state('results', {

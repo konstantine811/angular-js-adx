@@ -937,44 +937,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
     "        </div>\n" +
     "        <div class=\"chart__wrap\">\n" +
-    "          <c3chart class=\"chart-bar chart-scroll-x\" bindto-id=\"stacked-bar-plot1-chart\">\n" +
-    "            <chart-size chart-height=\"400\" chart-width=\"1180px\"/>\n" +
-    "            <chart-column column-id=\"x\"\n" +
-    "                          column-values=\"e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4\"/>\n" +
-    "            <chart-column column-id=\"data 1\"\n" +
-    "                          column-name=\"65 years\"\n" +
-    "                          column-color=\"#41C5EB\"\n" +
-    "                          column-values=\"7, 10, 28, 31, 65\"\n" +
-    "                          column-type=\"bar\"/>\n" +
-    "            <chart-column column-id=\"data 2\"\n" +
-    "                          column-name=\"75 years\"\n" +
-    "                          column-color=\"#063F5F\"\n" +
-    "                          column-values=\"1, 2, 5, 8, 30\"\n" +
-    "                          column-type=\"bar\"/>\n" +
-    "            <chart-column column-id=\"data 3\"\n" +
-    "                          column-name=\"85 years\"\n" +
-    "                          column-color=\"#FFBD24\"\n" +
-    "                          column-values=\"0, 0, 0, 1, 2\" column-type=\"bar\" />\n" +
-    "            <chart-axes values-x=\"x\"/>\n" +
-    "            <chart-axis>\n" +
-    "              <chart-axis-x axis-position=\"outer-center\"\n" +
-    "                            axis-type=\"category\">\n" +
-    "              </chart-axis-x>\n" +
-    "              <chart-axis-y axis-position=\"center\"\n" +
-    "                            range-max=\"70\">\n" +
-    "              </chart-axis-y>\n" +
-    "            </chart-axis>\n" +
-    "            <chart-grid show-x=\"false\" show-y=\"true\">\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"0\" class=\"grid-bar\"/>\n" +
-    "              <chart-grid-optional class=\"grid-bar\" axis-id=\"y\" grid-value=\"10\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"20\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"30\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"40\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"50\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"60\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"70\"/>\n" +
-    "            </chart-grid>\n" +
-    "          </c3chart>\n" +
+    "          <ng-include src=\"'./assets/images/charts/chart-bar-1.svg'\"></ng-include>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <!--charts end-->\n" +
@@ -987,19 +950,49 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-6 hide-mobile\">\n" +
-    "          <div class=\"image__wrap\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/cake.svg'\"></ng-include>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"title__wrap\">\n" +
-    "            <h2 class=\"txt-blue-dark\">Detailed view and explanation</h2>\n" +
+    "        <div class=\"col-sm-12\">\n" +
+    "          <div class=\"table__wrap\">\n" +
+    "            <table class=\"table\">\n" +
+    "              <thead>\n" +
+    "                <tr>\n" +
+    "                  <th scope=\"col\">Age</th>\n" +
+    "                  <th scope=\"col\">e2/e2 or</th>\n" +
+    "                  <th scope=\"col\">e3/e3</th>\n" +
+    "                  <th scope=\"col\">e2/e4</th>\n" +
+    "                  <th scope=\"col\">e3/e4</th>\n" +
+    "                  <th scope=\"col\">e4/e4</th>\n" +
+    "                </tr>\n" +
+    "              </thead>\n" +
+    "              <tbody>\n" +
+    "                <tr>\n" +
+    "                  <td>65</td>\n" +
+    "                  <td>0.2%</td>\n" +
+    "                  <td>0.2%</td>\n" +
+    "                  <td>0.2%</td>\n" +
+    "                  <td>0.2%</td>\n" +
+    "                  <td>0.2%</td>\n" +
+    "                </tr>\n" +
+    "                <tr>\n" +
+    "                  <td>75</td>\n" +
+    "                  <td>1%</td>\n" +
+    "                  <td>1%</td>\n" +
+    "                  <td>1%</td>\n" +
+    "                  <td>1%</td>\n" +
+    "                  <td>1%</td>\n" +
+    "                </tr>\n" +
+    "                <tr>\n" +
+    "                  <td>85</td>\n" +
+    "                  <td>7%</td>\n" +
+    "                  <td>7%</td>\n" +
+    "                  <td>7%</td>\n" +
+    "                  <td>7%</td>\n" +
+    "                  <td>7%</td>\n" +
+    "                </tr>\n" +
+    "              </tbody>\n" +
+    "            </table>\n" +
     "          </div>\n" +
     "          <div class=\"txt__wrap\">\n" +
-    "            <div class=\"txt__wrap\">\n" +
-    "              This is coming I asked ADx\n" +
-    "            </div>\n" +
+    "            <div class=\"txt txt-black txt--small\">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -1082,44 +1075,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "          <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
     "        </div>\n" +
     "        <div class=\"chart__wrap\">\n" +
-    "          <c3chart class=\"chart-bar chart-scroll-x\" bindto-id=\"stacked-bar-plot1-chart\">\n" +
-    "            <chart-size chart-height=\"400\" chart-width=\"1180px\"/>\n" +
-    "            <chart-column column-id=\"x\"\n" +
-    "                          column-values=\"e2/e2 or e2/e3, e3/e3,e2/e4,e3/e4,e4/e4\"/>\n" +
-    "            <chart-column column-id=\"data 1\"\n" +
-    "                          column-name=\"65 years\"\n" +
-    "                          column-color=\"#41C5EB\"\n" +
-    "                          column-values=\"7, 10, 28, 31, 65\"\n" +
-    "                          column-type=\"bar\"/>\n" +
-    "            <chart-column column-id=\"data 2\"\n" +
-    "                          column-name=\"75 years\"\n" +
-    "                          column-color=\"#063F5F\"\n" +
-    "                          column-values=\"1, 2, 5, 8, 30\"\n" +
-    "                          column-type=\"bar\"/>\n" +
-    "            <chart-column column-id=\"data 3\"\n" +
-    "                          column-name=\"85 years\"\n" +
-    "                          column-color=\"#FFBD24\"\n" +
-    "                          column-values=\"0, 0, 0, 1, 2\" column-type=\"bar\" />\n" +
-    "            <chart-axes values-x=\"x\"/>\n" +
-    "            <chart-axis>\n" +
-    "              <chart-axis-x axis-position=\"outer-center\"\n" +
-    "                            axis-type=\"category\">\n" +
-    "              </chart-axis-x>\n" +
-    "              <chart-axis-y axis-position=\"center\"\n" +
-    "                            range-max=\"70\">\n" +
-    "              </chart-axis-y>\n" +
-    "            </chart-axis>\n" +
-    "            <chart-grid show-x=\"false\" show-y=\"true\">\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"0\" class=\"grid-bar\"/>\n" +
-    "              <chart-grid-optional class=\"grid-bar\" axis-id=\"y\" grid-value=\"10\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"20\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"30\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"40\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"50\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"60\"/>\n" +
-    "              <chart-grid-optional axis-id=\"y\" grid-value=\"70\"/>\n" +
-    "            </chart-grid>\n" +
-    "          </c3chart>\n" +
+    "          <ng-include src=\"'./assets/images/charts/chart-bar-1.svg'\"></ng-include>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

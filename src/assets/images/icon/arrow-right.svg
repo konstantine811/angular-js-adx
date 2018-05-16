@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6727.351 -3397.094 14.336 27.008">
+<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="-6727.351 -3397.094 14.336 27.008">
   <defs>
     <style>
-      .cls-1 {
+      .arrow-down-1 {
         fill: none;
         stroke: #fff;
         stroke-width: 2px;
       }
     </style>
   </defs>
-  <path id="Path_217" data-name="Path 217" class="cls-1" d="M6200.5,92.667l12.813,12.231,12.813-12.231" transform="translate(-6819.294 2829.724) rotate(-90)"/>
+  <path id="Path_217" data-name="Path 217" class="arrow-down-1" d="M6200.5,92.667l12.813,12.231,12.813-12.231" transform="translate(-6819.294 2829.724) rotate(-90)"/>
 </svg>
