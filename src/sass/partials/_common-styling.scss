@@ -57,6 +57,11 @@ body {
   padding: 94px 0;
 }
 
+.section-dropdown-txt__wrap {
+  padding-top: 90px;
+  width: 100%;
+  height: auto;
+}
 //end section staling
 
 
@@ -74,7 +79,15 @@ body {
   margin: 0 !important;
 }
 
+
+
 //common fonts style
+ul.item-decimal {
+  list-style-type: decimal;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+}
+
 a.link-underline {
   text-decoration: underline;
 }
@@ -608,4 +621,39 @@ h6 {
   width: 100%;
   margin: 0 auto;
   padding-top: 22px;
+}
+
+
+//styling acordion item
+.dropdown-txt__content {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid $silver-2;
+  &.panel {
+    padding-top: 87px;
+    padding-bottom: 52px;
+    padding-right: 0;
+    padding-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .panel-heading {
+    padding: 0;
+  }
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+  border-top: none !important;
+}
+
+.content-title__wrap {
+  display: inline-block;
+  width: 89%;
+}
+
+.content-txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-left: 143px;
+  padding-top: 40px;
 }

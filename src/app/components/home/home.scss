@@ -205,37 +205,4 @@
 }
 
 
-//styling acordion item
-.home-section-fourth-content__row {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid $silver-2;
-  &.panel {
-    padding-top: 87px;
-    padding-bottom: 52px;
-    padding-right: 0;
-    padding-left: 0;
-    box-shadow: none;
-    background-color: transparent;
-  }
-  .panel-heading {
-    padding: 0;
-  }
-}
-
-.panel-group .panel-heading + .panel-collapse .panel-body {
-  border-top: none !important;
-}
-
-.content-title__wrap {
-  display: inline-block;
-  padding-left: 90px;
-}
-
-.content-txt__wrap {
-  width: 100%;
-  height: auto;
-  padding-left: 143px;
-  padding-top: 40px;
-}
 
