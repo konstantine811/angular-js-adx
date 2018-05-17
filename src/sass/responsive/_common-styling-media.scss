@@ -33,6 +33,10 @@
   .txt-space-left-exlg {
     padding-left: 25px;
   }
+
+  .img__wrap--absolute {
+    width: calc(149% + 129px);
+  }
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -130,6 +134,9 @@
   }
   .hide-desktop-md {
     display: inline-block !important;
+  }
+  .hide-table {
+    display: none !important;;
   }
   .box-half-column {
     width: 100%;

@@ -7846,6 +7846,13 @@ h6 {
   width: 156px;
   left: 29%; }
 
+.img__wrap--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(149% + 303px);
+  height: auto; }
+
 .boxes__wrap {
   width: 100%;
   height: auto;
@@ -9555,7 +9562,10 @@ span.summary.ng-valid {
     padding: 0; }
 
   .txt-space-left-exlg {
-    padding-left: 25px; } }
+    padding-left: 25px; }
+
+  .img__wrap--absolute {
+    width: calc(149% + 129px); } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
@@ -9641,6 +9651,9 @@ span.summary.ng-valid {
 
   .hide-desktop-md {
     display: inline-block !important; }
+
+  .hide-table {
+    display: none !important; }
 
   .box-half-column {
     width: 100%; }

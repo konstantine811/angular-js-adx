@@ -41,6 +41,10 @@ angular.module( 'ixLayer.results', [
       .state('results.p5', {
         url: '/p5',
         templateUrl: 'components/results/pages/result-p5.tpl.html'
+      })
+      .state('results.p6', {
+        url: '/p6',
+        templateUrl: 'components/results/pages/result-p6.tpl.html'
       });
   })
   .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',

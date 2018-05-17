@@ -362,6 +362,16 @@ h6 {
   }
 }
 
+.img__wrap--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(149% + 303px);
+  height: auto;
+}
+
+
+
 //end common stylin for images
 
   //boxes styling

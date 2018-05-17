@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1598,6 +1598,101 @@ angular.module("components/results/pages/result-p5.tpl.html", []).run(["$templat
     "        </div>\n" +
     "        <div class=\"button__wrap--step\">\n" +
     "          <a ui-sref=\"results.p6\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p6.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">Sharing with family</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "            You may want to share your results or your experience with family or friends\n" +
+    "            so they understand the reason you are implementing new lifestyle behaviors.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <p class=\"txt txt-blue-dark\">\n" +
+    "            Having support can be very helpful when making behavior changes. Your relatives or friends may benefit\n" +
+    "            from hearing about your experience, and may wish to consider ApoE testing themselves.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section-second-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-md-9\">\n" +
+    "          <h3 class=\"txt-blue\">Key points to consider before talking to\n" +
+    "            friends or family about your results</h3>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h5 class=\"txt-black\">Do you and they have the support in place if there are questions?\n" +
+    "            </h5>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              Your genetics, lifestyle, environment, other medical conditions, and age all play a role in your Alzheimer’s disease risk. Your lifestyle and environmental risk factors can be reduced by implementing brain healthy behavior changes, which may also reduce the risk if you have by any other medical factors influencing your Alzheimer’s risk.  Many brain healthy behaviors are also good for your heart health and inflammation.\n" +
+    "            </p>\n" +
+    "            <div class=\"txt--indent\">\n" +
+    "              <p class=\"txt txt-black\">\n" +
+    "                Having a copy of the ApoE e4 variant does not guarantee that you will develop Alzheimer’s disease, and not carrying a copy does not guarantee that you won’t develop Alzheimer’s disease. The results of this test do not diagnose Alzheimer’s disease or any other medical condition.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h5 class=\"txt-black\">It is possible for your relatives to have a different ApoE variant than you?\n" +
+    "            </h5>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              Whether you are male or female, you are equally likely to pass on a copy of ApoE e4 or inherit one.\n" +
+    "              If you carry a single copy of ApoE-e4, there is a 50% chance your siblings and children carry one also. You can make lifestyle changes today to begin reducing your risk for Alzheimer’s disease or slowing the progression of memory decline.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark\">\"You are not in this alone. ADx Healthcare provides\n" +
+    "              genetics counselors to go over your report and\n" +
+    "              answer any questions you have.\"\n" +
+    "            </h3>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-3 hide-table\">\n" +
+    "          <div class=\"img__wrap--absolute\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/cake-white-bigger.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section-second-->\n" +
+    "  \n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-md container-md-button-flex\">\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p5\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p7\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
