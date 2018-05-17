@@ -33,7 +33,11 @@ angular.module( 'ixLayer.results', [
       .state('results.p3', {
         url: '/p3',
         templateUrl: 'components/results/pages/result-p3.tpl.html'
-      });
+      })
+      .state('results.p4', {
+      url: '/p4',
+      templateUrl: 'components/results/pages/result-p4.tpl.html'
+    });
   })
   .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',
     function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo) {

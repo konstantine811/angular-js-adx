@@ -8249,6 +8249,12 @@ button.button-border-rounded {
   button.button-border-rounded:hover {
     background-color: rgba(255, 255, 255, 0.3); }
 
+button.button-border-rounded.button-border-rounded--blue {
+  color: #41c5eb;
+  border-color: #41c5eb; }
+  button.button-border-rounded.button-border-rounded--blue:hover {
+    background-color: rgba(65, 197, 235, 0.2); }
+
 .button-border-rounded.button-border-rounded--small {
   padding: 4px 39px; }
 
@@ -8279,7 +8285,8 @@ button[disabled].bt-round {
   overflow: hidden;
   position: relative;
   z-index: 100;
-  transition: background-color .3s ease-out; }
+  transition: background-color .3s ease-out;
+  cursor: pointer; }
   .bt-round:hover, .bt-round:focus {
     border: none;
     color: #fff;

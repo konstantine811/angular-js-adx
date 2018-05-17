@@ -99,6 +99,14 @@ button.button-border-rounded {
   }
 }
 
+button.button-border-rounded.button-border-rounded--blue {
+  color: $blue-6;
+  border-color: $blue-6;
+  &:hover {
+    background-color: rgba($blue-6, 0.2);
+  }
+}
+
 .button-border-rounded.button-border-rounded--small {
   padding: 4px 39px;
 }
@@ -138,6 +146,7 @@ button[disabled].bt-round {
   position: relative;
   z-index: 100;
   transition: background-color .3s ease-out;
+  cursor: pointer;
   &:hover, &:focus {
     border: none;
     color: $white;

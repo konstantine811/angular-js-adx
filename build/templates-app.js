@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1289,8 +1289,95 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "  \n" +
     "</div>\n" +
     "");
+}]);
+
+angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p4.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">Next steps</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "            Now that you know your genetic risk it’s time\n" +
+    "            to take the <span class=\"txt-bold\">next steps.</span>\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--result-p2 progress-bar-->\n" +
+    "  <div class=\"result-progressbar__wrap\">\n" +
+    "    <ul class=\"progressbar-wrap\">\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item\"></li>\n" +
+    "      <li class=\"progressbar-item active\"></li>\n" +
+    "    </ul>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <h3 class=\"txt-blue-dark\">Talk to Genetic counselor</h3>\n" +
+    "      <div class=\"sub-header-txt__wrap\">\n" +
+    "        <p class=\"txt txt-black\">Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with you family?  Our genetics counselors are available to help answer your questions.</p>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark\">Talking to a doctor</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"sub-header-txt__wrap\">\n" +
+    "        <p class=\"txt txt-black\">If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family. Overall, your primary healthcare provider knows your overall health best.  It is good to check-in with them to discuss your ApoE test results so your ApoE genetic data can be paired with information about your other medical conditions.  Together you and your healthcare provider can develop a plan to modify your lifestyle and environmental factors to best optimize your cognitive health.  You should always consult a healthcare provider before making major lifestyle changes.\n" +
+    "        </p>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark\">Sharing with Family members</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"sub-header-txt__wrap\">\n" +
+    "        <p class=\"txt txt-black\">\n" +
+    "          Having the social support of your loved ones can help you as you begin implementing new lifestyle behaviors into your routine.\n" +
+    "        </p>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark\">\n" +
+    "          Support system\n" +
+    "        </h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"sub-header-txt__wrap\">\n" +
+    "        <p class=\"txt txt-black\">There are online communities that are available for individuals with an ApoE-e4 allele.  Joining one of these anonymous support groups may help you process your questions and concerns about your Alzheimer’s genetic risk.</p>\n" +
+    "      </div>\n" +
+    "      <div class=\"button__wrap button--center\">\n" +
+    "        <button class=\"button-border-rounded button-border-rounded--blue\">See Scientific Details</button>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-md container-md-button-flex\">\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p3\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p5\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "</div>");
 }]);
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
