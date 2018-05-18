@@ -7846,13 +7846,6 @@ h6 {
   width: 156px;
   left: 29%; }
 
-.img__wrap--absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(149% + 303px);
-  height: auto; }
-
 .boxes__wrap {
   width: 100%;
   height: auto;
@@ -9512,6 +9505,12 @@ span.summary.ng-valid {
 .title-wrap__pre-results--left-space {
   padding-left: 62px; }
 
+.img__wrap--float-right {
+  width: 730px;
+  height: auto;
+  float: right;
+  margin: 55px -463px 16px 13px; }
+
 [animation-on-change] {
   transition: all 0.4s;
   opacity: 1;
@@ -9562,10 +9561,7 @@ span.summary.ng-valid {
     padding: 0; }
 
   .txt-space-left-exlg {
-    padding-left: 25px; }
-
-  .img__wrap--absolute {
-    width: calc(149% + 129px); } }
+    padding-left: 25px; } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
@@ -10007,6 +10003,10 @@ span.summary.ng-valid {
 
   .button__wrap--step {
     margin: 14px auto; } }
+@media (max-width: 1596px) {
+  .img__wrap--float-right {
+    width: calc(16% + 502px);
+    margin: 55px -344px 16px 13px; } }
 @media (max-width: 960px) {
   .side-navbar {
     height: 65px;

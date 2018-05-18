@@ -1641,7 +1641,10 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"row\">\n" +
-    "        <div class=\"col-md-9\">\n" +
+    "        <div class=\"col-md-12\">\n" +
+    "          <div class=\"img__wrap--float-right hide-table\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/cake-white-bigger.svg'\"></ng-include>\n" +
+    "          </div>\n" +
     "          <h3 class=\"txt-blue\">Key points to consider before talking to\n" +
     "            friends or family about your results</h3>\n" +
     "          <div class=\"title__wrap\">\n" +
@@ -1673,11 +1676,6 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "              genetics counselors to go over your report and\n" +
     "              answer any questions you have.\"\n" +
     "            </h3>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-md-3 hide-table\">\n" +
-    "          <div class=\"img__wrap--absolute\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/cake-white-bigger.svg'\"></ng-include>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +

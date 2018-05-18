@@ -1,3 +1,6 @@
 @media (max-width: $breakpoint) {
-
+  .img__wrap--float-right {
+    width: calc(16% + 502px);
+    margin: 55px -344px 16px 13px;
+  }
 }
