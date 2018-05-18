@@ -7871,7 +7871,8 @@ h6 {
   background-color: white;
   padding: 65px  4%;
   margin: 4px 4px;
-  box-shadow: 0 0 28px -3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 28px -3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .box-half-column {
   width: 50%;
@@ -9529,6 +9530,12 @@ span.summary.ng-valid {
   height: auto;
   float: right;
   margin: 55px -463px 16px 13px; }
+
+.profile-page {
+  background-image: url("../assets/images/bgc-polygon-silver.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -165px; }
 
 .profile-info__wrap {
   width: 100%;
