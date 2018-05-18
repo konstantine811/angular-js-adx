@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1022,7 +1022,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">About Alzheimer’s disease</h2>\n" +
+    "        <h2 class=\"txt-blue-dark\">About Alzheimer’s disease</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black\">\n" +
     "            What do we know about Late-onset Alzheimer’s disease?\n" +
@@ -1146,7 +1146,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "  </div>\n" +
     "  <!--end section fourth-->\n" +
     "  \n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
@@ -1175,7 +1175,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">Lifestyle & other factors</h2>\n" +
+    "        <h2 class=\"txt-blue-dark\">Lifestyle & other factors</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black\">\n" +
     "            Lifestyle and other factors can also influence the\n" +
@@ -1277,7 +1277,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "  </div>\n" +
     "  <!--end section third-->\n" +
     "  \n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
@@ -1308,7 +1308,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">Next steps</h2>\n" +
+    "        <h2 class=\"txt-blue-dark\">Next steps</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
     "            Now that you know your genetic risk it’s time\n" +
@@ -1394,7 +1394,7 @@ angular.module("components/results/pages/result-p5.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">Science</h2>\n" +
+    "        <h2 class=\"txt-blue-dark\">Science</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
     "            The Alzheimer’s ApoE test is a single gene test that\n" +
@@ -1590,7 +1590,7 @@ angular.module("components/results/pages/result-p5.tpl.html", []).run(["$templat
     "    </div>\n" +
     "  </div>\n" +
     "  <!--end section-second-->\n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
@@ -1620,7 +1620,7 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">Sharing with family</h2>\n" +
+    "        <h2 class=\"txt-blue-dark\">Sharing with family</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
     "            You may want to share your results or your experience with family or friends\n" +
@@ -1683,7 +1683,7 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "  </div>\n" +
     "  <!--end section-second-->\n" +
     "  \n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
@@ -1696,6 +1696,208 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "    </div>\n" +
     "  </div>\n" +
     "  \n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p7.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p7.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">General Questions</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue\">Sharing with family</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "            However, most people with this result do not\n" +
+    "            develop late-onset Alzheimer's disease.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "        <p class=\"txt txt-blue\">\n" +
+    "          Consider discussing your risk with a healthcare professional, especially if you\n" +
+    "          have a family history or other risk factors for this condition.\n" +
+    "        </p>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <!--section dropdown txt-->\n" +
+    "      <div class=\"section-dropdown-txt__wrap section-dropdown-txt__wrap--border-bottom\" uib-accordion close-others=\"false\">\n" +
+    "    \n" +
+    "        <!--dropdown content first-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"cross-button-open__wrap\">\n" +
+    "              <div class=\"cross-button-open\"></div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-title__wrap\">\n" +
+    "              <h2 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h2>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              Everyone has some level of risk for Alzheimer’s disease. Your risk is a combination of genetics, lifestyle, environment, other medical conditions, and age. The genetic related risk for Alzheimer’s disease increases based on ApoE genotype, with e2/e2 having the lowest genetic risk and e4/e4 having the highest genetic risk.\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                (graphic or table here to show the increase of risk) e2/e2, e2/e3, e3/e3, e3/e4, and e4/e4.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <!--end dropdown content first-->\n" +
+    "    \n" +
+    "        <!--dropdown content second-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"cross-button-open__wrap\">\n" +
+    "              <div class=\"cross-button-open\"></div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-title__wrap\">\n" +
+    "              <h2 class=\"txt-blue-dark\">Who will see my test results?</h2>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <div class=\"txt txt-black\">\n" +
+    "              Your test results are delivered privately to you.  It is up to you whom you share them with after that.  However, we encourage you to discuss them with your primary health care provider or one of our genetics counselors if you have any questions about your results or how you can take action to reduce your Alzheimer’s risk.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        <!--end dropdown content second-->\n" +
+    "    \n" +
+    "        <!--dropdown content third-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"cross-button-open__wrap\">\n" +
+    "              <div class=\"cross-button-open\"></div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-title__wrap\">\n" +
+    "              <h2 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h2>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              Late-onset Alzheimer’s disease risk is influenced by your genetics, age, other medical conditions, and lifestyle and environmental factors.  For example, as you age from 65 to 85, your risk of Alzheimer’s disease increases.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <!--end dropdown content third-->\n" +
+    "      </div>\n" +
+    "      <!-- end section dropdown txt-->\n" +
+    "    </div>\n" +
+    "  <!--end section first-->\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-md container-md-button-flex\">\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p6\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap--step\">\n" +
+    "          <a ui-sref=\"results.p8\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "\n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p8.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Overview</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title\">\n" +
+    "        <h2 class=\"txt-blue-dark\">Welcome back</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "            You can view your results at anytime, or choose one of the options below.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap button--center\">\n" +
+    "          <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <h2 class=\"txt-blue txt-center\">More products for your health</h2>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-4\">\n" +
+    "          <div class=\"img__wrap\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/notebook-border-round-box-shadow.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark txt-center\">Genetic counseling</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"sub-header-txt__wrap\">\n" +
+    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "              ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-4\">\n" +
+    "          <div class=\"img__wrap\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/flask-border-round-box-shadow.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark txt-center\">Refer a friend</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"sub-header-txt__wrap\">\n" +
+    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "              Worried about someone else in your family or know someone else who could benefits from taking the ADx ApoE genetic test?\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-4\">\n" +
+    "          <div class=\"img__wrap\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/table-border-round-box-shadow.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue-dark txt-center\">Contact us</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"sub-header-txt__wrap\">\n" +
+    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "              ADx is dedicated to helping you with any questions you may have.\n" +
+    "              Contact us with your questions or send us comments!\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--orange\">View results</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section first-->\n" +
     "</div>");
 }]);
 

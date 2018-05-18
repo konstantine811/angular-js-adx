@@ -181,7 +181,7 @@ h2 {
   font-family: Montserrat, sans-serif;
   color: $white;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 54px;
   margin: 0;
   padding: 0;
 }
@@ -360,6 +360,12 @@ h6 {
     width: 156px;
     left: 29%;
   }
+}
+
+.img__wrap {
+  width: auto;
+  height: auto;
+  padding-top: 45px;
 }
 
 
@@ -640,6 +646,7 @@ h6 {
   }
   .panel-heading {
     padding: 0;
+    position: relative;
   }
 }
 

@@ -19,6 +19,18 @@
   }
 }
 
+@media (max-width: $breakpoint-md) {
+
+  .cross-button-open {
+    height: 46px;
+  }
+
+  .cross-button-open:before, .cross-button-open:after {
+    width: 46px;
+    top: 30%;
+  }
+}
+
 @media (max-width: $breakpoint-sm) {
   .bt-round:before, .bt-round:after {
     height: 52%;

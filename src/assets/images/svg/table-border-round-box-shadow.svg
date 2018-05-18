@@ -1,0 +1,56 @@
+<svg class="table-border-round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="8755.814 -3665.62 430.24 430.24">
+  <defs>
+    <style>
+      .table-border-round-1 {
+        fill: #fff;
+      }
+
+      .table-border-round-2 {
+        fill: #87d2f3;
+      }
+
+      .table-border-round-3 {
+        fill: #2170a6;
+      }
+
+      .table-border-round-4 {
+        filter: url(#Ellipse_1360);
+      }
+    </style>
+    <filter id="Ellipse_1360" x="8755.814" y="-3665.62" width="430.24" height="430.24" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_786" data-name="Group 786" transform="translate(7369 -4422)">
+    <g class="table-border-round-4" transform="matrix(1, 0, 0, 1, -7369, 4422)">
+      <circle id="Ellipse_1360-2" data-name="Ellipse 1360" class="table-border-round-1" cx="185.12" cy="185.12" r="185.12" transform="translate(8785.81 -3635.62)"/>
+    </g>
+    <g id="Group_674" data-name="Group 674" transform="translate(1532.461 895.461)">
+      <rect id="Rectangle_342" data-name="Rectangle 342" class="table-border-round-2" width="122.097" height="78.491" transform="translate(8.721 26.164)"/>
+      <rect id="Rectangle_343" data-name="Rectangle 343" class="table-border-round-1" width="133.714" height="11.617" transform="translate(2.896 14.547)"/>
+      <rect id="Rectangle_344" data-name="Rectangle 344" class="table-border-round-2" width="29.059" height="11.617" transform="translate(55.223 2.896)"/>
+      <rect id="Rectangle_345" data-name="Rectangle 345" class="table-border-round-1" width="46.502" height="11.617" transform="translate(46.502 98.829)"/>
+      <rect id="Rectangle_346" data-name="Rectangle 346" class="table-border-round-1" width="11.617" height="31.989" transform="translate(20.338 104.654)"/>
+      <rect id="Rectangle_347" data-name="Rectangle 347" class="table-border-round-1" width="11.617" height="31.989" transform="translate(107.55 104.654)"/>
+      <rect id="Rectangle_348" data-name="Rectangle 348" class="table-border-round-1" width="29.059" height="11.617" transform="translate(20.338 40.71)"/>
+      <path id="Path_456" data-name="Path 456" class="table-border-round-1" d="M304.934,119.621v11.617l-11.617,8.721L281.7,131.238V119.621l11.617-8.721Zm0,0" transform="translate(-185.733 -73.12)"/>
+      <path id="Path_457" data-name="Path 457" class="table-border-round-1" d="M270.734,179.421v11.617l-11.617,8.721L247.5,191.038V179.421l11.617-8.721Zm0,0" transform="translate(-163.184 -112.547)"/>
+      <path id="Path_458" data-name="Path 458" class="table-border-round-1" d="M236.634,119.621v11.617l-11.617,8.721L213.4,131.238V119.621l11.617-8.721Zm0,0" transform="translate(-140.701 -73.12)"/>
+      <path id="Path_459" data-name="Path 459" class="table-border-round-3" d="M136.643,11.617H87.212V2.9a2.893,2.893,0,0,0-2.9-2.9H55.257a2.893,2.893,0,0,0-2.9,2.9v8.721H2.9A2.923,2.923,0,0,0,0,14.547V26.164a2.893,2.893,0,0,0,2.9,2.9H52.327V23.268H5.825V17.442H133.748v5.825H87.212v5.825h49.431a2.893,2.893,0,0,0,2.9-2.9V14.547a2.923,2.923,0,0,0-2.9-2.93Zm-78.491,0V5.825H81.421v5.825H58.153Zm0,0"/>
+      <path id="Path_460" data-name="Path 460" class="table-border-round-3" d="M139.2,169.274H107.208v-2.9a2.893,2.893,0,0,0-2.9-2.9H57.776a2.893,2.893,0,0,0-2.9,2.9v2.9H22.891V102.4H17.1v66.874a5.823,5.823,0,0,0,5.825,5.825h5.825v29.059a2.893,2.893,0,0,0,2.9,2.9H43.264a2.893,2.893,0,0,0,2.9-2.9V192.542h69.77v11.617a2.893,2.893,0,0,0,2.9,2.9h11.617a2.893,2.893,0,0,0,2.9-2.9V175.1h5.825a5.823,5.823,0,0,0,5.825-5.826V102.4h-5.825l.034,66.874ZM40.334,201.229H34.542V175.065h5.825v26.164Zm20.372-31.955h40.71V175.1H60.706ZM46.159,186.716V175.1H54.88V178a2.893,2.893,0,0,0,2.9,2.9h46.5a2.893,2.893,0,0,0,2.9-2.9v-2.9h8.721v11.617Zm81.386,14.513H121.72V175.065h5.825Zm0,0" transform="translate(-11.275 -67.515)"/>
+      <rect id="Rectangle_349" data-name="Rectangle 349" class="table-border-round-3" width="23.268" height="5.825" transform="translate(58.153 23.268)"/>
+      <path id="Path_461" data-name="Path 461" class="table-border-round-3" d="M240.738,128.034a2.921,2.921,0,0,0,1.158-2.317V114.1a2.921,2.921,0,0,0-1.158-2.317l-11.617-8.721a2.862,2.862,0,0,0-3.475,0l-9.879,7.427-9.879-7.427a2.862,2.862,0,0,0-3.475,0l-9.607,7.222-6.95-6.95-4.156,4.088,7.87,7.87v9.232l-7.87,7.87,4.122,4.122,6.95-6.95,8.449,6.337v8.96l-7.9,7.869,4.122,4.122,6.95-6.95L214,157.127a2.862,2.862,0,0,0,3.475,0l9.607-7.222,6.95,6.95,4.122-4.122-7.87-7.87V135.9ZM227.35,108.99l8.721,6.541v8.721l-8.721,6.541-8.721-6.541v-8.721Zm-31.955,6.541,8.721-6.541,8.721,6.541v8.721l-8.721,6.541-8.721-6.541Zm20.338,35.6-8.721-6.541v-8.721l8.721-6.541,8.721,6.541v8.721Zm0,0" transform="translate(-119.8 -67.565)"/>
+      <path id="Path_462" data-name="Path 462" class="table-border-round-3" d="M86.085,113.9a2.893,2.893,0,0,0-2.9-2.9H54.1a2.893,2.893,0,0,0-2.9,2.9v11.617a2.893,2.893,0,0,0,2.9,2.9H83.155a2.893,2.893,0,0,0,2.9-2.9V113.9Zm-5.825,8.721H57.025v-5.825H80.293l-.034,5.825Zm0,0" transform="translate(-33.758 -73.185)"/>
+      <rect id="Rectangle_350" data-name="Rectangle 350" class="table-border-round-3" width="5.825" height="5.825" transform="translate(17.442 61.048)"/>
+      <rect id="Rectangle_351" data-name="Rectangle 351" class="table-border-round-3" width="5.825" height="5.825" transform="translate(29.059 61.048)"/>
+      <rect id="Rectangle_352" data-name="Rectangle 352" class="table-border-round-3" width="11.617" height="5.825" transform="translate(40.71 61.048)"/>
+      <rect id="Rectangle_353" data-name="Rectangle 353" class="table-border-round-3" width="26.164" height="5.825" transform="translate(17.442 72.665)"/>
+      <rect id="Rectangle_354" data-name="Rectangle 354" class="table-border-round-3" width="5.825" height="5.825" transform="translate(17.442 84.316)"/>
+      <rect id="Rectangle_355" data-name="Rectangle 355" class="table-border-round-3" width="5.825" height="5.825" transform="translate(29.059 84.316)"/>
+    </g>
+  </g>
+</svg>

@@ -178,6 +178,15 @@ button[disabled].bt-round {
   }
 }
 
+.bt-round.bt-round--orange {
+  background-color: $orange-2;
+
+  &:hover {
+    background-color: $orange-2-light;
+  }
+}
+
+
 //styling for the bt-round with icon
 .bt-round-left-icon {
   &:before {
@@ -247,19 +256,21 @@ button[disabled].bt-round {
 .cross-button-open__wrap {
   display: inline-block;
   width: 10%;
+  height: 100%;
 }
 
 .cross-button-open {
   width: 66px;
   height: 66px;
-  position: relative;
+  position: absolute;
+  top: 0;
   &:before, &:after {
     content: '';
     position: absolute;
     height: 5px;
     width: 66px;
     background-color: $silver-2;
-    top: 48px;
+    top: 24px;
     transition: all .3s ease-in-out;
   }
   &:after {

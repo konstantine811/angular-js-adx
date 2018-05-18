@@ -1,0 +1,66 @@
+<svg class="notebook-border-round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="7808 -3665.62 430.24 430.24">
+  <defs>
+    <style>
+      .notebook-border-round-1 {
+        fill: #fff;
+      }
+
+      .notebook-border-round-2 {
+        fill: #87d2f3;
+      }
+
+      .notebook-border-round-3 {
+        fill: #2170a6;
+      }
+
+      .notebook-border-round-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .notebook-border-round-5 {
+        filter: url(#Ellipse_1358);
+      }
+    </style>
+    <filter id="Ellipse_1358" x="7808" y="-3665.62" width="430.24" height="430.24" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_364" data-name="Rectangle 364" width="112.999" height="129.335"/>
+    </clipPath>
+  </defs>
+  <g id="Group_784" data-name="Group 784" transform="translate(7369 -4422)">
+    <g class="notebook-border-round-5" transform="matrix(1, 0, 0, 1, -7369, 4422)">
+      <circle id="Ellipse_1358-2" data-name="Ellipse 1358" class="notebook-border-round-1" cx="185.12" cy="185.12" r="185.12" transform="translate(7838 -3635.62)"/>
+    </g>
+    <g id="Group_675" data-name="Group 675" transform="translate(598 901)">
+      <rect id="Rectangle_356" data-name="Rectangle 356" class="notebook-border-round-1" width="13.44" height="123.544" transform="translate(2.864 2.801)"/>
+      <rect id="Rectangle_357" data-name="Rectangle 357" class="notebook-border-round-2" width="85.961" height="123.544" transform="translate(16.305 2.801)"/>
+      <path id="Path_463" data-name="Path 463" class="notebook-border-round-1" d="M207.565,295.782a5.382,5.382,0,1,1-5.382-5.382,5.38,5.38,0,0,1,5.382,5.382Zm0,0" transform="translate(-134.855 -198.994)"/>
+      <path id="Path_464" data-name="Path 464" class="notebook-border-round-1" d="M139.265,295.782a5.382,5.382,0,1,1-5.382-5.382,5.38,5.38,0,0,1,5.382,5.382Zm0,0" transform="translate(-88.053 -198.994)"/>
+      <path id="Path_465" data-name="Path 465" class="notebook-border-round-1" d="M173.465,236.082a5.382,5.382,0,1,1-5.382-5.382,5.38,5.38,0,0,1,5.382,5.382Zm0,0" transform="translate(-111.488 -158.085)"/>
+      <rect id="Rectangle_358" data-name="Rectangle 358" class="notebook-border-round-1" width="59.081" height="26.849" transform="translate(29.745 16.21)"/>
+      <rect id="Rectangle_359" data-name="Rectangle 359" class="notebook-border-round-1" width="10.733" height="13.44" transform="translate(99.559 112.905)"/>
+      <path id="Path_466" data-name="Path 466" class="notebook-border-round-1" d="M327.133,104.933v72.521H316.4V104.933L321.782,94.2Zm0,0" transform="translate(-216.81 -64.55)"/>
+      <path id="Path_467" data-name="Path 467" class="notebook-border-round-3" d="M.6,3.007V126.55a2.673,2.673,0,0,0,2.675,2.675h8.058v-5.382H5.982V5.682h5.382V.3H3.275A2.68,2.68,0,0,0,.6,3.007Zm0,0" transform="translate(-0.411 -0.206)"/>
+      <path id="Path_468" data-name="Path 468" class="notebook-border-round-3" d="M48.651,5.682H129.23V21.8h5.382V5.682A5.38,5.38,0,0,0,129.23.3H45.975A2.673,2.673,0,0,0,43.3,2.975V118.461h5.382V5.682Zm0,0" transform="translate(-29.671 -0.206)"/>
+      <rect id="Rectangle_360" data-name="Rectangle 360" class="notebook-border-round-3" width="75.196" height="5.382" transform="translate(16.305 123.669)"/>
+      <rect id="Rectangle_361" data-name="Rectangle 361" class="notebook-border-round-3" width="5.382" height="5.382" transform="translate(27.038 51.149)"/>
+      <rect id="Rectangle_362" data-name="Rectangle 362" class="notebook-border-round-3" width="5.382" height="5.382" transform="translate(37.803 51.149)"/>
+      <rect id="Rectangle_363" data-name="Rectangle 363" class="notebook-border-round-3" width="32.231" height="5.382" transform="translate(59.269 51.149)"/>
+      <path id="Path_469" data-name="Path 469" class="notebook-border-round-3" d="M128.158,256.989a8.035,8.035,0,0,0,7.554-5.382h6.358a8.212,8.212,0,1,0,6.39-10.639l-3.62-5.414a8.064,8.064,0,1,0-11.866-.031l-3.651,5.445c-.378-.063-.787-.094-1.165-.126a8.074,8.074,0,0,0,0,16.147ZM138.891,238.2a7.319,7.319,0,0,0,1.165-.126l3.651,5.445a8.207,8.207,0,0,0-1.637,2.707h-6.358a7.711,7.711,0,0,0-1.637-2.707l3.651-5.445a7.319,7.319,0,0,0,1.165.126Zm13.44,10.733a2.675,2.675,0,1,1-2.675-2.675,2.673,2.673,0,0,1,2.675,2.675Zm-13.44-21.467a2.675,2.675,0,1,1-2.675,2.675,2.673,2.673,0,0,1,2.675-2.675Zm-10.733,18.791a2.675,2.675,0,1,1-2.675,2.675,2.673,2.673,0,0,1,2.675-2.675Zm0,0" transform="translate(-82.297 -152.142)"/>
+      <g id="Group_504" data-name="Group 504">
+        <g id="Group_502" data-name="Group 502" class="notebook-border-round-4">
+          <path id="Path_470" data-name="Path 470" class="notebook-border-round-3" d="M147.756,43H88.675A2.673,2.673,0,0,0,86,45.675V72.525A2.673,2.673,0,0,0,88.675,75.2h59.081a2.673,2.673,0,0,0,2.675-2.675V45.675A2.673,2.673,0,0,0,147.756,43Zm-2.675,26.849H91.351V48.382h53.73Zm0,0" transform="translate(-58.931 -29.465)"/>
+        </g>
+        <g id="Group_503" data-name="Group 503" class="notebook-border-round-4">
+          <path id="Path_471" data-name="Path 471" class="notebook-border-round-3" d="M323.564,98.159l-5.382-10.733a2.813,2.813,0,0,0-3.84-.976,2.894,2.894,0,0,0-.976.976l-5.382,10.733a2.672,2.672,0,0,0-.283,1.2v85.961a2.673,2.673,0,0,0,2.675,2.675h10.733a2.673,2.673,0,0,0,2.675-2.675V99.355a1.993,1.993,0,0,0-.22-1.2Zm-7.775-3.525,2.675,5.382v69.216h-5.382V99.984Zm-2.675,88.007v-8.058H318.5v8.058Zm0,0" transform="translate(-210.848 -58.971)"/>
+        </g>
+      </g>
+      <path id="Path_472" data-name="Path 472" class="notebook-border-round-3" d="M125.451,82.482h5.382V77.1h-8.058a2.673,2.673,0,0,0-2.675,2.675v8.058h5.382V82.482Zm0,0" transform="translate(-82.297 -52.832)"/>
+    </g>
+  </g>
+</svg>
