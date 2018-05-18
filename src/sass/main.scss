@@ -31,6 +31,7 @@
 @import './partials/scroll_bar.scss';
 @import '../app/components/register/register.scss';
 @import '../app/components/results/results.scss';
+@import '../app/components/profile/profile.scss';
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 //responsive media query
@@ -43,6 +44,7 @@
 @import "./responsive/_buttons-media.scss";
 @import '../app/components/results/results-media.scss';
 @import '../app/shared/side-navbar/side-navbar-media.scss';
+@import '../app/components/profile/_profile-media.scss';
 
 a[ng-click] {
   cursor: pointer;

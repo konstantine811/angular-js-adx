@@ -1,11 +1,156 @@
-<div class="container-fluid">
-    <div class="row">
-        <p>First Name: {{profile.user.first_name}}</p>
-        <p>Last Name: {{ profile.user.last_name }}</p>
-        <p>Email: {{ profile.user.email }}</p>
-        <p>Gender: {{ profile.gender }}</p>
-        <p>Date of Birth: {{ profile.date_of_birth }}</p>
-        <p>Phone: {{ profile.phone }}</p>
-        <button class="btn btn-primary" ui-sref="profileEdit">Edit</button>
+<div class="profile-page">
+    
+    <!--section first -->
+    <div class="section__wrap">
+        <div class="container-lg--dashboard container-lg--dashboard--not-space-xs">
+            <div class="section-box-shadow">
+                <div class="title__wrap">
+                    <h2 class="txt-blue-dark txt-center">Account information</h2>
+                </div>
+                <div class="profile-info__wrap">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Email</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                <div class="profile-view--display-column-wrap">
+                                    <div class="profile-view-column-1">
+                                        {{profile.user.email}} <span class="txt-left-space">(Verifed)</span>
+                                    </div>
+                                    <div class="profile-view-column-2">
+                                        <a class="txt-blue txt-right">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Password</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <a class="sub-header-txt sub-header-txt--small txt-blue"> Change Password</a>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Security question</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                <div class="profile-view--display-column-wrap">
+                                    <div class="profile-view-column-1">
+                                        What was the name of your fist pet?
+                                    </div>
+                                    <div class="profile-view-column-2">
+                                        <a class="txt-blue txt-right">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--end section first-->
+    
+    <!--section second-->
+    <div class="section__wrap">
+        <div class="container-lg--dashboard container-lg--dashboard--not-space-xs">
+            <div class="section-box-shadow">
+                <div class="title__wrap">
+                    <h2 class="txt-blue-dark txt-center">Personal information</h2>
+                </div>
+                <div class="profile-info__wrap">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Name</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                {{profile.user.first_name}} {{profile.user.last_name}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Saxe</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                {{profile.gender}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Birthday</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                June 17, 1975
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">All enthnicities</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                Chinese
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-offset-4 col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue">
+                                Review enthnicity information
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Height</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                               Not set
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Weight</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                Not set
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt sub-header-txt--small txt-blue-dark txt-medium">Current residence</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt sub-header-txt--small txt-black">
+                                US
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-button__wrap profile-info__wrap--border-bottom">
+                        <button class="bt-round bt-round--blue">Edit</button>
+                    </div>
+                    <div class="profile-button__wrap">
+                        <a href="" class="sub-header-txt sub-header-txt--small txt-blue">Forum settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end section second-->
+    
 </div>

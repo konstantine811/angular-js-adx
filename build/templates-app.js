@@ -745,16 +745,161 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
 
 angular.module("components/profile/profileView.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileView.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <p>First Name: {{profile.user.first_name}}</p>\n" +
-    "        <p>Last Name: {{ profile.user.last_name }}</p>\n" +
-    "        <p>Email: {{ profile.user.email }}</p>\n" +
-    "        <p>Gender: {{ profile.gender }}</p>\n" +
-    "        <p>Date of Birth: {{ profile.date_of_birth }}</p>\n" +
-    "        <p>Phone: {{ profile.phone }}</p>\n" +
-    "        <button class=\"btn btn-primary\" ui-sref=\"profileEdit\">Edit</button>\n" +
+    "<div class=\"profile-page\">\n" +
+    "    \n" +
+    "    <!--section first -->\n" +
+    "    <div class=\"section__wrap\">\n" +
+    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "            <div class=\"section-box-shadow\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark txt-center\">Account information</h2>\n" +
+    "                </div>\n" +
+    "                <div class=\"profile-info__wrap\">\n" +
+    "                    <div class=\"row\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Email</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                <div class=\"profile-view--display-column-wrap\">\n" +
+    "                                    <div class=\"profile-view-column-1\">\n" +
+    "                                        {{profile.user.email}} <span class=\"txt-left-space\">(Verifed)</span>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"profile-view-column-2\">\n" +
+    "                                        <a class=\"txt-blue txt-right\">Edit</a>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Password</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <a class=\"sub-header-txt sub-header-txt--small txt-blue\"> Change Password</a>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Security question</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                <div class=\"profile-view--display-column-wrap\">\n" +
+    "                                    <div class=\"profile-view-column-1\">\n" +
+    "                                        What was the name of your fist pet?\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"profile-view-column-2\">\n" +
+    "                                        <a class=\"txt-blue txt-right\">Edit</a>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
+    "    <!--end section first-->\n" +
+    "    \n" +
+    "    <!--section second-->\n" +
+    "    <div class=\"section__wrap\">\n" +
+    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "            <div class=\"section-box-shadow\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark txt-center\">Personal information</h2>\n" +
+    "                </div>\n" +
+    "                <div class=\"profile-info__wrap\">\n" +
+    "                    <div class=\"row\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Name</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                {{profile.user.first_name}} {{profile.user.last_name}}\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Saxe</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                {{profile.gender}}\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Birthday</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                June 17, 1975\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">All enthnicities</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                Chinese\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-offset-4 col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue\">\n" +
+    "                                Review enthnicity information\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Height</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                               Not set\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Weight</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                Not set\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Current residence</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                                US\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"profile-button__wrap profile-info__wrap--border-bottom\">\n" +
+    "                        <button class=\"bt-round bt-round--blue\">Edit</button>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"profile-button__wrap\">\n" +
+    "                        <a href=\"\" class=\"sub-header-txt sub-header-txt--small txt-blue\">Forum settings</a>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <!--end section second-->\n" +
+    "    \n" +
     "</div>");
 }]);
 
@@ -2382,7 +2527,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"side-navbar-account__button\">\n" +
-    "          <a href=\"\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <a ui-sref=\"profile\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
     "          <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +

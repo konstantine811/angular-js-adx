@@ -7628,8 +7628,14 @@ a.link-underline {
 .txt-padding-top {
   padding-top: 20px; }
 
+.txt-left-space {
+  padding-left: 20px; }
+
 .txt-center {
   text-align: center; }
+
+.txt-right {
+  text-align: right; }
 
 .txt-uppercase {
   text-transform: uppercase !important; }
@@ -9524,6 +9530,30 @@ span.summary.ng-valid {
   float: right;
   margin: 55px -463px 16px 13px; }
 
+.profile-info__wrap {
+  width: 100%;
+  height: auto;
+  padding: 90px 110px; }
+
+.profile-view--display-column-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between; }
+
+.row--profile-view-space-top {
+  padding-top: 65px; }
+
+.profile-button__wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px; }
+
+.profile-info__wrap--border-bottom {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #DBDBDB; }
+
 [animation-on-change] {
   transition: all 0.4s;
   opacity: 1;
@@ -9743,7 +9773,10 @@ span.summary.ng-valid {
     padding-top: 50px; }
 
   .row-image-flex {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .container-lg--dashboard--not-space-xs {
+    padding: 0; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -10048,6 +10081,18 @@ span.summary.ng-valid {
     float: right;
     padding-right: 21px;
     padding-top: 5px; } }
+@media (max-width: 1200px) {
+  .profile-info__wrap {
+    padding: 50px 50px; }
+
+  .profile-button__wrap {
+    padding-top: 50px; }
+
+  .profile-info__wrap--border-bottom {
+    padding-bottom: 50px; } }
+@media (max-width: 468px) {
+  .profile-info__wrap {
+    padding: 50px 15px; } }
 a[ng-click] {
   cursor: pointer; }
 

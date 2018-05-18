@@ -48,6 +48,9 @@ angular.module( 'ixLayer.profile', [
   .controller('ProfileViewCtrl', ['$scope', 'profile',
     function ProfileViewCtrl($scope, profile) {
     $scope.profile = profile;
+    
+    console.log(profile);
+
   }])
 
   .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService',

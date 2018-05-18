@@ -1,0 +1,19 @@
+@media (max-width: $breakpoint-lg) {
+  .profile-info__wrap {
+    padding: 50px 50px;
+  }
+
+  .profile-button__wrap {
+    padding-top: 50px;
+  }
+
+  .profile-info__wrap--border-bottom {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $breakpoint-exs) {
+  .profile-info__wrap {
+    padding: 50px 15px;
+  }
+}

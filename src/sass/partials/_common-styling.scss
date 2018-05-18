@@ -92,12 +92,24 @@ a.link-underline {
   text-decoration: underline;
 }
 
+//txt space
 .txt-padding-top {
   padding-top: 20px;
 }
 
+.txt-left-space {
+  padding-left: 20px;
+}
+//end txt space
+
+
+
 .txt-center {
   text-align: center;
+}
+
+.txt-right {
+  text-align: right;
 }
 
 .txt-uppercase {

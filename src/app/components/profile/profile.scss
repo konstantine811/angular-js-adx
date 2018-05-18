@@ -1,0 +1,28 @@
+.profile-info__wrap {
+  width: 100%;
+  height: auto;
+  padding: 90px 110px;
+}
+
+.profile-view--display-column-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.row--profile-view-space-top {
+  padding-top: 65px;
+}
+
+.profile-button__wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.profile-info__wrap--border-bottom {
+  padding-bottom: 80px;
+  border-bottom: 1px solid $silver-2;
+}
