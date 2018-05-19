@@ -7595,6 +7595,9 @@ body {
 .section__wrap {
   padding-top: 130px; }
 
+.title-section__wrap {
+  padding-top: 90px; }
+
 .section__wrap.section__wrap--small-pad-top {
   padding-top: 25px; }
 
@@ -8870,6 +8873,15 @@ button[disabled].bt-round {
 
 .panel--fp {
   margin-top: 18%; }
+
+.img.product-img--helix {
+  width: 77%;
+  margin-top: 66px; }
+
+.products-head__wrap {
+  background-image: url(../assets/images/products/bgc-products-head.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .header {
   position: fixed;

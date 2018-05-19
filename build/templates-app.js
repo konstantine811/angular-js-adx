@@ -655,14 +655,42 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "  <div class=\"col-md-12\">\n" +
-    "    <div ng-repeat=\"product in products\">\n" +
-    "      <div>{{ product.name }}</div>\n" +
-    "      <div>{{ product.description }}</div>\n" +
-    "      <div>{{ product.price }}</div>\n" +
-    "      <a class=\"btn btn-primary\" ui-sref=\"productDetail({ productId: product.id })\">Detail {{product.id}}</a>\n" +
-    "      <hr>\n" +
+    "<div class=\"products-page\">\n" +
+    "  <div class=\"products-head__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title-section__wrap\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
+    "      </div>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap\">\n" +
+    "            <img class=\"img product-img--alzheimers\" src=\"./assets/images/Alzheimers-Genetic-Test.png\" alt=\"\">\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent\">\n" +
+    "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--blue\">Order here</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap\">\n" +
+    "            <img class=\"img product-img--helix\" src=\"./assets/images/Helix-Bio-Labs.png\" alt=\"\">\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent\">\n" +
+    "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--blue\">Connect here</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>");
