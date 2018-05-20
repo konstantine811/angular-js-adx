@@ -15,7 +15,15 @@ angular.module( 'ixLayer.products', [
           return productsService.getProducts();
         }]
       }
-    });
+    })
+      .state('products.status', {
+      url: '/status',
+      templateUrl: 'components/products/pages/sequencingStatus.tpl.html'
+    })
+      .state('products.pre-purchase', {
+        url: '/status',
+        templateUrl: 'components/products/pages/pre-purchase.tpl.html'
+      });
   })
 
   .config(function config($stateProvider) {

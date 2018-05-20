@@ -7586,6 +7586,12 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.container-xs-button-flex {
+  max-width: 572px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
 .section-box-shadow {
   width: 100%;
   height: auto;
@@ -7609,6 +7615,10 @@ body {
   padding-top: 90px;
   width: 100%;
   height: auto; }
+
+.align-vertical--center {
+  height: 100%;
+  align-self: center; }
 
 .hide-desktop, .hide-desktop-md {
   display: none !important; }
@@ -7797,7 +7807,7 @@ h6 {
   font-family: Roboto, sans-serif;
   font-size: 17px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 26px;
   color: #fff;
   width: 100%;
   height: auto;
@@ -8089,6 +8099,23 @@ h6 {
   height: auto;
   padding-left: 143px;
   padding-top: 40px; }
+
+.test-ok {
+  min-width: 129px;
+  min-height: 129px;
+  border: 11px solid #E6E6E6;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 32px; }
+  .test-ok:before {
+    content: '';
+    position: absolute;
+    background-image: url("../assets/images/icon/ok-green-icon.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 100%;
+    top: 34px;
+    left: 32px; }
 
 svg .cls-1 {
   fill: transparent;
@@ -8538,6 +8565,131 @@ button[disabled].bt-round {
     content: none; }
   .progressbar-item.active::before {
     background-color: #41c5eb; }
+
+.status-progressbar__wrap {
+  padding-top: 100px; }
+
+.status-progressbar-container {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px; }
+
+.status-progressbar-item {
+  width: 92px;
+  height: 100%;
+  list-style: none;
+  position: relative; }
+  .status-progressbar-item:after, .status-progressbar-item:before {
+    content: '';
+    position: absolute; }
+  .status-progressbar-item:before {
+    height: 10px;
+    width: 0;
+    right: 100%;
+    top: 40px;
+    background-color: #E6E6E6;
+    z-index: 99;
+    transform: translate(-100%, 0); }
+  .status-progressbar-item:after {
+    width: 92px;
+    height: 92px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    z-index: 100;
+    top: 0; }
+  .status-progressbar-item:first-child::before {
+    content: none; }
+  .status-progressbar-item.active:before {
+    width: 10vw;
+    transform: translate(0, 0); }
+  .status-progressbar-item.active:before, .status-progressbar-item.active:after {
+    background-color: #41c5eb; }
+  .status-progressbar-item.active .status-progressbar-inner {
+    border-color: rgba(65, 197, 235, 0.3); }
+  .status-progressbar-item.active .status-progressbar-txt p.txt.progressbar-txt-color {
+    color: #063f5f; }
+  .status-progressbar-item.active .status-progressbar-txt p.txt-small.progressbar-txt-color {
+    color: #000000; }
+  .status-progressbar-item:last-child.active:after {
+    background-color: #063f5f; }
+  .status-progressbar-item.active--current:after {
+    width: 112px;
+    height: 112px;
+    top: -10px; }
+  .status-progressbar-item.active--current .status-progressbar-inner {
+    width: 139px;
+    height: 139px;
+    top: -23px;
+    left: -14px;
+    border-color: rgba(65, 197, 235, 0.3); }
+    .status-progressbar-item.active--current .status-progressbar-inner:after {
+      content: '';
+      position: absolute;
+      width: 167px;
+      height: 167px;
+      border: 32px solid rgba(65, 197, 235, 0.12);
+      border-radius: 50%;
+      top: -17px;
+      left: -18px; }
+  .status-progressbar-item.active--current .status-progressbar-icon {
+    margin-left: 10px; }
+
+.status-progressbar-inner {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid #E6E6E6;
+  top: -12px;
+  left: -11px; }
+
+.status-progressbar-icon {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  background-repeat: no-repeat;
+  z-index: 101; }
+
+.status-progressbar-icon.icon-test-tubes {
+  width: 48%;
+  left: 24px;
+  top: 23px; }
+
+.status-progressbar-icon.icon-forklift {
+  left: 22px;
+  width: 61%;
+  top: 22px; }
+
+.icon-car {
+  background-image: url(../assets/images/icon/car-icon.svg); }
+
+.icon-pc-pointer {
+  background-image: url(../assets/images/icon/pc-pointer-icon.svg); }
+
+.icon-forklift {
+  background-image: url(../assets/images/icon/forklift-icon.svg); }
+
+.icon-test-tubes {
+  background-image: url(../assets/images/icon/test-tubes-icon.svg); }
+
+.icon-pc-dna {
+  background-image: url(../assets/images/icon/pc-dna-icon.svg); }
+
+.status-progressbar-txt {
+  width: 135px;
+  margin: 0 auto;
+  position: relative;
+  right: 20px;
+  padding-top: 20px; }
+  .status-progressbar-txt .progressbar-txt-color {
+    color: #E6E6E6; }
 
 @keyframes anim-text-btn-round {
   0% {
@@ -9664,12 +9816,16 @@ span.summary.ng-valid {
   .box-half-column {
     padding: 50px 2%; }
 
-  .box-txt__wrap--inline-block {
-    width: 77%; }
-
   .dropdown-txt__content.panel {
     padding-top: 10px;
-    padding-bottom: 29px; } }
+    padding-bottom: 29px; }
+
+  .box-checkbox__wrap {
+    padding-left: 20px; }
+
+  .box-txt__wrap--inline-block {
+    padding-left: 2%;
+    width: 76%; } }
 @media (max-width: 960px) {
   h1 {
     font-size: 35px;
@@ -9769,9 +9925,6 @@ span.summary.ng-valid {
   .box {
     padding-left: 15px;
     padding-right: 15px; }
-
-  .box-checkbox__wrap {
-    padding-left: 20px; }
 
   .box-txt__wrap--inline-block {
     width: 68%;
@@ -10150,6 +10303,7 @@ a:hover, a:focus {
   height: 100%;
   z-index: 100;
   overflow-y: visible;
+  overflow-y: -webkit-paged-x;
   overflow-x: hidden;
   border-top: 10px solid #41c5eb;
   transition: transform 1.2s ease-out, opacity 1.2s ease-out; }

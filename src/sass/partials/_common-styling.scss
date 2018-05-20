@@ -33,6 +33,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.container-xs-button-flex {
+  max-width: 572px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 //end styling container
 
 //section staling
@@ -65,6 +72,11 @@ body {
   padding-top: 90px;
   width: 100%;
   height: auto;
+}
+
+.align-vertical--center {
+  height: 100%;
+  align-self: center;
 }
 //end section staling
 
@@ -303,7 +315,7 @@ h6 {
   font-family: Roboto, sans-serif;
   font-size: 17px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 26px;
   color: $white;
   width: 100%;
   height: auto;
@@ -681,4 +693,24 @@ h6 {
   height: auto;
   padding-left: 143px;
   padding-top: 40px;
+}
+//accourdion end
+
+.test-ok {
+  min-width: 129px;
+  min-height: 129px;
+  border: 11px solid $gray;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 32px;
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: url("../assets/images/icon/ok-green-icon.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 100%;
+    top: 34px;
+    left: 32px;
+  }
 }

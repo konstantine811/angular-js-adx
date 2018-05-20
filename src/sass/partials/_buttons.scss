@@ -417,6 +417,172 @@ button[disabled].bt-round {
   }
 }
 
+//progresbar status purchase
+//progressbar
+.status-progressbar__wrap {
+  padding-top: 100px;
+}
+
+.status-progressbar-container {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.status-progressbar-item {
+  width: 92px;
+  height: 100%;
+  list-style: none;
+  position: relative;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+  }
+  &:before {
+    height: 10px;
+    width: 0;
+    right: 100%;
+    top: 40px;
+    background-color: $gray;
+    z-index: 99;
+    transform: translate(-100%, 0);
+  }
+  &:after {
+    width: 92px;
+    height: 92px;
+    background-color: $gray;
+    border-radius: 50%;
+    z-index: 100;
+    top: 0;
+  }
+  &:first-child::before {
+    content: none;
+  }
+  &.active {
+    &:before {
+      width: 10vw;
+      transform: translate(0, 0);
+    }
+    &:before, &:after {
+      background-color: $blue-6;
+    }
+    .status-progressbar-inner {
+      border-color: rgba($blue-6, 0.3);
+    }
+    .status-progressbar-txt  {
+      p.txt.progressbar-txt-color {
+        color: $blue-dark
+      }
+      p.txt-small.progressbar-txt-color {
+        color: $black
+      }
+    }
+  }
+  &:last-child.active {
+    &:after {
+      background-color: $blue-dark;
+    }
+  }
+
+  &.active--current {
+    &:after {
+      width: 112px;
+      height: 112px;
+      top: -10px;
+    }
+    .status-progressbar-inner {
+      width: 139px;
+      height: 139px;
+      top: -23px;
+      left: -14px;
+      border-color: rgba($blue-6, 0.3);
+      &:after {
+        content: '';
+        position: absolute;
+        width: 167px;
+        height: 167px;
+        border: 32px solid rgba($blue-6, 0.12);
+        border-radius: 50%;
+        top: -17px;
+        left: -18px;
+      }
+    }
+    .status-progressbar-icon {
+      margin-left: 10px;
+    }
+  }
+}
+
+.status-progressbar-inner {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid $gray;
+  top: -12px;
+  left: -11px;
+}
+
+.status-progressbar-icon {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+
+.status-progressbar-icon.icon-test-tubes {
+  width: 48%;
+  left: 24px;
+  top: 23px;
+}
+
+.status-progressbar-icon.icon-forklift {
+  left: 22px;
+  width: 61%;
+  top: 22px;
+}
+
+
+.icon-car {
+  background-image: url(../assets/images/icon/car-icon.svg);
+}
+
+.icon-pc-pointer {
+  background-image: url(../assets/images/icon/pc-pointer-icon.svg);
+}
+
+.icon-forklift {
+  background-image: url(../assets/images/icon/forklift-icon.svg);
+}
+
+.icon-test-tubes {
+  background-image: url(../assets/images/icon/test-tubes-icon.svg);
+}
+
+.icon-pc-dna {
+  background-image: url(../assets/images/icon/pc-dna-icon.svg);
+}
+
+.status-progressbar-txt {
+  width: 135px;
+  margin: 0 auto;
+  position: relative;
+  right: 20px;
+  padding-top: 20px;
+
+  .progressbar-txt-color {
+    color: $gray;
+  }
+
+}
 
 //animation
 @keyframes anim-text-btn-round {

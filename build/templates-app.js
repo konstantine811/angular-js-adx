@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -653,8 +653,8 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/products/products.tpl.html",
+angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/products/pages/pre-purchase.tpl.html",
     "<div class=\"products-page\">\n" +
     "  <div class=\"products-head__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
@@ -663,7 +663,7 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
     "      </div>\n" +
     "      <div class=\"row\">\n" +
     "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap\">\n" +
+    "          <div class=\"img__wrap txt-center\">\n" +
     "            <img class=\"img product-img--alzheimers\" src=\"./assets/images/Alzheimers-Genetic-Test.png\" alt=\"\">\n" +
     "          </div>\n" +
     "          <div class=\"title__wrap\">\n" +
@@ -677,7 +677,7 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap\">\n" +
+    "          <div class=\"img__wrap txt-center\">\n" +
     "            <img class=\"img product-img--helix\" src=\"./assets/images/Helix-Bio-Labs.png\" alt=\"\">\n" +
     "          </div>\n" +
     "          <div class=\"title__wrap\">\n" +
@@ -694,6 +694,93 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
     "    </div>\n" +
     "  </div>\n" +
     "</div>");
+}]);
+
+angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/products/pages/sequencingStatus.tpl.html",
+    "<div class=\"sequencing-status-page\">\n" +
+    "  <div class=\"sequencing-status-head__wrap\">\n" +
+    "    <div class=\"section__wrap\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h1 class=\"txt-blue-dark txt-center\">Current status on your DNA samples</h1>\n" +
+    "        </div>\n" +
+    "        <!--progress-bar-->\n" +
+    "        <div class=\"status-progressbar__wrap\">\n" +
+    "          <ul class=\"status-progressbar-container\">\n" +
+    "            <li class=\"status-progressbar-item active\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-car\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Physician\n" +
+    "                  Review</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The physician is determining if the test is appropriate for user.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li class=\"status-progressbar-item  active\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-pc-pointer\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Kit\n" +
+    "                  Registered</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user has spit in their sample tube and registered it for shipment.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li class=\"status-progressbar-item active\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-forklift\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Manifest\n" +
+    "                  Uploaded</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample has been received by the lab.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li class=\"status-progressbar-item  active\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-test-tubes\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">DNA Extraction\n" +
+    "                  Complete</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample is done in the lab and currently being processed.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li class=\"status-progressbar-item  active\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-pc-dna\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Data Delivery\n" +
+    "                  Complete</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The Genomics Service will now provide variant data from the user's sample.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li class=\"status-progressbar-item  active active--current\">\n" +
+    "              <div class=\"status-progressbar-inner\"></div>\n" +
+    "              <div class=\"status-progressbar-icon icon-pc-dna\"></div>\n" +
+    "              <div class=\"status-progressbar-txt\">\n" +
+    "                <p class=\"txt txt-bold txt-center progressbar-txt-color\">Results ready\n" +
+    "                  for view</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample is being reanalyzed.</p>\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "          </ul>\n" +
+    "        </div>\n" +
+    "        <!--end  progress-bar-->\n" +
+    "        <div class=\"title__wrap txt-center\">\n" +
+    "          <div class=\"container-xs-button-flex\">\n" +
+    "            <div class=\"test-ok\"></div>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center\">Your DNA sample test\n" +
+    "              results are now ready.</h4>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>");
+}]);
+
+angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/products/products.tpl.html",
+    "<ui-view></ui-view>");
 }]);
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -1085,22 +1172,16 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <!--section first-->\n" +
     "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-7\">\n" +
-    "          <div class=\"title__wrap\">\n" +
-    "            <h3 class=\"txt-blue\">{{ user.first_name }},</h3>\n" +
-    "            <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genotype is &lte2/e4&gt.</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt__wrap\">\n" +
-    "            <div class=\"txt txt-black\">\n" +
-    "              Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-5\">\n" +
-    "          <div class=\"result-section-first__img\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
-    "          </div>\n" +
+    "      <div class=\"result-section-first__img\">\n" +
+    "        <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue\">{{ user.first_name }},</h3>\n" +
+    "        <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genotype is &lte2/e4&gt.</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"txt__wrap\">\n" +
+    "        <div class=\"txt txt-black\">\n" +
+    "          Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      \n" +
