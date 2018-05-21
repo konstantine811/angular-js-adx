@@ -661,7 +661,7 @@ angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$tem
     "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue\">Order here</button>\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Order here</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-sm-6\">\n" +
@@ -675,7 +675,7 @@ angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$tem
     "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue\">Connect here</button>\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect here</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
