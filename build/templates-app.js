@@ -2483,8 +2483,8 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div ui-view ng-if=\"!preResult\"></div>\n" +
     "<!--this is new end-->\n" +
     "\n" +
-    "<!--this is old-->\n" +
-    "<div class=\"row\">\n" +
+    "<!--this is old  To be deleted -->\n" +
+    "<!--<div class=\"row\">\n" +
     "  <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
     "  <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
     "  <div ng-show=\"consentAgreed\">\n" +
@@ -2520,7 +2520,8 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "    </form>\n" +
     "  </div>\n" +
     "  <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
-    "</div>");
+    "</div>\n" +
+    "-->");
 }]);
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
