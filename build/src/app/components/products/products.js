@@ -11,6 +11,9 @@ angular.module( 'ixLayer.products', [
       templateUrl: 'components/products/products.tpl.html',
       data:{ pageTitle: 'Products' },
       resolve: {
+        userInfo: ['userAccessSrv', function (userAccessSrv) {
+          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+        }],
         products: ['productsService', function (productsService) {
           return productsService.getProducts();
         }],
@@ -43,9 +46,14 @@ angular.module( 'ixLayer.products', [
     });
   })
 
-  .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', function ProductsCtrl( $scope, products, statusProducts) {
+  .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', '$state', function ProductsCtrl( $scope, products, statusProducts, $state) {
     $scope.products = products;
-    console.log(statusProducts);
+
+    var product_id = statusProducts[0].product_id;
+
+    if (statusProducts[0].result_ready) {
+      $state.go('results', {id: product_id});
+    }
   }])
 
   .controller('ProductDetailCtrl', ['$scope',  'product', function ProductDetailCtrl($scope, product) {

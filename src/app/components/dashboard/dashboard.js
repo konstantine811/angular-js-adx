@@ -20,7 +20,14 @@ angular.module( 'ixLayer.dashboard', [
     });
   })
   
-  .controller( 'DashboardCtrl', ['$scope', 'profile', function DashboardCtrl( $scope, profile) {
+  .controller( 'DashboardCtrl', ['$scope', 'profile', '$state', function DashboardCtrl( $scope, profile, $state) {
       var helix_profile = profile.helix_profile;
       $scope.status = helix_profile;
+
+      if (helix_profile.product_status.length > 0) {
+        $state.go('products.status');
+      } else {
+        $state.go('products.pre-purchase');
+      }
+
   }]);

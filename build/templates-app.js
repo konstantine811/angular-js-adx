@@ -54,19 +54,7 @@ angular.module("components/contact/contact.tpl.html", []).run(["$templateCache",
 
 angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/dashboard/dashboard.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1 class=\"txt-blue-dark\">Status: {{ status.seq_status }}</h1>\n" +
-    "        <ul>\n" +
-    "            <li ng-repeat=\"product in status.product_status\">\n" +
-    "                <p class=\"txt-blue-dark\">product Id: {{product.product_id}}</p>\n" +
-    "                <p class=\"txt-blue-dark\" ng-if=\"product.product_consent_agreed_date\"> Product consent agreed date{{ product.product_consent_agreed_date }}</p>\n" +
-    "                <p class=\"txt-blue-dark\">Product status {{ product.product_status}}</p>\n" +
-    "                <p class=\"txt-blue-dark\">Submitted date {{ product.ldt_submitted_date }}</p>\n" +
-    "            </li>\n" +
-    "        </ul>\n" +
-    "    </div>\n" +
-    "</div>");
+    "");
 }]);
 
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -2703,7 +2691,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__purchase button-anim\">\n" +
-    "                    <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "                    <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2736,7 +2724,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
