@@ -13,6 +13,9 @@ angular.module( 'ixLayer.products', [
       resolve: {
         products: ['productsService', function (productsService) {
           return productsService.getProducts();
+        }],
+        statusProducts: ['productsService', function(productsService) {
+          return productsService.getProductsStatus();
         }]
       }
     })
@@ -40,8 +43,9 @@ angular.module( 'ixLayer.products', [
     });
   })
 
-  .controller( 'ProductsCtrl', ['$scope', 'products', function ProductsCtrl( $scope, products) {
+  .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', function ProductsCtrl( $scope, products, statusProducts) {
     $scope.products = products;
+    console.log(statusProducts);
   }])
 
   .controller('ProductDetailCtrl', ['$scope',  'product', function ProductDetailCtrl($scope, product) {

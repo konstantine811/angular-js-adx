@@ -811,6 +811,8 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "  \n" +
+    "  \n" +
     "</div>");
 }]);
 
@@ -821,25 +823,133 @@ angular.module("components/products/products.tpl.html", []).run(["$templateCache
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/productsDetail.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <div class=\"col-sm-12\">\n" +
-    "            <div ng-show=\"!contentEmpty\">\n" +
-    "                <img ng-src=\"{{metadata.product_image}}\">\n" +
-    "                <p>{{metadata.product_summary}}</p>\n" +
+    "<div class=\"sequencing-status-page\">\n" +
+    "    <div class=\"sequencing-status-head__wrap\">\n" +
+    "        <div class=\"section__wrap\">\n" +
+    "            <div class=\"container-lg--dashboard\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                    <h1 class=\"txt-blue txt-center\">Purchase receipts</h1>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                    <p class=\"txt txt-black txt-center\">Receipt #01234 .- April 29, 2018</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"section__wrap\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                        <div class=\"flex-column\">\n" +
+    "                            <p class=\"txt txt-blue txt-bold\">Payment from</p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"flex-column flex-column--line\">\n" +
+    "                            <div class=\"line-circle\"></div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"flex-column\">\n" +
+    "                            <p class=\"txt txt-blue txt-bold\">Preapared for</p>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                        <div class=\"flex-column\">\n" +
+    "                            <div class=\"txt--indent-small\">\n" +
+    "                                <p class=\"txt-small txt-black\">Name: Andrew Pettersson</p>\n" +
+    "                                <p class=\"txt-small txt-black\">andrew.pettersson@gmail.com</p>\n" +
+    "                                <p class=\"txt-small txt-black\">Adress: Stenkålsgatan 12</p>\n" +
+    "                                <p class=\"txt-small txt-black\">Phone: +467213211</p>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"flex-column txt-right\">\n" +
+    "                            <p class=\"txt txt-black txt-bold\">Affirmativ</p>\n" +
+    "                            <p class=\"txt-small txt-black\">info@affirmativ.com</p>\n" +
+    "                            <div class=\"txt--indent-small\">\n" +
+    "                                <p class=\"txt-small txt-black\">Adress: Stenkålsgatan 12</p>\n" +
+    "                                <p class=\"txt-small txt-black\">Phone: +467213211</p>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"section__wrap\">\n" +
+    "                    <table class=\"table table-hover table--purchase\">\n" +
+    "                        <thead>\n" +
+    "                            <tr>\n" +
+    "                                <th scope=\"col\" >Description</th>\n" +
+    "                                <th scope=\"col\" class=\"txt-uppercase txt-right\">Qty</th>\n" +
+    "                                <th scope=\"col\" class=\"txt-uppercase txt-right\">Price</th>\n" +
+    "                                <th scope=\"col\" class=\"txt-uppercase txt-right\">Subtotal</th>\n" +
+    "                            </tr>\n" +
+    "                        </thead>\n" +
+    "                        <tbody>\n" +
+    "                            <tr>\n" +
+    "                                <th scope=\"row\" class=\"txt-small txt-black\">Inherited Diabetes Test</th>\n" +
+    "                                <td class=\"txt-right\">1</td>\n" +
+    "                                <td class=\"txt-right\">$249.00</td>\n" +
+    "                                <td class=\"txt-right\">$249.00</td>\n" +
+    "                            </tr>\n" +
+    "                            <tr>\n" +
+    "                                <th scope=\"row\" class=\"txt-small txt-black\">Affirmativ DNA kit</th>\n" +
+    "                                <td class=\"txt-right\">1</td>\n" +
+    "                                <td class=\"txt-right\">$89.00</td>\n" +
+    "                                <td class=\"txt-right\">$89.00</td>\n" +
+    "                            </tr>\n" +
+    "                        </tbody>\n" +
+    "                    </table>\n" +
+    "                    <div class=\"row__wrap--space-top\">\n" +
+    "                        <div class=\"container-flex-end\">\n" +
+    "                            <div class=\"column-right\">\n" +
+    "                                <div class=\"txt-small txt-right txt-uppercase txt-black\">Subtotal</div>\n" +
+    "                                <div class=\"txt-small txt-right txt-uppercase txt-black\">Shipping</div>\n" +
+    "                                <div class=\"txt-small txt-right txt-uppercase txt-black\">Total</div>\n" +
+    "                            </div>\n" +
+    "                            <div class=\"column-left\">\n" +
+    "                                <div class=\"txt-small txt-black\">$338.00</div>\n" +
+    "                                <div class=\"txt-small txt-black\">$10.00</div>\n" +
+    "                                <div class=\"txt-small txt-black\">$348.00</div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row__wrap--space-top\">\n" +
+    "                        <div class=\"txt-wrap__border\">\n" +
+    "                            <p class=\"txt-small txt-bold txt-black\">Thank you for your purchase!</p>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt--indent-small\">\n" +
+    "                        <div class=\"container-flex\">\n" +
+    "                            <div class=\"column-flex\">\n" +
+    "                                <p class=\"txt txt--small txt-black\">affirmativ shop inc. 2018</p>\n" +
+    "                            </div>\n" +
+    "                            <div class=\"column-flex\">\n" +
+    "                                <p class=\"txt txt--small txt-black\">www.affirmativdiagnostics.com <span class=\"hypphen-space\">-</span> info@affirmativ.com<span class=\"hypphen-space\">-</span>Tel: 125 627 387</p>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
     "            </div>\n" +
-    "            <p>Product ID {{product.id}}</p>\n" +
-    "            <p>Product Name {{ product.name}}</p>\n" +
-    "            <p>Product Description {{ product.description}}</p>\n" +
-    "            <p>Price {{ product.price}}</p>\n" +
-    "            <button ng-if=\"product.product_consent_needed\"  ui-sref=\"results({id: product.id})\" class=\"btn btn-default\">Show Status</button>\n" +
-    "            &nbsp;&nbsp;\n" +
-    "            <a ui-sref=\"products\" class=\"btn btn-primary\">Back to Products</a>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "        <div ui-view></div>\n" +
+    "    \n" +
+    "    <div class=\"section__wrap\">\n" +
+    "        <div class=\"section-bgc--silver\">\n" +
+    "            <div class=\"container-lg--dashboard\">\n" +
+    "                <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
+    "                <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
+    "                    <div class=\"row\">\n" +
+    "                        <div class=\"col-sm-6\">\n" +
+    "                            <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
+    "                            <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
+    "                            <div class=\"txt--indent\">\n" +
+    "                                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
+    "                            </div>\n" +
+    "                            <div class=\"txt--indent\">\n" +
+    "                                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-sm-6\">\n" +
+    "                            <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
+    "                                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
+    "    \n" +
     "</div>");
 }]);
 

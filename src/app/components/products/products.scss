@@ -19,9 +19,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: calc(100% + 755px);
-    height: 123%;
+    height: 150%;
     top: -24%;
     left: -40%;
     opacity: 0.2;
+  }
+}
+
+.table--purchase {
+  &.table > thead > tr > th {
+    border-bottom: 2px solid $gray;
+    padding: 8px 0 8px;
+  }
+  &.table, &.table > tbody > tr > td, &.table > tbody > tr > th {
+    border: none;
+    padding: 8px 0 8px;
+  }
+  &.table > thead > tr > th {
+    padding: 0 0 20px;
   }
 }
