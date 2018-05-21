@@ -24,7 +24,7 @@ angular.module( 'ixLayer.dashboard', [
       var helix_profile = profile.helix_profile;
       $scope.status = helix_profile;
 
-      if (helix_profile.product_status.length > 0) {
+      if (helix_profile !== null && helix_profile.product_status.length > 0) {
         $state.go('products.status');
       } else {
         $state.go('products.pre-purchase');

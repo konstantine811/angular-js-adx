@@ -27,7 +27,7 @@ angular.module( 'ixLayer.products', [
       templateUrl: 'components/products/pages/sequencingStatus.tpl.html'
     })
       .state('products.pre-purchase', {
-        url: '/status',
+        url: '/pre-purchase',
         templateUrl: 'components/products/pages/pre-purchase.tpl.html'
       });
   })
@@ -49,10 +49,12 @@ angular.module( 'ixLayer.products', [
   .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', '$state', function ProductsCtrl( $scope, products, statusProducts, $state) {
     $scope.products = products;
 
-    var product_id = statusProducts[0].product_id;
+    if  (statusProducts.length > 0) {
+      var product_id = statusProducts[0].product_id;
 
-    if (statusProducts[0].result_ready) {
-      $state.go('results', {id: product_id});
+      if (statusProducts[0].result_ready) {
+        $state.go('results', {id: product_id});
+      }
     }
   }])
 
