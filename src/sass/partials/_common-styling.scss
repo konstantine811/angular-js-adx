@@ -40,6 +40,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.txt-wrap-under-button {
+  max-width: 256px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 //end styling container
 
 //section staling
@@ -280,6 +287,11 @@ h6 {
   padding-top: 37px;
 }
 
+.txt__wrap.txt__wrap--border-bottom {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 20px;
+}
+
 .txt {
   font-family: Roboto, sans-serif;
   font-size: 22px;
@@ -293,6 +305,7 @@ h6 {
 
 .txt.txt--small {
   font-size: 14px;
+  line-height: 20px;
 }
 
 .txt--indent {
@@ -703,6 +716,7 @@ h6 {
   border-radius: 50%;
   position: relative;
   margin-right: 32px;
+  display: none;
   &:before {
     content: '';
     position: absolute;
@@ -713,4 +727,8 @@ h6 {
     top: 34px;
     left: 32px;
   }
+}
+
+.test-ok.active {
+  display:  block;
 }

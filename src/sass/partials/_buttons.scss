@@ -162,6 +162,10 @@ button[disabled].bt-round {
   padding: 9px 95px;
 }
 
+.bt-round.bt-round--greatest {
+  padding: 44px 93px;
+}
+
 .bt-round.bt-round--blue {
   background-color: $blue-6;
   &:hover {

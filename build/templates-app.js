@@ -767,9 +767,45 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "        <!--end  progress-bar-->\n" +
     "        <div class=\"title__wrap txt-center\">\n" +
     "          <div class=\"container-xs-button-flex\">\n" +
-    "            <div class=\"test-ok\"></div>\n" +
+    "            <div class=\"test-ok active\"></div>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center\">Your DNA sample test\n" +
     "              results are now ready.</h4>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"button__wrap button--center\">\n" +
+    "          <div class=\"bt-round bt-round--greatest bt-round--blue-dark\">Click Here To View</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt--indent-small txt-wrap-under-button\">\n" +
+    "          <p class=\"txt txt-black txt--small txt-center\">\n" +
+    "            An email with your DNA test results\n" +
+    "            has been sent to you.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
+    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
+    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
+    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -1172,7 +1208,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <!--section first-->\n" +
     "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-section-first__img\">\n" +
+    "      <div class=\"result-section-first__img hide-xs-mobile\">\n" +
     "        <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
@@ -2179,7 +2215,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "            </div>\n" +
     "            <div class=\"hide-mobile col-xs-12 col-sm-5\">\n" +
     "              <div class=\"pre-result-head__img\">\n" +
-    "                <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white\">\n" +
+    "                <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--md-small img-bgc-wrap-middle__rounded--white\">\n" +
     "                  <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--larger\" src=\"'./assets/images/svg/svg-table.svg'\"></ng-include>\n" +
     "                </div>\n" +
     "              </div>\n" +

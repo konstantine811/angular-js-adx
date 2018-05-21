@@ -64,7 +64,7 @@
     font-size: 18px;
   }
 
-  .img-bgc-wrap-middle__rounded {
+  .img-bgc-wrap-middle__rounded.img-bgc-wrap-middle__rounded--md-small {
     height: 216px;
     width: 216px;
   }
@@ -235,5 +235,9 @@
   }
   .container-lg--dashboard--not-space-xs {
     padding: 0;
+  }
+
+  .hide-xs-mobile {
+    display: none !important;
   }
 }

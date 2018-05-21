@@ -7592,6 +7592,12 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.txt-wrap-under-button {
+  max-width: 256px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
 .section-box-shadow {
   width: 100%;
   height: auto;
@@ -7778,6 +7784,10 @@ h6 {
   height: auto;
   padding-top: 37px; }
 
+.txt__wrap.txt__wrap--border-bottom {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 20px; }
+
 .txt {
   font-family: Roboto, sans-serif;
   font-size: 22px;
@@ -7789,7 +7799,8 @@ h6 {
   margin: 0 auto; }
 
 .txt.txt--small {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 20px; }
 
 .txt--indent {
   padding-top: 48px; }
@@ -8106,7 +8117,8 @@ h6 {
   border: 11px solid #E6E6E6;
   border-radius: 50%;
   position: relative;
-  margin-right: 32px; }
+  margin-right: 32px;
+  display: none; }
   .test-ok:before {
     content: '';
     position: absolute;
@@ -8116,6 +8128,9 @@ h6 {
     height: 100%;
     top: 34px;
     left: 32px; }
+
+.test-ok.active {
+  display: block; }
 
 svg .cls-1 {
   fill: transparent;
@@ -8377,6 +8392,9 @@ button[disabled].bt-round {
 
 .bt-round.bt-round--large {
   padding: 9px 95px; }
+
+.bt-round.bt-round--greatest {
+  padding: 44px 93px; }
 
 .bt-round.bt-round--blue {
   background-color: #41c5eb; }
@@ -9034,6 +9052,22 @@ button[disabled].bt-round {
   background-image: url(../assets/images/products/bgc-products-head.png);
   background-repeat: no-repeat;
   background-size: cover; }
+
+.sequencing-status-head__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .sequencing-status-head__wrap:before {
+    content: '';
+    position: absolute;
+    background-image: url("../assets/images/bgc-polygon-silver.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% + 755px);
+    height: 123%;
+    top: -24%;
+    left: -40%;
+    opacity: 0.2; }
 
 .header {
   position: fixed;
@@ -9695,6 +9729,11 @@ span.summary.ng-valid {
   float: right;
   margin: 55px -463px 16px 13px; }
 
+.result-section-first__img {
+  float: right;
+  width: 40%;
+  padding-top: 54px; }
+
 .profile-page {
   background-image: url("../assets/images/bgc-polygon-silver.png");
   background-repeat: no-repeat;
@@ -9801,7 +9840,7 @@ span.summary.ng-valid {
   .txt {
     font-size: 18px; }
 
-  .img-bgc-wrap-middle__rounded {
+  .img-bgc-wrap-middle__rounded.img-bgc-wrap-middle__rounded--md-small {
     height: 216px;
     width: 216px; }
 
@@ -9948,7 +9987,10 @@ span.summary.ng-valid {
     padding-top: 0; }
 
   .container-lg--dashboard--not-space-xs {
-    padding: 0; } }
+    padding: 0; }
+
+  .hide-xs-mobile {
+    display: none !important; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -10303,7 +10345,6 @@ a:hover, a:focus {
   height: 100%;
   z-index: 100;
   overflow-y: visible;
-  overflow-y: -webkit-paged-x;
   overflow-x: hidden;
   border-top: 10px solid #41c5eb;
   transition: transform 1.2s ease-out, opacity 1.2s ease-out; }
