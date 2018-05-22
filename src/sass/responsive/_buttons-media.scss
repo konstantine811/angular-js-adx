@@ -10,6 +10,9 @@
       top: 10px;
     }
   }
+  .bt-round-lg {
+    padding: 9px 36px;
+  }
 }
 
 @media (max-width: $breakpoint-lg) {
@@ -70,5 +73,8 @@
   }
   .button__wrap--step {
     margin: 14px auto;
+  }
+  .bt-round.bt-round--large {
+    padding: 9px 63px;
   }
 }

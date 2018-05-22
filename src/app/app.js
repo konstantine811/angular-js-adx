@@ -67,6 +67,9 @@ angular.module( 'ixLayer', [
         case 'home' :
           $scope.hideSideNavBar = false;
           break;
+        case 'login' :
+          $scope.hideSideNavBar = false;
+          break;
         default:
           $scope.hideSideNavBar = true;
           break;

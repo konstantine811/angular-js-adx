@@ -7,29 +7,27 @@
 }
 
 .form-control {
-  font-size: 15pt;
-  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   display: inline-block;
   height: 50px;
   width: 100%;
   border: none;
-  box-shadow: none;
-  color: $blue-2;
-  border-radius: 42px;
-  padding-left: 25px;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: $blue-dark;
+  background-color: transparent;
+  border-bottom: 2px solid $blue-dark;
+  padding: 0 !important;
 }
 
 .form-control.form-control--search {
   padding-left: 53px;
 }
 
-.form-label {
-  font-size: 13pt;
-  font-weight: 500;
-  font-family: Quicksand, sans-serif;
-  min-width: 100px;
-  width: 31%;
+.form-group {
+  padding-top: 32px;
 }
 
 .form-input {
@@ -52,19 +50,19 @@
 }
 
 form .ng-valid-required.ng-dirty {
-  background-color: lightpink;
+  background-color: transparent;
 }
 
 form .ng-invalid-email.ng-dirty {
-  background-color: lightgoldenrodyellow;
+  background-color: transparent;
 }
 
 form .ng-invalid.ng-diry {
-  background-color: lightpink;
+  background-color:  transparent;
 }
 
 form .ng-valid.ng-dirty {
-  background-color: lightgreen;
+  background-color: transparent;
 }
 
 span.summary.ng-invalid {

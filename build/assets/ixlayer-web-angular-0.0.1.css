@@ -7694,6 +7694,9 @@ a.link-underline {
 .txt-blue {
   color: #41c5eb !important; }
 
+.txt-blue-2 {
+  color: #2F65C0 !important; }
+
 .txt-blue-dark {
   color: #063f5f !important; }
 
@@ -7778,6 +7781,9 @@ h6 {
   margin: 0;
   padding: 0; }
 
+h6.title-roboto {
+  font-family: Roboto, sans-serif; }
+
 .sub-header-txt {
   font-family: Roboto, sans-serif;
   font-size: 35px;
@@ -7821,6 +7827,10 @@ h6 {
 .txt.txt--small {
   font-size: 14px;
   line-height: 20px; }
+
+.txt.txt--exs-small {
+  font-size: 12px;
+  line-height: 18px; }
 
 .txt--indent {
   padding-top: 48px; }
@@ -9002,67 +9012,31 @@ button[disabled].bt-round {
   padding-bottom: 119px; }
 
 .login-page {
-  position: relative;
   height: 100%;
-  width: 100%;
-  background-color: #fff; }
+  width: 100%; }
 
-.login-page__image-bgc {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  filter: blur(6px); }
+.login-bgc {
+  background-image: url("../assets/images/background-login.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.head-sign {
+.login-form__wrap {
   width: 100%;
   height: auto;
-  position: relative; }
-
-.head-sign__background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 167px; }
-
-.panel--login {
-  margin-top: 18%; }
-
-.forgot-password {
-  display: inline-block; }
-
-.login-button {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 207px; }
-
-.login-form {
-  z-index: 10;
-  position: relative;
-  width: 40%;
-  margin: 0 auto;
-  padding-top: 9%; }
-
-.form--login {
-  padding-top: 30px; }
+  padding: 88px 0; }
 
 .form-input__login-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column; }
+  padding-top: 40px; }
 
-.login-button__wrap {
-  padding-top: 14px;
-  text-align: center; }
-
-.login-link {
-  text-align: center; }
-
-.login-link__inner {
-  padding-top: 15px; }
-
-.login-link--register {
-  font-size: 14pt; }
+.login-form {
+  max-width: 449px;
+  min-height: 480px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F9FBFD;
+  border-radius: 7px;
+  padding: 47px 42px; }
 
 .fp-section {
   height: 100vh;
@@ -9344,27 +9318,25 @@ button[disabled].bt-round {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
 
 .form-control {
-  font-size: 15pt;
-  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   display: inline-block;
   height: 50px;
   width: 100%;
   border: none;
-  box-shadow: none;
-  color: #5F83DA;
-  border-radius: 42px;
-  padding-left: 25px; }
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #063f5f;
+  background-color: transparent;
+  border-bottom: 2px solid #063f5f;
+  padding: 0 !important; }
 
 .form-control.form-control--search {
   padding-left: 53px; }
 
-.form-label {
-  font-size: 13pt;
-  font-weight: 500;
-  font-family: Quicksand, sans-serif;
-  min-width: 100px;
-  width: 31%; }
+.form-group {
+  padding-top: 32px; }
 
 .form-input {
   width: 100%;
@@ -9381,16 +9353,16 @@ button[disabled].bt-round {
   text-align: center; }
 
 form .ng-valid-required.ng-dirty {
-  background-color: lightpink; }
+  background-color: transparent; }
 
 form .ng-invalid-email.ng-dirty {
-  background-color: lightgoldenrodyellow; }
+  background-color: transparent; }
 
 form .ng-invalid.ng-diry {
-  background-color: lightpink; }
+  background-color: transparent; }
 
 form .ng-valid.ng-dirty {
-  background-color: lightgreen; }
+  background-color: transparent; }
 
 span.summary.ng-invalid {
   color: red;
@@ -10184,7 +10156,10 @@ span.summary.ng-valid {
 @media (max-width: 1200px) {
   .header__wrap {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+
+  .header-nav__wrap {
+    padding-right: 10px; } }
 @media (max-width: 960px) {
   .header {
     height: 77px; }
@@ -10198,14 +10173,18 @@ span.summary.ng-valid {
     padding-top: 10px; }
 
   .header__logo {
-    width: 19%;
-    height: auto; }
+    width: 16%;
+    height: auto;
+    margin: 8px 0px; }
 
   .header-nav__wrap {
     padding-right: 0; }
 
   .header__button {
-    padding-left: 10px; } }
+    padding-left: 10px; }
+
+  .button__login {
+    padding-right: 9px; } }
 @media (max-width: 768px) {
   .header {
     height: 55px;
@@ -10277,7 +10256,10 @@ span.summary.ng-valid {
     padding: 5px 34px; }
 
   .bt-round-right-icon::before, .bt-round-right-icon::after {
-    top: 10px; } }
+    top: 10px; }
+
+  .bt-round-lg {
+    padding: 9px 36px; } }
 @media (max-width: 1200px) {
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
@@ -10321,7 +10303,10 @@ span.summary.ng-valid {
     flex-flow: wrap; }
 
   .button__wrap--step {
-    margin: 14px auto; } }
+    margin: 14px auto; }
+
+  .bt-round.bt-round--large {
+    padding: 9px 63px; } }
 @media (max-width: 1596px) {
   .img__wrap--float-right {
     width: calc(16% + 502px);
@@ -10359,6 +10344,12 @@ span.summary.ng-valid {
 @media (max-width: 468px) {
   .profile-info__wrap {
     padding: 50px 15px; } }
+@media (max-width: 468px) {
+  .login-form {
+    padding: 15px; }
+
+  .form-input__login-wrap {
+    padding-top: 15px; } }
 a[ng-click] {
   cursor: pointer; }
 

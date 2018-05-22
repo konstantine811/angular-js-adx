@@ -587,57 +587,65 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/login/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/login/login.tpl.html",
-    "<section class=\"login-page\">\n" +
-    "  <div class=\"head-sign\">\n" +
-    "    <div class=\"login-page__image-bgc\"></div>\n" +
-    "    <div class=\"container\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"login-form anim-content-transition\">\n" +
-    "          <div class=\"panel panel--login\">\n" +
-    "            <div class=\"panel__title\">\n" +
-    "              <h2 class=\"txt-middle not-margin\">Sign in to Affirmativ</h2>\n" +
+    "<div class=\"login-page login-bgc\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div class=\"login-form__wrap\">\n" +
+    "        <div class=\"login-form\">\n" +
+    "          <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
+    "          <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
+    "            <div class=\"form-input\">\n" +
+    "              <div class=\"form-input__login-wrap\">\n" +
+    "                <div class=\"form-group form-group--col\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
+    "                  <input type=\"email\" id=\"email\" name=\"email\" class=\"form-control\" required ng-model=\"userForm.email\">\n" +
+    "                  <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group form-group--col\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"password\">Password</label>\n" +
+    "                  <input type=\"password\" id=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" required>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
     "            </div>\n" +
-    "            <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
-    "              <div class=\"form-input\">\n" +
-    "                <div class=\"form-input__login-wrap\">\n" +
-    "                  <div class=\"form-group form-group--col\">\n" +
-    "                    <input placeholder=\"Email address\" type=\"email\" name=\"email\" class=\"form-control\" required ng-model=\"userForm.email\">\n" +
-    "                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                      <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                      <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                    </div>\n" +
-    "                  </div>\n" +
-    "                  <div class=\"form-group form-group--col\">\n" +
-    "                    <input placeholder=\"Password\" type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" required>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"login-button__wrap\">\n" +
-    "                <button class=\"bt-round bt-round--blue\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"bt-content\">Sign in</span></button>\n" +
-    "              </div>\n" +
-    "              <div class=\"login-link\">\n" +
-    "                <div class=\"login-link__inner\">\n" +
-    "                  <a href ui-sref=\"register\" class=\"txt-link txt-bold login-link--register\">\n" +
-    "                    I need to create a Affirmativ account\n" +
-    "                  </a>\n" +
-    "                </div>\n" +
-    "                <div class=\"login-link__inner\">\n" +
-    "                  <a href ui-sref=\"forgot_password\" class=\"txt-link\">\n" +
-    "                    Forgot your password ?\n" +
-    "                  </a>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </form>\n" +
-    "            <br>\n" +
-    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.non_field_errors\">{{::error}}</div>\n" +
-    "            <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
-    "          </div>\n" +
+    "            <div class=\"txt--indent-small txt-right \">\n" +
+    "              <a href ui-sref=\"forgot_password\" class=\"txt-link txt-blue-2 txt txt--small txt-medium\">\n" +
+    "                Forgot your password ?\n" +
+    "              </a>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"txt-medium\">Sign in</span></button>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt--indent-small txt-center\">\n" +
+    "              <a href ui-sref=\"register\" class=\"txt-blue txt txt--small txt-bold\">\n" +
+    "                I need to create an account\n" +
+    "              </a>\n" +
+    "            </div>\n" +
+    "          </form>\n" +
+    "          <br>\n" +
+    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors.non_field_errors\">{{::error}}</div>\n" +
+    "          <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
     "        </div>\n" +
-    "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</section>\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
     "");
 }]);
 
@@ -2688,7 +2696,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                </nav>\n" +
     "                <div class=\"header__button\">\n" +
     "                  <div class=\"button__login button-anim\">\n" +
-    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
+    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Sign-in/Join</span></a>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__purchase button-anim\">\n" +
     "                    <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
@@ -2703,28 +2711,28 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          <nav class=\"header-nav__wrap hide-mobile\">\n" +
     "            <ul class=\"header-nav-wrap__inner\">\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "                <a ui-sref=\"products\" class=\"header-nav-link txt-small txt-bold\">Products</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
+    "                <a ui-sref=\"about\" class=\"header-nav-link txt-small txt-bold\">About</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
+    "                <a ui-sref=\" \" class=\"header-nav-link txt-small txt-bold\">Science</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "                <a ui-sref=\"FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "                <a ui-sref=\"contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Account</span></a>\n" +
+    "              <a ui-sref=\"login\" class=\"bt-round bt-round-lg bt-round--blue\"><span class=\"txt txt-small\">Sign-in/Join</span></a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"txt txt-small\">Purchase</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +

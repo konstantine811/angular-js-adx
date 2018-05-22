@@ -15,6 +15,9 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header-nav__wrap {
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: $breakpoint-md) {
@@ -30,14 +33,18 @@
     padding-top: 10px
   }
   .header__logo {
-    width: 19%;
+    width: 16%;
     height: auto;
+    margin: 8px 0px;
   }
   .header-nav__wrap {
     padding-right: 0;
   }
   .header__button {
     padding-left: 10px;
+  }
+  .button__login {
+    padding-right: 9px;
   }
 }
 
