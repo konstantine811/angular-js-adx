@@ -22,7 +22,7 @@ var hosts = {
 };
 
 /** Select the base host to be used **/
-var currentHost = hosts.local;
+var currentHost = hosts.stage;
 
 var restAPIBaseUrl = currentHost.schema + '://' + currentHost.host + '/api';
 

@@ -9418,33 +9418,28 @@ span.summary.ng-valid {
   100% {
     transform: scale(1); } }
 .popup {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 185px;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000; }
+  z-index: 114; }
 
 .popup-content {
-  position: absolute;
+  position: relative;
   z-index: 100;
-  top: 27%;
   right: 0;
   left: 0;
-  width: 327px;
+  top: 0;
+  max-width: 1065px;
   height: auto;
   overflow: hidden;
   background: #fff;
   padding: 20px;
-  border-left: 1px solid #e0e0e0;
   margin: 0 auto;
-  border-radius: 1px; }
-
-.popup-background {
-  background: #000;
-  width: 100%;
-  height: 100%;
-  opacity: .8; }
+  border-radius: 7px; }
 
 .popup.ng-animate {
   transition: all 0.6s ease; }
@@ -9462,60 +9457,6 @@ span.summary.ng-valid {
   animation: hide-popup-anim 0.6s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
 .popup.ng-leave.ng-leave-active .popup-background {
   animation: bg-fade-out 0.6s 1 forwards cubic-bezier(0.22, 0.61, 0.36, 1); }
-
-.popup-condition-txt {
-  position: relative;
-  height: 85%;
-  overflow-y: scroll; }
-
-.popup-content__image-logo {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  transition: all linear 0.5s; }
-
-.popup-content__image {
-  position: relative;
-  left: 8%;
-  z-index: 1;
-  transform: scale(0.3); }
-
-.popup-content__logo {
-  position: relative;
-  right: 9%;
-  z-index: 99; }
-
-.popup-content__image-logo--animation .popup-content__image {
-  animation: anim-img-left 0.8s 0.4s 1 forwards cubic-bezier(1, 0.06, 0, 1.52); }
-.popup-content__image-logo--animation .popup-content__logo {
-  animation: anim-img-right 0.8s 0.4s 1 forwards cubic-bezier(1, 0.06, 0, 1.52); }
-  .popup-content__image-logo--animation .popup-content__logo .logo-affirmativ-large-cross {
-    animation: anim-affirmativ-cross 0.8s 1 forwards cubic-bezier(0, 0.63, 0.17, 1.16); }
-
-.popup-content__title {
-  text-align: center;
-  width: 100%;
-  padding-top: 20px; }
-
-.popup-content__about-title {
-  text-align: center;
-  width: 100%;
-  padding-top: 10px; }
-
-.popup-content__about-txt {
-  text-align: center;
-  width: 55%;
-  margin: 0 auto;
-  padding-top: 15px; }
-
-.popup-content__button {
-  text-align: center;
-  width: 100%;
-  padding-top: 15px; }
-
-.txt-with-logo__wrap {
-  width: 93%;
-  margin: 0 auto; }
 
 @keyframes show-popup-anim {
   0% {
@@ -9632,43 +9573,28 @@ span.summary.ng-valid {
   /* old ie */ }
 
 .register-page {
-  position: relative;
-  width: 100%;
-  height: 100%; }
-
-.register-page__image-bgc {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  filter: blur(6px); }
-
-.panel--register {
-  position: relative;
-  top: 88px; }
-
-.form-input__register-wrap {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  padding-top: 30px; }
-
-.register-checkbox__wrap {
-  text-align: center; }
-
-.register-button__wrap {
-  width: 100%;
-  text-align: center;
-  padding-top: 10px; }
-
-.register-link__inner {
-  text-align: center;
-  padding-top: 15px; }
+  height: 100%;
+  width: 100%; }
 
 .register-form__wrap {
-  width: 942px;
+  width: 100%;
+  height: auto;
+  padding: 88px 0; }
+
+.register-form {
+  max-width: 507px;
+  min-height: 480px;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 9%; }
+  background-color: #F9FBFD;
+  border-radius: 7px;
+  padding: 47px 42px; }
+
+.form-input__register-wrap {
+  padding-top: 40px;
+  width: 100%;
+  height: auto; }
 
 .result-head__over {
   display: flex;

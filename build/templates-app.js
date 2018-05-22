@@ -618,7 +618,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"txt-medium\">Sign in</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"register\" class=\"txt-blue txt txt--small txt-bold\">\n" +
+    "              <a href ui-sref=\"register\" class=\"link-underline txt-blue txt txt--small txt-bold\">\n" +
     "                I need to create an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -1162,118 +1162,108 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
-    "<div class=\"register-page\">\n" +
-    "    <div class=\"register-page__image-bgc\"></div>\n" +
-    "    <div class=\"container-fluid\">\n" +
-    "        <div class=\"row\">\n" +
-    "            <div class=\"register-form__wrap anim-content-transition\">\n" +
-    "                <div id=\"todoPanel\" class=\"panel panel--register\">\n" +
-    "                    <div class=\"panel__title\">\n" +
-    "                        <h1 class=\"txt-middle\">Create account for Affirmativ</h1>\n" +
-    "                    </div>\n" +
-    "                  <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
-    "                    <div ng-show=\"!complete\">\n" +
-    "                      <div class=\"form-input\">\n" +
-    "                        <div class=\"form-input__register-wrap\">\n" +
-    "                          <div class=\"form-group form-group--col-2\">\n" +
-    "                            <input placeholder=\"Email address\" type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
-    "                            <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                              <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                              <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                            </div>\n" +
-    "                          </div>\n" +
-    "                          <div class=\"form-group form-group--col-2\">\n" +
-    "                            <input placeholder=\"First name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                            <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
-    "                          </div>\n" +
-    "                          <div class=\"form-group form-group--col-2\">\n" +
-    "                            <input placeholder=\"Password\" type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
-    "                            <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
-    "                              <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
-    "                              <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
-    "                            </div>\n" +
-    "                          </div>\n" +
-    "                          <div class=\"form-group form-group--col-2\">\n" +
-    "                            <input placeholder=\"Last name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                            <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
-    "                          </div>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                      <div class=\"register-checkbox__wrap\">\n" +
-    "                        <div class=\"checkbox m-b-md m-t-none\" ng-show=\"!complete\">\n" +
-    "                          <input class=\"checkbox-input\" type=\"checkbox\" id=\"agree\" ng-model=\"userForm.terms\" required>\n" +
-    "                          <label for=\"agree\" class=\"checkbox-label\"></label>\n" +
-    "                          Agree to the\n" +
-    "                          <a class=\"txt-link txt-bold\" href=\"http://www.ixlayer.com/terms/\" target=\"_blank\">Terms and Conditions</a>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                      <div class=\"register-button__wrap\">\n" +
-    "                        <button class=\"bt-round bt-round--blue\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"bt-content\">Submit</span></button>\n" +
-    "                      </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
-    "                    <div ng-if=\"complete == true\">\n" +
-    "                      <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
-    "                    </div>\n" +
-    "                  </form>\n" +
-    "                  <div class=\"register-link\">\n" +
-    "                    <div class=\"register-link__inner\">\n" +
-    "                      <a href ui-sref=\"verify_email\" class=\"txt-link txt-bold\">\n" +
-    "                        Verify Email\n" +
-    "                      </a>\n" +
-    "                    </div>\n" +
+    "<div class=\"register-page login-bgc\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div class=\"register-form__wrap\">\n" +
+    "      <div class=\"register-form\">\n" +
+    "        <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
+    "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
+    "          <div ng-show=\"!complete\">\n" +
+    "            <div class=\"form-input\">\n" +
+    "              <div class=\"form-input__register-wrap\">\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
+    "                  <input id=\"email\" type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
     "                  </div>\n" +
     "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
+    "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
+    "                  <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"last_name\">Last name</label>\n" +
+    "                  <input id=\"=last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                  <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"password\">Password</label>\n" +
+    "                  <input id=\"password\" type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
+    "                    <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
+    "                    <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
     "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
-    "            <div class=\"popup-content\">\n" +
-    "               <div class=\"popup-content__wrap\">\n" +
-    "                 <div class=\"popup-content__image-logo\" ng-class=\"showPopup = 'popup-content__image-logo--animation'\">\n" +
-    "                   <div class=\"popup-content__image\">\n" +
-    "                     <div class=\"image-rounded\" style=\"background-image: url('../../assets/images/aniston_user.jpg')\"></div>\n" +
-    "                   </div>\n" +
-    "                   <div class=\"popup-content__logo\">\n" +
-    "                     <div class=\"logo-affirmativ-large\">\n" +
-    "                       <span class=\"logo-affirmativ-large-cross\"></span>\n" +
-    "                     </div>\n" +
-    "                   </div>\n" +
-    "                 </div>\n" +
-    "                 <div class=\"popup-content__title-txt\">\n" +
-    "                   <div class=\"popup-content__title\">\n" +
-    "                     <h2 class=\"txt-bold\">User consent</h2>\n" +
-    "                   </div>\n" +
-    "                   <div class=\"popup-content__about-title\">\n" +
-    "                     <h3 class=\"txt-middle  txt-uppercase\">Client for Affirmativ</h3>\n" +
-    "                   </div>\n" +
-    "                   <div class=\"popup-content__about-txt\">\n" +
-    "                     <p class=\"txt txt-middle\">Hi \"User Name\", Affirmativ is requesting access to your \"App\" account</p>\n" +
-    "                   </div>\n" +
-    "                 </div>\n" +
-    "                 <div class=\"popup-content__txt-with-logo\">\n" +
-    "                   <div class=\"txt-with-logo\">\n" +
-    "                     <div class=\"txt-with-logo__wrap\">\n" +
-    "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-user fa--logo-with-txt\"></i></span>\n" +
-    "                       <p class=\"txt txt-inline-block\">Profile: access to your email profile</p>\n" +
-    "                     </div>\n" +
-    "                   </div>\n" +
-    "                   <div class=\"txt-with-logo\">\n" +
-    "                     <div class=\"txt-with-logo__wrap\">\n" +
-    "                       <span class=\"txt-with-logo__logo\"><i class=\"fa fa-shopping-bag fa--logo-with-txt\"></i></span>\n" +
-    "                       <p class=\"txt txt-inline-block\">Posts: read and write your posts</p>\n" +
-    "                     </div>\n" +
-    "                   </div>\n" +
-    "                 </div>\n" +
-    "                 <div class=\"popup-content__button\">\n" +
-    "                   <button class=\"bt-round bt-round--blue\" class=\"btn btn-primary\" ng-click=\"signConsent()\"><span class=\"bt-content\">Sign in</span></button>\n" +
-    "                 </div>\n" +
-    "               </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
-    "            <div class=\"popup-background\"></div>\n" +
-    "        </div>\n" +
+    "            <div class=\"txt--indent-small txt-center\">\n" +
+    "              <a href ui-sref=\"login\" class=\"link-underline txt-blue txt txt--small txt-bold\">\n" +
+    "                I have an account\n" +
+    "              </a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
+    "          <div ng-if=\"complete == true\">\n" +
+    "            <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
+    "          </div>\n" +
+    "        </form>\n" +
+    "      </div>\n" +
     "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--start markup popup-->\n" +
+    "  <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
+    "    <div class=\"popup-content\">\n" +
+    "      <div class=\"popup-content__wrap\">\n" +
+    "        <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">What you need to know before proceeding</h6>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <h6 class=\"title-roboto txt-medium txt-blue-dark\">Section title</h6>\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <div class=\"txt--small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "              <div class=\"txt--indent-small\">\n" +
+    "                Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <h6 class=\"title-roboto txt-medium txt-blue-dark\">Section title</h6>\n" +
+    "            <div class=\"txt--indent-small\">\n" +
+    "              <div class=\"txt--small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "                <div class=\"txt--indent-small\">\n" +
+    "                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent-small\">\n" +
+    "                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <form action=\"\">\n" +
+    "          <div class=\"box-checkbox__wrap checkbox\">\n" +
+    "            <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\" required>\n" +
+    "            <label for=\"checkbox-results\" class=\"checkbox-label\"></label>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center\">\n" +
+    "            <button class=\"bt-round bt-round--large bt-round--blue\" class=\"btn btn-primary\" ng-click=\"signConsent()\"><span class=\"bt-content\" ng-disabled=\"form.$invalid\">I concent</span></button>\n" +
+    "          </div>\n" +
+    "        </form>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end markup popup-->\n" +
+    "  \n" +
+    "</div>\n" +
     "\n" +
-    "</div>");
+    "\n" +
+    "\n" +
+    "");
 }]);
 
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {

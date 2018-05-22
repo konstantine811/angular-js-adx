@@ -1,112 +1,101 @@
-<div class="register-page">
-    <div class="register-page__image-bgc"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="register-form__wrap anim-content-transition">
-                <div id="todoPanel" class="panel panel--register">
-                    <div class="panel__title">
-                        <h1 class="txt-middle">Create account for Affirmativ</h1>
-                    </div>
-                  <form name="form"  ng-submit="submitForm(userForm)" novalidate>
-                    <div ng-show="!complete">
-                      <div class="form-input">
-                        <div class="form-input__register-wrap">
-                          <div class="form-group form-group--col-2">
-                            <input placeholder="Email address" type="email" name="email" class="form-control" ng-model="userForm.email" required>
-                            <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
-                              <span ng-show="form.email.$error.email">Please enter a valid email address</span>
-                              <span ng-show="form.email.$error.required">Please enter a value</span>
-                            </div>
-                          </div>
-                          <div class="form-group form-group--col-2">
-                            <input placeholder="First name" type="text" name="first_name" class="form-control" ng-model="userForm.first_name"  ng-minlength="3" required>
-                            <p ng-show="form.first_name.$error.minlength && !form.first_name.pristine" class="error">You firstname is too short</p>
-                          </div>
-                          <div class="form-group form-group--col-2">
-                            <input placeholder="Password" type="password" name="password" class="form-control" ng-model="userForm.password" ng-minlength="5" required>
-                            <div class="error" ng-show="form.password.$dirty">
-                              <div class="error" ng-show="form.password.$error.required">This field is required</div>
-                              <div class="error" ng-show="form.password.$error.minlength && !form.password.pristine">Password must be at least 5 characters long</div>
-                            </div>
-                          </div>
-                          <div class="form-group form-group--col-2">
-                            <input placeholder="Last name" type="text" name="last_name" class="form-control" ng-model="userForm.last_name"  ng-minlength="3" required>
-                            <p ng-show="form.last_name.$error.minlength && !form.last_name.pristine" class="error">You lastname is too short</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="register-checkbox__wrap">
-                        <div class="checkbox m-b-md m-t-none" ng-show="!complete">
-                          <input class="checkbox-input" type="checkbox" id="agree" ng-model="userForm.terms" required>
-                          <label for="agree" class="checkbox-label"></label>
-                          Agree to the
-                          <a class="txt-link txt-bold" href="http://www.ixlayer.com/terms/" target="_blank">Terms and Conditions</a>
-                        </div>
-                      </div>
-                      <div class="register-button__wrap">
-                        <button class="bt-round bt-round--blue" test-hook="submit-register" type="submit" class="btn btn-primary" ng-disabled="form.$invalid"><span class="bt-content">Submit</span></button>
-                      </div>
-                    </div>
-                    <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
-                    <div ng-if="complete == true">
-                      <div class="alert alert-success">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>
-                    </div>
-                  </form>
-                  <div class="register-link">
-                    <div class="register-link__inner">
-                      <a href ui-sref="verify_email" class="txt-link txt-bold">
-                        Verify Email
-                      </a>
-                    </div>
+<div class="register-page login-bgc">
+  <div class="container-fluid container-fluid--section">
+    <div class="register-form__wrap">
+      <div class="register-form">
+        <h6 class="title-roboto txt-medium txt-blue-dark txt-center">Create an account</h6>
+        <form name="form"  ng-submit="submitForm(userForm)" novalidate>
+          <div ng-show="!complete">
+            <div class="form-input">
+              <div class="form-input__register-wrap">
+                <div class="form-group">
+                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="email">Email address</label>
+                  <input id="email" type="email" name="email" class="form-control" ng-model="userForm.email" required>
+                  <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
+                    <span ng-show="form.email.$error.email">Please enter a valid email address</span>
+                    <span ng-show="form.email.$error.required">Please enter a value</span>
                   </div>
                 </div>
+                <div class="form-group">
+                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="first_name">First name</label>
+                  <input id="first_name" type="text" name="first_name" class="form-control" ng-model="userForm.first_name"  ng-minlength="3" required>
+                  <p ng-show="form.first_name.$error.minlength && !form.first_name.pristine" class="error">You firstname is too short</p>
+                </div>
+                <div class="form-group">
+                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="last_name">Last name</label>
+                  <input id="=last_name" type="text" name="last_name" class="form-control" ng-model="userForm.last_name"  ng-minlength="3" required>
+                  <p ng-show="form.last_name.$error.minlength && !form.last_name.pristine" class="error">You lastname is too short</p>
+                </div>
+                <div class="form-group">
+                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="password">Password</label>
+                  <input id="password" type="password" name="password" class="form-control" ng-model="userForm.password" ng-minlength="5" required>
+                  <div class="error" ng-show="form.password.$dirty">
+                    <div class="error" ng-show="form.password.$error.required">This field is required</div>
+                    <div class="error" ng-show="form.password.$error.minlength && !form.password.pristine">Password must be at least 5 characters long</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="popup" ng-if="showPopup" test-hook="tour-start-popover">
-            <div class="popup-content">
-               <div class="popup-content__wrap">
-                 <div class="popup-content__image-logo" ng-class="showPopup = 'popup-content__image-logo--animation'">
-                   <div class="popup-content__image">
-                     <div class="image-rounded" style="background-image: url('../../assets/images/aniston_user.jpg')"></div>
-                   </div>
-                   <div class="popup-content__logo">
-                     <div class="logo-affirmativ-large">
-                       <span class="logo-affirmativ-large-cross"></span>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="popup-content__title-txt">
-                   <div class="popup-content__title">
-                     <h2 class="txt-bold">User consent</h2>
-                   </div>
-                   <div class="popup-content__about-title">
-                     <h3 class="txt-middle  txt-uppercase">Client for Affirmativ</h3>
-                   </div>
-                   <div class="popup-content__about-txt">
-                     <p class="txt txt-middle">Hi "User Name", Affirmativ is requesting access to your "App" account</p>
-                   </div>
-                 </div>
-                 <div class="popup-content__txt-with-logo">
-                   <div class="txt-with-logo">
-                     <div class="txt-with-logo__wrap">
-                       <span class="txt-with-logo__logo"><i class="fa fa-user fa--logo-with-txt"></i></span>
-                       <p class="txt txt-inline-block">Profile: access to your email profile</p>
-                     </div>
-                   </div>
-                   <div class="txt-with-logo">
-                     <div class="txt-with-logo__wrap">
-                       <span class="txt-with-logo__logo"><i class="fa fa-shopping-bag fa--logo-with-txt"></i></span>
-                       <p class="txt txt-inline-block">Posts: read and write your posts</p>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="popup-content__button">
-                   <button class="bt-round bt-round--blue" class="btn btn-primary" ng-click="signConsent()"><span class="bt-content">Sign in</span></button>
-                 </div>
-               </div>
+            <div class="button__wrap button--center">
+              <button class="bt-round bt-round--large bt-round--blue-dark" test-hook="submit-register" type="submit" class="btn btn-primary" ng-disabled="form.$invalid"><span class="txt-medium">Register</span></button>
             </div>
-            <div class="popup-background"></div>
-        </div>
+            <div class="txt--indent-small txt-center">
+              <a href ui-sref="login" class="link-underline txt-blue txt txt--small txt-bold">
+                I have an account
+              </a>
+            </div>
+          </div>
+          <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
+          <div ng-if="complete == true">
+            <div class="alert alert-success">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>
+          </div>
+        </form>
+      </div>
     </div>
-
+  </div>
+  
+  <!--start markup popup-->
+  <div class="popup" ng-if="showPopup" test-hook="tour-start-popover">
+    <div class="popup-content">
+      <div class="popup-content__wrap">
+        <h6 class="title-roboto txt-medium txt-blue-dark txt-center">What you need to know before proceeding</h6>
+        <div class="txt__wrap">
+          <h6 class="title-roboto txt-medium txt-blue-dark">Section title</h6>
+          <div class="txt--indent-small">
+            <div class="txt--small txt-black">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.
+              <div class="txt--indent-small">
+                Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.
+              </div>
+            </div>
+          </div>
+          <div class="txt--indent-small">
+            <h6 class="title-roboto txt-medium txt-blue-dark">Section title</h6>
+            <div class="txt--indent-small">
+              <div class="txt--small txt-black">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.
+                <div class="txt--indent-small">
+                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.
+                </div>
+                <div class="txt--indent-small">
+                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="box-checkbox__wrap checkbox">
+            <input type="checkbox" id="checkbox-results" class="checkbox-input" required>
+            <label for="checkbox-results" class="checkbox-label"></label>
+          </div>
+          <div class="button__wrap button--center">
+            <button class="bt-round bt-round--large bt-round--blue" class="btn btn-primary" ng-click="signConsent()"><span class="bt-content" ng-disabled="form.$invalid">I concent</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--end markup popup-->
+  
 </div>
+
+
+
