@@ -669,7 +669,7 @@ angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$tem
     "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue\">Order here</button>\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Order here</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-sm-6\">\n" +
@@ -683,7 +683,7 @@ angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$tem
     "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue\">Connect here</button>\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect here</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -2491,8 +2491,8 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div ui-view ng-if=\"!preResult\"></div>\n" +
     "<!--this is new end-->\n" +
     "\n" +
-    "<!--this is old-->\n" +
-    "<div class=\"row\">\n" +
+    "<!--this is old  To be deleted -->\n" +
+    "<!--<div class=\"row\">\n" +
     "  <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
     "  <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
     "  <div ng-show=\"consentAgreed\">\n" +
@@ -2528,7 +2528,8 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "    </form>\n" +
     "  </div>\n" +
     "  <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
-    "</div>");
+    "</div>\n" +
+    "-->");
 }]);
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
