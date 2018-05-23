@@ -1164,7 +1164,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
   $templateCache.put("components/register/register.tpl.html",
     "<div class=\"register-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"register-form__wrap\">\n" +
+    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\">\n" +
     "      <div class=\"register-form\">\n" +
     "        <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
@@ -1245,13 +1245,19 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <form action=\"\">\n" +
-    "          <div class=\"box-checkbox__wrap checkbox\">\n" +
-    "            <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\" required>\n" +
-    "            <label for=\"checkbox-results\" class=\"checkbox-label\"></label>\n" +
+    "        <form class=\"form-consent button--center\" name=\"consentForm\" ng-submit=\"submitConsent()\">\n" +
+    "          <div class=\"container-flex-center\">\n" +
+    "            <div class=\"checkbox__wrap checkbox checkbox--not-margin\">\n" +
+    "              <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\" required=\"required\" ng-model=\"consentForm.check\">\n" +
+    "              <label for=\"checkbox-results\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "            </div>\n" +
+    "            <div class=\"checkbox__txt\">\n" +
+    "              <p class=\"txt-small txt-black\">I have read, understood and agree to the above consent form.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--large bt-round--blue\" class=\"btn btn-primary\" ng-click=\"signConsent()\"><span class=\"bt-content\" ng-disabled=\"form.$invalid\">I concent</span></button>\n" +
+    "          <div class=\"button__wrap\">\n" +
+    "            <button type=\"submit\" ng-disabled=\"consentForm.$invalid\" class=\"bt-round bt-round--large bt-round--blue-dark\" class=\"btn btn-primary\"><span class=\"bt-content\">I consent</span></button>\n" +
     "          </div>\n" +
     "        </form>\n" +
     "      </div>\n" +

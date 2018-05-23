@@ -1,24 +1,15 @@
 .popup {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 185px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 114;
 }
 .popup-content {
   position: relative;
   z-index: 100;
-  right: 0;
-  left: 0;
-  top: 0;
   max-width: 1065px;
   height: auto;
-  overflow: hidden;
-  background: #fff;
-  padding: 20px;
+  background: $silver;
+  padding: 50px 60px;
   margin: 0 auto;
   border-radius: 7px;
 }

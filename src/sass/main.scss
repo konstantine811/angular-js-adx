@@ -37,11 +37,13 @@
 //responsive media query
 @import 'responsive/main-media';
 @import 'responsive/common-styling-media';
+@import "responsive/_buttons-media.scss";
+@import 'responsive/_popup-media.scss';
+
 //responsive media query components
 @import "../app/components/home/_home-media.scss";
 @import "../app/shared/header/header-media.scss";
 @import "../app/shared/footer/footer-media.scss";
-@import "./responsive/_buttons-media.scss";
 @import '../app/components/results/results-media.scss';
 @import '../app/shared/side-navbar/side-navbar-media.scss';
 @import '../app/components/profile/_profile-media.scss';

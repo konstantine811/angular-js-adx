@@ -1,6 +1,6 @@
 <div class="register-page login-bgc">
   <div class="container-fluid container-fluid--section">
-    <div class="register-form__wrap">
+    <div class="register-form__wrap" ng-if="!showPopup">
       <div class="register-form">
         <h6 class="title-roboto txt-medium txt-blue-dark txt-center">Create an account</h6>
         <form name="form"  ng-submit="submitForm(userForm)" novalidate>
@@ -81,13 +81,19 @@
             </div>
           </div>
         </div>
-        <form action="">
-          <div class="box-checkbox__wrap checkbox">
-            <input type="checkbox" id="checkbox-results" class="checkbox-input" required>
-            <label for="checkbox-results" class="checkbox-label"></label>
+        <form class="form-consent button--center" name="consentForm" ng-submit="submitConsent()">
+          <div class="container-flex-center">
+            <div class="checkbox__wrap checkbox checkbox--not-margin">
+              <input type="checkbox" id="checkbox-results" class="checkbox-input" required="required" ng-model="consentForm.check">
+              <label for="checkbox-results" class="checkbox-label checkbox-label--small"></label>
+            </div>
+            <div class="checkbox__txt">
+              <p class="txt-small txt-black">I have read, understood and agree to the above consent form.
+              </p>
+            </div>
           </div>
-          <div class="button__wrap button--center">
-            <button class="bt-round bt-round--large bt-round--blue" class="btn btn-primary" ng-click="signConsent()"><span class="bt-content" ng-disabled="form.$invalid">I concent</span></button>
+          <div class="button__wrap">
+            <button type="submit" ng-disabled="consentForm.$invalid" class="bt-round bt-round--large bt-round--blue-dark" class="btn btn-primary"><span class="bt-content">I consent</span></button>
           </div>
         </form>
       </div>

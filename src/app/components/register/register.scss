@@ -1,6 +1,7 @@
 .register-page {
   height: 100%;
   width: 100%;
+  padding-bottom: 120px;
 }
 
 .register-form__wrap {
@@ -24,4 +25,15 @@
   padding-top: 40px;
   width: 100%;
   height: auto;
+}
+
+.checkbox__txt {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.form-consent {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
 }

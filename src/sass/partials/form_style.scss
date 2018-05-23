@@ -121,6 +121,19 @@ span.summary.ng-valid {
   }
 }
 
+.checkbox-label.checkbox-label--small {
+  width: 22px;
+  height: 26px;
+  border-color: rgba($gray, 0.4);
+  &:before {
+    top: 4px;
+  }
+}
+
+.checkbox.checkbox--not-margin {
+  margin-top: 0;
+}
+
 @keyframes check-scale-anim {
   0% {
     transform: scale(0);

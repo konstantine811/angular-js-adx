@@ -7618,6 +7618,13 @@ body {
 .column-right {
   padding-right: 67px; }
 
+.container-flex-center {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .section-box-shadow {
   width: 100%;
   height: auto;
@@ -7733,7 +7740,7 @@ h1 {
   width: 100%;
   height: 100%;
   font-family: Montserrat, sans-serif;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 75px;
   color: #fff;
@@ -7741,7 +7748,7 @@ h1 {
   padding: 0; }
 
 h2 {
-  font-size: 50px;
+  font-size: 38px;
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-weight: 600;
@@ -7751,7 +7758,7 @@ h2 {
 
 h3 {
   font-family: Montserrat, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: #fff;
   margin: 0;
@@ -7759,7 +7766,7 @@ h3 {
 
 h4 {
   font-family: Montserrat, sans-serif;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 600;
   color: #fff;
   margin: 0;
@@ -7767,7 +7774,7 @@ h4 {
 
 h5 {
   font-family: Montserrat, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   color: #fff;
   margin: 0;
@@ -7775,7 +7782,7 @@ h5 {
 
 h6 {
   font-family: Montserrat, sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
   color: #fff;
   margin: 0;
@@ -7816,9 +7823,9 @@ h6.title-roboto {
 
 .txt {
   font-family: Roboto, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 28px;
   color: #fff;
   width: 100%;
   height: auto;
@@ -7846,7 +7853,7 @@ h6.title-roboto {
 
 .txt-small {
   font-family: Roboto, sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 26px;
   color: #fff;
@@ -9410,6 +9417,16 @@ span.summary.ng-valid {
     transition: transform .2s ease-out;
     transform: scale(0); }
 
+.checkbox-label.checkbox-label--small {
+  width: 22px;
+  height: 26px;
+  border-color: rgba(230, 230, 230, 0.4); }
+  .checkbox-label.checkbox-label--small:before {
+    top: 4px; }
+
+.checkbox.checkbox--not-margin {
+  margin-top: 0; }
+
 @keyframes check-scale-anim {
   0% {
     transform: scale(0); }
@@ -9418,26 +9435,17 @@ span.summary.ng-valid {
   100% {
     transform: scale(1); } }
 .popup {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 185px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 114; }
 
 .popup-content {
   position: relative;
   z-index: 100;
-  right: 0;
-  left: 0;
-  top: 0;
   max-width: 1065px;
   height: auto;
-  overflow: hidden;
-  background: #fff;
-  padding: 20px;
+  background: #F9FBFD;
+  padding: 50px 60px;
   margin: 0 auto;
   border-radius: 7px; }
 
@@ -9574,7 +9582,8 @@ span.summary.ng-valid {
 
 .register-page {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 120px; }
 
 .register-form__wrap {
   width: 100%;
@@ -9595,6 +9604,15 @@ span.summary.ng-valid {
   padding-top: 40px;
   width: 100%;
   height: auto; }
+
+.checkbox__txt {
+  display: inline-block;
+  padding-left: 15px; }
+
+.form-consent {
+  width: 100%;
+  height: auto;
+  padding-top: 50px; }
 
 .result-head__over {
   display: flex;
@@ -9942,6 +9960,68 @@ span.summary.ng-valid {
   .hide-xs-mobile {
     display: none !important; } }
 @media (max-width: 1596px) {
+  a.bt-round, button.button-border-rounded {
+    font-size: 12pt; }
+
+  button.button-border-rounded {
+    padding: 5px 34px; }
+
+  .bt-round-right-icon::before, .bt-round-right-icon::after {
+    top: 10px; }
+
+  .bt-round-lg {
+    padding: 9px 36px; } }
+@media (max-width: 1200px) {
+  button.button-border-rounded, a.bt-round {
+    padding: 5px 20px;
+    min-width: 112px; } }
+@media (max-width: 960px) {
+  .cross-button-open {
+    height: 46px; }
+
+  .cross-button-open:before, .cross-button-open:after {
+    width: 46px;
+    top: 30%; } }
+@media (max-width: 768px) {
+  .bt-round:before, .bt-round:after {
+    height: 52%; }
+
+  .bt-round.bt-round--blue-dark:hover {
+    box-shadow: inset 0px 0px 3px 2px #063f5f; }
+
+  .bt-round.bt-round--blue:hover {
+    box-shadow: inset 0px 0px 3px 2px #41c5eb; }
+
+  .cross-button-open {
+    width: 32px;
+    height: 36px; }
+    .cross-button-open:before, .cross-button-open:after {
+      width: 29px;
+      top: 19px; }
+
+  .button-border-rounded.button-border-rounded--small {
+    padding: 10px 48px; }
+
+  .cross-button-open__wrap {
+    position: absolute;
+    margin: -9px 0px; }
+
+  .bt-round.bt-round-left-icon.bt-round-right-icon {
+    padding: 9px 65px; } }
+@media (max-width: 468px) {
+  .container-md-button-flex {
+    justify-content: center;
+    flex-flow: wrap; }
+
+  .button__wrap--step {
+    margin: 14px auto; }
+
+  .bt-round.bt-round--large {
+    padding: 9px 63px; } }
+@media (max-width: 468px) {
+  .popup-content {
+    padding: 15px; } }
+@media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
 
@@ -10174,65 +10254,6 @@ span.summary.ng-valid {
   .footer-submit__wrap {
     padding-top: 25px;
     margin: 0 auto; } }
-@media (max-width: 1596px) {
-  a.bt-round, button.button-border-rounded {
-    font-size: 12pt; }
-
-  button.button-border-rounded {
-    padding: 5px 34px; }
-
-  .bt-round-right-icon::before, .bt-round-right-icon::after {
-    top: 10px; }
-
-  .bt-round-lg {
-    padding: 9px 36px; } }
-@media (max-width: 1200px) {
-  button.button-border-rounded, a.bt-round {
-    padding: 5px 20px;
-    min-width: 112px; } }
-@media (max-width: 960px) {
-  .cross-button-open {
-    height: 46px; }
-
-  .cross-button-open:before, .cross-button-open:after {
-    width: 46px;
-    top: 30%; } }
-@media (max-width: 768px) {
-  .bt-round:before, .bt-round:after {
-    height: 52%; }
-
-  .bt-round.bt-round--blue-dark:hover {
-    box-shadow: inset 0px 0px 3px 2px #063f5f; }
-
-  .bt-round.bt-round--blue:hover {
-    box-shadow: inset 0px 0px 3px 2px #41c5eb; }
-
-  .cross-button-open {
-    width: 32px;
-    height: 36px; }
-    .cross-button-open:before, .cross-button-open:after {
-      width: 29px;
-      top: 19px; }
-
-  .button-border-rounded.button-border-rounded--small {
-    padding: 10px 48px; }
-
-  .cross-button-open__wrap {
-    position: absolute;
-    margin: -9px 0px; }
-
-  .bt-round.bt-round-left-icon.bt-round-right-icon {
-    padding: 9px 65px; } }
-@media (max-width: 468px) {
-  .container-md-button-flex {
-    justify-content: center;
-    flex-flow: wrap; }
-
-  .button__wrap--step {
-    margin: 14px auto; }
-
-  .bt-round.bt-round--large {
-    padding: 9px 63px; } }
 @media (max-width: 1596px) {
   .img__wrap--float-right {
     width: calc(16% + 502px);
