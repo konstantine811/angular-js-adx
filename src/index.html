@@ -4,9 +4,9 @@
   <base href="/" />
   
   <title ng-bind="pageTitle"></title>
-
+  
   <meta charset="UTF-8"/>
-
+  
   <!-- social media tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
@@ -23,17 +23,17 @@
   
   <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
   <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
-
+  
   <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
   <script type="text/javascript" src="<%= file %>"></script><% }); %>
 
 </head>
 <body>
-<div app-side-navbar ng-if="logged && hideSideNavBar"></div>
+<app-side-navbar ng-if="logged && hideSideNavBar"></app-side-navbar>
 <div class="page" ng-class="{'logged-out' : !logged || !hideSideNavBar}">
-  <div app-header ng-if="!logged || !hideSideNavBar"></div>
+  <app-header ng-if="!logged || !hideSideNavBar"></app-header>
   <div class="container-page" ui-view></div>
-  <div app-footer ng-if="!logged || !hideSideNavBar"></div>
+  <app-footer ng-if="!logged || !hideSideNavBar"></<app-footer>
 </div>
 </body>
 </html>

@@ -24,11 +24,17 @@ angular.module( 'ixLayer.products', [
     })
       .state('products.status', {
       url: '/status',
-      templateUrl: 'components/products/pages/sequencingStatus.tpl.html'
+      templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
+        params : {
+          title: 'Current status'
+        }
     })
       .state('products.pre-purchase', {
-        url: '/status',
-        templateUrl: 'components/products/pages/pre-purchase.tpl.html'
+        url: '/pre-purchase',
+        templateUrl: 'components/products/pages/pre-purchase.tpl.html',
+        params : {
+          title: 'Pre-purchase'
+        }
       });
   })
 
@@ -42,6 +48,9 @@ angular.module( 'ixLayer.products', [
         product: ['productsService', '$stateParams', function (productsService, $stateParams) {
           return productsService.getProduct(parseInt($stateParams.productId));
         }]
+      },
+      params: {
+        title : 'Purchase receipts'
       }
     });
   })
@@ -49,11 +58,11 @@ angular.module( 'ixLayer.products', [
   .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', '$state', function ProductsCtrl( $scope, products, statusProducts, $state) {
     $scope.products = products;
 
-    var product_id = statusProducts[0].product_id;
-
-    if (statusProducts[0].result_ready) {
-      $state.go('results', {id: product_id});
-    }
+    // var product_id = statusProducts[0].product_id;
+    //
+    // if (statusProducts[0].result_ready) {
+    //   $state.go('results', {id: product_id});
+    // }
   }])
 
   .controller('ProductDetailCtrl', ['$scope',  'product', function ProductDetailCtrl($scope, product) {

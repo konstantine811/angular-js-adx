@@ -8064,6 +8064,15 @@ h6.title-roboto {
   cursor: pointer;
   margin: 0 9px -2px 5px; }
 
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px; }
+
+.user-white {
+  background-image: url("../assets/images/icon/user-white.svg"); }
+
 .facebook {
   background-image: url("../assets/images/icon/facebook.svg"); }
 
@@ -8830,7 +8839,8 @@ button[disabled].bt-round {
 .status-txt__wrap {
   width: auto;
   height: auto;
-  padding-left: 23px; }
+  padding-left: 23px;
+  align-self: center; }
 
 .side-navbar-navigation__wrap {
   width: 100%;
@@ -9653,6 +9663,9 @@ span.summary.ng-valid {
   text-align: center;
   height: auto;
   padding-top: 50px; }
+
+.pre-result {
+  padding-bottom: 100px; }
 
 .pre-result-head__wrap {
   width: 100%;

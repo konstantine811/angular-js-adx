@@ -4,9 +4,9 @@
   <base href="/" />
   
   <title ng-bind="pageTitle"></title>
-
+  
   <meta charset="UTF-8"/>
-
+  
   <!-- social media tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
@@ -23,7 +23,7 @@
   
   <!-- compiled CSS -->
   <link rel="stylesheet" type="text/css" href="assets/ixlayer-web-angular-0.0.1.css" />
-
+  
   <!-- compiled JavaScript -->
   <script type="text/javascript" src="vendor/angular/angular.js"></script>
   <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
@@ -55,6 +55,7 @@
   <script type="text/javascript" src="src/app/ios.js"></script>
   <script type="text/javascript" src="src/app/services/endpoints.js"></script>
   <script type="text/javascript" src="src/app/services/error-handling.js"></script>
+  <script type="text/javascript" src="src/app/services/location.js"></script>
   <script type="text/javascript" src="src/app/services/products.js"></script>
   <script type="text/javascript" src="src/app/services/profile.js"></script>
   <script type="text/javascript" src="src/app/services/results.js"></script>
@@ -73,11 +74,11 @@
 
 </head>
 <body>
-<div app-side-navbar ng-if="logged && hideSideNavBar"></div>
+<app-side-navbar ng-if="logged && hideSideNavBar"></app-side-navbar>
 <div class="page" ng-class="{'logged-out' : !logged || !hideSideNavBar}">
-  <div app-header ng-if="!logged || !hideSideNavBar"></div>
+  <app-header ng-if="!logged || !hideSideNavBar"></app-header>
   <div class="container-page" ui-view></div>
-  <div app-footer ng-if="!logged || !hideSideNavBar"></div>
+  <app-footer ng-if="!logged || !hideSideNavBar"></<app-footer>
 </div>
 </body>
 </html>

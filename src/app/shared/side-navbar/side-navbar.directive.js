@@ -3,7 +3,7 @@ angular.module("ixLayer")
   .directive('appSideNavbar', function() {
     return {
       templateUrl: "shared/side-navbar/side-navbar.tpl.html",
-      controller: ['$scope', '$rootScope', '$state', 'userAccessSrv', 'profileService', '$q', function($scope, $rootScope, $state, userAccessSrv, profileService, $q) {
+      controller: ['$scope', '$rootScope', '$state', '$location', '$stateParams', 'userAccessSrv', 'profileService', '$q', function($scope, $rootScope, $state, $location, $stateParams, userAccessSrv, profileService, $q) {
 
         var defer = $q.defer();
         defer.resolve( userAccessSrv.currentUser() || userAccessSrv.autoLogin());
@@ -11,6 +11,13 @@ angular.module("ixLayer")
        defer.promise.then(function(data) {
          $scope.user = data.user;
        });
+
+       $scope.$watch(function() {
+         return $stateParams.title;
+       }, function(value) {
+         $scope.statusTitle = value;
+       });
+
 
         $scope.logout = function() {
           $rootScope.$broadcast("user_logged_out");

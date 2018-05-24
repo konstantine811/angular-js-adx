@@ -10,6 +10,9 @@ angular.module( 'ixLayer.results', [
       controller: 'ResultsCtrl',
       templateUrl: 'components/results/results.tpl.html',
       data:{ pageTitle: 'Products Results' },
+      params : {
+        title: 'Pre-result'
+      },
       resolve: {
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
@@ -24,35 +27,59 @@ angular.module( 'ixLayer.results', [
     })
       .state('results.p1', {
         url: '/p1',
-        templateUrl: 'components/results/pages/result-p1.tpl.html'
+        templateUrl: 'components/results/pages/result-p1.tpl.html',
+        params: {
+          title: 'Your result'
+        }
       })
       .state('results.p2', {
         url: '/p2',
-        templateUrl: 'components/results/pages/result-p2.tpl.html'
+        templateUrl: 'components/results/pages/result-p2.tpl.html',
+        params: {
+          title: 'About'
+        }
       })
       .state('results.p3', {
         url: '/p3',
-        templateUrl: 'components/results/pages/result-p3.tpl.html'
+        templateUrl: 'components/results/pages/result-p3.tpl.html',
+        params: {
+          title: 'Lifestyle'
+        }
       })
       .state('results.p4', {
       url: '/p4',
-      templateUrl: 'components/results/pages/result-p4.tpl.html'
+      templateUrl: 'components/results/pages/result-p4.tpl.html',
+        params: {
+          title: 'Next steps'
+        }
       })
       .state('results.p5', {
         url: '/p5',
-        templateUrl: 'components/results/pages/result-p5.tpl.html'
+        templateUrl: 'components/results/pages/result-p5.tpl.html',
+        params: {
+          title: 'Science'
+        }
       })
       .state('results.p6', {
         url: '/p6',
-        templateUrl: 'components/results/pages/result-p6.tpl.html'
+        templateUrl: 'components/results/pages/result-p6.tpl.html',
+        params: {
+          title: 'Share results'
+        }
       })
       .state('results.p7', {
         url: '/p7',
-        templateUrl: 'components/results/pages/result-p7.tpl.html'
+        templateUrl: 'components/results/pages/result-p7.tpl.html',
+        params: {
+          title: 'General questions'
+        }
       })
       .state('results.p8', {
         url: '/p8',
-        templateUrl: 'components/results/pages/result-p8.tpl.html'
+        templateUrl: 'components/results/pages/result-p8.tpl.html',
+        params: {
+          title: 'Welcome'
+        }
       });
   })
   .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',

@@ -2785,10 +2785,10 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "        <div class=\"side-navbar-navigation__wrap\">\n" +
     "          <div class=\"bgc-wrap-content bgc-wrap-content--blue bgc-wrap-content--justify-left\">\n" +
     "            <div class=\"status-icon__wrap\">\n" +
-    "              <i class=\"fa fa-user\" aria-hidden=\"true\"></i>\n" +
+    "              <i class=\"icon user-white\"></i>\n" +
     "            </div>\n" +
     "            <div class=\"status-txt__wrap\">\n" +
-    "              <div class=\"txt\">Your result</div>\n" +
+    "              <div class=\"txt\">{{statusTitle}}</div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"side-navbar-navigation__link\">\n" +

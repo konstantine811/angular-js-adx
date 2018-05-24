@@ -22,7 +22,10 @@ angular.module( 'ixLayer.profile', [
             return profileService.getProfile();
           }]
         },
-        data: {pageTitle: 'View Profile'}
+        data: {pageTitle: 'View Profile'},
+        params: {
+          title: "Account information"
+        }
       },
       {
         name: 'profileEdit',
@@ -48,8 +51,6 @@ angular.module( 'ixLayer.profile', [
   .controller('ProfileViewCtrl', ['$scope', 'profile',
     function ProfileViewCtrl($scope, profile) {
     $scope.profile = profile;
-    
-    console.log(profile);
 
   }])
 

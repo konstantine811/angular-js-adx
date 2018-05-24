@@ -637,6 +637,17 @@ h6.title-roboto {
   margin: 0 9px -2px 5px;
 }
 
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+}
+
+.user-white {
+  background-image: url('../assets/images/icon/user-white.svg');
+}
+
 .facebook {
   background-image: url('../assets/images/icon/facebook.svg');
 }
