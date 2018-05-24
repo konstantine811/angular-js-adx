@@ -173,7 +173,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "          <div class=\"button__purchase\">\n" +
-    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -391,7 +391,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap\">\n" +
-    "                <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Learn more</span></a>\n" +
+    "                <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Learn more</a>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -591,7 +591,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"login-form__wrap\">\n" +
     "        <div class=\"login-form\">\n" +
-    "          <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
     "          <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__login-wrap\">\n" +
@@ -610,7 +610,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-right \">\n" +
-    "              <a href ui-sref=\"forgot_password\" class=\"txt-link txt-blue-2 txt txt--small txt-medium\">\n" +
+    "              <a href ui-sref=\"forgot_password\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
     "                Forgot your password ?\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -618,7 +618,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"txt-medium\">Sign in</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"register\" class=\"link-underline txt-blue txt txt--small txt-bold\">\n" +
+    "              <a href ui-sref=\"register\" class=\"link-underline txt-blue txt-small txt-bold\">\n" +
     "                I need to create an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -660,42 +660,78 @@ angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$tem
     "      <div class=\"row\">\n" +
     "        <div class=\"col-sm-6\">\n" +
     "          <div class=\"img__wrap txt-center\">\n" +
-    "            <img class=\"img product-img--alzheimers\" src=\"./assets/images/Alzheimers-Genetic-Test.png\" alt=\"\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"title__wrap\">\n" +
     "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
     "          </div>\n" +
     "          <div class=\"txt--indent\">\n" +
-    "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Order here</a>\n" +
+    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-sm-6\">\n" +
     "          <div class=\"img__wrap txt-center\">\n" +
-    "            <img class=\"img product-img--helix\" src=\"./assets/images/Helix-Bio-Labs.png\" alt=\"\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"title__wrap\">\n" +
     "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
     "          </div>\n" +
     "          <div class=\"txt--indent\">\n" +
-    "            <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"button__wrap button--center\">\n" +
-    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect here</a>\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
+    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
+    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
+    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "\n" +
     "</div>");
 }]);
 
 angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/pages/sequencingStatus.tpl.html",
     "<div class=\"sequencing-status-page\">\n" +
-    "  <div class=\"sequencing-status-head__wrap\">\n" +
+    "  <div class=\"products-head__wrap\">\n" +
     "    <div class=\"section__wrap\">\n" +
     "      <div class=\"container-lg--dashboard\">\n" +
     "        <div class=\"title__wrap\">\n" +
@@ -772,7 +808,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "          <div class=\"bt-round bt-round--greatest bt-round--blue-dark\">Click Here To View</div>\n" +
     "        </div>\n" +
     "        <div class=\"txt--indent-small txt-wrap-under-button\">\n" +
-    "          <p class=\"txt txt-black txt--small txt-center\">\n" +
+    "          <p class=\"txt-small txt-black  txt-center\">\n" +
     "            An email with your DNA test results\n" +
     "            has been sent to you.\n" +
     "          </p>\n" +
@@ -907,10 +943,10 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
     "                    <div class=\"txt--indent-small\">\n" +
     "                        <div class=\"container-flex\">\n" +
     "                            <div class=\"column-flex\">\n" +
-    "                                <p class=\"txt txt--small txt-black\">affirmativ shop inc. 2018</p>\n" +
+    "                                <p class=\"txt-small txt-black\">affirmativ shop inc. 2018</p>\n" +
     "                            </div>\n" +
     "                            <div class=\"column-flex\">\n" +
-    "                                <p class=\"txt txt--small txt-black\">www.affirmativdiagnostics.com <span class=\"hypphen-space\">-</span> info@affirmativ.com<span class=\"hypphen-space\">-</span>Tel: 125 627 387</p>\n" +
+    "                                <p class=\"txt-small txt-black\">www.affirmativdiagnostics.com <span class=\"hypphen-space\">-</span> info@affirmativ.com<span class=\"hypphen-space\">-</span>Tel: 125 627 387</p>\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
@@ -1014,10 +1050,10 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Email</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Email</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                <div class=\"profile-view--display-column-wrap\">\n" +
     "                                    <div class=\"profile-view-column-1\">\n" +
     "                                        {{profile.user.email}} <span class=\"txt-left-space\">(Verifed)</span>\n" +
@@ -1031,18 +1067,18 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Password</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Password</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <a class=\"sub-header-txt sub-header-txt--small txt-blue\"> Change Password</a>\n" +
+    "                            <a class=\"sub-header-txt txt-blue\"> Change Password</a>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Security question</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Security question</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                <div class=\"profile-view--display-column-wrap\">\n" +
     "                                    <div class=\"profile-view-column-1\">\n" +
     "                                        What was the name of your fist pet?\n" +
@@ -1070,77 +1106,77 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Name</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Name</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                {{profile.user.first_name}} {{profile.user.last_name}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Saxe</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Saxe</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                {{profile.gender}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Birthday</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Birthday</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                June 17, 1975\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">All enthnicities</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">All enthnicities</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                Chinese\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-offset-4 col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue\">\n" +
+    "                            <div class=\"sub-header-txt txt-blue\">\n" +
     "                                Review enthnicity information\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Height</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Height</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                               Not set\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Weight</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Weight</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                Not set\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-blue-dark txt-medium\">Current residence</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Current residence</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt sub-header-txt--small txt-black\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
     "                                US\n" +
     "                            </div>\n" +
     "                        </div>\n" +
@@ -1149,7 +1185,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                        <button class=\"bt-round bt-round--blue\">Edit</button>\n" +
     "                    </div>\n" +
     "                    <div class=\"profile-button__wrap\">\n" +
-    "                        <a href=\"\" class=\"sub-header-txt sub-header-txt--small txt-blue\">Forum settings</a>\n" +
+    "                        <a href=\"\" class=\"sub-header-txt txt-blue\">Forum settings</a>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -1166,7 +1202,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\">\n" +
     "      <div class=\"register-form\">\n" +
-    "        <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
+    "        <h6 class=\"txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
     "          <div ng-show=\"!complete\">\n" +
     "            <div class=\"form-input\">\n" +
@@ -1203,7 +1239,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"login\" class=\"link-underline txt-blue txt txt--small txt-bold\">\n" +
+    "              <a href ui-sref=\"login\" class=\"link-underline txt-blue txt txt-small txt-bold\">\n" +
     "                I have an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -1221,20 +1257,20 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "  <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
     "    <div class=\"popup-content\">\n" +
     "      <div class=\"popup-content__wrap\">\n" +
-    "        <h6 class=\"title-roboto txt-medium txt-blue-dark txt-center\">What you need to know before proceeding</h6>\n" +
+    "        <h6 class=\"txt-medium txt-blue-dark txt-center\">What you need to know before proceeding</h6>\n" +
     "        <div class=\"txt__wrap\">\n" +
-    "          <h6 class=\"title-roboto txt-medium txt-blue-dark\">Section title</h6>\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark\">Section title</h6>\n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <div class=\"txt--small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "            <div class=\"txt-small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
     "              <div class=\"txt--indent-small\">\n" +
     "                Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <h6 class=\"title-roboto txt-medium txt-blue-dark\">Section title</h6>\n" +
+    "            <h6 class=\"txt-medium txt-blue-dark\">Section title</h6>\n" +
     "            <div class=\"txt--indent-small\">\n" +
-    "              <div class=\"txt--small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "              <div class=\"txt-small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
     "                <div class=\"txt--indent-small\">\n" +
     "                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
     "                </div>\n" +
@@ -1384,7 +1420,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "            </table>\n" +
     "          </div>\n" +
     "          <div class=\"txt__wrap\">\n" +
-    "            <div class=\"txt txt-black txt--small\">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>\n" +
+    "            <div class=\"txt-small txt-black\">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -2245,7 +2281,7 @@ angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templat
     "            <h3 class=\"txt-blue-dark txt-center\">Genetic counseling</h3>\n" +
     "          </div>\n" +
     "          <div class=\"sub-header-txt__wrap\">\n" +
-    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "              ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -2261,7 +2297,7 @@ angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templat
     "            <h3 class=\"txt-blue-dark txt-center\">Refer a friend</h3>\n" +
     "          </div>\n" +
     "          <div class=\"sub-header-txt__wrap\">\n" +
-    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "              Worried about someone else in your family or know someone else who could benefits from taking the ADx ApoE genetic test?\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -2277,7 +2313,7 @@ angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templat
     "            <h3 class=\"txt-blue-dark txt-center\">Contact us</h3>\n" +
     "          </div>\n" +
     "          <div class=\"sub-header-txt__wrap\">\n" +
-    "            <div class=\"sub-header-txt sub-header-txt--small txt-black txt-center\">\n" +
+    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "              ADx is dedicated to helping you with any questions you may have.\n" +
     "              Contact us with your questions or send us comments!\n" +
     "            </div>\n" +
@@ -2375,7 +2411,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "              <h5 class=\"txt-blue txt-center\">Low risk does not mean no risk.</h5>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt__wrap\">\n" +
-    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "              <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "                Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -2388,7 +2424,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "              <h5 class=\"txt-blue txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h5>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt__wrap\">\n" +
-    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "              <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "                Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -2403,7 +2439,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "              <h5 class=\"txt-blue txt-center\">Other factors influence your risk.</h5>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt__wrap\">\n" +
-    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "              <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "                Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -2416,7 +2452,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "              <h5 class=\"txt-blue txt-center\">Knowledge is power.</h5>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt__wrap\">\n" +
-    "              <div class=\"sub-header-txt txt-black sub-header-txt--small txt-center\">\n" +
+    "              <div class=\"sub-header-txt txt-black txt-center\">\n" +
     "                Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -2431,7 +2467,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
     "      <div class=\"title__wrap title-wrap__pre-results--left-space\">\n" +
-    "        <div class=\"sub-header-txt sub-header-txt--small txt-black\">How do you want to view your results? Select one of the options.</div>\n" +
+    "        <div class=\"sub-header-txt txt-black\">How do you want to view your results? Select one of the options.</div>\n" +
     "      </div>\n" +
     "      <form action=\"\">\n" +
     "        <div class=\"boxes__wrap boxes__wrap--large boxes__wrap--padding-top\">\n" +
@@ -2442,7 +2478,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "                <label for=\"checkbox-receive\" class=\"checkbox-label\"></label>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap--inline-block\">\n" +
-    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                <div class=\"sub-header-txt txt-black\">\n" +
     "                  <span class=\"txt-bold\">I would like to wait to receive my results with a genetic counselor.</span>\n" +
     "                  <div class=\"txt__wrap\">\n" +
     "                    Select this option to consent to sharing your report with the genetics counselor and to schedule a counseling session.\n" +
@@ -2458,7 +2494,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "                <label for=\"checkbox-results\" class=\"checkbox-label\"></label>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap--inline-block\">\n" +
-    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                <div class=\"sub-header-txt txt-black\">\n" +
     "                  <span class=\"txt-bold\">I would like to review the results on my own..</span> I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2469,7 +2505,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "                <label for=\"checkbox-private\" class=\"checkbox-label\"></label>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap--inline-block\">\n" +
-    "                <div class=\"sub-header-txt txt-black sub-header-txt--small\">\n" +
+    "                <div class=\"sub-header-txt txt-black\">\n" +
     "                  I am in a private, comfortable place and wish to view my results\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2693,10 +2729,10 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                </nav>\n" +
     "                <div class=\"header__button\">\n" +
     "                  <div class=\"button__login button-anim\">\n" +
-    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\"><span class=\"bt-content\">Sign-in/Join</span></a>\n" +
+    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\">Sign-in/Join</a>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__purchase button-anim\">\n" +
-    "                    <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"bt-content\">Purchase</span></a>\n" +
+    "                    <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2726,10 +2762,10 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"login\" class=\"bt-round bt-round-lg bt-round--blue\"><span class=\"txt txt-small\">Sign-in/Join</span></a>\n" +
+    "              <a ui-sref=\"login\" class=\"bt-round bt-round-lg bt-round--blue\">Sign-in/Join</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\"><span class=\"txt txt-small\">Purchase</span></a>\n" +
+    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
@@ -2797,7 +2833,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a ui-sref=\"results.p1\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt--small txt-blue-dark\">Your result</span>\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +
@@ -2805,7 +2841,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a ui-sref=\"results.p2\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt--small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +
@@ -2813,7 +2849,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a ui-sref=\"results.p3\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt--small txt-blue-dark\">Lifestyle & other factor</span>\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +
@@ -2821,7 +2857,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                <a ui-sref=\"results.p4\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt txt--small txt-blue-dark\">Next steps</span>\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +

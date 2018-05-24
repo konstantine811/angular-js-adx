@@ -1,23 +1,4 @@
 @media (max-width: $breakpoint) {
-  h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 35px;
-  }
-  h4 {
-    font-size: 30px;
-  }
-
-  h5 {
-    font-size: 25px;
-  }
   .img-bgc-wrap__rounded {
     height: 512px;
     max-width: 512px;
@@ -90,6 +71,11 @@
   .box-txt__wrap--inline-block {
     padding-left: 2%;
     width: 76%;
+  }
+
+  .img-border-wrap {
+    width: 330px;
+    height: 330px;
   }
 }
 
