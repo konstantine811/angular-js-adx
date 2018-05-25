@@ -8159,9 +8159,9 @@ h6 {
   padding-top: 40px; }
 
 .test-ok {
-  min-width: 129px;
-  min-height: 129px;
-  border: 11px solid #E6E6E6;
+  min-width: 70px;
+  min-height: 70px;
+  border: 6px solid #E6E6E6;
   border-radius: 50%;
   position: relative;
   margin-right: 32px;
@@ -8171,10 +8171,10 @@ h6 {
     position: absolute;
     background-image: url("../assets/images/icon/ok-green-icon.svg");
     background-repeat: no-repeat;
-    width: 50px;
+    width: 32px;
     height: 100%;
-    top: 34px;
-    left: 32px; }
+    top: 27%;
+    left: 25%; }
 
 .test-ok.active {
   display: block; }
@@ -8414,11 +8414,20 @@ button.button-border-rounded {
   button.button-border-rounded:hover {
     background-color: rgba(255, 255, 255, 0.3); }
 
+.button-border-rounded.button-border-rounded--long {
+  min-width: 347px; }
+
 button.button-border-rounded.button-border-rounded--blue {
   color: #41c5eb;
   border-color: #41c5eb; }
   button.button-border-rounded.button-border-rounded--blue:hover {
     background-color: rgba(65, 197, 235, 0.2); }
+
+button.button-border-rounded.button-border-rounded--blue-dark {
+  color: #063f5f;
+  border-color: #063f5f; }
+  button.button-border-rounded.button-border-rounded--blue-dark:hover {
+    background-color: rgba(6, 63, 95, 0.2); }
 
 .button-border-rounded.button-border-rounded--small {
   padding: 4px 39px; }
@@ -9987,14 +9996,106 @@ span.summary.ng-valid {
 @media (max-width: 1200px) {
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
-    min-width: 112px; } }
+    min-width: 112px; }
+
+  .status-progressbar-txt {
+    display: none; }
+
+  .active.active--current .status-progressbar-txt {
+    display: inline-block;
+    right: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    width: 300px; }
+  .active.active--current .status-progressbar-inner {
+    display: inline-block; }
+
+  .status-progressbar-item:before {
+    height: 7px;
+    top: 18px; }
+
+  .status-progressbar-item:after {
+    width: 42px;
+    height: 42px; }
+
+  .status-progressbar-inner {
+    display: none; }
+
+  .status-progressbar-icon {
+    display: none; }
+
+  .status-progressbar-item.active--current .status-progressbar-icon {
+    margin-left: 8px;
+    display: inline-block; }
+
+  .status-progressbar-item.active--current:after {
+    width: 67px;
+    height: 67px;
+    top: -10px;
+    left: -1px; }
+
+  .status-progressbar-icon.icon-test-tubes {
+    width: 34%;
+    left: 9px;
+    top: 7px; }
+
+  .status-progressbar-item.active--current .status-progressbar-inner:after {
+    width: 101px;
+    height: 101px;
+    top: -13px;
+    left: -12px; }
+
+  .status-progressbar-item.active--current .status-progressbar-inner {
+    width: 84px;
+    height: 84px;
+    top: -18px;
+    left: -10px; }
+
+  .status-progressbar-icon {
+    width: 43%;
+    top: 8px;
+    left: 5px; }
+
+  .status-progressbar-icon.icon-forklift {
+    left: 5px;
+    width: 46%;
+    top: 7px; }
+
+  .status-progressbar-item:nth-of-type(1) .status-progressbar-txt {
+    right: calc(-55vw + 364px); }
+  .status-progressbar-item:nth-of-type(2) .status-progressbar-txt {
+    left: calc(32vw - 230px); }
+  .status-progressbar-item:nth-of-type(3) .status-progressbar-txt {
+    left: calc(13vw - 142px); }
+  .status-progressbar-item:nth-of-type(4) .status-progressbar-txt {
+    left: -132px; }
+  .status-progressbar-item:nth-of-type(5) .status-progressbar-txt {
+    left: -26vw; }
+  .status-progressbar-item:nth-of-type(6) .status-progressbar-txt {
+    left: -37vw; } }
 @media (max-width: 960px) {
   .cross-button-open {
     height: 46px; }
 
   .cross-button-open:before, .cross-button-open:after {
     width: 46px;
-    top: 30%; } }
+    top: 30%; }
+
+  .status-progressbar-item.active:before {
+    width: 12vw; }
+
+  .status-progressbar-item:nth-of-type(1) .status-progressbar-txt {
+    right: calc(-55vw + 218px); }
+  .status-progressbar-item:nth-of-type(2) .status-progressbar-txt {
+    left: calc(32vw - 144px); }
+  .status-progressbar-item:nth-of-type(3) .status-progressbar-txt {
+    left: calc(13vw - 107px); }
+  .status-progressbar-item:nth-of-type(4) .status-progressbar-txt {
+    left: -132px; }
+  .status-progressbar-item:nth-of-type(5) .status-progressbar-txt {
+    left: -30vw; }
+  .status-progressbar-item:nth-of-type(6) .status-progressbar-txt {
+    left: -45vw; } }
 @media (max-width: 768px) {
   .bt-round:before, .bt-round:after {
     height: 52%; }
@@ -10020,7 +10121,24 @@ span.summary.ng-valid {
     margin: -9px 0px; }
 
   .bt-round.bt-round-left-icon.bt-round-right-icon {
-    padding: 9px 65px; } }
+    padding: 9px 65px; }
+
+  .status-progressbar-container {
+    padding: 0; }
+
+  .active.active--current .status-progressbar-txt {
+    width: 234px; }
+
+  .status-progressbar-item:nth-of-type(1) .status-progressbar-txt {
+    right: calc(-55vw + 151px); }
+  .status-progressbar-item:nth-of-type(2) .status-progressbar-txt {
+    left: calc(32vw - 119px); }
+  .status-progressbar-item:nth-of-type(3) .status-progressbar-txt {
+    left: calc(13vw - 79px); }
+  .status-progressbar-item:nth-of-type(4) .status-progressbar-txt {
+    left: -87px; }
+  .status-progressbar-item:nth-of-type(6) .status-progressbar-txt {
+    left: -51vw; } }
 @media (max-width: 468px) {
   .container-md-button-flex {
     justify-content: center;
@@ -10030,7 +10148,10 @@ span.summary.ng-valid {
     margin: 14px auto; }
 
   .bt-round.bt-round--large {
-    padding: 9px 63px; } }
+    padding: 9px 63px; }
+
+  .status-progressbar-item.active:before {
+    width: 8vw; } }
 @media (max-width: 468px) {
   .popup-content {
     padding: 15px; } }

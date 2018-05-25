@@ -21,6 +21,106 @@
     padding: 5px 20px;
     min-width: 112px;
   }
+
+
+  .status-progressbar-txt {
+    display: none;
+  }
+
+  .active.active--current {
+    .status-progressbar-txt {
+      display: inline-block;
+      right: 0;
+      padding-top: 0;
+      margin: 0 auto;
+      width: 300px;
+    }
+    .status-progressbar-inner {
+      display: inline-block;
+    }
+  }
+
+  .status-progressbar-item:before {
+    height: 7px;
+    top: 18px;
+  }
+
+  .status-progressbar-item:after {
+    width: 42px;
+    height: 42px;
+  }
+  .status-progressbar-inner {
+    display: none;
+  }
+
+  .status-progressbar-icon {
+    display: none;
+  }
+
+  .status-progressbar-item.active--current .status-progressbar-icon {
+    margin-left: 8px;
+    display: inline-block;
+  }
+
+  .status-progressbar-item.active--current:after {
+    width: 67px;
+    height: 67px;
+    top: -10px;
+    left: -1px;
+  }
+
+  .status-progressbar-icon.icon-test-tubes {
+    width: 34%;
+    left: 9px;
+    top: 7px;
+  }
+
+  .status-progressbar-item.active--current .status-progressbar-inner:after {
+    width: 101px;
+    height: 101px;
+    top: -13px;
+    left: -12px;
+  }
+  .status-progressbar-item.active--current .status-progressbar-inner {
+    width: 84px;
+    height: 84px;
+    top: -18px;
+    left: -10px;
+  }
+
+  .status-progressbar-icon {
+    width: 43%;
+    top: 8px;
+    left: 5px;
+  }
+
+  .status-progressbar-icon.icon-forklift {
+    left: 5px;
+    width: 46%;
+    top: 7px;
+  }
+
+  .status-progressbar-item {
+    &:nth-of-type(1) .status-progressbar-txt {
+      right: calc(-55vw + 364px);
+    }
+    &:nth-of-type(2) .status-progressbar-txt {
+      left: calc(32vw - 230px);
+    }
+    &:nth-of-type(3) .status-progressbar-txt {
+      left: calc(13vw - 142px);
+    }
+     &:nth-of-type(4) .status-progressbar-txt {
+      left: -132px;
+    }
+    &:nth-of-type(5) .status-progressbar-txt {
+      left: -26vw;
+    }
+    &:nth-of-type(6) .status-progressbar-txt {
+      left: -37vw;
+    }
+  }
+
 }
 
 @media (max-width: $breakpoint-md) {
@@ -32,6 +132,30 @@
   .cross-button-open:before, .cross-button-open:after {
     width: 46px;
     top: 30%;
+  }
+  .status-progressbar-item.active:before {
+    width: 12vw;
+  }
+
+  .status-progressbar-item {
+    &:nth-of-type(1) .status-progressbar-txt {
+      right: calc(-55vw + 218px);
+    }
+    &:nth-of-type(2) .status-progressbar-txt {
+      left: calc(32vw - 144px);
+    }
+    &:nth-of-type(3) .status-progressbar-txt {
+      left: calc(13vw - 107px);
+    }
+    &:nth-of-type(4) .status-progressbar-txt {
+      left: -132px;
+    }
+    &:nth-of-type(5) .status-progressbar-txt {
+      left: -30vw;
+    }
+    &:nth-of-type(6) .status-progressbar-txt {
+      left: -45vw;
+    }
   }
 }
 
@@ -64,10 +188,39 @@
   .bt-round.bt-round-left-icon.bt-round-right-icon {
     padding: 9px 65px;
   }
+
+  .status-progressbar-container {
+    padding: 0;
+  }
+
+  .active.active--current .status-progressbar-txt {
+    width: 234px;
+  }
+
+  .status-progressbar-item {
+    &:nth-of-type(1) .status-progressbar-txt {
+      right: calc(-55vw + 151px);
+    }
+    &:nth-of-type(2) .status-progressbar-txt {
+      left: calc(32vw - 119px);
+    }
+    &:nth-of-type(3) .status-progressbar-txt {
+      left: calc(13vw - 79px);
+    }
+    &:nth-of-type(4) .status-progressbar-txt {
+      left: -87px;
+    }
+    &:nth-of-type(6) .status-progressbar-txt {
+      left: -51vw;
+    }
+  }
+
+
 }
 
 
 @media (max-width: $breakpoint-exs) {
+
   .container-md-button-flex {
     justify-content: center;
     flex-flow: wrap;
@@ -77,5 +230,9 @@
   }
   .bt-round.bt-round--large {
     padding: 9px 63px;
+  }
+
+  .status-progressbar-item.active:before {
+    width: 8vw;
   }
 }

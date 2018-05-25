@@ -749,7 +749,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "                <p class=\"txt-small txt-center progressbar-txt-color\">The physician is determining if the test is appropriate for user.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
-    "            <li class=\"status-progressbar-item  active\">\n" +
+    "            <li class=\"status-progressbar-item active\">\n" +
     "              <div class=\"status-progressbar-inner\"></div>\n" +
     "              <div class=\"status-progressbar-icon icon-pc-pointer\"></div>\n" +
     "              <div class=\"status-progressbar-txt\">\n" +
@@ -767,7 +767,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample has been received by the lab.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
-    "            <li class=\"status-progressbar-item  active\">\n" +
+    "            <li class=\"status-progressbar-item active\">\n" +
     "              <div class=\"status-progressbar-inner\"></div>\n" +
     "              <div class=\"status-progressbar-icon icon-test-tubes\"></div>\n" +
     "              <div class=\"status-progressbar-txt\">\n" +
@@ -776,7 +776,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample is done in the lab and currently being processed.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
-    "            <li class=\"status-progressbar-item  active\">\n" +
+    "            <li class=\"status-progressbar-item active\">\n" +
     "              <div class=\"status-progressbar-inner\"></div>\n" +
     "              <div class=\"status-progressbar-icon icon-pc-dna\"></div>\n" +
     "              <div class=\"status-progressbar-txt\">\n" +
@@ -785,7 +785,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "                <p class=\"txt-small txt-center progressbar-txt-color\">The Genomics Service will now provide variant data from the user's sample.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
-    "            <li class=\"status-progressbar-item  active active--current\">\n" +
+    "            <li class=\"status-progressbar-item active active--current\">\n" +
     "              <div class=\"status-progressbar-inner\"></div>\n" +
     "              <div class=\"status-progressbar-icon icon-pc-dna\"></div>\n" +
     "              <div class=\"status-progressbar-txt\">\n" +
@@ -804,10 +804,10 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              results are now ready.</h4>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"button__wrap button--center\">\n" +
-    "          <div class=\"bt-round bt-round--greatest bt-round--blue-dark\">Click Here To View</div>\n" +
+    "        <div class=\"button__wrap--large-top button--center\">\n" +
+    "          <button class=\"button-border-rounded button-border-rounded--long button-border-rounded--blue-dark\">View Results</button>\n" +
     "        </div>\n" +
-    "        <div class=\"txt--indent-small txt-wrap-under-button\">\n" +
+    "        <div class=\"txt--indent txt-wrap-under-button\">\n" +
     "          <p class=\"txt-small txt-black  txt-center\">\n" +
     "            An email with your DNA test results\n" +
     "            has been sent to you.\n" +

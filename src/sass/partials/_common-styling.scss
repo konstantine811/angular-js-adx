@@ -765,9 +765,9 @@ h6 {
 //accourdion end
 
 .test-ok {
-  min-width: 129px;
-  min-height: 129px;
-  border: 11px solid $gray;
+  min-width: 70px;
+  min-height: 70px;
+  border: 6px solid $gray;
   border-radius: 50%;
   position: relative;
   margin-right: 32px;
@@ -777,10 +777,10 @@ h6 {
     position: absolute;
     background-image: url("../assets/images/icon/ok-green-icon.svg");
     background-repeat: no-repeat;
-    width: 50px;
+    width: 32px;
     height: 100%;
-    top: 34px;
-    left: 32px;
+    top: 27%;
+    left: 25%;
   }
 }
 

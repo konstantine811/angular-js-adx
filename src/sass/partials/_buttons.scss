@@ -99,11 +99,23 @@ button.button-border-rounded {
   }
 }
 
+.button-border-rounded.button-border-rounded--long {
+  min-width: 347px;
+}
+
 button.button-border-rounded.button-border-rounded--blue {
   color: $blue-6;
   border-color: $blue-6;
   &:hover {
     background-color: rgba($blue-6, 0.2);
+  }
+}
+
+button.button-border-rounded.button-border-rounded--blue-dark {
+  color: $blue-dark;
+  border-color: $blue-dark;
+  &:hover {
+    background-color: rgba($blue-dark, 0.2);
   }
 }
 
