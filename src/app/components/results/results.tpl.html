@@ -6,93 +6,62 @@
         <div class="txt-rubric__wrap">
           <div class="sub-header-txt txt-bold txt-gray">Pre-Result</div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 title__wrap">
-            <h2 class="txt-blue">What will my results tell me?</h2>
+        <div class="container-flex">
+          <div class="flex-column content-txt">
+            <div class="title__wrap">
+              <h1 class="txt-blue-dark">What will my results tell me?</h1>
+            </div>
+            <div class="txt__wrap pre-result-head-txt">
+              <div class="sub-header-txt txt-black">
+                <span class="txt-bold">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.
+              </div>
+            </div>
           </div>
-          <div class="pre-result-head__content">
-            <div class="col-xs-12 col-sm-7">
-              <div class="title__wrap">
-                <div class="sub-header-txt txt-black">
-                  <span class="txt-bold">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.
-                </div>
-              </div>
-            </div>
-            <div class="hide-mobile col-xs-12 col-sm-5">
-              <div class="pre-result-head__img">
-                <div class="img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--md-small img-bgc-wrap-middle__rounded--white">
-                  <ng-include class="svg-inner-rounded-middle svg-inner-rounded-middle--larger" src="'./assets/images/svg/svg-table.svg'"></ng-include>
-                </div>
-              </div>
-            </div>
+          <div class="flex-column pre-result-head-img">
+            <img class="pre-result-head-img__innner" src="./assets/images/results-page/tablet-rounded.png" />
           </div>
         </div>
       </div>
     </div>
   </div>
   
-  <!--section first with chart-->
-  <div class="section__wrap section__wrap--small-pad-top">
-    <div class="container-lg--dashboard">
-      <div class="container-md">
-        <div class="title__wrap">
-          <h2 class="txt-blue txt-center">In summery</h2>
-        </div>
-        <div class="txt__wrap">
-          <div class="pre-result-section-first__sub-header">
-            <div class="sub-header-txt txt-black txt-center">
-              Alzheimer's disease is characterized by memory loss,
-              cognitive decline, and personality changes.
-            </div>
-          </div>
-          <div class="txt txt-black txt-center">
-            Late-onset Alzheimer's disease is the most common form of Alzheimer's disease, developing after age 65. Many factors, including genetics, can influence a person's chances of developing the condition. This test includes the most common genetic variant associated with late-onset Alzheimer's disease.
-          </div>
-        </div>
-      </div>
-      <div class="pre-result-section-first__image">
-        <img class="img" src="./assets/images/results-page/img-results-1.png" alt="">
-      </div>
-      <div class="pre-result-section-first__chart">
-        <div class="title__wrap">
-          <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
-        </div>
-        <div class="chart__wrap">
-          <ng-include src="'./assets/images/charts/chart-bar-1.svg'"></ng-include>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--end section first with chart-->
   
   <!--section second with boxes-->
   <div class="section__wrap">
     <div class="container-lg--dashboard container-lg--dashboard--not-space-exlg">
-      <div class="boxes-row__wrap">
+      <h1 class="txt-center txt-blue-dark">Your results are ready.</h1>
+      <div class="txt--indent-small container-sub-head txt-center">
+        <p class="txt txt-black">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>
+      </div>
+      <div class="title__wrap boxes-row__wrap">
         <div class="boxes__wrap boxes__wrap--large">
           <div class="box-half-column box-shadow">
             <div class="box-image__wrap">
-              <img class="img" src="./assets/images/stop-green.png" alt="">
+             <ng-include src="'./assets/images/svg/charts-down.svg'"></ng-include>
             </div>
-            <div class="box-title__wrap">
-              <h5 class="txt-blue txt-center">Low risk does not mean no risk.</h5>
-            </div>
-            <div class="box-txt__wrap">
-              <div class="sub-header-txt txt-black txt-center">
-                Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.
+            <div class="box-txt">
+              <div class="box-title__wrap">
+                <h5 class="txt-blue-dark txt-center">Low risk does not mean no risk.</h5>
+              </div>
+              <div class="box-txt__wrap">
+                <div class="sub-header-txt txt-black txt-center">
+                  Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.
+                </div>
               </div>
             </div>
           </div>
           <div class="box-half-column box-shadow">
             <div class="box-image__wrap boxes__wrap--large">
-              <img class="img" src="./assets/images/cross-blue.png" alt="">
+              <ng-include src="'./assets/images/svg/charts-up.svg'"></ng-include>
             </div>
-            <div class="box-title__wrap">
-              <h5 class="txt-blue txt-center">High risk does not mean certain development of Alzheimer’s disease.</h5>
-            </div>
-            <div class="box-txt__wrap">
-              <div class="sub-header-txt txt-black txt-center">
-                Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.
+            <div class="box-txt">
+              <div class="box-title__wrap">
+                <h5 class="txt-blue-dark txt-center">High risk does not mean certain development of Alzheimer’s disease.</h5>
+              </div>
+              <div class="box-txt__wrap">
+                <div class="sub-header-txt txt-black txt-center">
+                  Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.
+                </div>
               </div>
             </div>
           </div>
@@ -100,92 +69,76 @@
         <div class="boxes__wrap boxes__wrap--large">
           <div class="box-half-column box-shadow">
             <div class="box-image__wrap">
-              <img class="img" src="./assets/images/exclamation-point-silver.png" alt="">
+              <ng-include src="'./assets/images/svg/brain-pink.svg'"></ng-include>
             </div>
-            <div class="box-title__wrap">
-              <h5 class="txt-blue txt-center">Other factors influence your risk.</h5>
-            </div>
-            <div class="box-txt__wrap">
-              <div class="sub-header-txt txt-black txt-center">
-                Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.
-              </div>
-            </div>
+           <div class="box-txt">
+             <div class="box-title__wrap">
+               <h5 class="txt-blue-dark txt-center">Other factors influence your risk.</h5>
+             </div>
+             <div class="box-txt__wrap">
+               <div class="sub-header-txt txt-black txt-center">
+                 Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.
+               </div>
+             </div>
+           </div>
           </div>
           <div class="box-half-column box-shadow">
             <div class="box-image__wrap boxes__wrap--large">
-              <img class="img" src="./assets/images/exclamation-point-yellow.png" alt="">
+              <ng-include src="'./assets/images/svg/first-aid-kit.svg'"></ng-include>
             </div>
-            <div class="box-title__wrap">
-              <h5 class="txt-blue txt-center">Knowledge is power.</h5>
-            </div>
-            <div class="box-txt__wrap">
-              <div class="sub-header-txt txt-black txt-center">
-                Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.
+            <div class="box-txt">
+              <div class="box-title__wrap">
+                <h5 class="txt-blue-dark txt-center">Knowledge is power.</h5>
+              </div>
+              <div class="box-txt__wrap">
+                <div class="sub-header-txt txt-black txt-center">
+                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <form action="">
+        <div class="boxes__wrap">
+          <div class="box-shadow">
+            <div class="title__wrap">
+              <h6 class="txt-blue-dark txt-center">Please concent before proceeding.</h6>
+            </div>
+            <div class="txt__wrap pre-results-box-flex">
+              <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
+                <input type="checkbox" id="checkbox-results" class="checkbox-input">
+                <label for="checkbox-results" class="checkbox-label checkbox-label--small"></label>
+              </div>
+              <div class="pre-results-box-flex-2">
+                <div class="txt-small txt-black">
+                  I would like to <span class="txt-bold">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.
+                </div>
+              </div>
+            </div>
+            <div class="txt__wrap pre-results-box-flex">
+              <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
+                <input type="checkbox" id="checkbox-private" class="checkbox-input">
+                <label for="checkbox-private" class="checkbox-label checkbox-label--small"></label>
+              </div>
+              <div class="pre-results-box-flex-2">
+                <div class="txt-small txt-black">
+                  I have read and understood this information. I am in private, comfortable place and wish to view my results.
+                </div>
+              </div>
+            </div>
+            <div class="button__wrap--large-top button--center">
+              <button ng-click="preResultSumbit()" type="submit" class="bt-round bt-round--large bt-round--blue-dark">View results</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      
     </div>
   </div>
   <!--end section second with boxes-->
-  
-  <!--section third with boxes agreed-submit-->
-  <div class="section__wrap">
-    <div class="container-lg--dashboard container-lg--dashboard--not-space-exlg">
-      <div class="title__wrap title-wrap__pre-results--left-space">
-        <div class="sub-header-txt txt-black">How do you want to view your results? Select one of the options.</div>
-      </div>
-      <form action="">
-        <div class="boxes__wrap boxes__wrap--large boxes__wrap--padding-top">
-          <div class="box-half-column box-shadow">
-            <div class="row">
-              <div class="box-checkbox__wrap checkbox">
-                <input type="checkbox" id="checkbox-receive" class="checkbox-input">
-                <label for="checkbox-receive" class="checkbox-label"></label>
-              </div>
-              <div class="box-txt__wrap--inline-block">
-                <div class="sub-header-txt txt-black">
-                  <span class="txt-bold">I would like to wait to receive my results with a genetic counselor.</span>
-                  <div class="txt__wrap">
-                    Select this option to consent to sharing your report with the genetics counselor and to schedule a counseling session.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="box-half-column box-shadow">
-            <div class="row">
-              <div class="box-checkbox__wrap checkbox">
-                <input type="checkbox" id="checkbox-results" class="checkbox-input">
-                <label for="checkbox-results" class="checkbox-label"></label>
-              </div>
-              <div class="box-txt__wrap--inline-block">
-                <div class="sub-header-txt txt-black">
-                  <span class="txt-bold">I would like to review the results on my own..</span> I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.
-                </div>
-              </div>
-            </div>
-            <div class="row box-row-padding">
-              <div class="box-checkbox__wrap checkbox">
-                <input type="checkbox" id="checkbox-private" class="checkbox-input">
-                <label for="checkbox-private" class="checkbox-label"></label>
-              </div>
-              <div class="box-txt__wrap--inline-block">
-                <div class="sub-header-txt txt-black">
-                  I am in a private, comfortable place and wish to view my results
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="button__wrap--large-top button--center">
-          <button ng-click="preResultSumbit()" type="submit" class="bt-round bt-round--large bt-round--blue">I consent</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!--end section third with boxes agreed-submit-->
 </div>
 <div ui-view ng-if="!preResult"></div>
 <!--this is new end-->

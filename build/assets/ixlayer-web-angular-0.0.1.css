@@ -7604,6 +7604,9 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.flex-column {
+  flex: 1; }
+
 .flex-column.flex-column--line {
   width: 100%;
   max-width: 70%;
@@ -7624,6 +7627,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.container-sub-head {
+  max-width: 607px;
+  margin: 0 auto;
+  height: auto; }
 
 .section-box-shadow {
   width: 100%;
@@ -7782,7 +7790,7 @@ h5 {
 
 h6 {
   font-family: Roboto, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   color: #fff;
   margin: 0;
@@ -7932,9 +7940,14 @@ h6 {
 .box-shadow {
   background-color: white;
   padding: 65px  4%;
-  margin: 4px 4px;
+  margin: 13px 13px;
   box-shadow: 0 0 28px -3px rgba(0, 0, 0, 0.3);
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%; }
+
+.box-txt {
+  max-width: 340px;
+  margin: 0 auto; }
 
 .box-half-column {
   width: 50%;
@@ -7994,18 +8007,6 @@ h6 {
   width: 100%;
   height: auto;
   padding-top: 27px; }
-
-.box-txt__wrap--inline-block {
-  width: 83%;
-  display: inline-block;
-  padding-top: 0;
-  padding-left: 8%; }
-
-.box-checkbox__wrap {
-  display: inline-block;
-  height: auto;
-  width: auto;
-  vertical-align: top; }
 
 .box-data__wrap {
   width: 100%;
@@ -9457,6 +9458,10 @@ span.summary.ng-valid {
 .checkbox.checkbox--not-margin {
   margin-top: 0; }
 
+.checkbox.checkbox--not-space {
+  margin: 0;
+  min-height: 100%; }
+
 @keyframes check-scale-anim {
   0% {
     transform: scale(0); }
@@ -9701,6 +9706,24 @@ span.summary.ng-valid {
   height: auto;
   padding-top: 50px; }
 
+.pre-result-head-img {
+  text-align: center; }
+
+.pre-result-head-img__innner {
+  max-width: 273px; }
+
+.pre-result-head-txt {
+  max-width: 422px; }
+
+.pre-results-box-flex {
+  display: flex;
+  align-items: end;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.pre-results-box-flex-2 {
+  padding-left: 15px; }
+
 .pre-result-section-first__sub-header {
   max-width: 822px;
   height: auto;
@@ -9814,14 +9837,6 @@ span.summary.ng-valid {
   .svg-inner-rounded-big {
     width: 200px; }
 
-  .sub-header-txt {
-    font-size: 22px;
-    line-height: 36px; }
-
-  .sub-header-txt.sub-header-txt--small {
-    font-size: 18px;
-    line-height: 36px; }
-
   .txt {
     font-size: 18px; }
 
@@ -9903,14 +9918,6 @@ span.summary.ng-valid {
   .container-md-button-flex {
     padding: 0 25px; } }
 @media (max-width: 768px) {
-  .sub-header-txt {
-    font-size: 18px;
-    line-height: 36px; }
-
-  .sub-header-txt.sub-header-txt--small {
-    font-size: 18px;
-    line-height: 36px; }
-
   .txt {
     font-size: 14px; }
 

@@ -96,6 +96,8 @@ span.summary.ng-valid {
 
 }
 
+
+
 .checkbox-label {
   display: inline-block;
   position: relative;
@@ -133,6 +135,11 @@ span.summary.ng-valid {
 .checkbox.checkbox--not-margin {
   margin-top: 0;
 }
+.checkbox.checkbox--not-space {
+  margin: 0;
+  min-height: 100%;
+}
+
 
 @keyframes check-scale-anim {
   0% {

@@ -55,6 +55,10 @@ body {
   justify-content: space-between;
 }
 
+.flex-column {
+  flex: 1;
+}
+
 .flex-column.flex-column--line {
   width: 100%;
   max-width: 70%;
@@ -78,6 +82,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container-sub-head {
+  max-width: 607px;
+  margin: 0 auto;
+  height: auto;
 }
 //end styling container
 
@@ -285,7 +295,7 @@ h5 {
 
 h6 {
   font-family: Roboto, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   color: $white;
   margin: 0;
@@ -472,9 +482,15 @@ h6 {
 .box-shadow {
   background-color: white;
   padding: 65px  4%;
-  margin: 4px 4px;
+  margin: 13px 13px;
   box-shadow: $box-shadow;
   background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+
+.box-txt {
+  max-width: 340px;
+  margin: 0 auto;
 }
 
 .box-half-column {
@@ -551,19 +567,7 @@ h6 {
   padding-top: 27px;
 }
 
-.box-txt__wrap--inline-block {
-  width: 83%;
-  display: inline-block;
-  padding-top: 0;
-  padding-left: 8%;
-}
 
-.box-checkbox__wrap {
-  display: inline-block;
-  height: auto;
-  width: auto;
-  vertical-align: top;
-}
 
 .box-data__wrap {
   width: 100%;

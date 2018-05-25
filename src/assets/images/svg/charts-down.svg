@@ -1,0 +1,47 @@
+<svg class="charts-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.337 145.338">
+  <defs>
+    <style>
+      .charts-down-1 {
+        fill: #f2f2f2;
+        opacity: 0.4;
+      }
+
+      .charts-down-2 {
+        fill: #7c97c5;
+      }
+
+      .charts-down-3 {
+        fill: #a2b8df;
+      }
+
+      .charts-down-4 {
+        fill: #d2ddf0;
+      }
+
+      .charts-down-5 {
+        fill: #afc1db;
+      }
+
+      .charts-down-6 {
+        fill: #92d5b5;
+      }
+
+      .charts-down-7 {
+        fill: #7b8baf;
+      }
+    </style>
+  </defs>
+  <g id="Group_988" data-name="Group 988" transform="translate(-526.998 -698.721)">
+    <g id="Group_987" data-name="Group 987">
+      <ellipse id="Ellipse_1615" data-name="Ellipse 1615" class="charts-down-1" cx="72.669" cy="72.669" rx="72.669" ry="72.669" transform="translate(526.998 698.721)"/>
+    </g>
+    <g id="sales-down-7652_a7567666-d236-4fc7-82f0-f3636e5595de" transform="translate(565 736.51)">
+      <path id="layer6" class="charts-down-2" d="M7,19.992h8.856v44.3H7Z" transform="translate(0.428 1.929)"/>
+      <path id="layer5" class="charts-down-3" d="M35,34.008h8.856V62.79H35Z" transform="translate(3.424 3.429)"/>
+      <path id="layer4" class="charts-down-4" d="M49,48.008h8.856V61.292H49Z" transform="translate(4.922 4.927)"/>
+      <path id="layer3" class="charts-down-5" d="M21,40.022h8.856V62.148H21Z" transform="translate(1.926 4.073)"/>
+      <path id="layer2" class="charts-down-6" d="M62.165,34.676a1.154,1.154,0,0,0,.111-.19,1.087,1.087,0,0,0,.045-.221,1.065,1.065,0,0,0,.032-.167V25.241a1.107,1.107,0,0,0-2.214,0V31.63L42.056,15.557a1.107,1.107,0,0,0-1.231-.163L28.257,21.68,8.9,2.319A1.107,1.107,0,1,0,7.335,3.886L27.261,23.812a1.107,1.107,0,0,0,1.277.208l12.614-6.31,17.19,15.277H52.39a1.107,1.107,0,1,0,0,2.214h8.856a1.107,1.107,0,0,0,.434-.091,1.151,1.151,0,0,0,.111-.072,1.078,1.078,0,0,0,.241-.161c.008-.008.011-.02.019-.028s.019-.01.027-.019a1.064,1.064,0,0,0,.087-.155Z" transform="translate(0.425 0)"/>
+      <path id="layer1" class="charts-down-7" d="M64.993,61.223H4.107a1.107,1.107,0,1,1,0-2.214H64.993a1.107,1.107,0,0,1,0,2.214Z" transform="translate(0 6.105)"/>
+    </g>
+  </g>
+</svg>

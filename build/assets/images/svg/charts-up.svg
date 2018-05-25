@@ -1,0 +1,45 @@
+<svg class="charts-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.337 145.338">
+  <defs>
+    <style>
+      .charts-up-1 {
+        fill: #f2f2f2;
+        opacity: 0.4;
+      }
+
+      .charts-up-2 {
+        fill: #7c97c5;
+      }
+
+      .charts-up-3 {
+        fill: #a2b8df;
+      }
+
+      .charts-up-4 {
+        fill: #d2ddf0;
+      }
+
+      .charts-up-5 {
+        fill: #afc1db;
+      }
+
+      .charts-up-6 {
+        fill: #f27e7c;
+      }
+
+      .charts-up-7 {
+        fill: #7b8baf;
+      }
+    </style>
+  </defs>
+  <g id="Group_989" data-name="Group 989" transform="translate(-1003.998 -698.721)">
+    <ellipse id="Ellipse_1617" data-name="Ellipse 1617" class="charts-up-1" cx="72.669" cy="72.669" rx="72.669" ry="72.669" transform="translate(1003.998 698.721)"/>
+    <g id="sales-up-7651_8247a198-5e84-4eca-b51d-9a14c65cb7b8" transform="translate(1042 731)">
+      <path id="layer6" class="charts-up-2" d="M49,21.984h8.842V66.212H49Z" transform="translate(4.737 2.209)"/>
+      <path id="layer5" class="charts-up-3" d="M22,36h8.842V64.737H22Z" transform="translate(1.895 3.684)"/>
+      <path id="layer4" class="charts-up-4" d="M8,50h8.842V63.263H8Z" transform="translate(0.421 5.158)"/>
+      <path id="layer3" class="charts-up-5" d="M35,42.014h8.842V64.1H35Z" transform="translate(3.263 4.317)"/>
+      <path id="layer2" class="charts-up-6" d="M62.263,2.105A1.105,1.105,0,0,0,61.158,1H52.316a1.105,1.105,0,1,0,0,2.211h6.172L41.042,20.653,28.5,14.374a1.105,1.105,0,0,0-1.229.161L7.373,32.219a1.108,1.108,0,1,0,1.469,1.658L28.184,16.69l12.592,6.3a1.105,1.105,0,0,0,1.275-.206l18-18.012v6.175a1.105,1.105,0,0,0,2.211,0Z" transform="translate(0.316)"/>
+      <path id="layer1" class="charts-up-7" d="M65.895,63.211H5.105a1.105,1.105,0,0,1,0-2.211H65.895a1.105,1.105,0,0,1,0,2.211Z" transform="translate(0 6.316)"/>
+    </g>
+  </g>
+</svg>

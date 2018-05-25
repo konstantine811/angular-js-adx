@@ -32,15 +32,6 @@
     width: 200px;
   }
 
-  .sub-header-txt {
-    font-size: 22px;
-    line-height: 36px;
-  }
-  .sub-header-txt.sub-header-txt--small {
-    font-size: 18px;
-    line-height: 36px;
-  }
-
   .txt {
     font-size: 18px;
   }
@@ -134,15 +125,6 @@
 }
 
 @media (max-width: $breakpoint-sm) {
-
-  .sub-header-txt {
-    font-size: 18px;
-    line-height: 36px;
-  }
-  .sub-header-txt.sub-header-txt--small {
-    font-size: 18px;
-    line-height: 36px;
-  }
 
   .txt {
     font-size: 14px;
