@@ -13,6 +13,7 @@ angular.module( 'ixLayer.results', [
       params : {
         title: 'Pre-result'
       },
+      abstract: false,
       resolve: {
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
@@ -25,6 +26,13 @@ angular.module( 'ixLayer.results', [
         }]
       }
     })
+      .state('results.pre', {
+        url: '/pre',
+        templateUrl: 'components/results/pages/pre-result.tpl.html',
+        params: {
+          title: 'Pre-result'
+        }
+      })
       .state('results.p1', {
         url: '/p1',
         templateUrl: 'components/results/pages/result-p1.tpl.html',
@@ -124,11 +132,16 @@ angular.module( 'ixLayer.results', [
         $scope.consentAgreed = false;
       };
 
-      //this is test logic for template and deleted after markup tpl step...
-      $scope.preResult = true;
-      $scope.preResultSumbit = function() {
-        $state.go('results.p1');
-        $scope.preResult = false;
+
+      //tabs results
+      $scope.tab = 1;
+
+      $scope.setTab = function(newTab){
+        $scope.tab = newTab;
+      };
+
+      $scope.isSet = function(tabNum){
+        return $scope.tab === tabNum;
       };
 
     }]);

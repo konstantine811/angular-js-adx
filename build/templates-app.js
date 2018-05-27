@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1308,6 +1308,153 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "");
 }]);
 
+angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/pre-result.tpl.html",
+    "<div class=\"pre-result\">\n" +
+    "  <div class=\"result-head pre-result-head\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"pre-result-head__wrap\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray\">Pre-Result</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"container-flex\">\n" +
+    "          <div class=\"flex-column content-txt\">\n" +
+    "            <div class=\"title__wrap\">\n" +
+    "              <h1 class=\"txt-blue-dark\">What will my results tell me?</h1>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap pre-result-head-txt\">\n" +
+    "              <div class=\"sub-header-txt txt-black\">\n" +
+    "                <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column pre-result-head-img hide-mobile\">\n" +
+    "            <img class=\"pre-result-head-img__innner\" src=\"./assets/images/results-page/tablet-rounded.png\" />\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "  <!--section second with boxes-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
+    "      <div class=\"wrapper-txt\">\n" +
+    "        <h1 class=\"txt-center txt-blue-dark\">Your results are ready.</h1>\n" +
+    "        <div class=\"txt--indent-small container-sub-head txt-center\">\n" +
+    "          <p class=\"sub-header-txt txt-black\">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap boxes-row__wrap\">\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "            <div class=\"box-image__wrap\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/charts-down.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt\">\n" +
+    "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "                <h6 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk.</h6>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"txt-small txt-black txt-center\">\n" +
+    "                  Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/charts-up.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt\">\n" +
+    "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "                <h6 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h6>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"txt-small txt-black txt-center\">\n" +
+    "                  Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "            <div class=\"box-image__wrap\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/brain-pink.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt\">\n" +
+    "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "                <h6 class=\"txt-blue-dark txt-center\">Other factors influence your risk.</h6>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"txt-small txt-black txt-center\">\n" +
+    "                  Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/first-aid-kit.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"box-txt\">\n" +
+    "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "                <h5 class=\"txt-blue-dark txt-center\">Knowledge is power.</h5>\n" +
+    "              </div>\n" +
+    "              <div class=\"box-txt__wrap\">\n" +
+    "                <div class=\"txt-small txt-black txt-center\">\n" +
+    "                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      \n" +
+    "      <form action=\"\">\n" +
+    "        <div class=\"boxes__wrap\">\n" +
+    "          <div class=\"box-shadow\">\n" +
+    "            <div class=\"title__wrap title__wrap--not-space-mobile\">\n" +
+    "              <h5 class=\"txt-blue-dark txt-center\">Please concent before proceeding.</h5>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
+    "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
+    "                <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\">\n" +
+    "                <label for=\"checkbox-results\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "              </div>\n" +
+    "              <div class=\"pre-results-box-flex-2\">\n" +
+    "                <div class=\"txt-small txt-black\">\n" +
+    "                  I would like to <span class=\"txt-bold\">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
+    "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
+    "                <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
+    "                <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "              </div>\n" +
+    "              <div class=\"pre-results-box-flex-2\">\n" +
+    "                <div class=\"txt-small txt-black\">\n" +
+    "                  I have read and understood this information. I am in private, comfortable place and wish to view my results.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap--large-top button--center\">\n" +
+    "              <a ui-sref=\"results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\">View results</a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </form>\n" +
+    "    \n" +
+    "    \n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end section second with boxes-->\n" +
+    "</div>");
+}]);
+
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p1.tpl.html",
     "<div class=\"result\">\n" +
@@ -1322,7 +1469,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title\">\n" +
-    "        <h2 class=\"txt-blue\">Your result </h2>\n" +
+    "        <h1 class=\"txt-blue-dark\">Your result </h1>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black\">\n" +
     "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
@@ -1350,7 +1497,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <h3 class=\"txt-blue\">{{ user.first_name }},</h3>\n" +
+    "        <h1 class=\"txt-blue-dark\">{{ user.first_name }},</h1>\n" +
     "        <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genotype is &lte2/e4&gt.</h3>\n" +
     "      </div>\n" +
     "      <div class=\"txt__wrap\">\n" +
@@ -1632,78 +1779,218 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "   <div class=\"section__wrap\">\n" +
     "     <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
     "       <div class=\"row\">\n" +
-    "         <div class=\"col-sm-6\">\n" +
+    "         <div class=\"col-sm-3\">\n" +
     "           <div class=\"boxes__wrap boxes__wrap--padding-top\">\n" +
-    "             <div class=\"box-shadow\">\n" +
-    "               <div class=\"title-wrap\">\n" +
-    "                 <h3 class=\"txt-blue-dark txt-center\">Family history</h3>\n" +
-    "               </div>\n" +
-    "               <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                 <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
-    "               </div>\n" +
-    "               <div class=\"txt__wrap\">\n" +
-    "                 <p class=\"txt txt-black txt-center\">\n" +
-    "                   Parents, siblings, and children of an individual with late-onset Alzheimer's disease have a higher chance of developing the disease themselves.\n" +
-    "                 </p>\n" +
-    "               </div>\n" +
-    "               <div class=\"button__wrap txt-center\">\n" +
-    "                 <button class=\"bt-round bt-round--blue\">See Scientific Details</button>\n" +
-    "               </div>\n" +
+    "             <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "               <ul class=\"box__wrap\">\n" +
+    "                 <li class=\"box__item-link\">\n" +
+    "                   <a href ng-click=\"setTab(1)\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Sleep</h5>\n" +
+    "                     <div class=\"box-tab-image\">\n" +
+    "                       <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
+    "                     </div>\n" +
+    "                   </a>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box__item-link\">\n" +
+    "                   <a href ng-click=\"setTab(2)\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Exercise</h5>\n" +
+    "                     <div class=\"box-tab-image\">\n" +
+    "                       <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
+    "                     </div>\n" +
+    "                   </a>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box__item-link\">\n" +
+    "                   <a href ng-click=\"setTab(3)\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Stress</h5>\n" +
+    "                     <div class=\"box-tab-image\">\n" +
+    "                       <img class=\"img\" src=\"./assets/images/results-page/horse-blue.png\" alt=\"\">\n" +
+    "                     </div>\n" +
+    "                   </a>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box__item-link\">\n" +
+    "                   <a href ng-click=\"setTab(4)\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Nutrition</h5>\n" +
+    "                     <div class=\"box-tab-image\">\n" +
+    "                       <img class=\"img\" src=\"./assets/images/results-page/cake-blue-dark.png\" alt=\"\">\n" +
+    "                     </div>\n" +
+    "                   </a>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box__item-link\">\n" +
+    "                   <a href ng-click=\"setTab(5)\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Brain Stimulation</h5>\n" +
+    "                     <div class=\"box-tab-image\">\n" +
+    "                       <img class=\"img\" src=\"./assets/images/results-page/brain-orange.png\" alt=\"\">\n" +
+    "                     </div>\n" +
+    "                   </a>\n" +
+    "                 </li>\n" +
+    "               </ul>\n" +
     "             </div>\n" +
     "           </div>\n" +
     "         </div>\n" +
-    "         <div class=\"col-sm-6\">\n" +
-    "            <div class=\"row-image-flex\">\n" +
-    "              <div class=\"row__wrap\">\n" +
-    "              <h5 class=\"txt-blue-dark\">Age</h5>\n" +
-    "              <div class=\"row-image__wrap\">\n" +
-    "                <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/cake-orange.png\" alt=\"\">\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "              <div class=\"row__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Sex</h5>\n" +
-    "                <div class=\"row-image__wrap\">\n" +
-    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/people-blue-dark.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Family history</h5>\n" +
-    "                <div class=\"row-image__wrap\">\n" +
-    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/dna-blue.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Hearth health</h5>\n" +
-    "                <div class=\"row-image__wrap\">\n" +
-    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Diet</h5>\n" +
-    "                <div class=\"row-image__wrap\">\n" +
-    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/cake-blue-dark.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"row__wrap row__wrap--space-top\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Intellectual activity</h5>\n" +
-    "                <div class=\"row-image__wrap\">\n" +
-    "                  <img class=\"row-image-icon-flex\" src=\"./assets/images/results-page/horse-blue.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
+    "         <div class=\"col-sm-9\">\n" +
+    "           <div class=\"boxes__wrap boxes__wrap--padding-top\">\n" +
+    "             <div class=\"box-shadow\">\n" +
+    "               <div class=\"box-content\">\n" +
+    "                 <div ng-show=\"isSet(1)\">\n" +
+    "                   <div class=\"title-wrap\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Sleep</h5>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                     <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt__wrap\">\n" +
+    "                     <h5 class=\"txt-blue\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h5>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                        <p class=\"txt txt-black\">\n" +
+    "                          Overall, it is recommended that you aim to sleep about 7 to 8 hours nightly.  Ideally you should go to bed and rise at a similar time each day, as this will help set your body’s internal clock and lead to better sleep habits.  Also, try to limit your exposure to electronics, including televisions, cell phones, computer screens, and back-lit reading devices such as a Kindle, for at least one hour prior to bed.  The blue light emitted from these devices can impair your body’s natural ability to produce melatonin, and thus disrupt your sleep cycle (8). Also, if you often wake up feeling groggy, even after a full 7 to 8 hours of sleep each night, your partner complains of your snoring or you wake up with a sore throat frequently, share this information with your healthcare provider.  They can help identify if you may be a candidate for a sleep study.  §Sleep Apnea, or disordered breathing during sleep, increases the risk for stroke, heart disease, and cognitive disorders.16-20\n" +
+    "                        </p>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 <div ng-show=\"isSet(2)\">\n" +
+    "                   <div class=\"title-wrap\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Exercise</h5>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                     <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt__wrap\">\n" +
+    "                     <h5 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly. </h5>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels, which reduces your risk for Alzheimer’s disease.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2\n" +
+    "                         Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells.1\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Finally, aerobic exercise also improves mood and sleep and reduces stress and anxiety. Depression, anxiety, stress, and poor sleep habits are all associated with increased risk of cognitive decline and Alzheimer’s disease.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         You should always consult with your healthcare provider before beginning a new exercise program.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 <div ng-show=\"isSet(3)\">\n" +
+    "                   <div class=\"title-wrap\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Stress</h5>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                     <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt__wrap\">\n" +
+    "                     <h5 class=\"txt-blue\">Brain Impact of Stress</h5>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.2\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent\">\n" +
+    "                       <a href=\"\" class=\"txt txt-blue link-underline\">Read more about stress</a>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 \n" +
+    "                 <div ng-show=\"isSet(4)\">\n" +
+    "                   <div class=\"title-wrap\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Nutrition</h5>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                     <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt__wrap\">\n" +
+    "                     <h5 class=\"txt-blue\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h5>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         The Mediterranean Diet is one of the diets that has been associated with decreased risk of dementia, mild cognitive impairment, and Alzheimer’s disease (1-6).  The Mediterranean Diet focuses on:\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <ul class=\"item-number-wrap\">\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Intake of fruits</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Intake of vegetables</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Intake of legumes</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Intake of grains/cereals</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\"> Intake of unsaturated fatty acids (primarily olive oil)</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Moderate to high intake of fish</p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Low to moderate intake of dairy products\n" +
+    "                           </p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and\n" +
+    "                           </p>\n" +
+    "                         </li>\n" +
+    "                         <li class=\"item-number\">\n" +
+    "                           <p class=\"txt txt-black\">Regular but moderate intake of alcohol\n" +
+    "                           </p>\n" +
+    "                         </li>\n" +
+    "                       </ul>\n" +
+    "                     </div>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Researchers have also evaluated a diet called the Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "  \n" +
+    "                 <div ng-show=\"isSet(5)\">\n" +
+    "                   <div class=\"title-wrap\">\n" +
+    "                     <h5 class=\"txt-blue-dark txt-center\">Brain Stimulation</h5>\n" +
+    "                   </div>\n" +
+    "                   <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                     <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
+    "                   </div>\n" +
+    "                   <div class=\"txt__wrap\">\n" +
+    "                     <h5 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly.</h5>\n" +
+    "                     <div class=\"txt--indent-small\">\n" +
+    "                       <p class=\"txt txt-black\">\n" +
+    "                         Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
+    "                       </p>\n" +
+    "                     </div>\n" +
+    "                   </div>\n" +
+    "                 </div>\n" +
+    "                 \n" +
+    "               </div>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
     "         </div>\n" +
     "       </div>\n" +
     "     </div>\n" +
     "   </div>\n" +
     "  <!--end section second-->\n" +
     "  \n" +
-    "  <!--section third-->\n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <img class=\"img\" src=\"./assets/images/results-page/img-results-1.png\" alt=\"\">\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--end section third-->\n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +
@@ -2331,149 +2618,7 @@ angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templat
 
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
-    "<!--this is new-->\n" +
-    "<div class=\"pre-result\" ng-if=\"preResult\">\n" +
-    "  <div class=\"result-head pre-result-head\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"pre-result-head__wrap\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray\">Pre-Result</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"container-flex\">\n" +
-    "          <div class=\"flex-column content-txt\">\n" +
-    "            <div class=\"title__wrap\">\n" +
-    "              <h1 class=\"txt-blue-dark\">What will my results tell me?</h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap pre-result-head-txt\">\n" +
-    "              <div class=\"sub-header-txt txt-black\">\n" +
-    "                <span class=\"txt-bold\">Your result is ready.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"flex-column pre-result-head-img\">\n" +
-    "            <img class=\"pre-result-head-img__innner\" src=\"./assets/images/results-page/tablet-rounded.png\" />\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  \n" +
-    "  <!--section second with boxes-->\n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
-    "      <h1 class=\"txt-center txt-blue-dark\">Your results are ready.</h1>\n" +
-    "      <div class=\"txt--indent-small container-sub-head txt-center\">\n" +
-    "        <p class=\"txt txt-black\">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>\n" +
-    "      </div>\n" +
-    "      <div class=\"title__wrap boxes-row__wrap\">\n" +
-    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <div class=\"box-image__wrap\">\n" +
-    "             <ng-include src=\"'./assets/images/svg/charts-down.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-txt\">\n" +
-    "              <div class=\"box-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk.</h5>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-txt__wrap\">\n" +
-    "                <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "                  Some people with the lowest risk Alzheimer’s ApoE genotype (ApoE-e2/e2) still develop Alzheimer’s disease.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/charts-up.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-txt\">\n" +
-    "              <div class=\"box-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h5>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-txt__wrap\">\n" +
-    "                <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "                  Some people with the highest risk Alzheimer’s ApoE genotype (ApoE-e4/e4) never develop Alzheimer’s disease.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <div class=\"box-image__wrap\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/brain-pink.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "           <div class=\"box-txt\">\n" +
-    "             <div class=\"box-title__wrap\">\n" +
-    "               <h5 class=\"txt-blue-dark txt-center\">Other factors influence your risk.</h5>\n" +
-    "             </div>\n" +
-    "             <div class=\"box-txt__wrap\">\n" +
-    "               <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "                 Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your overall Alzheimer’s disease risk, and identify areas where you may be able to take action to reduce your risk or delay the onset of Alzheimer’s disease.\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/first-aid-kit.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-txt\">\n" +
-    "              <div class=\"box-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark txt-center\">Knowledge is power.</h5>\n" +
-    "              </div>\n" +
-    "              <div class=\"box-txt__wrap\">\n" +
-    "                <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "                  Knowing your Alzheimer’s disease risk can help you decide how aggressively you want to make lifestyle changes that can potentially improve your cognitive health.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "  \n" +
-    "      <form action=\"\">\n" +
-    "        <div class=\"boxes__wrap\">\n" +
-    "          <div class=\"box-shadow\">\n" +
-    "            <div class=\"title__wrap\">\n" +
-    "              <h6 class=\"txt-blue-dark txt-center\">Please concent before proceeding.</h6>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
-    "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
-    "                <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\">\n" +
-    "                <label for=\"checkbox-results\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pre-results-box-flex-2\">\n" +
-    "                <div class=\"txt-small txt-black\">\n" +
-    "                  I would like to <span class=\"txt-bold\">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
-    "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
-    "                <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
-    "                <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pre-results-box-flex-2\">\n" +
-    "                <div class=\"txt-small txt-black\">\n" +
-    "                  I have read and understood this information. I am in private, comfortable place and wish to view my results.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"button__wrap--large-top button--center\">\n" +
-    "              <button ng-click=\"preResultSumbit()\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\">View results</button>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "      \n" +
-    "      \n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--end section second with boxes-->\n" +
-    "</div>\n" +
-    "<div ui-view ng-if=\"!preResult\"></div>\n" +
+    "<div ui-view ></div>\n" +
     "<!--this is new end-->\n" +
     "\n" +
     "<!--this is old  To be deleted -->\n" +
@@ -2783,7 +2928,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref=\"results.p1\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"results.p1\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
@@ -2791,7 +2936,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref=\"results.p2\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"results.p2\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
@@ -2799,7 +2944,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref=\"results.p3\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"results.p3\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
@@ -2807,7 +2952,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref=\"results.p4\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"results.p4\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
@@ -2816,21 +2961,27 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "              </li>\n" +
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"side-navbar__link\">\n" +
-    "                  <span class=\"link-icon-inline dna\"></span>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.p5\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
     "                  <span class=\"txt txt-black\">Science</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"navbar-link\">\n" +
-    "                  <span class=\"link-icon-inline users\"></span>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.p6\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
     "                  <span class=\"txt txt-black\">Share results</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a href=\"\" class=\"navbar-link\">\n" +
-    "                  <span class=\"link-icon-inline question\"></span>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.p8\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
     "                  <span class=\"txt txt-black\">General questions</span>\n" +
     "                </a>\n" +
     "              </li>\n" +

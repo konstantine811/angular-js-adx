@@ -77,8 +77,31 @@
   display: block;
   width: 100%;
   height: auto;
-  padding: 14px 10px 0;
+  padding: 14px 20px 0;
 }
+
+.side-navbar-navigation-link__item--not-space {
+  padding: 0 10px;
+}
+
+.navbar-link--second {
+  padding: 7px 10px;
+  display: inline-block;
+  width: 96%;
+  border-radius: 40px;
+  transition: all .9s ease;
+}
+
+.active-bgc-blue.navbar-link--second {
+  background-color: $blue-6;
+  .link, .txt {
+    color: $white !important;
+  }
+  .dna-blue-1, .question-svg-1, .users-svg-1 {
+    fill: $white;
+  }
+}
+
 
 
 

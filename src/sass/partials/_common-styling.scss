@@ -89,6 +89,10 @@ body {
   margin: 0 auto;
   height: auto;
 }
+
+.wrapper-txt {
+
+}
 //end styling container
 
 //section staling
@@ -286,7 +290,7 @@ h4 {
 
 h5 {
   font-family: Roboto, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   color: $white;
   margin: 0;
@@ -295,7 +299,7 @@ h5 {
 
 h6 {
   font-family: Roboto, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: $white;
   margin: 0;
@@ -488,6 +492,19 @@ h6 {
   width: 100%;
 }
 
+.box-shadow.box-shadow--tabs {
+  padding: 0px 4% 70px;
+}
+
+ul.box__wrap {
+  padding: 0;
+}
+
+.box__item-link {
+  list-style: none;
+  padding-top: 50px;
+}
+
 .box-txt {
   max-width: 340px;
   margin: 0 auto;
@@ -530,6 +547,14 @@ h6 {
   margin: 0 auto;
 }
 
+.box-tab-image {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
 .box {
   max-width: 508px;
   height: 448px;
@@ -558,7 +583,7 @@ h6 {
 .box-title__wrap {
   width: 100%;
   height: auto;
-  padding-top: 100px;
+  padding-top: 25px;
 }
 
 .box-txt__wrap {
@@ -618,7 +643,18 @@ h6 {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
+  transition: all .9s ease-out;
 }
+
+
+
+.active-number-blue {
+  .number-bgc {
+    background-color: $blue-6;
+    color: $white;
+  }
+}
+
 
 
 //icon styling
@@ -645,6 +681,19 @@ h6 {
   background-repeat: no-repeat;
   width: 19px;
   height: 19px;
+}
+
+.link-icon--inner {
+  position: relative;
+  width: 21px;
+  height: 20px;
+  display: inline-block;
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 4px;
+  }
 }
 
 .user-white {
@@ -707,13 +756,7 @@ h6 {
 
 
 //row image flex
-.row-image-flex {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
+
 
 .row__wrap {
   width: 50%;
@@ -722,13 +765,6 @@ h6 {
 
 .row__wrap--space-top {
   padding-top: 70px;
-}
-
-.row-image-icon-flex {
-  max-width: 155px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 22px;
 }
 
 
@@ -818,4 +854,10 @@ h6 {
 .hypphen-space {
   display: inline-block;
   padding: 0 15px;
+}
+
+ul.item-number-wrap {
+  padding: 0 0 0 17px;
+  list-style: decimal;
+  font-size: 18px;
 }
