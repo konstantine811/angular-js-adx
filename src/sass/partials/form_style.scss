@@ -81,6 +81,14 @@ span.summary.ng-valid {
   padding-top: 10px;
 }
 
+input.form-control.form-control-white-border {
+  background-color: $white;
+  height: 54px;
+  border-radius: 30px !important;
+  border-bottom: none;
+  padding-left: 25px !important;
+}
+
 //styling checkbox
 .checkbox input.checkbox-input[type="checkbox"] {
   float: none;

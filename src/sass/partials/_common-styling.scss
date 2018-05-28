@@ -345,6 +345,17 @@ h6 {
   margin: 0 auto;
 }
 
+.txt-middle {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
 .txt.txt--exs-small  {
   font-size: 12px;
   line-height: 18px;
@@ -769,13 +780,25 @@ ul.box__wrap {
 
 
 //styling acordion item
+
+.accordion-heading-wrap.ng-scope {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
 .dropdown-txt__content {
   width: 100%;
   height: auto;
   border-bottom: 1px solid $silver-2;
   &.panel {
-    padding-top: 87px;
-    padding-bottom: 52px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
     box-shadow: none;
@@ -789,6 +812,22 @@ ul.box__wrap {
 
 .panel-group .panel-heading + .panel-collapse .panel-body {
   border-top: none !important;
+}
+
+.panel-title {
+  padding: 40px 0;
+}
+
+.panel-open {
+  .panel-title {
+    background-color: $blue-6;
+    transition: all 0.5s ease-out;
+  }
+  .cross-button-open {
+    &:after, &:before {
+      background-color: $white;
+    }
+  }
 }
 
 .content-title__wrap {

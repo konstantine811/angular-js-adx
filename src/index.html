@@ -32,7 +32,7 @@
 <app-side-navbar ng-if="logged && hideSideNavBar"></app-side-navbar>
 <div class="page" ng-class="{'logged-out' : !logged || !hideSideNavBar}">
   <app-header ng-if="!logged || !hideSideNavBar"></app-header>
-  <div class="container-page" ui-view></div>
+  <div class="container-page page-transition-anim" ui-view></div>
   <app-footer ng-if="!logged || !hideSideNavBar"></<app-footer>
 </div>
 </body>

@@ -270,23 +270,22 @@ button[disabled].bt-round {
 //cross-button for open menu
 
 .cross-button-open__wrap {
-  display: inline-block;
-  width: 10%;
+  width: 100px;
   height: 100%;
 }
 
 .cross-button-open {
-  width: 66px;
-  height: 66px;
-  position: absolute;
-  top: 0;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  padding-left: 34px;
   &:before, &:after {
     content: '';
     position: absolute;
     height: 5px;
-    width: 66px;
+    width: 33px;
     background-color: $silver-2;
-    top: 24px;
+    top: 14px;
     transition: all .3s ease-in-out;
   }
   &:after {

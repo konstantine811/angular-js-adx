@@ -6,6 +6,12 @@
   button.button-border-rounded {
     padding: 5px 34px;
   }
+
+  .button-border-rounded.button-border-rounded--lg {
+    padding: 7px 54px;
+    font-size: 19pt;
+  }
+
   .bt-round-right-icon {
     &::before, &::after {
       top: 10px;
@@ -125,14 +131,6 @@
 
 @media (max-width: $breakpoint-md) {
 
-  .cross-button-open {
-    height: 46px;
-  }
-
-  .cross-button-open:before, .cross-button-open:after {
-    width: 46px;
-    top: 30%;
-  }
   .status-progressbar-item.active:before {
     width: 12vw;
   }
@@ -169,22 +167,11 @@
   .bt-round.bt-round--blue:hover {
     box-shadow: inset 0px 0px 3px 2px $blue-6;
   }
-  .cross-button-open {
-    width: 32px;
-    height: 36px;
-    &:before, &:after {
-      width: 29px;
-      top: 19px;
-    }
-  }
+
   .button-border-rounded.button-border-rounded--small {
     padding: 10px 48px;
   }
 
-  .cross-button-open__wrap {
-    position: absolute;
-    margin: -9px 0px;
-  }
   .bt-round.bt-round-left-icon.bt-round-right-icon {
     padding: 9px 65px;
   }
