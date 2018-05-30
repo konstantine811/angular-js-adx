@@ -1,0 +1,43 @@
+.carousel {
+  width: 1200px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
+  &:after {
+    content: '';
+    width: 106px;
+    height: 27px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    background-image: url("../assets/images/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.carousel-control.right {
+  right: -8%;
+  &:after {
+    transform: rotate(-90deg);
+  }
+}
+
+.carousel-control.left {
+  left: -8%;
+  &:after {
+    transform: rotate(90deg);
+    left: 0;
+  }
+}
+
+.carousel-indicators,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right{
+  display: none;
+}
+
+.slider__wrap {
+  padding: 0 30px;
+}

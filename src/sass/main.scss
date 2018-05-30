@@ -23,6 +23,7 @@
 @import './partials/_common-containers';
 @import './partials/_common-images';
 @import './partials/_common-boxes';
+@import './partials/carousel';
 //components
 @import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
@@ -37,6 +38,7 @@
 @import '../app/components/register/register.scss';
 @import '../app/components/results/results.scss';
 @import '../app/components/profile/profile.scss';
+@import '../app/components/about/about.scss';
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 //responsive media query
@@ -44,6 +46,10 @@
 @import 'responsive/common-styling-media';
 @import "responsive/_buttons-media.scss";
 @import 'responsive/_popup-media.scss';
+@import './responsive/_common-text-styling-media';
+@import './responsive/_common-containers-media';
+@import './responsive/_common-images-media';
+@import './responsive/_common-boxes-media';
 
 //responsive media query components
 @import "../app/components/home/_home-media.scss";
@@ -54,10 +60,7 @@
 @import '../app/components/profile/_profile-media.scss';
 @import '../app/components/products/_product-media.scss';
 @import '../app/components/login/_login-media.scss';
-@import './responsive/_common-text-styling-media';
-@import './responsive/_common-containers-media';
-@import './responsive/_common-images-media';
-@import './responsive/_common-boxes-media';
+@import '../app/components/about/about-media.scss';
 
 a[ng-click] {
   cursor: pointer;

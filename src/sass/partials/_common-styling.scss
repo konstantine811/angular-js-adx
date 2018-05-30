@@ -9,6 +9,20 @@ body {
   display: none !important;
 }
 
+.float-img-right {
+  float: right;
+  width: 30%;
+}
+
+.float-img-left {
+  float: left;
+  width: 30%;
+}
+
+.clear-both {
+  clear: both;
+}
+
 .img {
   width: 100%;
   height: auto;

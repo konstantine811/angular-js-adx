@@ -1,0 +1,31 @@
+<svg class="heart-protection-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.604 217.604">
+  <defs>
+    <style>
+      .heart-protection-svg-1 {
+        fill: #e6e6e6;
+        opacity: 0.24;
+      }
+
+      .heart-protection-svg-2 {
+        fill: #cbe5ff;
+      }
+
+      .heart-protection-svg-3 {
+        fill: #fe6363;
+      }
+
+      .heart-protection-svg-4 {
+        fill: #000064;
+        opacity: 0.16;
+      }
+    </style>
+  </defs>
+  <g id="Group_700" data-name="Group 700" transform="translate(-851 -1101.698)">
+    <circle id="Ellipse_1638" data-name="Ellipse 1638" class="heart-protection-svg-1" cx="108.802" cy="108.802" r="108.802" transform="translate(851 1101.698)"/>
+    <g id="health-8788_ce2685f5-f92f-4063-b077-af60889d9dc7" transform="translate(908 1156.167)">
+      <path id="layer2" class="heart-protection-svg-2" d="M7.556,13.663,57.763,2.078a2.008,2.008,0,0,1,.9,0l50.207,11.588a2.008,2.008,0,0,1,1.558,1.964V46.286A84.3,84.3,0,0,1,58.2,122.469,84.287,84.287,0,0,1,6,46.286V15.63A2.008,2.008,0,0,1,7.556,13.663Z" transform="translate(-6 -2.026)"/>
+      <path id="layer1" class="heart-protection-svg-3" d="M60.174,18a15.16,15.16,0,0,0-14.058,9.668A15.16,15.16,0,0,0,32.059,18,14.285,14.285,0,0,0,18,32.5c0,12.57,10.308,25.139,28.116,37.711C63.924,57.643,74.232,45.073,74.232,32.5A14.285,14.285,0,0,0,60.174,18Z" transform="translate(6.098 14.079)"/>
+      <path id="opacity" class="heart-protection-svg-4" d="M57.763,2.058,7.556,13.646A2.008,2.008,0,0,0,6,15.61V46.266A84.287,84.287,0,0,0,58.2,122.45h.012V2.058A2.04,2.04,0,0,0,57.763,2.058Z" transform="translate(-6 -2.007)"/>
+    </g>
+  </g>
+</svg>

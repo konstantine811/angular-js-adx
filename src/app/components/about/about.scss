@@ -1,0 +1,17 @@
+.about-page-header {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/about-bgc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 902px;
+  display: flex;
+  align-items: center;
+}
+
+.about-img-middle {
+  max-width: 217px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}

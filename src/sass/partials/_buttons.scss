@@ -77,7 +77,7 @@ a.bt.gray:hover, button.bt.gray:hover {
 }
 
 //border button
-button.button-border-rounded {
+button.button-border-rounded, a.button-border-rounded {
   width: auto;
   min-width: 165px;
   height: auto;
@@ -93,6 +93,7 @@ button.button-border-rounded {
   transition: all .5s ease-out;
   z-index: 100;
   position: relative;
+  display: inline-block;
 
   &:hover {
     background-color: rgba($white, 0.3);
@@ -103,7 +104,7 @@ button.button-border-rounded {
   min-width: 347px;
 }
 
-button.button-border-rounded.button-border-rounded--blue {
+.button-border-rounded.button-border-rounded--blue {
   color: $blue-6;
   border-color: $blue-6;
   &:hover {
@@ -111,7 +112,7 @@ button.button-border-rounded.button-border-rounded--blue {
   }
 }
 
-button.button-border-rounded.button-border-rounded--blue-dark {
+.button-border-rounded.button-border-rounded--blue-dark {
   color: $blue-dark;
   border-color: $blue-dark;
   &:hover {
@@ -121,6 +122,11 @@ button.button-border-rounded.button-border-rounded--blue-dark {
 
 .button-border-rounded.button-border-rounded--small {
   padding: 4px 39px;
+}
+
+.button-border-rounded.button-border-rounded--small-line-height {
+  padding: 8px 54px;
+  line-height: 0;
 }
 
 button[disabled].bt-round {

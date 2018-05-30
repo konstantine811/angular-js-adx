@@ -128,4 +128,15 @@ ul.box__wrap {
   padding-top: 50px;
 }
 
+.section-box-shadow {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 46px 2px rgba($black, .2);
+  margin-top: 36px;
+}
+
+.section-box-shadow.section-box-shadow--without-space-top {
+  margin-top: 0;
+}
+
 //end boxes styling

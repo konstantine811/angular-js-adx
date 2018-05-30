@@ -4,24 +4,101 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
   $templateCache.put("components/about/about.tpl.html",
     "<section class=\"about-page-header\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
-    "      <div uib-slide index=\"0\">\n" +
-    "        <div class=\"slider__wrap\">\n" +
-    "          \n" +
+    "    <div class=\"container-lg\">\n" +
+    "      <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
+    "        <div uib-slide index=\"0\">\n" +
+    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"anim-content-transition\">\n" +
+    "                <h3 >Our mission</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"button__wrap text-left\">\n" +
+    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
-    "      </div>\n" +
-    "      <div uib-slide index=\"1\">\n" +
-    "        <h1 class=\"txt-blue-dark\">SLIDE -2</h1>\n" +
-    "      </div>\n" +
-    "      <div uib-slide index=\"2\">\n" +
-    "        <h1 class=\"txt-blue-dark\">SLIDE -3</h1>\n" +
-    "      </div>\n" +
-    "      <div uib-slide index=\"3\">\n" +
-    "        <h1 class=\"txt-blue-dark\">SLIDE -4</h1>\n" +
+    "        <div uib-slide index=\"1\">\n" +
+    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"anim-content-transition\">\n" +
+    "                <h3 >Our mission Slider-2</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
+    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div uib-slide index=\"2\">\n" +
+    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"anim-content-transition\">\n" +
+    "                <h3 >Our mission Slider-3</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div uib-slide index=\"3\">\n" +
+    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"anim-content-transition\">\n" +
+    "                <h3 >Our mission Slider-4</h3>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</section>");
+    "</section>\n" +
+    "\n" +
+    "\n" +
+    "<div class=\"container-fluid container-fluid--section\">\n" +
+    "  \n" +
+    "  <!--sectoin second-->\n" +
+    "  <div class=\"section-box-shadow section-box-shadow--without-space-top\">\n" +
+    "    <div class=\"container-lg\">\n" +
+    "      <div class=\"title__wrap txt-center\">\n" +
+    "        <h1 class=\"txt-blue\">Our values</h1>\n" +
+    "      </div>\n" +
+    "      <div class=\"img__wrap\">\n" +
+    "        <ng-include class=\"about-img-middle\" src=\"'./assets/images/svg/heart-protection.svg'\"></ng-include>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--end sectoin second-->\n" +
+    "</div>");
 }]);
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -1535,7 +1612,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <!--section first end-->\n" +
     "  \n" +
     "  <!--section-seonond-->\n" +
-    "  <div class=\"section__wrap\">\n" +
+    "  <div class=\"section__wrap section__wrap--small-pad-top clear-both\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <!--chart-->\n" +
     "      <div class=\"result-chart__wrap\">\n" +
