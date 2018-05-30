@@ -61,30 +61,30 @@ angular.module( 'ixLayer.results', [
           title: 'Next steps'
         }
       })
-      .state('results.p5', {
-        url: '/p5',
-        templateUrl: 'components/results/pages/result-p5.tpl.html',
+      .state('results.science', {
+        url: '/science',
+        templateUrl: 'components/results/pages/result-science.tpl.html',
         params: {
           title: 'Science'
         }
       })
-      .state('results.p6', {
-        url: '/p6',
-        templateUrl: 'components/results/pages/result-p6.tpl.html',
+      .state('results.sharing', {
+        url: '/sharing',
+        templateUrl: 'components/results/pages/result-sharing.tpl.html',
         params: {
           title: 'Share results'
         }
       })
-      .state('results.p7', {
-        url: '/p7',
-        templateUrl: 'components/results/pages/result-p7.tpl.html',
+      .state('results.questions', {
+        url: '/questions',
+        templateUrl: 'components/results/pages/result-questions.tpl.html',
         params: {
           title: 'General questions'
         }
       })
-      .state('results.p8', {
-        url: '/p8',
-        templateUrl: 'components/results/pages/result-p8.tpl.html',
+      .state('results.view', {
+        url: '/view',
+        templateUrl: 'components/results/pages/result-view.tpl.html',
         params: {
           title: 'Welcome'
         }

@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-p5.tpl.html", "components/results/pages/result-p6.tpl.html", "components/results/pages/result-p7.tpl.html", "components/results/pages/result-p8.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -848,7 +848,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Physician\n" +
     "                  Review</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The physician is determining if the test is appropriate for user.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">A physician is determining if this test is appropriate for you</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item active\">\n" +
@@ -857,7 +857,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Kit\n" +
     "                  Registered</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user has spit in their sample tube and registered it for shipment.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">You have successfully registered your sample collection kit</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item active\">\n" +
@@ -866,7 +866,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Manifest\n" +
     "                  Uploaded</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample has been received by the lab.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">Your sample has been received by the lab</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item active\">\n" +
@@ -875,7 +875,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">DNA Extraction\n" +
     "                  Complete</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample is done in the lab and currently being processed.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">Your sample is currently being processed by the lab</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item active\">\n" +
@@ -884,7 +884,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Data Delivery\n" +
     "                  Complete</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The Genomics Service will now provide variant data from the user's sample.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">Helix genomics services is now providing variant data for your sample</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item active active--current\">\n" +
@@ -893,7 +893,7 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold txt-center progressbar-txt-color\">Results ready\n" +
     "                  for view</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">The user's sample is being reanalyzed.</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">Follow the instructions below to view your results</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "          </ul>\n" +
@@ -1310,14 +1310,6 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__register-wrap\">\n" +
     "                <div class=\"form-group\">\n" +
-    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
-    "                  <input id=\"email\" type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
-    "                  <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
     "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
     "                  <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
@@ -1326,6 +1318,14 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"last_name\">Last name</label>\n" +
     "                  <input id=\"=last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
     "                  <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
+    "                  <input id=\"email\" type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"userForm.email\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"password\">Password</label>\n" +
@@ -1354,7 +1354,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
+    "\n" +
     "  <!--start markup popup-->\n" +
     "  <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
     "    <div class=\"popup-content\">\n" +
@@ -1402,7 +1402,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "    </div>\n" +
     "  </div>\n" +
     "  <!--end markup popup-->\n" +
-    "  \n" +
+    "\n" +
     "</div>\n" +
     "\n" +
     "\n" +
@@ -1443,7 +1443,7 @@ angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templa
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
     "      <div class=\" \">\n" +
-    "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Your results are ready.</h1>\n" +
+    "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Remember</h1>\n" +
     "        <div class=\"txt--indent-small container-sub-head txt-center anim-content-transition\">\n" +
     "          <p class=\"sub-header-txt txt-black\">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>\n" +
     "        </div>\n" +
@@ -2217,8 +2217,111 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "</div>");
 }]);
 
-angular.module("components/results/pages/result-p5.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p5.tpl.html",
+angular.module("components/results/pages/result-questions.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-questions.tpl.html",
+    "<div class=\"result result--space-bottom\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "        <h1 class=\"txt-blue-dark anim-content-transition\">General Questions</h1>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "            “You are not in this alone. ADx Healthcare provides\n" +
+    "            genetics counselors to go over your report and\n" +
+    "            answer any questions you have.”\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <!--section dropdown txt-->\n" +
+    "      <div class=\"section-dropdown-txt__wrap section-dropdown-txt__wrap--border-bottom\" uib-accordion close-others=\"false\">\n" +
+    "    \n" +
+    "        <!--dropdown content first-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"accordion-heading-wrap\">\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h5>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <div class=\"txt-middle txt-black\">\n" +
+    "              Everyone has some level of risk for Alzheimer’s disease. Your risk is a combination of genetics, lifestyle, environment, other medical conditions, and age. The genetic related risk for Alzheimer’s disease increases based on ApoE genotype, with e2/e2 having the lowest genetic risk and e4/e4 having the highest genetic risk.\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                (graphic or table here to show the increase of risk) e2/e2, e2/e3, e3/e3, e3/e4, and e4/e4.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <!--end dropdown content first-->\n" +
+    "    \n" +
+    "        <!--dropdown content second-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"accordion-heading-wrap\">\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h5 class=\"txt-blue-dark\">Who will see my test results?</h5>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <div class=\"txt-middle txt-black\">\n" +
+    "              Your test results are delivered privately to you.  It is up to you whom you share them with after that.  However, we encourage you to discuss them with your primary health care provider or one of our genetics counselors if you have any questions about your results or how you can take action to reduce your Alzheimer’s risk.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        <!--end dropdown content second-->\n" +
+    "    \n" +
+    "        <!--dropdown content third-->\n" +
+    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
+    "          <div uib-accordion-heading>\n" +
+    "            <div class=\"accordion-heading-wrap\">\n" +
+    "              <div class=\"cross-button-open__wrap\">\n" +
+    "                <div class=\"cross-button-open\"></div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-title__wrap\">\n" +
+    "                <h5 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h5>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"content-txt__wrap\">\n" +
+    "            <p class=\"txt-middle txt-black\">\n" +
+    "              Late-onset Alzheimer’s disease risk is influenced by your genetics, age, other medical conditions, and lifestyle and environmental factors.  For example, as you age from 65 to 85, your risk of Alzheimer’s disease increases.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <!--end dropdown content third-->\n" +
+    "      </div>\n" +
+    "      <!-- end section dropdown txt-->\n" +
+    "    </div>\n" +
+    "  <!--end section first-->\n" +
+    "  </div>\n" +
+    "\n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-science.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-science.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
@@ -2443,8 +2546,8 @@ angular.module("components/results/pages/result-p5.tpl.html", []).run(["$templat
     "</div>");
 }]);
 
-angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p6.tpl.html",
+angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-sharing.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
@@ -2525,111 +2628,8 @@ angular.module("components/results/pages/result-p6.tpl.html", []).run(["$templat
     "</div>");
 }]);
 
-angular.module("components/results/pages/result-p7.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p7.tpl.html",
-    "<div class=\"result result--space-bottom\">\n" +
-    "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
-    "        <h1 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h1>\n" +
-    "        <div class=\"title__wrap\">\n" +
-    "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
-    "            “You are not in this alone. ADx Healthcare provides\n" +
-    "            genetics counselors to go over your report and\n" +
-    "            answer any questions you have.”\n" +
-    "          </p>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  <!--section first-->\n" +
-    "  <div>\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <!--section dropdown txt-->\n" +
-    "      <div class=\"section-dropdown-txt__wrap section-dropdown-txt__wrap--border-bottom\" uib-accordion close-others=\"false\">\n" +
-    "    \n" +
-    "        <!--dropdown content first-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
-    "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h5>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <div class=\"txt-middle txt-black\">\n" +
-    "              Everyone has some level of risk for Alzheimer’s disease. Your risk is a combination of genetics, lifestyle, environment, other medical conditions, and age. The genetic related risk for Alzheimer’s disease increases based on ApoE genotype, with e2/e2 having the lowest genetic risk and e4/e4 having the highest genetic risk.\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                (graphic or table here to show the increase of risk) e2/e2, e2/e3, e3/e3, e3/e4, and e4/e4.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <!--end dropdown content first-->\n" +
-    "    \n" +
-    "        <!--dropdown content second-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
-    "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Who will see my test results?</h5>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <div class=\"txt-middle txt-black\">\n" +
-    "              Your test results are delivered privately to you.  It is up to you whom you share them with after that.  However, we encourage you to discuss them with your primary health care provider or one of our genetics counselors if you have any questions about your results or how you can take action to reduce your Alzheimer’s risk.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        <!--end dropdown content second-->\n" +
-    "    \n" +
-    "        <!--dropdown content third-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
-    "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h5>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <p class=\"txt-middle txt-black\">\n" +
-    "              Late-onset Alzheimer’s disease risk is influenced by your genetics, age, other medical conditions, and lifestyle and environmental factors.  For example, as you age from 65 to 85, your risk of Alzheimer’s disease increases.\n" +
-    "            </p>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <!--end dropdown content third-->\n" +
-    "      </div>\n" +
-    "      <!-- end section dropdown txt-->\n" +
-    "    </div>\n" +
-    "  <!--end section first-->\n" +
-    "  </div>\n" +
-    "\n" +
-    "</div>");
-}]);
-
-angular.module("components/results/pages/result-p8.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p8.tpl.html",
+angular.module("components/results/pages/result-view.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-view.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
@@ -2832,22 +2832,6 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "        </div>\n" +
     "      \n" +
-    "      <!--title blue-->\n" +
-    "      <div class=\"footer-blue__wrap\">\n" +
-    "        <div class=\"footer-title-blue__wrap\">\n" +
-    "          <h3>Join our email list</h3>\n" +
-    "        </div>\n" +
-    "        <form action=\"\" class=\"footer-form\">\n" +
-    "          <div class=\"footer-form__wrap\">\n" +
-    "            <div class=\"footer-input__wrap\">\n" +
-    "              <input class=\"form-control form-control-white-border\" type=\"text\" placeholder=\"Email adress\">\n" +
-    "            </div>\n" +
-    "            <div class=\"footer-submit__wrap\">\n" +
-    "              <button type=\"submit\" class=\"button-border-rounded button-border-rounded--lg\">Submit</button>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </form>\n" +
-    "      </div>\n" +
     "      <!--title blue end-->\n" +
     "      <div class=\"footer-bottom\">\n" +
     "        <div class=\"footer-bottom__wrap\">\n" +
@@ -3063,7 +3047,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.p5\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.science\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -3071,7 +3055,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.p6\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"results.sharing\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
     "                  </span>\n" +

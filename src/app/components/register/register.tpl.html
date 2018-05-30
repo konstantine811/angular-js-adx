@@ -8,14 +8,6 @@
             <div class="form-input">
               <div class="form-input__register-wrap">
                 <div class="form-group">
-                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="email">Email address</label>
-                  <input id="email" type="email" name="email" class="form-control" ng-model="userForm.email" required>
-                  <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
-                    <span ng-show="form.email.$error.email">Please enter a valid email address</span>
-                    <span ng-show="form.email.$error.required">Please enter a value</span>
-                  </div>
-                </div>
-                <div class="form-group">
                   <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="first_name">First name</label>
                   <input id="first_name" type="text" name="first_name" class="form-control" ng-model="userForm.first_name"  ng-minlength="3" required>
                   <p ng-show="form.first_name.$error.minlength && !form.first_name.pristine" class="error">You firstname is too short</p>
@@ -24,6 +16,14 @@
                   <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="last_name">Last name</label>
                   <input id="=last_name" type="text" name="last_name" class="form-control" ng-model="userForm.last_name"  ng-minlength="3" required>
                   <p ng-show="form.last_name.$error.minlength && !form.last_name.pristine" class="error">You lastname is too short</p>
+                </div>
+                <div class="form-group">
+                  <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="email">Email address</label>
+                  <input id="email" type="email" name="email" class="form-control" ng-model="userForm.email" required>
+                  <div class="error" ng-show="form.email.$invalid && form.email.$dirty">
+                    <span ng-show="form.email.$error.email">Please enter a valid email address</span>
+                    <span ng-show="form.email.$error.required">Please enter a value</span>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="password">Password</label>
@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  
+
   <!--start markup popup-->
   <div class="popup" ng-if="showPopup" test-hook="tour-start-popover">
     <div class="popup-content">
@@ -100,7 +100,7 @@
     </div>
   </div>
   <!--end markup popup-->
-  
+
 </div>
 
 
