@@ -1,0 +1,128 @@
+//container
+.container-lg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  max-width: 1442px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-md {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-lg--dashboard {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin: 0 auto;
+}
+
+.container-md-button-flex {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-xs-button-flex {
+  max-width: 572px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.txt-wrap-under-button {
+  max-width: 256px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex: 1;
+}
+
+.flex-column.flex-column--line {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.container-flex-end {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.column-right {
+  padding-right: 67px;
+}
+
+.container-flex-center {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-sub-head {
+  max-width: 607px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.wrapper-txt {
+
+}
+//end styling container
+
+//section staling
+
+.section-box-shadow {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 46px 2px rgba($black, .2);
+  margin-top: 36px;
+}
+
+.section__wrap {
+  padding-top: 130px;
+}
+
+.title-section__wrap {
+  padding-top: 90px;
+}
+
+.section__wrap.section__wrap--small-pad-top {
+  padding-top: 25px;
+}
+
+.section-bgc--silver {
+  background-color: $silver;
+  padding: 94px 0;
+}
+
+.section-dropdown-txt__wrap {
+  padding-top: 90px;
+  width: 100%;
+  height: auto;
+}
+
+.align-vertical--center {
+  height: 100%;
+  align-self: center;
+}
+//end section staling

@@ -19,6 +19,10 @@
 @import './partials/logo.scss';
 @import './partials/_buttons.scss';
 @import './partials/_common-animations';
+@import './partials/_common-text-styling';
+@import './partials/_common-containers';
+@import './partials/_common-images';
+@import './partials/_common-boxes';
 //components
 @import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
@@ -50,6 +54,10 @@
 @import '../app/components/profile/_profile-media.scss';
 @import '../app/components/products/_product-media.scss';
 @import '../app/components/login/_login-media.scss';
+@import './responsive/_common-text-styling-media';
+@import './responsive/_common-containers-media';
+@import './responsive/_common-images-media';
+@import './responsive/_common-boxes-media';
 
 a[ng-click] {
   cursor: pointer;

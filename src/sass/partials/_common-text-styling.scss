@@ -1,0 +1,239 @@
+//common fonts style
+ul.item-decimal {
+  list-style-type: decimal;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+}
+
+a.link-underline {
+  text-decoration: underline;
+}
+
+//txt space
+.txt-padding-top {
+  padding-top: 20px;
+}
+
+.txt-left-space {
+  padding-left: 20px;
+}
+//end txt space
+
+
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-uppercase {
+  text-transform: uppercase !important;
+}
+
+.txt-inline-block {
+  display: inline-block !important;
+}
+
+.txt-bold {
+  font-weight: 600 !important;
+}
+
+.txt-medium {
+  font-weight: 500 !important;
+}
+.txt-regular {
+  font-weight: 400 !important;
+}
+
+.txt-blue {
+  color: $blue-6 !important;
+}
+
+.txt-blue-2 {
+  color: $blue-7 !important;
+}
+
+.txt-blue-dark {
+  color: $blue-dark !important;
+}
+
+.txt-black {
+  color: $black !important;
+}
+
+.txt-gray {
+  color: $gray-2 !important;
+}
+
+.txt-fonts-circular-book {
+  font-family: 'CircularStd-Book', sans-serif !important;
+}
+
+.txt-fonts-circular-medius {
+  font-family: 'CircularStd-Medium', sans-serif !important;
+}
+
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.txt-wrap__border {
+  width: 100%;
+  height: auto;
+  padding-bottom: 14px;
+  border-bottom: 2px solid $gray;
+}
+
+//title txt
+.title__wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+h1 {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Roboto, sans-serif;
+  color: $white;
+  font-weight: 500;
+  line-height: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-header-txt {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sub-header-txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 21px;
+}
+
+.txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 37px;
+}
+
+.txt__wrap.txt__wrap--border-bottom {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 20px;
+}
+
+.txt {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.txt-middle {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.txt.txt--exs-small  {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.txt--indent {
+  padding-top: 48px;
+}
+
+.txt--indent-small {
+  padding-top: 20px;
+}
+
+.link-padding-right {
+  padding-right: 15px;
+}
+
+.link--indent {
+  padding-top: 20px;
+}
+
+.txt-small {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+//end common fonts stling txt

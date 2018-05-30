@@ -45,7 +45,12 @@ angular.module( 'ixLayer', [
 
 
 
-.run( function run () {
+.run( function run ($rootScope, $document, $state, $stateParams) {
+  $rootScope.$state = $state;
+  $rootScope.$stateParams = $stateParams;
+  $rootScope.$on('$stateChangeSuccess', function() {
+    $document[0].body.scrollTop = $document[0].documentElement.scrollTop = 0;
+  });
 })
 
   .controller( 'AppCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv', function AppCtrl ( $scope, $location, $state, $rootScope, djangoAuth, userAccessSrv ) {
@@ -71,6 +76,9 @@ angular.module( 'ixLayer', [
           $scope.hideSideNavBar = false;
           break;
         case 'register' :
+          $scope.hideSideNavBar = false;
+          break;
+        case 'about' :
           $scope.hideSideNavBar = false;
           break;
         default:

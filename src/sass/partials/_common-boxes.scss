@@ -1,0 +1,131 @@
+//boxes styling
+.boxes__wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+
+.boxes__wrap.boxes__wrap--padding-top {
+  padding: 25px 15px 0;
+}
+
+.box-shadow {
+  background-color: white;
+  padding: 65px  4%;
+  margin: 13px 13px;
+  box-shadow: $box-shadow;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+
+.box-shadow.box-shadow--tabs {
+  padding: 0px 4% 70px;
+}
+
+ul.box__wrap {
+  padding: 0;
+}
+
+.box__item-link {
+  list-style: none;
+  padding-top: 50px;
+}
+
+.box-txt {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.box-half-column {
+  width: 50%;
+  height: auto;
+}
+
+.box-half-column--flex {
+  display: flex;
+  align-items: center;
+}
+
+.box-image-column__inner {
+  max-width: 158px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.box-txt-column__wrap {
+  width: 63%;
+}
+
+.box-image-column__wrap {
+  width: 37%;
+  text-align: right;
+}
+
+.box-image__wrap-padding-top {
+  padding-top: 45px;
+}
+
+.box-image__wrap {
+  max-width: 158px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.box-tab-image {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.box {
+  max-width: 508px;
+  height: 448px;
+  background-color: white;
+  margin: 0 15px;
+  padding-left: 50px
+}
+
+.box-row-padding {
+  padding-top: 30px;
+}
+
+
+.box-orange {
+  box-shadow: inset 0px 17px 0px 0px $orange;
+}
+
+.box-blue-dark {
+  box-shadow: inset 0px 17px 0px 0px $blue-dark;
+}
+
+.box-blue {
+  box-shadow: inset 0px 17px 0px 0px $blue-6;
+}
+
+.box-title__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+}
+
+.box-txt__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 27px;
+}
+
+
+
+.box-data__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+//end boxes styling

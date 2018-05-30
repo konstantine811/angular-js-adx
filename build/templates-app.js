@@ -2,11 +2,26 @@ angular.module("templates-app", ["components/about/about.tpl.html", "components/
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "  <div class=\"row\">\n" +
-    "    <h1>This is page About</h1>\n" +
+    "<section class=\"about-page-header\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
+    "      <div uib-slide index=\"0\">\n" +
+    "        <div class=\"slider__wrap\">\n" +
+    "          \n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div uib-slide index=\"1\">\n" +
+    "        <h1 class=\"txt-blue-dark\">SLIDE -2</h1>\n" +
+    "      </div>\n" +
+    "      <div uib-slide index=\"2\">\n" +
+    "        <h1 class=\"txt-blue-dark\">SLIDE -3</h1>\n" +
+    "      </div>\n" +
+    "      <div uib-slide index=\"3\">\n" +
+    "        <h1 class=\"txt-blue-dark\">SLIDE -4</h1>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
     "  </div>\n" +
-    "</div>");
+    "</section>");
 }]);
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -1515,7 +1530,13 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      \n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  <!--section first end-->\n" +
+    "  \n" +
+    "  <!--section-seonond-->\n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <!--chart-->\n" +
     "      <div class=\"result-chart__wrap\">\n" +
     "        <div class=\"title__wrap\">\n" +
@@ -1526,12 +1547,11 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <!--charts end-->\n" +
-    "      \n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <!--section first end-->\n" +
+    "  <!--section second end-->\n" +
     "  \n" +
-    "  <!--section second-->\n" +
+    "  <!--section third-->\n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"row\">\n" +
@@ -1583,7 +1603,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <!--section second end -->\n" +
+    "  <!--section third end -->\n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver txt-center\">\n" +
