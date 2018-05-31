@@ -81,6 +81,15 @@ angular.module( 'ixLayer', [
         case 'about' :
           $scope.hideSideNavBar = false;
           break;
+        case 'products' :
+          $scope.hideSideNavBar = false;
+          break;
+        case 'FAQ' :
+          $scope.hideSideNavBar = false;
+          break;
+        case 'contact' :
+          $scope.hideSideNavBar = false;
+          break;
         default:
           $scope.hideSideNavBar = true;
           break;
