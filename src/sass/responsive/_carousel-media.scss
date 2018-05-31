@@ -1,0 +1,40 @@
+@media (max-width: $breakpoint) {
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .carousel-control.right {
+    right: -2%;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .carousel {
+    width: 100%;
+  }
+  .carousel-control.right {
+    right: 0;
+  }
+  .slider__wrap {
+    padding: 0 50px;
+  }
+  .carousel-control.right:after {
+    left: 12px;
+  }
+
+  .carousel-control.left {
+    left: 0;
+    &:after {
+      left: -36px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-exs) {
+  .carousel-control.right:after {
+    left: -17px;
+  }
+}

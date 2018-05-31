@@ -21,7 +21,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
     "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -39,7 +39,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
     "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -56,7 +56,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
     "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -73,7 +73,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition\">\n" +
+    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
     "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -153,12 +153,12 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "      <div class=\"container-lg\">\n" +
     "        <div class=\"row\">\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white-2\">\n" +
+    "            <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white-2 img-bgc-wrap-middle__rounded--md-small\">\n" +
     "              <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--logo\" src=\"'assets/images/svg/ADXHealth-icon.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h1 class=\"txt-blue-dark txt-center\">Career at ADx</h1>\n" +
+    "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Career at ADx</h1>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt\">The ApoE gene comes in three variants – ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.  Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).  The ApoE4 form is a major risk factor for Alzheimer’s disease. </p>\n" +
     "            </div>\n" +

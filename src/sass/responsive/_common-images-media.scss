@@ -23,6 +23,13 @@
     left: 29%;
     top: 31%;
   }
+  .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo {
+    svg {
+      width: 202px;
+      left: 6px;
+      top: 76px;
+    }
+  }
 
   .img-border-wrap {
     width: 330px;
@@ -63,5 +70,11 @@
     position: absolute;
     left: 24%;
     top: 23%;
+  }
+
+  .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo svg {
+    width: 202px;
+    left: 31px;
+    top: 102px;
   }
 }

@@ -3,7 +3,9 @@
 }
 
 @media (max-width: $breakpoint-lg) {
-
+  .map-canvas {
+    height: 1106px;
+  }
 }
 
 @media (max-width: $breakpoint-md) {

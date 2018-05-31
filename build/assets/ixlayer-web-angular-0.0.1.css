@@ -10054,6 +10054,9 @@ textarea.form-control {
     position: relative;
     width: 100%;
     height: 100%; } }
+@media (max-width: 1200px) {
+  .map-canvas {
+    height: 1106px; } }
 @media (max-width: 960px) {
   .hide-desktop-md {
     display: inline-block !important; }
@@ -10242,7 +10245,7 @@ textarea.form-control {
     line-height: 44px; }
 
   h2 {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 28px; }
 
   h3 {
@@ -10258,6 +10261,9 @@ textarea.form-control {
     font-size: 14px; }
 
   .txt--indent {
+    padding-top: 20px; }
+
+  .txt--space-top-sm {
     padding-top: 20px; } }
 @media (max-width: 1596px) {
   .container-lg--dashboard {
@@ -10305,6 +10311,11 @@ textarea.form-control {
     left: 29%;
     top: 31%; }
 
+  .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo svg {
+    width: 202px;
+    left: 6px;
+    top: 76px; }
+
   .img-border-wrap {
     width: 330px;
     height: 330px; } }
@@ -10335,7 +10346,12 @@ textarea.form-control {
   .svg-inner-rounded-middle svg {
     position: absolute;
     left: 24%;
-    top: 23%; } }
+    top: 23%; }
+
+  .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo svg {
+    width: 202px;
+    left: 31px;
+    top: 102px; } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
@@ -10395,6 +10411,33 @@ textarea.form-control {
 
   .box-title__wrap--not-space-mobile, .title__wrap--not-space-mobile {
     padding-top: 0; } }
+@media (max-width: 1596px) {
+  .carousel {
+    width: 90%;
+    margin: 0 auto; } }
+@media (max-width: 1200px) {
+  .carousel-control.right {
+    right: -2%; } }
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%; }
+
+  .carousel-control.right {
+    right: 0; }
+
+  .slider__wrap {
+    padding: 0 50px; }
+
+  .carousel-control.right:after {
+    left: 12px; }
+
+  .carousel-control.left {
+    left: 0; }
+    .carousel-control.left:after {
+      left: -36px; } }
+@media (max-width: 468px) {
+  .carousel-control.right:after {
+    left: -17px; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -10665,6 +10708,18 @@ textarea.form-control {
 
   .form-input__login-wrap {
     padding-top: 15px; } }
+@media (max-width: 1200px) {
+  .about-section-fourth_form-map-overlap {
+    top: 34%;
+    left: calc(50% - 235px); } }
+@media (max-width: 768px) {
+  .about-page-header {
+    min-height: auto;
+    padding: 50px 0 0; }
+
+  .about-section-fourth_form-map-overlap {
+    max-width: 100%;
+    left: 0; } }
 a[ng-click] {
   cursor: pointer; }
 
