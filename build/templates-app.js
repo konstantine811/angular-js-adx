@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/pre-purchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -999,85 +999,6 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("components/products/pages/pre-purchase.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/products/pages/pre-purchase.tpl.html",
-    "<div class=\"products-page\">\n" +
-    "  <div class=\"products-head__wrap\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title-section__wrap anim-content-transition\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
-    "      </div>\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"section-bgc--silver\">\n" +
-    "      <div class=\"container-lg--dashboard\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
-    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
-    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "\n" +
-    "</div>");
-}]);
-
 angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/pages/sequencingStatus.tpl.html",
     "<div class=\"sequencing-status-page\">\n" +
@@ -1200,7 +1121,82 @@ angular.module("components/products/pages/sequencingStatus.tpl.html", []).run(["
 
 angular.module("components/products/products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/products.tpl.html",
-    "<ui-view class=\"page-transition-anim\"></ui-view>");
+    "<ui-view class=\"page-transition-anim\"></ui-view>\n" +
+    "<div class=\"products-page\">\n" +
+    "  <div class=\"products-head__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title-section__wrap anim-content-transition\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
+    "      </div>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap anim-content-transition\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent anim-content-transition\">\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
+    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap anim-content-transition\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent anim-content-transition\">\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
+    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
+    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
+    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "\n" +
+    "</div>");
 }]);
 
 angular.module("components/products/productsDetail.tpl.html", []).run(["$templateCache", function($templateCache) {

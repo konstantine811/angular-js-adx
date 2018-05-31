@@ -10,6 +10,9 @@ angular.module( 'ixLayer.products', [
       controller: 'ProductsCtrl',
       templateUrl: 'components/products/products.tpl.html',
       data:{ pageTitle: 'Products' },
+      params : {
+        title: 'Pre-purchase'
+      },
       resolve: {
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
@@ -29,13 +32,6 @@ angular.module( 'ixLayer.products', [
           title: 'Current status'
         }
     })
-      .state('products.pre-purchase', {
-        url: '/pre-purchase',
-        templateUrl: 'components/products/pages/pre-purchase.tpl.html',
-        params : {
-          title: 'Pre-purchase'
-        }
-      });
   })
 
   .config(function config($stateProvider) {
