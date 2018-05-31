@@ -7561,6 +7561,10 @@ body {
   font-family: Roboto, Montserrat, sans-serif;
   font-weight: 400; }
 
+.map-canvas {
+  width: 100%;
+  height: 700px; }
+
 .hide-desktop, .hide-desktop-md {
   display: none !important; }
 
@@ -8510,7 +8514,7 @@ h3 {
 
 h4 {
   font-family: Roboto, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500;
   color: #fff;
   margin: 0;
@@ -8687,6 +8691,20 @@ h6 {
   background-color: #F9FBFD;
   padding: 94px 0; }
 
+.section-bgc--silver.section-bgc--space-both {
+  padding: 40px; }
+
+.section-box {
+  width: 100%;
+  height: auto;
+  padding: 40px; }
+
+.section-box.section-box--space-out-top {
+  margin-top: 40px; }
+
+.section-box.section-box--blue {
+  background-color: #41c5eb; }
+
 .section-dropdown-txt__wrap {
   padding-top: 90px;
   width: 100%;
@@ -8698,6 +8716,9 @@ h6 {
 
 .align-items--center {
   align-items: center; }
+
+.row--space-top {
+  padding-top: 60px; }
 
 .img-bgc-wrap__rounded--float-right {
   float: right; }
@@ -8731,6 +8752,9 @@ h6 {
   background-color: #fff;
   box-shadow: 0 0 28px -3px rgba(0, 0, 0, 0.3); }
 
+.img-bgc-wrap-middle__rounded.img-bgc-wrap-middle__rounded--white-2 {
+  background-color: #fff; }
+
 .svg-inner-rounded-middle {
   width: 100%;
   height: auto; }
@@ -8740,6 +8764,11 @@ h6 {
     position: relative;
     left: 31%;
     top: 102px; }
+
+.svg-inner-rounded-middle.svg-inner-rounded-middle--logo svg {
+  width: 259px;
+  left: 51px;
+  top: 142px; }
 
 .svg-inner-rounded-middle.svg-inner-rounded-middle--larger svg {
   width: 156px;
@@ -8875,6 +8904,9 @@ ul.box__wrap {
 
 .section-box-shadow.section-box-shadow--without-space-top {
   margin-top: 0; }
+
+.section-box-shadow.section-box-shadow--space-inner {
+  padding: 40px 0; }
 
 .carousel {
   width: 1200px; }
@@ -9505,6 +9537,12 @@ ul.box__wrap {
 .form-group {
   padding-top: 32px; }
 
+.form-space-top {
+  padding-top: 32px; }
+
+.form-group-space-top {
+  padding-top: 10px; }
+
 .form-input {
   width: 100%;
   height: auto; }
@@ -9544,12 +9582,28 @@ span.summary.ng-valid {
   padding-left: 12px;
   padding-top: 10px; }
 
-input.form-control.form-control-white-border {
+.form-control.form-control-white-border {
   background-color: #fff;
   height: 54px;
   border-radius: 30px !important;
   border-bottom: none;
   padding-left: 25px !important; }
+
+.form-control.form-control-silver-border {
+  background-color: #F9FBFD;
+  height: 54px;
+  border-radius: 30px !important;
+  border-bottom: none;
+  padding-left: 25px !important;
+  color: #000000; }
+
+textarea.form-control.form-control-silver-border {
+  height: auto; }
+
+textarea.form-control {
+  padding-top: 14px !important;
+  height: auto;
+  resize: none; }
 
 .checkbox input.checkbox-input[type="checkbox"] {
   float: none;
@@ -9942,6 +9996,41 @@ input.form-control.form-control-white-border {
   height: auto;
   margin: 0 auto;
   display: block; }
+
+.about-section-second {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/bgc-polygon-half.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom; }
+
+.about-section-fourth {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 40px; }
+
+.about-section-fourth_form-map-overlap {
+  position: absolute;
+  top: 0;
+  max-width: 470px;
+  width: 100%;
+  margin: 28px 0 0;
+  background-color: white;
+  box-shadow: 0 0 46px -5px rgba(0, 0, 0, 0.95);
+  border-radius: 2px;
+  padding: 25px 40px 40px;
+  left: 38%; }
+
+.about-section-fourh__data-map-overlap {
+  position: absolute;
+  top: 0;
+  background-color: rgba(65, 197, 235, 0.85);
+  max-width: 311px;
+  width: 100%;
+  padding: 30px 40px;
+  margin: 26px; }
 
 [animation-on-change] {
   transition: all 0.4s;

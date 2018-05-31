@@ -35,6 +35,10 @@
   box-shadow: $box-shadow;
 }
 
+.img-bgc-wrap-middle__rounded.img-bgc-wrap-middle__rounded--white-2 {
+  background-color: $white;
+}
+
 .svg-inner-rounded-middle {
   width: 100%;
   height: auto;
@@ -44,6 +48,14 @@
     position: relative;
     left: 31%;
     top: 102px;
+  }
+}
+
+.svg-inner-rounded-middle.svg-inner-rounded-middle--logo {
+  svg {
+    width: 259px;
+    left: 51px;
+    top: 142px;
   }
 }
 
