@@ -11,6 +11,10 @@
   padding: 25px 15px 0;
 }
 
+.box-wrap {
+  padding-top: 50px;
+}
+
 .box-shadow {
   background-color: white;
   padding: 65px  4%;
@@ -141,6 +145,43 @@ ul.box__wrap {
 
 .section-box-shadow.section-box-shadow--space-inner {
   padding: 40px 0;
+}
+
+
+.box-with-header-colored {
+  min-width: 370px;
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  box-shadow: 0 0 23px 0px rgba($black, 0.5);
+}
+
+.box-colored-head {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+.box-colored-head--blue-dark {
+  background-color: $blue-dark;
+}
+
+.box-colored-head--blue {
+  background-color: $blue-6;
+}
+
+.box-colored-content {
+  list-style: none;
+  padding: 30px 50px 70px;
+  margin: 0;
+}
+
+.box-colored-content__item {
+  padding: 40px 0 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 //end boxes styling

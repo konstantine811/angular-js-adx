@@ -1159,6 +1159,103 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "        </div>\n" +
     "      </div>\n" +
     "    </section>\n" +
+    "    \n" +
+    "    <section class=\"about-products-section-third\">\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div class=\"row__wrap--space-top\">\n" +
+    "          <h3 class=\"txt-blue-dark txt-center\">The ADx advantage over it’s competitors</h3>\n" +
+    "          <div class=\"container-flex container-flex--column-lg-wrap\">\n" +
+    "            <div class=\"box-wrap\">\n" +
+    "              <div class=\"box-with-header-colored\">\n" +
+    "                <div class=\"box-colored-head box-colored-head--blue-dark\">\n" +
+    "                  <h4 class=\"txt-center\">Us</h4>\n" +
+    "                </div>\n" +
+    "                <ul class=\"box-colored-content\">\n" +
+    "                  <li class=\"box-colored-content__item\">\n" +
+    "                    <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                    <div class=\"txt-wrap-space-left\">\n" +
+    "                      <p class=\"txt-large txt-blue-dark\">Benefits</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box-colored-content__item\">\n" +
+    "                    <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                    <div class=\"txt-wrap-space-left\">\n" +
+    "                      <p class=\"txt-large txt-blue-dark\">Another</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box-colored-content__item\">\n" +
+    "                    <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                    <div class=\"txt-wrap-space-left\">\n" +
+    "                      <p class=\"txt-large txt-blue-dark\">More benefits</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box-colored-content__item\">\n" +
+    "                    <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                    <div class=\"txt-wrap-space-left\">\n" +
+    "                      <p class=\"txt-large txt-blue-dark\">And again</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box-colored-content__item\">\n" +
+    "                    <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                    <div class=\"txt-wrap-space-left\">\n" +
+    "                      <p class=\"txt-large txt-blue-dark\">Last benefit</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                </ul>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "           <div class=\"box-wrap\">\n" +
+    "             <div class=\"box-with-header-colored\">\n" +
+    "               <div class=\"box-colored-head box-colored-head--blue\">\n" +
+    "                 <h4 class=\"txt-center\">23&me</h4>\n" +
+    "               </div>\n" +
+    "               <ul class=\"box-colored-content\">\n" +
+    "                 <li class=\"box-colored-content__item\">\n" +
+    "                   <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                   <div class=\"txt-wrap-space-left\">\n" +
+    "                     <p class=\"txt-large txt-blue-dark\">Benefits</p>\n" +
+    "                   </div>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box-colored-content__item\">\n" +
+    "                   <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                   <div class=\"txt-wrap-space-left\">\n" +
+    "                     <p class=\"txt-large txt-blue-dark\">Another</p>\n" +
+    "                   </div>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box-colored-content__item\">\n" +
+    "                   <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                   <div class=\"txt-wrap-space-left\">\n" +
+    "                     <p class=\"txt-large txt-blue-dark\">More benefits</p>\n" +
+    "                   </div>\n" +
+    "                 </li>\n" +
+    "               </ul>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "           <div class=\"box-wrap\">\n" +
+    "             <div class=\"box-with-header-colored\">\n" +
+    "               <div class=\"box-colored-head box-colored-head--blue\">\n" +
+    "                 <h4 class=\"txt-center\">LifeExtension</h4>\n" +
+    "               </div>\n" +
+    "               <ul class=\"box-colored-content\">\n" +
+    "                 <li class=\"box-colored-content__item\">\n" +
+    "                   <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                   <div class=\"txt-wrap-space-left\">\n" +
+    "                     <p class=\"txt-large txt-blue-dark\">Benefits</p>\n" +
+    "                   </div>\n" +
+    "                 </li>\n" +
+    "                 <li class=\"box-colored-content__item\">\n" +
+    "                   <span class=\"icon icon--large icon-checkbox-ok\"></span>\n" +
+    "                   <div class=\"txt-wrap-space-left\">\n" +
+    "                     <p class=\"txt-large txt-blue-dark\">Another</p>\n" +
+    "                   </div>\n" +
+    "                 </li>\n" +
+    "               </ul>\n" +
+    "             </div>\n" +
+    "           </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </section>\n" +
     "  </div>\n" +
     "  \n" +
     "</div>");

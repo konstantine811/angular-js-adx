@@ -126,6 +126,11 @@ body {
   height: 19px;
 }
 
+.icon--large {
+  width: 67px;
+  height: 52px;
+}
+
 .link-icon--inner {
   position: relative;
   width: 21px;
@@ -169,6 +174,10 @@ body {
 
 .question {
   background-image: url('../assets/images/icon/question.svg');
+}
+
+.icon-checkbox-ok {
+  background-image: url('../assets/images/icon/checkbox-ok.svg');
 }
 //end icon styling
 

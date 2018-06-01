@@ -6,6 +6,10 @@
   .container-lg--dashboard.container-lg--dashboard--not-space-exlg {
     padding: 0;
   }
+  .container-flex--column-lg-wrap {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: $breakpoint-md) {
