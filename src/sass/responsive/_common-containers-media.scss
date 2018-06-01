@@ -12,6 +12,12 @@
   .container-md-button-flex {
     padding: 0 25px;
   }
+  .container-flex--column-md {
+    flex-flow: column;
+  }
+  .container-flex--column-reverse-md {
+    flex-flow: column-reverse;
+  }
 }
 
 @media (max-width: $breakpoint-sm) {

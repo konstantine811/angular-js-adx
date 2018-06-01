@@ -56,10 +56,10 @@
               </div>
             </div>
             <div class="button__wrap">
-              <button class="bt-round bt-round--all-width bt-round--blue-dark"><span class="txt-large">Purchase with Helix</span></button>
+              <button class="bt-round bt-round--all-width bt-round--blue-dark"><span class="txt-large txt-bold">Purchase with Helix</span></button>
             </div>
             <div class="button__wrap">
-              <button class="bt-round bt-round--all-width bt-round--gray"><span class="txt-large txt-gray">Multiple order, contact us</span></button>
+              <button class="bt-round bt-round--all-width bt-round--gray"><span class="txt-large txt-gray txt-bold">Multiple order, contact us</span></button>
             </div>
           </div>
         </div>
@@ -70,4 +70,92 @@
       </div>
     </div>
   </div>
+  
+  <div class="container-fluid container-fluid--section">
+    <section class="about-products-section-second">
+      <div class="container-round container-round--silver">
+        <div class="container-lg container-flex container-flex--column-md">
+          <button ng-click="setTab(1)" ng-class="{'active': isSet(1)}" class="bt-round bt-round--gray"><span class="txt-large txt-gray txt-bold">About the test</span></button>
+          <button ng-click="setTab(2)" ng-class="{'active': isSet(2)}" class="bt-round bt-round--gray bt-space-top--md"><span class="txt-large txt-gray txt-bold">Why ADx</span></button>
+          <button ng-click="setTab(3)" ng-class="{'active': isSet(3)}" class="bt-round bt-round--gray bt-space-top--md"><span class="txt-large txt-gray txt-bold">Helix Lab partner</span></button>
+        </div>
+      </div>
+      <div class="section-box-shadow section-box-shadow--space-inner">
+        <div class="container-lg">
+          <div  ng-show="isSet(1)">
+            <div class="txt__wrap--border-bottom container-flex container-flex--column-reverse-md align-items--center">
+              <div class="flex-column">
+                <div class="img__wrap--md">
+                  <img class="img img--md" src="./assets/images/products/female-doctor.png" alt="">
+                </div>
+              </div>
+              <div class="flex-column-2">
+                <div class="container-sub-head">
+                  <h2 class="txt-blue-dark txt-center-md">Is this test right for me?</h2>
+                  <div class="txt__wrap">
+                    <p class="txt txt-black txt-center-md">The Alzheimer’s ApoE genetic test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="title__wrap">
+              <h1 class="txt-blue txt-center">Why should I take this test?</h1>
+            </div>
+            <div class="txt__wrap">
+              <p class="txt txt-black txt-center">With knowledge comes power… the power to act and the power to plan.  Learning about genetic risk for Alzheimer’s disease isn’t for everyone, but if you are a proactive person who wants to be able to impact your future health as much as possible, then identifying your risk level for Alzheimer’s disease may be a good fit.  Having a reason to follow a set of lifestyle changes makes it easier to stick with it on those difficult days when you lack motivation. Learning your genetic risk for Alzheimer’s disease may be your first step towards protecting your future self.</p>
+            </div>
+            <div class="container-flex align-items--center txt__wrap  container-flex--column-reverse-md">
+              <div class="flex-column">
+                <div class="img__wrap--md">
+                  <img class="img img--md" src="./assets/images/products/icon-human.png" alt="">
+                </div>
+              </div>
+              <div class="flex-column-2">
+                <div class="container-sub-head">
+                  <h2 class="txt-blue-dark txt-left-space txt-center-md"> Actionable insights</h2>
+                  <div class="txt__wrap">
+                    <p class="txt txt-black txt-center-md">Along with your ApoE genotype, your report will include brain healthy lifestyle recommendations and links to support organizations and sources for more information on Alzheimer’s disease.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-flex align-items--center txt__wrap container-flex--column-md">
+              <div class="flex-column-2">
+                <div class="container-sub-head container-sub-head--not-center">
+                  <h2 class="txt-blue-dark txt-left-space">Detailed explanations</h2>
+                  <div class="txt__wrap txt-center-md">
+                    <p class="txt txt-black">Your report will provide a detailed explanation of: </p>
+                    <p class="txt txt-black">How ApoE works in your body;</p>
+                    <p class="txt txt-black">What your ApoE genotype is;</p>
+                    <p class="txt txt-black">How your risk for Alzheimer’s disease will change as you age;</p>
+                    <p class="txt txt-black">How your risk for Alzheimer’s disease compares to the population average;</p>
+                    <p class="txt txt-black">How you can get started making lifestyle changes to improve your cognitive health.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="img__wrap--md">
+                  <img class="img img--md" src="./assets/images/products/doctor-and-patient.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  ng-show="isSet(2)">
+            <div class="txt__wrap--border-bottom container-flex">
+              <div class="flex">
+                <img class="img" src="./assets/images/products/" alt="">
+              </div>
+              <div class="flex">
+                <h2 class="txt-blue-dark">Is this test right for me?</h2>
+                <div class="txt__wrap">
+                  <p class="txt txt-black">The Alzheimer’s ApoE genetic test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
 </div>

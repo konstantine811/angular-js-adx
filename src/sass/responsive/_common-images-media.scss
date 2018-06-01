@@ -46,6 +46,13 @@
   .svg-inner-rounded-big {
     width: 178px;
   }
+  .img--md {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .img__wrap--md {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: $breakpoint-sm) {

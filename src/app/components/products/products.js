@@ -69,6 +69,17 @@ angular.module( 'ixLayer.products', [
     // if (statusProducts[0].result_ready) {
     //   $state.go('results', {id: product_id});
     // }
+
+    $scope.tab = 1;
+
+    $scope.setTab = function(newTab){
+      $scope.tab = newTab;
+    };
+
+    $scope.isSet = function(tabNum){
+      return $scope.tab === tabNum;
+    };
+
   }])
 
   .controller('ProductDetailCtrl', ['$scope',  'product', function ProductDetailCtrl($scope, product) {
