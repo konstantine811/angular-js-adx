@@ -1,0 +1,39 @@
+<svg class="clapperboard-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 222">
+  <defs>
+    <style>
+      .clapperboard-svg-1 {
+        fill: #f7f7f7;
+      }
+
+      .clapperboard-svg-2 {
+        fill: #7b8baf;
+      }
+
+      .clapperboard-svg-3 {
+        fill: #fff;
+      }
+
+      .clapperboard-svg-4 {
+        fill: #e1f0ff;
+      }
+
+      .clapperboard-svg-5 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+    </style>
+  </defs>
+  <g id="Group_697" data-name="Group 697" transform="translate(-1222 -4336)">
+    <circle id="Ellipse_1615" data-name="Ellipse 1615" class="clapperboard-svg-1" cx="111" cy="111" r="111" transform="translate(1222 4336)"/>
+    <g id="movie-clapperboard-8158_3fbaba15-589b-4f5c-a4ad-ff88fe7ed90e" transform="translate(1278 4392.903)">
+      <rect id="layer2" class="clapperboard-svg-2" width="105.675" height="66.926" rx="2" transform="translate(2.029 38.152)"/>
+      <rect id="layer3" class="clapperboard-svg-3" width="70.45" height="14.09" rx="2" transform="translate(19.613 73.377)"/>
+      <path id="layer1" class="clapperboard-svg-4" d="M24.1,23,10.009,37.09h31.7L55.8,23H24.1Zm77.55,0H87.5L73.414,37.09h28.235Z" transform="translate(6.097 15.152)"/>
+      <path id="opacity" class="clapperboard-svg-5" d="M93.571,23H2.04V37.09H107.715V23H93.571Z" transform="translate(0.031 15.152)"/>
+      <path id="layer2-2" data-name="layer2" class="clapperboard-svg-2" d="M12.649,13.965C-.275,16.712,2.187,30.593,2.187,30.593l31.639-6.724L17.063,13.026Z" transform="translate(0 7.559)"/>
+      <path id="layer1-2" data-name="layer1" class="clapperboard-svg-4" d="M10.553,15.576,27.317,26.418l27.71-5.89L38.314,9.676l-27.761,5.9Z" transform="translate(6.511 5.009)"/>
+      <path id="layer2-3" data-name="layer2" class="clapperboard-svg-2" d="M52.956,6.462,26.315,12.123,43.028,22.976,69.76,17.294,52.956,6.462Z" transform="translate(18.51 2.562)"/>
+      <path id="layer1-3" data-name="layer1" class="clapperboard-svg-4" d="M73.381,5.977a3.507,3.507,0,0,0-4.2-2.8L41.441,9.024l16.8,10.832,17.292-3.674Z" transform="translate(30.025 0)"/>
+    </g>
+  </g>
+</svg>

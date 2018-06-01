@@ -8961,11 +8961,14 @@ ul.box__wrap {
   box-shadow: 0 4px 46px 2px rgba(0, 0, 0, 0.2);
   margin-top: 36px; }
 
-.section-box-shadow.section-box-shadow--without-space-top {
+.section-box-shadow--without-space-top {
   margin-top: 0; }
 
-.section-box-shadow.section-box-shadow--space-inner {
+.section-box-shadow--space-inner {
   padding: 40px 0; }
+
+.section-box-shadow--space-inner-lg {
+  padding: 57px 0 120px; }
 
 .box-with-header-colored {
   min-width: 370px;
@@ -9399,6 +9402,32 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   padding-top: 30px; }
+
+.info-about-column__wrap {
+  max-width: 222px;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 86px; }
+
+.about-products-section-fourth {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/about-bgc-polygon-fourth.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-products-section-fifth__wrap {
+  width: 100%;
+  height: auto;
+  min-height: 518px;
+  background-image: url("../assets/images/products/doctor-lab.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right; }
+
+.about-products-section-fifth--container-txt {
+  height: 518px;
+  max-width: calc(50% + 370px); }
 
 .header {
   position: fixed;
@@ -10836,7 +10865,18 @@ textarea.form-control {
     padding: 50px 15px; } }
 @media (max-width: 1200px) {
   .about-products-head__img {
-    width: 100%; } }
+    width: 100%; }
+
+  .about-products-section-fifth__wrap {
+    background-size: 50%;
+    min-height: 100%; }
+
+  .about-products-section-fifth--container-txt {
+    height: 100%;
+    padding: 11% 0; } }
+@media (max-width: 960px) {
+  .info-about-column__wrap {
+    padding-top: 40px; } }
 @media (max-width: 768px) {
   .about-products-head {
     padding: 0; }

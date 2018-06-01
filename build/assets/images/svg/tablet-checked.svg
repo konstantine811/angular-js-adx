@@ -1,0 +1,56 @@
+<svg class="tablet-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 222">
+  <defs>
+    <style>
+      .tablet-checked-1 {
+        fill: #f7f7f7;
+      }
+
+      .tablet-checked-2 {
+        fill: #a56660;
+      }
+
+      .tablet-checked-3 {
+        fill: #000064;
+        opacity: 0.12;
+      }
+
+      .tablet-checked-4 {
+        fill: #7b8baf;
+      }
+
+      .tablet-checked-5 {
+        fill: #e1eef9;
+      }
+
+      .tablet-checked-6 {
+        fill: #f26161;
+      }
+
+      .tablet-checked-7 {
+        fill: #1bd466;
+      }
+
+      .tablet-checked-8 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_696" data-name="Group 696" transform="translate(-809 -4336)">
+    <circle id="Ellipse_1615" data-name="Ellipse 1615" class="tablet-checked-1" cx="111" cy="111" r="111" transform="translate(809 4336)"/>
+    <g id="Group_653" data-name="Group 653" transform="translate(-593.721 -691.389)">
+      <path id="layer4" class="tablet-checked-2" d="M92.891,7H70.969a8.941,8.941,0,0,1,3.468,7.382v5.536H30.146V14.382A8.928,8.928,0,0,1,33.541,7H11.691A3.691,3.691,0,0,0,8,10.691v94.119a3.691,3.691,0,0,0,3.691,3.691h81.2a3.691,3.691,0,0,0,3.691-3.691V10.691A3.691,3.691,0,0,0,92.891,7Z" transform="translate(1459.721 5081.605)"/>
+      <path id="opacity" class="tablet-checked-3" d="M8,23.058v77.524a3.691,3.691,0,0,0,3.691,3.691H74.437L85.51,93.2,19.073,12Z" transform="translate(1459.721 5085.833)"/>
+      <path id="layer3" class="tablet-checked-4" d="M55.071,9.386H51.2a9.227,9.227,0,0,0-18.086,0H29.235a8.718,8.718,0,0,0-9.227,9.227V24.15H64.3V18.613a8.81,8.81,0,0,0-9.227-9.227Z" transform="translate(1469.859 5077.374)"/>
+      <path id="layer2" class="tablet-checked-5" d="M69.364,12H80.437V93.2H14V12H25.073v3.691H69.364Z" transform="translate(1464.794 5085.833)"/>
+      <path id="opacity-2" data-name="opacity" class="tablet-checked-3" d="M17.007,17.995v5.536H61.3V17.995H22.544V12.458a10.519,10.519,0,0,1,.476-3.183,8.6,8.6,0,0,0-6.013,8.72Z" transform="translate(1467.323 5083.529)"/>
+      <path id="layer1" class="tablet-checked-6" d="M73.319,41.116a2.75,2.75,0,0,0-2.477,1.53L65.527,53.274,54.864,27.385a2.768,2.768,0,0,0-4.95-.343L39.371,45.1l-6.861-9.6a2.746,2.746,0,0,0-2.176-1.153A2.687,2.687,0,0,0,28.1,35.387l-6.064,7.574H14v3.691h8.476a2.752,2.752,0,0,0,2.163-1.037l5.579-6.976,6.978,9.77a2.689,2.689,0,0,0,2.382,1.159A2.752,2.752,0,0,0,41.839,48.2L52.161,30.51,62.886,56.544a2.735,2.735,0,0,0,2.458,1.714h.1a2.768,2.768,0,0,0,2.477-1.53L73.887,44.8h6.55V41.106Z" transform="translate(1464.794 5088.702)"/>
+      <path id="opacity-3" data-name="opacity" class="tablet-checked-3" d="M73.887,42.591,67.923,54.512a2.768,2.768,0,0,1-2.477,1.53h-.1a2.735,2.735,0,0,1-2.458-1.714L52.162,28.292,41.841,45.981A2.752,2.752,0,0,1,39.58,47.35,2.689,2.689,0,0,1,37.2,46.191l-6.98-9.764L24.639,43.4a2.752,2.752,0,0,1-2.163,1.039H14V90.161H43.6l36.835-47.57Z" transform="translate(1464.794 5090.917)"/>
+      <g id="Group_651" data-name="Group 651" transform="translate(1526.182 5138.208)">
+        <g id="Group_652" data-name="Group 652" transform="translate(0 0)">
+          <ellipse id="layer2-2" data-name="layer2" class="tablet-checked-7" cx="29.527" cy="29.527" rx="29.527" ry="29.527"/>
+          <path id="layer1-2" data-name="layer1" class="tablet-checked-8" d="M50.142,62.147l-10.6-10.613a1.845,1.845,0,1,1,2.612-2.608l7.836,7.842L63.441,41.622a1.849,1.849,0,1,1,2.768,2.451Z" transform="translate(-22.392 -20.702)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

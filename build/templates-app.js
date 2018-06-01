@@ -1006,19 +1006,19 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "    <div class=\"container-fluid container-fluid--section\">\n" +
     "      <div class=\"container-lg\">\n" +
     "        <div class=\"row\">\n" +
-    "          <div class=\"col-sm-6\">\n" +
+    "          <div class=\"col-sm-6 anim-content-transition\">\n" +
     "            <div class=\"about-products-head__img\">\n" +
     "              <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"title__wrap\">\n" +
+    "          <div class=\"col-sm-6 anim-content-transition\">\n" +
+    "            <div class=\"title__wrap anim-content-transition\">\n" +
     "              <h1 class=\"txt-blue-dark\">Alzheimers Genetic Test</h1>\n" +
     "            </div>\n" +
-    "            <div class=\"txt--indent-small txt__wrap--border-bottom\">\n" +
+    "            <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
     "              <p class=\"txt txt-black\">In the fight against late-onset Alzheimer’s disease, early awareness about risk can empower you to make lifestyle changes now to protect your future self. Taking action before memories begin to fade may help you to reduce your risk for or delay the onset of Alzheimer’s.</p>\n" +
     "            </div>\n" +
-    "            <div class=\"txt--indent-small txt__wrap--border-bottom\">\n" +
+    "            <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
     "              <div class=\"container-flex txt--indent-small\">\n" +
     "                <div class=\"column\">\n" +
     "                  <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
@@ -1043,14 +1043,14 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                  <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
     "                  <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
     "                </div>\n" +
-    "                <div class=\"pre-results-box-flex-2\">\n" +
+    "                <div class=\"pre-results-box-flex-2 anim-content-transition\">\n" +
     "                  <div class=\"txt txt-black\">\n" +
     "                    I already have or registered a <span class=\"txt-bold\">Helix DNA kit</span>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"txt__wrap container-flex\">\n" +
+    "            <div class=\"txt__wrap container-flex anim-content-transition\">\n" +
     "              <div class=\"column\">\n" +
     "                <p class=\"txt txt-black\">Price:</p>\n" +
     "              </div>\n" +
@@ -1066,7 +1066,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"txt__wrap\">\n" +
+    "        <div class=\"txt__wrap anim-content-transition\">\n" +
     "          <p class=\"txt txt-black txt-center\">To use this product, you must be 18 or older and be a U.S. resident. Not available for residents of Alaska, Arkansas, Delaware,\n" +
     "            Hawaii, Idaho, Maine, Missouri, Nevada, New York, Tennessee, West Virgina, Wisconsin, or Wyoming. Clarify your diabetes diagnosis</p>\n" +
     "        </div>\n" +
@@ -1075,15 +1075,15 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "  </div>\n" +
     "  \n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <section class=\"about-products-section-second\">\n" +
+    "    <section class=\"about-products-section-second anim-content-transition\">\n" +
     "      <div class=\"container-round container-round--silver\">\n" +
     "        <div class=\"container-lg container-flex container-flex--column-md\">\n" +
-    "          <button ng-click=\"setTab(1)\" ng-class=\"{'active': isSet(1)}\" class=\"bt-round bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">About the test</span></button>\n" +
-    "          <button ng-click=\"setTab(2)\" ng-class=\"{'active': isSet(2)}\" class=\"bt-round bt-round--gray bt-space-top--md\"><span class=\"txt-large txt-gray txt-bold\">Why ADx</span></button>\n" +
-    "          <button ng-click=\"setTab(3)\" ng-class=\"{'active': isSet(3)}\" class=\"bt-round bt-round--gray bt-space-top--md\"><span class=\"txt-large txt-gray txt-bold\">Helix Lab partner</span></button>\n" +
+    "          <button ng-click=\"setTab(1)\" ng-class=\"{'active': isSet(1)}\" class=\"bt-round bt-round--gray anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">About the test</span></button>\n" +
+    "          <button ng-click=\"setTab(2)\" ng-class=\"{'active': isSet(2)}\" class=\"bt-round bt-round--gray bt-space-top--md anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">Why ADx</span></button>\n" +
+    "          <button ng-click=\"setTab(3)\" ng-class=\"{'active': isSet(3)}\" class=\"bt-round bt-round--gray bt-space-top--md anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">Helix Lab partner</span></button>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"section-box-shadow section-box-shadow--space-inner\">\n" +
+    "      <div class=\"section-box-shadow section-box-shadow--space-inner anim-content-transition\">\n" +
     "        <div class=\"container-lg\">\n" +
     "          <div  ng-show=\"isSet(1)\">\n" +
     "            <div class=\"txt__wrap--border-bottom container-flex container-flex--column-reverse-md align-items--center\">\n" +
@@ -1256,7 +1256,207 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "        </div>\n" +
     "      </div>\n" +
     "    </section>\n" +
+    "    \n" +
+    "    <section class=\"about-products-section-fourth\">\n" +
+    "      <div class=\"section-box-shadow section-box-shadow--space-inner-lg\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <h1 class=\"txt-blue txt-center\">Information about the product</h1>\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h4 class=\"txt-blue-dark txt-center\">All from home. No blood. No needles. Just a small saliva sample.</h4>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-flex container-flex--column-md\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"info-about-column__wrap\">\n" +
+    "                <div class=\"info-about__img\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/test-tube.svg'\"></ng-include>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark txt-center\">Spit</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt--indent-small txt-center\">\n" +
+    "                    <p class=\"txt txt-black\">Collect your saliva sample and send the kit to us for processing. (Physician authorization will be required prior to lab processing)</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"info-about-column__wrap\">\n" +
+    "                <div class=\"info-about__img\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/tablet-checked.svg'\"></ng-include>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark txt-center\">Results</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt--indent-small txt-center\">\n" +
+    "                    <p class=\"txt txt-black\">Obtain your results from your provider. We'll help you schedule your free genetic counseling session.</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"info-about-column__wrap\">\n" +
+    "                <div class=\"info-about__img\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/сlapperboard.svg'\"></ng-include>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark txt-center\">Take action</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt--indent-small txt-center\">\n" +
+    "                    <p class=\"txt txt-black\">Learn about lifestyle changes and modifiable risk factors to improve your cognitive health and reduce your risk. Visit AFFIRMATIVhealth.com</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </section>\n" +
+    "    \n" +
+    "    <div class=\"about-products-section-fifth\">\n" +
+    "      <div class=\"section-box-shadow\">\n" +
+    "        <div class=\"about-products-section-fifth__wrap\">\n" +
+    "          <div class=\"container-lg\">\n" +
+    "            <div class=\"container-flex align-items--center about-products-section-fifth--container-txt\">\n" +
+    "              <div class=\"row\">\n" +
+    "                <div class=\"col-xs-6\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">Helix our lab partner</h3>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\">xLayer product and design team will work together with you to create the interface and the experience that fits your users need. This includes product brainstorming, identifying value propositions, design that speaks for your brand and a feature rich product for your genetic application.</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  \n" +
+    "    <!--section fourth home-->\n" +
+    "    <div class=\"home-section-fourth section-box-shadow\">\n" +
+    "      <div class=\"home-section-fourth__head\">\n" +
+    "        <div class=\"home-section-fourth-head__title\">\n" +
+    "          <h3 class=\"txt-blue txt-center\">Frequently asked questions</h3>\n" +
+    "          <h1 class=\"txt-blue txt-center\">We care about you</h1>\n" +
+    "          <div class=\"sub-header-txt__wrap\">\n" +
+    "            <div class=\"sub-header-txt txt-center\">\n" +
+    "              Our customer support team is available\n" +
+    "              by email or chat, and is happy to answer your\n" +
+    "              questions about your test kit, results, and more.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"home-section-fourth__content\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div uib-accordion close-others=\"false\">\n" +
+    "            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "              <div uib-accordion-heading>\n" +
+    "                <div class=\"accordion-heading-wrap\">\n" +
+    "                  <div class=\"cross-button-open__wrap\">\n" +
+    "                    <div class=\"cross-button-open\"></div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"content-title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
+    "                    ordering a test, completing your kit, or interpreting your results.\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "              <div uib-accordion-heading>\n" +
+    "                <div class=\"accordion-heading-wrap\">\n" +
+    "                  <div class=\"cross-button-open__wrap\">\n" +
+    "                    <div class=\"cross-button-open\"></div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"content-title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  You will receive your test results in a clear, electronic report. However, if you have additional questions about what these results mean to you or your family, we have Genetics Counselors available to discuss your results with you, for no additional charge. Also, we encourage you to share your report with your health care provider and review with them any additional questions or concerns you may have.\n" +
+    "              \n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "              <div uib-accordion-heading>\n" +
+    "                <div class=\"accordion-heading-wrap\">\n" +
+    "                  <div class=\"cross-button-open__wrap\">\n" +
+    "                    <div class=\"cross-button-open\"></div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"content-title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">Power of emotions</h2>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Genetics is only one part of your risk for developing Alzheimer’s disease. For many people, it can be hard to be motivated to exercise.  For others, nutrition is a struggle with busy work and family schedules.  For yet others, sleep is often viewed as an inconvenience and not given much priority. Finally, stress management is an issue for many, as approximately 55% of Americans reported not even taking all their paid vacation days. (source: http://www.projecttimeoff.com/research/state-american-vacation-2016).  Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    Having the ApoE-e4 variant  (high genetic risk for Alzheimer’s disease) does not guarantee you will develop late-onset Alzheimer’s disease.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "              <div uib-accordion-heading>\n" +
+    "                <div class=\"accordion-heading-wrap\">\n" +
+    "                  <div class=\"cross-button-open__wrap\">\n" +
+    "                    <div class=\"cross-button-open\"></div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"content-title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">Lifestyle changes</h2>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  Sleep, stress, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc.), and environmental toxins each can impact your cognitive health.  Living an overall healthier life may also help you reduce your risk for Alzheimer’s disease.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "              <div uib-accordion-heading>\n" +
+    "                <div class=\"accordion-heading-wrap\">\n" +
+    "                  <div class=\"cross-button-open__wrap\">\n" +
+    "                    <div class=\"cross-button-open\"></div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"content-title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">Connecting with community</h2>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"content-txt__wrap\">\n" +
+    "                <div class=\"txt txt-black\">\n" +
+    "                  We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                  <div class=\"txt--indent\">\n" +
+    "                    <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
+    "                    <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
+    "                    <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Blog</a>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <!--end section home fourth-->\n" +
     "  </div>\n" +
+    "  \n" +
     "  \n" +
     "</div>");
 }]);

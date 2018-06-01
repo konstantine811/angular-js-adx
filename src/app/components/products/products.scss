@@ -76,3 +76,34 @@
   height: auto;
   padding-top: 30px;
 }
+
+.info-about-column__wrap {
+  max-width: 222px;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 86px;
+}
+
+
+.about-products-section-fourth {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/about-bgc-polygon-fourth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-products-section-fifth__wrap {
+  width: 100%;
+  height: auto;
+  min-height: 518px;
+  background-image: url("../assets/images/products/doctor-lab.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.about-products-section-fifth--container-txt {
+  height: 518px;
+  max-width: calc(50% + 370px);
+}

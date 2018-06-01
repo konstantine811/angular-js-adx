@@ -2,6 +2,20 @@
   .about-products-head__img {
     width: 100%;
   }
+  .about-products-section-fifth__wrap {
+    background-size: 50%;
+    min-height: 100%;
+  }
+  .about-products-section-fifth--container-txt {
+    height: 100%;
+    padding: 11% 0;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .info-about-column__wrap {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: $breakpoint-sm) {

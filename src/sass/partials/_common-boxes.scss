@@ -139,12 +139,16 @@ ul.box__wrap {
   margin-top: 36px;
 }
 
-.section-box-shadow.section-box-shadow--without-space-top {
+.section-box-shadow--without-space-top {
   margin-top: 0;
 }
 
-.section-box-shadow.section-box-shadow--space-inner {
+.section-box-shadow--space-inner {
   padding: 40px 0;
+}
+
+.section-box-shadow--space-inner-lg {
+  padding: 57px 0 120px;
 }
 
 
