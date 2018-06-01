@@ -6,7 +6,6 @@ angular.module( 'ixLayer.products', [
 ])
   .config(function config($stateProvider) {
     $stateProvider.state('products', {
-      url: '/products',
       controller: 'ProductsCtrl',
       templateUrl: 'components/products/products.tpl.html',
       data:{ pageTitle: 'Products' },
@@ -22,6 +21,13 @@ angular.module( 'ixLayer.products', [
         }]
       }
     })
+      .state('products.about', {
+        url: '/about-products',
+        templateUrl: 'components/products/pages/about-products.tpl.html',
+        params : {
+          title: 'Current status'
+        }
+      })
       .state('products.status', {
       url: '/status',
       templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
@@ -29,7 +35,7 @@ angular.module( 'ixLayer.products', [
           title: 'Current status'
         }
     })
-      .state('products.pre', {
+      .state('products.pre-purchase', {
         url: '/pre-purchase',
         templateUrl: 'components/products/pages/prePurchase.tpl.html',
         params : {

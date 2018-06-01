@@ -8080,6 +8080,10 @@ button[disabled].bt-round {
   .bt-round.bt-round-left-icon.bt-round-right-icon {
     padding: 9px 110px; }
 
+.bt-round--all-width {
+  width: 100%;
+  padding: 17px 57px; }
+
 .bt-round.bt-round--large {
   padding: 9px 95px; }
 
@@ -8090,6 +8094,12 @@ button[disabled].bt-round {
   background-color: #41c5eb; }
   .bt-round.bt-round--blue:hover {
     background-color: #7cd9f4; }
+
+.bt-round.bt-round--gray {
+  background-color: #E6E6E6;
+  color: #707070; }
+  .bt-round.bt-round--gray:hover {
+    background-color: #F9FBFD; }
 
 .bt-round.bt-round--blue-dark {
   background-color: #063f5f; }
@@ -8556,7 +8566,7 @@ h6 {
   height: auto;
   padding-top: 37px; }
 
-.txt__wrap.txt__wrap--border-bottom {
+.txt__wrap--border-bottom {
   border-bottom: 1px solid #E6E6E6;
   padding-bottom: 20px; }
 
@@ -8569,6 +8579,19 @@ h6 {
   width: 100%;
   height: auto;
   margin: 0 auto; }
+
+.txt-large {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+.txt-large.txt-large--exl {
+  font-size: 43px; }
 
 .txt-middle {
   font-family: Roboto, sans-serif;
@@ -9293,6 +9316,19 @@ ul.box__wrap {
   margin: 0 auto;
   width: 100%; }
 
+.about-products-head {
+  width: 100%;
+  height: auto;
+  padding: 67px 0 0;
+  background-image: url("../assets/images/bgc-about-products.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-products-head__img {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 120px; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -9336,6 +9372,8 @@ ul.box__wrap {
   cursor: pointer;
   transition: color 0.3s ease; }
   .header-nav-link:hover {
+    color: #41c5eb; }
+  .header-nav-link.active {
     color: #41c5eb; }
 
 .header-nav-wrap__inner {
@@ -10702,6 +10740,16 @@ textarea.form-control {
 @media (max-width: 468px) {
   .profile-info__wrap {
     padding: 50px 15px; } }
+@media (max-width: 1200px) {
+  .about-products-head__img {
+    width: 100%; } }
+@media (max-width: 768px) {
+  .about-products-head {
+    padding: 0; }
+
+  .about-products-head__img {
+    width: 40%;
+    padding-top: 30px; } }
 @media (max-width: 468px) {
   .login-form {
     padding: 15px; }

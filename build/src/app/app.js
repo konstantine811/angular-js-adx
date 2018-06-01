@@ -17,6 +17,7 @@ angular.module( 'ixLayer', [
   'ixLayer.forgotPassword',
   'ixLayer.changePassword',
   'ixLayer.results',
+  'ixLayer.science',
   'ui.router',
   'ngAnimate',
   'ui.bootstrap'
@@ -81,7 +82,10 @@ angular.module( 'ixLayer', [
         case 'about' :
           $scope.hideSideNavBar = false;
           break;
-        case 'products' :
+        case 'about-products' :
+          $scope.hideSideNavBar = false;
+          break;
+        case 'science' :
           $scope.hideSideNavBar = false;
           break;
         case 'FAQ' :

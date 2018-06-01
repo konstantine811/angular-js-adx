@@ -49,6 +49,9 @@
   &:hover {
     color: $blue-6;
   }
+  &.active {
+    color: $blue-6;
+  }
 }
 
 .header-nav-wrap__inner {

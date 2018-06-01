@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -997,6 +997,83 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "\n" +
     "\n" +
     "");
+}]);
+
+angular.module("components/products/pages/about-products.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/products/pages/about-products.tpl.html",
+    "<div class=\"about-products\">\n" +
+    "  <div class=\"about-products-head\">\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div class=\"row\">\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"about-products-head__img\">\n" +
+    "              <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"col-sm-6\">\n" +
+    "            <div class=\"title__wrap\">\n" +
+    "              <h1 class=\"txt-blue-dark\">Alzheimers Genetic Test</h1>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt--indent-small txt__wrap--border-bottom\">\n" +
+    "              <p class=\"txt txt-black\">In the fight against late-onset Alzheimer’s disease, early awareness about risk can empower you to make lifestyle changes now to protect your future self. Taking action before memories begin to fade may help you to reduce your risk for or delay the onset of Alzheimer’s.</p>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt--indent-small txt__wrap--border-bottom\">\n" +
+    "              <div class=\"container-flex txt--indent-small\">\n" +
+    "                <div class=\"column\">\n" +
+    "                  <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"column\">\n" +
+    "                  <p class=\"txt txt-black\">$249.00</p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"container-flex txt--indent-small\">\n" +
+    "                <div class=\"column\">\n" +
+    "                  <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"column\">\n" +
+    "                  <p class=\"txt txt-black\">$89.00</p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent-small\">\n" +
+    "                <p class=\"txt txt-black\">Required one time only so Helix can collect a saliva sample from you and sequence your DNA.</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent-small pre-results-box-flex\">\n" +
+    "                <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
+    "                  <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
+    "                  <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "                </div>\n" +
+    "                <div class=\"pre-results-box-flex-2\">\n" +
+    "                  <div class=\"txt txt-black\">\n" +
+    "                    I already have or registered a <span class=\"txt-bold\">Helix DNA kit</span>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap container-flex\">\n" +
+    "              <div class=\"column\">\n" +
+    "                <p class=\"txt txt-black\">Price:</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"column\">\n" +
+    "                <div class=\"txt-large txt-large--exl txt-black\">$338.00</div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap\">\n" +
+    "              <button class=\"bt-round bt-round--all-width bt-round--blue-dark\"><span class=\"txt-large\">Purchase with Helix</span></button>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap\">\n" +
+    "              <button class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray\">Multiple order, contact us</span></button>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <p class=\"txt txt-black txt-center\">To use this product, you must be 18 or older and be a U.S. resident. Not available for residents of Alaska, Arkansas, Delaware,\n" +
+    "            Hawaii, Idaho, Maine, Missouri, Nevada, New York, Tennessee, West Virgina, Wisconsin, or Wyoming. Clarify your diabetes diagnosis</p>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>");
 }]);
 
 angular.module("components/products/pages/prePurchase.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -3012,6 +3089,11 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "-->");
 }]);
 
+angular.module("components/science/science.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/science/science.tpl.html",
+    "<h1 class=\"txt-blue-dark\">Science</h1>");
+}]);
+
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/verify_email/verify_email.tpl.html",
     "<div class=\"container-fluid\">\n" +
@@ -3143,19 +3225,19 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                <nav class=\"header-nav__wrap\">\n" +
     "                  <ul class=\"header-nav-wrap__inner\">\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref=\"products\" class=\"header-nav-link\">Products</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"products.about\" class=\"header-nav-link\">Products</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
     "                </nav>\n" +
@@ -3176,19 +3258,19 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          <nav class=\"header-nav__wrap hide-mobile\">\n" +
     "            <ul class=\"header-nav-wrap__inner\">\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"products\" class=\"header-nav-link txt-small txt-bold\">Products</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"products.about\" class=\"header-nav-link txt-small txt-bold\">Products</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"about\" class=\"header-nav-link txt-small txt-bold\">About</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"about\" class=\"header-nav-link txt-small txt-bold\">About</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\" \" class=\"header-nav-link txt-small txt-bold\">Science</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"science\" class=\"header-nav-link txt-small txt-bold\">Science</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref=\"contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +

@@ -182,7 +182,7 @@ h6 {
   padding-top: 37px;
 }
 
-.txt__wrap.txt__wrap--border-bottom {
+.txt__wrap--border-bottom {
   border-bottom: 1px solid $gray;
   padding-bottom: 20px;
 }
@@ -196,6 +196,21 @@ h6 {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.txt-large {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.txt-large.txt-large--exl {
+  font-size: 43px;
 }
 
 .txt-middle {

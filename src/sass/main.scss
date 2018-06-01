@@ -39,6 +39,7 @@
 @import '../app/components/results/results.scss';
 @import '../app/components/profile/profile.scss';
 @import '../app/components/about/about.scss';
+@import '../app/components/science/science.scss';
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 //responsive media query
@@ -62,6 +63,7 @@
 @import '../app/components/products/_product-media.scss';
 @import '../app/components/login/_login-media.scss';
 @import '../app/components/about/about-media.scss';
+@import '../app/components/science/science-media.scss';
 
 a[ng-click] {
   cursor: pointer;

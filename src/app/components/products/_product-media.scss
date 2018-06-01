@@ -1,0 +1,16 @@
+@media (max-width: $breakpoint-lg) {
+  .about-products-head__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .about-products-head {
+    padding: 0;
+  }
+
+  .about-products-head__img {
+    width: 40%;
+    padding-top: 30px;
+  }
+}

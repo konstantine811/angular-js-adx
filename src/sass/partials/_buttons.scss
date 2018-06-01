@@ -176,6 +176,11 @@ button[disabled].bt-round {
   }
 }
 
+.bt-round--all-width {
+  width: 100%;
+  padding: 17px 57px;
+}
+
 .bt-round.bt-round--large {
   padding: 9px 95px;
 }
@@ -189,7 +194,14 @@ button[disabled].bt-round {
   &:hover {
     background-color: $blue-light-6;
   }
+}
 
+.bt-round.bt-round--gray {
+  background-color: $gray;
+  color: $gray-3;
+  &:hover {
+    background-color: $silver;
+  }
 }
 
 .bt-round.bt-round--blue-dark {
