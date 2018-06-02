@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1055,7 +1055,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-right \">\n" +
-    "              <a href ui-sref=\"forgot_password\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
+    "              <a href ui-sref=\"master.forgot_password\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
     "                Forgot your password ?\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -1063,7 +1063,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"txt-medium\">Sign in</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"register\" class=\"link-underline txt-blue txt-small txt-bold\">\n" +
+    "              <a href ui-sref=\"master.register\" class=\"link-underline txt-blue txt-small txt-bold\">\n" +
     "                I need to create an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -1091,6 +1091,17 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "\n" +
     "\n" +
     "\n" +
+    "");
+}]);
+
+angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/master/master.tpl.html",
+    "<app-side-navbar ng-if=\"logged && hideSideNavBar\"></app-side-navbar>\n" +
+    "<div class=\"page\" ng-class=\"{'logged-out' : !logged || !hideSideNavBar}\">\n" +
+    "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
+    "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
+    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
+    "</div>\n" +
     "");
 }]);
 
@@ -1937,7 +1948,7 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
     "                </div>\n" +
     "                <button test-hook=\"update-profile\" type=\"submit\" class=\"btn btn-primary\">Submit</button>&nbsp;&nbsp;\n" +
-    "                <button class=\"btn btn-primary\" ui-sref=\"profile\">Cancel</button>\n" +
+    "                <button class=\"btn btn-primary\" ui-sref=\"master.profile\">Cancel</button>\n" +
     "            </div>\n" +
     "        </form>\n" +
     "    </div>\n" +
@@ -2147,7 +2158,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"login\" class=\"link-underline txt-blue txt txt-small txt-bold\">\n" +
+    "              <a href ui-sref=\"master.login\" class=\"link-underline txt-blue txt txt-small txt-bold\">\n" +
     "                I have an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -3615,7 +3626,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                </div>\n" +
     "                <div class=\"col-sm-2\">\n" +
     "                    <div class=\"title__wrap\">\n" +
-    "                        <a ui-sref=\"legal\" class=\"txt txt-medium txt-blue txt-uppercase\">LEGAL</a>\n" +
+    "                        <a ui-sref=\"master.legal\" class=\"txt txt-medium txt-blue txt-uppercase\">LEGAL</a>\n" +
     "                    </div>\n" +
     "                    <div class=\"txt__wrap\">\n" +
     "                        <a href=\"\" class=\"txt txt-black\">Tems of Service</a>\n" +
@@ -3686,7 +3697,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"header__wrap\">\n" +
     "        <!--logo-->\n" +
     "        <div class=\"header__logo\">\n" +
-    "          <a ui-sref=\"home\" class=\"header-logo__link\">\n" +
+    "          <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
     "            <div ng-include=\"'assets/images/svg/ADXHealth-icon.svg'\"></div>\n" +
     "          </a>\n" +
     "        </div>\n" +
@@ -3705,28 +3716,28 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                <nav class=\"header-nav__wrap\">\n" +
     "                  <ul class=\"header-nav-wrap__inner\">\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"products.about\" class=\"header-nav-link\">Products</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.products.about\" class=\"header-nav-link\">Products</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"about\" class=\"header-nav-link\">About</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.about\" class=\"header-nav-link\">About</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active\" ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link\">Contact</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
     "                </nav>\n" +
     "                <div class=\"header__button\">\n" +
     "                  <div class=\"button__login button-anim\">\n" +
-    "                    <a ui-sref=\"login\" class=\"bt-round bt-round--blue\">Sign-in/Join</a>\n" +
+    "                    <a ui-sref=\"master.login\" class=\"bt-round bt-round--blue\">Sign-in/Join</a>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__purchase button-anim\">\n" +
-    "                    <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
+    "                    <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -3738,28 +3749,28 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          <nav class=\"header-nav__wrap hide-mobile\">\n" +
     "            <ul class=\"header-nav-wrap__inner\">\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"products.about\" class=\"header-nav-link txt-small txt-bold\">Products</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.products.about\" class=\"header-nav-link txt-small txt-bold\">Products</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"about\" class=\"header-nav-link txt-small txt-bold\">About</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.about\" class=\"header-nav-link txt-small txt-bold\">About</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"science\" class=\"header-nav-link txt-small txt-bold\">Science</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.science\" class=\"header-nav-link txt-small txt-bold\">Science</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"login\" class=\"bt-round bt-round-lg bt-round--blue\">Sign-in/Join</a>\n" +
+    "              <a ui-sref=\"master.login\" class=\"bt-round bt-round-lg bt-round--blue\">Sign-in/Join</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
+    "              <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
@@ -3779,7 +3790,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "    <div class=\"row\">\n" +
     "      <!--logo header-->\n" +
     "      <div class=\"side-navbar__logo\">\n" +
-    "        <a ui-sref=\"home\" class=\"header-logo__link\">\n" +
+    "        <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
     "          <img class=\"logo-img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
     "        </a>\n" +
     "      </div>\n" +
@@ -3805,7 +3816,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"side-navbar-account__button\">\n" +
-    "          <a ui-sref=\"profile\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <a ui-sref=\"master.profile\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
     "          <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +

@@ -5,37 +5,31 @@ angular.module( 'ixLayer.products', [
   'ngAnimate'
 ])
   .config(function config($stateProvider) {
-    $stateProvider.state('products', {
+    $stateProvider.state('master.products', {
       controller: 'ProductsCtrl',
       templateUrl: 'components/products/products.tpl.html',
       data:{ pageTitle: 'Products' },
       resolve: {
-        userInfo: ['userAccessSrv', function (userAccessSrv) {
-          return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
-        }],
         products: ['productsService', function (productsService) {
           return productsService.getProducts();
-        }],
-        statusProducts: ['productsService', function(productsService) {
-          return productsService.getProductsStatus();
         }]
       }
     })
-      .state('products.about', {
-        url: '/about-products',
+      .state('master.products.about', {
+        url: '/products',
         templateUrl: 'components/products/pages/about-products.tpl.html',
         params : {
-          title: 'Current status'
+          title: 'Products'
         }
       })
-      .state('products.status', {
+      .state('master.products.status', {
       url: '/status',
       templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
         params : {
           title: 'Current status'
         }
     })
-      .state('products.pre-purchase', {
+      .state('master.products.pre-purchase', {
         url: '/pre-purchase',
         templateUrl: 'components/products/pages/prePurchase.tpl.html',
         params : {
@@ -45,7 +39,7 @@ angular.module( 'ixLayer.products', [
   })
 
   .config(function config($stateProvider) {
-    $stateProvider.state('productDetail', {
+    $stateProvider.state('master.productDetail', {
       url: '/product/{productId}',
       controller: 'ProductDetailCtrl',
       templateUrl: 'components/products/productsDetail.tpl.html',
@@ -61,7 +55,7 @@ angular.module( 'ixLayer.products', [
     });
   })
 
-  .controller( 'ProductsCtrl', ['$scope', 'products', 'statusProducts', '$state', function ProductsCtrl( $scope, products, statusProducts, $state) {
+  .controller( 'ProductsCtrl', ['$scope', 'products', '$state', function ProductsCtrl( $scope, products, $state) {
     $scope.products = products;
 
     // var product_id = statusProducts[0].product_id;

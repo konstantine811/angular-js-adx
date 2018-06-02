@@ -10,7 +10,7 @@ angular.module( 'ixLayer.profile', [
     var states;
     states = [
       {
-        name: 'profile',
+        name: 'master.profile',
         url: '/profile/view',
         controller: 'ProfileViewCtrl',
         templateUrl: 'components/profile/profileView.tpl.html',
@@ -28,7 +28,7 @@ angular.module( 'ixLayer.profile', [
         }
       },
       {
-        name: 'profileEdit',
+        name: 'master.profileEdit',
         url: '/profile/edit',
         controller: 'ProfileEditCtrl',
         templateUrl: 'components/profile/profileEdit.tpl.html',
@@ -61,7 +61,7 @@ angular.module( 'ixLayer.profile', [
 
     $scope.submitForm = function(data) {
       profileService.updateProfile(data).then(function(result) {
-        $state.go('profile');
+        $state.go('master.profile');
       });
     };
 

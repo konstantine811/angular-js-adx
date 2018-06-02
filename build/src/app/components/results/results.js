@@ -5,7 +5,7 @@ angular.module( 'ixLayer.results', [
   'ngAnimate'
 ])
   .config(function config($stateProvider) {
-    $stateProvider.state('results', {
+    $stateProvider.state('home.results', {
       url: '/results/:id',
       controller: 'ResultsCtrl',
       templateUrl: 'components/results/results.tpl.html',
@@ -26,63 +26,63 @@ angular.module( 'ixLayer.results', [
         }]
       }
     })
-      .state('results.pre', {
+      .state('home.results.pre', {
         url: '/pre',
         templateUrl: 'components/results/pages/pre-result.tpl.html',
         params: {
           title: 'Pre-result'
         }
       })
-      .state('results.p1', {
+      .state('home.results.p1', {
         url: '/p1',
         templateUrl: 'components/results/pages/result-p1.tpl.html',
         params: {
           title: 'Your result'
         }
       })
-      .state('results.p2', {
+      .state('home.results.p2', {
         url: '/p2',
         templateUrl: 'components/results/pages/result-p2.tpl.html',
         params: {
           title: 'About'
         }
       })
-      .state('results.p3', {
+      .state('home.results.p3', {
         url: '/p3',
         templateUrl: 'components/results/pages/result-p3.tpl.html',
         params: {
           title: 'Lifestyle'
         }
       })
-      .state('results.p4', {
+      .state('home.results.p4', {
       url: '/p4',
       templateUrl: 'components/results/pages/result-p4.tpl.html',
         params: {
           title: 'Next steps'
         }
       })
-      .state('results.science', {
+      .state('home.results.science', {
         url: '/science',
         templateUrl: 'components/results/pages/result-science.tpl.html',
         params: {
           title: 'Science'
         }
       })
-      .state('results.sharing', {
+      .state('home.results.sharing', {
         url: '/sharing',
         templateUrl: 'components/results/pages/result-sharing.tpl.html',
         params: {
           title: 'Share results'
         }
       })
-      .state('results.questions', {
+      .state('home.results.questions', {
         url: '/questions',
         templateUrl: 'components/results/pages/result-questions.tpl.html',
         params: {
           title: 'General questions'
         }
       })
-      .state('results.view', {
+      .state('home.results.view', {
         url: '/view',
         templateUrl: 'components/results/pages/result-view.tpl.html',
         params: {

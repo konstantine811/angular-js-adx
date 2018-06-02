@@ -66,7 +66,7 @@ angular.module( 'ixlayer.config.restangular', [
     var goLoginPage = function(){
       userAccess.cleanUser();
       $log.debug("Go Login!");
-      $state.go('login');
+      $state.go('master.login');
     };
 
     Restangular.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
