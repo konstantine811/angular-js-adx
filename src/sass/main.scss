@@ -40,6 +40,8 @@
 @import '../app/components/profile/profile.scss';
 @import '../app/components/about/about.scss';
 @import '../app/components/science/science.scss';
+@import '../app/components/legal/legal.scss';
+@import '../app/components/faq/faq.scss';
 //animation for directives
 @import '../app/shared/animation-directive/animation.directive.scss';
 //responsive media query
@@ -64,6 +66,8 @@
 @import '../app/components/login/_login-media.scss';
 @import '../app/components/about/about-media.scss';
 @import '../app/components/science/science-media.scss';
+@import '../app/components/legal/legal-media.scss';
+@import '../app/components/faq/faq-media.scss';
 
 a[ng-click] {
   cursor: pointer;

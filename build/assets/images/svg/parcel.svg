@@ -1,0 +1,39 @@
+<svg class="parcel-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.725 165.989">
+  <defs>
+    <style>
+      .parcel-svg-1 {
+        fill: #f1f1f1;
+      }
+
+      .parcel-svg-2 {
+        fill: #cce3ff;
+      }
+
+      .parcel-svg-3 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .parcel-svg-4 {
+        fill: #fff;
+        opacity: 0.3;
+      }
+
+      .parcel-svg-5 {
+        fill: #7c89ad;
+      }
+    </style>
+  </defs>
+  <g id="Group_699" data-name="Group 699" transform="translate(-880.138 -420.885)">
+    <ellipse id="Ellipse_1603" data-name="Ellipse 1603" class="parcel-svg-1" cx="79.862" cy="82.995" rx="79.862" ry="82.995" transform="translate(880.138 420.885)"/>
+    <g id="certificate-7202_c1995b9d-0f72-4ca5-a74d-e5028791afd9" transform="translate(917.058 456.315)">
+      <path id="layer2" class="parcel-svg-2" d="M38.616,14.663H2c0-7,4.255-12.684,11-12.684C23.359,1.979,38.616,5.15,38.616,14.663Z" transform="translate(-2 -1.977)"/>
+      <path id="opacity" class="parcel-svg-3" d="M38.616,14.663H2c0-7,4.255-12.684,11-12.684C23.359,1.979,38.616,5.15,38.616,14.663Z" transform="translate(-2 -1.977)"/>
+      <path id="layer2-2" data-name="layer2" class="parcel-svg-2" d="M71.443,71.739V14.662A12.451,12.451,0,0,0,59.238,1.978H9.207c6.74,0,10.364,5.679,10.364,12.684v69.8H70.242C71.681,80.58,71.443,76.164,71.443,71.739ZM31.776,97.109c27.172,0,35.769-5.381,38.466-12.651H19.571A12.889,12.889,0,0,0,31.776,97.109Z" transform="translate(1.788 -1.978)"/>
+      <path id="opacity-2" data-name="opacity" class="parcel-svg-3" d="M28.205,66.651c27.172,0,35.769-5.381,38.466-12.651H16A12.889,12.889,0,0,0,28.205,66.651Z" transform="translate(5.359 28.48)"/>
+      <path id="layer2-3" data-name="layer2" class="parcel-svg-2" d="M24,71.347H69.769A12.45,12.45,0,0,0,81.975,58.7H36.205A12.45,12.45,0,0,1,24,71.347ZM69.769,46.012S35.442,45.979,24,45.979A12.919,12.919,0,0,1,36.205,58.663V58.7H81.975v-.033A12.911,12.911,0,0,0,78.4,49.707,11.948,11.948,0,0,0,69.769,46.012Z" transform="translate(9.564 23.784)"/>
+      <path id="opacity-3" data-name="opacity" class="parcel-svg-4" d="M69.769,46.012S35.442,45.979,24,45.979A12.919,12.919,0,0,1,36.205,58.663V58.7H81.975v-.033A12.911,12.911,0,0,0,78.4,49.707,11.948,11.948,0,0,0,69.769,46.012Z" transform="translate(9.564 23.784)"/>
+      <path id="layer1" class="parcel-svg-5" d="M47.885,16.15H26.526a1.587,1.587,0,0,1,0-3.171H47.885a1.587,1.587,0,0,1,0,3.171Zm0,15.855H26.526a1.587,1.587,0,0,1,0-3.171H47.885a1.587,1.587,0,0,1,0,3.171Zm0,15.855H26.526a1.587,1.587,0,0,1,0-3.171H47.885a1.587,1.587,0,0,1,0,3.171Z" transform="translate(10.09 4.463)"/>
+    </g>
+  </g>
+</svg>

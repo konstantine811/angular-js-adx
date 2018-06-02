@@ -8849,6 +8849,11 @@ h6 {
   height: auto;
   left: 0; }
 
+.img-small {
+  width: 160px;
+  height: auto;
+  display: inline-block; }
+
 .boxes__wrap {
   width: 100%;
   height: auto;
@@ -10169,6 +10174,25 @@ textarea.form-control {
   width: 100%;
   padding: 30px 40px;
   margin: 26px; }
+
+.legal-p-head-bgc {
+  height: 246px;
+  background-image: url("../assets/images/legal-bgc.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.legal-p-body__img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 10px; }
+
+.legal-p-body {
+  width: 100%;
+  height: auto; }
+
+.legal-p-body__wrap {
+  padding-bottom: 80px; }
 
 [animation-on-change] {
   transition: all 0.4s;

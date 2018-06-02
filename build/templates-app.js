@@ -928,9 +928,104 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
 
 angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/legal/legal.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>This is page Legal</h1>\n" +
+    "<div class=\"legal-p\">\n" +
+    "    <div class=\"legal-p-head-bgc\"></div>\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "        <div class=\"section-box-shadow section-box-shadow--space-inner\">\n" +
+    "            <div class=\"container-lg\">\n" +
+    "                <div class=\"legal-p-body\">\n" +
+    "                    <div class=\"legal-p-body__wrap\">\n" +
+    "                        <div class=\"legal-p-body__img\">\n" +
+    "                            <ng-include class=\"img-small\" src=\"'./assets/images/svg/parcel.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap\">\n" +
+    "                            <h3 class=\"txt-blue-dark txt-center\">Terms of Service</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <div class=\"row\">\n" +
+    "                                <div class=\"col-sm-6\">\n" +
+    "                                    <p class=\"txt-middle txt-black\">\n" +
+    "                                        <span class=\"txt-bold\">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "                                    </p>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            <span class=\"txt-bold\">Duo Reges: constructio interrete.</span> Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-smal\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            <span class=\"txt-bold\">Idne consensisse de Calatino plurimas</span> gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"col-sm-6\">\n" +
+    "                                    <p class=\"txt-middle txt-black\">\n" +
+    "                                        Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
+    "                                    </p>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera. Quantum Aristoxeni ingenium consumptum videmus in musicis? Quis non odit sordidos, vanos, leves, futtiles? Primum cur ista res digna odio est, nisi quod est turpis? Aeque enim contingit omnibus fidibus, ut incontentae sint. Sed ad bona praeterita redeamus. Cur id non ita fit?\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            Conferam tecum, quam cuique verso rem subicias; Sed existimo te, sicut nostrum Triarium, minus ab eo delectari, quod ista Platonis, Aristoteli, Theophrasti orationis ornamenta neglexerit. Conferam tecum, quam cuique verso rem subicias; Numquam audivi in Epicuri schola Lycurgum, Solonem, Miltiadem, Themistoclem, Epaminondam nominari, qui in ore sunt ceterorum omnium philosophorum. Videsne igitur Zenonem tuum cum Aristone verbis concinere, re dissidere, cum Aristotele et illis re consentire, verbis discrepare? Nam quid possumus facere melius? Animadverti, ínquam, te isto modo paulo ante ponere, et scio ab Antiocho nostro dici sic solere; Dicimus aliquem hilare vivere; Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur?\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"section__wrap\">\n" +
+    "                            <h3 class=\"txt-blue txt-center\">Privacy</h3>\n" +
+    "                            <div class=\"txt__wrap\">\n" +
+    "                                <div class=\"row\">\n" +
+    "                                    <div class=\"col-sm-6\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            <span class=\"txt-bold\">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "                                        </p>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Duo Reges: constructio interrete.</span> Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-smal\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Idne consensisse de Calatino plurimas</span> gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"col-sm-6\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
+    "                                        </p>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera. Quantum Aristoxeni ingenium consumptum videmus in musicis? Quis non odit sordidos, vanos, leves, futtiles? Primum cur ista res digna odio est, nisi quod est turpis? Aeque enim contingit omnibus fidibus, ut incontentae sint. Sed ad bona praeterita redeamus. Cur id non ita fit?\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Conferam tecum, quam cuique verso rem subicias; Sed existimo te, sicut nostrum Triarium, minus ab eo delectari, quod ista Platonis, Aristoteli, Theophrasti orationis ornamenta neglexerit. Conferam tecum, quam cuique verso rem subicias; Numquam audivi in Epicuri schola Lycurgum, Solonem, Miltiadem, Themistoclem, Epaminondam nominari, qui in ore sunt ceterorum omnium philosophorum. Videsne igitur Zenonem tuum cum Aristone verbis concinere, re dissidere, cum Aristotele et illis re consentire, verbis discrepare? Nam quid possumus facere melius? Animadverti, ínquam, te isto modo paulo ante ponere, et scio ab Antiocho nostro dici sic solere; Dicimus aliquem hilare vivere; Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur?\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -3520,7 +3615,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                </div>\n" +
     "                <div class=\"col-sm-2\">\n" +
     "                    <div class=\"title__wrap\">\n" +
-    "                        <h6 class=\"txt-blue txt-uppercase\">LEGAL</h6>\n" +
+    "                        <a ui-sref=\"legal\" class=\"txt txt-medium txt-blue txt-uppercase\">LEGAL</a>\n" +
     "                    </div>\n" +
     "                    <div class=\"txt__wrap\">\n" +
     "                        <a href=\"\" class=\"txt txt-black\">Tems of Service</a>\n" +

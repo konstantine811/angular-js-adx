@@ -94,6 +94,9 @@ angular.module( 'ixLayer', [
         case 'contact' :
           $scope.hideSideNavBar = false;
           break;
+        case 'legal' :
+          $scope.hideSideNavBar = false;
+          break;
         default:
           $scope.hideSideNavBar = true;
           break;
