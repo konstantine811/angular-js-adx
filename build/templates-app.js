@@ -399,9 +399,25 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
 
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/faq/faq.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>Frequently asked questions.</h1>\n" +
+    "<div class=\"faq-p\">\n" +
+    "    <div class=\"faq-p-head\">\n" +
+    "        <div class=\"container-fluid container-fluid--section\">\n" +
+    "            <div class=\"container-lg\">\n" +
+    "                <div class=\"faq-p-head__body\">\n" +
+    "                    <div class=\"faq-p-head__title\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Frequently asked questions</h3>\n" +
+    "                        <h1 class=\"txt-blue-dark txt-center\">We care about you</h1>\n" +
+    "                        <div class=\"sub-header-txt__wrap\">\n" +
+    "                            <div class=\"sub-header-txt txt-center\">\n" +
+    "                                Our customer support team is available\n" +
+    "                                by email or chat, and is happy to answer your\n" +
+    "                                questions about your test kit, results, and more.\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);
