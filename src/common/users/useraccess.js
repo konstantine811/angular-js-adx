@@ -48,7 +48,7 @@ angular.module('ixlayer.useraccess', [
           var promise = $q.resolve();
 
           if (currentUser) {
-            promise = $state.go('home');
+            promise = $state.go('master.home');
           }
 
           promise.then(function () {
@@ -85,7 +85,7 @@ angular.module('ixlayer.useraccess', [
 
         if (!authenticated && forceToAuthenticate) {
           $log.debug("User is not authenticated!");
-          $state.go('login');
+          $state.go('master.login');
           return $q.reject();
         }
 
@@ -93,7 +93,7 @@ angular.module('ixlayer.useraccess', [
         return requestCurrentUserDetails();
       }, function (response) {
         $log.debug("autoLogin - failed");
-        $state.go('login');
+        $state.go('master.login');
       });
     };
 
@@ -234,10 +234,10 @@ angular.module('ixlayer.useraccess', [
 
             if ($state.$current.name !== 'login') {
               //Maybe go to a 'not-authorized' page?
-              $state.go('login');
+              $state.go('master.login');
             }
             else {
-              $state.go('home');
+              $state.go('master.home');
             }
           });
           defer.reject();
@@ -252,7 +252,7 @@ angular.module('ixlayer.useraccess', [
           //The user is not logged in, let's go login (keep the last unresolved state)
           $timeout(function () {
             //This function can be called during a state change. More secure to call the redirect in a timeout
-            $state.go('login');
+            $state.go('master.login');
           });
           defer.reject();
         }

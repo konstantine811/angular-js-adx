@@ -4,7 +4,7 @@ angular.module( 'ixLayer.legal', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'legal', {
+    $stateProvider.state( 'master.legal', {
       url: '/legal',
       controller: 'LegalCtrl',
       templateUrl: 'components/legal/legal.tpl.html',

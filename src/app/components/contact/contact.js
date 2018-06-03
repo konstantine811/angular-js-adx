@@ -4,7 +4,7 @@ angular.module( 'ixLayer.contact', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'contact', {
+    $stateProvider.state( 'master.contact', {
       url: '/contact',
       controller: 'ContactCtrl',
       templateUrl: 'components/contact/contact.tpl.html',

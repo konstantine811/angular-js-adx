@@ -4,7 +4,7 @@ angular.module( 'ixLayer.FAQ', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'FAQ', {
+    $stateProvider.state( 'master.FAQ', {
       url: '/FAQ',
       controller: 'FAQCtrl',
       templateUrl: 'components/faq/faq.tpl.html',

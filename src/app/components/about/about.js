@@ -4,7 +4,7 @@ angular.module( 'ixLayer.about', [
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
+  $stateProvider.state( 'master.about', {
     url: '/about',
     controller: 'AboutCtrl',
     templateUrl: 'components/about/about.tpl.html',

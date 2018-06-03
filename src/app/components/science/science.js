@@ -4,7 +4,7 @@ angular.module( 'ixLayer.science', [
   'ngAnimate'
 ])
   .config(function config($stateProvider) {
-    $stateProvider.state('science', {
+    $stateProvider.state('master.science', {
       url: '/science',
       controller: 'ScienceCtrl',
       templateUrl: 'components/science/science.tpl.html',

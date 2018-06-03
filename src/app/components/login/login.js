@@ -5,7 +5,7 @@ angular.module( 'ixLayer.login', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'login', {
+    $stateProvider.state( 'master.login', {
       url: '/login',
       controller: 'LoginCtrl',
       templateUrl: 'components/login/login.tpl.html',
@@ -19,7 +19,7 @@ angular.module( 'ixLayer.login', [
       $scope.loginUser = function (userForm) {
           userAccessSrv.cleanUser();
           userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
-                $state.go('dashboard');
+                $state.go('master.dashboard');
               },
               function (error) {
                 $scope.error = error;

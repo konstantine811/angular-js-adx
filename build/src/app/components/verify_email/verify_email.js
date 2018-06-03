@@ -5,7 +5,7 @@ angular.module( 'ixLayer.verifyEmail', [
 ])
 
     .config(function config( $stateProvider ) {
-        $stateProvider.state( 'verify_email', {
+        $stateProvider.state( 'master.verify_email', {
             url: '/verify-email/:activation_key',
             controller: 'VerifyEmailCtrl',
             templateUrl: 'components/verify_email/verify_email.tpl.html',

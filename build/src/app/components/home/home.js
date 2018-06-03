@@ -13,7 +13,8 @@
  * specified, as shown below.
  */
 angular.module( 'ixLayer.home', [
-  'ui.router'
+  'ui.router',
+  'ixLayer.master'
 ])
 
 /**
@@ -22,7 +23,7 @@ angular.module( 'ixLayer.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
+  $stateProvider.state( 'master.home', {
     url: '/home',
     controller: 'HomeCtrl',
     templateUrl: 'components/home/home.tpl.html',
@@ -34,6 +35,5 @@ angular.module( 'ixLayer.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', ['$scope', function HomeCtrl($scope) {
-
 }]);
 

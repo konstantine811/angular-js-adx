@@ -5,7 +5,7 @@ angular.module( 'ixLayer.register', [
     'ngAnimate'
   ])
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'register', {
+    $stateProvider.state( 'master.register', {
       url: '/register',
       controller: 'RegisterCtrl',
       templateUrl: 'components/register/register.tpl.html',

@@ -4,7 +4,7 @@ angular.module( 'ixLayer.changePassword', [
   ])
 
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'change_password', {
+    $stateProvider.state( 'master.change_password', {
       url: '/change_password/:activation_key',
       controller: 'ChangePasswordCtrl',
       templateUrl: 'components/change_password/change_password.tpl.html',

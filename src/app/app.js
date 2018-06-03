@@ -3,6 +3,7 @@ angular.module( 'ixLayer', [
   'ixlayer.config.restangular',
   'ixlayer.config',
   'ixlayer.config.routing',
+  'ixLayer.master',
   'ixLayer.home',
   'ixLayer.about',
   'ixLayer.products',
@@ -54,81 +55,9 @@ angular.module( 'ixLayer', [
   });
 })
 
-  .controller( 'AppCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv', function AppCtrl ( $scope, $location, $state, $rootScope, djangoAuth, userAccessSrv ) {
-    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      if ( angular.isDefined( toState.data.pageTitle ) ) {
-        $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
-      }
-    });
-
-
-    $scope.logged = false;
-    $scope.hideSideNavBar = true;
-
-    $scope.$watch(function() {
-      return $location.path();
-    }, function(value) {
-      var path = value.slice(1);
-      switch(path) {
-        case 'home' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'login' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'register' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'about' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'about-products' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'science' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'FAQ' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'contact' :
-          $scope.hideSideNavBar = false;
-          break;
-        case 'legal' :
-          $scope.hideSideNavBar = false;
-          break;
-        default:
-          $scope.hideSideNavBar = true;
-          break;
-      }
-    });
-
-
-      $scope.logged = (function() {
-      var token = djangoAuth.getToken();
-      if(token) {
-        return true;
-      } else {
-        return false;
-      }
-    }());
-
-    $rootScope.$on("user_logged_in", function(data) {
-      if(data) {
-        $scope.logged = true;
-      } else {
-        $scope.logged = false;
-      }
-    });
-
-    $rootScope.$on("user_logged_out", function(data) {
-      if(data) {
-        $scope.logged = false;
-      } else {
-        $scope.logged = true;
-      }
-    });
-  }
+  .controller( 'AppCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv',
+    function AppCtrl ( $scope, $location, $state, $rootScope, djangoAuth, userAccessSrv ) {
+    }
   ]);
 
 // global error handling goes here

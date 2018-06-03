@@ -4,7 +4,7 @@ angular.module( 'ixLayer.dashboard', [
   ])
   
   .config(function config( $stateProvider ) {
-    $stateProvider.state( 'dashboard', {
+    $stateProvider.state( 'master.dashboard', {
       url: '/dashboard',
       controller: 'DashboardCtrl',
       templateUrl: 'components/dashboard/dashboard.tpl.html',
@@ -25,9 +25,9 @@ angular.module( 'ixLayer.dashboard', [
       $scope.status = helix_profile;
 
       if (helix_profile !== null && helix_profile.product_status.length > 0) {
-        $state.go('products.status');
+        $state.go('master.products.status');
       } else {
-        $state.go('products.pre-purchase');
+        $state.go('master.products.pre-purchase');
       }
 
   }]);
