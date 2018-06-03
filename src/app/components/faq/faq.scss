@@ -1,0 +1,29 @@
+.faq-p-head {
+  width: 100%;
+  min-height: 417px;
+  height: auto;
+  background-image: url("../assets/images/faq-bgc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faq-p-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: 1000;
+  display: block;
+}
+
+.faq-p-body__inner {
+  width: 100%;
+  height: auto;
+  padding: 60px 0 100px;
+}
+
+.faq-p-head__body {
+  max-width: 382px;
+  margin: 0 auto;
+  padding: 120px 0;
+}

@@ -419,6 +419,122 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
+    "    <div class=\"faq-p-body\">\n" +
+    "        <div class=\"container-fluid container-fluid--section\">\n" +
+    "            <div class=\"section-box-shadow home-section-fourth\">\n" +
+    "                <div class=\"container-lg\">\n" +
+    "                    <div class=\"faq-p-body__inner\">\n" +
+    "                        <div uib-accordion close-others=\"false\">\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                                        <div class=\"txt--indent\">\n" +
+    "                                            For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
+    "                                            ordering a test, completing your kit, or interpreting your results.\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent\">\n" +
+    "                                            You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        You will receive your test results in a clear, electronic report. However, if you have additional questions about what these results mean to you or your family, we have Genetics Counselors available to discuss your results with you, for no additional charge. Also, we encourage you to share your report with your health care provider and review with them any additional questions or concerns you may have.\n" +
+    "                \n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark\">Power of emotions</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Genetics is only one part of your risk for developing Alzheimer’s disease. For many people, it can be hard to be motivated to exercise.  For others, nutrition is a struggle with busy work and family schedules.  For yet others, sleep is often viewed as an inconvenience and not given much priority. Finally, stress management is an issue for many, as approximately 55% of Americans reported not even taking all their paid vacation days. (source: http://www.projecttimeoff.com/research/state-american-vacation-2016).  Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
+    "                                        <div class=\"txt--indent\">\n" +
+    "                                            Having the ApoE-e4 variant  (high genetic risk for Alzheimer’s disease) does not guarantee you will develop late-onset Alzheimer’s disease.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark\">Lifestyle changes</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Sleep, stress, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc.), and environmental toxins each can impact your cognitive health.  Living an overall healthier life may also help you reduce your risk for Alzheimer’s disease.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark\">Connecting with community</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent\">\n" +
+    "                                        <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                                        <div class=\"txt--indent\">\n" +
+    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
+    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
+    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Blog</a>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
     "</div>");
 }]);
 

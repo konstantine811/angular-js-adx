@@ -27,6 +27,7 @@ angular.module( 'ixLayer.master', [
       return $location.path();
     }, function(value) {
       var path = value.slice(1);
+
       switch(path) {
         case 'home' :
           $scope.hideSideNavBar = false;
