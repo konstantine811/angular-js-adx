@@ -400,14 +400,14 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/faq/faq.tpl.html",
     "<div class=\"faq-p\">\n" +
-    "    <div class=\"faq-p-head\">\n" +
-    "        <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div class=\"faq-p-head anim-content-transition\">\n" +
+    "        <div class=\"container-fluid container-fluid--section \">\n" +
     "            <div class=\"container-lg\">\n" +
     "                <div class=\"faq-p-head__body\">\n" +
     "                    <div class=\"faq-p-head__title\">\n" +
-    "                        <h3 class=\"txt-blue-dark txt-center\">Frequently asked questions</h3>\n" +
-    "                        <h1 class=\"txt-blue-dark txt-center\">We care about you</h1>\n" +
-    "                        <div class=\"sub-header-txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center anim-content-transition\">Frequently asked questions</h3>\n" +
+    "                        <h1 class=\"txt-blue-dark txt-center anim-content-transition\">We care about you</h1>\n" +
+    "                        <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "                            <div class=\"sub-header-txt txt-center\">\n" +
     "                                Our customer support team is available\n" +
     "                                by email or chat, and is happy to answer your\n" +
@@ -419,7 +419,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"faq-p-body\">\n" +
+    "    <div class=\"faq-p-body anim-content-transition\">\n" +
     "        <div class=\"container-fluid container-fluid--section\">\n" +
     "            <div class=\"section-box-shadow home-section-fourth\">\n" +
     "                <div class=\"container-lg\">\n" +
@@ -432,7 +432,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">You’re not alone</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -456,7 +456,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Genetic counseling</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -474,7 +474,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark\">Power of emotions</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Power of emotions</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -494,7 +494,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark\">Lifestyle changes</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle changes</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -511,7 +511,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark\">Connecting with community</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Connecting with community</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -1067,25 +1067,25 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
     "            <div class=\"container-lg\">\n" +
     "                <div class=\"legal-p-body\">\n" +
     "                    <div class=\"legal-p-body__wrap\">\n" +
-    "                        <div class=\"legal-p-body__img\">\n" +
+    "                        <div class=\"legal-p-body__img anim-content-transition\">\n" +
     "                            <ng-include class=\"img-small\" src=\"'./assets/images/svg/parcel.svg'\"></ng-include>\n" +
     "                        </div>\n" +
-    "                        <div class=\"title__wrap\">\n" +
+    "                        <div class=\"title__wrap anim-content-transition\">\n" +
     "                            <h3 class=\"txt-blue-dark txt-center\">Terms of Service</h3>\n" +
     "                        </div>\n" +
-    "                        <div class=\"txt__wrap\">\n" +
+    "                        <div class=\"txt__wrap anim-content-transition\">\n" +
     "                            <div class=\"row\">\n" +
-    "                                <div class=\"col-sm-6\">\n" +
-    "                                    <p class=\"txt-middle txt-black\">\n" +
+    "                                <div class=\"col-sm-6 anim-content-transition\">\n" +
+    "                                    <p class=\"txt-middle txt-black anim-content-transition\">\n" +
     "                                        <span class=\"txt-bold\">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
     "                                    </p>\n" +
     "                                    <div class=\"txt--indent-small\">\n" +
-    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                        <p class=\"txt-middle txt-black anim-content-transition\">\n" +
     "                                            <span class=\"txt-bold\">Duo Reges: constructio interrete.</span> Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
     "                                        </p>\n" +
     "                                    </div>\n" +
     "                                    <div class=\"txt--indent-smal\">\n" +
-    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                        <p class=\"txt-middle txt-black anim-content-transition\">\n" +
     "                                            <span class=\"txt-bold\">Idne consensisse de Calatino plurimas</span> gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
     "                                        </p>\n" +
     "                                    </div>\n" +
@@ -1113,14 +1113,14 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
     "                            </div>\n" +
     "                        </div>\n" +
     "                        <div class=\"section__wrap\">\n" +
-    "                            <h3 class=\"txt-blue txt-center\">Privacy</h3>\n" +
+    "                            <h3 class=\"txt-blue txt-center anim-content-transition\">Privacy</h3>\n" +
     "                            <div class=\"txt__wrap\">\n" +
     "                                <div class=\"row\">\n" +
-    "                                    <div class=\"col-sm-6\">\n" +
+    "                                    <div class=\"col-sm-6 anim-content-transition\">\n" +
     "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            <span class=\"txt-bold\">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
     "                                        </p>\n" +
-    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                        <div class=\"txt--indent-small anim-content-transition\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
     "                                                <span class=\"txt-bold\">Duo Reges: constructio interrete.</span> Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
     "                                            </p>\n" +
@@ -3714,7 +3714,208 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
 
 angular.module("components/science/science.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/science/science.tpl.html",
-    "<h1 class=\"txt-blue-dark\">Science</h1>");
+    "<div class=\"science-p\">\n" +
+    "  <div class=\"science-p-head\">\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "      <div class=\"container-lg\">\n" +
+    "        <div class=\"science-p__wrap\">\n" +
+    "          <div class=\"science-p-head__title txt-center\">\n" +
+    "            <h1 class=\"txt-blue\">How it works - Introduction</h1>\n" +
+    "          </div>\n" +
+    "          <div class=\"science-p-head__body\">\n" +
+    "            <div class=\"science-p-head-body__row\">\n" +
+    "              <div class=\"container-flex align-items--center container-flex--column-reverse-lg\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"science-p-head__img science-p-head__img--first\">\n" +
+    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column-2\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">What is dementia?</h4>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\">Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"science-p-head-body__row\">\n" +
+    "              <div class=\"container-flex align-items--center container-flex--column-lg\">\n" +
+    "                <div class=\"flex-column-2\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">What is Alzheimer’s disease?</h4>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\">Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"science-p-head__img txt-right\">\n" +
+    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/pink-brain.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div class=\"science-p-section-second\">\n" +
+    "      <div class=\"section-box-shadow\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Symptoms and diagnoses</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap txt-center\">\n" +
+    "            <p class=\"txt-large txt-black\">\n" +
+    "              Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "          <div class=\"science-p__wrap\">\n" +
+    "            <div class=\"container-flex container-flex--column-md\">\n" +
+    "              <div class=\"flex-column align-vertical--center\">\n" +
+    "                <div class=\"science-p-section-second__img\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <ul class=\"science-p-list\">\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Memory loss</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Personality changes</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"science-p-list__items\">\n" +
+    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                      <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                </ul>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"science-p__wrap-bottom\">\n" +
+    "            <div class=\"title__wrap txt-center\">\n" +
+    "              <p class=\"txt-large txt-black txt-bold\">SOURCE: www.medhelp.org/senior-care/articles/Dementia-vs-Alzheimers-Whats-theDifference/161</p>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-center\">\n" +
+    "              <p class=\"txt-large txt-black\">Unfortunately, there is not a single universally accepted standard of care for diagnosing or treating Alzheimer’s disease in the US. This leaves many people seeking answers alone.</p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    \n" +
+    "    <div class=\"science-p-section-third\">\n" +
+    "      <div class=\"section-box-silver\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div class=\"science-p-section-third__wrap\">\n" +
+    "            <div class=\"container-flex  container-flex--column-lg\">\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <h2 class=\"txt-blue\">Why learn if you are at risk for\n" +
+    "                  Alzheimer’s disease?</h2>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <p class=\"txt txt-black\">\n" +
+    "                    Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk. The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.\n" +
+    "                  </p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column align-vertical--center\">\n" +
+    "                <div class=\"science-p-head__img txt-right\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/medical-table-with-pen.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    \n" +
+    "    <div class=\"science-p-section-fourth\">\n" +
+    "      <div class=\"section-box-shadow\">\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div class=\"science-p-section-fourth__wrap\">\n" +
+    "            <div class=\"title__wrap txt-center container-exs\">\n" +
+    "              <h3 class=\"txt-blue\">Why haven’t I heard that I can reduce\n" +
+    "                my risk for Alzheimer’s disease?</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap\">\n" +
+    "              <ul class=\"science-p-list\">\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
+    "                    <p class=\"txt txt-black\">Emerging research can take a while to be accepted by mainstream\n" +
+    "                      healthcare providers.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
+    "                    <p class=\"txt txt-black\">You may have seen headlines on news shows or on the internet highlighting some of the scientific breakthroughs on modifiable risk factors for Alzheimer’s disease, but may have not heard about them elsewhere yet.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
+    "                    <p class=\"txt txt-black\">Also, because genetic testing for Alzheimer’s disease is still not covered by insurance, many medical practices are not equipped to handle these evaluation paths yet. </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      There is not a single universally accepted standard of care for diagnosing or treating Alzheimer’s disease in the US.\n" +
+    "                      This leaves many patients seeking answers alone.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
+    "                    <p class=\"txt txt-black\">You aren’t limited by what your doctor’s office offers or what your insurance will cover.  Genetic testing is now available through private pay. What sets ADx Healthcare apart is a physician will review your medical history to help you determine if the Alzheimer’s disease genetic test is a good fit for you, and genetics counselors are available to help you understand your results… all at no additional cost to you.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "              </ul>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    \n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "  \n" +
+    "</div>");
 }]);
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {

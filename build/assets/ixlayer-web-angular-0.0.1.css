@@ -7586,6 +7586,12 @@ body {
 .not-margin {
   margin: 0 !important; }
 
+.space-right {
+  padding-right: 80px; }
+
+.space-left {
+  padding-left: 80px; }
+
 .bgc-blue {
   background-color: #41c5eb !important; }
 
@@ -8667,6 +8673,12 @@ h6 {
   padding-left: 120px;
   margin: 0 auto; }
 
+.container-exs {
+  max-width: 578px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
 .container-md-button-flex {
   padding: 0 50px;
   display: flex;
@@ -8849,6 +8861,11 @@ h6 {
   height: auto;
   left: 0; }
 
+.img-middle {
+  width: 368px;
+  height: auto;
+  display: inline-block; }
+
 .img-small {
   width: 160px;
   height: auto;
@@ -8959,6 +8976,12 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   padding-top: 50px; }
+
+.section-box-silver {
+  width: 100%;
+  height: auto;
+  margin-top: 36px;
+  background-color: #F9FBFD; }
 
 .section-box-shadow {
   width: 100%;
@@ -10176,6 +10199,76 @@ textarea.form-control {
   padding: 30px 40px;
   margin: 26px; }
 
+.science-p-head {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/bgc-about-products.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.science-p__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 60px; }
+
+.science-p__wrap-bottom {
+  width: 100%;
+  height: auto;
+  padding-bottom: 90px; }
+
+.science-p-head__body {
+  width: 100%;
+  height: auto;
+  padding-top: 70px; }
+
+.science-p-list {
+  width: 100%;
+  height: auto;
+  list-style: none; }
+
+.science-p-list__items:nth-of-type(1) {
+  padding-top: 0; }
+
+.science-p-list__items {
+  padding-top: 35px; }
+
+.science-p-list-items {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+.science-p-list-items--circle-blue-sm {
+  padding-left: 28px; }
+  .science-p-list-items--circle-blue-sm:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    background-color: #41c5eb;
+    border-radius: 50%;
+    top: 8px;
+    left: 0; }
+
+.science-p-list-items--circle-silver-md {
+  padding-left: 68px; }
+  .science-p-list-items--circle-silver-md:before {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: #F9FBFD;
+    border-radius: 50%;
+    top: 0px;
+    left: 0; }
+
+.science-p-section-third__wrap {
+  width: 100%;
+  height: auto;
+  padding: 80px 0; }
+
+.science-p-section-fourth__wrap {
+  padding-bottom: 80px; }
+
 .legal-p-head-bgc {
   height: 246px;
   background-image: url("../assets/images/legal-bgc.png");
@@ -10470,6 +10563,12 @@ textarea.form-control {
   .container-flex--column-lg-wrap {
     flex-wrap: wrap;
     justify-content: space-evenly; } }
+@media (max-width: 1200px) {
+  .container-flex--column-lg {
+    flex-flow: column; }
+
+  .container-flex--column-reverse-lg {
+    flex-flow: column-reverse; } }
 @media (max-width: 960px) {
   .container-md-button-flex {
     padding: 0 25px; }
@@ -10953,6 +11052,12 @@ textarea.form-control {
   .about-section-fourth_form-map-overlap {
     max-width: 100%;
     left: 0; } }
+@media (max-width: 1200px) {
+  .science-p-head__img {
+    padding-top: 30px; }
+
+  .science-p-head__img--first {
+    padding-bottom: 30px; } }
 a[ng-click] {
   cursor: pointer; }
 

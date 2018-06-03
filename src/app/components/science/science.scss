@@ -1,0 +1,82 @@
+.science-p-head {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/bgc-about-products.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.science-p__wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+
+.science-p__wrap-bottom {
+  width: 100%;
+  height: auto;
+  padding-bottom: 90px;
+}
+
+.science-p-head__body {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+}
+
+.science-p-list {
+  width: 100%;
+  height: auto;
+  list-style: none;
+}
+
+.science-p-list__items:nth-of-type(1) {
+  padding-top: 0;
+}
+.science-p-list__items {
+  padding-top: 35px;
+}
+
+.science-p-list-items {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.science-p-list-items--circle-blue-sm {
+  padding-left: 28px;
+  &:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    background-color: $blue-6;
+    border-radius: 50%;
+    top: 8px;
+    left: 0;
+  }
+}
+
+.science-p-list-items--circle-silver-md {
+  padding-left: 68px;
+  &:before {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: $silver;
+    border-radius: 50%;
+    top: 0px;
+    left: 0;
+  }
+}
+
+.science-p-section-third__wrap {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+}
+
+.science-p-section-fourth__wrap {
+  padding-bottom: 80px;
+}

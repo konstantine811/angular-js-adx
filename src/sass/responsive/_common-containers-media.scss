@@ -12,6 +12,15 @@
   }
 }
 
+@media (max-width: $breakpoint-lg) {
+  .container-flex--column-lg {
+    flex-flow: column;
+  }
+  .container-flex--column-reverse-lg {
+    flex-flow: column-reverse;
+  }
+}
+
 @media (max-width: $breakpoint-md) {
   .container-md-button-flex {
     padding: 0 25px;
