@@ -64,7 +64,7 @@
     width: 33px;
     height: 33px;
     position: absolute;
-    background-color: $silver;
+    background-color: $gray;
     border-radius: 50%;
     top: 0px;
     left: 0;
@@ -79,4 +79,31 @@
 
 .science-p-section-fourth__wrap {
   padding-bottom: 80px;
+}
+
+.science-p-section-fifth {
+  .slider__wrap {
+    padding: 70px 30px 125px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+  .carousel-control {
+    display: none;
+  }
+  .carousel-indicators, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+      display: block
+  }
+  .carousel-indicators {
+    li {
+      background-color: $gray;
+      width: 25px;
+      height: 25px;
+      border-radius: 26px;
+    }
+    .active {
+      background-color: $blue-6;
+    }
+  }
 }

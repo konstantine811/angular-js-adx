@@ -3911,6 +3911,123 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "      </div>\n" +
     "    </div>\n" +
     "    \n" +
+    "    <div class=\"science-p-section-fifth\">\n" +
+    "      <div class=\"section-box-silver\">\n" +
+    "        <div class=\"section-box-head section-box-head--blue\">\n" +
+    "          <div class=\"section-box-head__wrap\">\n" +
+    "            <div class=\"container-flex align-items--center\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"txt-left\">\n" +
+    "                  <h2>How it works?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"txt-right\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">Part 1</h4>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"container-lg\">\n" +
+    "          <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
+    "            <div uib-slide index=\"0\">\n" +
+    "              <div class=\"slider__wrap align-items--center\">\n" +
+    "                <div class=\"container-flex align-items--center container-flex--column-reverse-md\">\n" +
+    "                  <div class=\"flex-column txt-left\">\n" +
+    "                   <div class=\"img__wrap--md\">\n" +
+    "                     <ng-include class=\"img-middle\" src=\"'./assets/images/svg/key.svg'\"></ng-include>\n" +
+    "                   </div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"flex-column-2\">\n" +
+    "                    <div class=\"container-exs\">\n" +
+    "                      <div class=\"txt-left txt-center-md\">\n" +
+    "                        <h2 class=\"txt-blue-3\" >Security and privacy\n" +
+    "                          Your DNA is just for you</h2>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black txt-left\">\n" +
+    "                          Your Alzheimer’s genetic information will be delivered to you via a secure, electronic report.  These results will also be available for download. It is up to you whom you share your results with, including your healthcare provider or family.  Our genetics counselors are available to go through your results with you too, if you choose. You are in control of how you receive your genetic results and whom you share them with.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"container-flex align-items--center container-flex--column-md\">\n" +
+    "                  <div class=\"flex-column-2\">\n" +
+    "                    <div class=\"container-exs\">\n" +
+    "                      <div class=\"txt-right txt-center-md title-space-top-md\">\n" +
+    "                        <h2 class=\"txt-blue-3\">Your privacy is our priority</h2>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-right\">\n" +
+    "                        <p class=\"txt txt-black\">\n" +
+    "                          We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
+    "                          prior written consen\n" +
+    "                        </p>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
+    "                            sure your data remains safe.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"flex-column txt-right\">\n" +
+    "                    <div class=\"img__wrap--md\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-slide index=\"1\">\n" +
+    "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"\">\n" +
+    "                    <h2 class=\"txt-blue-dark\">Your privacy is our priority</h2>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black  txt-left\">\n" +
+    "                      We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
+    "                      prior written consen\n" +
+    "                    </p>\n" +
+    "                    <div class=\"txt--indent-small\">\n" +
+    "                      <p class=\"txt txt-black\">\n" +
+    "                        From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
+    "                        sure your data remains safe.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div uib-slide index=\"2\">\n" +
+    "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"\">\n" +
+    "                    <h3 class=\"blue-dark\">Our mission Slider-3</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                    <div class=\"txt txt-black txt-left\">\n" +
+    "                      At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    \n" +
     "  </div>\n" +
     "  \n" +
     "  \n" +

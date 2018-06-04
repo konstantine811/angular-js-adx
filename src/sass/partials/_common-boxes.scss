@@ -147,6 +147,19 @@ ul.box__wrap {
   background-color: $white;
 }
 
+.section-box-head {
+  width: 100%;
+  height: auto;
+}
+
+.section-box-head--blue {
+  background-color: $blue-6;
+}
+
+.section-box-head__wrap {
+  padding: 30px 50px;
+}
+
 .section-box-shadow--without-space-top {
   margin-top: 0;
 }
