@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/pages/prePurchase.tpl.html", "components/products/pages/sequencingStatus.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1226,13 +1226,23 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/master/master.tpl.html",
+angular.module("components/master/master_signedin.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/master/master_signedin.tpl.html",
     "<app-side-navbar ng-if=\"logged && hideSideNavBar\"></app-side-navbar>\n" +
     "<div class=\"page\" ng-class=\"{'logged-out' : !logged || !hideSideNavBar}\">\n" +
     "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
     "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
     "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/master/master.tpl.html",
+    "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
+    "  <app-header class=\"hideSideNavBar\"></app-header>\n" +
+    "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
+    "  <app-footer ng-show=\"showFooter\"></app-footer>\n" +
     "</div>\n" +
     "");
 }]);
@@ -2234,9 +2244,6 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                    </div>\n" +
     "                    <div class=\"profile-button__wrap profile-info__wrap--border-bottom\">\n" +
     "                        <button class=\"bt-round bt-round--blue\">Edit</button>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"profile-button__wrap\">\n" +
-    "                        <a href=\"\" class=\"sub-header-txt txt-blue\">Forum settings</a>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
