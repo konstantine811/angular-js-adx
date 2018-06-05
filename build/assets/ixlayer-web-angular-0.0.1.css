@@ -8212,7 +8212,7 @@ button[disabled].bt-round {
   position: relative;
   padding-top: 11px; }
   .mobile-button .line-1, .mobile-button .line-2, .mobile-button .line-3 {
-    border-top: 3px solid #41c5eb;
+    border-top: 3px solid #063f5f;
     display: block;
     transition: all 0.5s;
     width: 34px;
@@ -8341,7 +8341,7 @@ button[disabled].bt-round {
   .status-progressbar-item:first-child::before {
     content: none; }
   .status-progressbar-item.active:before {
-    width: 9vw;
+    width: 6vw;
     transform: translate(0, 0); }
   .status-progressbar-item.active:before, .status-progressbar-item.active:after {
     background-color: #41c5eb; }
@@ -8660,7 +8660,7 @@ h6 {
   width: 100%;
   height: auto;
   position: relative;
-  max-width: 1442px;
+  max-width: 1010px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -8670,10 +8670,9 @@ h6 {
 
 .container-lg--dashboard {
   width: 100%;
+  max-width: 1010px;
   height: auto;
   position: relative;
-  padding-right: 120px;
-  padding-left: 120px;
   margin: 0 auto; }
 
 .container-exs {
@@ -8848,7 +8847,7 @@ h6 {
 .img__wrap {
   width: auto;
   height: auto;
-  padding-top: 45px; }
+  padding: 45px 20px 0; }
 
 .img-border-wrap {
   width: 360px;
@@ -8864,13 +8863,21 @@ h6 {
   height: auto;
   left: 0; }
 
+.img-large {
+  max-width: 566px;
+  width: 100%;
+  height: auto;
+  display: inline-block; }
+
 .img-middle {
-  width: 368px;
+  max-width: 368px;
+  width: 100%;
   height: auto;
   display: inline-block; }
 
 .img-small {
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   height: auto;
   display: inline-block; }
 
@@ -9187,7 +9194,7 @@ ul.box__wrap {
 
 .home-head-image__wrap {
   position: relative;
-  left: calc(61% - 775px);
+  left: calc(61% - 393px);
   top: 139px;
   z-index: 100;
   width: 59%; }
@@ -10016,6 +10023,12 @@ textarea.form-control {
   height: auto;
   padding-top: 50px; }
 
+.register-complete {
+  display: flex;
+  flex-flow: column;
+  height: 385px;
+  justify-content: space-evenly; }
+
 .result--space-bottom {
   padding-bottom: 100px; }
 
@@ -10465,6 +10478,9 @@ textarea.form-control {
     width: 46%;
     top: 7px; }
 
+  .status-progressbar-item.active:before {
+    width: 10vw; }
+
   .status-progressbar-item:nth-of-type(1) .status-progressbar-txt {
     right: calc(-55vw + 364px); }
   .status-progressbar-item:nth-of-type(2) .status-progressbar-txt {
@@ -10479,7 +10495,7 @@ textarea.form-control {
     left: -37vw; } }
 @media (max-width: 960px) {
   .status-progressbar-item.active:before {
-    width: 12vw; }
+    width: 14vw; }
 
   .status-progressbar-item:nth-of-type(1) .status-progressbar-txt {
     right: calc(-55vw + 218px); }
@@ -10691,7 +10707,10 @@ textarea.form-control {
   .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo svg {
     width: 202px;
     left: 31px;
-    top: 102px; } }
+    top: 102px; }
+
+  .img-large {
+    max-width: 366px; } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
@@ -11023,13 +11042,14 @@ textarea.form-control {
     width: 100px;
     margin: 0 auto;
     padding-top: 7px;
-    padding-left: 29px;
-    float: left; }
+    padding-left: 29px; }
 
   .side-navbar__mobile-button {
-    float: right;
-    padding-right: 21px;
-    padding-top: 5px; } }
+    float: left;
+    padding-left: 21px;
+    padding-top: 0;
+    position: relative;
+    bottom: 44px; } }
 @media (max-width: 1200px) {
   .profile-info__wrap {
     padding: 50px 50px; }

@@ -2,11 +2,11 @@
   <div class="container-fluid container-fluid--section">
     <div class="register-form__wrap" ng-if="!showPopup">
       <div class="register-form">
-        <h6 class="txt-medium txt-blue-dark txt-center">Create an account</h6>
         <form name="form"  ng-submit="submitForm(userForm)" novalidate>
           <div ng-show="!complete">
             <div class="form-input">
               <div class="form-input__register-wrap">
+                <h6 class="txt-medium txt-blue-dark txt-center">Create an account</h6>
                 <div class="form-group">
                   <label class="input-label txt--exs-small txt txt-blue-2 txt-medium" for="first_name">First name</label>
                   <input id="first_name" type="text" name="first_name" class="form-control" ng-model="userForm.first_name"  ng-minlength="3" required>
@@ -43,10 +43,18 @@
                 I have an account
               </a>
             </div>
+            <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
           </div>
-          <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
-          <div ng-if="complete == true">
-            <div class="alert alert-success">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>
+          <div ng-if="complete === true" class="register-complete">
+            <h3 class="txt-medium txt-blue-dark txt-center">Suceess!</h3>
+            <div class="txt__wrap">
+              <p class="txt txt-black">You registration was completed successfully. You should receive an email shortly with instruction on how to active your account.</p>
+            </div>
+            <div class="button__wrap button--center">
+              <a href ui-sref="master_signedin.dashboard" class="bt-round bt-round--blue-dark">
+                Dashboard
+              </a>
+            </div>
           </div>
         </form>
       </div>

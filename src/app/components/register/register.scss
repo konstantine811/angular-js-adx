@@ -37,3 +37,10 @@
   height: auto;
   padding-top: 50px;
 }
+
+.register-complete {
+  display: flex;
+  flex-flow: column;
+  height: 385px;
+  justify-content: space-evenly;
+}

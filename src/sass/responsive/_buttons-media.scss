@@ -106,6 +106,10 @@
     top: 7px;
   }
 
+  .status-progressbar-item.active:before {
+    width: 10vw;
+  }
+
   .status-progressbar-item {
     &:nth-of-type(1) .status-progressbar-txt {
       right: calc(-55vw + 364px);
@@ -132,7 +136,7 @@
 @media (max-width: $breakpoint-md) {
 
   .status-progressbar-item.active:before {
-    width: 12vw;
+    width: 14vw;
   }
 
   .status-progressbar-item {

@@ -69,7 +69,7 @@
 .img__wrap {
   width: auto;
   height: auto;
-  padding-top: 45px;
+  padding: 45px 20px 0;
 }
 
 .img-border-wrap {
@@ -88,14 +88,23 @@
   left: 0;
 }
 
+.img-large {
+  max-width: 566px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
 .img-middle {
-  width: 368px;
+  max-width: 368px;
+  width: 100%;
   height: auto;
   display: inline-block;
 }
 
 .img-small {
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   height: auto;
   display: inline-block;
 }

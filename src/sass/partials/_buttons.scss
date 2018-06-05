@@ -339,7 +339,7 @@ button[disabled].bt-round {
   padding-top: 11px;
 
   .line-1 {
-    border-top: 3px solid $blue-6;
+    border-top: 3px solid $blue-dark;
     display: block;
     transition: all $animation-speed;
     width: 34px;
@@ -506,7 +506,7 @@ button[disabled].bt-round {
   }
   &.active {
     &:before {
-      width: 9vw;
+      width: 6vw;
       transform: translate(0, 0);
     }
     &:before, &:after {

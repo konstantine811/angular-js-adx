@@ -656,8 +656,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"home-section-first-content__image\">\n" +
-    "              <div class=\"img-bgc-wrap__rounded img-bgc-wrap__rounded--float-right\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/test-tubes-with-flask.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -676,8 +676,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"home-section-first-content__image\">\n" +
-    "              <div class=\"img-bgc-wrap__rounded bgc-blue\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-big\" src=\"'./assets/images/home-page/img-notebook.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/notebook-bgc-blue.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -2240,11 +2240,11 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\">\n" +
     "      <div class=\"register-form\">\n" +
-    "        <h6 class=\"txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
     "          <div ng-show=\"!complete\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__register-wrap\">\n" +
+    "                <h6 class=\"txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
     "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
@@ -2281,10 +2281,18 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                I have an account\n" +
     "              </a>\n" +
     "            </div>\n" +
+    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
     "          </div>\n" +
-    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
-    "          <div ng-if=\"complete == true\">\n" +
-    "            <div class=\"alert alert-success\">Great!  You've just registered.  You should receive an email shortly with instructions on how to activate your account.</div>\n" +
+    "          <div ng-if=\"complete === true\" class=\"register-complete\">\n" +
+    "            <h3 class=\"txt-medium txt-blue-dark txt-center\">Suceess!</h3>\n" +
+    "            <div class=\"txt__wrap\">\n" +
+    "              <p class=\"txt txt-black\">You registration was completed successfully. You should receive an email shortly with instruction on how to active your account.</p>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <a href ui-sref=\"master_signedin.dashboard\" class=\"bt-round bt-round--blue-dark\">\n" +
+    "                Dashboard\n" +
+    "              </a>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </form>\n" +
     "      </div>\n" +
