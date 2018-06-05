@@ -10,7 +10,7 @@ angular.module( 'ixLayer.profile', [
     var states;
     states = [
       {
-        name: 'master.profile',
+        name: 'master_signedin.profile',
         url: '/profile/view',
         controller: 'ProfileViewCtrl',
         templateUrl: 'components/profile/profileView.tpl.html',
@@ -28,7 +28,7 @@ angular.module( 'ixLayer.profile', [
         }
       },
       {
-        name: 'master.profileEdit',
+        name: 'master_signedin.profileEdit',
         url: '/profile/edit',
         controller: 'ProfileEditCtrl',
         templateUrl: 'components/profile/profileEdit.tpl.html',

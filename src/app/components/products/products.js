@@ -21,20 +21,6 @@ angular.module( 'ixLayer.products', [
         params : {
           title: 'Products'
         }
-      })
-      .state('master.products.status', {
-      url: '/status',
-      templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
-        params : {
-          title: 'Current status'
-        }
-    })
-      .state('master.products.pre-purchase', {
-        url: '/pre-purchase',
-        templateUrl: 'components/products/pages/prePurchase.tpl.html',
-        params : {
-          title: 'Pre-purchase'
-        }
       });
   })
 

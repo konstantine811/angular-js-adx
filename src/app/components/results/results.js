@@ -5,7 +5,7 @@ angular.module( 'ixLayer.results', [
   'ngAnimate'
 ])
   .config(function config($stateProvider) {
-    $stateProvider.state('home.results', {
+      $stateProvider.state('master_signedin.results', {
       url: '/results/:id',
       controller: 'ResultsCtrl',
       templateUrl: 'components/results/results.tpl.html',
@@ -26,6 +26,28 @@ angular.module( 'ixLayer.results', [
         }]
       }
     })
+      .state('master_signedin.results.status', {
+        url: '/status',
+        templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
+        resolve: {
+          userInfo: ['userAccessSrv', function (userAccessSrv) {
+            return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
+          }],
+          profile: ['profileService', function (profileService) {
+            return profileService.getProfile();
+          }]
+        },
+        params : {
+          title: 'Current status'
+        }
+      })
+      .state('master_signedin.results.pre-purchase', {
+        url: '/pre-purchase',
+        templateUrl: 'components/products/pages/prePurchase.tpl.html',
+        params : {
+          title: 'Pre-purchase'
+        }
+      })
       .state('home.results.pre', {
         url: '/pre',
         templateUrl: 'components/results/pages/pre-result.tpl.html',
