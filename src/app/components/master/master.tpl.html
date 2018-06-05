@@ -2,5 +2,5 @@
 <div class="page" ng-class="{'logged-out' : !logged || !hideSideNavBar}">
   <app-header ng-if="!logged || !hideSideNavBar"></app-header>
   <div class="container-page page-transition-anim" ui-view></div>
-  <app-footer ng-if="!logged || !hideSideNavBar"></app-footer>
+  <app-footer ng-if="(!logged || !hideSideNavBar) && hideFooter"></app-footer>
 </div>

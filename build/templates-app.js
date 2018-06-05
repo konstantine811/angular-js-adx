@@ -540,75 +540,39 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<section class=\"fp-section\">\n" +
-    "    <div class=\"fp-head\">\n" +
-    "        <div class=\"head-fp__background\">\n" +
-    "            <div class=\"main-background main-background--grey-second\"></div>\n" +
+    "<section class=\"fp-p\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
+    "    <div class=\"fp-p__wrap\">\n" +
+    "      <div class=\"fp-p-form\">\n" +
+    "        <div class=\"fp-p-form__wrap\">\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt-center\">Reset your password</h6>\n" +
+    "          <div class=\"panel panel--fp\" ng-controller=\"ForgotPasswordCtrl\">\n" +
+    "            <div ng-show=\"!success\">\n" +
+    "              <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
+    "                <p class=\"about-title-txt txt-black-light\">Enter the email address used to create your account</p>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                  <label class=\"form-label\">Email</label>\n" +
+    "                  <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                    <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                    <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"fp-form-button\">\n" +
+    "                  <div class=\"fp-form-button__wrap\">\n" +
+    "                    <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\">Reset Password</button>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </form>\n" +
+    "            </div>\n" +
+    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "            <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "            <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"container\">\n" +
-    "            <div class=\"row\">\n" +
-    "                <div class=\"col-sm-12\">\n" +
-    "                    <div class=\"header-logo header-logo--small animation\">\n" +
-    "                        <div class=\"rect rect-top\">\n" +
-    "                            <div class=\"rect-txt\">\n" +
-    "                                <span class=\"rect-top__txt\"> Platform layer</span>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"rect rect-middle-first\">\n" +
-    "                            <div class=\"rect-txt\">\n" +
-    "                                <span class=\"rect-middle-first__txt\"> Backend layer</span>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"rect rect-middle-second\">\n" +
-    "                            <div class=\"rect-txt\">\n" +
-    "                                <span class=\"rect-middle-second__txt\"> Operation layer</span>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"rect rect-bottom\">\n" +
-    "                            <div class=\"rect-txt\">\n" +
-    "                                <span class=\"rect-bottom__txt\"> Helath service layer</span>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <h2 class=\"header-logo-txt header-logo-txt-large\">ixlayer</h2>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"row\">\n" +
-    "                <div class=\"col-sm-12\">\n" +
-    "                    <div class=\"fp-section__title-txt\">\n" +
-    "                        <h1 class=\"title\">Forgot Password</h1>\n" +
-    "                    </div>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"row\">\n" +
-    "                <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "                    <div class=\"panel panel--fp\" ng-controller=\"ForgotPasswordCtrl\">\n" +
-    "                        <div ng-show=\"!success\">\n" +
-    "                            <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
-    "                                <p class=\"about-title-txt txt-black-light\">Please enter your email address below:</p>\n" +
-    "                                <div class=\"form-group\">\n" +
-    "                                    <label class=\"form-label\">Email</label>\n" +
-    "                                    <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
-    "                                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                                        <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
-    "                                    </div>\n" +
-    "                                </div>\n" +
-    "                                <div class=\"fp-form-button\">\n" +
-    "                                    <div class=\"fp-form-button__wrap\">\n" +
-    "                                        <button class=\"bt blue not-margin\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
-    "                                    </div>\n" +
-    "                                </div>\n" +
-    "                            </form>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "                        <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
-    "                        <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
-    "                    </div>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
+    "      </div>\n" +
     "    </div>\n" +
+    "  </div>\n" +
     "</section>");
 }]);
 
@@ -1232,7 +1196,7 @@ angular.module("components/master/master.tpl.html", []).run(["$templateCache", f
     "<div class=\"page\" ng-class=\"{'logged-out' : !logged || !hideSideNavBar}\">\n" +
     "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
     "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
-    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
+    "  <app-footer ng-if=\"(!logged || !hideSideNavBar) && hideFooter\"></app-footer>\n" +
     "</div>\n" +
     "");
 }]);

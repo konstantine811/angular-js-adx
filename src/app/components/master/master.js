@@ -16,12 +16,15 @@ angular.module( 'ixLayer.master', [
 
     $scope.logged = false;
     $scope.hideSideNavBar = true;
+    $scope.hideFooter = true;
 
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
       if ( angular.isDefined( toState.data.pageTitle ) ) {
         $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
       }
     });
+
+
 
     $scope.$watch(function() {
       return $location.path();
@@ -31,36 +34,47 @@ angular.module( 'ixLayer.master', [
       switch(path) {
         case 'home' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'login' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = false;
           break;
         case 'register' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = false;
           break;
         case 'about' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'products' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'science' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'FAQ' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'contact' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         case 'legal' :
           $scope.hideSideNavBar = false;
+          $scope.hideFooter = true;
           break;
         default:
           $scope.hideSideNavBar = true;
+          $scope.hideFooter = true;
           break;
       }
     });
+
 
 
       $scope.logged = (function() {
