@@ -540,16 +540,20 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<section class=\"fp-p\">\n" +
+    "<section class=\"fp-p login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"fp-p__wrap\">\n" +
     "      <div class=\"fp-p-form\">\n" +
     "        <div class=\"fp-p-form__wrap\">\n" +
-    "          <h6 class=\"txt-medium txt-blue-dark txt-center\">Reset your password</h6>\n" +
     "          <div class=\"panel panel--fp\" ng-controller=\"ForgotPasswordCtrl\">\n" +
     "            <div ng-show=\"!success\">\n" +
     "              <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
-    "                <p class=\"about-title-txt txt-black-light\">Enter the email address used to create your account</p>\n" +
+    "               <div class=\"txt-center\">\n" +
+    "                 <h6 class=\"txt-medium txt-blue-dark\">Reset your password</h6>\n" +
+    "               </div>\n" +
+    "                <div class=\"txt__wrap txt-center\">\n" +
+    "                  <p class=\"about-title-txt txt-black-light\">Enter the email address used to create your account</p>\n" +
+    "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"form-label\">Email</label>\n" +
     "                  <input type=\"text\" name=\"email\" id=\"email\"  class=\"form-control\"  ng-model=\"forgotForm.email\" required>\n" +
@@ -559,15 +563,27 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"fp-form-button\">\n" +
-    "                  <div class=\"fp-form-button__wrap\">\n" +
-    "                    <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\">Reset Password</button>\n" +
+    "                  <div class=\"button__wrap button--center\">\n" +
+    "                    <button class=\"bt-round bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\">Reset Password</button>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </form>\n" +
     "            </div>\n" +
     "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
     "            <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
-    "            <div class=\"alert alert-success\" ng-if=\"success\">Great! Please check your email and click on the link to continue</div>\n" +
+    "            <div class=\"form-success\" ng-if=\"success\">\n" +
+    "              <div class=\"txt-center\">\n" +
+    "                <h6 class=\"txt-medium txt-blue-dark\">Password reset email sent!</h6>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <p class=\"about-title-txt txt-black-light\">If your email address matches our records we will send an email with instructions to reset your account password</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"fp-form-button\">\n" +
+    "                <div class=\"button__wrap button--center\">\n" +
+    "                  <a ui-sref=\"master.login\" class=\"bt-round bt-round--blue-dark\" type=\"submit\">Back to sign-in page</a>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -1196,7 +1212,7 @@ angular.module("components/master/master_signedin.tpl.html", []).run(["$template
     "<div class=\"page\" ng-class=\"{'logged-out' : !logged || !hideSideNavBar}\">\n" +
     "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
     "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
-    "  <app-footer ng-if=\"(!logged || !hideSideNavBar) && hideFooter\"></app-footer>\n" +
+    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
     "</div>\n" +
     "");
 }]);

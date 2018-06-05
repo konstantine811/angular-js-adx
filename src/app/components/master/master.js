@@ -45,6 +45,10 @@ angular.module( 'ixLayer.master', [
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
             break;
+          case 'forgot_password' :
+            $scope.hideSideNavBar = false;
+            $scope.showFooter = false;
+            break;
           case 'register' :
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
