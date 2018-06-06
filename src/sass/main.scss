@@ -91,7 +91,8 @@ a:hover, a:focus {
 }
 
 .page {
-  position: absolute;
+  position: relative;
+  float: right;
   top: 0;
   right: 0;
   width: calc(100% - 260px);

@@ -47,12 +47,7 @@ angular.module( 'ixLayer', [
 
 
 
-.run( function run ($rootScope, $document, $state, $stateParams) {
-  $rootScope.$state = $state;
-  $rootScope.$stateParams = $stateParams;
-  $rootScope.$on('$stateChangeSuccess', function() {
-    $document[0].body.scrollTop = $document[0].documentElement.scrollTop = 0;
-  });
+.run( function run () {
 })
 
   .controller( 'AppCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv',

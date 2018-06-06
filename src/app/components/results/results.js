@@ -41,70 +41,63 @@ angular.module( 'ixLayer.results', [
           title: 'Current status'
         }
       })
-      .state('master_signedin.results.pre-purchase', {
-        url: '/pre-purchase',
-        templateUrl: 'components/products/pages/prePurchase.tpl.html',
-        params : {
-          title: 'Pre-purchase'
-        }
-      })
-      .state('home.results.pre', {
+      .state('master_signedin.results.pre', {
         url: '/pre',
         templateUrl: 'components/results/pages/pre-result.tpl.html',
         params: {
-          title: 'Pre-result'
+          title: 'Consent'
         }
       })
-      .state('home.results.p1', {
+      .state('master_signedin.results.p1', {
         url: '/p1',
         templateUrl: 'components/results/pages/result-p1.tpl.html',
         params: {
           title: 'Your result'
         }
       })
-      .state('home.results.p2', {
+      .state('master_signedin.results.p2', {
         url: '/p2',
         templateUrl: 'components/results/pages/result-p2.tpl.html',
         params: {
           title: 'About'
         }
       })
-      .state('home.results.p3', {
+      .state('master_signedin.results.p3', {
         url: '/p3',
         templateUrl: 'components/results/pages/result-p3.tpl.html',
         params: {
           title: 'Lifestyle'
         }
       })
-      .state('home.results.p4', {
+      .state('master_signedin.results.p4', {
       url: '/p4',
       templateUrl: 'components/results/pages/result-p4.tpl.html',
         params: {
           title: 'Next steps'
         }
       })
-      .state('home.results.science', {
+      .state('master_signedin.results.science', {
         url: '/science',
         templateUrl: 'components/results/pages/result-science.tpl.html',
         params: {
           title: 'Science'
         }
       })
-      .state('home.results.sharing', {
+      .state('master_signedin.results.sharing', {
         url: '/sharing',
         templateUrl: 'components/results/pages/result-sharing.tpl.html',
         params: {
           title: 'Share results'
         }
       })
-      .state('home.results.questions', {
+      .state('master_signedin.results.questions', {
         url: '/questions',
         templateUrl: 'components/results/pages/result-questions.tpl.html',
         params: {
           title: 'General questions'
         }
       })
-      .state('home.results.view', {
+      .state('master_signedin.results.view', {
         url: '/view',
         templateUrl: 'components/results/pages/result-view.tpl.html',
         params: {
@@ -112,12 +105,15 @@ angular.module( 'ixLayer.results', [
         }
       });
   })
+
   .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',
     function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo) {
+
 
       $scope.results = null;
       $scope.user = userInfo.user;
       $scope.noProducts = productStatus === undefined;
+      $scope.preResult = true;
 
       if ($scope.noProducts === false) {
         $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
@@ -164,6 +160,11 @@ angular.module( 'ixLayer.results', [
 
       $scope.isSet = function(tabNum){
         return $scope.tab === tabNum;
+      };
+
+
+      $scope.preResults = function() {
+        $scope.preResult = false;
       };
 
     }]);

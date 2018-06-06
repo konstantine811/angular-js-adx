@@ -39,7 +39,7 @@
   width: 100%;
   height: auto;
   background-color: $silver;
-  padding: 41px 0 31px;
+  padding: 29px 0 21px;
 }
 
 //charts
@@ -58,7 +58,7 @@
 // head
 
 .pre-result {
-  padding-bottom: 100px;
+  padding-bottom: 43px;
 }
 
 .pre-result-head__wrap {
@@ -132,10 +132,12 @@
 
 
 .img__wrap--float-right {
-  width: 730px;
+  width: 390px;
   height: auto;
   float: right;
-  margin: 55px -463px 16px 13px;
+  position: relative;
+  left: 0;
+  padding-top: 198px;
 }
 
 .result-section-first__img {
