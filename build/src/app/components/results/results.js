@@ -5,7 +5,7 @@ angular.module( 'ixLayer.results', [
   'ngAnimate'
 ])
   .config(function config($stateProvider) {
-      $stateProvider.state('master_signedin.results', {
+    $stateProvider.state('master_signedin.results', {
       url: '/results/:id',
       controller: 'ResultsCtrl',
       templateUrl: 'components/results/results.tpl.html',
@@ -28,7 +28,7 @@ angular.module( 'ixLayer.results', [
     })
       .state('master_signedin.results.status', {
         url: '/status',
-        templateUrl: 'components/products/pages/sequencingStatus.tpl.html',
+        templateUrl: 'components/results/pages/sequencingStatus.tpl.html',
         resolve: {
           userInfo: ['userAccessSrv', function (userAccessSrv) {
             return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
@@ -43,7 +43,7 @@ angular.module( 'ixLayer.results', [
       })
       .state('master_signedin.results.pre-purchase', {
         url: '/pre-purchase',
-        templateUrl: 'components/products/pages/prePurchase.tpl.html',
+        templateUrl: 'components/results/pages/prePurchase.tpl.html',
         params : {
           title: 'Pre-purchase'
         }
@@ -77,8 +77,8 @@ angular.module( 'ixLayer.results', [
         }
       })
       .state('master_signedin.results.p4', {
-      url: '/p4',
-      templateUrl: 'components/results/pages/result-p4.tpl.html',
+        url: '/p4',
+        templateUrl: 'components/results/pages/result-p4.tpl.html',
         params: {
           title: 'Next steps'
         }
@@ -141,6 +141,49 @@ angular.module( 'ixLayer.results', [
         $scope.needPopup = false;
       } else {
         $scope.needPopup = product.product_consent_needed;
+      }
+
+      if (userInfo.helix_profile !== null) {
+        $scope.seqStatus = userInfo.helix_profile.seq_status;
+        switch (userInfo.helix_profile.seq_status) {
+          /* TODO */
+          case 'order_cancelled':
+            break;
+          case 'account_revoked':
+            break;
+          case 'account_closed':
+            break;
+          case 'physician_review': {
+            $scope.iconStatus = [true, false, false, false, false, false];
+            $scope.iconCurrent = [true, false, false, false, false, false];
+            break;
+          }
+          case 'kit_registered': {
+            $scope.iconStatus = [true, true, false, false, false, false];
+            $scope.iconCurrent = [false, true, false, false, false, false];
+            break;
+          }
+          case 'manifest_uploaded': {
+            $scope.iconStatus = [true, true, true, false, false, false];
+            $scope.iconCurrent = [false, false, true, false, false, false];
+            break;
+          }
+          case 'dna_extraction_completed': {
+            $scope.iconStatus = [true, true, true, true, false, false];
+            $scope.iconCurrent = [false, false, false, true, false, false];
+            break;
+          }
+          case 'dna_delivery_completed': {
+            $scope.iconStatus = [true, true, true, true, true, false];
+            $scope.iconCurrent = [false, false, false, false, true, false];
+            break;
+          }
+          case 'result_ready': {
+            $scope.iconStatus = [true, true, true, true, true, true];
+            $scope.iconCurrent = [false, false, false, false, false, true];
+            break;
+          }
+        }
       }
 
       $scope.$watch('consentAgreed', function () {
