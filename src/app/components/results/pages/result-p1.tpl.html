@@ -55,11 +55,29 @@
     <div class="container-lg--dashboard">
       <!--chart-->
       <div class="result-chart__wrap">
-        <div class="title__wrap">
-          <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
-        </div>
-        <div class="chart__wrap">
-          <ng-include src="'./assets/images/charts/chart-bar-1.svg'"></ng-include>
+        <div class="results-p1-tabs">
+          <div class="results-p1-tabs__wrap">
+            <uib-tabset active="activeTabGender"  type="pills" class="tabs">
+              <uib-tab  index="0">
+                <uib-tab-heading class="btn-tabs">Male</uib-tab-heading>
+                <div class="title__wrap">
+                  <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
+                </div>
+                <div class="chart__wrap">
+                  <ng-include src="'./assets/images/charts/chart-bar-1.svg'"></ng-include>
+                </div>
+              </uib-tab>
+              <uib-tab index="1">
+                <uib-tab-heading class="btn-tabs">Female</uib-tab-heading>
+                <div class="title__wrap">
+                  <h3 class="txt-blue-dark txt-center">Lifetime Risk</h3>
+                </div>
+                <div class="chart__wrap">
+                  <ng-include src="'./assets/images/charts/chart-bar-1.svg'"></ng-include>
+                </div>
+              </uib-tab>
+            </uib-tabset>
+          </div>
         </div>
       </div>
       <!--charts end-->

@@ -131,6 +131,12 @@
     }
   }
 
+  .download-button {
+    width: 60px;
+    height: 60px;
+    background-size: 30px;
+  }
+
 }
 
 @media (max-width: $breakpoint-md) {
@@ -210,6 +216,16 @@
     }
   }
 
+  .progressbar-item:before {
+    font-size: 28px;
+    width: 51px;
+    height: 51px;
+    line-height: 51px;
+  }
+  .progressbar-item:after {
+    top: 25px;
+  }
+
 
 }
 
@@ -229,5 +245,14 @@
 
   .status-progressbar-item.active:before {
     width: 8vw;
+  }
+  .progressbar-item:before {
+    font-size: 24px;
+    width: 41px;
+    height: 41px;
+    line-height: 41px;
+  }
+  .progressbar-item:after {
+    top: 19px;
   }
 }

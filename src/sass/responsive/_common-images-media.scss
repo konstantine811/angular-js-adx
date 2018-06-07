@@ -53,6 +53,9 @@
   .img__wrap--md {
     margin-top: 20px;
   }
+  .img-logo {
+    max-width: 81px;
+  }
 }
 
 @media (max-width: $breakpoint-sm) {
@@ -87,5 +90,9 @@
 
   .img-large {
     max-width: 366px;
+  }
+  .img-logo {
+    max-width: 70px;
+    margin: 0 auto;
   }
 }

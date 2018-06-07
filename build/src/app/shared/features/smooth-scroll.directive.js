@@ -8,7 +8,7 @@ angular.module("ixLayer").
       link: function() {
         $('a[href*=\\#]').on('click', function(event){
           event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top}, $(this.hash).offset().top * 1.3);
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 200);
         });
       }
     };

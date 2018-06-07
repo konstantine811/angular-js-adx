@@ -24,6 +24,7 @@
 @import './partials/_common-images';
 @import './partials/_common-boxes';
 @import './partials/carousel';
+@import './partials/tabs';
 //components
 @import '../app/shared/side-navbar/side-navbar.scss';
 @import '../app/components/home/home.scss';
@@ -54,6 +55,7 @@
 @import './responsive/_common-images-media';
 @import './responsive/_common-boxes-media';
 @import './responsive/_carousel-media';
+@import './responsive/_tabs-media';
 
 //responsive media query components
 @import "../app/components/home/_home-media.scss";

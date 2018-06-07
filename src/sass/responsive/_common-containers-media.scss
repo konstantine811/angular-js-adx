@@ -42,6 +42,9 @@
   .section__wrap {
     padding-top: 50px;
   }
+  .flex-column-tabs--hide-sm {
+    display: none;
+  }
 }
 
 @media (max-width: $breakpoint-exs) {

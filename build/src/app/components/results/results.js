@@ -41,11 +41,18 @@ angular.module( 'ixLayer.results', [
           title: 'Current status'
         }
       })
+      .state('master_signedin.results.pre-purchase', {
+        url: '/pre-purchase',
+        templateUrl: 'components/products/pages/prePurchase.tpl.html',
+        params : {
+          title: 'Pre-purchase'
+        }
+      })
       .state('master_signedin.results.pre', {
         url: '/pre',
         templateUrl: 'components/results/pages/pre-result.tpl.html',
         params: {
-          title: 'Consent'
+          title: 'Your results'
         }
       })
       .state('master_signedin.results.p1', {
@@ -87,7 +94,7 @@ angular.module( 'ixLayer.results', [
         url: '/sharing',
         templateUrl: 'components/results/pages/result-sharing.tpl.html',
         params: {
-          title: 'Share results'
+          title: 'Family'
         }
       })
       .state('master_signedin.results.questions', {
@@ -114,6 +121,16 @@ angular.module( 'ixLayer.results', [
       $scope.user = userInfo.user;
       $scope.noProducts = productStatus === undefined;
       $scope.preResult = true;
+      var userGender = userInfo.gender;
+
+      // set tabs for genders
+      if(userGender === 'male') {
+        $scope.activeTabGender = 0;
+      }
+      else if (userGender === 'female') {
+        $scope.activeTabGender = 1;
+      }
+
 
       if ($scope.noProducts === false) {
         $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
@@ -160,11 +177,6 @@ angular.module( 'ixLayer.results', [
 
       $scope.isSet = function(tabNum){
         return $scope.tab === tabNum;
-      };
-
-
-      $scope.preResults = function() {
-        $scope.preResult = false;
       };
 
     }]);

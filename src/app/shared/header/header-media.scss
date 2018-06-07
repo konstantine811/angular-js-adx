@@ -57,7 +57,7 @@
     padding-top: 2px;
   }
   .header__logo {
-    width: 136px;
+    width: 100%;
   }
   .header-nav {
     padding-top: 3px;
@@ -84,5 +84,8 @@
   }
   .header-nav-item {
     padding-top: 9px;
+  }
+  .header__wrap {
+    flex-flow: row-reverse;
   }
 }

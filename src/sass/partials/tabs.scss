@@ -1,0 +1,47 @@
+.tabs {
+  .nav > li {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus  {
+    background-color: transparent;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    .btn-tabs {
+      color: $blue-6;
+    }
+  }
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    border-bottom: 3px solid $blue-6;
+    .btn-tabs {
+      color: $blue-6;
+    }
+  }
+  .nav-pills > li > a {
+    border-radius: 0;
+    padding: 10px 40px;
+    transition: background-color 0.6s ease;
+  }
+}
+
+.btn-tabs {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: $gray-4;
+  transition: color 0.6s ease;
+}
+
+
+//custom tabs
+.hide-tabs {
+  display: none;
+}
+
+.hide-tabs.showTab {
+  display: block;
+}

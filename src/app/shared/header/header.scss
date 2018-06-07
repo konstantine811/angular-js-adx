@@ -84,10 +84,10 @@
 
 .mobile-menu {
   position: absolute;
-  width: 101vw;
+  width: 100vw;
   height: 0;
   background-color: $silver;
-  right: -16px;
+  left: -15px;
   top: 49px;
   padding: 0;
   transition: all .5s linear;
