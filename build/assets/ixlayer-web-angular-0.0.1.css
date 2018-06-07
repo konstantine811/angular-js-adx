@@ -8889,8 +8889,10 @@ h6 {
   display: inline-block; }
 
 .img-logo {
-  max-width: 120px;
-  width: 100%; }
+  max-width: 80%;
+  width: 100%;
+  position: relative;
+  bottom: 22px; }
 
 .boxes__wrap {
   width: 100%;
@@ -10763,7 +10765,8 @@ textarea.form-control {
     margin-top: 20px; }
 
   .img-logo {
-    max-width: 81px; } }
+    max-width: 130px;
+    bottom: 21px; } }
 @media (max-width: 768px) {
   .img-bgc-wrap__rounded, .img-bgc-wrap-middle__rounded {
     height: 57vw;
@@ -10795,8 +10798,9 @@ textarea.form-control {
     max-width: 366px; }
 
   .img-logo {
-    max-width: 70px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    max-width: 110px;
+    bottom: 17px; } }
 @media (max-width: 1200px) {
   .box {
     height: auto; }
@@ -11037,7 +11041,7 @@ textarea.form-control {
     padding-left: 0; }
 
   .header-nav {
-    align-self: center;
+    align-self: baseline;
     padding-top: 10px; }
 
   .header__logo {

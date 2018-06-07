@@ -4185,7 +4185,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "        <!--logo-->\n" +
     "        <div class=\"header__logo\">\n" +
     "          <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
-    "            <div class=\"img-logo\" ng-include=\"'assets/images/logo-2018.svg'\"></div>\n" +
+    "            <div class=\"img-logo\" ng-include=\"'assets/images/adx-healthCare-logo.svg'\"></div>\n" +
     "          </a>\n" +
     "        </div>\n" +
     "        <!--navigation-->\n" +
