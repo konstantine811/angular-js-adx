@@ -1,0 +1,59 @@
+<svg class="flask-yellow-bgc-rounded-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 306 306">
+  <defs>
+    <style>
+      .flask-yellow-bgc-rounded-svg-1 {
+        fill: #ffd25f;
+      }
+
+      .flask-yellow-bgc-rounded-svg-2 {
+        fill: #87d2f3;
+      }
+
+      .flask-yellow-bgc-rounded-svg-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .flask-yellow-bgc-rounded-svg-4 {
+        fill: #fff;
+      }
+
+      .flask-yellow-bgc-rounded-svg-5 {
+        fill: #2170a6;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_321" data-name="Rectangle 321" width="133.411" height="145.832"/>
+    </clipPath>
+  </defs>
+  <g id="Group_641" data-name="Group 641" transform="translate(-400 -5338)">
+    <circle id="Ellipse_1604" data-name="Ellipse 1604" class="flask-yellow-bgc-rounded-svg-1" cx="153" cy="153" r="153" transform="translate(400 5338)"/>
+    <g id="Group_630" data-name="Group 630" transform="translate(486 5417.598)">
+      <rect id="Rectangle_319" data-name="Rectangle 319" class="flask-yellow-bgc-rounded-svg-2" width="18.171" height="9.086" transform="translate(42.412 133.375)"/>
+      <g id="Group_494" data-name="Group 494">
+        <g id="Group_492" data-name="Group 492" class="flask-yellow-bgc-rounded-svg-3">
+          <rect id="Rectangle_320" data-name="Rectangle 320" class="flask-yellow-bgc-rounded-svg-4" width="36.343" height="12.102" transform="translate(33.326 121.273)"/>
+        </g>
+        <g id="Group_493" data-name="Group 493" class="flask-yellow-bgc-rounded-svg-3">
+          <path id="Path_434" data-name="Path 434" class="flask-yellow-bgc-rounded-svg-2" d="M75.149,126.947H38.806V102.209a48.467,48.467,0,1,1,36.343,0Zm0,0" transform="translate(-5.48 -5.674)"/>
+        </g>
+      </g>
+      <rect id="Rectangle_323" data-name="Rectangle 323" class="flask-yellow-bgc-rounded-svg-4" width="42.412" height="12.102" transform="translate(81.771 33.433)"/>
+      <path id="Path_435" data-name="Path 435" class="flask-yellow-bgc-rounded-svg-2" d="M277.709,146.471v72.686a6.112,6.112,0,0,1-6.069,6.069H253.469a6.112,6.112,0,0,1-6.069-6.069V128.3h30.274l.036,18.171Zm0,0" transform="translate(-159.595 -82.765)"/>
+      <path id="Path_436" data-name="Path 436" class="flask-yellow-bgc-rounded-svg-5" d="M30.338,112.381h6.069V96.694a3.016,3.016,0,0,0-1.881-2.8A45.426,45.426,0,0,1,51.562,6.369V.3A51.485,51.485,0,0,0,30.338,98.681v13.7Zm0,0" transform="translate(-0.065 -0.194)"/>
+      <rect id="Rectangle_324" data-name="Rectangle 324" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="15.155" transform="translate(66.617 97.032)"/>
+      <path id="Path_437" data-name="Path 437" class="flask-yellow-bgc-rounded-svg-5" d="M68.3,339.169h6.069v9.086a3.014,3.014,0,0,0,3.017,3.017h6.069v6.069a3.014,3.014,0,0,0,3.017,3.017h18.171a3.014,3.014,0,0,0,3.017-3.017v-6.069h6.069a3.014,3.014,0,0,0,3.017-3.017v-9.086h6.069V333.1H68.3Zm33.291,15.155h-12.1v-3.017h12.1Zm9.086-9.086H80.4v-6.069h30.274Zm0,0" transform="translate(-44.06 -214.88)"/>
+      <path id="Path_438" data-name="Path 438" class="flask-yellow-bgc-rounded-svg-5" d="M118.626,89.3H94.386A3.017,3.017,0,1,1,97.4,86.286h6.069a9.086,9.086,0,1,0-9.086,9.086h24.24Zm0,0" transform="translate(-55.026 -49.801)"/>
+      <rect id="Rectangle_325" data-name="Rectangle 325" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="60.583" transform="translate(48.445 51.604)"/>
+      <path id="Path_439" data-name="Path 439" class="flask-yellow-bgc-rounded-svg-5" d="M269.274,235.671a3.014,3.014,0,0,1-3.017,3.017H248.086a3.014,3.014,0,0,1-3.017-3.017V153.9H239v81.771a9.1,9.1,0,0,0,9.086,9.086h18.171a9.1,9.1,0,0,0,9.086-9.086V153.9h-6.069Zm0,0" transform="translate(-154.177 -99.279)"/>
+      <path id="Path_440" data-name="Path 440" class="flask-yellow-bgc-rounded-svg-5" d="M265.383,85.7H204.8v6.069h6.069v9.086a3.014,3.014,0,0,0,3.017,3.017H256.3a3.014,3.014,0,0,0,3.017-3.017V91.769h6.069ZM253.245,97.8H216.9V91.733h36.343Zm0,0" transform="translate(-132.114 -55.284)"/>
+      <path id="Path_441" data-name="Path 441" class="flask-yellow-bgc-rounded-svg-5" d="M273.1,153.9v72.686a3.014,3.014,0,0,0,3.017,3.017H285.2v-6.069h-6.069v-12.1H285.2V205.4h-6.069v-12.1H285.2v-6.069h-6.069v-12.1H285.2v-6.069h-6.069V153.9Zm0,0" transform="translate(-176.174 -99.279)"/>
+      <rect id="Rectangle_326" data-name="Rectangle 326" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="6.069" transform="translate(57.531 0.106)"/>
+      <rect id="Rectangle_327" data-name="Rectangle 327" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="6.069" transform="translate(69.669 0.106)"/>
+      <rect id="Rectangle_328" data-name="Rectangle 328" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="6.069" transform="translate(81.771 0.106)"/>
+      <rect id="Rectangle_329" data-name="Rectangle 329" class="flask-yellow-bgc-rounded-svg-5" width="39.36" height="6.069" transform="translate(57.531 15.261)"/>
+      <rect id="Rectangle_330" data-name="Rectangle 330" class="flask-yellow-bgc-rounded-svg-5" width="24.24" height="6.069" transform="translate(93.874 0.106)"/>
+      <rect id="Rectangle_331" data-name="Rectangle 331" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="6.069" transform="translate(102.959 15.261)"/>
+      <rect id="Rectangle_332" data-name="Rectangle 332" class="flask-yellow-bgc-rounded-svg-5" width="6.069" height="6.069" transform="translate(115.097 15.261)"/>
+    </g>
+  </g>
+</svg>

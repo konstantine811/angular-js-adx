@@ -749,8 +749,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        <div class=\"row section__wrap\">\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__physician-review\">\n" +
-    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -766,8 +766,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__spit\">\n" +
-    "              <div class=\"img-bgc-wrap-middle__rounded bgc-blue\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/test-tubes-with-flask-blue.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark txt-center\">\n" +
@@ -785,8 +785,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        <div class=\"row row-padding-top\">\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__results\">\n" +
-    "              <div class=\"img-bgc-wrap-middle__rounded bgc-yellow\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-test-tubes.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-yellow-bgc-rounded.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -802,8 +802,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__take-action\">\n" +
-    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -826,8 +826,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        <div class=\"container-lg\">\n" +
     "          <div class=\"home-section-second-bottom__wrap\">\n" +
     "            <div class=\"home-section-second-bottom__img\">\n" +
-    "              <div class=\"img-bgc-wrap-middle__rounded\">\n" +
-    "                <ng-include class=\"svg-inner-rounded-middle\" src=\"'./assets/images/home-page/img-flask.svg'\"></ng-include>\n" +
+    "              <div class=\"img__wrap\">\n" +
+    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"home-section-second-bottom__content\">\n" +
@@ -3162,7 +3162,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt-middle txt-blue link-underline\">Learn about sharing with family</a>\n" +
+    "        <a href=\"\" class=\"txt txt-blue link-underline\">Learn about sharing with family</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
     "        <h5 class=\"txt-blue-dark\">\n" +
@@ -3173,7 +3173,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <p class=\"txt-middle txt-black\">Learn about the science behind the ApoE test.</p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt-middle txt-blue link-underline\">Read more about science</a>\n" +
+    "        <a href=\"\" class=\"txt txt-blue link-underline\">Read more about science</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
     "        <h5 class=\"txt-blue-dark\">\n" +
@@ -3185,7 +3185,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt-middle txt-blue link-underline\">Go to general questions page</a>\n" +
+    "        <a href=\"\" class=\"txt txt-blue link-underline\">Go to general questions page</a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -3483,7 +3483,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              he ApoE test results are based on data for individuals of European descent.  If you are not of European descent, you are still expected to have a higher risk for developing Alzheimer’s disease than if you did not carry an ApoE-e4 allele. The exact percentage of risk may vary though from the percentages listed in your report. Also, non-genetic specific data demonstrates that older African Americans and Hispanics are more likely to develop Alzheimer’s disease than people of other ethnicities.\n" +
+    "              The ApoE test results are based on data for individuals of European descent.  If you are not of European descent, you are still expected to have a higher risk for developing Alzheimer’s disease than if you did not carry an ApoE-e4 allele. The exact percentage of risk may vary though from the percentages listed in your report. Also, non-genetic specific data demonstrates that older African Americans and Hispanics are more likely to develop Alzheimer’s disease than people of other ethnicities.\n" +
     "              <div class=\"txt--indent\">\n" +
     "                In addition, overall more women than men develop Alzheimer’s disease.  Researchers are still unsure how much of this is because women tend to live longer than men and how much is attributable to lifestyle differences between men and women. Also, the ApoE-e4 variant is attributable to a greater percent of risk for late-onset Alzheimer’s disease in women than men.\n" +
     "              </div>\n" +
