@@ -48,13 +48,6 @@ angular.module( 'ixLayer.results', [
           title: 'Pre-purchase'
         }
       })
-      .state('master_signedin.results.pre', {
-        url: '/pre',
-        templateUrl: 'components/results/pages/pre-result.tpl.html',
-        params: {
-          title: 'Your results'
-        }
-      })
       .state('master_signedin.results.p1', {
         url: '/p1',
         templateUrl: 'components/results/pages/result-p1.tpl.html',
@@ -113,14 +106,14 @@ angular.module( 'ixLayer.results', [
       });
   })
 
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo',
-    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo', '$window',
+    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo,  $window) {
 
 
       $scope.results = null;
       $scope.user = userInfo.user;
       $scope.noProducts = productStatus === undefined;
-      $scope.preResult = true;
+      $scope.showResult = false;
       var userGender = userInfo.gender;
 
       // set tabs for genders
@@ -220,6 +213,11 @@ angular.module( 'ixLayer.results', [
 
       $scope.isSet = function(tabNum){
         return $scope.tab === tabNum;
+      };
+
+      $scope.showResults = function() {
+        $scope.showResult = true;
+        $window.scrollTo(0,0);
       };
 
     }]);

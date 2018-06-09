@@ -2157,7 +2157,91 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/pre-result.tpl.html",
-    "<div class=\"pre-result\">\n" +
+    "");
+}]);
+
+angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/prePurchase.tpl.html",
+    "<div class=\"products-page\">\n" +
+    "  <div class=\"products-head__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title-section__wrap anim-content-transition\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
+    "      </div>\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap anim-content-transition\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent anim-content-transition\">\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
+    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-sm-6\">\n" +
+    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
+    "            <div class=\"img-border-wrap\">\n" +
+    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"title__wrap anim-content-transition\">\n" +
+    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt--indent anim-content-transition\">\n" +
+    "            <div class=\"container-pre-purchase-txt\">\n" +
+    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
+    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"section-bgc--silver\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
+    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
+    "          <div class=\"row\">\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
+    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-sm-6\">\n" +
+    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
+    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "\n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p1.tpl.html",
+    "<div class=\"pre-result\" ng-if=\"!showResult\">\n" +
     "  <div class=\"result-head pre-result-head\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-head__wrap\">\n" +
@@ -2289,7 +2373,7 @@ angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templa
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap--large-top button--center\">\n" +
-    "              <button type=\"submit\" ui-sref=\"master_signedin.results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\" ng-disabled=\"consentResults.$invalid\" ng-click=\"preResults()\">View results</button>\n" +
+    "              <button type=\"submit\" ui-sref=\"master_signedin.results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\" ng-disabled=\"consentResults.$invalid\" ng-click=\"showResults()\">View results</button>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -2299,91 +2383,9 @@ angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templa
     "    </div>\n" +
     "  </div>\n" +
     "  <!--end section second with boxes-->\n" +
-    "</div>");
-}]);
-
-angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/prePurchase.tpl.html",
-    "<div class=\"products-page\">\n" +
-    "  <div class=\"products-head__wrap\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title-section__wrap anim-content-transition\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
-    "      </div>\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"section-bgc--silver\">\n" +
-    "      <div class=\"container-lg--dashboard\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
-    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
-    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
+    "</div>\n" +
     "\n" +
-    "</div>");
-}]);
-
-angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p1.tpl.html",
-    "<div class=\"result\">\n" +
+    "<div class=\"result\" ng-if=\"showResult\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
@@ -3661,13 +3663,13 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'kit_registered'\">\n" +
     "              Make sure to mail back the collection kit to start the sequencing process\n" +
     "            </h4>\n" +
-    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'manifest_uploaded'\"\">\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'manifest_uploaded'\">\n" +
     "              We are currently unpacking to start the sequencing process\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_extraction_completed'\">\n" +
     "              We are currently extracting DNA from your sample\n" +
     "            </h4>\n" +
-    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed'\"\">\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed'\">\n" +
     "              We are currently interpreting the results to generate your report\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +
@@ -4249,14 +4251,17 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                    <li class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link\">Contact</a>\n" +
     "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link\">Sign-in</a>\n" +
+    "                    </li>\n" +
     "                  </ul>\n" +
     "                </nav>\n" +
     "                <div class=\"header__button\">\n" +
     "                  <div class=\"button__login button-anim\">\n" +
-    "                    <a ui-sref=\"master.login\" class=\"bt-round bt-round--blue\">Sign-in/Join</a>\n" +
+    "                    <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__purchase button-anim\">\n" +
-    "                    <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
+    "                    <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -4280,16 +4285,16 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link txt-small txt-bold\">Contact</a>\n" +
+    "                <a ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link txt-small txt-bold\">Sign-in</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"master.login\" class=\"bt-round bt-round-lg bt-round--blue\">Sign-in/Join</a>\n" +
+    "              <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
+    "              <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
@@ -4310,7 +4315,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <!--logo header-->\n" +
     "      <div class=\"side-navbar__logo\">\n" +
     "        <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
-    "          <img class=\"logo-img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
+    "          <img class=\"img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
     "        </a>\n" +
     "      </div>\n" +
     "      <!--end logo header-->\n" +

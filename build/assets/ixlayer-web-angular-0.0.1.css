@@ -7821,136 +7821,6 @@ ul.item-number-wrap {
   list-style: decimal;
   font-size: 18px; }
 
-svg .cls-1 {
-  fill: transparent;
-  stroke-dasharray: 10;
-  stroke-dashoffset: 10;
-  animation: fade-in-fill-blue-dark 3s forwards ease-in; }
-svg .cls-1:nth-child(1) {
-  animation-delay: 0.1s; }
-svg .cls-1:nth-child(2) {
-  animation-delay: 0.2s; }
-svg .cls-1:nth-child(3) {
-  animation-delay: 0.3s; }
-svg .cls-1:nth-child(4) {
-  animation-delay: 0.4s; }
-svg .cls-1:nth-child(5) {
-  animation-delay: 0.5s; }
-svg .cls-1:nth-child(6) {
-  animation-delay: 0.6s; }
-svg .cls-1:nth-child(7) {
-  animation-delay: 0.7s; }
-svg .cls-1:nth-child(8) {
-  animation-delay: 0.8s; }
-svg .cls-1:nth-child(9) {
-  animation-delay: 0.9s; }
-svg .cls-1:nth-child(10) {
-  animation-delay: 1s; }
-svg .cls-2 {
-  fill: transparent;
-  animation: fade-in-fill-blue 3s .5s forwards ease; }
-svg .cls-2:nth-child(1) {
-  animation-delay: 0.5s; }
-svg .cls-2:nth-child(2) {
-  animation-delay: 1s; }
-svg .cls-2:nth-child(3) {
-  animation-delay: 1.5s; }
-svg .cls-2:nth-child(4) {
-  animation-delay: 2s; }
-svg .cls-2:nth-child(5) {
-  animation-delay: 2.5s; }
-svg .cls-2:nth-child(6) {
-  animation-delay: 3s; }
-svg .cls-2:nth-child(7) {
-  animation-delay: 3.5s; }
-svg .cls-2:nth-child(8) {
-  animation-delay: 4s; }
-svg .cls-2:nth-child(9) {
-  animation-delay: 4.5s; }
-svg .cls-2:nth-child(10) {
-  animation-delay: 5s; }
-svg .cls-3 {
-  fill: url(#linear-gradient); }
-svg .cls-3, svg .cls-4, svg .cls-5, svg .cls-6 {
-  opacity: 0;
-  animation: fade-in-x 3s .9s forwards ease-out; }
-svg .cls-4 {
-  fill: url(#linear-gradient-2); }
-svg .cls-5 {
-  fill: url(#linear-gradient-3); }
-svg .cls-6 {
-  fill: url(#linear-gradient-4); }
-svg .container-row-circle circle {
-  transform-box: fill-box;
-  transform-origin: 50% 50%; }
-svg .circle-row-2 {
-  z-index: 1;
-  fill: #41c5eb;
-  animation: vertical1 2.7s ease-in-out backwards infinite; }
-svg .circle-row-1 {
-  fill: #41c5eb;
-  animation: vertical2 2.7s ease-in-out backwards infinite; }
-svg .circle-row-1:nth-of-type(1), svg .circle-row-2:nth-of-type(1) {
-  animation-delay: 0.3s; }
-svg .circle-row-1:nth-of-type(2), svg .circle-row-2:nth-of-type(2) {
-  animation-delay: 0.6s; }
-svg .circle-row-1:nth-of-type(3), svg .circle-row-2:nth-of-type(3) {
-  animation-delay: 0.9s; }
-svg .circle-row-1:nth-of-type(4), svg .circle-row-2:nth-of-type(4) {
-  animation-delay: 1.2s; }
-svg .circle-row-1:nth-of-type(5), svg .circle-row-2:nth-of-type(5) {
-  animation-delay: 1.5s; }
-svg .circle-row-1:nth-of-type(6), svg .circle-row-2:nth-of-type(6) {
-  animation-delay: 1.8s; }
-svg .circle-row-1:nth-of-type(7), svg .circle-row-2:nth-of-type(7) {
-  animation-delay: 2.1s; }
-svg .circle-row-1:nth-of-type(8), svg .circle-row-2:nth-of-type(8) {
-  animation-delay: 2.4s; }
-svg .circle-row-1:nth-of-type(9), svg .circle-row-2:nth-of-type(9) {
-  animation-delay: 2.7s; }
-svg .circle-row-1:nth-of-type(10), svg .circle-row-2:nth-of-type(10) {
-  animation-delay: 3s; }
-svg .circle-row-2:nth-of-type(2) {
-  fill: #1592A4; }
-svg .circle-row-2:nth-of-type(3) {
-  fill: #3B7B96; }
-svg .circle-row-2:nth-of-type(4) {
-  fill: #3C6DB4; }
-svg .circle-row-2:nth-of-type(5) {
-  fill: #AE71AF; }
-svg .circle-row-2:nth-of-type(6) {
-  fill: #AE71AF; }
-svg .circle-row-2:nth-of-type(7) {
-  fill: #C06DAB; }
-svg .circle-row-2:nth-of-type(8) {
-  fill: #EB2B90; }
-
-.logo-img {
-  max-width: 159px;
-  width: 100%;
-  height: auto; }
-
-@keyframes vertical1 {
-  0%,
-  100% {
-    transform: translateX(0px) scale(1); }
-  50% {
-    transform: translateX(9.5px) scale(0.45); } }
-@keyframes vertical2 {
-  0%,
-  100% {
-    transform: translateX(0px) scale(0.45); }
-  50% {
-    transform: translate(-9.5px) scale(1); } }
-@keyframes fade-in-fill-blue-dark {
-  100% {
-    fill: #063f5f; } }
-@keyframes fade-in-fill-blue {
-  100% {
-    fill: #41c5eb; } }
-@keyframes fade-in-x {
-  100% {
-    opacity: 1; } }
 a.bt, button.bt {
   margin: 10px;
   padding: 14px 24px;
@@ -8078,7 +7948,7 @@ button[disabled].bt-round {
   font-family: Roboto, sans-serif;
   text-decoration: transparent;
   border: none;
-  min-width: 228px;
+  min-width: 140px;
   text-align: center;
   overflow: hidden;
   position: relative;
