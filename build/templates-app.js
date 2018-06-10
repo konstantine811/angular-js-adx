@@ -4294,7 +4294,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "              <a ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
