@@ -397,13 +397,13 @@ button[disabled].bt-round {
 //download button
 .download-button {
   display: inline-block;
-  width: 105px;
-  height: 105px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   background-image: url('../assets/images/svg/download-svg.svg');
   background-color: $blue-dark;
   background-repeat: no-repeat;
-  background-size: 47px;
+  background-size: 29px;
   background-position: 50% 48%;
 }
 

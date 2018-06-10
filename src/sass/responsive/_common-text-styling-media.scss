@@ -45,14 +45,26 @@
 
 @media (max-width: $breakpoint-sm) {
 
+  .txt-left-sm {
+    text-align: left;
+  }
+
   .txt {
     font-size: 14px;
   }
+  .txt.txt-static {
+    font-size: 18px;
+  }
+
   .txt--indent {
     padding-top: 20px;
   }
 
   .txt--space-top-sm {
     padding-top: 20px;
+  }
+
+  .title__wrap {
+    padding-top: 25px;
   }
 }

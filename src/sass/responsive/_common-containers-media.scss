@@ -45,6 +45,12 @@
   .flex-column-tabs--hide-sm {
     display: none;
   }
+  .container-lg--dashboard-not-space-sm {
+    padding: 0;
+  }
+  .section-dropdown-txt__wrap {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: $breakpoint-exs) {

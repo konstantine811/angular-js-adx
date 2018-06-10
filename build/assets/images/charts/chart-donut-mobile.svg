@@ -1,0 +1,65 @@
+<svg class="chart-donut-mobile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.189 308.27">
+  <defs>
+    <style>
+      .chart-donut-mobile-1, .chart-donut-mobile-7 {
+        fill: #41c5eb;
+      }
+
+      .chart-donut-mobile-2, .chart-donut-mobile-5 {
+        fill: #063f5f;
+      }
+
+      .chart-donut-mobile-3 {
+        fill: #ffbd24;
+      }
+
+      .chart-donut-mobile-4 {
+        fill: #fbfbfb;
+      }
+
+      .chart-donut-mobile-5, .chart-donut-mobile-6, .chart-donut-mobile-7 {
+        font-size: 18px;
+      }
+
+      .chart-donut-mobile-5, .chart-donut-mobile-6, .chart-donut-mobile-7, .chart-donut-mobile-8 {
+        font-family: CircularStd-Medium, Circular Std Medium;
+        font-weight: 500;
+      }
+
+      .chart-donut-mobile-6 {
+        fill: #dd972a;
+      }
+
+      .chart-donut-mobile-8 {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1114" data-name="Group 1114" transform="translate(-15 -532.188)">
+    <g id="Group_745" data-name="Group 745" transform="translate(34 532.412)">
+      <path id="Path_684" data-name="Path 684" class="chart-donut-mobile-1" d="M144.06-129.894a75.462,75.462,0,0,1,75.462,75.462A75.462,75.462,0,0,1,144.06,21.03,75.462,75.462,0,0,1,69.277-44.336l74.783-10.1Z" transform="translate(-68.59 129.894)"/>
+      <path id="Path_685" data-name="Path 685" class="chart-donut-mobile-2" d="M69.631-44.646a75.462,75.462,0,0,1,64.687-84.879l.591-.077,9.505,74.861Z" transform="translate(-68.943 130.203)"/>
+      <path id="Path_686" data-name="Path 686" class="chart-donut-mobile-3" d="M100.945-129.293a75.457,75.457,0,0,1,9.505-.6v75.462Z" transform="translate(-34.98 129.894)"/>
+    </g>
+    <rect id="Rectangle_637" data-name="Rectangle 637" class="chart-donut-mobile-4" width="400.189" height="74.27" rx="37.135" transform="translate(15 766.188)"/>
+    <g id="Group_748" data-name="Group 748" transform="translate(34.15 702.266)">
+      <text id="_25_" data-name="25%" class="chart-donut-mobile-5" transform="translate(0 18)"><tspan x="0" y="0">25%</tspan></text>
+      <text id="_56_" data-name="56%" class="chart-donut-mobile-5" transform="translate(225.149 18)"><tspan x="0" y="0">56%</tspan></text>
+      <text id="_2_" data-name="2%" class="chart-donut-mobile-6" transform="translate(49.931 18.008)"><tspan x="0" y="0">2%</tspan></text>
+      <text id="_11_" data-name="11%" class="chart-donut-mobile-6" transform="translate(275.149 18.008)"><tspan x="0" y="0">11%</tspan></text>
+      <text id="_73_" data-name="73%" class="chart-donut-mobile-7" transform="translate(89.709 18.015)"><tspan x="0" y="0">73%</tspan></text>
+      <text id="_33_" data-name="33%" class="chart-donut-mobile-7" transform="translate(317.859 18.015)"><tspan x="0" y="0">33%</tspan></text>
+    </g>
+    <text id="One_copy_of_e4" data-name="One copy of e4" class="chart-donut-mobile-8" transform="translate(71 782.463)"><tspan x="0" y="10">One copy </tspan><tspan x="0" y="26">of e4</tspan></text>
+    <circle id="Ellipse_1642" data-name="Ellipse 1642" class="chart-donut-mobile-2" cx="9.799" cy="9.799" r="9.799" transform="translate(45 781.11)"/>
+    <text id="Two_copies_of_e4" data-name="Two copies of e4" class="chart-donut-mobile-8" transform="translate(196 781.616)"><tspan x="0" y="10">Two copies </tspan><tspan x="0" y="26">of e4</tspan></text>
+    <circle id="Ellipse_1642-2" data-name="Ellipse 1642" class="chart-donut-mobile-3" cx="9.799" cy="9.799" r="9.799" transform="translate(170 780.264)"/>
+    <text id="No_copies_of_e4" data-name="No copies of e4" class="chart-donut-mobile-8" transform="translate(325 780.77)"><tspan x="0" y="10">No copies </tspan><tspan x="0" y="26">of e4</tspan></text>
+    <circle id="Ellipse_1642-3" data-name="Ellipse 1642" class="chart-donut-mobile-1" cx="9.799" cy="9.799" r="9.799" transform="translate(299 779.417)"/>
+    <g id="Group_988" data-name="Group 988" transform="translate(-954.994 -282.465)">
+      <path id="Path_687" data-name="Path 687" class="chart-donut-mobile-2" d="M290.688-144.929a75.574,75.574,0,0,1,75.574,75.574A75.574,75.574,0,0,1,290.688,6.219,75.575,75.575,0,0,1,262.867.912l27.821-70.267Z" transform="translate(972.792 959.582)"/>
+      <path id="Path_689" data-name="Path 689" class="chart-donut-mobile-3" d="M276.8-26.5A75.574,75.574,0,0,1,238.393-60.36l66.226-36.408Z" transform="translate(958.861 986.995)"/>
+      <path id="Path_688" data-name="Path 688" class="chart-donut-mobile-1" d="M241.789-32.947a75.574,75.574,0,0,1,29.818-102.634,75.573,75.573,0,0,1,36.408-9.348v75.574Z" transform="translate(955.466 959.582)"/>
+    </g>
+  </g>
+</svg>

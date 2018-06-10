@@ -1,0 +1,92 @@
+<svg class="chart-bar-female-mobile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345.624 402.725">
+  <defs>
+    <style>
+      .chart-bar-female-mobile-svg-1 {
+        fill: none;
+        stroke: #f2f2f2;
+        stroke-width: 2px;
+      }
+
+      .chart-bar-female-mobile-svg-2 {
+        font-size: 16px;
+        font-family: Roboto-Light, Roboto;
+        font-weight: 300;
+      }
+
+      .chart-bar-female-mobile-svg-3 {
+        fill: #41c5eb;
+      }
+
+      .chart-bar-female-mobile-svg-4, .chart-bar-female-mobile-svg-8 {
+        fill: #063f5f;
+      }
+
+      .chart-bar-female-mobile-svg-5 {
+        font-size: 14px;
+      }
+
+      .chart-bar-female-mobile-svg-5, .chart-bar-female-mobile-svg-8 {
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+      }
+
+      .chart-bar-female-mobile-svg-6 {
+        fill: #ffbd24;
+      }
+
+      .chart-bar-female-mobile-svg-7 {
+        fill: #f2f2f2;
+        opacity: 0.29;
+      }
+
+      .chart-bar-female-mobile-svg-8 {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1116" data-name="Group 1116" transform="translate(-15 -267.043)">
+    <line id="Line_302" data-name="Line 302" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 315.313)"/>
+    <line id="Line_303" data-name="Line 303" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 351.861)"/>
+    <line id="Line_304" data-name="Line 304" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 388.411)"/>
+    <line id="Line_305" data-name="Line 305" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 424.96)"/>
+    <line id="Line_306" data-name="Line 306" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 461.509)"/>
+    <line id="Line_307" data-name="Line 307" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 498.059)"/>
+    <line id="Line_309" data-name="Line 309" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 534.607)"/>
+    <text id="_60" data-name="60" class="chart-bar-female-mobile-svg-2" transform="translate(18 318.592)"><tspan x="0" y="0">60</tspan></text>
+    <line id="Line_308" data-name="Line 308" class="chart-bar-female-mobile-svg-1" x2="309.362" transform="translate(41.889 278.764)"/>
+    <text id="_70" data-name="70" class="chart-bar-female-mobile-svg-2" transform="translate(18 282.043)"><tspan x="0" y="0">70</tspan></text>
+    <text id="_50" data-name="50" class="chart-bar-female-mobile-svg-2" transform="translate(18 355.142)"><tspan x="0" y="0">50</tspan></text>
+    <text id="_40" data-name="40" class="chart-bar-female-mobile-svg-2" transform="translate(18 391.69)"><tspan x="0" y="0">40</tspan></text>
+    <text id="_30" data-name="30" class="chart-bar-female-mobile-svg-2" transform="translate(18 428.239)"><tspan x="0" y="0">30</tspan></text>
+    <text id="_20" data-name="20" class="chart-bar-female-mobile-svg-2" transform="translate(18 464.789)"><tspan x="0" y="0">20</tspan></text>
+    <text id="_10" data-name="10" class="chart-bar-female-mobile-svg-2" transform="translate(18 501.338)"><tspan x="0" y="0">10</tspan></text>
+    <text id="_0" data-name="0" class="chart-bar-female-mobile-svg-2" transform="translate(27.332 537.887)"><tspan x="0" y="0">0</tspan></text>
+    <rect id="Rectangle_588" data-name="Rectangle 588" class="chart-bar-female-mobile-svg-3" width="20.084" height="21.107" transform="translate(71.952 514.667)"/>
+    <rect id="Rectangle_592" data-name="Rectangle 592" class="chart-bar-female-mobile-svg-4" width="20.084" height="3.111" transform="translate(51.868 532.663)"/>
+    <text id="e2_e2_or_e2_e3" data-name="e2/e2 or
+e2/e3" class="chart-bar-female-mobile-svg-5" transform="translate(71.757 560.438)"><tspan x="-26.428" y="0">e2/e2 or</tspan><tspan x="-18.238" y="17">e2/e3</tspan></text>
+    <rect id="Rectangle_585" data-name="Rectangle 585" class="chart-bar-female-mobile-svg-3" width="20.084" height="28.327" transform="translate(125.787 507.447)"/>
+    <rect id="Rectangle_590" data-name="Rectangle 590" class="chart-bar-female-mobile-svg-4" width="20.084" height="5.443" transform="translate(105.302 530.33)"/>
+    <text id="e3_e3" data-name="e3/e3" class="chart-bar-female-mobile-svg-5" transform="translate(130.838 560.438)"><tspan x="-18.238" y="0">e3/e3</tspan></text>
+    <rect id="Rectangle_589" data-name="Rectangle 589" class="chart-bar-female-mobile-svg-4" width="20.084" height="24.108" transform="translate(159.366 511.666)"/>
+    <text id="e2_e4" data-name="e2/e4" class="chart-bar-female-mobile-svg-5" transform="translate(177.7 560.438)"><tspan x="-18.238" y="0">e2/e4</tspan></text>
+    <rect id="Rectangle_584" data-name="Rectangle 584" class="chart-bar-female-mobile-svg-3" width="20.084" height="104.204" transform="translate(179.852 431.57)"/>
+    <rect id="Rectangle_593" data-name="Rectangle 593" class="chart-bar-female-mobile-svg-6" width="20.084" height="3.111" transform="translate(214.056 532.663)"/>
+    <rect id="Rectangle_583" data-name="Rectangle 583" class="chart-bar-female-mobile-svg-3" width="20.084" height="116.646" transform="translate(254.625 419.128)"/>
+    <rect id="Rectangle_587" data-name="Rectangle 587" class="chart-bar-female-mobile-svg-4" width="20.084" height="30.773" transform="translate(234.541 505.001)"/>
+    <rect id="Rectangle_582" data-name="Rectangle 582" class="chart-bar-female-mobile-svg-3" width="20.084" height="229.292" transform="translate(331.167 306.481)"/>
+    <rect id="Rectangle_586" data-name="Rectangle 586" class="chart-bar-female-mobile-svg-4" width="20.084" height="114.425" transform="translate(311.084 421.349)"/>
+    <rect id="Rectangle_591" data-name="Rectangle 591" class="chart-bar-female-mobile-svg-6" width="20.084" height="14.444" transform="translate(290.599 521.33)"/>
+    <text id="e3_e4" data-name="e3/e4" class="chart-bar-female-mobile-svg-5" transform="translate(248.781 560.438)"><tspan x="-18.238" y="0">e3/e4</tspan></text>
+    <text id="e4_e4" data-name="e4/e4" class="chart-bar-female-mobile-svg-5" transform="translate(325.862 560.438)"><tspan x="-18.238" y="0">e4/e4</tspan></text>
+    <g id="Group_1003" data-name="Group 1003" transform="translate(0 -257)">
+      <rect id="Rectangle_614" data-name="Rectangle 614" class="chart-bar-female-mobile-svg-7" width="345.624" height="75.009" rx="37.505" transform="translate(15 851.759)"/>
+      <text id="_65_years" data-name="65 years" class="chart-bar-female-mobile-svg-8" transform="translate(72.869 894)"><tspan x="0" y="0">65 years</tspan></text>
+      <circle id="Ellipse_1610" data-name="Ellipse 1610" class="chart-bar-female-mobile-svg-6" cx="10" cy="10" r="10" transform="translate(45.808 879.206)"/>
+      <circle id="Ellipse_1634" data-name="Ellipse 1634" class="chart-bar-female-mobile-svg-4" cx="10" cy="10" r="10" transform="translate(152 879.206)"/>
+      <circle id="Ellipse_1635" data-name="Ellipse 1635" class="chart-bar-female-mobile-svg-3" cx="10" cy="10" r="10" transform="translate(259.517 879.206)"/>
+      <text id="_75_years" data-name="75 years" class="chart-bar-female-mobile-svg-8" transform="translate(178 894)"><tspan x="0" y="0">75 years</tspan></text>
+      <text id="_85_years" data-name="85 years" class="chart-bar-female-mobile-svg-8" transform="translate(285.869 894)"><tspan x="0" y="0">85 years</tspan></text>
+    </g>
+  </g>
+</svg>

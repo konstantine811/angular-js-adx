@@ -2365,7 +2365,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition  txt-left-sm\">\n" +
     "        <h1 class=\"txt-blue-dark anim-content-transition\">Your result </h1>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
@@ -2420,16 +2420,18 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "                  <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
     "                </div>\n" +
     "                <div class=\"chart__wrap\">\n" +
-    "                  <ng-include src=\"'./assets/images/charts/chart-bar-1.svg'\"></ng-include>\n" +
+    "                  <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-bar-male.svg'\"></ng-include>\n" +
+    "                  <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-bar-female-mobile.svg'\"></ng-include>\n" +
     "                </div>\n" +
     "              </uib-tab>\n" +
     "              <uib-tab index=\"1\">\n" +
     "                <uib-tab-heading class=\"btn-tabs\">Female</uib-tab-heading>\n" +
     "                <div class=\"title__wrap\">\n" +
-    "                  <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk</h3>\n" +
+    "                  <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
     "                </div>\n" +
     "                <div class=\"chart__wrap\">\n" +
-    "                  <ng-include src=\"'./assets/images/charts/chart-bar-1.svg'\"></ng-include>\n" +
+    "                  <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-bar-female.svg'\"></ng-include>\n" +
+    "                  <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-bar-female-mobile.svg'\"></ng-include>\n" +
     "                </div>\n" +
     "              </uib-tab>\n" +
     "            </uib-tabset>\n" +
@@ -2516,7 +2518,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">About Alzheimer’s disease</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
@@ -2545,7 +2547,8 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        <h3 class=\"txt-blue-dark txt-center\">ApoE Status of US Population</h3>\n" +
     "      </div>\n" +
     "      <div class=\"chart__wrap anim-content-transition\">\n" +
-    "        <ng-include src=\"'./assets/images/charts/chart-donut-1.svg'\"></ng-include>\n" +
+    "        <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-donut-1.svg'\"></ng-include>\n" +
+    "        <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-donut-mobile.svg'\"></ng-include>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -2669,7 +2672,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title  txt-left-sm anim-content-transition\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle & other factors</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
@@ -2696,8 +2699,8 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "  <!--end result-p2 progress-bar-->\n" +
     "  \n" +
     "  <!--section second-->\n" +
-    "   <div class=\"section__wrap\">\n" +
-    "     <div class=\"container-lg--dashboard\">\n" +
+    "   <div class=\"section__wrap-sm\">\n" +
+    "     <div class=\"container-lg--dashboard container-lg--dashboard-not-space-sm\">\n" +
     "       <div class=\"row\">\n" +
     "         <div class=\"container-flex\">\n" +
     "           <div class=\"flex-column-tabs flex-column-tabs--hide-sm\">\n" +
@@ -2775,7 +2778,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                     </div>\n" +
     "                     <a href=\"#section-2\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
     "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                          <p class=\"txt txt-blue-dark\">Read more</p>\n" +
+    "                          <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                         </div>\n" +
     "                       </div>\n" +
     "                     </a>\n" +
     "                   </div>\n" +
@@ -2794,7 +2800,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                         </p>\n" +
     "                       </div>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
+    "                         <p class=\"txt  txt-black\">\n" +
     "                           Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2\n" +
     "                           Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells.1\n" +
     "                         </p>\n" +
@@ -2812,7 +2818,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                     </div>\n" +
     "                     <a href=\"#section-3\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
     "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-blue-dark\">Read more</p>\n" +
+    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                         </div>\n" +
     "                       </div>\n" +
     "                     </a>\n" +
     "                   </div>\n" +
@@ -2836,7 +2845,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                     </div>\n" +
     "                     <a href=\"#section-4\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
     "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-blue-dark\">Read more</p>\n" +
+    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                         </div>\n" +
     "                       </div>\n" +
     "                     </a>\n" +
     "                   </div>\n" +
@@ -2902,7 +2914,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                     </div>\n" +
     "                     <a href=\"#section-5\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
     "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-blue-dark\">Read more</p>\n" +
+    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                         </div>\n" +
     "                       </div>\n" +
     "                     </a>\n" +
     "                   </div>\n" +
@@ -2966,7 +2981,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Next steps</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
@@ -3067,7 +3082,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h1 class=\"txt-blue-dark anim-content-transition\">General Questions</h1>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
@@ -3170,7 +3185,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Science</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
@@ -3396,7 +3411,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
@@ -3476,7 +3491,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "          <a href=\"\" class=\"download-button\"></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__title anim-content-transition\">\n" +
+    "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Welcome back</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"sub-header-txt txt-black\">\n" +
