@@ -2250,7 +2250,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "            <div class=\"box-image__wrap\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/charts-down.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/low-risk.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
@@ -2265,7 +2265,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          </div>\n" +
     "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/charts-up.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/high-risk.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
@@ -2282,7 +2282,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "            <div class=\"box-image__wrap\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/brain-pink.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/other-factors.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
@@ -3420,8 +3420,6 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      <div class=\"img__wrap--float-right hide-table anim-content-transition\">\n" +
     "        <ng-include src=\"'./assets/images/svg/molekul-blue.svg'\"></ng-include>\n" +
     "      </div>\n" +
-    "      <h1 class=\"txt-blue-dark anim-content-transition\">Key points to consider before talking to\n" +
-    "        friends or family about your results</h1>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h5 class=\"txt-blue-dark\">Do you and they have the support in place if there are questions?\n" +
     "        </h5>\n" +
@@ -3452,9 +3450,9 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h1 class=\"txt-blue-dark txt-center\">\"You are not in this alone. ADx Healthcare provides\n" +
+    "      <h1 class=\"txt-blue-dark txt-center\">You are not in this alone. ADx Healthcare provides\n" +
     "        genetics counselors to go over your report and\n" +
-    "        answer any questions you have.\"\n" +
+    "        answer any questions you have.\n" +
     "      </h1>\n" +
     "      <div class=\"button__wrap button--center\">\n" +
     "        <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
