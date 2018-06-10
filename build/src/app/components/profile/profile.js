@@ -24,7 +24,7 @@ angular.module( 'ixLayer.profile', [
         },
         data: {pageTitle: 'View Profile'},
         params: {
-          title: "Account information"
+          title: "Account info"
         }
       },
       {
@@ -40,7 +40,10 @@ angular.module( 'ixLayer.profile', [
             return profileService.getProfile();
           }]
         },
-        data: {pageTitle: 'Edit Profile'}
+        data: {pageTitle: 'Edit Profile'},
+        params: {
+          title: "Personal info"
+        }
       }
     ];
     states.forEach(function(state) {
