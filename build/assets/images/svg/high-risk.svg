@@ -1,0 +1,38 @@
+<svg class="high-risk-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.338 145.338">
+  <defs>
+    <style>
+      .high-risk-cls-1 {
+        fill: #f9f9f9;
+      }
+
+      .high-risk-cls-2 {
+        fill: #eef5fc;
+      }
+
+      .high-risk-cls-3, .high-risk-cls-5 {
+        fill: #000064;
+      }
+
+      .high-risk-cls-3 {
+        opacity: 0.1;
+      }
+
+      .high-risk-cls-4 {
+        fill: #41c5eb;
+      }
+
+      .high-risk-cls-5 {
+        opacity: 0.15;
+      }
+    </style>
+  </defs>
+  <g id="Group_1063" data-name="Group 1063" transform="translate(10923 5857)">
+    <circle id="Ellipse_1619" data-name="Ellipse 1619" class="high-risk-cls-1" cx="72.669" cy="72.669" r="72.669" transform="translate(-10923 -5857)"/>
+    <g id="warm-temperature-8477_1458d485-b3fb-418b-b96f-b05d5e0897a6" transform="translate(-10869.665 -5825)">
+      <path id="layer2" class="high-risk-cls-2" d="M47.334,48.027V12.667a10.667,10.667,0,0,0-21.334,0v35.36a18.667,18.667,0,1,0,21.334,0Z" transform="translate(-17.997 -2)"/>
+      <path id="opacity" class="high-risk-cls-3" d="M26,12.667v35.36A18.659,18.659,0,0,0,36.668,82V2A10.667,10.667,0,0,0,26,12.667Z" transform="translate(-17.998 -2)"/>
+      <path id="layer1" class="high-risk-cls-4" d="M38,48.745V29a4,4,0,0,0-8,0V48.734a8,8,0,1,0,8,0Z" transform="translate(-15.33 5.668)"/>
+      <path id="opacity-2" data-name="opacity" class="high-risk-cls-5" d="M30,29V48.734a8,8,0,0,0,4,14.934V25a4,4,0,0,0-4,4Z" transform="translate(-15.332 5.668)"/>
+    </g>
+  </g>
+</svg>
