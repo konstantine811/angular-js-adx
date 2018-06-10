@@ -33,23 +33,6 @@
                             <a class="sub-header-txt txt-blue"> Change Password</a>
                         </div>
                     </div>
-                    <div class="row row--profile-view-space-top">
-                        <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Security question</div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="sub-header-txt txt-black">
-                                <div class="profile-view--display-column-wrap">
-                                    <div class="profile-view-column-1">
-                                        What was the name of your fist pet?
-                                    </div>
-                                    <div class="profile-view-column-2">
-                                        <a class="txt-blue txt-right">Edit</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -66,17 +49,27 @@
                 <div class="profile-info__wrap">
                     <div class="row">
                         <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Name</div>
+                            <div class="sub-header-txt txt-blue-dark txt-medium">Firstname</div>
                         </div>
                         <div class="col-xs-8">
                             <div class="sub-header-txt txt-black">
-                                {{profile.user.first_name}} {{profile.user.last_name}}
+                                {{profile.user.first_name}}
                             </div>
                         </div>
                     </div>
                     <div class="row row--profile-view-space-top">
                         <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Saxe</div>
+                            <div class="sub-header-txt txt-blue-dark txt-medium">Lastname</div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="sub-header-txt txt-black">
+                                {{profile.user.last_name}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--profile-view-space-top">
+                        <div class="col-xs-4">
+                            <div class="sub-header-txt txt-blue-dark txt-medium">Gender</div>
                         </div>
                         <div class="col-xs-8">
                             <div class="sub-header-txt txt-black">
@@ -86,63 +79,26 @@
                     </div>
                     <div class="row row--profile-view-space-top">
                         <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Birthday</div>
+                            <div class="sub-header-txt txt-blue-dark txt-medium">Date of Birth</div>
                         </div>
                         <div class="col-xs-8">
                             <div class="sub-header-txt txt-black">
-                                June 17, 1975
+                                {{profile.date_of_birth}}
                             </div>
                         </div>
                     </div>
                     <div class="row row--profile-view-space-top">
                         <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">All enthnicities</div>
+                            <div class="sub-header-txt txt-blue-dark txt-medium">Phone</div>
                         </div>
                         <div class="col-xs-8">
                             <div class="sub-header-txt txt-black">
-                                Chinese
+                                {{profile.phone}}
                             </div>
                         </div>
                     </div>
-                    <div class="row row--profile-view-space-top">
-                        <div class="col-xs-offset-4 col-xs-8">
-                            <div class="sub-header-txt txt-blue">
-                                Review enthnicity information
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row--profile-view-space-top">
-                        <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Height</div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="sub-header-txt txt-black">
-                               Not set
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row--profile-view-space-top">
-                        <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Weight</div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="sub-header-txt txt-black">
-                                Not set
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row--profile-view-space-top">
-                        <div class="col-xs-4">
-                            <div class="sub-header-txt txt-blue-dark txt-medium">Current residence</div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="sub-header-txt txt-black">
-                                US
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-button__wrap profile-info__wrap--border-bottom">
-                        <button class="bt-round bt-round--blue">Edit</button>
+                    <div class="profile-button__wrap">
+                        <button class="bt-round bt-round--blue" ui-sref="master_signedin.profileEdit">Edit</button>
                     </div>
                 </div>
             </div>

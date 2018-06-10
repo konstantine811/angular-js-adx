@@ -1829,51 +1829,64 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
 
 angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/profile/profileEdit.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>Edit Profile</h1>\n" +
-    "        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
-    "            <div ng-show=\"!complete\">\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label>Firstname</label>\n" +
-    "                    <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"profile.user.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                    <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "<div class=\"profile-page\">\n" +
+    "\n" +
+    "    <div class=\"section__wrap\">\n" +
+    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "            <div class=\"section-box-shadow\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                    <h2 class=\"txt-blue-dark txt-center\">Personal Information</h2>\n" +
     "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label>Lastname</label>\n" +
-    "                    <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"profile.user.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                    <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
-    "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label>Email</label>\n" +
-    "                    <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"profile.user.email\" required>\n" +
-    "                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
-    "                        <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
-    "                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                <div class=\"profile-info__wrap\">\n" +
+    "                    <div class=\"row\">\n" +
+    "                        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
+    "                            <div ng-show=\"!complete\">\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label>Firstname</label>\n" +
+    "                                    <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"profile.user.first_name\"  ng-minlength=\"3\" required>\n" +
+    "                                    <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label>Lastname</label>\n" +
+    "                                    <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"profile.user.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                                    <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label>Email</label>\n" +
+    "                                    <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"profile.user.email\" required>\n" +
+    "                                    <div class=\"error\" ng-show=\"form.email.$invalid && form.email.$dirty\">\n" +
+    "                                        <span ng-show=\"form.email.$error.email\">Please enter a valid email address</span>\n" +
+    "                                        <span ng-show=\"form.email.$error.required\">Please enter a value</span>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label for=\"gender\">Gender</label>\n" +
+    "                                    <div>\n" +
+    "                                        <select class=\"form-control\" name=\"gender\" id=\"gender\" ng-model=\"profile.gender\" required title=\"Gender\">\n" +
+    "                                            <option value=\"\" selected>Select Gender</option>\n" +
+    "                                            <option value=\"male\">Male</option>\n" +
+    "                                            <option value=\"female\">Female</option>\n" +
+    "                                        </select>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label>Date of Birth</label>\n" +
+    "                                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\" placeholder=\"YYYY-MM-DD\" required>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"form-group\">\n" +
+    "                                    <label>Phone</label>\n" +
+    "                                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
+    "                                </div>\n" +
+    "                                <div class=\"profile-button__wrap\">\n" +
+    "                                    <button test-hook=\"update-profile\" type=\"submit\" class=\"bt-round bt-round--blue\">Submit</button>&nbsp;&nbsp;\n" +
+    "                                    <button class=\"bt-round bt-round--gray\" ui-sref=\"master_signedin.profile\">Cancel</button>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </form>\n" +
     "                    </div>\n" +
     "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label for=\"gender\">Gender</label>\n" +
-    "                    <div>\n" +
-    "                        <select class=\"form-control\" name=\"gender\" id=\"gender\" ng-model=\"profile.gender\" required title=\"Gender\">\n" +
-    "                            <option value=\"\" selected>Select Gender</option>\n" +
-    "                            <option value=\"male\">Male</option>\n" +
-    "                            <option value=\"female\">Female</option>\n" +
-    "                        </select>\n" +
-    "                    </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label>Date of Birth</label>\n" +
-    "                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\" placeholder=\"YYYY-MM-DD\" required>\n" +
-    "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <label>Phone</label>\n" +
-    "                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
-    "                </div>\n" +
-    "                <button test-hook=\"update-profile\" type=\"submit\" class=\"btn btn-primary\">Submit</button>&nbsp;&nbsp;\n" +
-    "                <button class=\"btn btn-primary\" ui-sref=\"master.profile\">Cancel</button>\n" +
     "            </div>\n" +
-    "        </form>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -1915,23 +1928,6 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                            <a class=\"sub-header-txt txt-blue\"> Change Password</a>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
-    "                    <div class=\"row row--profile-view-space-top\">\n" +
-    "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Security question</div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                <div class=\"profile-view--display-column-wrap\">\n" +
-    "                                    <div class=\"profile-view-column-1\">\n" +
-    "                                        What was the name of your fist pet?\n" +
-    "                                    </div>\n" +
-    "                                    <div class=\"profile-view-column-2\">\n" +
-    "                                        <a class=\"txt-blue txt-right\">Edit</a>\n" +
-    "                                    </div>\n" +
-    "                                </div>\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
@@ -1948,17 +1944,27 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Name</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Firstname</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
     "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                {{profile.user.first_name}} {{profile.user.last_name}}\n" +
+    "                                {{profile.user.first_name}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Saxe</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Lastname</div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-8\">\n" +
+    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                                {{profile.user.last_name}}\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"row row--profile-view-space-top\">\n" +
+    "                        <div class=\"col-xs-4\">\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Gender</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
     "                            <div class=\"sub-header-txt txt-black\">\n" +
@@ -1968,63 +1974,26 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Birthday</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Date of Birth</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
     "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                June 17, 1975\n" +
+    "                                {{profile.date_of_birth}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">All enthnicities</div>\n" +
+    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Phone</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
     "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                Chinese\n" +
+    "                                {{profile.phone}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
-    "                    <div class=\"row row--profile-view-space-top\">\n" +
-    "                        <div class=\"col-xs-offset-4 col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue\">\n" +
-    "                                Review enthnicity information\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"row row--profile-view-space-top\">\n" +
-    "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Height</div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                               Not set\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"row row--profile-view-space-top\">\n" +
-    "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Weight</div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                Not set\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"row row--profile-view-space-top\">\n" +
-    "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Current residence</div>\n" +
-    "                        </div>\n" +
-    "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
-    "                                US\n" +
-    "                            </div>\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"profile-button__wrap profile-info__wrap--border-bottom\">\n" +
-    "                        <button class=\"bt-round bt-round--blue\">Edit</button>\n" +
+    "                    <div class=\"profile-button__wrap\">\n" +
+    "                        <button class=\"bt-round bt-round--blue\" ui-sref=\"master_signedin.profileEdit\">Edit</button>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +

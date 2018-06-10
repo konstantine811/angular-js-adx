@@ -61,7 +61,7 @@ angular.module( 'ixLayer.profile', [
 
     $scope.submitForm = function(data) {
       profileService.updateProfile(data).then(function(result) {
-        $state.go('master.profile');
+        $state.go('master_signedin.profile');
       });
     };
 
