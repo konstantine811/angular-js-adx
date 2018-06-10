@@ -19,18 +19,22 @@ angular.module( 'ixLayer.master', [
     });
   })
 
-  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', 'djangoAuth',  'userAccessSrv',
-    function MasterCtrl ( $scope, $location, $state, $rootScope, djangoAuth, userAccessSrv ) {
+  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', '$transitions', '$window', 'djangoAuth',  'userAccessSrv',
+    function MasterCtrl ( $scope, $location, $state, $rootScope, $transitions, $window, djangoAuth, userAccessSrv ) {
 
       $scope.logged = false;
       $scope.hideSideNavBar = true;
       $scope.showFooter = true;
 
-      $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-        if ( angular.isDefined( toState.data.pageTitle ) ) {
-          $scope.pageTitle = toState.data.pageTitle + ' | ixLayer' ;
-        }
-      });
+       $transitions.onSuccess('transition', function (transition) {
+            var title = transition.to().data.pageTitle;
+            if (title) {
+                if (title instanceof Function) {
+                    title = title.call(transition.to(), transition.params());
+                }
+                $window.document.title = title + ' | ixLayer';
+            }
+        });
 
       $scope.$watch(function() {
         return $location.path();
