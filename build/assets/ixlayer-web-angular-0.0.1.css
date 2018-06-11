@@ -8548,6 +8548,7 @@ h3 {
   font-family: Roboto, sans-serif;
   font-size: 18pt;
   font-weight: 500;
+  line-height: 43px;
   color: #fff;
   margin: 0;
   padding: 0; }
@@ -10461,7 +10462,6 @@ textarea.form-control {
   height: 100%;
   position: relative;
   bottom: 100px;
-  z-index: 1000;
   display: block; }
 
 .faq-p-body__inner {
@@ -10470,7 +10470,7 @@ textarea.form-control {
   padding: 60px 0 100px; }
 
 .faq-p-head__body {
-  max-width: 382px;
+  max-width: 50%;
   margin: 0 auto;
   padding: 120px 0; }
 

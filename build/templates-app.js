@@ -389,8 +389,8 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                    <div class=\"faq-p-head__title\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center anim-content-transition\">Frequently asked questions</h3>\n" +
     "                        <h1 class=\"txt-blue-dark txt-center anim-content-transition\">We care about you</h1>\n" +
-    "                        <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
-    "                            <div class=\"sub-header-txt txt-center\">\n" +
+    "                        <div class=\"sub-header-txt__wrap anim-content-transition txt-center\">\n" +
+    "                            <div class=\"txt-middle\">\n" +
     "                                Our customer support team is available\n" +
     "                                by email or chat, and is happy to answer your\n" +
     "                                questions about your test kit, results, and more.\n" +

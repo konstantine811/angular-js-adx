@@ -12,7 +12,6 @@
   height: 100%;
   position: relative;
   bottom: 100px;
-  z-index: 1000;
   display: block;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .faq-p-head__body {
-  max-width: 382px;
+  max-width: 50%;
   margin: 0 auto;
   padding: 120px 0;
 }
