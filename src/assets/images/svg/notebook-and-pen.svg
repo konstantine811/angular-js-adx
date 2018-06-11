@@ -1,0 +1,60 @@
+<svg class="notebook-and-pen-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280">
+  <defs>
+    <style>
+      .notebook-and-pen-svg-1, .notebook-and-pen-svg-3 {
+        fill: #fff;
+      }
+
+      .notebook-and-pen-svg-2 {
+        fill: #cbe1f0;
+      }
+
+      .notebook-and-pen-svg-3 {
+        opacity: 0.5;
+      }
+
+      .notebook-and-pen-svg-4 {
+        fill: #7b8baf;
+      }
+
+      .notebook-and-pen-svg-5 {
+        fill: #c8daf8;
+      }
+
+      .notebook-and-pen-svg-6, .notebook-and-pen-svg-9 {
+        fill: #000064;
+      }
+
+      .notebook-and-pen-svg-6 {
+        opacity: 0.12;
+      }
+
+      .notebook-and-pen-svg-7 {
+        fill: #063f5f;
+        opacity: 0.75;
+      }
+
+      .notebook-and-pen-svg-8 {
+        fill: #556685;
+      }
+
+      .notebook-and-pen-svg-9 {
+        opacity: 0.16;
+      }
+    </style>
+  </defs>
+  <g id="Group_1091" data-name="Group 1091" transform="translate(-1130 -2728)">
+    <circle id="Ellipse_1418" data-name="Ellipse 1418" class="notebook-and-pen-svg-1" cx="140" cy="140" r="140" transform="translate(1130 2728)"/>
+    <g id="medical-record-8769_d1c0378b-b5d7-4029-b0d4-63b68cd484a3" transform="translate(1210 2808)">
+      <path id="layer5" class="notebook-and-pen-svg-2" d="M18,2V121.811h87.862V29.956L77.906,2Z" transform="translate(13.95 -2)"/>
+      <path id="opacity" class="notebook-and-pen-svg-3" d="M75.956,29.956H48V2Z" transform="translate(43.855 -2)"/>
+      <path id="layer3" class="notebook-and-pen-svg-4" d="M13.981,9.991A5.991,5.991,0,0,0,2,9.991V99.849H13.981Z" transform="translate(-2 -0.006)"/>
+      <path id="layer4" class="notebook-and-pen-svg-5" d="M2,52v3.942a9.984,9.984,0,0,0,.8,3.934L7.791,71.541a.2.2,0,0,0,.367,0L13.15,59.876a9.984,9.984,0,0,0,.8-3.934V52Z" transform="translate(-2 47.843)"/>
+      <path id="layer3-2" data-name="layer3" class="notebook-and-pen-svg-4" d="M25,25V88.9H84.906V25Zm3.994,23.962H44.969V64.937H28.994Zm19.969,0h31.95V64.937H48.962Zm31.95-3.994H48.962V28.994h31.95ZM44.969,28.994V44.969H28.994V28.994ZM28.994,68.931H44.969V84.906H28.994ZM48.962,84.906V68.931h31.95V84.906Z" transform="translate(20.928 20.928)"/>
+      <path id="opacity-2" data-name="opacity" class="notebook-and-pen-svg-6" d="M18,63.912,57.937,23.975,41.962,8,18,31.962Z" transform="translate(13.95 3.981)"/>
+      <path id="layer2" class="notebook-and-pen-svg-7" d="M49.962,15.987H41.975V8H33.987v7.987H26v7.987h7.987v7.987h7.987V23.975h7.987Z" transform="translate(21.925 3.981)"/>
+      <path id="layer1" class="notebook-and-pen-svg-8" d="M15.978,8H2v3.994H15.978a2,2,0,0,1,2,2V41.947a2,2,0,1,0,3.994,0V13.991A5.991,5.991,0,0,0,15.978,8Z" transform="translate(-2 3.981)"/>
+      <path id="opacity-3" data-name="opacity" class="notebook-and-pen-svg-9" d="M2,9.991v93.8a9.984,9.984,0,0,0,.8,3.934L7.791,119.39a.2.2,0,0,0,.184.12V4A5.991,5.991,0,0,0,2,9.991Z" transform="translate(-2 -0.006)"/>
+    </g>
+  </g>
+</svg>

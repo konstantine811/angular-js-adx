@@ -35,6 +35,14 @@
 
 @media (max-width: $breakpoint-sm) {
 
+  .container-flex--column-sm {
+    flex-flow: column;
+  }
+
+  .container-flex--column-reverse-sm {
+    flex-flow: column-reverse;
+  }
+
   .container-page {
     padding-top: 55px !important;
   }

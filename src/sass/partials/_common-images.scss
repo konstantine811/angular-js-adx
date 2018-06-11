@@ -102,6 +102,20 @@
   display: inline-block;
 }
 
+.img-middle--md {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.img-middle--small {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
 .img-small {
   max-width: 160px;
   width: 100%;
@@ -114,4 +128,12 @@
   width: 100%;
   position: relative;
   bottom: 22px;
+}
+
+
+//other images common
+.human-brain-cloud--bgc-white {
+  .human-brain-cloud-svg-1 {
+    fill: $white;
+  }
 }

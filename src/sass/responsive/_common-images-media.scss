@@ -60,6 +60,9 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+  .img--center-sm {
+    text-align: center;
+  }
   
   .img-bgc-wrap__rounded, .img-bgc-wrap-middle__rounded {
     height: 57vw;

@@ -1,0 +1,40 @@
+<svg class="molecule-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .molecule-svg-1 {
+        fill: #fff;
+      }
+
+      .molecule-svg-2 {
+        fill: #426d85;
+      }
+
+      .molecule-svg-3 {
+        fill: #fbaa51;
+      }
+
+      .molecule-svg-4 {
+        fill: #41c5eb;
+      }
+
+      .molecule-svg-5 {
+        fill: #a5a5a5;
+      }
+
+      .molecule-svg-6 {
+        fill: #063f5f;
+      }
+    </style>
+  </defs>
+  <g id="Group_1096" data-name="Group 1096" transform="translate(12821 19808)">
+    <circle id="Ellipse_1775" data-name="Ellipse 1775" class="molecule-svg-1" cx="100" cy="100" r="100" transform="translate(-12821 -19808)"/>
+    <g id="compound-8807_9c1e1c03-f093-4d00-aff0-8a4681dd199c" transform="translate(-12773.224 -19760.225)">
+      <path id="layer4" class="molecule-svg-2" d="M53.656,32.986a1.733,1.733,0,0,1-1.539-2.539l9.052-17.372a1.736,1.736,0,0,1,3.082,1.6L55.194,32.054a1.733,1.733,0,0,1-1.538.933ZM15.287,73.85A1.733,1.733,0,0,1,14.1,70.857L30.319,55.525a1.734,1.734,0,1,1,2.383,2.52L16.479,73.377a1.733,1.733,0,0,1-1.193.473Zm61.039,6.282a1.733,1.733,0,0,1-1.269-.553L56.705,59.818a1.733,1.733,0,1,1,2.54-2.359L77.6,77.22a1.733,1.733,0,0,1-1.269,2.914ZM34.415,35a1.733,1.733,0,0,1-1.269-.553L21.239,21.619a1.733,1.733,0,1,1,2.54-2.359L35.686,32.087A1.733,1.733,0,0,1,34.417,35Z" transform="translate(6.473 5.435)"/>
+      <circle id="layer3" class="molecule-svg-3" cx="17.334" cy="17.334" r="17.334" transform="translate(34.669 34.669)"/>
+      <circle id="layer2" class="molecule-svg-2" cx="10.401" cy="10.401" r="10.401" transform="translate(64.137 0)"/>
+      <circle id="layer2-2" data-name="layer2" class="molecule-svg-4" cx="12.134" cy="12.134" r="12.134" transform="translate(0 72.804)"/>
+      <circle id="layer1" class="molecule-svg-5" cx="6.934" cy="6.934" r="6.934" transform="translate(17.334 13.867)"/>
+      <circle id="layer1-2" data-name="layer1" class="molecule-svg-6" cx="12.134" cy="12.134" r="12.134" transform="translate(79.738 79.738)"/>
+    </g>
+  </g>
+</svg>

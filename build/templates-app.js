@@ -1335,7 +1335,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            <div class=\"container-flex align-items--center txt__wrap container-flex--column-md\">\n" +
     "              <div class=\"flex-column-2\">\n" +
     "                <div class=\"container-sub-head container-sub-head--not-center\">\n" +
-    "                  <h2 class=\"txt-blue-dark txt-left-space\">Detailed explanations</h2>\n" +
+    "                  <h2 class=\"txt-blue-dark txt-left-space txt-center-md\">Detailed explanations</h2>\n" +
     "                  <div class=\"txt__wrap txt-center-md\">\n" +
     "                    <p class=\"txt txt-black\">Your report will provide a detailed explanation of: </p>\n" +
     "                    <p class=\"txt txt-black\">How ApoE works in your body;</p>\n" +
@@ -2108,81 +2108,248 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
 
 angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/prePurchase.tpl.html",
-    "<div class=\"products-page\">\n" +
-    "  <div class=\"products-head__wrap\">\n" +
+    "<div class=\"products-p\">\n" +
+    "  <div class=\"products-p-head__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title-section__wrap anim-content-transition\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
-    "      </div>\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <img src=\"./assets/images/products/spiderads-box.png\" alt=\"\" class=\"img-border-inner img-border-inner--spiderads\">\n" +
+    "      <div class=\"result-head__over\">\n" +
+    "        <div class=\"txt-rubric__wrap\">\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Dashboard</div>\n" +
+    "        </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"title-section__wrap anim-content-transition\">\n" +
+    "          <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
+    "          <div class=\"products-p-head__body\">\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"img__wrap img--center-sm\">\n" +
+    "                  <img src=\"./assets/images/products/service-product-img.png\" alt=\"\" class=\"img img-middle\">\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column align-vertical--center\">\n" +
+    "                <div class=\"products-p-head-body__txt-wrap\">\n" +
+    "                  <div class=\"title__wrap txt-center\">\n" +
+    "                    <h3 class=\"txt-blue\">Alzheimers Genetic Test</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt--indent-small txt-center\">\n" +
+    "                    <div class=\"txt txt-black\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"button__wrap button--center\">\n" +
+    "                    <button class=\"bt-round bt-round--large bt-round--blue-dark\">Order</button>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Alzheimers Genetic Test</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue-dark\" href=\"https://www.helix.com\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"img__wrap txt-center anim-content-transition\">\n" +
-    "            <div class=\"img-border-wrap\">\n" +
-    "              <ng-include class=\"img-border-inner img-border-inner--helix\" src=\"'./assets/images/products/helix-product.svg'\"></ng-include>\n" +
+    "        <div class=\"section__wrap\">\n" +
+    "          <div class=\"container-flex container-flex--column-sm\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark\">Link your accounts</h2>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt txt-black\"><span class=\"txt-bold\">Have you purchased an ADx Genetic Test already</span>You should have recieved an email from ADx health to connect your Helix account. Follow the directions in the email.</div>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <a href=\"\" class=\"txt txt-blue link-underline\">Need help?</a>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <img src=\"./assets/images/products/product-integrate-manage-relax-img.png\" alt=\"\" class=\"img\">\n" +
+    "                <ul class=\"product-p-items item-number-wrap\">\n" +
+    "                  <li class=\"product-p-items__wrap\">\n" +
+    "                    <div class=\"txt-large txt-black\">\n" +
+    "                      Check your email\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"product-p-items__wrap\">\n" +
+    "                    <div class=\"txt-large txt-black\">\n" +
+    "                      click on the link account link\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"product-p-items__wrap\">\n" +
+    "                    <div class=\"txt-large txt-black\">\n" +
+    "                      Success\n" +
+    "                    </div>\n" +
+    "                  </li>\n" +
+    "                </ul>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"title__wrap anim-content-transition\">\n" +
-    "            <h3 class=\"txt-blue txt-center\">Helix Bio Labs</h3>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "  \n" +
+    "    </div>\n" +
+    "  \n" +
+    "    <div class=\"section-box-silver\">\n" +
+    "      <div class=\"section-box-silver__wrap\">\n" +
+    "        <div class=\"container-lg--dashboard\">\n" +
+    "          <div class=\"title__wrap txt-center\">\n" +
+    "            <div class=\"title-first txt-blue-dark\">Late onset Alzheimer’s disease</div>\n" +
     "          </div>\n" +
-    "          <div class=\"txt--indent anim-content-transition\">\n" +
-    "            <div class=\"container-pre-purchase-txt\">\n" +
-    "              <p class=\"txt txt-black txt-center\">The ApoE gene comes in three variants: ApoE2, ApoE3, and ApoE4, and everyone has two copies.</p>\n" +
+    "          <div class=\"container-exs\">\n" +
+    "            <div class=\"txt__wrap txt-center\">\n" +
+    "              <div class=\"txt txt-black\">While you wait on your results learn more about late onset Alzheimer’s diease.\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "            <a class=\"bt-round bt-round--blue\" href=\"https://www.helix.com\">Connect account</a>\n" +
+    "          <div class=\"section__wrap-exs\">\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/head-medical-blue.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">\n" +
+    "                      What is dementia?\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt-middle txt-black\">\n" +
+    "                      Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/molecule.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">\n" +
+    "                      What is Alzheimer’s disease?\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt-middle txt-black\">\n" +
+    "                      Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">\n" +
+    "                      The latest science\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt-middle txt-black\">\n" +
+    "                      Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"section__wrap-md\">\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img--center-sm\">\n" +
+    "                    <ng-include src=\"'./assets/images/svg/notebook-and-pen.svg'\" class=\"img-middle--md\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"txt--space-top-sm\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">Why learn if you are at risk for Alzheimer’s disease?</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt-middle txt-black\">Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk.\n" +
+    "                \n" +
+    "                      The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"section__wrap-md\">\n" +
+    "            <div class=\"container-flex container-flex--column-reverse-sm\">\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"txt--space-top-sm\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">\n" +
+    "                      Symptoms and diagnoses\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt-middle txt-black\">\n" +
+    "                      Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"title__wrap\">\n" +
+    "                    <ul class=\"science-p-list science-p-list--not-padding\">\n" +
+    "                      <li class=\"science-p-list__items\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Memory loss</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Personality changes</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                      <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                        <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                          <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
+    "                        </div>\n" +
+    "                      </li>\n" +
+    "                    </ul>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img--center-sm\">\n" +
+    "                    <ng-include class=\"human-brain-cloud--bgc-white img-middle--md\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
+    "  \n" +
     "  </div>\n" +
     "  \n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"section-bgc--silver\">\n" +
-    "      <div class=\"container-lg--dashboard\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
-    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
-    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "\n" +
-    "</div>");
+    "");
 }]);
 
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -3665,25 +3832,161 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "    </div>\n" +
     "  </div>\n" +
     "  \n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"section-bgc--silver\">\n" +
+    "  <div class=\"section-box-silver\">\n" +
+    "    <div class=\"section-box-silver__wrap\">\n" +
     "      <div class=\"container-lg--dashboard\">\n" +
-    "        <h1 class=\"txt-blue-dark txt-center\">Education</h1>\n" +
-    "        <div class=\"txt__wrap txt__wrap--border-bottom\">\n" +
-    "          <div class=\"row\">\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <p class=\"txt txt-black txt-bold\">The ApoE gene comes in three variants:</p>\n" +
-    "              <p class=\"txt txt-black\">ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.</p>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).</p>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <p class=\"txt txt-black\">ADx ApoE Genetic test will test which allel e combination you have.</p>\n" +
+    "        <div class=\"title__wrap txt-center\">\n" +
+    "          <div class=\"title-first txt-blue-dark\">Late onset Alzheimer’s disease</div>\n" +
+    "        </div>\n" +
+    "        <div class=\"container-exs\">\n" +
+    "          <div class=\"txt__wrap txt-center\">\n" +
+    "            <div class=\"txt txt-black\">While you wait on your results learn more about late onset Alzheimer’s diease.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"section__wrap-exs\">\n" +
+    "          <div class=\"container-flex container-flex--column-sm\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap img--center-sm\">\n" +
+    "                  <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/head-medical-blue.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">\n" +
+    "                    What is dementia?\n" +
+    "                  </h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt-middle txt-black\">\n" +
+    "                    Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"col-sm-6\">\n" +
-    "              <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap img--center-sm\">\n" +
+    "                  <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/molecule.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">\n" +
+    "                    What is Alzheimer’s disease?\n" +
+    "                  </h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt-middle txt-black\">\n" +
+    "                    Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap img--center-sm\">\n" +
+    "                  <ng-include class=\"img img-middle--small\" src=\"'../assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">\n" +
+    "                    The latest science\n" +
+    "                  </h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt-middle txt-black\">\n" +
+    "                    Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"section__wrap-md\">\n" +
+    "          <div class=\"container-flex container-flex--column-sm\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img--center-sm\">\n" +
+    "                  <ng-include src=\"'./assets/images/svg/notebook-and-pen.svg'\" class=\"img-middle--md\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column-2\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"txt--space-top-sm\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">Why learn if you are at risk for Alzheimer’s disease?</h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <p class=\"txt-middle txt-black\">Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk.\n" +
+    "                    \n" +
+    "                    The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.</p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"section__wrap-md\">\n" +
+    "          <div class=\"container-flex container-flex--column-reverse-sm\">\n" +
+    "            <div class=\"flex-column-2\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"txt--space-top-sm\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">\n" +
+    "                    Symptoms and diagnoses\n" +
+    "                  </h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt-middle txt-black\">\n" +
+    "                    Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <ul class=\"science-p-list science-p-list--not-padding\">\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Memory loss</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Personality changes</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items science-p-list__items--small-top-padding\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img--center-sm\">\n" +
+    "                  <ng-include class=\"human-brain-cloud--bgc-white img-middle--md\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3691,8 +3994,9 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
-    "  \n" +
+    "\n" +
+    "\n" +
+    "\n" +
     "</div>");
 }]);
 
@@ -3756,14 +4060,18 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            <div class=\"science-p-head-body__row\">\n" +
     "              <div class=\"container-flex align-items--center container-flex--column-reverse-lg\">\n" +
     "                <div class=\"flex-column anim-content-transition\">\n" +
-    "                  <div class=\"science-p-head__img anim-content-transition\">\n" +
-    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain.svg'\"></ng-include>\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"science-p-head__img anim-content-transition\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"flex-column-2 anim-content-transition\">\n" +
-    "                  <h4 class=\"txt-blue-dark\">What is dementia?</h4>\n" +
-    "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black\">Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.</p>\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <h4 class=\"txt-blue-dark\">What is dementia?</h4>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                      <p class=\"txt txt-black\">Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.</p>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -3771,14 +4079,18 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            <div class=\"science-p-head-body__row anim-content-transition\">\n" +
     "              <div class=\"container-flex align-items--center container-flex--column-lg\">\n" +
     "                <div class=\"flex-column-2 anim-content-transition\">\n" +
-    "                  <h4 class=\"txt-blue-dark anim-content-transition\">What is Alzheimer’s disease?</h4>\n" +
-    "                  <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                    <p class=\"txt txt-black\">Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.</p>\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <h4 class=\"txt-blue-dark anim-content-transition\">What is Alzheimer’s disease?</h4>\n" +
+    "                    <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                      <p class=\"txt txt-black\">Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.</p>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"flex-column anim-content-transition\">\n" +
-    "                  <div class=\"science-p-head__img txt-right\">\n" +
-    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/pink-brain.svg'\"></ng-include>\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"science-p-head__img txt-right\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/pink-brain.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -3805,53 +4117,57 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "          <div class=\"science-p__wrap\">\n" +
     "            <div class=\"container-flex container-flex--column-md\">\n" +
     "              <div class=\"flex-column align-vertical--center\">\n" +
-    "                <div class=\"science-p-section-second__img\">\n" +
-    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"science-p-section-second__img\">\n" +
+    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"flex-column-2\">\n" +
-    "                <ul class=\"science-p-list\">\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Memory loss</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Personality changes</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                  <li class=\"science-p-list__items\">\n" +
-    "                    <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                      <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
-    "                    </div>\n" +
-    "                  </li>\n" +
-    "                </ul>\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <ul class=\"science-p-list\">\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Memory loss</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Personality changes</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"science-p-list__items\">\n" +
+    "                      <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                        <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3873,17 +4189,21 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "          <div class=\"science-p-section-third__wrap\">\n" +
     "            <div class=\"container-flex  container-flex--column-lg\">\n" +
     "              <div class=\"flex-column-2\">\n" +
-    "                <h2 class=\"txt-blue\">Why learn if you are at risk for\n" +
-    "                  Alzheimer’s disease?</h2>\n" +
-    "                <div class=\"txt__wrap\">\n" +
-    "                  <p class=\"txt txt-black\">\n" +
-    "                    Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk. The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.\n" +
-    "                  </p>\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h2 class=\"txt-blue\">Why learn if you are at risk for\n" +
+    "                    Alzheimer’s disease?</h2>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk. The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"flex-column align-vertical--center\">\n" +
-    "                <div class=\"science-p-head__img txt-right\">\n" +
-    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/medical-table-with-pen.svg'\"></ng-include>\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"science-p-head__img txt-right\">\n" +
+    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/medical-table-with-pen.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -3965,47 +4285,57 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              <div class=\"slider__wrap align-items--center\">\n" +
     "                <div class=\"container-flex align-items--center container-flex--column-reverse-md\">\n" +
     "                  <div class=\"flex-column txt-left\">\n" +
-    "                   <div class=\"img__wrap--md\">\n" +
-    "                     <ng-include class=\"img-middle\" src=\"'./assets/images/svg/key.svg'\"></ng-include>\n" +
-    "                   </div>\n" +
-    "                  </div>\n" +
-    "                  <div class=\"flex-column-2\">\n" +
-    "                    <div class=\"container-exs\">\n" +
-    "                      <div class=\"txt-left txt-center-md\">\n" +
-    "                        <h2 class=\"txt-blue-3\" >Security and privacy\n" +
-    "                          Your DNA is just for you</h2>\n" +
-    "                      </div>\n" +
-    "                      <div class=\"txt__wrap\">\n" +
-    "                        <p class=\"txt txt-black txt-left\">\n" +
-    "                          Your Alzheimer’s genetic information will be delivered to you via a secure, electronic report.  These results will also be available for download. It is up to you whom you share your results with, including your healthcare provider or family.  Our genetics counselors are available to go through your results with you too, if you choose. You are in control of how you receive your genetic results and whom you share them with.\n" +
-    "                        </p>\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"img__wrap--md\">\n" +
+    "                        <ng-include class=\"img-middle\" src=\"'./assets/images/svg/key.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"container-flex align-items--center container-flex--column-md\">\n" +
     "                  <div class=\"flex-column-2\">\n" +
-    "                    <div class=\"container-exs\">\n" +
-    "                      <div class=\"txt-right txt-center-md title-space-top-md\">\n" +
-    "                        <h2 class=\"txt-blue-3\">Your privacy is our priority</h2>\n" +
-    "                      </div>\n" +
-    "                      <div class=\"txt__wrap txt-right\">\n" +
-    "                        <p class=\"txt txt-black\">\n" +
-    "                          We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
-    "                          prior written consen\n" +
-    "                        </p>\n" +
-    "                        <div class=\"txt--indent-small\">\n" +
-    "                          <p class=\"txt txt-black\">\n" +
-    "                            From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
-    "                            sure your data remains safe.\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"container-exs\">\n" +
+    "                        <div class=\"txt-left txt-center-md\">\n" +
+    "                          <h2 class=\"txt-blue-3\" >Security and privacy\n" +
+    "                            Your DNA is just for you</h2>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black txt-left\">\n" +
+    "                            Your Alzheimer’s genetic information will be delivered to you via a secure, electronic report.  These results will also be available for download. It is up to you whom you share your results with, including your healthcare provider or family.  Our genetics counselors are available to go through your results with you too, if you choose. You are in control of how you receive your genetic results and whom you share them with.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
-    "                  <div class=\"flex-column txt-right\">\n" +
-    "                    <div class=\"img__wrap--md\">\n" +
-    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"section__wrap-md\">\n" +
+    "                  <div class=\"container-flex align-items--center container-flex--column-md\">\n" +
+    "                    <div class=\"flex-column-2\">\n" +
+    "                      <div class=\"flex-column__wrap\">\n" +
+    "                        <div class=\"container-exs\">\n" +
+    "                          <div class=\"txt-right txt-center-md title-space-top-md\">\n" +
+    "                            <h2 class=\"txt-blue-3\">Your privacy is our priority</h2>\n" +
+    "                          </div>\n" +
+    "                          <div class=\"txt__wrap txt-right\">\n" +
+    "                            <p class=\"txt txt-black\">\n" +
+    "                              We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
+    "                              prior written consen\n" +
+    "                            </p>\n" +
+    "                            <div class=\"txt--indent-small\">\n" +
+    "                              <p class=\"txt txt-black\">\n" +
+    "                                From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
+    "                                sure your data remains safe.\n" +
+    "                              </p>\n" +
+    "                            </div>\n" +
+    "                          </div>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"flex-column txt-right\">\n" +
+    "                      <div class=\"flex-column__wrap\">\n" +
+    "                        <div class=\"img__wrap--md\">\n" +
+    "                          <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -4014,41 +4344,49 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            <div uib-slide index=\"1\">\n" +
     "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "                <div class=\"flex-column\">\n" +
-    "                  <div class=\"\">\n" +
-    "                    <h2 class=\"txt-blue-dark\">Your privacy is our priority</h2>\n" +
-    "                  </div>\n" +
-    "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black  txt-left\">\n" +
-    "                      We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
-    "                      prior written consen\n" +
-    "                    </p>\n" +
-    "                    <div class=\"txt--indent-small\">\n" +
-    "                      <p class=\"txt txt-black\">\n" +
-    "                        From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
-    "                        sure your data remains safe.\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"\">\n" +
+    "                      <h2 class=\"txt-blue-dark\">Your privacy is our priority</h2>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                      <p class=\"txt txt-black  txt-left\">\n" +
+    "                        We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
+    "                        prior written consen\n" +
     "                      </p>\n" +
+    "                      <div class=\"txt--indent-small\">\n" +
+    "                        <p class=\"txt txt-black\">\n" +
+    "                          From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
+    "                          sure your data remains safe.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "                  <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div uib-slide index=\"2\">\n" +
     "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "                <div class=\"flex-column\">\n" +
-    "                  <div class=\"\">\n" +
-    "                    <h3 class=\"blue-dark\">Our mission Slider-3</h3>\n" +
-    "                  </div>\n" +
-    "                  <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                    <div class=\"txt txt-black txt-left\">\n" +
-    "                      At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"\">\n" +
+    "                      <h3 class=\"blue-dark\">Our mission Slider-3</h3>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                      <div class=\"txt txt-black txt-left\">\n" +
+    "                        At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "                  <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                  <div class=\"flex-column\">\n" +
+    "                    <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
