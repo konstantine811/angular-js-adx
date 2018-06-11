@@ -1,0 +1,43 @@
+<svg class="adx-dropped-svg" id="Group_965" data-name="Group 965" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491 589.199">
+  <defs>
+    <style>
+      .adx-dropped-1, .adx-dropped-2, .adx-dropped-4 {
+        fill: #fff;
+      }
+
+      .adx-dropped-2 {
+        opacity: 0.75;
+      }
+
+      .adx-dropped-3, .adx-dropped-6 {
+        fill: none;
+      }
+
+      .adx-dropped-3 {
+        stroke: #fff;
+        stroke-width: 40px;
+        opacity: 0.5;
+      }
+
+      .adx-dropped-4 {
+        font-size: 73px;
+        font-family: CircularStd-Medium, Circular Std Medium;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+      }
+
+      .adx-dropped-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <ellipse id="Ellipse_155" data-name="Ellipse 155" class="adx-dropped-1" cx="50.175" cy="50.175" rx="50.175" ry="50.175" transform="translate(390.65)"/>
+  <ellipse id="Ellipse_156" data-name="Ellipse 156" class="adx-dropped-2" cx="64.511" cy="64.511" rx="64.511" ry="64.511" transform="translate(314.671 460.177)"/>
+  <circle id="Ellipse_157" data-name="Ellipse 157" class="adx-dropped-1" cx="41.574" cy="41.574" r="41.574" transform="translate(0 396.383)"/>
+  <circle id="Ellipse_158" data-name="Ellipse 158" class="adx-dropped-2" cx="23.654" cy="23.654" r="23.654" transform="translate(79.563 69.528)"/>
+  <g id="Ellipse_116" data-name="Ellipse 116" class="adx-dropped-3" transform="translate(69.005 89.353)">
+    <ellipse class="adx-dropped-5" cx="181.36" cy="181.36" rx="181.36" ry="181.36"/>
+    <ellipse class="adx-dropped-6" cx="181.36" cy="181.36" rx="161.36" ry="161.36"/>
+  </g>
+  <text id="ADx" class="adx-dropped-4" transform="translate(249.591 292.556)"><tspan x="-69.934" y="0">ADx</tspan></text>
+</svg>

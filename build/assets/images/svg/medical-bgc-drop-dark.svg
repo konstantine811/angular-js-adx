@@ -1,0 +1,55 @@
+<svg class="medical-bgc-drop-dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.457 460.776">
+  <defs>
+    <style>
+      .medical-bgc-drop-dark-svg-1, .medical-bgc-drop-dark-svg-2, .medical-bgc-drop-dark-svg-3 {
+        fill: #fff;
+      }
+
+      .medical-bgc-drop-dark-svg-2 {
+        opacity: 0.75;
+      }
+
+      .medical-bgc-drop-dark-svg-3 {
+        stroke: #fff;
+        stroke-width: 40px;
+        opacity: 0.9;
+      }
+
+      .medical-bgc-drop-dark-svg-4 {
+        fill: #cbe5ff;
+      }
+
+      .medical-bgc-drop-dark-svg-5 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .medical-bgc-drop-dark-svg-6 {
+        fill: #063f5f;
+      }
+
+      .medical-bgc-drop-dark-svg-7 {
+        stroke: none;
+      }
+
+      .medical-bgc-drop-dark-svg-8 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1115" data-name="Group 1115" transform="translate(-956.543 -265.431)">
+    <ellipse id="Ellipse_155" data-name="Ellipse 155" class="medical-bgc-drop-dark-svg-1" cx="38.778" cy="38.778" rx="38.778" ry="38.778" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1031.456, 715.885)"/>
+    <ellipse id="Ellipse_156" data-name="Ellipse 156" class="medical-bgc-drop-dark-svg-2" cx="49.857" cy="49.857" rx="49.857" ry="49.857" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1180.223, 387.555)"/>
+    <ellipse id="Ellipse_157" data-name="Ellipse 157" class="medical-bgc-drop-dark-svg-1" cx="32.13" cy="32.13" rx="32.13" ry="32.13" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1402.368, 498.121)"/>
+    <ellipse id="Ellipse_158" data-name="Ellipse 158" class="medical-bgc-drop-dark-svg-2" cx="18.281" cy="18.281" rx="18.281" ry="18.281" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1277.594, 726.207)"/>
+    <g id="Ellipse_116" data-name="Ellipse 116" class="medical-bgc-drop-dark-svg-3" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1289.499, 713.094)">
+      <ellipse class="medical-bgc-drop-dark-svg-7" cx="140.163" cy="140.163" rx="140.163" ry="140.163"/>
+      <ellipse class="medical-bgc-drop-dark-svg-8" cx="140.163" cy="140.163" rx="120.163" ry="120.163"/>
+    </g>
+    <g id="health-8740_c633ca09-697f-47b1-80fc-5ed80bd331df" transform="translate(1117.192 468.234)">
+      <ellipse id="layer2" class="medical-bgc-drop-dark-svg-4" cx="73.441" cy="73.441" rx="73.441" ry="73.441" transform="translate(0 0)"/>
+      <path id="opacity" class="medical-bgc-drop-dark-svg-5" d="M111.438,66.34a2.448,2.448,0,0,1-1.031.23H88.375a2.448,2.448,0,0,0-2.448,2.448V91.05a2.475,2.475,0,0,1-.23,1.031Zm-49.991-26.7V17.61a2.473,2.473,0,0,1,.23-1.031L35.936,43.544c.313-.147.661.994,1.031.994H59C60.353,44.538,61.447,41,61.447,39.642ZM36.967,66.57a2.448,2.448,0,0,1-2.448-2.448V44.538a2.433,2.433,0,0,1,.23-1.031L3.211,75.043A73.6,73.6,0,0,0,52.975,124.8L84.51,93.268a2.448,2.448,0,0,1-1.031.23H63.9a2.448,2.448,0,0,1-2.448-2.448V69.018A2.448,2.448,0,0,0,59,66.57Z" transform="translate(-0.246 19.111)"/>
+      <path id="layer1" class="medical-bgc-drop-dark-svg-6" d="M91.889,42.928H69.857a2.448,2.448,0,0,1-2.448-2.448V18.448A2.448,2.448,0,0,0,64.961,16H45.376a2.448,2.448,0,0,0-2.448,2.448V40.48a2.448,2.448,0,0,1-2.448,2.448H18.448A2.448,2.448,0,0,0,16,45.376V64.96a2.448,2.448,0,0,0,2.448,2.448H40.48a2.448,2.448,0,0,1,2.448,2.448V91.889a2.448,2.448,0,0,0,2.448,2.448H64.961a2.448,2.448,0,0,0,2.448-2.448V69.857a2.448,2.448,0,0,1,2.448-2.448H91.889a2.448,2.448,0,0,0,2.448-2.448V45.376A2.448,2.448,0,0,0,91.889,42.928Z" transform="translate(18.272 18.272)"/>
+    </g>
+  </g>
+</svg>

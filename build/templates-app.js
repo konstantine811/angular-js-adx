@@ -9,8 +9,8 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        <div uib-slide index=\"0\">\n" +
     "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition\">\n" +
-    "                <h3 >Our mission</h3>\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <h1>Our mission</h1>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap anim-content-transition\">\n" +
     "                <div class=\"txt txt-left\">\n" +
@@ -22,59 +22,41 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop-dark.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div uib-slide index=\"1\">\n" +
     "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition\">\n" +
-    "                <h3 >Our mission Slider-2</h3>\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <div class=\"title-first\">ADx Healthcare</div>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap anim-content-transition\">\n" +
     "                <div class=\"txt txt-left\">\n" +
-    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
-    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
+    "                  ADx Healthcare is a physician-owned company that provides individuals with personal access to their medical and genetic information by offering private pay testing, while still providing the highest standard of patient care.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/adx-dropped.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div uib-slide index=\"2\">\n" +
     "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition\">\n" +
-    "                <h3 >Our mission Slider-3</h3>\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <div class=\"title-first\">Our offerings</div>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap anim-content-transition\">\n" +
     "                <div class=\"txt txt-left\">\n" +
-    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                  In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div uib-slide index=\"3\">\n" +
-    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition\">\n" +
-    "                <h3 >Our mission Slider-4</h3>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                <div class=\"txt txt-left\">\n" +
-    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/human-health-dropped.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -159,7 +141,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Career at ADx</h1>\n" +
-    "            <div class=\"txt--indent-small\">\n" +
+    "            <div class=\"txt--indent-small txt-center\">\n" +
     "              <p class=\"txt\">The ApoE gene comes in three variants – ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.  Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).  The ApoE4 form is a major risk factor for Alzheimer’s disease. </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
@@ -190,9 +172,9 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "      </div>\n" +
     "    </div>\n" +
     "   <div class=\"about-section-fourth_form-map-overlap\">\n" +
-    "     <h3 class=\"txt-blue-dark txt-center\">Contact us</h3>\n" +
+    "     <h2 class=\"txt-blue-dark txt-center\">Contact us</h2>\n" +
     "     <div class=\"sub-header-txt__wrap\">\n" +
-    "       <div class=\"sub-header-txt txt-blue\">\n" +
+    "       <div class=\"txt-large txt-blue txt-center txt-medium\">\n" +
     "         We are always within your reach. Send us a message and we'll respond as soon as possible.\n" +
     "       </div>\n" +
     "     </div>\n" +

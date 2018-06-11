@@ -1,0 +1,71 @@
+<svg class="human-health-dropped-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.972 570.235">
+  <defs>
+    <style>
+      .human-health-dropped-1, .human-health-dropped-2, .human-health-dropped-3 {
+        fill: #fff;
+      }
+
+      .human-health-dropped-1 {
+        opacity: 0.75;
+      }
+
+      .human-health-dropped-3 {
+        stroke: #fff;
+        stroke-width: 40px;
+        opacity: 0.81;
+      }
+
+      .human-health-dropped-4 {
+        fill: #c8daf8;
+      }
+
+      .human-health-dropped-5 {
+        fill: #ffd9d9;
+      }
+
+      .human-health-dropped-6 {
+        fill: #536897;
+      }
+
+      .human-health-dropped-7 {
+        fill: #a7c5f2;
+      }
+
+      .human-health-dropped-8 {
+        fill: #f27e7c;
+      }
+
+      .human-health-dropped-9 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .human-health-dropped-10 {
+        stroke: none;
+      }
+
+      .human-health-dropped-11 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1116" data-name="Group 1116" transform="translate(9261.466 973)">
+    <ellipse id="Ellipse_1714" data-name="Ellipse 1714" class="human-health-dropped-1" cx="50.175" cy="50.175" rx="50.175" ry="50.175" transform="translate(-9163.309 -493.241) rotate(-168)"/>
+    <circle id="Ellipse_1715" data-name="Ellipse 1715" class="human-health-dropped-2" cx="64.511" cy="64.511" r="64.511" transform="translate(-8906.719 -550.382) rotate(9)"/>
+    <circle id="Ellipse_1716" data-name="Ellipse 1716" class="human-health-dropped-1" cx="41.574" cy="41.574" r="41.574" transform="translate(-8698.781 -799.742) rotate(-168)"/>
+    <circle id="Ellipse_1717" data-name="Ellipse 1717" class="human-health-dropped-2" cx="23.654" cy="23.654" r="23.654" transform="translate(-9077.822 -973) rotate(9)"/>
+    <g id="Ellipse_1718" data-name="Ellipse 1718" class="human-health-dropped-3" transform="translate(-8830.207 -513.793) rotate(-168)">
+      <ellipse class="human-health-dropped-10" cx="181.36" cy="181.36" rx="181.36" ry="181.36"/>
+      <ellipse class="human-health-dropped-11" cx="181.36" cy="181.36" rx="161.36" ry="161.36"/>
+    </g>
+    <g id="doctor-7728_efd1c53c-5544-427e-a931-97bfa1175f99" transform="translate(-9046 -806)">
+      <path id="layer5" class="human-health-dropped-4" d="M122.687,53.7C106.228,50.591,99.825,46.53,97.33,42.678L78.341,56.25,59.352,42.67c-2.5,3.852-8.9,7.914-25.357,11.032C2.358,59.68,2.35,81.729,2.35,81.729V91.921H154.332V81.729S154.332,59.68,122.687,53.7Z" transform="translate(-2.35 60.953)"/>
+      <path id="layer4" class="human-health-dropped-5" d="M92.993,35.528V26.988A20.483,20.483,0,0,0,71.624,10.021a23.95,23.95,0,0,0-13.858,4.166A23.95,23.95,0,0,0,43.91,10.021c-19,0-20.383,17.924-20.383,17.924l-.986-.953v8.541c-7.644.132-6.879,9.631-6.879,12.026S17.955,60.885,25.67,60.976A45.768,45.768,0,0,0,40.4,84.611h-.023v1.847a11.506,11.506,0,0,1-1.6,6.811l18.995,13.573L76.758,93.266a11.506,11.506,0,0,1-1.6-6.808V84.623h-.023A45.768,45.768,0,0,0,89.862,60.979C97.569,60.89,99.87,49.967,99.87,47.562S100.637,35.661,92.993,35.528Z" transform="translate(18.223 10.362)"/>
+      <path id="layer3" class="human-health-dropped-6" d="M88.8,39.35v-.66C88.8,12.192,70.014,2,53.129,2S18.35,12.192,18.35,38.69v4.049C47.921,42.3,47.269,22.383,67.43,22.383A20.483,20.483,0,0,1,88.8,39.35Z" transform="translate(22.416 -2)"/>
+      <path id="layer1" class="human-health-dropped-7" d="M31.175,47.284V84.779h5.1V47.284L33.723,49.1Z" transform="translate(42.268 68.095)"/>
+      <path id="layer2" class="human-health-dropped-8" d="M39.435,57.142H31.791V49.5H24.148v7.644H16.5v7.644h7.644v7.644h7.644V64.785h7.644Z" transform="translate(19.559 71.522)"/>
+      <ellipse id="layer1-2" data-name="layer1" class="human-health-dropped-7" cx="2.548" cy="2.548" rx="2.548" ry="2.548" transform="translate(93.386 122.294)"/>
+      <path id="opacity" class="human-health-dropped-9" d="M78.341,102.061V2.018c-.15,0-.3-.018-.446-.018C61.01,2,43.116,12.192,43.116,38.69v9.2c-7.644.132-6.879,9.631-6.879,12.026S38.53,73.242,46.245,73.333A45.768,45.768,0,0,0,60.972,96.968h-.023V98.82a11.506,11.506,0,0,1-1.6,6.811c-2.494,3.845-8.895,7.906-25.354,11.025C2.358,122.633,2.35,144.682,2.35,144.682v10.192H37.8L95.707,96.965s-9.491,5.1-17.366,5.1Z" transform="translate(-2.35 -2)"/>
+    </g>
+  </g>
+</svg>
