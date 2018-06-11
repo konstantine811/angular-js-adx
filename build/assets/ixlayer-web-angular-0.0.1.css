@@ -8499,7 +8499,7 @@ a.link-underline {
   color: #000000 !important; }
 
 .txt-gray {
-  color: #777777 !important; }
+  color: rgba(38, 38, 38, 0.3) !important; }
 
 .txt-fonts-circular-book {
   font-family: 'CircularStd-Book', sans-serif !important; }
@@ -8912,7 +8912,7 @@ h6 {
   padding: 25px 0 0; }
 
 .box-wrap {
-  padding-top: 50px; }
+  padding: 50px 15px 0; }
 
 .box-shadow {
   background-color: white;

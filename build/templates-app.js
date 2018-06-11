@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/pre-result.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1887,10 +1887,10 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Email</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Email</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                <div class=\"profile-view--display-column-wrap\">\n" +
     "                                    <div class=\"profile-view-column-1\">\n" +
     "                                        {{profile.user.email}} <span class=\"txt-left-space\">(Verifed)</span>\n" +
@@ -1904,10 +1904,10 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Password</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Password</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <a class=\"sub-header-txt txt-blue\"> Change Password</a>\n" +
+    "                            <a class=\"txt txt-blue\"> Change Password</a>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
@@ -1926,50 +1926,50 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Firstname</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Firstname</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                {{profile.user.first_name}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Lastname</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Lastname</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                {{profile.user.last_name}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Gender</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Gender</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                {{profile.gender}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Date of Birth</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Date of Birth</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                {{profile.date_of_birth}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"row row--profile-view-space-top\">\n" +
     "                        <div class=\"col-xs-4\">\n" +
-    "                            <div class=\"sub-header-txt txt-blue-dark txt-medium\">Phone</div>\n" +
+    "                            <div class=\"txt txt-blue-dark txt-medium\">Phone</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <div class=\"sub-header-txt txt-black\">\n" +
+    "                            <div class=\"txt txt-black\">\n" +
     "                                {{profile.phone}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
@@ -2106,11 +2106,6 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "");
 }]);
 
-angular.module("components/results/pages/pre-result.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/pre-result.tpl.html",
-    "");
-}]);
-
 angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/prePurchase.tpl.html",
     "<div class=\"products-page\">\n" +
@@ -2197,7 +2192,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-head__wrap\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">Pre-Result</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Pre-Result</div>\n" +
     "        </div>\n" +
     "        <div class=\"container-flex\">\n" +
     "          <div class=\"flex-column content-txt\">\n" +
@@ -2205,7 +2200,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "              <h1 class=\"txt-blue-dark\">What will my results tell me?</h1>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap pre-result-head-txt anim-content-transition\">\n" +
-    "              <div class=\"sub-header-txt txt-black\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
     "                <span class=\"txt-bold\">Remember.</span> Before you get started, please read the following information so you can better understand what your Alzheimer’s ApoE genetic report does and does not tell you.\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -2225,7 +2220,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      <div class=\" \">\n" +
     "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Remember</h1>\n" +
     "        <div class=\"txt--indent-small container-sub-head txt-center anim-content-transition\">\n" +
-    "          <p class=\"sub-header-txt txt-black\">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>\n" +
+    "          <p class=\"txt txt-black\">Regardless of your results, we ask everyone to please read the important information below before you view your results. </p>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap boxes-row__wrap\">\n" +
@@ -2236,7 +2231,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h6 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk.</h6>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk.</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -2251,7 +2246,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h6 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h6>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -2268,7 +2263,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h6 class=\"txt-blue-dark txt-center\">Other factors influence your risk.</h6>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Other factors influence your risk.</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -2283,7 +2278,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h5 class=\"txt-blue-dark txt-center\">Knowledge is power.</h5>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Knowledge is power.</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -2299,7 +2294,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <div class=\"boxes__wrap\">\n" +
     "          <div class=\"box-shadow\">\n" +
     "            <div class=\"title__wrap title__wrap--not-space-mobile\">\n" +
-    "              <h5 class=\"txt-blue-dark txt-center\">Please consent before proceeding.</h5>\n" +
+    "              <h3 class=\"txt-blue-dark txt-center\">Please consent before proceeding.</h3>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
     "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
@@ -2341,7 +2336,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray\">Results</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -2350,7 +2345,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      <div class=\"result-head__title anim-content-transition  txt-left-sm\">\n" +
     "        <h1 class=\"txt-blue-dark anim-content-transition\">Your result </h1>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -2494,7 +2489,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray\">About page</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray\">About page</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -2503,7 +2498,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">About Alzheimer’s disease</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            What do we know about Late-onset Alzheimer’s disease?\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -2568,7 +2563,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
     "            <div class=\"box-txt-column__wrap\">\n" +
-    "              <h5 class=\"txt-blue-dark\">How it’s inherited</h5>\n" +
+    "              <h3 class=\"txt-blue-dark\">How it’s inherited</h3>\n" +
     "              <div class=\"txt-padding-top\">\n" +
     "                <p class=\"txt-middle txt-black\">\n" +
     "                  Tests for the ε4 variant in the APOE gene associated with an increased risk of developing late-onset Alzheimer's disease.\n" +
@@ -2581,7 +2576,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
     "            <div class=\"box-txt-column__wrap\">\n" +
-    "              <h5 class=\"txt-blue-dark\">Limitations</h5>\n" +
+    "              <h3 class=\"txt-blue-dark\">Limitations</h3>\n" +
     "              <div class=\"txt-padding-top\">\n" +
     "                <p class=\"txt-middle txt-black\">\n" +
     "                  The ε4 variant included in this test is found and has been studied in many ethnicities. Detailed risk estimates have been studied the most in people of European descent.\n" +
@@ -2595,7 +2590,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        </div>\n" +
     "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <h5 class=\"txt-blue-dark\">Late onset test</h5>\n" +
+    "            <h3 class=\"txt-blue-dark\">Late onset test</h3>\n" +
     "            <div class=\"box-txt__wrap\">\n" +
     "              <ul>\n" +
     "                <li class=\"txt--indent-small\"><p class=\"txt-middle txt-black\">Does not include all possible variants or genes associated with late-onset Alzheimer's disease.\n" +
@@ -2609,7 +2604,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "          <div class=\"box-half-column box-shadow\">\n" +
     "            <div class=\"txt-wrap__border\">\n" +
-    "              <h5 class=\"txt-blue-dark\">This test does not diagnose Alzheimer's disease or any other health conditions.</h5>\n" +
+    "              <h3 class=\"txt-blue-dark\">This test does not diagnose Alzheimer's disease or any other health conditions.</h3>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt__wrap txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">Please talk to a healthcare professional if this condition runs in your family, you think you might have this condition, or you have any concerns about your results.\n" +
@@ -2648,7 +2643,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray\">Lifestyle</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray\">Lifestyle</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -2657,13 +2652,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "      <div class=\"result-head__title  txt-left-sm anim-content-transition\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle & other factors</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            Lifestyle and other factors can also influence the\n" +
     "            chances of developing late-onset Alzheimer's disease.\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"txt__wrap anim-content-transition\">\n" +
-    "          <p class=\"txt txt-blue\">Consult with a healthcare professional before making any major lifestyle changes.</p>\n" +
+    "          <p class=\"txt-middle txt-blue-dark\">Consult with a healthcare professional before making any major lifestyle changes.</p>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -2691,7 +2686,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                 <ul class=\"box__wrap\">\n" +
     "                   <li class=\"box__item-link\">\n" +
     "                     <a href ng-click=\"setTab(1)\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Sleep</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
     "                       <div class=\"box-tab-image\">\n" +
     "                         <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
     "                       </div>\n" +
@@ -2699,7 +2694,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </li>\n" +
     "                   <li class=\"box__item-link\">\n" +
     "                     <a href ng-click=\"setTab(2)\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Exercise</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
     "                       <div class=\"box-tab-image\">\n" +
     "                         <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
     "                       </div>\n" +
@@ -2707,7 +2702,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </li>\n" +
     "                   <li class=\"box__item-link\">\n" +
     "                     <a href ng-click=\"setTab(3)\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Stress</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
     "                       <div class=\"box-tab-image\">\n" +
     "                         <img class=\"img\" src=\"./assets/images/results-page/horse-blue.png\" alt=\"\">\n" +
     "                       </div>\n" +
@@ -2715,7 +2710,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </li>\n" +
     "                   <li class=\"box__item-link\">\n" +
     "                     <a href ng-click=\"setTab(4)\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Nutrition</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
     "                       <div class=\"box-tab-image\">\n" +
     "                         <img class=\"img\" src=\"./assets/images/results-page/cake-blue-dark.png\" alt=\"\">\n" +
     "                       </div>\n" +
@@ -2723,7 +2718,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </li>\n" +
     "                   <li class=\"box__item-link\">\n" +
     "                     <a href ng-click=\"setTab(5)\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Brain Stimulation</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
     "                       <div class=\"box-tab-image\">\n" +
     "                         <img class=\"img\" src=\"./assets/images/results-page/brain-orange.png\" alt=\"\">\n" +
     "                       </div>\n" +
@@ -2740,13 +2735,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                 <div class=\"box-content\">\n" +
     "                   <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
     "                     <div class=\"title__wrap\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Sleep</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
     "                     </div>\n" +
     "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                       <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h5 class=\"txt-blue\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h5>\n" +
+    "                       <h3 class=\"txt-blue\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
@@ -2769,13 +2764,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </div>\n" +
     "                   <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
     "                     <div class=\"title__wrap\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Exercise</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
     "                     </div>\n" +
     "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                       <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h5 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly. </h5>\n" +
+    "                       <h3 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels, which reduces your risk for Alzheimer’s disease.\n" +
@@ -2809,13 +2804,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                   </div>\n" +
     "                   <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
     "                     <div class=\"title__wrap\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Stress</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
     "                     </div>\n" +
     "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h5 class=\"txt-blue\">Brain Impact of Stress</h5>\n" +
+    "                       <h3 class=\"txt-blue\">Brain Impact of Stress</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.2\n" +
@@ -2837,13 +2832,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "        \n" +
     "                   <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
     "                     <div class=\"title__wrap\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Nutrition</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
     "                     </div>\n" +
     "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h5 class=\"txt-blue\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h5>\n" +
+    "                       <h3 class=\"txt-blue\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
@@ -2906,13 +2901,13 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "        \n" +
     "                   <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
     "                     <div class=\"title__wrap\">\n" +
-    "                       <h5 class=\"txt-blue-dark txt-center\">Brain Stimulation</h5>\n" +
+    "                       <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
     "                     </div>\n" +
     "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h5 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly.</h5>\n" +
+    "                       <h3 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
@@ -2957,7 +2952,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">Next steps</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Next steps</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -2966,7 +2961,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Next steps</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
-    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "          <p class=\"txt txt-black\">\n" +
     "            Now that you know your genetic risk it’s time\n" +
     "            to take the <span class=\"txt-bold\">next steps.</span>\n" +
     "          </p>\n" +
@@ -2987,12 +2982,12 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h5 class=\"txt-blue-dark anim-content-transition\">Talk to Genetic counselor</h5>\n" +
+    "      <h3 class=\"txt-blue-dark anim-content-transition\">Talk to Genetic counselor</h3>\n" +
     "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with you family?  Our genetics counselors are available to help answer your questions.</p>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h5 class=\"txt-blue-dark\">Talking to a doctor</h5>\n" +
+    "        <h3 class=\"txt-blue-dark\">Talking to a doctor</h3>\n" +
     "      </div>\n" +
     "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family. Overall, your primary healthcare provider knows your overall health best.  It is good to check-in with them to discuss your ApoE test results so your ApoE genetic data can be paired with information about your other medical conditions.  Together you and your healthcare provider can develop a plan to modify your lifestyle and environmental factors to best optimize your cognitive health.  You should always consult a healthcare provider before making major lifestyle changes.\n" +
@@ -3002,7 +2997,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <a href=\"\" class=\"txt txt-blue link-underline\">Download your results</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <h5 class=\"txt-blue-dark\">Sharing with Family members</h5>\n" +
+    "        <h3 class=\"txt-blue-dark\">Sharing with Family members</h3>\n" +
     "      </div>\n" +
     "      <div class=\"sub-header-txt__wrap\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
@@ -3013,9 +3008,9 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <a href=\"\" class=\"txt txt-blue link-underline\">Learn about sharing with family</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <h5 class=\"txt-blue-dark\">\n" +
+    "        <h3 class=\"txt-blue-dark\">\n" +
     "          Science\n" +
-    "        </h5>\n" +
+    "        </h3>\n" +
     "      </div>\n" +
     "      <div class=\"sub-header-txt__wrap\">\n" +
     "        <p class=\"txt-middle txt-black\">Learn about the science behind the ApoE test.</p>\n" +
@@ -3024,9 +3019,9 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <a href=\"\" class=\"txt txt-blue link-underline\">Read more about science</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <h5 class=\"txt-blue-dark\">\n" +
+    "        <h3 class=\"txt-blue-dark\">\n" +
     "          General questions\n" +
-    "        </h5>\n" +
+    "        </h3>\n" +
     "      </div>\n" +
     "      <div class=\"sub-header-txt__wrap\">\n" +
     "        <p class=\"txt-middle txt-black\">Read about topics that may be helpful to answer your initial questions.\n" +
@@ -3058,7 +3053,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -3067,7 +3062,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h1 class=\"txt-blue-dark anim-content-transition\">General Questions</h1>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "          <p class=\"txt txt-black anim-content-transition\">\n" +
     "            “You are not in this alone. ADx Healthcare provides\n" +
     "            genetics counselors to go over your report and\n" +
     "            answer any questions you have.”\n" +
@@ -3091,7 +3086,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3114,7 +3109,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Who will see my test results?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">Who will see my test results?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3134,7 +3129,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3161,7 +3156,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -3170,7 +3165,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Science</h2>\n" +
     "        <div class=\"title__wrap\">\n" +
-    "          <p class=\"sub-header-txt txt-black anim-content-transition\">\n" +
+    "          <p class=\"txt txt-black anim-content-transition\">\n" +
     "            The Alzheimer’s ApoE test is a single gene test that\n" +
     "            looks at your genetic risk for Alzheimer’s disease.\n" +
     "          </p>\n" +
@@ -3200,7 +3195,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What are Genes?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">What are Genes?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3247,7 +3242,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What is a DNA?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">What is a DNA?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3267,7 +3262,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">How do genes and DNA function?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">How do genes and DNA function?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3305,7 +3300,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What do my results mean to me?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">What do my results mean to me?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3325,7 +3320,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">What is a DNA?</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">What is a DNA?</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3348,7 +3343,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h5 class=\"txt-blue-dark\">Test details</h5>\n" +
+    "                <h3 class=\"txt-blue-dark\">Test details</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3357,7 +3352,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "              The association between type-2 diabetes and Alzheimer’s disease is greater in ApoE-e4 carriers.1 Also, based on results from observational studies, managing midlife hypertension may be more impactful for reducing Alzheimer’s disease risk for ApoE-e4 carriers than for non-carriers. 2,3  Thus, monitoring blood pressure and working to prevent or manage type-2 diabetes is important for all, but carries great importance for individuals who carry and ApoE-e4 allele.\n" +
     "            </p>\n" +
     "            <div class=\"title__wrap\">\n" +
-    "              <h5 class=\"txt-blue-dark\">References</h5>\n" +
+    "              <h3 class=\"txt-blue-dark\">References</h3>\n" +
     "            </div>\n" +
     "            <ul class=\"item-decimal\">\n" +
     "              <li class=\"txt__wrap\"><p class=\"txt txt-black\">Vagelatos NT, Eslick GD (2013) Type 2 diabetes as a risk factor for Alzheimer’s disease: the confounders, interactions, and neuropathology associated with this relationship. Epidemiological reviews 35, 152-160.</p>\n" +
@@ -3387,7 +3382,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -3396,7 +3391,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
-    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "          <p class=\"txt txt-black\">\n" +
     "            You may want to share your results or your experience with family or friends\n" +
     "            so they understand the reason you are implementing new lifestyle behaviors.\n" +
     "          </p>\n" +
@@ -3418,8 +3413,8 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "        <ng-include src=\"'./assets/images/svg/molekul-blue.svg'\"></ng-include>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h5 class=\"txt-blue-dark\">Do you and they have the support in place if there are questions?\n" +
-    "        </h5>\n" +
+    "        <h3 class=\"txt-blue-dark\">Do you and they have the support in place if there are questions?\n" +
+    "        </h3>\n" +
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
@@ -3432,8 +3427,8 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h5 class=\"txt-blue-dark\">It is possible for your relatives to have a different ApoE variant than you?\n" +
-    "        </h5>\n" +
+    "        <h3 class=\"txt-blue-dark\">It is possible for your relatives to have a different ApoE variant than you?\n" +
+    "        </h3>\n" +
     "      </div>\n" +
     "      <div class=\"txt__wrap\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
