@@ -6,3 +6,9 @@
     padding-bottom: 30px;
   }
 }
+
+@media (max-width: $breakpoint-sm) {
+  .science-p-section-fifth .slider__wrap {
+    padding: 0 0 125px;
+  }
+}

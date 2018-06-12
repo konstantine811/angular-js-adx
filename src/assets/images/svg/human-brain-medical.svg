@@ -1,0 +1,31 @@
+<svg class="human-brain-medical-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.919 367.919">
+  <defs>
+    <style>
+      .human-brain-medical-svg-1 {
+        fill: #fff;
+      }
+
+      .human-brain-medical-svg-2 {
+        fill: #41c5eb;
+      }
+
+      .human-brain-medical-svg-3 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .human-brain-medical-svg-4 {
+        fill: #fbaa51;
+      }
+    </style>
+  </defs>
+  <g id="Group_1117" data-name="Group 1117" transform="translate(-458 -293)">
+    <circle id="Ellipse_1461" data-name="Ellipse 1461" class="human-brain-medical-svg-1" cx="183.96" cy="183.96" r="183.96" transform="translate(458 293)"/>
+    <g id="mental-illness-8797_75a5ad18-e90c-43dc-a8b4-38780eb4e3ce" transform="translate(565 381)">
+      <path id="layer3" class="human-brain-medical-svg-2" d="M87.338,193.8a.8.8,0,0,0,1.189-.34c2.35-5.488,14.926-34.373,18.853-34.373,6.412,0,19.033,6.412,28.852,6.412s7.976-22.71,11.041-31.972,4.988-14.692,4.988-19.322c12.272-1.234,10.047-5.068,8.511-8.771S145.85,84.925,145.85,82.146c0-3.206,3.206-13.061,3.206-19.235C149.056,34.815,133.027,2,78.56,2,25.177,2,8,41.3,8,62.911s6.072,37.781,12.823,44.882S33.647,121.4,33.647,133.439a30.577,30.577,0,0,1-6.412,19.235Z" transform="translate(-8 -2)"/>
+      <path id="opacity" class="human-brain-medical-svg-3" d="M50.605,12.515,8.327,54.784C10.347,68.809,15.034,79.26,20.1,84.6,26.85,91.7,32.925,98.2,32.925,110.245a30.577,30.577,0,0,1-6.412,19.235l9.435,6.46L104.989,66.9Z" transform="translate(-7.279 21.194)"/>
+      <circle id="layer2" class="human-brain-medical-svg-4" cx="38.47" cy="38.47" r="38.47" transform="translate(32.058 22.441)"/>
+      <path id="layer1" class="human-brain-medical-svg-1" d="M62.47,27.823H49.647V15H36.823V27.823H24V40.647H36.823V53.47H49.647V40.647H62.47Z" transform="translate(27.293 26.676)"/>
+    </g>
+  </g>
+</svg>

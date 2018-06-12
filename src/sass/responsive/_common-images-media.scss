@@ -39,6 +39,10 @@
 
 @media (max-width: $breakpoint-md) {
 
+  .img--center-md {
+    text-align: center;
+  }
+
   .img-bgc-wrap__rounded {
     height: 360px;
     max-width: 360px;

@@ -8710,10 +8710,12 @@ h6 {
   justify-content: space-between; }
 
 .flex-column {
-  flex: 1; }
+  flex: 1;
+  width: 100%; }
 
 .flex-column-2 {
-  flex: 2; }
+  flex: 2;
+  width: 100%; }
 
 .flex-column__wrap {
   padding: 0 5%; }
@@ -8925,6 +8927,9 @@ h6 {
 
 .human-brain-cloud--bgc-white .human-brain-cloud-svg-1 {
   fill: #fff; }
+
+.dna-molecule--bgc-silver .dna-molecule-svg-1 {
+  fill: #f3f3f3; }
 
 .boxes__wrap {
   width: 100%;
@@ -10415,7 +10420,7 @@ textarea.form-control {
   padding-bottom: 80px; }
 
 .science-p-section-fifth .slider__wrap {
-  padding: 70px 30px 125px; }
+  padding: 70px 0 125px; }
 .science-p-section-fifth .carousel {
   width: 100%; }
 .science-p-section-fifth .carousel-control {
@@ -10820,6 +10825,9 @@ textarea.form-control {
     width: 330px;
     height: 330px; } }
 @media (max-width: 960px) {
+  .img--center-md {
+    text-align: center; }
+
   .img-bgc-wrap__rounded {
     height: 360px;
     max-width: 360px; }
@@ -11290,6 +11298,9 @@ textarea.form-control {
 
   .science-p-head__img--first {
     padding-bottom: 30px; } }
+@media (max-width: 768px) {
+  .science-p-section-fifth .slider__wrap {
+    padding: 0 0 125px; } }
 a[ng-click] {
   cursor: pointer; }
 

@@ -14,4 +14,10 @@ angular.module( 'ixLayer.science', [
 
   .controller( 'ScienceCtrl', ['$scope', function ProductsCtrl( $scope) {
 
+    $scope.$watch('active', function(newIndex, oldIndex) {
+      if (Number.isFinite(newIndex) && newIndex!==oldIndex) {
+        $scope.slideIndex = newIndex + 1;
+      }
+    });
+
   }]);

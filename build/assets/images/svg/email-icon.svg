@@ -1,0 +1,50 @@
+<svg class="email-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310">
+  <defs>
+    <style>
+      .email-icon-svg-1, .email-icon-svg-3, .email-icon-svg-5 {
+        fill: #fff;
+      }
+
+      .email-icon-svg-2 {
+        fill: #41c5eb;
+      }
+
+      .email-icon-svg-3 {
+        opacity: 0.5;
+      }
+
+      .email-icon-svg-4 {
+        fill: #000064;
+        opacity: 0.1;
+      }
+
+      .email-icon-svg-5 {
+        opacity: 0.3;
+      }
+
+      .email-icon-svg-6 {
+        filter: url(#Ellipse_1360);
+      }
+    </style>
+    <filter id="Ellipse_1360" x="0" y="0" width="310" height="310" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1116" data-name="Group 1116" transform="translate(-997 -553.379)">
+    <g id="Group_920" data-name="Group 920" transform="translate(-5045.814 6528)">
+      <g class="email-icon-svg-6" transform="matrix(1, 0, 0, 1, 6042.81, -5974.62)">
+        <circle id="Ellipse_1360-2" data-name="Ellipse 1360" class="email-icon-svg-1" cx="125" cy="125" r="125" transform="translate(30 30)"/>
+      </g>
+    </g>
+    <g id="mail-8540_ec44553f-dcc2-42e8-a40e-efcd34b33fa0" transform="translate(1091.5 652)">
+      <path id="layer1" class="email-icon-svg-2" d="M2,12H110V84H2Z" transform="translate(0 0)"/>
+      <path id="opacity" class="email-icon-svg-3" d="M41.883,47,78.094,84V12Z" transform="translate(31.906 0)"/>
+      <path id="opacity-2" data-name="opacity" class="email-icon-svg-4" d="M2,12V84L38.238,47.03Z" transform="translate(0 0)"/>
+      <path id="opacity-3" data-name="opacity" class="email-icon-svg-5" d="M56,48.642,38.238,31.472,2,68.442H110l-36.211-37Z" transform="translate(0 15.558)"/>
+    </g>
+  </g>
+</svg>

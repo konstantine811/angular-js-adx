@@ -3564,7 +3564,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          </p>\n" +
     "        </div>\n" +
     "        <div class=\"txt__wrap anim-content-transition\">\n" +
-    "          <p class=\"txt txt-blue-dark\">\n" +
+    "          <p class=\"txt-middle txt-blue-dark\">\n" +
     "            Having support can be very helpful when making behavior changes. Your relatives or friends may benefit\n" +
     "            from hearing about your experience, and may wish to consider ApoE testing themselves.\n" +
     "          </p>\n" +
@@ -3574,10 +3574,10 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "  </div>\n" +
     "  \n" +
     "  <!--section-second-->\n" +
-    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"img__wrap--float-right hide-table anim-content-transition\">\n" +
-    "        <ng-include src=\"'./assets/images/svg/molekul-blue.svg'\"></ng-include>\n" +
+    "      <div class=\"title__wrap anim-content-transition\">\n" +
+    "        <h2 class=\"txt-blue-dark\">Key points to consider before talking to friends or family about your results\n" +
+    "        </h2>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h3 class=\"txt-blue-dark\">Do you and they have the support in place if there are questions?\n" +
@@ -3593,6 +3593,9 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          </p>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "      <div class=\"img__wrap txt-center\">\n" +
+    "        <ng-include class=\"img img-large\" src=\"'./assets/images/svg/sharing-family.svg'\"></ng-include>\n" +
+    "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h3 class=\"txt-blue-dark\">It is possible for your relatives to have a different ApoE variant than you?\n" +
     "        </h3>\n" +
@@ -3604,15 +3607,14 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "        </p>\n" +
     "      </div>\n" +
     "    </div>\n" +
-    "  </div>\n" +
     "  <!--end section-second-->\n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h1 class=\"txt-blue-dark txt-center\">You are not in this alone. ADx Healthcare provides\n" +
+    "      <h2 class=\"txt-blue-dark txt-center\">You are not in this alone. ADx Healthcare provides\n" +
     "        genetics counselors to go over your report and\n" +
     "        answer any questions you have.\n" +
-    "      </h1>\n" +
+    "      </h2>\n" +
     "      <div class=\"button__wrap button--center\">\n" +
     "        <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
     "      </div>\n" +
@@ -3629,7 +3631,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__over\">\n" +
     "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-bold txt-gray anim-content-transition\">Overview</div>\n" +
+    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Overview</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
     "          <a href=\"\" class=\"download-button\"></a>\n" +
@@ -3638,7 +3640,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <h2 class=\"txt-blue-dark anim-content-transition\">Welcome back</h2>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
-    "          <p class=\"sub-header-txt txt-black\">\n" +
+    "          <p class=\"txt txt-black\">\n" +
     "            You can view your results at anytime, or choose one of the options below.\n" +
     "          </p>\n" +
     "        </div>\n" +
@@ -3651,62 +3653,68 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "  \n" +
     "  \n" +
     "  <!--section first-->\n" +
-    "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h1 class=\"txt-blue-dark\">More products for your health</h1>\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-4 anim-content-transition\">\n" +
-    "          <div class=\"img__wrap\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/notebook-border-round-box-shadow.svg'\"></ng-include>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap\">\n" +
-    "            <h3 class=\"txt-blue-dark txt-center\">Genetic counseling</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"sub-header-txt__wrap txt-wrap-under-button\">\n" +
-    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "              ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h2 class=\"txt-blue-dark\">More products for your health</h2>\n" +
+    "      </div>\n" +
+    "      <div class=\"container-flex container-flex--column-sm\">\n" +
+    "        <div class=\"flex-column anim-content-transition\">\n" +
+    "          <div class=\"flex-column__wrap\">\n" +
+    "            <div class=\"img__wrap txt-center\">\n" +
+    "              <ng-include class=\"img img-middle--md\" src=\"'./assets/images/svg/doctor.svg'\"></ng-include>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "            <div class=\"title__wrap\">\n" +
+    "              <h3 class=\"txt-blue-dark txt-center\">Genetic counseling</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-wrap-under-button\">\n" +
+    "              <div class=\"txt txt-black txt-center\">\n" +
+    "                ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-sm-4 anim-content-transition\">\n" +
-    "          <div class=\"img__wrap\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/flask-border-round-box-shadow.svg'\"></ng-include>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap\">\n" +
-    "            <h3 class=\"txt-blue-dark txt-center\">Refer a friend</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"sub-header-txt__wrap txt-wrap-under-button\">\n" +
-    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "              Worried about someone else in your family or know someone else who could benefits from taking the ADx ApoE genetic test?\n" +
+    "        <div class=\"flex-column anim-content-transition\">\n" +
+    "          <div class=\"flex-column__wrap\">\n" +
+    "            <div class=\"img__wrap txt-center\">\n" +
+    "              <ng-include class=\"img img-middle--md\" src=\"'./assets/images/svg/human-plus.svg'\"></ng-include>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "            <div class=\"title__wrap\">\n" +
+    "              <h3 class=\"txt-blue-dark txt-center\">Refer a friend</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-wrap-under-button\">\n" +
+    "              <div class=\"txt txt-black txt-center\">\n" +
+    "                Worried about someone else in your family or know someone else who could benefits from taking the ADx ApoE genetic test?\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-sm-4 anim-content-transition\">\n" +
-    "          <div class=\"img__wrap\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/table-border-round-box-shadow.svg'\"></ng-include>\n" +
-    "          </div>\n" +
-    "          <div class=\"title__wrap\">\n" +
-    "            <h3 class=\"txt-blue-dark txt-center\">Contact us</h3>\n" +
-    "          </div>\n" +
-    "          <div class=\"sub-header-txt__wrap txt-wrap-under-button\">\n" +
-    "            <div class=\"sub-header-txt txt-black txt-center\">\n" +
-    "              ADx is dedicated to helping you with any questions you may have.\n" +
-    "              Contact us with your questions or send us comments!\n" +
+    "        <div class=\"flex-column anim-content-transition\">\n" +
+    "          <div class=\"flex-column__wrap\">\n" +
+    "            <div class=\"img__wrap txt-center\">\n" +
+    "              <ng-include class=\"img img-middle--md\" src=\"'./assets/images/svg/email-icon.svg'\"></ng-include>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap button--center\">\n" +
-    "            <button class=\"bt-round bt-round--orange\">View results</button>\n" +
+    "            <div class=\"title__wrap\">\n" +
+    "              <h3 class=\"txt-blue-dark txt-center\">Contact us</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-wrap-under-button\">\n" +
+    "              <div class=\"txt txt-black txt-center\">\n" +
+    "                ADx is dedicated to helping you with any questions you may have.\n" +
+    "                Contact us with your questions or send us comments!\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap button--center\">\n" +
+    "              <button class=\"bt-round bt-round--orange\">View results</button>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
-    "  </div>\n" +
     "  <!--end section first-->\n" +
     "</div>");
 }]);
@@ -4054,21 +4062,21 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "      <div class=\"container-lg\">\n" +
     "        <div class=\"science-p__wrap\">\n" +
     "          <div class=\"science-p-head__title txt-center anim-content-transition\">\n" +
-    "            <h1 class=\"txt-blue\">How it works - Introduction</h1>\n" +
+    "            <h3 class=\"txt-blue\">How it works - Introduction</h3>\n" +
     "          </div>\n" +
     "          <div class=\"science-p-head__body anim-content-transition\">\n" +
     "            <div class=\"science-p-head-body__row\">\n" +
-    "              <div class=\"container-flex align-items--center container-flex--column-reverse-lg\">\n" +
+    "              <div class=\"container-flex align-items--center container-flex--column-reverse-sm\">\n" +
     "                <div class=\"flex-column anim-content-transition\">\n" +
     "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <div class=\"science-p-head__img anim-content-transition\">\n" +
-    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain.svg'\"></ng-include>\n" +
+    "                    <div class=\"science-p-head__img anim-content-transition img--center-sm\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-medical.svg'\"></ng-include>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"flex-column-2 anim-content-transition\">\n" +
     "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <h4 class=\"txt-blue-dark\">What is dementia?</h4>\n" +
+    "                    <h3 class=\"txt-blue-dark\">What is dementia?</h3>\n" +
     "                    <div class=\"txt__wrap\">\n" +
     "                      <p class=\"txt txt-black\">Dementia is the result of a malfunction of nerve cells in the brain, which in turn lose their connections with other neurons, ultimately resulting in a disconnect between parts of the brain that used to work together.  These malfunctions are the result of damage to or changes in the brain. Together your genetics, other medical conditions, and lifestyle and environmental factors influence your brain health and function, and are thus associated with your risk of developing dementia.</p>\n" +
     "                    </div>\n" +
@@ -4077,10 +4085,12 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"science-p-head-body__row anim-content-transition\">\n" +
-    "              <div class=\"container-flex align-items--center container-flex--column-lg\">\n" +
+    "              <div class=\"container-flex align-items--center container-flex--column-sm\">\n" +
     "                <div class=\"flex-column-2 anim-content-transition\">\n" +
     "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <h4 class=\"txt-blue-dark anim-content-transition\">What is Alzheimer’s disease?</h4>\n" +
+    "                    <div class=\"txt--space-top-sm\">\n" +
+    "                      <h3 class=\"txt-blue-dark anim-content-transition\">What is Alzheimer’s disease?</h3>\n" +
+    "                    </div>\n" +
     "                    <div class=\"txt__wrap anim-content-transition\">\n" +
     "                      <p class=\"txt txt-black\">Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combina.</p>\n" +
     "                    </div>\n" +
@@ -4088,8 +4098,8 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                </div>\n" +
     "                <div class=\"flex-column anim-content-transition\">\n" +
     "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <div class=\"science-p-head__img txt-right\">\n" +
-    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/pink-brain.svg'\"></ng-include>\n" +
+    "                    <div class=\"science-p-head__img txt-right img--center-sm\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/molecule.svg'\"></ng-include>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -4118,7 +4128,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            <div class=\"container-flex container-flex--column-md\">\n" +
     "              <div class=\"flex-column align-vertical--center\">\n" +
     "                <div class=\"flex-column__wrap\">\n" +
-    "                  <div class=\"science-p-section-second__img\">\n" +
+    "                  <div class=\"science-p-section-second__img img--center-md\">\n" +
     "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -4187,11 +4197,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "      <div class=\"section-box-silver\">\n" +
     "        <div class=\"container-lg\">\n" +
     "          <div class=\"science-p-section-third__wrap\">\n" +
-    "            <div class=\"container-flex  container-flex--column-lg\">\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
     "              <div class=\"flex-column-2\">\n" +
     "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h2 class=\"txt-blue\">Why learn if you are at risk for\n" +
-    "                    Alzheimer’s disease?</h2>\n" +
+    "                  <h3 class=\"txt-blue\">Why learn if you are at risk for\n" +
+    "                    Alzheimer’s disease?</h3>\n" +
     "                  <div class=\"txt__wrap\">\n" +
     "                    <p class=\"txt txt-black\">\n" +
     "                      Research indicates that lifestyle behaviors across your life span may contribute to the development of Alzheimer’s disease. Also, changes occur in the brain up to two decades before the first symptoms develop. Because Alzheimer’s is believed to be caused by a combination of environmental, genetic, medical, and lifestyle factors, learning your genetic risk can help you determine how aggressively you need to make lifestyle changes to reduce your risk. The earlier in your life that you commit to living a cognitively healthy lifestyle, the more you can reduce your risk for or delay the development of Alzheimer’s disease.\n" +
@@ -4201,7 +4211,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "              <div class=\"flex-column align-vertical--center\">\n" +
     "                <div class=\"flex-column__wrap\">\n" +
-    "                  <div class=\"science-p-head__img txt-right\">\n" +
+    "                  <div class=\"science-p-head__img txt-right img--center-sm\">\n" +
     "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/medical-table-with-pen.svg'\"></ng-include>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -4268,12 +4278,12 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            <div class=\"container-flex align-items--center\">\n" +
     "              <div class=\"flex-column\">\n" +
     "                <div class=\"txt-left\">\n" +
-    "                  <h2>How it works?</h2>\n" +
+    "                  <h3>How it works?</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"flex-column\">\n" +
     "                <div class=\"txt-right\">\n" +
-    "                  <h4 class=\"txt-blue-dark\">Part 1</h4>\n" +
+    "                  <h4 class=\"txt-blue-dark\">Part {{slideIndex}}</h4>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -4282,21 +4292,21 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "        <div class=\"container-lg\">\n" +
     "          <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
     "            <div uib-slide index=\"0\">\n" +
-    "              <div class=\"slider__wrap align-items--center\">\n" +
-    "                <div class=\"container-flex align-items--center container-flex--column-reverse-md\">\n" +
+    "              <div class=\"slider__wrap\">\n" +
+    "                <div class=\"container-flex align-items--center container-flex--column-sm\">\n" +
     "                  <div class=\"flex-column txt-left\">\n" +
     "                    <div class=\"flex-column__wrap\">\n" +
-    "                      <div class=\"img__wrap--md\">\n" +
-    "                        <ng-include class=\"img-middle\" src=\"'./assets/images/svg/key.svg'\"></ng-include>\n" +
+    "                      <div class=\"img__wrap img--center-sm\">\n" +
+    "                        <ng-include class=\"img img-middle\" src=\"'./assets/images/svg/key-blue-dark.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                  <div class=\"flex-column-2\">\n" +
     "                    <div class=\"flex-column__wrap\">\n" +
     "                      <div class=\"container-exs\">\n" +
-    "                        <div class=\"txt-left txt-center-md\">\n" +
-    "                          <h2 class=\"txt-blue-3\" >Security and privacy\n" +
-    "                            Your DNA is just for you</h2>\n" +
+    "                        <div class=\"txt-left txt-center-md txt--space-top-sm\">\n" +
+    "                          <h3 class=\"txt-blue-3\" >Security and privacy\n" +
+    "                            Your DNA is just for you</h3>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt__wrap\">\n" +
     "                          <p class=\"txt txt-black txt-left\">\n" +
@@ -4307,15 +4317,15 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
-    "                <div class=\"section__wrap-md\">\n" +
-    "                  <div class=\"container-flex align-items--center container-flex--column-md\">\n" +
+    "                <div class=\"\">\n" +
+    "                  <div class=\"container-flex align-items--center container-flex--column-reverse-sm\">\n" +
     "                    <div class=\"flex-column-2\">\n" +
     "                      <div class=\"flex-column__wrap\">\n" +
     "                        <div class=\"container-exs\">\n" +
     "                          <div class=\"txt-right txt-center-md title-space-top-md\">\n" +
-    "                            <h2 class=\"txt-blue-3\">Your privacy is our priority</h2>\n" +
+    "                            <h3 class=\"txt-blue-3\">Your privacy is our priority</h3>\n" +
     "                          </div>\n" +
-    "                          <div class=\"txt__wrap txt-right\">\n" +
+    "                          <div class=\"txt__wrap txt-right txt-left-sm\">\n" +
     "                            <p class=\"txt txt-black\">\n" +
     "                              We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
     "                              prior written consen\n" +
@@ -4332,8 +4342,8 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </div>\n" +
     "                    <div class=\"flex-column txt-right\">\n" +
     "                      <div class=\"flex-column__wrap\">\n" +
-    "                        <div class=\"img__wrap--md\">\n" +
-    "                          <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection.svg'\"></ng-include>\n" +
+    "                        <div class=\"img__wrap img--center-sm\">\n" +
+    "                          <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection-blue-dark.svg'\"></ng-include>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -4342,50 +4352,129 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "            </div>\n" +
     "            <div uib-slide index=\"1\">\n" +
-    "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "                <div class=\"flex-column\">\n" +
-    "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <div class=\"\">\n" +
-    "                      <h2 class=\"txt-blue-dark\">Your privacy is our priority</h2>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"txt__wrap\">\n" +
-    "                      <p class=\"txt txt-black  txt-left\">\n" +
-    "                        We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
-    "                        prior written consen\n" +
-    "                      </p>\n" +
-    "                      <div class=\"txt--indent-small\">\n" +
+    "              <div class=\"slider__wrap\">\n" +
+    "                <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                  <div class=\"flex-column\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"img__wrap txt-center\">\n" +
+    "                        <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/test-tube.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark\">Easy to use</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-center\">\n" +
     "                        <p class=\"txt txt-black\">\n" +
-    "                          From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
-    "                          sure your data remains safe.\n" +
+    "                          As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
+    "                          have you supported each step of the way.\n" +
+    "                          *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
     "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
+    "                  <div class=\"flex-column anim-content-transition\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"flex-column__wrap\">\n" +
+    "                        <div class=\"img__wrap txt-center\">\n" +
+    "                          <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/first-aid-kit.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap\">\n" +
+    "                          <h3 class=\"txt-blue-dark\">Data-Driven</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap txt-center\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Doctor ordered: At ADx Healthcare, we believe you should be in control of what health information you want to learn and whom you share it with. We also believe it is best to have a physician still be a part of the path, to ensure you understand what the results will and will not tell you, so they can help you decide if the test is a good fit for you. We offer comprehensive, physician-supervised genetic testing from the privacy of your own home.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
-    "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                <div class=\"section__wrap-sm\">\n" +
+    "                  <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                    <div class=\"flex-column\">\n" +
+    "                      <div class=\"flex-column__wrap\">\n" +
+    "                        <div class=\"img__wrap txt-center\">\n" +
+    "                          <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/email-checked.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap\">\n" +
+    "                          <h3 class=\"txt-blue-dark\">Access Online </h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap txt-center\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Once your results are ready, you will receive an e-mail from ADx Healthcare.  When you are ready, simply log-in to your account to access your private results.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"flex-column\">\n" +
+    "                      <div class=\"flex-column__wrap\">\n" +
+    "                        <div class=\"img__wrap txt-center\">\n" +
+    "                          <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap\">\n" +
+    "                          <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap txt-center\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Share your results with your physician, and your family members. In your secure results section, you can also access a PDF version of your Alzheimer’s disease ApoE genetic test results.  You can download and print this document to share with your healthcare provider.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div uib-slide index=\"2\">\n" +
-    "              <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "                <div class=\"flex-column\">\n" +
-    "                  <div class=\"flex-column__wrap\">\n" +
-    "                    <div class=\"\">\n" +
-    "                      <h3 class=\"blue-dark\">Our mission Slider-3</h3>\n" +
+    "              <div class=\"slider__wrap\">\n" +
+    "                <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                  <div class=\"flex-column\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"img__wrap\">\n" +
+    "                        <ng-include class=\"img-middle\" src=\"'./assets/images/svg/molecules-3.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                      <div class=\"txt txt-black txt-left\">\n" +
-    "                        At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                  </div>\n" +
+    "                  <div class=\"flex-column-2\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-left\">\n" +
+    "                        <h3 class=\"txt-blue\">\n" +
+    "                          The latest science (results you can trust)\n" +
+    "                        </h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-left\">\n" +
+    "                        <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                          Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
+    "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
-    "                <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "                  <div class=\"flex-column\">\n" +
-    "                    <ng-include src=\"'./assets/images/svg/medical-bgc-drop.svg'\"></ng-include>\n" +
+    "                <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                  <div class=\"flex-column align-vertical--center\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"img__wrap\">\n" +
+    "                        <ng-include class=\"img-middle dna-molecule--bgc-silver\" src=\"'./assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"flex-column-2\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-left\">\n" +
+    "                        <h3 class=\"txt-blue\">\n" +
+    "                          More about the test\n" +
+    "                        </h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-left\">\n" +
+    "                        <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                        </p>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +

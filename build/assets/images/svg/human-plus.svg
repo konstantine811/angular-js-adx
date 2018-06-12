@@ -1,0 +1,45 @@
+<svg class="human-plus-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310">
+  <defs>
+    <style>
+      .human-plus-svg-1 {
+        fill: #fff;
+      }
+
+      .human-plus-svg-2 {
+        fill: #49bcff;
+      }
+
+      .human-plus-svg-3 {
+        fill: #fbaa51;
+      }
+
+      .human-plus-svg-4 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .human-plus-svg-5 {
+        filter: url(#Ellipse_1359);
+      }
+    </style>
+    <filter id="Ellipse_1359" x="0" y="0" width="310" height="310" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1115" data-name="Group 1115" transform="translate(-674 -553.379)">
+    <g id="Group_919" data-name="Group 919" transform="translate(-4894.906 6528)">
+      <g class="human-plus-svg-5" transform="matrix(1, 0, 0, 1, 5568.91, -5974.62)">
+        <circle id="Ellipse_1359-2" data-name="Ellipse 1359" class="human-plus-svg-1" cx="125" cy="125" r="125" transform="translate(30 30)"/>
+      </g>
+    </g>
+    <g id="add-user-7681_f2ab5277-6be5-4b3c-a5a9-2234aa62518a" transform="translate(784 639)">
+      <path id="layer2" class="human-plus-svg-2" d="M65.63,77.3c-13.312-2.625-14.156-5.937-14.156-8.575v-3.3a23.264,23.264,0,0,0,6.6-11.544c4.075,0,6.6-4.947,6.6-9.895,0-1.248,0-6.6-3.3-6.6C69.614,13.552,45.6,4.413,28.386,15.957c-7.269,0-9.27,10.884-6.6,21.439-3.3,0-3.3,5.348-3.3,6.6,0,4.947,2.5,9.895,6.577,9.895h.02a23.459,23.459,0,0,0,6.6,11.544v3.3c0,2.639-.825,6.006-14.156,8.575C2,80.286,2,91.816,2,91.816H81.158S81.158,80.355,65.63,77.3Z" transform="translate(0 5.184)"/>
+      <path id="layer1" class="human-plus-svg-3" d="M73.035,16.193H61.491V4.649a1.649,1.649,0,0,0-3.3,0V16.193H46.649a1.649,1.649,0,1,0,0,3.3H58.193V31.035a1.649,1.649,0,1,0,3.3,0V19.491H73.035a1.649,1.649,0,1,0,0-3.3Z" transform="translate(27.912 0)"/>
+      <path id="opacity" class="human-plus-svg-4" d="M31.684,44v3.3c0,2.639-.825,6.006-14.156,8.575C2,58.855,2,70.386,2,70.386H25.088L51.474,44a17.251,17.251,0,0,1-9.895,3.3A17.251,17.251,0,0,1,31.684,44Z" transform="translate(0 26.614)"/>
+    </g>
+  </g>
+</svg>

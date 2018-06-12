@@ -1,0 +1,36 @@
+<svg class="molecules-3-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 414">
+  <defs>
+    <style>
+      .molecules-3-svg-1 {
+        fill: #f3f3f3;
+      }
+
+      .molecules-3-svg-2 {
+        fill: #556685;
+      }
+
+      .molecules-3-svg-3 {
+        fill: #fe6363;
+      }
+
+      .molecules-3-svg-4 {
+        fill: #4db9e8;
+      }
+
+      .molecules-3-svg-5 {
+        fill: #cc92ca;
+      }
+    </style>
+  </defs>
+  <g id="Group_1122" data-name="Group 1122" transform="translate(-7337 -1333)">
+    <circle id="Ellipse_1730" data-name="Ellipse 1730" class="molecules-3-svg-1" cx="207" cy="207" r="207" transform="translate(7337 1333)"/>
+    <g id="compound-8807_27ddff0e-7063-410f-94c0-8534e5aa8fdc" transform="translate(7445 1441)">
+      <path id="layer4" class="molecules-3-svg-2" d="M88.329,51.012a3.232,3.232,0,0,1-2.87-4.735l16.878-32.392a3.237,3.237,0,1,1,5.747,2.98L91.2,49.273a3.232,3.232,0,0,1-2.867,1.739ZM16.786,127.206a3.232,3.232,0,0,1-2.22-5.582L44.815,93.036a3.234,3.234,0,1,1,4.444,4.7L19.01,126.324a3.232,3.232,0,0,1-2.224.882ZM130.6,138.92a3.232,3.232,0,0,1-2.366-1.031L94.015,101.042a3.232,3.232,0,1,1,4.735-4.4l34.221,36.847a3.232,3.232,0,0,1-2.366,5.433ZM52.453,54.765a3.232,3.232,0,0,1-2.366-1.031l-22.2-23.918a3.232,3.232,0,1,1,4.735-4.4l22.2,23.918a3.232,3.232,0,0,1-2.366,5.433Z" transform="translate(25.787 22.628)"/>
+      <circle id="layer3" class="molecules-3-svg-3" cx="32.321" cy="32.321" r="32.321" transform="translate(66.643 66.643)"/>
+      <circle id="layer2" class="molecules-3-svg-4" cx="19.393" cy="19.393" r="19.393" transform="translate(121.589 2)"/>
+      <circle id="layer2-2" data-name="layer2" class="molecules-3-svg-4" cx="22.625" cy="22.625" r="22.625" transform="translate(2 137.749)"/>
+      <circle id="layer1" class="molecules-3-svg-5" cx="12.929" cy="12.929" r="12.929" transform="translate(34.321 27.857)"/>
+      <circle id="layer1-2" data-name="layer1" class="molecules-3-svg-5" cx="22.625" cy="22.625" r="22.625" transform="translate(150.678 150.678)"/>
+    </g>
+  </g>
+</svg>
