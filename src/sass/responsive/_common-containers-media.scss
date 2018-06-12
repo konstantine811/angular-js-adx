@@ -34,7 +34,9 @@
 }
 
 @media (max-width: $breakpoint-sm) {
-
+  .section__wrap-sm--not-space-sm {
+    padding: 0;
+  }
   .container-flex--column-sm {
     flex-flow: column;
   }

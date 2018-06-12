@@ -1,0 +1,56 @@
+<svg class="notebook-checked-svg" id="Group_674" data-name="Group 674" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.337 199.337">
+  <defs>
+    <style>
+      .notebook-checked-svg-1 {
+        fill: #f6f6f4;
+      }
+
+      .notebook-checked-svg-2 {
+        fill: #6f8fa1;
+      }
+
+      .notebook-checked-svg-3 {
+        fill: #a5a5a5;
+      }
+
+      .notebook-checked-svg-4 {
+        fill: #e1eef9;
+      }
+
+      .notebook-checked-svg-5 {
+        fill: #7b8baf;
+      }
+
+      .notebook-checked-svg-6, .notebook-checked-svg-7 {
+        fill: #000064;
+      }
+
+      .notebook-checked-svg-6 {
+        opacity: 0.15;
+      }
+
+      .notebook-checked-svg-7 {
+        opacity: 0.12;
+      }
+
+      .notebook-checked-svg-8 {
+        fill: #41c5eb;
+      }
+
+      .notebook-checked-svg-9 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <ellipse id="Ellipse_1604" data-name="Ellipse 1604" class="notebook-checked-svg-1" cx="99.669" cy="99.669" rx="99.669" ry="99.669" transform="translate(0)"/>
+  <g id="copied-to-clipboard-8269_21a728d6-4f04-4a0e-8273-ed37af780fd5" transform="translate(64.595 50.444)">
+    <path id="layer3" class="notebook-checked-svg-2" d="M43.088,8.467h-5.01a8.08,8.08,0,0,0-15.837,0h-5.01A3.232,3.232,0,0,0,14,11.7v9.7H46.32V11.7A3.232,3.232,0,0,0,43.088,8.467Z" transform="translate(5.392 -1.995)"/>
+    <path id="layer5" class="notebook-checked-svg-3" d="M60.176,17.7V47.041A25.694,25.694,0,0,1,73.1,43.552V11.232A3.232,3.232,0,0,0,69.872,8H53.712v9.7ZM48.094,75.872H14.928V17.7h6.464V8H5.232A3.232,3.232,0,0,0,2,11.232V85.567A3.232,3.232,0,0,0,5.232,88.8h50.81a25.814,25.814,0,0,1-7.947-12.928Z" transform="translate(-2 1.704)"/>
+    <path id="layer4" class="notebook-checked-svg-4" d="M55.248,14H10V72.176H43.167A25.678,25.678,0,0,1,55.248,43.345Z" transform="translate(2.928 5.4)"/>
+    <path id="layer3-2" data-name="layer3" class="notebook-checked-svg-5" d="M38.008,24.232H18.616a1.616,1.616,0,0,1,0-3.232H38.008a1.616,1.616,0,1,1,0,3.232Zm0,16.16H18.616a1.616,1.616,0,0,1,0-3.232H38.008a1.616,1.616,0,1,1,0,3.232Zm0,16.16H18.616a1.616,1.616,0,0,1,0-3.232H38.008a1.616,1.616,0,1,1,0,3.232Z" transform="translate(7.24 9.712)"/>
+    <path id="opacity" class="notebook-checked-svg-6" d="M15.232,17.7V8A3.232,3.232,0,0,0,12,11.232v9.7H44.32V17.7Z" transform="translate(4.16 1.704)"/>
+    <path id="opacity-2" data-name="opacity" class="notebook-checked-svg-7" d="M67.284,72.343V53L49,34.715,11.372,72.343Z" transform="translate(3.773 18.16)"/>
+    <ellipse id="layer2" class="notebook-checked-svg-8" cx="25.856" cy="25.856" rx="25.856" ry="25.856" transform="translate(45.248 45.256)"/>
+    <path id="layer1" class="notebook-checked-svg-9" d="M48.757,59.517l-9.285-9.294a1.616,1.616,0,1,1,2.287-2.284l6.861,6.867L60.4,41.544a1.619,1.619,0,0,1,2.424,2.146Z" transform="translate(20.791 22.031)"/>
+  </g>
+</svg>

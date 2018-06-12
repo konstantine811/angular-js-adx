@@ -1,0 +1,50 @@
+<svg class="notebook-medical-dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 368">
+  <defs>
+    <style>
+      .notebook-medical-dark-svg-1 {
+        fill: #f6f6f4;
+      }
+
+      .notebook-medical-dark-svg-2 {
+        fill: #a5a5a5;
+      }
+
+      .notebook-medical-dark-svg-3, .notebook-medical-dark-svg-6 {
+        fill: #000064;
+      }
+
+      .notebook-medical-dark-svg-3 {
+        opacity: 0.12;
+      }
+
+      .notebook-medical-dark-svg-4 {
+        fill: #e1eef9;
+      }
+
+      .notebook-medical-dark-svg-5 {
+        fill: #063f5f;
+      }
+
+      .notebook-medical-dark-svg-6 {
+        opacity: 0.16;
+      }
+
+      .notebook-medical-dark-svg-7 {
+        fill: #7b8baf;
+      }
+    </style>
+  </defs>
+  <g id="Group_1116" data-name="Group 1116" transform="translate(-174 -1460)">
+    <circle id="Ellipse_1637" data-name="Ellipse 1637" class="notebook-medical-dark-svg-1" cx="184" cy="184" r="184" transform="translate(174 1460)"/>
+    <g id="medical-chart-8785_eca53414-9911-487d-af90-a4ef9143f9b0" transform="translate(282.234 1549.074)">
+      <path id="layer4" class="notebook-medical-dark-svg-2" d="M152.51,7H114.933a15.326,15.326,0,0,1,5.944,12.653v9.49H44.959v-9.49A15.3,15.3,0,0,1,50.779,7H13.327A6.327,6.327,0,0,0,7,13.327V174.652a6.327,6.327,0,0,0,6.327,6.327H152.51a6.327,6.327,0,0,0,6.327-6.327V13.327A6.327,6.327,0,0,0,152.51,7Z" transform="translate(-7 8.832)"/>
+      <path id="opacity" class="notebook-medical-dark-svg-3" d="M7,30.954V163.836a6.327,6.327,0,0,0,6.327,6.326H120.877l18.98-18.98L25.98,12Z" transform="translate(-7 19.648)"/>
+      <path id="layer3" class="notebook-medical-dark-svg-4" d="M107.9,12h18.98V151.183H13V12H31.98v6.327H107.9Z" transform="translate(5.98 19.648)"/>
+      <path id="layer2" class="notebook-medical-dark-svg-5" d="M79.12,14.664H72.478a15.816,15.816,0,0,0-31,0H34.835A14.943,14.943,0,0,0,19.019,30.48v9.49H94.937V30.48A15.1,15.1,0,0,0,79.12,14.664Z" transform="translate(18.94 -1.995)"/>
+      <path id="opacity-2" data-name="opacity" class="notebook-medical-dark-svg-6" d="M16.018,24.221v9.49H91.936v-9.49H25.508v-9.49a18.03,18.03,0,0,1,.816-5.457A14.734,14.734,0,0,0,16.018,24.221Z" transform="translate(12.451 13.753)"/>
+      <path id="layer2-2" data-name="layer2" class="notebook-medical-dark-svg-7" d="M90.592,47.327H24.163a3.163,3.163,0,0,1,0-6.327H90.592a3.163,3.163,0,0,1,0,6.327Zm0,22.143H24.163a3.163,3.163,0,0,1,0-6.326H90.592a3.163,3.163,0,0,1,0,6.326Z" transform="translate(23.286 82.383)"/>
+      <path id="opacity-3" data-name="opacity" class="notebook-medical-dark-svg-3" d="M63.659,20.014,13,70.67v63.176h6.326L98.408,54.765Z" transform="translate(5.98 36.985)"/>
+      <path id="layer1" class="notebook-medical-dark-svg-5" d="M74.612,35.816H58.8V20H39.816V35.816H24V54.8H39.816V70.612H58.8V54.8H74.612Z" transform="translate(29.775 36.954)"/>
+    </g>
+  </g>
+</svg>

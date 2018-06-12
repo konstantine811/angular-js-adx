@@ -28,6 +28,10 @@
     min-width: 112px;
   }
 
+  .bt-round.bt-round--lg {
+    padding: 5px 38px;
+  }
+
 
   .status-progressbar-txt {
     display: none;
@@ -134,6 +138,9 @@
 }
 
 @media (max-width: $breakpoint-md) {
+  .button__wrap.button__wrap--left-md {
+    text-align: left;
+  }
 
   .status-progressbar-item.active:before {
     width: 14vw;
@@ -224,6 +231,17 @@
     width: 42px;
     height: 42px;
     background-size: 18px;
+  }
+
+  .comments-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .comments-button__inner {
+    font-size: 19px;
+    top: 12px;
+    left: 12px;
   }
 
 }

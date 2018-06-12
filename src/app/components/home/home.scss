@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   background-image: url("../assets/images/home-page/home-head-bg.png");
-  background-position: 0px 100%;
+  background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 183px 0 0;
@@ -11,6 +11,12 @@
 
 .home-head__wrap {
  display: flex;
+}
+
+.head-title {
+  max-width: 487px;
+  widtH: 100%;
+  height: auto;
 }
 
 .head-title__wrap {
@@ -89,13 +95,6 @@
   padding-top: 117px;
 }
 
-.home-section-first-content__first, .home-section-first-content__second  {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
-
 .home-section-first-content__second {
   flex-flow: row-reverse;
   padding-top: 45px;
@@ -131,6 +130,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 235px;
+  padding: 100px 0;
 }
 
 .home-section-second-bottom__wrap {

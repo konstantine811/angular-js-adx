@@ -582,8 +582,9 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"home-head__wrap\">\n" +
     "        <div class=\"head-title__wrap\">\n" +
     "          <div class=\"head-title anim-content-transition\">\n" +
-    "            <h1>Finding answers for Alzheimer’s disease begins with knowing your genetic risk!\n" +
-    "            </h1>\n" +
+    "            <h2>Alzheimer's disease\n" +
+    "              know you risk\n" +
+    "            </h2>\n" +
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap anim-content-transition\">\n" +
@@ -599,7 +600,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      <a href=\"#anchor\" smooth-scroll ng-include=\"'./assets/images/svg/arrow-down.svg'\"  class=\"arrow-down\"></a>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <div class=\"home-head-bottom\">\n" +
+    "  <div class=\"home-head-bottom hide-xs-mobile\">\n" +
     "    <div class=\"container-lg\">\n" +
     "      <div class=\"home-head-bottom__wrap\">\n" +
     "        <div class=\"home-head-bottom__title anim-content-transition\">\n" +
@@ -619,47 +620,55 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "    <div class=\"container-lg\">\n" +
     "      <div class=\"home-section-first__wrap\">\n" +
     "        <div class=\"home-section-first__title\">\n" +
-    "          <h1 class=\"txt-blue\">Information about the product</h1>\n" +
+    "          <h2 class=\"txt-blue\">Information about the product</h2>\n" +
     "        </div>\n" +
     "        <div class=\"home-section-first__title-about\">\n" +
-    "          <div class=\"sub-header-txt txt-black\">Whether you are 35 or 75, your Alzheimer’s genetics are the same.\n" +
+    "          <div class=\"txt-large txt-black\">Whether you are 35 or 75, your Alzheimer’s genetics are the same.\n" +
     "            <br> It is never too early or too late to learn your genetic risk for late-onset Alzheimer’s disease!</div>\n" +
     "        </div>\n" +
     "        <div class=\"home-section-first__content\">\n" +
-    "          <div class=\"home-section-first-content__first\">\n" +
-    "            <div class=\"home-section-first-content__txt-content\">\n" +
-    "              <div class=\"title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">Why should I take this test?</h3>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap\">\n" +
-    "                <div class=\"txt txt-black\">\n" +
-    "                  Changes begin happening in the brain about two decades before the first symptoms of memory decline. Your lifestyle, environment, and other medical conditions, along with your genetics and age influence your cognitive health. Don’t wait until your memory begins to fade. Find out your genetic risk for late-onset Alzheimer’s disease early, so you have the time to consider your options and make lifestyle changes that feel right for you. For individuals at high risk for Alzheimer’s disease, early action can make a difference.\n" +
+    "          <div class=\"container-flex container-flex--column-reverse-md\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">Why should I take this test?</h3>\n" +
     "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"home-section-first-content__image\">\n" +
-    "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/test-tubes-with-flask.svg'\"></ng-include>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"home-section-first-content__second\">\n" +
-    "            <div class=\"home-section-first-content__txt-content\">\n" +
-    "              <div class=\"title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">What will the test tell me</h3>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap\">\n" +
-    "                <div class=\"txt txt-black\">\n" +
-    "                  Your ApoE test results will explain which combination of the ApoE alleles you have, and what the associated risk of Alzheimer’s disease development is based on your ApoE alleles.\n" +
-    "                  <div class=\"txt--indent\">\n" +
-    "                    The test will also tell you how your lifetime risk for developing Alzheimer’s disease changes as you age.\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt txt-black\">\n" +
+    "                    Changes begin happening in the brain about two decades before the first symptoms of memory decline. Your lifestyle, environment, and other medical conditions, along with your genetics and age influence your cognitive health. Don’t wait until your memory begins to fade. Find out your genetic risk for late-onset Alzheimer’s disease early, so you have the time to consider your options and make lifestyle changes that feel right for you. For individuals at high risk for Alzheimer’s disease, early action can make a difference.\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"home-section-first-content__image\">\n" +
-    "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/notebook-bgc-blue.svg'\"></ng-include>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap txt-center\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/human-brain-medical-blue-dark.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-flex container-flex--column-md\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap txt-center\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/notebook-medical-dark.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h3 class=\"txt-blue-dark\">What will the test tell me</h3>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt txt-black\">\n" +
+    "                    Your ApoE test results will explain which combination of the ApoE alleles you have, and what the associated risk of Alzheimer’s disease development is based on your ApoE alleles.\n" +
+    "                    <div class=\"txt--indent\">\n" +
+    "                      The test will also tell you how your lifetime risk for developing Alzheimer’s disease changes as you age.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -723,16 +732,16 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"home-section-second__title-blue\">\n" +
-    "        <div class=\"title-blue__inner\">\n" +
-    "          <h1 class=\"txt-blue-dark\">From the privacy of your own home.  Simple saliva test.</h1>\n" +
+    "        <div class=\"title-blue__inner txt-center\">\n" +
+    "          <div class=\"txt-blue-dark title-first\">Slogan</div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"container-lg\">\n" +
-    "        <div class=\"row section__wrap\">\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"home-section-second__physician-review\">\n" +
+    "        <div class=\"container-flex section__wrap-sm section__wrap-sm--not-space-sm container-flex--column-sm\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
     "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -740,16 +749,16 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                </h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <div class=\"txt txt-black\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
     "                  A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.  If they need any additional information, they will reach out to you.\n" +
-    "                </div>\n" +
+    "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"home-section-second__spit\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
     "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/test-tubes-with-flask-blue.svg'\"></ng-include>\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/test-tube.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark txt-center\">\n" +
@@ -757,18 +766,18 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                </h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <div class=\"txt txt-black txt-center\">\n" +
+    "                <p class=\"txt txt-black txt-center\">\n" +
     "                  Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
-    "                </div>\n" +
+    "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"row row-padding-top\">\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"home-section-second__results\">\n" +
+    "        <div class=\"container-flex row-padding-top container-flex--column-sm\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
     "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-yellow-bgc-rounded.svg'\"></ng-include>\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/notebook-checked.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -776,16 +785,16 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                </h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <div class=\"txt txt-black\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
     "                  Obtain your results privately and securely online. We’ll help you schedule your free genetic counseling session if you would like to review your results with a genetic counselor. You can also print a copy of your results if you want to share them with family or your doctor.\n" +
-    "                </div>\n" +
+    "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"col-sm-6\">\n" +
-    "            <div class=\"home-section-second__take-action\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
     "              <div class=\"img__wrap txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/clapperboard--dark.svg'\"></ng-include>\n" +
     "              </div>\n" +
     "              <div class=\"title__wrap txt-center\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
@@ -793,12 +802,10 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                </h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <div class=\"txt txt-black\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
     "                  Get started reducing your risk for Alzheimer’s disease and improving your cognitive health by understanding your genetic risk.\n" +
-    "                  <div class=\"txt--indent\">\n" +
-    "                    The Alzheimer’s ApoE genetic test assesses the most common gene associated with genetic risk for late-onset (occurring after age 65) Alzheimer’s disease.  This test does not evaluate the rare “familial” Alzheimer’s disease mutations in PS1, PS2 or APP, which are associated with autosomal dominant early-onset Alzheimer’s disease, a rare subtype of the disease.\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
+    "                  The Alzheimer’s ApoE genetic test assesses the most common gene associated with genetic risk for late-onset (occurring after age 65) Alzheimer’s disease.  This test does not evaluate the rare “familial” Alzheimer’s disease mutations in PS1, PS2 or APP, which are associated with autosomal dominant early-onset Alzheimer’s disease, a rare subtype of the disease.\n" +
+    "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -806,26 +813,30 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "      <div class=\"home-section-second__bottom\">\n" +
     "        <div class=\"container-lg\">\n" +
-    "          <div class=\"home-section-second-bottom__wrap\">\n" +
-    "            <div class=\"home-section-second-bottom__img\">\n" +
-    "              <div class=\"img__wrap\">\n" +
-    "                <ng-include class=\"img-large\" src=\"'./assets/images/svg/flask-silver-bgc-rounded.svg'\"></ng-include>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"home-section-second-bottom__content\">\n" +
-    "              <div class=\"title__wrap\">\n" +
-    "                <h1 class=\"txt-blue-dark title__wrap--md-center\">Science</h1>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap\">\n" +
-    "                <div class=\"txt\">\n" +
-    "                  The Alzheimer’s ApoE test is a single gene test that looks at your ApoE-related genetic risk for Alzheimer’s disease. In addition to genetics, your Alzheimer’s disease risk is also influenced by your  other medical conditions, age, gender, and environmental and lifestyle factors.\n" +
-    "                  <div class=\"txt--indent\">\n" +
-    "                    ApoE comes in three forms: ApoE-e2, ApoE-e3, and ApoE-e4. Our Alzheimer’s ApoE genetic test combines your ApoE - related genetics with your age to help assess your Alzheimer’s disease risk. Other factors such as gender, medical health and lifestyle habits also influence your Alzheimer’s disease risk. We do not take these factors into your genetics risk.  Identifying your overall risk can help you decide how aggressively you want to address your cognitive health.\n" +
-    "                  </div>\n" +
+    "          <div class=\"container-flex align-items--center container-flex--column-md\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"img__wrap img--center-md\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'./assets/images/svg/microscope.svg'\"></ng-include>\n" +
     "                </div>\n" +
     "              </div>\n" +
-    "              <div class=\"button__wrap\">\n" +
-    "                <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Learn more</a>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap\">\n" +
+    "                <div class=\"title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark\">Science</h2>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <div class=\"txt\">\n" +
+    "                    The Alzheimer’s ApoE test is a single gene test that looks at your ApoE-related genetic risk for Alzheimer’s disease. In addition to genetics, your Alzheimer’s disease risk is also influenced by your  other medical conditions, age, gender, and environmental and lifestyle factors.\n" +
+    "                    <div class=\"txt--indent\">\n" +
+    "                      ApoE comes in three forms: ApoE-e2, ApoE-e3, and ApoE-e4. Our Alzheimer’s ApoE genetic test combines your ApoE - related genetics with your age to help assess your Alzheimer’s disease risk. Other factors such as gender, medical health and lifestyle habits also influence your Alzheimer’s disease risk. We do not take these factors into your genetics risk.  Identifying your overall risk can help you decide how aggressively you want to address your cognitive health.\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"button__wrap button__wrap--left-md\">\n" +
+    "                  <a ui-sref=\"\" class=\"bt-round bt-round--lg bt-round--blue-dark\">Learn more</a>\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -837,15 +848,15 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "  <!--section third-->\n" +
     "  <div class=\"home-section-third section-box-shadow\">\n" +
     "    <div class=\"title__wrap txt-center\">\n" +
-    "      <h1 class=\"txt-blue-dark\">What people say about us</h1>\n" +
+    "      <h2 class=\"txt-blue-dark\">What people say about us</h2>\n" +
     "    </div>\n" +
     "    <div class=\"sub-header-txt__wrap txt-center\">\n" +
-    "      <div class=\"sub-header-txt txt-black\">\n" +
+    "      <div class=\"txt-large txt-black\">\n" +
     "        ApoE is the most important piece of the puzzle.\n" +
     "      </div>\n" +
     "    </div>\n" +
     "    <div class=\"home-section-third__boxes\">\n" +
-    "      <div class=\"boxes__wrap\">\n" +
+    "      <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "        <div class=\"box box-orange\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Tracy Smith</h3>\n" +
@@ -859,7 +870,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box box-blue-dark\">\n" +
+    "        <div class=\"box box-blue-dark hide-mobile\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Daniel Trevor</h3>\n" +
     "          </div>\n" +
@@ -872,7 +883,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box box-blue\">\n" +
+    "        <div class=\"box box-blue hide-table\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Gloria Sanchez</h3>\n" +
     "          </div>\n" +
@@ -896,7 +907,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        <h3 class=\"txt-blue txt-center\">Frequently asked questions</h3>\n" +
     "        <h1 class=\"txt-blue txt-center\">We care about you</h1>\n" +
     "        <div class=\"sub-header-txt__wrap\">\n" +
-    "          <div class=\"sub-header-txt txt-center\">\n" +
+    "          <div class=\"txt txt-center\">\n" +
     "            Our customer support team is available\n" +
     "            by email or chat, and is happy to answer your\n" +
     "            questions about your test kit, results, and more.\n" +
@@ -2506,11 +2517,32 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition  txt-left-sm\">\n" +
-    "        <h1 class=\"txt-blue-dark anim-content-transition\">Your result </h1>\n" +
+    "       <div class=\"title__wrap\">\n" +
+    "         <h1 class=\"txt-blue-dark anim-content-transition\">Your result </h1>\n" +
+    "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
@@ -2659,11 +2691,32 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          <div class=\"txt txt-bold txt-gray\">About page</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">About Alzheimer’s disease</h2>\n" +
+    "       <div class=\"title__wrap\">\n" +
+    "         <h2 class=\"txt-blue-dark anim-content-transition\">About Alzheimer’s disease</h2>\n" +
+    "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            What do we know about Late-onset Alzheimer’s disease?\n" +
@@ -2813,11 +2866,32 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "          <div class=\"txt txt-bold txt-gray\">Lifestyle</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title  txt-left-sm anim-content-transition\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle & other factors</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle & other factors</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
     "            Lifestyle and other factors can also influence the\n" +
@@ -3122,11 +3196,32 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Next steps</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">Next steps</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">Next steps</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"txt txt-black\">\n" +
     "            Now that you know your genetic risk it’s time\n" +
@@ -3223,11 +3318,32 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "          <div class=\"txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h1 class=\"txt-blue-dark anim-content-transition\">General Questions</h1>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">General Questions</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"txt txt-black anim-content-transition\">\n" +
     "            “You are not in this alone. ADx Healthcare provides\n" +
@@ -3326,11 +3442,32 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">Science</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">Science</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"txt txt-black anim-content-transition\">\n" +
     "            The Alzheimer’s ApoE test is a single gene test that\n" +
@@ -3552,11 +3689,32 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"txt txt-black\">\n" +
     "            You may want to share your results or your experience with family or friends\n" +
@@ -3634,11 +3792,32 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Overview</div>\n" +
     "        </div>\n" +
     "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <a href=\"\" class=\"download-button\"></a>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
+    "          <div class=\"result-button-head__wrap\">\n" +
+    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div  class=\"download-button\"></div>\n" +
+    "              </div>\n" +
+    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
+    "              </span>\n" +
+    "            </a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
-    "        <h2 class=\"txt-blue-dark anim-content-transition\">Welcome back</h2>\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h2 class=\"txt-blue-dark anim-content-transition\">Welcome back</h2>\n" +
+    "        </div>\n" +
     "        <div class=\"title__wrap anim-content-transition\">\n" +
     "          <p class=\"txt txt-black\">\n" +
     "            You can view your results at anytime, or choose one of the options below.\n" +

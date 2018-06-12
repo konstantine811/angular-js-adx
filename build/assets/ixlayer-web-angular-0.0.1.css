@@ -7770,7 +7770,8 @@ body {
   width: 100%;
   height: auto;
   padding-left: 143px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
 .test-ok {
   min-width: 70px;
@@ -8262,6 +8263,24 @@ button[disabled].bt-round {
   background-size: 29px;
   background-position: 50% 48%; }
 
+.comments-button {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #063f5f;
+  background-repeat: no-repeat;
+  background-size: 29px;
+  background-position: 50% 48%;
+  position: relative; }
+
+.comments-button__inner {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  font-size: 31px;
+  color: #fff; }
+
 .progressbar-wrap {
   counter-reset: step;
   max-width: 997px;
@@ -8530,7 +8549,7 @@ h1, .title-first {
   font-family: Roboto, sans-serif;
   font-size: 36pt;
   font-weight: 500;
-  line-height: 43px;
+  line-height: 60px;
   color: #fff;
   margin: 0;
   padding: 0; }
@@ -8931,6 +8950,9 @@ h6 {
 .dna-molecule--bgc-silver .dna-molecule-svg-1 {
   fill: #f3f3f3; }
 
+.doctor--bgc-silver .doctor-svg-1 {
+  fill: #f3f3f3; }
+
 .boxes__wrap {
   width: 100%;
   height: auto;
@@ -9277,13 +9299,18 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   background-image: url("../assets/images/home-page/home-head-bg.png");
-  background-position: 0px 100%;
+  background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 183px 0 0; }
 
 .home-head__wrap {
   display: flex; }
+
+.head-title {
+  max-width: 487px;
+  widtH: 100%;
+  height: auto; }
 
 .head-title__wrap {
   max-width: 986px;
@@ -9347,12 +9374,6 @@ ul.box__wrap {
   height: auto;
   padding-top: 117px; }
 
-.home-section-first-content__first, .home-section-first-content__second {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto; }
-
 .home-section-first-content__second {
   flex-flow: row-reverse;
   padding-top: 45px; }
@@ -9382,7 +9403,8 @@ ul.box__wrap {
   background-image: url("../assets/images/home-page/bgc-section-second.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 235px; }
+  margin-top: 235px;
+  padding: 100px 0; }
 
 .home-section-second-bottom__wrap {
   width: 100%;
@@ -10174,6 +10196,14 @@ textarea.form-control {
   height: auto;
   padding-top: 50px; }
 
+.result-button-head__wrap {
+  display: inline-block; }
+
+.download__wrap {
+  display: flex;
+  width: 256px;
+  align-items: center; }
+
 .pre-result {
   padding-bottom: 43px; }
 
@@ -10541,6 +10571,9 @@ textarea.form-control {
     padding: 5px 20px;
     min-width: 112px; }
 
+  .bt-round.bt-round--lg {
+    padding: 5px 38px; }
+
   .status-progressbar-txt {
     display: none; }
 
@@ -10620,6 +10653,9 @@ textarea.form-control {
   .status-progressbar-item:nth-of-type(6) .status-progressbar-txt {
     left: -37vw; } }
 @media (max-width: 960px) {
+  .button__wrap.button__wrap--left-md {
+    text-align: left; }
+
   .status-progressbar-item.active:before {
     width: 14vw; }
 
@@ -10683,7 +10719,16 @@ textarea.form-control {
   .download-button {
     width: 42px;
     height: 42px;
-    background-size: 18px; } }
+    background-size: 18px; }
+
+  .comments-button {
+    width: 42px;
+    height: 42px; }
+
+  .comments-button__inner {
+    font-size: 19px;
+    top: 12px;
+    left: 12px; } }
 @media (max-width: 468px) {
   .container-md-button-flex {
     justify-content: center;
@@ -10718,6 +10763,9 @@ textarea.form-control {
 
   .txt-center-md {
     text-align: center; }
+
+  .txt-left-md {
+    text-align: left; }
 
   .title-space-top-md {
     padding-top: 30px; }
@@ -10765,6 +10813,9 @@ textarea.form-control {
   .container-flex--column-reverse-md {
     flex-flow: column-reverse; } }
 @media (max-width: 768px) {
+  .section__wrap-sm--not-space-sm {
+    padding: 0; }
+
   .container-flex--column-sm {
     flex-flow: column; }
 
@@ -11028,6 +11079,9 @@ textarea.form-control {
   .home-section-fourth__content {
     padding-bottom: 50px; } }
 @media (max-width: 960px) {
+  .home-section-second__bottom {
+    padding: 0 0 50px; }
+
   .home-head-image__wrap {
     top: 89px; }
 
@@ -11066,10 +11120,12 @@ textarea.form-control {
     text-align: center;
     padding-bottom: 27px; } }
 @media (max-width: 768px) {
+  .row-padding-top {
+    padding-top: 0; }
+
   .head-title__wrap {
     max-width: 100%;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0 auto; }
 
   .home-head__wrap {
     padding: 25px 0 71px; }
@@ -11218,7 +11274,10 @@ textarea.form-control {
     min-height: 0; }
 
   .product-p-items {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .download__wrap {
+    width: 60px; } }
 @media (max-width: 960px) {
   .side-navbar {
     height: 65px;

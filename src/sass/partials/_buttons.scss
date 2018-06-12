@@ -416,6 +416,26 @@ button[disabled].bt-round {
   background-position: 50% 48%;
 }
 
+.comments-button {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: $blue-dark;
+  background-repeat: no-repeat;
+  background-size: 29px;
+  background-position: 50% 48%;
+  position: relative;
+}
+
+.comments-button__inner {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  font-size: 31px;
+  color: $white;
+}
+
 
 //progressbar
 .progressbar-wrap {

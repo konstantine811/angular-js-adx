@@ -65,6 +65,9 @@
 }
 
 @media (max-width: $breakpoint-md) {
+  .home-section-second__bottom {
+    padding: 0 0 50px;
+  }
   .home-head-image__wrap {
     top: 89px;
   }
@@ -106,10 +109,13 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+  .row-padding-top {
+    padding-top: 0;
+  }
+
   .head-title__wrap {
     max-width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
   .home-head__wrap {
     padding: 25px 0 71px;

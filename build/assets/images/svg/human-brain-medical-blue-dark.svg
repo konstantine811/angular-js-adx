@@ -1,0 +1,35 @@
+<svg class="human-brain-medical-blue-dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.919 367.919">
+  <defs>
+    <style>
+      .human-brain-medical-blue-dark-svg-1 {
+        fill: #f6f6f4;
+      }
+
+      .human-brain-medical-blue-dark-svg-2 {
+        fill: #41c5eb;
+      }
+
+      .human-brain-medical-blue-dark-svg-3 {
+        fill: #000064;
+        opacity: 0.15;
+      }
+
+      .human-brain-medical-blue-dark-svg-4 {
+        fill: #063f5f;
+      }
+
+      .human-brain-medical-blue-dark-svg-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_1115" data-name="Group 1115" transform="translate(-732.185 -1043.467)">
+    <circle id="Ellipse_1636" data-name="Ellipse 1636" class="human-brain-medical-blue-dark-svg-1" cx="183.96" cy="183.96" r="183.96" transform="translate(732.185 1043.467)"/>
+    <g id="mental-illness-8797_75a5ad18-e90c-43dc-a8b4-38780eb4e3ce" transform="translate(840.09 1132.521)">
+      <path id="layer3" class="human-brain-medical-blue-dark-svg-2" d="M86.441,191.629a.792.792,0,0,0,1.176-.336c2.323-5.426,14.758-33.984,18.64-33.984,6.339,0,18.818,6.339,28.526,6.339s7.886-22.453,10.916-31.61,4.932-14.526,4.932-19.1c12.133-1.22,9.933-5.011,8.415-8.672s-14.754-20.276-14.754-23.024c0-3.17,3.17-12.913,3.17-19.017C147.461,34.444,131.613,2,77.762,2,24.983,2,8,40.856,8,62.222S14,99.575,20.678,106.6s12.678,13.452,12.678,25.357a30.231,30.231,0,0,1-6.339,19.017Z" transform="translate(-8 -2)"/>
+      <path id="opacity" class="human-brain-medical-blue-dark-svg-3" d="M50.127,12.515,8.327,54.306c2,13.867,6.631,24.2,11.642,29.477C26.641,90.8,32.647,97.235,32.647,109.14a30.231,30.231,0,0,1-6.339,19.017l9.328,6.387,68.26-68.26Z" transform="translate(-7.291 20.813)"/>
+      <circle id="layer2" class="human-brain-medical-blue-dark-svg-4" cx="38.035" cy="38.035" r="38.035" transform="translate(31.696 22.187)"/>
+      <path id="layer1" class="human-brain-medical-blue-dark-svg-5" d="M62.035,27.678H49.357V15H36.678V27.678H24V40.357H36.678V53.035H49.357V40.357H62.035Z" transform="translate(26.713 26.204)"/>
+    </g>
+  </g>
+</svg>

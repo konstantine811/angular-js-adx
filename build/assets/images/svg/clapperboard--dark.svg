@@ -1,0 +1,42 @@
+<svg class="clapperboard--dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.337 199.337">
+  <defs>
+    <style>
+      .clapperboard--dark-svg-1 {
+        fill: #f6f6f4;
+      }
+
+      .clapperboard--dark-svg-2, .clapperboard--dark-svg-5 {
+        fill: #063f5f;
+      }
+
+      .clapperboard--dark-svg-3 {
+        fill: #fff;
+      }
+
+      .clapperboard--dark-svg-4 {
+        fill: #e1f0ff;
+      }
+
+      .clapperboard--dark-svg-5 {
+        opacity: 0.15;
+      }
+
+      .clapperboard--dark-svg-6 {
+        fill: #e6e6e6;
+      }
+    </style>
+  </defs>
+  <g id="Group_1117" data-name="Group 1117" transform="translate(-803 -3496)">
+    <ellipse id="Ellipse_1605" data-name="Ellipse 1605" class="clapperboard--dark-svg-1" cx="99.669" cy="99.669" rx="99.669" ry="99.669" transform="translate(803 3496)"/>
+    <g id="movie-clapperboard-8158_3fbaba15-589b-4f5c-a4ad-ff88fe7ed90e" transform="translate(851 3544.903)">
+      <rect id="layer2" class="clapperboard--dark-svg-2" width="99.031" height="62.718" rx="2" transform="translate(2.027 35.947)"/>
+      <rect id="layer3" class="clapperboard--dark-svg-3" width="66.021" height="13.204" rx="2" transform="translate(18.505 68.958)"/>
+      <path id="layer1" class="clapperboard--dark-svg-4" d="M23.213,23l-13.2,13.2H39.718L52.922,23H23.213Zm72.674,0H82.632l-13.2,13.2H95.887Z" transform="translate(5.21 12.947)"/>
+      <path id="opacity" class="clapperboard--dark-svg-5" d="M87.816,23H2.04V36.2h99.031V23H87.816Z" transform="translate(0.026 12.947)"/>
+      <path id="layer2-2" data-name="layer2" class="clapperboard--dark-svg-2" d="M11.979,13.906c-12.111,2.575-9.8,15.582-9.8,15.582l29.65-6.3L16.115,13.026Z" transform="translate(0 6.459)"/>
+      <path id="layer1-2" data-name="layer1" class="clapperboard--dark-svg-6" d="M10.553,15.205l15.71,10.161L52.23,19.846,36.568,9.676,10.553,15.205Z" transform="translate(5.564 4.28)"/>
+      <path id="layer2-3" data-name="layer2" class="clapperboard--dark-svg-2" d="M51.281,6.462l-24.966,5.3,15.662,10.17,25.051-5.325L51.281,6.462Z" transform="translate(15.817 2.189)"/>
+      <path id="layer1-3" data-name="layer1" class="clapperboard--dark-svg-6" d="M71.373,5.8a3.286,3.286,0,0,0-3.932-2.624l-26,5.48L57.189,18.8l16.2-3.443Z" transform="translate(25.657 0)"/>
+    </g>
+  </g>
+</svg>
