@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.master', [
+angular.module( 'ixlayer.master', [
   'ui.router'
 ])
 

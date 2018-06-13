@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.products', [
+angular.module( 'ixlayer.products', [
   'ui.router',
   'ui.bootstrap',
   'ixlayer.api.products',

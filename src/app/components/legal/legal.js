@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.legal', [
+angular.module( 'ixlayer.legal', [
     'ui.router',
     'ui.bootstrap'
   ])

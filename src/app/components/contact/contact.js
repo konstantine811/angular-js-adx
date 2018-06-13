@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.contact', [
+angular.module( 'ixlayer.contact', [
     'ui.router',
     'ui.bootstrap'
   ])

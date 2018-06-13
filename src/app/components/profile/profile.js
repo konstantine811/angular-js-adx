@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.profile', [
+angular.module( 'ixlayer.profile', [
   'ui.router',
   'ixlayer.useraccess',
   'ui.bootstrap',

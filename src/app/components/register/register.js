@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.register', [
+angular.module( 'ixlayer.register', [
     'ui.router',
     'ixlayer.djangoAuth',
     'ui.bootstrap',

@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.changePassword', [
+angular.module( 'ixlayer.changepassword', [
     'ui.router',
     'ui.bootstrap'
   ])

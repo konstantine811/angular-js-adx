@@ -1,40 +1,13 @@
-/**
- * Base Hosts
- **/
-
-var hosts = {
-  prod: {
-    schema:   'https',
-    host:     'app.ixlayer.com'
-  },
-  stage: {
-    schema:   'https',
-    host:     'stage.ixlayer.com'
-  },
-  dev: {
-    schema:   'https',
-    host:     'dev.ixlayer.com'
-  },
-  local: {
-    schema:   'http',
-    host:     'localhost:8000'
-  }
-};
-
-/** Select the base host to be used **/
-var currentHost = hosts.stage;
-
-var restAPIBaseUrl = currentHost.schema + '://' + currentHost.host + '/api';
-
 
 angular.module( 'ixlayer.config.restangular', [
   'restangular',
   'ui.router',
+  'ixlayer.config',
   'ixlayer.errorhandling'
 ])
 
-  .config(['RestangularProvider', '$httpProvider', function(RestangularProvider, $httpProvider) {
-    RestangularProvider.setBaseUrl(restAPIBaseUrl);
+  .config(['RestangularProvider', '$httpProvider', 'appConfig', function(RestangularProvider, $httpProvider, appConfig) {
+    RestangularProvider.setBaseUrl(appConfig.restAPIBaseUrl);
     RestangularProvider.setRequestSuffix('/');
 
     $httpProvider.defaults.xsrfCookieName = 'csrftoken';

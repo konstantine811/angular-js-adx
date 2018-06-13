@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.login', [
+angular.module( 'ixlayer.login', [
     'ixlayer.useraccess',
     'ui.router',
     'ui.bootstrap'

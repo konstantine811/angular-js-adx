@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.FAQ', [
+angular.module( 'ixlayer.FAQ', [
     'ui.router',
     'ui.bootstrap'
   ])

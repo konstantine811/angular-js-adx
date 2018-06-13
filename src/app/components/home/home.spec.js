@@ -5,7 +5,7 @@
  * automatically.
  */
 describe( 'home section', function() {
-  beforeEach( module( 'ixLayer.home' ) );
+  beforeEach( module( 'ixlayer.home' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();

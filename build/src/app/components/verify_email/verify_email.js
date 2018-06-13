@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.verifyEmail', [
+angular.module( 'ixlayer.verifyemail', [
     'ixlayer.useraccess',
     'ui.router',
     'ui.bootstrap'

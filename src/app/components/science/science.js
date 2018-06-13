@@ -1,4 +1,4 @@
-angular.module( 'ixLayer.science', [
+angular.module( 'ixlayer.science', [
   'ui.router',
   'ui.bootstrap',
   'ngAnimate'

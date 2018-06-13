@@ -1,10 +1,7 @@
-/**
- * Created by nbalazs on 2/11/15.
- */
-
 
 angular.module('ixlayer.useraccess', [
     'restangular',
+    'ixlayer.config',
     'ixlayer.djangoAuth'
   ])
 
@@ -14,8 +11,8 @@ angular.module('ixlayer.useraccess', [
     MY_USERS: "me"
   })
 
-  .factory('userAccessSrv', ['Restangular', '$q', 'URL_PATH', '$log', '$state', 'djangoAuth',
-     function (Restangular, $q, URL_PATH, $log, $state, djangoAuth) {
+  .factory('userAccessSrv', ['Restangular', '$q', 'URL_PATH', '$log', '$state', 'djangoAuth', 'appConfig',
+     function (Restangular, $q, URL_PATH, $log, $state, djangoAuth, appConfig) {
 
     // callbacks
     var loginCallbacks = [];
@@ -61,7 +58,7 @@ angular.module('ixlayer.useraccess', [
     };
 
     var initURL = function () {
-      return djangoAuth.initialize(restAPIBaseUrl, false);
+      return djangoAuth.initialize(appConfig.restAPIBaseUrl, false);
     };
 
     var resetPassword = function (username) {
