@@ -4695,7 +4695,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                    <div class=\"txt__wrap\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
     "                            ApoE testing must be approved by your physician or other qualified health care provider.\n" +
-    "                            If you don’t have a health care provider ADx diagnostics can assist in helping you find a licensed provider.\n" +
+    "                            If you don’t have a health care provider ADx Healthcare can assist in helping you find a licensed provider.\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
@@ -4744,28 +4744,25 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"footer-bottom\">\n" +
     "        <div class=\"footer-bottom__wrap\">\n" +
     "          <div class=\"title__wrap\">\n" +
-    "            <h6 class=\"txt-blue-dark txt-center\">© 2017 ADx diagnostics. All rights reserved.</h6>\n" +
+    "            <h6 class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h6>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
-    "            <a href=\"\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
-    "            <a href=\"\" class=\"txt txt-blue-dark\">About Us</a>\n" +
+    "            <a ui-sref=\"master.contact\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
+    "            <a ui-sref=\"master.about\" class=\"txt txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
     "            <div class=\"link-icon__wrap\">\n" +
-    "              <a href=\"\" class=\"link-icon facebook\"></a>\n" +
+    "              <a href=\"https://www.facebook.com/adxhealthcare/\" class=\"link-icon facebook\"></a>\n" +
     "            </div>\n" +
     "            <div class=\"link-icon__wrap\">\n" +
-    "              <a href=\"\" class=\"link-icon twitter\"></a>\n" +
+    "              <a href=\"https://twitter.com/ADxHealthcare\" class=\"link-icon twitter\"></a>\n" +
     "            </div>\n" +
     "            <div class=\"link-icon__wrap\">\n" +
-    "              <a href=\"\" class=\"link-icon linkedIn\"></a>\n" +
+    "              <a href=\"https://www.linkedin.com/company/adxhealthcare/\" class=\"link-icon linkedIn\"></a>\n" +
     "            </div>\n" +
     "            <div class=\"link-icon__wrap\">\n" +
-    "              <a href=\"\" class=\"link-icon social\"></a>\n" +
+    "              <a href=\"https://www.instagram.com/adxhealthcare/\" class=\"link-icon instagram\"></a>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"footer-bottom__content-bottom\">\n" +
-    "            <div class=\"txt-small txt-black txt-center\">Good.life lets you chat with customers and give them real-time support.</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
