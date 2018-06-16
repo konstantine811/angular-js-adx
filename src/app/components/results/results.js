@@ -23,6 +23,9 @@ angular.module( 'ixlayer.results', [
         }],
         productStatus: ['productsService', '$stateParams', function (productsService, $stateParams) {
           return productsService.getProductStatus(parseInt($stateParams.id));
+        }],
+        results: ['resultsService', '$stateParams', function (resultsService, $stateParams) {
+          return resultsService.getResults(parseInt($stateParams.id));
         }]
       }
     })
@@ -106,8 +109,8 @@ angular.module( 'ixlayer.results', [
       });
   })
 
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo', '$window',
-    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo,  $window) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo', '$window', 'results',
+    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo,  $window, results) {
 
 
       $scope.results = null;

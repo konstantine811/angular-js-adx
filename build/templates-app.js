@@ -2702,7 +2702,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "            </a>\n" +
     "          </div>\n" +
     "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "            <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
     "              <div class=\"flex-column\">\n" +
     "                <div  class=\"download-button\"></div>\n" +
     "              </div>\n" +
@@ -2877,7 +2877,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "            </a>\n" +
     "          </div>\n" +
     "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "            <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
     "              <div class=\"flex-column\">\n" +
     "                <div  class=\"download-button\"></div>\n" +
     "              </div>\n" +
@@ -3207,7 +3207,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "            </a>\n" +
     "          </div>\n" +
     "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
+    "            <a hng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
     "              <div class=\"flex-column\">\n" +
     "                <div  class=\"download-button\"></div>\n" +
     "              </div>\n" +
