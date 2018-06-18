@@ -1,3 +1,9 @@
+@media (max-width: $breakpoint) {
+  .box-with-header-colored {
+    min-width: auto;
+  }
+}
+
 @media (max-width: $breakpoint-lg) {
   .box {
     height: auto;
@@ -19,6 +25,9 @@
 
   .boxes__wrap {
     padding: 0;
+  }
+  .box-colored-content {
+    padding: 4px 26px 30px;
   }
 }
 
@@ -50,6 +59,15 @@
 
 
 @media (max-width: $breakpoint-sm) {
+
+
+  .box-with-header-colored {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .box-colored-content {
+    padding: 30px 50px 70px;
+  }
 
   .boxes__wrap.boxes__wrap--large {
     flex-flow: wrap;

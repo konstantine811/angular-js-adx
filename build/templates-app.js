@@ -4,60 +4,58 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
   $templateCache.put("components/about/about.tpl.html",
     "<section class=\"about-page-header\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"container-lg\">\n" +
-    "      <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
-    "        <div uib-slide index=\"0\">\n" +
-    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition txt-left\">\n" +
-    "                <h1>Our mission</h1>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                <div class=\"txt txt-left\">\n" +
-    "                  At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"button__wrap text-left anim-content-transition\">\n" +
-    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
+    "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
+    "      <div uib-slide index=\"0\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"anim-content-transition txt-left\">\n" +
+    "              <h1>Our mission</h1>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap anim-content-transition\">\n" +
+    "              <div class=\"txt txt-left\">\n" +
+    "                At ADx Healthcare, we seek to contribute to the scientific advancement of Alzheimer’s disease healthcare through collaborative technology offerings and research contributions. We also aim to provide individuals, families and healthcare providers with answers for Alzheimer’s disease  through screenings, education, advocacy, and support.\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/medical-bgc-drop-dark.svg'\"></ng-include>\n" +
+    "            <div class=\"button__wrap text-left anim-content-transition\">\n" +
+    "              <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "        </div>\n" +
-    "        <div uib-slide index=\"1\">\n" +
-    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition txt-left\">\n" +
-    "                <div class=\"title-first\">ADx Healthcare</div>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                <div class=\"txt txt-left\">\n" +
-    "                  ADx Healthcare is a physician-owned company that provides individuals with personal access to their medical and genetic information by offering private pay testing, while still providing the highest standard of patient care.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/adx-dropped.svg'\"></ng-include>\n" +
-    "            </div>\n" +
+    "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/medical-bgc-drop-dark.svg'\"></ng-include>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div uib-slide index=\"2\">\n" +
-    "          <div class=\"slider__wrap align-items--center container-flex\">\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"anim-content-transition txt-left\">\n" +
-    "                <div class=\"title-first\">Our offerings</div>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap anim-content-transition\">\n" +
-    "                <div class=\"txt txt-left\">\n" +
-    "                  In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
-    "                </div>\n" +
+    "      </div>\n" +
+    "      <div uib-slide index=\"1\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"anim-content-transition txt-left\">\n" +
+    "              <div class=\"title-first\">ADx Healthcare</div>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap anim-content-transition\">\n" +
+    "              <div class=\"txt txt-left\">\n" +
+    "                ADx Healthcare is a physician-owned company that provides individuals with personal access to their medical and genetic information by offering private pay testing, while still providing the highest standard of patient care.\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/human-health-dropped.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/adx-dropped.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div uib-slide index=\"2\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"anim-content-transition txt-left\">\n" +
+    "              <div class=\"title-first\">Our offerings</div>\n" +
     "            </div>\n" +
+    "            <div class=\"txt__wrap anim-content-transition\">\n" +
+    "              <div class=\"txt txt-left\">\n" +
+    "                In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/human-health-dropped.svg'\"></ng-include>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -145,7 +143,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "              <p class=\"txt\">The ApoE gene comes in three variants – ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.  Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).  The ApoE4 form is a major risk factor for Alzheimer’s disease. </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "              <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Email: careers@adxhealthcare.com</span></a>\n" +
+    "              <a href=\"mailto:webmaster@example.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Jon Doe</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -870,7 +868,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box box-blue-dark hide-mobile\">\n" +
+    "        <div class=\"box box-blue-dark\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Daniel Trevor</h3>\n" +
     "          </div>\n" +
@@ -883,7 +881,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"data\">2018.01.12</div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"box box-blue hide-table\">\n" +
+    "        <div class=\"box box-blue\">\n" +
     "          <div class=\"box-title__wrap\">\n" +
     "            <h3 class=\"txt-blue-dark\">Gloria Sanchez</h3>\n" +
     "          </div>\n" +
@@ -1308,7 +1306,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "        <div class=\"container-lg\">\n" +
     "          <div class=\"txt__wrap--border-bottom container-flex container-flex--column-reverse-md align-items--center\">\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"img__wrap--md\">\n" +
+    "              <div class=\"img__wrap--md img--center-md\">\n" +
     "                <img class=\"img img--md\" src=\"./assets/images/products/female-doctor.png\" alt=\"\">\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1329,7 +1327,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "          </div>\n" +
     "          <div class=\"container-flex align-items--center txt__wrap  container-flex--column-reverse-md\">\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"img__wrap--md\">\n" +
+    "              <div class=\"img__wrap--md img--center-md\">\n" +
     "                <img class=\"img img--md\" src=\"./assets/images/products/icon-human.png\" alt=\"\">\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1344,7 +1342,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "          </div>\n" +
     "          <div class=\"container-flex align-items--center txt__wrap container-flex--column-md\">\n" +
     "            <div class=\"flex-column-2\">\n" +
-    "              <div class=\"container-sub-head container-sub-head--not-center\">\n" +
+    "              <div class=\"container-sub-head\">\n" +
     "                <h2 class=\"txt-blue-dark txt-left-space txt-center-md\">Detailed explanations</h2>\n" +
     "                <div class=\"txt__wrap txt-center-md\">\n" +
     "                  <p class=\"txt txt-black\">Your report will provide a detailed explanation of: </p>\n" +
@@ -1357,7 +1355,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column\">\n" +
-    "              <div class=\"img__wrap--md\">\n" +
+    "              <div class=\"img__wrap--md img--center-md\">\n" +
     "                <img class=\"img img--md\" src=\"./assets/images/products/doctor-and-patient.png\" alt=\"\">\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1370,7 +1368,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "      <div class=\"container-lg\">\n" +
     "        <div class=\"row__wrap--space-top\">\n" +
     "          <h3 class=\"txt-blue-dark txt-center\">The ADx advantage over it’s competitors</h3>\n" +
-    "          <div class=\"container-flex container-flex--column-lg-wrap\">\n" +
+    "          <div class=\"container-flex container-flex--column-sm\">\n" +
     "            <div class=\"box-wrap\">\n" +
     "              <div class=\"box-with-header-colored\">\n" +
     "                <div class=\"box-colored-head box-colored-head--blue-dark\">\n" +
