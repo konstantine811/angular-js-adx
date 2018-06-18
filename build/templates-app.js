@@ -1297,83 +1297,68 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "  \n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <section class=\"about-products-section-second anim-content-transition\">\n" +
-    "      <div class=\"container-round container-round--silver\">\n" +
-    "        <div class=\"container-lg container-flex container-flex--column-md\">\n" +
-    "          <button ng-click=\"setTab(1)\" ng-class=\"{'active': isSet(1)}\" class=\"bt-round bt-round--gray anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">About the test</span></button>\n" +
-    "          <button ng-click=\"setTab(2)\" ng-class=\"{'active': isSet(2)}\" class=\"bt-round bt-round--gray bt-space-top--md anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">Why ADx</span></button>\n" +
-    "          <button ng-click=\"setTab(3)\" ng-class=\"{'active': isSet(3)}\" class=\"bt-round bt-round--gray bt-space-top--md anim-content-transition\"><span class=\"txt-large txt-gray txt-bold\">Helix Lab partner</span></button>\n" +
+    "      <div class=\"container-round container-round--silver hide-mobile\">\n" +
+    "        <div class=\"container-lg container-flex\">\n" +
+    "          <a href=\"#about\" smooth-scroll class=\"bt-round bt-round--lg bt-round--gray bt-round--gray-hover-blue anim-content-transition\"><span class=\"txt-large txt-gray-2 txt-bold\">About the test</span></a>\n" +
+    "          <a href=\"#whyAdx\" smooth-scroll class=\"bt-round bt-round--lg bt-round--gray bt-round--gray-hover-blue anim-content-transition\"><span class=\"txt-large txt-gray-2 txt-bold\">Why ADx</span></a>\n" +
+    "          <a href=\"#labPartner\" smooth-scroll class=\"bt-round bt-round--lg bt-round--gray bt-round--gray-hover-blue  anim-content-transition\"><span class=\"txt-large txt-gray-2 txt-bold\">Helix Lab partner</span></a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"section-box-shadow section-box-shadow--space-inner anim-content-transition\">\n" +
     "        <div class=\"container-lg\">\n" +
-    "          <div  ng-show=\"isSet(1)\">\n" +
-    "            <div class=\"txt__wrap--border-bottom container-flex container-flex--column-reverse-md align-items--center\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"img__wrap--md\">\n" +
-    "                  <img class=\"img img--md\" src=\"./assets/images/products/female-doctor.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column-2\">\n" +
-    "                <div class=\"container-sub-head\">\n" +
-    "                  <h2 class=\"txt-blue-dark txt-center-md\">Is this test right for me?</h2>\n" +
-    "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black txt-center-md\">The Alzheimer’s ApoE genetic test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
+    "          <div class=\"txt__wrap--border-bottom container-flex container-flex--column-reverse-md align-items--center\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"img__wrap--md\">\n" +
+    "                <img class=\"img img--md\" src=\"./assets/images/products/female-doctor.png\" alt=\"\">\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"title__wrap\">\n" +
-    "              <h1 class=\"txt-blue txt-center\">Why should I take this test?</h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap\">\n" +
-    "              <p class=\"txt txt-black txt-center\">With knowledge comes power… the power to act and the power to plan.  Learning about genetic risk for Alzheimer’s disease isn’t for everyone, but if you are a proactive person who wants to be able to impact your future health as much as possible, then identifying your risk level for Alzheimer’s disease may be a good fit.  Having a reason to follow a set of lifestyle changes makes it easier to stick with it on those difficult days when you lack motivation. Learning your genetic risk for Alzheimer’s disease may be your first step towards protecting your future self.</p>\n" +
-    "            </div>\n" +
-    "            <div class=\"container-flex align-items--center txt__wrap  container-flex--column-reverse-md\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"img__wrap--md\">\n" +
-    "                  <img class=\"img img--md\" src=\"./assets/images/products/icon-human.png\" alt=\"\">\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column-2\">\n" +
-    "                <div class=\"container-sub-head\">\n" +
-    "                  <h2 class=\"txt-blue-dark txt-left-space txt-center-md\"> Actionable insights</h2>\n" +
-    "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black txt-center-md\">Along with your ApoE genotype, your report will include brain healthy lifestyle recommendations and links to support organizations and sources for more information on Alzheimer’s disease.</p>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"container-flex align-items--center txt__wrap container-flex--column-md\">\n" +
-    "              <div class=\"flex-column-2\">\n" +
-    "                <div class=\"container-sub-head container-sub-head--not-center\">\n" +
-    "                  <h2 class=\"txt-blue-dark txt-left-space txt-center-md\">Detailed explanations</h2>\n" +
-    "                  <div class=\"txt__wrap txt-center-md\">\n" +
-    "                    <p class=\"txt txt-black\">Your report will provide a detailed explanation of: </p>\n" +
-    "                    <p class=\"txt txt-black\">How ApoE works in your body;</p>\n" +
-    "                    <p class=\"txt txt-black\">What your ApoE genotype is;</p>\n" +
-    "                    <p class=\"txt txt-black\">How your risk for Alzheimer’s disease will change as you age;</p>\n" +
-    "                    <p class=\"txt txt-black\">How your risk for Alzheimer’s disease compares to the population average;</p>\n" +
-    "                    <p class=\"txt txt-black\">How you can get started making lifestyle changes to improve your cognitive health.</p>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"img__wrap--md\">\n" +
-    "                  <img class=\"img img--md\" src=\"./assets/images/products/doctor-and-patient.png\" alt=\"\">\n" +
+    "            <div class=\"flex-column-2\">\n" +
+    "              <div class=\"container-sub-head\">\n" +
+    "                <h2 class=\"txt-blue-dark txt-center-md\">Is this test right for me?</h2>\n" +
+    "                <div class=\"txt__wrap\">\n" +
+    "                  <p class=\"txt txt-black txt-center-md\">The Alzheimer’s ApoE genetic test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div  ng-show=\"isSet(2)\">\n" +
-    "            <div class=\"txt__wrap--border-bottom container-flex\">\n" +
-    "              <div class=\"flex\">\n" +
-    "                <img class=\"img\" src=\"./assets/images/products/\" alt=\"\">\n" +
+    "          <div id=\"whyAdx\" class=\"title__wrap\">\n" +
+    "            <h1 class=\"txt-blue txt-center\">Why should I take this test?</h1>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap\">\n" +
+    "            <p class=\"txt txt-black txt-center\">With knowledge comes power… the power to act and the power to plan.  Learning about genetic risk for Alzheimer’s disease isn’t for everyone, but if you are a proactive person who wants to be able to impact your future health as much as possible, then identifying your risk level for Alzheimer’s disease may be a good fit.  Having a reason to follow a set of lifestyle changes makes it easier to stick with it on those difficult days when you lack motivation. Learning your genetic risk for Alzheimer’s disease may be your first step towards protecting your future self.</p>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-flex align-items--center txt__wrap  container-flex--column-reverse-md\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"img__wrap--md\">\n" +
+    "                <img class=\"img img--md\" src=\"./assets/images/products/icon-human.png\" alt=\"\">\n" +
     "              </div>\n" +
-    "              <div class=\"flex\">\n" +
-    "                <h2 class=\"txt-blue-dark\">Is this test right for me?</h2>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column-2\">\n" +
+    "              <div class=\"container-sub-head\">\n" +
+    "                <h2 class=\"txt-blue-dark txt-left-space txt-center-md\"> Actionable insights</h2>\n" +
     "                <div class=\"txt__wrap\">\n" +
-    "                  <p class=\"txt txt-black\">The Alzheimer’s ApoE genetic test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>\n" +
+    "                  <p class=\"txt txt-black txt-center-md\">Along with your ApoE genotype, your report will include brain healthy lifestyle recommendations and links to support organizations and sources for more information on Alzheimer’s disease.</p>\n" +
     "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"container-flex align-items--center txt__wrap container-flex--column-md\">\n" +
+    "            <div class=\"flex-column-2\">\n" +
+    "              <div class=\"container-sub-head container-sub-head--not-center\">\n" +
+    "                <h2 class=\"txt-blue-dark txt-left-space txt-center-md\">Detailed explanations</h2>\n" +
+    "                <div class=\"txt__wrap txt-center-md\">\n" +
+    "                  <p class=\"txt txt-black\">Your report will provide a detailed explanation of: </p>\n" +
+    "                  <p class=\"txt txt-black\">How ApoE works in your body;</p>\n" +
+    "                  <p class=\"txt txt-black\">What your ApoE genotype is;</p>\n" +
+    "                  <p class=\"txt txt-black\">How your risk for Alzheimer’s disease will change as you age;</p>\n" +
+    "                  <p class=\"txt txt-black\">How your risk for Alzheimer’s disease compares to the population average;</p>\n" +
+    "                  <p class=\"txt txt-black\">How you can get started making lifestyle changes to improve your cognitive health.</p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"img__wrap--md\">\n" +
+    "                <img class=\"img img--md\" src=\"./assets/images/products/doctor-and-patient.png\" alt=\"\">\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1478,7 +1463,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "      </div>\n" +
     "    </section>\n" +
     "    \n" +
-    "    <section class=\"about-products-section-fourth\">\n" +
+    "    <section id=\"about\" class=\"about-products-section-fourth\">\n" +
     "      <div class=\"section-box-shadow section-box-shadow--space-inner-lg\">\n" +
     "        <div class=\"container-lg\">\n" +
     "          <h1 class=\"txt-blue txt-center\">Information about the product</h1>\n" +
@@ -1530,7 +1515,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "      </div>\n" +
     "    </section>\n" +
     "    \n" +
-    "    <div class=\"about-products-section-fifth\">\n" +
+    "    <div id=\"labPartner\" class=\"about-products-section-fifth\">\n" +
     "      <div class=\"section-box-shadow\">\n" +
     "        <div class=\"about-products-section-fifth__wrap\">\n" +
     "          <div class=\"container-lg\">\n" +

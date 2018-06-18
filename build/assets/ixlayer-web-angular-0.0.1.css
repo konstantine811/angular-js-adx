@@ -8123,6 +8123,13 @@ button[disabled].bt-round {
     .bt-round.bt-round--gray.active span.txt-large {
       color: #fff !important; }
 
+.bt-round.bt-round--gray-hover-blue:hover {
+  background-color: #41c5eb;
+  color: #fff;
+  box-shadow: none; }
+  .bt-round.bt-round--gray-hover-blue:hover span {
+    color: #fff !important; }
+
 .bt-round.bt-round--blue-dark {
   background-color: #063f5f; }
   .bt-round.bt-round--blue-dark:hover {
@@ -8522,6 +8529,9 @@ a.link-underline {
 
 .txt-gray {
   color: rgba(38, 38, 38, 0.3) !important; }
+
+.txt-gray-2 {
+  color: #5D5D5D !important; }
 
 .txt-fonts-circular-book {
   font-family: 'CircularStd-Book', sans-serif !important; }

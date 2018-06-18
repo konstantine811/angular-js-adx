@@ -217,6 +217,15 @@ button[disabled].bt-round {
   }
 }
 
+.bt-round.bt-round--gray-hover-blue:hover {
+  background-color: $blue-6;
+  color: $white;
+  box-shadow: none;
+  span {
+    color: $white !important;
+  }
+}
+
 .bt-round.bt-round--blue-dark {
   background-color: $blue-dark;
 
