@@ -109,6 +109,15 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+
+  .head-title {
+    margin: 0 auto;
+  }
+
+  .home-head-bottom__wrap {
+    justify-content: center;
+  }
+
   .row-padding-top {
     padding-top: 0;
   }

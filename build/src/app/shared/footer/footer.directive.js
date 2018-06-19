@@ -3,8 +3,15 @@ angular.module("ixLayer")
   .directive('appFooter', function() {
     return {
       templateUrl: "shared/footer/footer.tpl.html",
-      controller: ['$scope', function($scope) {
+      controller: ['$scope', '$transitions', '$location', '$anchorScroll', '$window', function($scope, $transitions, $location, $anchorScroll, $window) {
 
+        $scope.scrollContacts = function() {
+          $transitions.onSuccess({}, function() {
+            $location.hash('contacts');
+            $anchorScroll();
+            $location.hash('');
+          });
+        };
       }]
     };
   });

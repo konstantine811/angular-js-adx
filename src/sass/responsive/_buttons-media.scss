@@ -173,6 +173,11 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+
+  .button__wrap.button__wrap--not-space-bottom-sm {
+    padding-bottom: 0;
+  }
+
   .bt-round:before, .bt-round:after {
     height: 52%;
   }

@@ -34,6 +34,9 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+  .row--space-top {
+    padding-top: 30px;
+  }
   .section__wrap-sm--not-space-sm {
     padding: 0;
   }

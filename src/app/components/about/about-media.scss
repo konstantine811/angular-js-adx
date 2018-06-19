@@ -1,19 +1,29 @@
 @media (max-width: $breakpoint-lg) {
   .about-section-fourth_form-map-overlap {
-    top: 34%;
+    top: 0;
     left: calc(50% - 235px);
+  }
+  .about-section-fourh__data-map-overlap {
+    top: 64%;
+    left: calc(50% - 171px);
   }
 }
 
 
 @media (max-width: $breakpoint-sm) {
   .about-page-header {
-    min-height: auto;
+    min-height: 580px;
     padding: 50px 0 0;
   }
 
   .about-section-fourth_form-map-overlap {
     max-width: 100%;
     left: 0;
+  }
+}
+
+@media (max-width: $breakpoint-exs) {
+  .about-page-header {
+    min-height: 680px;
   }
 }

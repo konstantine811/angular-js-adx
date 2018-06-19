@@ -76,7 +76,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "        <div class=\"row row--space-top\">\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h4 class=\"txt-blue-dark\">Responsibility</h4>\n" +
+    "            <h4 class=\"txt-blue-dark txt-center-sm\">Responsibility</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
     "                Your case is carefully reviewed by an independent physician to determine if Alzheimer’s genetic testing is right for you.  If needed, a genetic counselor or physician may contact you to ask some additional questions.  We are committed to taking the extra step to ensure we are offering Alzheimer’s genetic testing to patients who understand the benefits and limitations of testing.\n" +
@@ -84,7 +84,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h4 class=\"txt-blue-dark\">Transparency</h4>\n" +
+    "            <h4 class=\"txt-blue-dark txt--space-top-middle-sm txt-center-sm\">Transparency</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
     "                We will not use your personal information for research without your written consent.  Likewise, we will never share or sell your personal information with anyone else.\n" +
@@ -94,7 +94,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "        <div class=\"row row--space-top\">\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h4 class=\"txt-blue-dark\">Collaborations</h4>\n" +
+    "            <h4 class=\"txt-blue-dark txt-center-sm\">Collaborations</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
     "                The ADx Healthcare team has partnerships with researchers, physicians, and scientists who are continually engaged in research and patient care, aimed at improving the understanding of Alzheimer’s disease. Likewise, through both time and monetary assistance, we aid local and national Alzheimer’s organizations’ efforts for education, support, and advocacy for Alzheimer’s disease and other dementias.\n" +
@@ -102,7 +102,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h4 class=\"txt-blue-dark\">Action</h4>\n" +
+    "            <h4 class=\"txt-blue-dark txt--space-top-middle-sm txt-center-sm\">Action</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
     "                While our doctors and scientists participate in the Alzheimer’s research to develop standards of care for both detection and treatment, the team at ADx Healthcare is committed to helping individuals and families learn their Alzheimer’s genetic risk and supporting them on their journey to improve their cognitive health and to reduce their risk for Alzheimer’s disease.\n" +
@@ -129,7 +129,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  \n" +
     "  <!--section third-->\n" +
     "  <div class=\"about-section-third\">\n" +
-    "    <div class=\"section-box section-box--blue section-box--space-out-top\">\n" +
+    "    <div class=\"section-box section-box--blue section-box--space-out-top section-box--space-only-height-sm\">\n" +
     "      <div class=\"container-lg\">\n" +
     "        <div class=\"row\">\n" +
     "          <div class=\"col-sm-6\">\n" +
@@ -153,7 +153,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  <!--end section third-->\n" +
     "  \n" +
     "  <!--section fourth with map-->\n" +
-    "  <div class=\"about-section-fourth\">\n" +
+    "  <div id=\"contacts\" class=\"about-section-fourth\">\n" +
     "    <map class=\"map-canvas\">\n" +
     "    </map>\n" +
     "    <div class=\"about-section-fourh__data-map-overlap\">\n" +
@@ -579,13 +579,13 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "    <div class=\"container-lg\">\n" +
     "      <div class=\"home-head__wrap\">\n" +
     "        <div class=\"head-title__wrap\">\n" +
-    "          <div class=\"head-title anim-content-transition\">\n" +
+    "          <div class=\"head-title txt-center-sm anim-content-transition\">\n" +
     "            <h2>Alzheimer's disease\n" +
     "              know you risk\n" +
     "            </h2>\n" +
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
-    "          <div class=\"head-button__wrap anim-content-transition\">\n" +
+    "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
     "            <button jq-slider class=\"button-border-rounded\">Order test</button>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -606,7 +606,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "          <div class=\"button__purchase\">\n" +
-    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Purchase</a>\n" +
+    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -833,7 +833,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"button__wrap button__wrap--left-md\">\n" +
-    "                  <a ui-sref=\"\" class=\"bt-round bt-round--lg bt-round--blue-dark\">Learn more</a>\n" +
+    "                  <a ui-sref=\"master.science\" class=\"bt-round bt-round--lg bt-round--blue-dark\">Learn more</a>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1224,64 +1224,68 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "  <div class=\"about-products-head\">\n" +
     "    <div class=\"container-fluid container-fluid--section\">\n" +
     "      <div class=\"container-lg\">\n" +
-    "        <div class=\"row\">\n" +
-    "          <div class=\"col-sm-6 anim-content-transition\">\n" +
-    "            <div class=\"about-products-head__img\">\n" +
-    "              <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "        <div class=\"container-flex container-flex--column-md\">\n" +
+    "          <div class=\"flex-column anim-content-transition\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"about-products-head__img\">\n" +
+    "                <img class=\"head-image\" src=\"../../../assets/images/home-page/helix-front-right.png\" alt=\"\">\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"col-sm-6 anim-content-transition\">\n" +
-    "            <div class=\"title__wrap anim-content-transition\">\n" +
-    "              <h1 class=\"txt-blue-dark\">Alzheimers Genetic Test</h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
-    "              <p class=\"txt txt-black\">In the fight against late-onset Alzheimer’s disease, early awareness about risk can empower you to make lifestyle changes now to protect your future self. Taking action before memories begin to fade may help you to reduce your risk for or delay the onset of Alzheimer’s.</p>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
-    "              <div class=\"container-flex txt--indent-small\">\n" +
-    "                <div class=\"column\">\n" +
-    "                  <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
-    "                </div>\n" +
-    "                <div class=\"column\">\n" +
-    "                  <p class=\"txt txt-black\">$249.00</p>\n" +
-    "                </div>\n" +
+    "          <div class=\"flex-column anim-content-transition\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"title__wrap anim-content-transition\">\n" +
+    "                <h1 class=\"txt-blue-dark\">Alzheimers Genetic Test</h1>\n" +
     "              </div>\n" +
-    "              <div class=\"container-flex txt--indent-small\">\n" +
-    "                <div class=\"column\">\n" +
-    "                  <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
-    "                </div>\n" +
-    "                <div class=\"column\">\n" +
-    "                  <p class=\"txt txt-black\">$89.00</p>\n" +
-    "                </div>\n" +
+    "              <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
+    "                <p class=\"txt txt-black\">In the fight against late-onset Alzheimer’s disease, early awareness about risk can empower you to make lifestyle changes now to protect your future self. Taking action before memories begin to fade may help you to reduce your risk for or delay the onset of Alzheimer’s.</p>\n" +
     "              </div>\n" +
-    "              <div class=\"txt--indent-small\">\n" +
-    "                <p class=\"txt txt-black\">Required one time only so Helix can collect a saliva sample from you and sequence your DNA.</p>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt--indent-small pre-results-box-flex\">\n" +
-    "                <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
-    "                  <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
-    "                  <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "              <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
+    "                <div class=\"container-flex txt--indent-small\">\n" +
+    "                  <div class=\"column\">\n" +
+    "                    <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"column\">\n" +
+    "                    <p class=\"txt txt-black\">$249.00</p>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
-    "                <div class=\"pre-results-box-flex-2 anim-content-transition\">\n" +
-    "                  <div class=\"txt txt-black\">\n" +
-    "                    I already have or registered a <span class=\"txt-bold\">Helix DNA kit</span>\n" +
+    "                <div class=\"container-flex txt--indent-small\">\n" +
+    "                  <div class=\"column\">\n" +
+    "                    <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"column\">\n" +
+    "                    <p class=\"txt txt-black\">$89.00</p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent-small\">\n" +
+    "                  <p class=\"txt txt-black\">Required one time only so Helix can collect a saliva sample from you and sequence your DNA.</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt--indent-small pre-results-box-flex\">\n" +
+    "                  <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
+    "                    <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
+    "                    <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"pre-results-box-flex-2 anim-content-transition\">\n" +
+    "                    <div class=\"txt txt-black\">\n" +
+    "                      I already have or registered a <span class=\"txt-bold\">Helix DNA kit</span>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap container-flex anim-content-transition\">\n" +
-    "              <div class=\"column\">\n" +
-    "                <p class=\"txt txt-black\">Price:</p>\n" +
+    "              <div class=\"txt__wrap container-flex anim-content-transition\">\n" +
+    "                <div class=\"column\">\n" +
+    "                  <p class=\"txt txt-black\">Price:</p>\n" +
+    "                </div>\n" +
+    "                <div class=\"column\">\n" +
+    "                  <div class=\"txt-large txt-large--exl txt-black\">$338.00</div>\n" +
+    "                </div>\n" +
     "              </div>\n" +
-    "              <div class=\"column\">\n" +
-    "                <div class=\"txt-large txt-large--exl txt-black\">$338.00</div>\n" +
+    "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
+    "                <button class=\"bt-round bt-round--all-width bt-round--blue-dark\"><span class=\"txt-large txt-bold\">Purchase with Helix</span></button>\n" +
     "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"button__wrap\">\n" +
-    "              <button class=\"bt-round bt-round--all-width bt-round--blue-dark\"><span class=\"txt-large txt-bold\">Purchase with Helix</span></button>\n" +
-    "            </div>\n" +
-    "            <div class=\"button__wrap\">\n" +
-    "              <button class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">Multiple order, contact us</span></button>\n" +
+    "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
+    "                <button class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">Multiple order, contact us</span></button>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -1473,7 +1477,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              <div class=\"info-about-column__wrap\">\n" +
     "                <div class=\"info-about__img\">\n" +
     "                  <ng-include src=\"'./assets/images/svg/test-tube.svg'\"></ng-include>\n" +
-    "                  <div class=\"title__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"info-about__txt\">\n" +
+    "                  <div class=\"title__wrap title__wrap--not-space-top-md\">\n" +
     "                    <h3 class=\"txt-blue-dark txt-center\">Spit</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
@@ -1486,7 +1492,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              <div class=\"info-about-column__wrap\">\n" +
     "                <div class=\"info-about__img\">\n" +
     "                  <ng-include src=\"'./assets/images/svg/tablet-checked.svg'\"></ng-include>\n" +
-    "                  <div class=\"title__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"info-about__txt\">\n" +
+    "                  <div class=\"title__wrap title__wrap--not-space-top-md\">\n" +
     "                    <h3 class=\"txt-blue-dark txt-center\">Results</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
@@ -1499,7 +1507,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              <div class=\"info-about-column__wrap\">\n" +
     "                <div class=\"info-about__img\">\n" +
     "                  <ng-include src=\"'./assets/images/svg/сlapperboard.svg'\"></ng-include>\n" +
-    "                  <div class=\"title__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"info-about__txt\">\n" +
+    "                  <div class=\"title__wrap title__wrap--not-space-top-md\">\n" +
     "                    <h3 class=\"txt-blue-dark txt-center\">Take action</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
@@ -1516,13 +1526,18 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "    <div id=\"labPartner\" class=\"about-products-section-fifth\">\n" +
     "      <div class=\"section-box-shadow\">\n" +
     "        <div class=\"about-products-section-fifth__wrap\">\n" +
+    "          <div class=\"about-products-section-fifth__image-wrap\">\n" +
+    "            <img class=\"about-products-section-fifth-img\" src=\"./assets/images/products/doctor-lab.png\" alt=\"\">\n" +
+    "          </div>\n" +
     "          <div class=\"container-lg\">\n" +
     "            <div class=\"container-flex align-items--center about-products-section-fifth--container-txt\">\n" +
-    "              <div class=\"row\">\n" +
-    "                <div class=\"col-xs-6\">\n" +
-    "                  <h3 class=\"txt-blue-dark\">Helix our lab partner</h3>\n" +
-    "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black\">xLayer product and design team will work together with you to create the interface and the experience that fits your users need. This includes product brainstorming, identifying value propositions, design that speaks for your brand and a feature rich product for your genetic application.</p>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"about-products-section-fifth__txt\">\n" +
+    "                    <h3 class=\"txt-blue-dark txt-center-md\">Helix our lab partner</h3>\n" +
+    "                    <div class=\"txt__wrap txt-center-md\">\n" +
+    "                      <p class=\"txt txt-black\">xLayer product and design team will work together with you to create the interface and the experience that fits your users need. This includes product brainstorming, identifying value propositions, design that speaks for your brand and a feature rich product for your genetic application.</p>\n" +
+    "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2358,7 +2373,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <div class=\"container-flex\">\n" +
     "          <div class=\"flex-column content-txt\">\n" +
     "            <div class=\"title__wrap anim-content-transition\">\n" +
-    "              <h1 class=\"txt-blue-dark\">What will my results tell me?</h1>\n" +
+    "              <h1 class=\"txt-blue-dark\">Your results are ready</h1>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap pre-result-head-txt anim-content-transition\">\n" +
     "              <div class=\"txt txt-black\">\n" +
@@ -3969,7 +3984,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              We are currently interpreting the results to generate your report\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +
-    "              Your DNA sample test results are now ready\n" +
+    "              Your results are ready\n" +
     "            </h4>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -4672,10 +4687,10 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "        <div class=\"container-lg\">\n" +
     "            <div class=\"row\">\n" +
     "                <div class=\"col-sm-4\">\n" +
-    "                    <div class=\"title__wrap\">\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
     "                        <h6 class=\"txt-blue txt-uppercase\">Provider order required</h6>\n" +
     "                    </div>\n" +
-    "                    <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
     "                            ApoE testing must be approved by your physician or other qualified health care provider.\n" +
     "                            If you don’t have a health care provider ADx Healthcare can assist in helping you find a licensed provider.\n" +
@@ -4683,10 +4698,10 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"col-sm-3\">\n" +
-    "                    <div class=\"title__wrap\">\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
     "                        <h6 class=\"txt-blue txt-uppercase\">PARTNER WITH US</h6>\n" +
     "                    </div>\n" +
-    "                    <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <a href=\"\" class=\"txt txt-black\">Affiliates</a>\n" +
     "                       <div class=\"link--indent\">\n" +
     "                           <a href=\"\" class=\"txt txt-black\">Providers</a>\n" +
@@ -4694,10 +4709,10 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"col-sm-2\">\n" +
-    "                    <div class=\"title__wrap\">\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
     "                        <a ui-sref=\"master.legal\" class=\"txt txt-medium txt-blue txt-uppercase\">LEGAL</a>\n" +
     "                    </div>\n" +
-    "                    <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <a href=\"\" class=\"txt txt-black\">Tems of Service</a>\n" +
     "                        <div class=\"link--indent\">\n" +
     "                            <a href=\"\" class=\"txt txt-black\">Privacy Policy</a>\n" +
@@ -4711,10 +4726,10 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"col-sm-3\">\n" +
-    "                    <div class=\"title__wrap\">\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
     "                        <h6 class=\"txt-blue txt-uppercase\">JOIN OUR EMAIL LIST</h6>\n" +
     "                    </div>\n" +
-    "                    <div class=\"txt__wrap\">\n" +
+    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
     "                            Join our email list to receive news and updates on various advances in Alzheimer's disease research.\n" +
     "                        </div>\n" +
@@ -4727,11 +4742,11 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"footer-bottom\">\n" +
     "        <div class=\"footer-bottom__wrap\">\n" +
     "          <div class=\"title__wrap\">\n" +
-    "            <h6 class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h6>\n" +
+    "            <h6  class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h6>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
-    "            <a ui-sref=\"master.contact\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
-    "            <a ui-sref=\"master.about\" class=\"txt txt-blue-dark\">About Us</a>\n" +
+    "            <a ng-click=\"scrollContacts()\" ui-sref=\"master.about\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
+    "            <a  ui-sref=\"master.about\" class=\"txt txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
     "            <div class=\"link-icon__wrap\">\n" +

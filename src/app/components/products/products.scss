@@ -98,10 +98,29 @@
   width: 100%;
   height: auto;
   min-height: 518px;
-  background-image: url("../assets/images/products/doctor-lab.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  position: relative;
+}
+
+.about-products-section-fifth__txt {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.about-products-section-fifth__image-wrap {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  overflow: hidden;
+}
+
+.about-products-section-fifth-img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 .about-products-section-fifth--container-txt {
