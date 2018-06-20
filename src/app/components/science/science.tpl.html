@@ -218,12 +218,12 @@
         <div class="section-box-head section-box-head--blue">
           <div class="section-box-head__wrap">
             <div class="container-flex align-items--center">
-              <div class="flex-column">
+              <div class="flex-column-2">
                 <div class="txt-left">
                   <h3>How it works?</h3>
                 </div>
               </div>
-              <div class="flex-column">
+              <div class="flex-column hide-mobile">
                 <div class="txt-right">
                   <h4 class="txt-blue-dark">Part {{slideIndex}}</h4>
                 </div>
@@ -231,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class="container-lg">
+        <div class="container-lg hide-mobile">
           <div uib-carousel active="active"  no-wrap="false">
             <div uib-slide index="0">
               <div class="slider__wrap">
@@ -421,6 +421,192 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        
+        <div class="container-lg hide-desktop">
+          <div class="slider__wrap">
+            <div class="container-flex align-items--center container-flex--column-sm">
+              <div class="flex-column txt-left">
+                <div class="flex-column__wrap">
+                  <div class="img__wrap img--center-sm">
+                    <ng-include class="img img-middle" src="'./assets/images/svg/key-blue-dark.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column-2">
+                <div class="flex-column__wrap">
+                  <div class="container-exs">
+                    <div class="txt-left txt-center-md txt--space-top-sm">
+                      <h3 class="txt-blue-3" >Security and privacy
+                        Your DNA is just for you</h3>
+                    </div>
+                    <div class="txt__wrap txt-center-sm">
+                      <p class="txt txt-black txt-left">
+                        Your Alzheimer’s genetic information will be delivered to you via a secure, electronic report.  These results will also be available for download. It is up to you whom you share your results with, including your healthcare provider or family.  Our genetics counselors are available to go through your results with you too, if you choose. You are in control of how you receive your genetic results and whom you share them with.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="container-flex align-items--center container-flex--column-reverse-sm">
+                <div class="flex-column-2">
+                  <div class="flex-column__wrap">
+                    <div class="container-exs">
+                      <div class="txt-right txt-center-md title-space-top-md">
+                        <h3 class="txt-blue-3">Your privacy is our priority</h3>
+                      </div>
+                      <div class="txt__wrap txt-right txt-left-sm txt-center-sm">
+                        <p class="txt txt-black">
+                          We will never share your name or data and you will never be included in any Alzheimer’s research without your
+                          prior written consen
+                        </p>
+                        <div class="txt--indent-small">
+                          <p class="txt txt-black">
+                            From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make
+                            sure your data remains safe.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-column txt-right">
+                  <div class="flex-column__wrap">
+                    <div class="img__wrap img--center-sm">
+                      <ng-include class="img-middle" src="'./assets/images/svg/protection-blue-dark.svg'"></ng-include>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--slide second-->
+            <div class="container-flex container-flex--column-sm">
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <div class="img__wrap txt-center">
+                    <ng-include class="img-middle--md img-middle--large-sm" src="'./assets/images/svg/test-tube.svg'"></ng-include>
+                  </div>
+                  <div class="title__wrap txt-center-sm">
+                    <h3 class="txt-blue-dark">Easy to use</h3>
+                  </div>
+                  <div class="txt__wrap txt-center">
+                    <p class="txt txt-black">
+                      As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we
+                      have you supported each step of the way.
+                      *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column anim-content-transition">
+                <div class="flex-column__wrap">
+                  <div class="flex-column__wrap">
+                    <div class="img__wrap txt-center">
+                      <ng-include class="img-middle--md img-middle--large-sm" src="'./assets/images/svg/first-aid-kit.svg'"></ng-include>
+                    </div>
+                    <div class="title__wrap txt-center-sm">
+                      <h3 class="txt-blue-dark">Data-Driven</h3>
+                    </div>
+                    <div class="txt__wrap txt-center">
+                      <p class="txt txt-black">
+                        Doctor ordered: At ADx Healthcare, we believe you should be in control of what health information you want to learn and whom you share it with. We also believe it is best to have a physician still be a part of the path, to ensure you understand what the results will and will not tell you, so they can help you decide if the test is a good fit for you. We offer comprehensive, physician-supervised genetic testing from the privacy of your own home.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__wrap-sm">
+              <div class="container-flex container-flex--column-sm">
+                <div class="flex-column">
+                  <div class="flex-column__wrap">
+                    <div class="img__wrap txt-center">
+                      <ng-include class="img-middle--md img-middle--large-sm" src="'./assets/images/svg/email-checked.svg'"></ng-include>
+                    </div>
+                    <div class="title__wrap txt-center-sm">
+                      <h3 class="txt-blue-dark">Access Online </h3>
+                    </div>
+                    <div class="txt__wrap txt-center">
+                      <p class="txt txt-black">
+                        Once your results are ready, you will receive an e-mail from ADx Healthcare.  When you are ready, simply log-in to your account to access your private results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-column">
+                  <div class="flex-column__wrap">
+                    <div class="img__wrap txt-center">
+                      <ng-include class="img-middle--md img-middle--large-sm" src="'./assets/images/svg/molecule-2-green.svg'"></ng-include>
+                    </div>
+                    <div class="title__wrap txt-center-sm">
+                      <h3 class="txt-blue-dark">Sharable insignts</h3>
+                    </div>
+                    <div class="txt__wrap txt-center">
+                      <p class="txt txt-black">
+                        Share your results with your physician, and your family members. In your secure results section, you can also access a PDF version of your Alzheimer’s disease ApoE genetic test results.  You can download and print this document to share with your healthcare provider.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--slide third-->
+            <div class="container-flex container-flex--column-sm">
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <div class="img__wrap img--center-sm">
+                    <ng-include class="img-middle" src="'./assets/images/svg/molecules-3.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column-2">
+                <div class="flex-column__wrap">
+                  <div class="title__wrap txt-left txt-center-sm">
+                    <h3 class="txt-blue">
+                      The latest science (results you can trust)
+                    </h3>
+                  </div>
+                  <div class="txt__wrap txt-left txt-center-sm">
+                    <p class="txt txt-black">How your DNA becomes a report
+                      Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-flex container-flex--column-sm">
+              <div class="flex-column align-vertical--center">
+                <div class="flex-column__wrap">
+                  <div class="img__wrap img--center-sm">
+                    <ng-include class="img-middle dna-molecule--bgc-silver" src="'./assets/images/svg/dna-molecule.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column-2">
+                <div class="flex-column__wrap">
+                  <div class="title__wrap txt-left txt-center-sm">
+                    <h3 class="txt-blue">
+                      More about the test
+                    </h3>
+                  </div>
+                  <div class="txt__wrap txt-left txt-center-sm">
+                    <p class="txt txt-black">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6
+                    </p>
+                    <div class="txt--indent-small">
+                      <p class="txt txt-black">
+                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         </div>

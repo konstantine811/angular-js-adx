@@ -1,14 +1,14 @@
 <div class="profile-page">
 
-    <div class="section__wrap">
-        <div class="container-lg--dashboard container-lg--dashboard--not-space-xs">
+    <div class="section__wrap section__wrap--space-bottom">
+        <div class="container-lg--dashboard">
             <div class="section-box-shadow">
                 <div class="title__wrap">
                     <h2 class="txt-blue-dark txt-center">Personal Information</h2>
                 </div>
                 <div class="profile-info__wrap">
                     <div class="row">
-                        <form name="form"  ng-submit="submitForm(profile)" novalidate class="col-sm-6">
+                        <form name="form"  ng-submit="submitForm(profile)" novalidate class="col-sm-6 profile-edit-form">
                             <div ng-show="!complete">
                                 <div class="form-group">
                                     <label>Firstname</label>
@@ -46,9 +46,13 @@
                                     <label>Phone</label>
                                     <input type="phone" name="phone" class="form-control" ng-model="profile.phone">
                                 </div>
-                                <div class="profile-button__wrap">
-                                    <button test-hook="update-profile" type="submit" class="bt-round bt-round--blue">Submit</button>&nbsp;&nbsp;
-                                    <button class="bt-round bt-round--gray" ui-sref="master_signedin.profile">Cancel</button>
+                                <div class="container-flex container-flex--column-xs  profile-button__wrap">
+                                    <div class="flex-column">
+                                        <button test-hook="update-profile" type="submit" class="bt-round bt-round--blue">Submit</button>&nbsp;&nbsp;
+                                    </div>
+                                    <div class="flex-column profile-button__inner">
+                                        <button class="bt-round bt-round--gray" ui-sref="master_signedin.profile">Cancel</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>

@@ -8064,6 +8064,10 @@ button[disabled].bt-round {
   button[disabled].bt-round:hover .bt-content, button[disabled].bt-round:focus .bt-content {
     color: red;
     animation: none; }
+  button[disabled].bt-round.bt-round--blue-dark:hover {
+    background-color: #063f5f;
+    color: #fff;
+    box-shadow: none; }
 
 .bt-round {
   color: #fff;
@@ -8154,7 +8158,7 @@ button[disabled].bt-round {
   background-size: contain;
   background-repeat: no-repeat;
   left: 25px;
-  top: 14px; }
+  top: 9px; }
 
 .bt-round-right-icon:after {
   content: '';
@@ -8164,7 +8168,7 @@ button[disabled].bt-round {
   background-size: contain;
   background-repeat: no-repeat;
   right: 25px;
-  top: 14px; }
+  top: 9px; }
 
 .bt-round-left-icon--dna::before, .bt-round-right-icon--dna::after {
   background-image: url("../assets/images/icon/dna-white.svg"); }
@@ -8802,6 +8806,9 @@ h6 {
 .section__wrap {
   padding-top: 130px; }
 
+.section__wrap--space-bottom {
+  padding-bottom: 50px; }
+
 .section__wrap-md {
   padding-top: 100px; }
 
@@ -9144,12 +9151,12 @@ ul.box__wrap {
   width: 100%; }
 
 .box-body-anchor {
-  width: 100vw;
+  width: 102vw;
   background-color: #E6E6E6;
   text-align: center;
   padding: 20px 0;
   position: relative;
-  right: 1.6vw;
+  right: 6.6vw;
   margin-top: 10px; }
 
 .box-body-anchor__arrow-down {
@@ -9240,7 +9247,7 @@ ul.box__wrap {
   box-shadow: -1px 0px 12px 0px #464646; }
 
 .side-navbar__logo {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   padding-top: 30px;
   padding-left: 18px; }
@@ -9483,8 +9490,9 @@ ul.box__wrap {
   padding-bottom: 119px; }
 
 .login-page {
-  height: calc(100vh - 100px);
-  width: 100%; }
+  height: 100%;
+  width: 100%;
+  padding-bottom: 55px; }
 
 .login-bgc {
   background-image: url("../assets/images/background-login.png");
@@ -9494,7 +9502,7 @@ ul.box__wrap {
 .login-form__wrap {
   width: 100%;
   height: auto;
-  padding: 88px 0; }
+  padding: 88px 15px; }
 
 .form-input__login-wrap {
   padding-top: 40px; }
@@ -10152,14 +10160,14 @@ textarea.form-control {
   /* old ie */ }
 
 .register-page {
-  height: calc(100vh - 100px);
+  height: 100%;
   width: 100%; }
 
 .register-form__wrap {
   width: 100%;
   height: auto;
   position: relative;
-  top: 88px; }
+  padding: 88px 15px 0; }
 
 .register-form {
   max-width: 573px;
@@ -10193,6 +10201,10 @@ textarea.form-control {
 
 .result--space-bottom {
   padding-bottom: 100px; }
+
+.txt-rubric__wrap {
+  padding-top: 20px;
+  padding-left: 35px; }
 
 .result-head__over {
   display: flex;
@@ -10330,6 +10342,9 @@ textarea.form-control {
   max-width: 63%;
   margin: 0 auto; }
 
+.boxes-wrap--results-p3 {
+  min-height: 1230px; }
+
 .profile-page {
   background-image: url("../assets/images/bgc-polygon-silver.png");
   background-repeat: no-repeat;
@@ -10359,6 +10374,9 @@ textarea.form-control {
 .profile-info__wrap--border-bottom {
   padding-bottom: 80px;
   border-bottom: 1px solid #DBDBDB; }
+
+.profile-edit-form {
+  width: 100%; }
 
 .about-page-header {
   width: 100%;
@@ -10605,6 +10623,9 @@ textarea.form-control {
   .bt-round-lg {
     padding: 9px 36px; } }
 @media (max-width: 1200px) {
+  .progressbar-item:before {
+    font-size: 27px; }
+
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
     min-width: 112px; }
@@ -10919,7 +10940,10 @@ textarea.form-control {
     padding-top: 50px; }
 
   .container-lg--dashboard--not-space-xs {
-    padding: 0; } }
+    padding: 0; }
+
+  .container-flex--column-xs {
+    flex-flow: column; } }
 @media (max-width: 1596px) {
   .img-bgc-wrap__rounded {
     height: 512px;
@@ -10971,6 +10995,9 @@ textarea.form-control {
     max-width: 130px;
     bottom: 21px; } }
 @media (max-width: 768px) {
+  .img-middle--large-sm {
+    max-width: 368px; }
+
   .img--center-sm {
     text-align: center; }
 
@@ -11018,7 +11045,7 @@ textarea.form-control {
     padding-bottom: 30px; }
 
   .box-half-column {
-    padding: 50px 2%; }
+    padding: 50px 20px; }
 
   .box-checkbox__wrap {
     padding-left: 20px; }
@@ -11111,7 +11138,8 @@ textarea.form-control {
     left: -17px; } }
 @media (max-width: 768px) {
   .hide-tabs.hide-tabs--show-sm {
-    display: block; } }
+    display: block;
+    padding: 0 20px; } }
 @media (max-width: 1596px) {
   .home-head {
     padding: 61px 0 0; }
@@ -11303,7 +11331,7 @@ textarea.form-control {
 
   .header-nav {
     padding-top: 3px;
-    align-self: start; }
+    align-self: flex-start; }
 
   .header__button {
     justify-content: center;
@@ -11381,7 +11409,7 @@ textarea.form-control {
     width: 100%;
     border-bottom: 10px solid #41c5eb;
     transition: height 0.7s ease-out;
-    overflow: hidden; }
+    overflow: scroll; }
     .side-navbar.open {
       height: 100%; }
 
@@ -11408,7 +11436,11 @@ textarea.form-control {
     padding-bottom: 50px; } }
 @media (max-width: 468px) {
   .profile-info__wrap {
-    padding: 50px 15px; } }
+    padding: 50px 35px; }
+
+  .profile-button__inner {
+    padding-top: 30px;
+    padding-right: 7px; } }
 @media (max-width: 1596px) {
   .about-products-section-fifth__image-wrap {
     width: 43%; } }
@@ -11505,7 +11537,16 @@ textarea.form-control {
     padding-bottom: 30px; } }
 @media (max-width: 768px) {
   .science-p-section-fifth .slider__wrap {
-    padding: 0 0 125px; } }
+    padding: 0 0 125px; }
+
+  .section-box-head__wrap {
+    padding: 30px 20px; }
+
+  .science-p-list__items {
+    padding-top: 15px; }
+
+  .science-p-list {
+    padding: 0; } }
 a[ng-click] {
   cursor: pointer; }
 

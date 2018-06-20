@@ -3,7 +3,7 @@ angular.module( 'ixlayer.about', [
   'ui.bootstrap'
 ])
 
-.config(function config( $stateProvider ) {
+.config(function config( $stateProvider) {
   $stateProvider.state( 'master.about', {
     url: '/about',
     controller: 'AboutCtrl',

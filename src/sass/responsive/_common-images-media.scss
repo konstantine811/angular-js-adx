@@ -64,6 +64,11 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+
+  .img-middle--large-sm {
+    max-width: 368px;
+  }
+
   .img--center-sm {
     text-align: center;
   }

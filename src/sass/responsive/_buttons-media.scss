@@ -23,6 +23,9 @@
 }
 
 @media (max-width: $breakpoint-lg) {
+  .progressbar-item:before {
+    font-size: 27px;
+  }
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
     min-width: 112px;

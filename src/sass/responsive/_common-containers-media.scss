@@ -79,4 +79,8 @@
   .container-lg--dashboard--not-space-xs {
     padding: 0;
   }
+
+  .container-flex--column-xs {
+    flex-flow: column;
+  }
 }

@@ -3,14 +3,21 @@ angular.module("ixLayer")
   .directive('appFooter', function() {
     return {
       templateUrl: "shared/footer/footer.tpl.html",
-      controller: ['$scope', '$transitions', '$location', '$anchorScroll', '$window', function($scope, $transitions, $location, $anchorScroll, $window) {
+      controller: ['$scope', '$state', '$transitions', '$location', '$anchorScroll', function($scope, $state, $transitions, $location, $anchorScroll) {
 
-        $scope.scrollContacts = function() {
-          $transitions.onSuccess({}, function() {
+        $scope.scrollToContacts = function(e) {
+          e.preventDefault();
+          var path = $location.path().slice(1);
+          if (path === 'about') {
             $location.hash('contacts');
             $anchorScroll();
-            $location.hash('');
-          });
+          } else {
+            $state.go('master.about');
+            $transitions.onSuccess({to: 'master.about'}, function() {
+              $location.hash('contacts');
+              $anchorScroll();
+            });
+          }
         };
       }]
     };

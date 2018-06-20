@@ -1,33 +1,33 @@
 <div class="result">
   <div class="result-head result-head--p1">
-    <div class="container-lg--dashboard">
-      <div class="result-head__over">
-        <div class="txt-rubric__wrap anim-content-transition">
-          <div class="txt txt-bold txt-gray">About page</div>
-        </div>
-        <div class="result-head__download-button anim-content-transition">
-          <div class="result-button-head__wrap">
-            <a href="" class="download__wrap">
-              <div class="flex-column">
-                <div class="comments-button"><i class="fa fa-comments comments-button__inner" aria-hidden="true"></i></div>
-              </div>
-              <span class="flex-column-2 hide-mobile">
+    <div class="result-head__over">
+      <div class="txt-rubric__wrap anim-content-transition">
+        <div class="txt txt-bold txt-gray">About page</div>
+      </div>
+      <div class="result-head__download-button anim-content-transition">
+        <div class="result-button-head__wrap">
+          <a href="" class="download__wrap">
+            <div class="flex-column">
+              <div class="comments-button"><i class="fa fa-comments comments-button__inner" aria-hidden="true"></i></div>
+            </div>
+            <span class="flex-column-2 hide-mobile">
                 <p class="txt txt-blue-dark txt-bold">Contact genetic counselor</p>
               </span>
-            </a>
-          </div>
-          <div class="result-button-head__wrap">
-            <a ng-href="{{ results[0].report }}" class="download__wrap">
-              <div class="flex-column">
-                <div  class="download-button"></div>
-              </div>
-              <span class="flex-column-2 hide-mobile">
+          </a>
+        </div>
+        <div class="result-button-head__wrap">
+          <a ng-href="{{ results[0].report }}" class="download__wrap">
+            <div class="flex-column">
+              <div  class="download-button"></div>
+            </div>
+            <span class="flex-column-2 hide-mobile">
                 <p class="txt txt-blue-dark txt-bold">Download report</p>
               </span>
-            </a>
-          </div>
+          </a>
         </div>
       </div>
+    </div>
+    <div class="container-lg--dashboard">
       <div class="result-head__title anim-content-transition txt-left-sm">
        <div class="title__wrap">
          <h2 class="txt-blue-dark anim-content-transition">About Alzheimer’s disease</h2>
@@ -146,8 +146,8 @@
               </p>
             </div>
             <div class="txt--indent-small">
-              <div class="txt--indent-small"><a href="" class="txt-middle txt-blue link-underline">See Scientific Details</a></div>
-              <div class="txt--indent-small"><a href="" class="txt-middle txt-blue link-underline">See Frequently Asked Questions</a></div>
+              <div class="txt--indent-small"><a ui-sref="master.science" class="txt-middle txt-blue link-underline">See Scientific Details</a></div>
+              <div class="txt--indent-small"><a ui-sref="master.FAQ" class="txt-middle txt-blue link-underline">See Frequently Asked Questions</a></div>
             </div>
           </div>
         </div>

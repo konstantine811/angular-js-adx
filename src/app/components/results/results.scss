@@ -3,6 +3,11 @@
   padding-bottom: 100px;
 }
 
+.txt-rubric__wrap {
+  padding-top: 20px;
+  padding-left: 35px;
+}
+
 .result-head__over {
   display: flex;
   justify-content: space-between;
@@ -175,5 +180,9 @@
   padding-top: 38px;
   max-width: 63%;
   margin: 0 auto;
+}
+
+.boxes-wrap--results-p3 {
+  min-height: 1230px;
 }
 

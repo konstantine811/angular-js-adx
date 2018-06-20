@@ -145,6 +145,11 @@ button[disabled].bt-round {
       animation: none;
     }
   }
+  &.bt-round--blue-dark:hover {
+    background-color: $blue-dark;
+    color: $white;
+    box-shadow: none;
+  }
 }
 
 .bt-round {
@@ -260,7 +265,7 @@ button[disabled].bt-round {
     background-size: contain;
     background-repeat: no-repeat;
     left: 25px;
-    top: 14px;
+    top: 9px;
   }
 }
 
@@ -273,7 +278,7 @@ button[disabled].bt-round {
     background-size: contain;
     background-repeat: no-repeat;
     right: 25px;
-    top: 14px;
+    top: 9px;
   }
 }
 

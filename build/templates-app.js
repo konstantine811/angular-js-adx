@@ -1822,15 +1822,15 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
   $templateCache.put("components/profile/profileEdit.tpl.html",
     "<div class=\"profile-page\">\n" +
     "\n" +
-    "    <div class=\"section__wrap\">\n" +
-    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "    <div class=\"section__wrap section__wrap--space-bottom\">\n" +
+    "        <div class=\"container-lg--dashboard\">\n" +
     "            <div class=\"section-box-shadow\">\n" +
     "                <div class=\"title__wrap\">\n" +
     "                    <h2 class=\"txt-blue-dark txt-center\">Personal Information</h2>\n" +
     "                </div>\n" +
     "                <div class=\"profile-info__wrap\">\n" +
     "                    <div class=\"row\">\n" +
-    "                        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6\">\n" +
+    "                        <form name=\"form\"  ng-submit=\"submitForm(profile)\" novalidate class=\"col-sm-6 profile-edit-form\">\n" +
     "                            <div ng-show=\"!complete\">\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Firstname</label>\n" +
@@ -1868,9 +1868,13 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                                    <label>Phone</label>\n" +
     "                                    <input type=\"phone\" name=\"phone\" class=\"form-control\" ng-model=\"profile.phone\">\n" +
     "                                </div>\n" +
-    "                                <div class=\"profile-button__wrap\">\n" +
-    "                                    <button test-hook=\"update-profile\" type=\"submit\" class=\"bt-round bt-round--blue\">Submit</button>&nbsp;&nbsp;\n" +
-    "                                    <button class=\"bt-round bt-round--gray\" ui-sref=\"master_signedin.profile\">Cancel</button>\n" +
+    "                                <div class=\"container-flex container-flex--column-xs  profile-button__wrap\">\n" +
+    "                                    <div class=\"flex-column\">\n" +
+    "                                        <button test-hook=\"update-profile\" type=\"submit\" class=\"bt-round bt-round--blue\">Submit</button>&nbsp;&nbsp;\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"flex-column profile-button__inner\">\n" +
+    "                                        <button class=\"bt-round bt-round--gray\" ui-sref=\"master_signedin.profile\">Cancel</button>\n" +
+    "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
     "                        </form>\n" +
@@ -1888,7 +1892,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "    \n" +
     "    <!--section first -->\n" +
     "    <div class=\"section__wrap\">\n" +
-    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "        <div class=\"container-lg--dashboard\">\n" +
     "            <div class=\"section-box-shadow\">\n" +
     "                <div class=\"title__wrap\">\n" +
     "                    <h2 class=\"txt-blue-dark txt-center\">Account information</h2>\n" +
@@ -1926,8 +1930,8 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "    <!--end section first-->\n" +
     "    \n" +
     "    <!--section second-->\n" +
-    "    <div class=\"section__wrap\">\n" +
-    "        <div class=\"container-lg--dashboard container-lg--dashboard--not-space-xs\">\n" +
+    "    <div class=\"section__wrap section__wrap--space-bottom\">\n" +
+    "        <div class=\"container-lg--dashboard\">\n" +
     "            <div class=\"section-box-shadow\">\n" +
     "                <div class=\"title__wrap\">\n" +
     "                    <h2 class=\"txt-blue-dark txt-center\">Personal information</h2>\n" +
@@ -2119,12 +2123,12 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
   $templateCache.put("components/results/pages/prePurchase.tpl.html",
     "<div class=\"products-p\">\n" +
     "  <div class=\"products-p-head__wrap\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Dashboard</div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Dashboard</div>\n" +
-    "        </div>\n" +
-    "        </div>\n" +
     "        <div class=\"title-section__wrap anim-content-transition\">\n" +
     "          <h1 class=\"txt-blue-dark txt-center\">Our service & product</h1>\n" +
     "          <div class=\"products-p-head__body\">\n" +
@@ -2365,11 +2369,11 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
   $templateCache.put("components/results/pages/result-p1.tpl.html",
     "<div class=\"pre-result\" ng-if=\"!showResult\">\n" +
     "  <div class=\"result-head pre-result-head\">\n" +
+    "    <div class=\"txt-rubric__wrap\">\n" +
+    "      <div class=\"txt txt-bold txt-gray anim-content-transition\">Pre-Result</div>\n" +
+    "    </div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"pre-result-head__wrap\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Pre-Result</div>\n" +
-    "        </div>\n" +
     "        <div class=\"container-flex\">\n" +
     "          <div class=\"flex-column content-txt\">\n" +
     "            <div class=\"title__wrap anim-content-transition\">\n" +
@@ -2403,7 +2407,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
     "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "            <div class=\"box-image__wrap\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/low-risk.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/high-risk.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
@@ -2418,7 +2422,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          </div>\n" +
     "          <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "            <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "              <ng-include src=\"'./assets/images/svg/high-risk.svg'\"></ng-include>\n" +
+    "              <ng-include src=\"'./assets/images/svg/low-risk.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
@@ -2509,34 +2513,34 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "\n" +
     "<div class=\"result\" ng-if=\"showResult\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition  txt-left-sm\">\n" +
     "       <div class=\"title__wrap\">\n" +
     "         <h1 class=\"txt-blue-dark anim-content-transition\">Your result </h1>\n" +
@@ -2683,34 +2687,34 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
   $templateCache.put("components/results/pages/result-p2.tpl.html",
     "<div class=\"result\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"txt txt-bold txt-gray\">About page</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">About page</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "       <div class=\"title__wrap\">\n" +
     "         <h2 class=\"txt-blue-dark anim-content-transition\">About Alzheimer’s disease</h2>\n" +
@@ -2829,8 +2833,8 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small\">\n" +
-    "              <div class=\"txt--indent-small\"><a href=\"\" class=\"txt-middle txt-blue link-underline\">See Scientific Details</a></div>\n" +
-    "              <div class=\"txt--indent-small\"><a href=\"\" class=\"txt-middle txt-blue link-underline\">See Frequently Asked Questions</a></div>\n" +
+    "              <div class=\"txt--indent-small\"><a ui-sref=\"master.science\" class=\"txt-middle txt-blue link-underline\">See Scientific Details</a></div>\n" +
+    "              <div class=\"txt--indent-small\"><a ui-sref=\"master.FAQ\" class=\"txt-middle txt-blue link-underline\">See Frequently Asked Questions</a></div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -2858,34 +2862,34 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
   $templateCache.put("components/results/pages/result-p3.tpl.html",
     "<div class=\"result\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "          <div class=\"txt txt-bold txt-gray\">Lifestyle</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">Lifestyle</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title  txt-left-sm anim-content-transition\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle & other factors</h2>\n" +
@@ -2969,7 +2973,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "           </div>\n" +
     "  \n" +
     "           <div class=\"flex-column-tabs-body\">\n" +
-    "             <div class=\"boxes__wrap boxes__wrap--padding-top anim-content-transition\">\n" +
+    "             <div class=\"boxes__wrap boxes-wrap--results-p3 boxes__wrap--padding-top anim-content-transition\">\n" +
     "               <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                 <div class=\"box-content\">\n" +
     "                   <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
@@ -2980,7 +2984,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                       <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
+    "                       <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
@@ -3009,7 +3013,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                       <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
+    "                       <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels, which reduces your risk for Alzheimer’s disease.\n" +
@@ -3049,7 +3053,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue\">Brain Impact of Stress</h3>\n" +
+    "                       <h3 class=\"txt-blue txt-center-sm\">Brain Impact of Stress</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.2\n" +
@@ -3077,7 +3081,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h3>\n" +
+    "                       <h3 class=\"txt-blue txt-center-sm\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
@@ -3146,7 +3150,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
     "                     </div>\n" +
     "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
+    "                       <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
     "                       <div class=\"txt--indent-small\">\n" +
     "                         <p class=\"txt txt-black\">\n" +
     "                           Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
@@ -3188,34 +3192,34 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
   $templateCache.put("components/results/pages/result-p4.tpl.html",
     "<div class=\"result\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Next steps</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Next steps</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a hng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a hng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">Next steps</h2>\n" +
@@ -3265,7 +3269,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt txt-blue link-underline\">Learn about sharing with family</a>\n" +
+    "        <a ui-sref=\"master_signedin.results.sharing\" class=\"txt txt-blue link-underline\">Learn about sharing with family</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
     "        <h3 class=\"txt-blue-dark\">\n" +
@@ -3276,7 +3280,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <p class=\"txt-middle txt-black\">Learn about the science behind the ApoE test.</p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt txt-blue link-underline\">Read more about science</a>\n" +
+    "        <a ui-sref=\"master.science\" class=\"txt txt-blue link-underline\">Read more about science</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
     "        <h3 class=\"txt-blue-dark\">\n" +
@@ -3288,7 +3292,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt txt-blue link-underline\">Go to general questions page</a>\n" +
+    "        <a ui-sref=\"master.FAQ\" class=\"txt txt-blue link-underline\">Go to general questions page</a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -3310,34 +3314,34 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
   $templateCache.put("components/results/pages/result-questions.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">General Questions</h2>\n" +
@@ -3434,34 +3438,34 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
   $templateCache.put("components/results/pages/result-science.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">Science</h2>\n" +
@@ -3681,34 +3685,34 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
   $templateCache.put("components/results/pages/result-sharing.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">Sharing with family</h2>\n" +
@@ -3784,34 +3788,34 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
   $templateCache.put("components/results/pages/result-view.tpl.html",
     "<div class=\"result result--space-bottom\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-head__over\">\n" +
-    "        <div class=\"txt-rubric__wrap\">\n" +
-    "          <div class=\"txt txt-bold txt-gray anim-content-transition\">Overview</div>\n" +
-    "        </div>\n" +
-    "        <div class=\"result-head__download-button anim-content-transition\">\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap\">\n" +
+    "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Overview</div>\n" +
+    "      </div>\n" +
+    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
-    "          <div class=\"result-button-head__wrap\">\n" +
-    "            <a href=\"\" class=\"download__wrap\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div  class=\"download-button\"></div>\n" +
-    "              </div>\n" +
-    "              <span class=\"flex-column-2 hide-mobile\">\n" +
+    "          </a>\n" +
+    "        </div>\n" +
+    "        <div class=\"result-button-head__wrap\">\n" +
+    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div  class=\"download-button\"></div>\n" +
+    "            </div>\n" +
+    "            <span class=\"flex-column-2 hide-mobile\">\n" +
     "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
-    "            </a>\n" +
-    "          </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <h2 class=\"txt-blue-dark anim-content-transition\">Welcome back</h2>\n" +
@@ -4453,12 +4457,12 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "        <div class=\"section-box-head section-box-head--blue\">\n" +
     "          <div class=\"section-box-head__wrap\">\n" +
     "            <div class=\"container-flex align-items--center\">\n" +
-    "              <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column-2\">\n" +
     "                <div class=\"txt-left\">\n" +
     "                  <h3>How it works?</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column hide-mobile\">\n" +
     "                <div class=\"txt-right\">\n" +
     "                  <h4 class=\"txt-blue-dark\">Part {{slideIndex}}</h4>\n" +
     "                </div>\n" +
@@ -4466,7 +4470,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <div class=\"container-lg\">\n" +
+    "        <div class=\"container-lg hide-mobile\">\n" +
     "          <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
     "            <div uib-slide index=\"0\">\n" +
     "              <div class=\"slider__wrap\">\n" +
@@ -4658,6 +4662,192 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
+    "        \n" +
+    "        <div class=\"container-lg hide-desktop\">\n" +
+    "          <div class=\"slider__wrap\">\n" +
+    "            <div class=\"container-flex align-items--center container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column txt-left\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img img-middle\" src=\"'./assets/images/svg/key-blue-dark.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"container-exs\">\n" +
+    "                    <div class=\"txt-left txt-center-md txt--space-top-sm\">\n" +
+    "                      <h3 class=\"txt-blue-3\" >Security and privacy\n" +
+    "                        Your DNA is just for you</h3>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
+    "                      <p class=\"txt txt-black txt-left\">\n" +
+    "                        Your Alzheimer’s genetic information will be delivered to you via a secure, electronic report.  These results will also be available for download. It is up to you whom you share your results with, including your healthcare provider or family.  Our genetics counselors are available to go through your results with you too, if you choose. You are in control of how you receive your genetic results and whom you share them with.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"\">\n" +
+    "              <div class=\"container-flex align-items--center container-flex--column-reverse-sm\">\n" +
+    "                <div class=\"flex-column-2\">\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"container-exs\">\n" +
+    "                      <div class=\"txt-right txt-center-md title-space-top-md\">\n" +
+    "                        <h3 class=\"txt-blue-3\">Your privacy is our priority</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-right txt-left-sm txt-center-sm\">\n" +
+    "                        <p class=\"txt txt-black\">\n" +
+    "                          We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
+    "                          prior written consen\n" +
+    "                        </p>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            From when you input your order to when your results are delivered, your health information is fully encrypted and secure. Regular security scans are performed to make\n" +
+    "                            sure your data remains safe.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column txt-right\">\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"img__wrap img--center-sm\">\n" +
+    "                      <ng-include class=\"img-middle\" src=\"'./assets/images/svg/protection-blue-dark.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            \n" +
+    "            <!--slide second-->\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap txt-center\">\n" +
+    "                    <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/test-tube.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"title__wrap txt-center-sm\">\n" +
+    "                    <h3 class=\"txt-blue-dark\">Easy to use</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap txt-center\">\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
+    "                      have you supported each step of the way.\n" +
+    "                      *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column anim-content-transition\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"img__wrap txt-center\">\n" +
+    "                      <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/first-aid-kit.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
+    "                      <h3 class=\"txt-blue-dark\">Data-Driven</h3>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap txt-center\">\n" +
+    "                      <p class=\"txt txt-black\">\n" +
+    "                        Doctor ordered: At ADx Healthcare, we believe you should be in control of what health information you want to learn and whom you share it with. We also believe it is best to have a physician still be a part of the path, to ensure you understand what the results will and will not tell you, so they can help you decide if the test is a good fit for you. We offer comprehensive, physician-supervised genetic testing from the privacy of your own home.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"section__wrap-sm\">\n" +
+    "              <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"img__wrap txt-center\">\n" +
+    "                      <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/email-checked.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
+    "                      <h3 class=\"txt-blue-dark\">Access Online </h3>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap txt-center\">\n" +
+    "                      <p class=\"txt txt-black\">\n" +
+    "                        Once your results are ready, you will receive an e-mail from ADx Healthcare.  When you are ready, simply log-in to your account to access your private results.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"flex-column__wrap\">\n" +
+    "                    <div class=\"img__wrap txt-center\">\n" +
+    "                      <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"title__wrap txt-center-sm\">\n" +
+    "                      <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"txt__wrap txt-center\">\n" +
+    "                      <p class=\"txt txt-black\">\n" +
+    "                        Share your results with your physician, and your family members. In your secure results section, you can also access a PDF version of your Alzheimer’s disease ApoE genetic test results.  You can download and print this document to share with your healthcare provider.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            \n" +
+    "            <!--slide third-->\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img-middle\" src=\"'./assets/images/svg/molecules-3.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"title__wrap txt-left txt-center-sm\">\n" +
+    "                    <h3 class=\"txt-blue\">\n" +
+    "                      The latest science (results you can trust)\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
+    "                    <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                      Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "              <div class=\"flex-column align-vertical--center\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"img__wrap img--center-sm\">\n" +
+    "                    <ng-include class=\"img-middle dna-molecule--bgc-silver\" src=\"'./assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column-2\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <div class=\"title__wrap txt-left txt-center-sm\">\n" +
+    "                    <h3 class=\"txt-blue\">\n" +
+    "                      More about the test\n" +
+    "                    </h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
+    "                    <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                    </p>\n" +
+    "                    <div class=\"txt--indent-small\">\n" +
+    "                      <p class=\"txt txt-black\">\n" +
+    "                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            \n" +
+    "          </div>\n" +
+    "        </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -4745,7 +4935,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "            <h6  class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h6>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
-    "            <a ng-click=\"scrollContacts()\" ui-sref=\"master.about\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
+    "            <a ng-click=\"scrollToContacts($event)\" target=\"_self\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
     "            <a  ui-sref=\"master.about\" class=\"txt txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +

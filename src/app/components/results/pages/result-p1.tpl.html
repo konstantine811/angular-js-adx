@@ -1,10 +1,10 @@
 <div class="pre-result" ng-if="!showResult">
   <div class="result-head pre-result-head">
+    <div class="txt-rubric__wrap">
+      <div class="txt txt-bold txt-gray anim-content-transition">Pre-Result</div>
+    </div>
     <div class="container-lg--dashboard">
       <div class="pre-result-head__wrap">
-        <div class="txt-rubric__wrap">
-          <div class="txt txt-bold txt-gray anim-content-transition">Pre-Result</div>
-        </div>
         <div class="container-flex">
           <div class="flex-column content-txt">
             <div class="title__wrap anim-content-transition">
@@ -38,7 +38,7 @@
         <div class="boxes__wrap boxes__wrap--large">
           <div class="box-half-column box-half-column--mobile-flex box-shadow">
             <div class="box-image__wrap">
-              <ng-include src="'./assets/images/svg/low-risk.svg'"></ng-include>
+              <ng-include src="'./assets/images/svg/high-risk.svg'"></ng-include>
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
@@ -53,7 +53,7 @@
           </div>
           <div class="box-half-column box-half-column--mobile-flex box-shadow">
             <div class="box-image__wrap boxes__wrap--large">
-              <ng-include src="'./assets/images/svg/high-risk.svg'"></ng-include>
+              <ng-include src="'./assets/images/svg/low-risk.svg'"></ng-include>
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
@@ -144,34 +144,34 @@
 
 <div class="result" ng-if="showResult">
   <div class="result-head result-head--p1">
-    <div class="container-lg--dashboard">
-      <div class="result-head__over">
-        <div class="txt-rubric__wrap anim-content-transition">
-          <div class="txt txt-bold txt-gray">Results</div>
-        </div>
-        <div class="result-head__download-button anim-content-transition">
-          <div class="result-button-head__wrap">
-            <a href="" class="download__wrap">
-              <div class="flex-column">
-                <div class="comments-button"><i class="fa fa-comments comments-button__inner" aria-hidden="true"></i></div>
-              </div>
-              <span class="flex-column-2 hide-mobile">
+    <div class="result-head__over">
+      <div class="txt-rubric__wrap anim-content-transition">
+        <div class="txt txt-bold txt-gray">Results</div>
+      </div>
+      <div class="result-head__download-button anim-content-transition">
+        <div class="result-button-head__wrap">
+          <a href="" class="download__wrap">
+            <div class="flex-column">
+              <div class="comments-button"><i class="fa fa-comments comments-button__inner" aria-hidden="true"></i></div>
+            </div>
+            <span class="flex-column-2 hide-mobile">
                 <p class="txt txt-blue-dark txt-bold">Contact genetic counselor</p>
               </span>
-            </a>
-          </div>
-          <div class="result-button-head__wrap">
-            <a href="" class="download__wrap">
-              <div class="flex-column">
-                <div  class="download-button"></div>
-              </div>
-              <span class="flex-column-2 hide-mobile">
+          </a>
+        </div>
+        <div class="result-button-head__wrap">
+          <a href="" class="download__wrap">
+            <div class="flex-column">
+              <div  class="download-button"></div>
+            </div>
+            <span class="flex-column-2 hide-mobile">
                 <p class="txt txt-blue-dark txt-bold">Download report</p>
               </span>
-            </a>
-          </div>
+          </a>
         </div>
       </div>
+    </div>
+    <div class="container-lg--dashboard">
       <div class="result-head__title anim-content-transition  txt-left-sm">
        <div class="title__wrap">
          <h1 class="txt-blue-dark anim-content-transition">Your result </h1>

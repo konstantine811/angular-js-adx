@@ -1,6 +1,7 @@
 .login-page {
-  height: calc(100vh - 100px);
+  height: 100%;
   width: 100%;
+  padding-bottom: 55px;
 }
 
 .login-bgc {
@@ -12,7 +13,7 @@
 .login-form__wrap {
   width: 100%;
   height: auto;
-  padding: 88px 0;
+  padding: 88px 15px;
 }
 
 .form-input__login-wrap {
