@@ -23,26 +23,26 @@
                 <nav class="header-nav__wrap">
                   <ul class="header-nav-wrap__inner">
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.products.about" class="header-nav-link">Products</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.products.about" ng-click="showMenu()" class="header-nav-link">Products</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.about" class="header-nav-link">About</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.about" ng-click="showMenu()" class="header-nav-link">About</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.science" class="header-nav-link">Science</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.science" ng-click="showMenu()" class="header-nav-link">Science</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.FAQ" class="header-nav-link">FAQ</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.FAQ" ng-click="showMenu()" class="header-nav-link">FAQ</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.contact" class="header-nav-link">Contact</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.contact" ng-click="showMenu()" class="header-nav-link">Contact</a>
                     </li>
                     <li ng-show="!logged"  class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref="master.login" class="header-nav-link">Sign-in</a>
+                      <a ui-sref-active="active-mobile" ui-sref="master.login" ng-click="showMenu()" class="header-nav-link">Sign-in</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ng-show="logged" ui-sref="master_signedin.dashboard" class="header-nav-link">My Results</a>
-                      <a ng-show="!logged" ui-sref="master.register" class="header-nav-link">Register</a>
+                      <a ng-show="logged" ui-sref="master_signedin.dashboard" ng-click="showMenu()" class="header-nav-link">My Results</a>
+                      <a ng-show="!logged" ui-sref="master.register" ng-click="showMenu()" class="header-nav-link">Register</a>
                     </li>
                   </ul>
                 </nav>

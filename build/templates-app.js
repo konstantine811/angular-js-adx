@@ -578,9 +578,9 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"home-head__wrap\">\n" +
     "        <div class=\"head-title__wrap\">\n" +
     "          <div class=\"head-title txt-center-sm anim-content-transition\">\n" +
-    "            <h2>Alzheimer's disease\n" +
+    "            <h1>Alzheimer's disease\n" +
     "              know you risk\n" +
-    "            </h2>\n" +
+    "            </h1>\n" +
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
@@ -4870,54 +4870,62 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "<footer class=\"footer\">\n" +
     "    <div class=\"container-fluid container-fluid--section\">\n" +
     "        <div class=\"container-lg\">\n" +
-    "            <div class=\"row\">\n" +
-    "                <div class=\"col-sm-4\">\n" +
-    "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                        <h6 class=\"txt-blue txt-uppercase\">Provider order required</h6>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
+    "            <div class=\"container-flex container-flex--column-sm\">\n" +
+    "                <div class=\"flex-column-1-half\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-center-sm\">\n" +
+    "                        <h4 class=\"txt-blue txt-uppercase\">Provider order required</h4>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
-    "                            ApoE testing must be approved by your physician or other qualified health care provider.\n" +
-    "                            If you don’t have a health care provider ADx Healthcare can assist in helping you find a licensed provider.\n" +
+    "                          ApoE testing must be approved by your physician or other qualified health care provider.\n" +
+    "                          If you don’t have a health care provider ADx Healthcare can assist in helping you find a licensed provider.\n" +
     "                        </div>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
-    "                <div class=\"col-sm-3\">\n" +
-    "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                        <h6 class=\"txt-blue txt-uppercase\">PARTNER WITH US</h6>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
-    "                        <a href=\"\" class=\"txt txt-black\">Affiliates</a>\n" +
-    "                       <div class=\"link--indent\">\n" +
-    "                           <a href=\"\" class=\"txt txt-black\">Providers</a>\n" +
-    "                       </div>\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-center-sm\">\n" +
+    "                        <h4 class=\"txt-blue txt-uppercase\">PARTNER WITH US</h4>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-center-sm\">\n" +
+    "                        <a href=\"\" class=\"txt txt-bold txt-black\">Affiliates</a>\n" +
+    "                        <div class=\"link--indent\">\n" +
+    "                          <a href=\"\" class=\"txt txt-bold txt-black\">Providers</a>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
-    "                <div class=\"col-sm-2\">\n" +
-    "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                        <a ui-sref=\"master.legal\" class=\"txt txt-medium txt-blue txt-uppercase\">LEGAL</a>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
-    "                        <a href=\"\" class=\"txt txt-black\">Tems of Service</a>\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-center-sm\">\n" +
+    "                        <a ui-sref=\"master.legal\" class=\"title-fourth txt-blue txt-uppercase\">LEGAL</a>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-center-sm\">\n" +
+    "                        <a href=\"\" class=\"txt txt-bold txt-black\">Tems of Service</a>\n" +
     "                        <div class=\"link--indent\">\n" +
-    "                            <a href=\"\" class=\"txt txt-black\">Privacy Policy</a>\n" +
+    "                          <a href=\"\" class=\"txt txt-bold txt-black\">Privacy Policy</a>\n" +
     "                        </div>\n" +
     "                        <div class=\"link--indent\">\n" +
-    "                            <a href=\"\" class=\"txt txt-black\">Informed Consent</a>\n" +
+    "                          <a href=\"\" class=\"txt txt-bold txt-black\">Informed Consent</a>\n" +
     "                        </div>\n" +
     "                        <div class=\"link--indent\">\n" +
-    "                            <a href=\"\" class=\"txt txt-black\">Research Consent</a>\n" +
+    "                          <a href=\"\" class=\"txt txt-bold txt-black\">Research Consent</a>\n" +
     "                        </div>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
-    "                <div class=\"col-sm-3\">\n" +
-    "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                        <h6 class=\"txt-blue txt-uppercase\">JOIN OUR EMAIL LIST</h6>\n" +
-    "                    </div>\n" +
-    "                    <div class=\"txt__wrap txt-center-sm\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                    <div class=\"flex-column__wrap\">\n" +
+    "                      <div class=\"title__wrap txt-center-sm\">\n" +
+    "                        <h4 class=\"txt-blue txt-uppercase\">JOIN OUR EMAIL LIST</h4>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
-    "                            Join our email list to receive news and updates on various advances in Alzheimer's disease research.\n" +
+    "                          Join our email list to receive news and updates on various advances in Alzheimer's disease research.\n" +
     "                        </div>\n" +
+    "                      </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -4927,7 +4935,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"footer-bottom\">\n" +
     "        <div class=\"footer-bottom__wrap\">\n" +
     "          <div class=\"title__wrap\">\n" +
-    "            <h6  class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h6>\n" +
+    "            <h4  class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h4>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
     "            <a ng-click=\"scrollToContacts($event)\" target=\"_self\" class=\"txt txt-blue-dark\">Contact Us</a>\n" +
@@ -4982,26 +4990,26 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                <nav class=\"header-nav__wrap\">\n" +
     "                  <ul class=\"header-nav-wrap__inner\">\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.products.about\" class=\"header-nav-link\">Products</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.products.about\" ng-click=\"showMenu()\" class=\"header-nav-link\">Products</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.about\" class=\"header-nav-link\">About</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.about\" ng-click=\"showMenu()\" class=\"header-nav-link\">About</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.science\" class=\"header-nav-link\">Science</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.science\" ng-click=\"showMenu()\" class=\"header-nav-link\">Science</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.FAQ\" ng-click=\"showMenu()\" class=\"header-nav-link\">FAQ</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link\">Contact</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.contact\" ng-click=\"showMenu()\" class=\"header-nav-link\">Contact</a>\n" +
     "                    </li>\n" +
     "                    <li ng-show=\"!logged\"  class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link\">Sign-in</a>\n" +
+    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.login\" ng-click=\"showMenu()\" class=\"header-nav-link\">Sign-in</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" class=\"header-nav-link\">My Results</a>\n" +
-    "                      <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"header-nav-link\">Register</a>\n" +
+    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu()\" class=\"header-nav-link\">My Results</a>\n" +
+    "                      <a ng-show=\"!logged\" ui-sref=\"master.register\" ng-click=\"showMenu()\" class=\"header-nav-link\">Register</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
     "                </nav>\n" +
@@ -5083,8 +5091,8 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"side-navbar-account__button\">\n" +
-    "          <a ui-sref=\"master_signedin.profile\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
-    "          <button uib-tooltip=\"Logout\" ui-sref=\"master.logout\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
+    "          <a ui-sref=\"master_signedin.profile\" ng-click=\"showMenu()\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <button uib-tooltip=\"Logout\" ui-sref=\"master.logout\"  class=\"button-circle\" ng-click=\"showMenu()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -5102,7 +5110,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
@@ -5110,7 +5118,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
@@ -5118,7 +5126,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p3\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p3\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
@@ -5126,7 +5134,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p4\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p4\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
@@ -5136,7 +5144,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -5144,7 +5152,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.sharing\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.sharing\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -5152,7 +5160,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.questions\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.questions\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
     "                  </span>\n" +

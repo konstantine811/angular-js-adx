@@ -54,6 +54,9 @@
   &.active {
     color: $blue-6;
   }
+  &.active-mobile {
+    color: $blue-dark;
+  }
 }
 
 .header-nav-wrap__inner {

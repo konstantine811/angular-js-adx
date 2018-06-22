@@ -8598,9 +8598,9 @@ h3 {
   margin: 0;
   padding: 0; }
 
-h4 {
+h4, .title-fourth {
   font-family: Roboto, sans-serif;
-  font-size: 14pt;
+  font-size: 15pt;
   font-weight: 500;
   line-height: 24px;
   color: #fff;
@@ -8694,7 +8694,7 @@ h6 {
   padding-right: 15px; }
 
 .link--indent {
-  padding-top: 20px; }
+  padding-top: 10px; }
 
 .txt-small {
   font-family: Roboto, sans-serif;
@@ -8756,6 +8756,10 @@ h6 {
 
 .flex-column {
   flex: 1;
+  width: 100%; }
+
+.flex-column-1-half {
+  flex: 1.5;
   width: 100%; }
 
 .flex-column-2 {
@@ -9697,6 +9701,8 @@ ul.box__wrap {
     color: #41c5eb; }
   .header-nav-link.active {
     color: #41c5eb; }
+  .header-nav-link.active-mobile {
+    color: #063f5f; }
 
 .header-nav-wrap__inner {
   padding-top: 10px; }
