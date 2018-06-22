@@ -29,7 +29,7 @@
                       <a ui-sref-active="active" ui-sref="master.about" class="header-nav-link">About</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ui-sref-active="active" ui-sref=" " class="header-nav-link">Science</a>
+                      <a ui-sref-active="active" ui-sref="master.science" class="header-nav-link">Science</a>
                     </li>
                     <li class="header-nav-item">
                       <a ui-sref-active="active" ui-sref="master.FAQ" class="header-nav-link">FAQ</a>
@@ -37,19 +37,15 @@
                     <li class="header-nav-item">
                       <a ui-sref-active="active" ui-sref="master.contact" class="header-nav-link">Contact</a>
                     </li>
-                    <li class="header-nav-item">
+                    <li ng-show="!logged"  class="header-nav-item">
                       <a ui-sref-active="active" ui-sref="master.login" class="header-nav-link">Sign-in</a>
+                    </li>
+                    <li class="header-nav-item">
+                      <a ng-show="logged" ui-sref="master_signedin.dashboard" class="header-nav-link">My Results</a>
+                      <a ng-show="!logged" ui-sref="master.register" class="header-nav-link">Register</a>
                     </li>
                   </ul>
                 </nav>
-                <div class="header__button">
-                  <div class="button__login button-anim">
-                    <a ui-sref="master.register" class="bt-round bt-round--blue">Register</a>
-                  </div>
-                  <div class="button__purchase button-anim">
-                    <a ui-sref="master.products.pre-purchase" class="bt-round bt-round--blue-dark">Order</a>
-                  </div>
-                </div>
               </div>
               <!--end mobile menu-->
               
@@ -71,16 +67,18 @@
                 <a ui-sref-active="active" ui-sref="master.FAQ" class="header-nav-link txt-small txt-bold">FAQ</a>
               </li>
               <li class="header-nav-item">
-                <a ui-sref-active="active" ui-sref="master.login" class="header-nav-link txt-small txt-bold">Sign-in</a>
+                <a ng-show="!logged" ui-sref-active="active" ui-sref="master.login" class="header-nav-link txt-small txt-bold">Sign-in</a>
               </li>
             </ul>
           </nav>
           <div class="header__button hide-mobile">
             <div class="button__login">
-              <a ui-sref="master.register" class="bt-round bt-round--blue">Register</a>
+                  <a ng-show="logged" ui-sref="master_signedin.dashboard" class="bt-round bt-round--blue">My Results</a>
+                  <a ng-show="!logged" ui-sref="master.register" class="bt-round bt-round--blue">Register</a>
             </div>
             <div class="button__purchase">
-              <a ui-sref="master_signedin.results.pre-purchase" class="bt-round bt-round--blue-dark">Order</a>
+              <a ng-show="!logged" ui-sref="master_signedin.results.pre-purchase" class="bt-round bt-round--blue-dark">Order</a>
+              <a ng-show="logged" ui-sref="master.logout" class="bt-round bt-round--blue-dark">Logout</a>
             </div>
           </div>
           

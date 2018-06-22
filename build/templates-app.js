@@ -4990,7 +4990,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                      <a ui-sref-active=\"active\" ui-sref=\"master.about\" class=\"header-nav-link\">About</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active\" ui-sref=\" \" class=\"header-nav-link\">Science</a>\n" +
+    "                      <a ui-sref-active=\"active\" ui-sref=\"master.science\" class=\"header-nav-link\">Science</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link\">FAQ</a>\n" +
@@ -4998,19 +4998,15 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                    <li class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active\" ui-sref=\"master.contact\" class=\"header-nav-link\">Contact</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"header-nav-item\">\n" +
+    "                    <li ng-show=\"!logged\"  class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link\">Sign-in</a>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"header-nav-item\">\n" +
+    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" class=\"header-nav-link\">My Results</a>\n" +
+    "                      <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"header-nav-link\">Register</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
     "                </nav>\n" +
-    "                <div class=\"header__button\">\n" +
-    "                  <div class=\"button__login button-anim\">\n" +
-    "                    <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
-    "                  </div>\n" +
-    "                  <div class=\"button__purchase button-anim\">\n" +
-    "                    <a ui-sref=\"master.products.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
     "              </div>\n" +
     "              <!--end mobile menu-->\n" +
     "              \n" +
@@ -5032,16 +5028,18 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                <a ui-sref-active=\"active\" ui-sref=\"master.FAQ\" class=\"header-nav-link txt-small txt-bold\">FAQ</a>\n" +
     "              </li>\n" +
     "              <li class=\"header-nav-item\">\n" +
-    "                <a ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link txt-small txt-bold\">Sign-in</a>\n" +
+    "                <a ng-show=\"!logged\" ui-sref-active=\"active\" ui-sref=\"master.login\" class=\"header-nav-link txt-small txt-bold\">Sign-in</a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
+    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" class=\"bt-round bt-round--blue\">My Results</a>\n" +
+    "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-show=\"!logged\" ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--blue-dark\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
