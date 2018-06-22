@@ -154,21 +154,6 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  \n" +
     "  <!--section fourth with map-->\n" +
     "  <div id=\"contacts\" class=\"about-section-fourth\">\n" +
-    "    <map class=\"map-canvas\">\n" +
-    "    </map>\n" +
-    "    <div class=\"about-section-fourh__data-map-overlap\">\n" +
-    "      <p class=\"txt\">Custom Service</p>\n" +
-    "      <p class=\"txt\">Email</p>\n" +
-    "      <p class=\"txt\">support@adxhealthcare.com</p>\n" +
-    "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
-    "      <div class=\"txt--indent-small\">\n" +
-    "        <p class=\"txt\">Corporate Office</p>\n" +
-    "        <p class=\"txt\">3614 Meridian Street</p>\n" +
-    "        <p class=\"txt\">Suite 101</p>\n" +
-    "        <p class=\"txt\">Bellingham, WA 98225</p>\n" +
-    "        <p class=\"txt\">United States</p>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
     "   <div class=\"about-section-fourth_form-map-overlap\">\n" +
     "     <h2 class=\"txt-blue-dark txt-center\">Contact us</h2>\n" +
     "     <div class=\"sub-header-txt__wrap\">\n" +
@@ -194,6 +179,19 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "       </div>\n" +
     "     </form>\n" +
     "   </div>\n" +
+    "    <div class=\"about-section-fourth__data-map-overlap\">\n" +
+    "      <p class=\"txt\">Custom Service</p>\n" +
+    "      <p class=\"txt\">Email</p>\n" +
+    "      <p class=\"txt\">support@adxhealthcare.com</p>\n" +
+    "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
+    "      <div class=\"txt--indent-small\">\n" +
+    "        <p class=\"txt\">Corporate Office</p>\n" +
+    "        <p class=\"txt\">3614 Meridian Street</p>\n" +
+    "        <p class=\"txt\">Suite 101</p>\n" +
+    "        <p class=\"txt\">Bellingham, WA 98225</p>\n" +
+    "        <p class=\"txt\">United States</p>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
     "  </div>\n" +
     "  <!--end section fourth with map-->\n" +
     "  \n" +
@@ -5038,10 +5036,10 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "              <a ui-sref=\"master.register\" class=\"bt-round bt-round--blue\">Register</a>\n" +
+    "              <a ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "              <a ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--header bt-round--blue-dark\">Order</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +

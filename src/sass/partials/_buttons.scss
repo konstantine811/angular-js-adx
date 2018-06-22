@@ -183,6 +183,12 @@ button[disabled].bt-round {
   }
 }
 
+.bt-round.bt-round--header {
+  min-width: auto;
+  font-family: 'CircularStd-Medium', Roboto, sans-serif;
+  padding: 11px 43px;
+}
+
 .bt-round--all-width {
   width: 100%;
   padding: 17px 57px;

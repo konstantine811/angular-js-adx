@@ -1,4 +1,7 @@
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-lg) {
+  .login-page {
+    height: 100%;
+  }
 }
 
 @media (max-width: $breakpoint-exs) {

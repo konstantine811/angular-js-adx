@@ -1,11 +1,19 @@
-@media (max-width: $breakpoint-lg) {
+@media (max-width: $breakpoint) {
   .about-section-fourth_form-map-overlap {
-    top: 0;
-    left: calc(50% - 235px);
+    left: calc(36% - 235px);
   }
-  .about-section-fourh__data-map-overlap {
-    top: 64%;
-    left: calc(50% - 171px);
+}
+
+@media (max-width: $breakpoint-md) {
+  .about-section-fourth__data-map-overlap {
+    position: relative;
+    margin: 60px auto 0;
+  }
+
+  .about-section-fourth_form-map-overlap {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -14,11 +22,6 @@
   .about-page-header {
     min-height: 580px;
     padding: 50px 0 0;
-  }
-
-  .about-section-fourth_form-map-overlap {
-    max-width: 100%;
-    left: 0;
   }
 }
 

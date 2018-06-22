@@ -31,11 +31,14 @@
   width: 100%;
   height: auto;
   margin-top: 40px;
+  background-image: url('../assets/images/image-map.png');
+  background-size: cover;
+  padding: 28px 15px;
 }
 
 
 .about-section-fourth_form-map-overlap {
-  position: absolute;
+  position: relative;
   top: 0;
   max-width: 470px;
   width: 100%;
@@ -44,11 +47,12 @@
   box-shadow: 0 0 46px -5px rgba(0, 0 , 0, 0.95);
   border-radius: 2px;
   padding: 25px 40px 40px;
-  left: 38%;
+  left: calc(50% - 235px);
 }
 
-.about-section-fourh__data-map-overlap {
+.about-section-fourth__data-map-overlap {
   position: absolute;
+  right: 0;
   top: 0;
   background-color: rgba($blue-6, 0.85);
   max-width: 311px;
