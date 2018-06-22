@@ -5086,7 +5086,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "        </div>\n" +
     "        <div class=\"side-navbar-account__button\">\n" +
     "          <a ui-sref=\"master_signedin.profile\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
-    "          <button uib-tooltip=\"Logout\" ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
+    "          <button uib-tooltip=\"Logout\" ui-sref=\"master.logout\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +

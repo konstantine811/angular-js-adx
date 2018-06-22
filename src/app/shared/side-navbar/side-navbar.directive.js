@@ -20,12 +20,6 @@ angular.module("ixLayer")
           });
 
 
-          $scope.logout = function() {
-            $rootScope.$broadcast("user_logged_out");
-            userAccessSrv.logout();
-            $scope.logged = false;
-          };
-
           $scope.show = false;
           $scope.showMenu = function() {
             if (!$scope.show) {
