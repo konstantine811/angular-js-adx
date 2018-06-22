@@ -138,12 +138,12 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
-    "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Career at ADx</h1>\n" +
+    "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Careers at ADx</h1>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
     "              <p class=\"txt\">The ApoE gene comes in three variants – ApoE2, ApoE3, and ApoE4, and everyone has two copies of the gene.  Genotyping reveals what specific combination of the ApoE gene you have, which may be two copies of the same form (e.g. ApoE3/ApoE3), or two different forms (e.g. ApoE2/ApoE4).  The ApoE4 form is a major risk factor for Alzheimer’s disease. </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "              <a href=\"mailto:webmaster@example.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Jon Doe</span></a>\n" +
+    "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Jon Doe</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -1906,10 +1906,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                            <div class=\"txt txt-black\">\n" +
     "                                <div class=\"profile-view--display-column-wrap\">\n" +
     "                                    <div class=\"profile-view-column-1\">\n" +
-    "                                        {{profile.user.email}} <span class=\"txt-left-space\">(Verifed)</span>\n" +
-    "                                    </div>\n" +
-    "                                    <div class=\"profile-view-column-2\">\n" +
-    "                                        <a class=\"txt-blue txt-right\">Edit</a>\n" +
+    "                                        {{profile.user.email}}</span>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -1930,7 +1927,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "    <!--end section first-->\n" +
     "    \n" +
     "    <!--section second-->\n" +
-    "    <div class=\"section__wrap section__wrap--space-bottom\">\n" +
+    "    <div class=\"section__wrap--space-bottom\">\n" +
     "        <div class=\"container-lg--dashboard\">\n" +
     "            <div class=\"section-box-shadow\">\n" +
     "                <div class=\"title__wrap\">\n" +
@@ -3776,7 +3773,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "        answer any questions you have.\n" +
     "      </h2>\n" +
     "      <div class=\"button__wrap button--center\">\n" +
-    "        <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
+    "        <a href=\"\" class=\"bt-round bt-round--blue\">Download Reports</a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -5090,8 +5087,8 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"side-navbar-account__button\">\n" +
-    "          <a ui-sref=\"master_signedin.profile\" class=\"button-circle\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
-    "          <button ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
+    "          <a ui-sref=\"master_signedin.profile\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <button uib-tooltip=\"Logout\" ng-click=\"logout()\" class=\"button-circle\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
