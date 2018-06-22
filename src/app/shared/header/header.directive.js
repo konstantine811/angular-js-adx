@@ -1,7 +1,10 @@
 angular.module("ixLayer")
   .directive('appHeader', function() {
     return {
+      restrict : 'E',
+      scope: false,
       templateUrl: "shared/header/header.tpl.html",
+
       controller: ['$scope', function($scope) {
 
         $scope.showText = function() {

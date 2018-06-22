@@ -21,6 +21,7 @@ angular.module( 'ixLayer', [
   'ixlayer.science',
   'ui.router',
   'ngAnimate',
+  'angular-google-analytics',
   'ui.bootstrap'
 ])
 
@@ -45,7 +46,11 @@ angular.module( 'ixLayer', [
   }).install();
 })
 
-
+.config(['AnalyticsProvider', function (AnalyticsProvider) {
+   // Add configuration code as desired
+   AnalyticsProvider.setAccount('UA-113183089-2');
+   AnalyticsProvider.trackPages(true);
+}]).run(['Analytics', function(Analytics) { }])
 
 .run( function run () {
 })
@@ -63,3 +68,4 @@ angular.module('exceptionOverride', []).factory('$exceptionHandler', function() 
   };
 
 });
+
