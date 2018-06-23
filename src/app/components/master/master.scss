@@ -1,0 +1,14 @@
+
+/**
+  Customize animations to show error
+**/
+.error-animate-show {
+  height: 45px;
+  overflow: hidden;
+
+  &.ng-hide {
+    height: 0px;
+  }
+}
+
+

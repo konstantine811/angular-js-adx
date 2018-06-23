@@ -19,8 +19,8 @@ angular.module( 'ixlayer.master', [
     });
   })
 
-  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', '$transitions', '$window', 'djangoAuth',  'userAccessSrv',
-    function MasterCtrl ( $scope, $location, $state, $rootScope, $transitions, $window, djangoAuth, userAccessSrv ) {
+  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', '$transitions', '$window', 'djangoAuth',  'userAccessSrv', 'errorHandler',
+    function MasterCtrl ( $scope, $location, $state, $rootScope, $transitions, $window, djangoAuth, userAccessSrv, errorHandler ) {
 
       $scope.logged = false;
       $scope.hideSideNavBar = true;
@@ -94,6 +94,11 @@ angular.module( 'ixlayer.master', [
       });
 
 
+      $scope.error = errorHandler.error;
+
+      $scope.closeError = function () {
+        errorHandler.cleanError();
+      };
 
       $scope.logged = (function() {
         var token = djangoAuth.getToken();

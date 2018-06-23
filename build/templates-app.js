@@ -1209,6 +1209,16 @@ angular.module("components/master/master_signedin.tpl.html", []).run(["$template
 angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/master/master.tpl.html",
     "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
+    "  <div class=\"error-message error-animate-show\" ng-show=\"error.displayMessage\">\n" +
+    "    <div class=\"container-fluid main-side-gap main-page-width\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-lg-12 \">\n" +
+    "          <i class=\"fa fa-info-circle fa-lg space-right\"></i> {{error.displayMessage}}\n" +
+    "          <a class=\"pull-right\" ng-click=\"closeError()\"><i class=\"fa fa-close fa-lg\"></i></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
     "  <app-header class=\"hideSideNavBar\"></app-header>\n" +
     "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
     "  <app-footer ng-show=\"showFooter\"></app-footer>\n" +

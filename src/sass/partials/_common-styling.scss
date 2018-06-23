@@ -3,6 +3,14 @@ body {
   font-weight: 400;
 }
 
+
+.error-message.error-animate-show {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 1000;
+}
+
 //common styling
 .hide-desktop, .hide-desktop-md {
   display: none !important;

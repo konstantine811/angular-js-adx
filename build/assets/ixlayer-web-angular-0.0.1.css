@@ -7567,6 +7567,12 @@ body {
   font-family: Roboto, Montserrat, sans-serif;
   font-weight: 400; }
 
+.error-message.error-animate-show {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 1000; }
+
 .hide-desktop, .hide-desktop-md {
   display: none !important; }
 
@@ -9802,6 +9808,18 @@ ul.box__wrap {
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
+.error-message {
+  background-color: #EFE786;
+  color: black;
+  line-height: 45px; }
+
+.error-animate-show, .error-animate-show.ng-hide-add, .error-animate-show.ng-hide-remove {
+  transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s; }
+
 .footer {
   position: relative;
   margin-top: 50px;
@@ -10603,7 +10621,13 @@ textarea.form-control {
   body .page {
     position: relative;
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+
+  .error-message.error-animate-show {
+    top: 77px; } }
+@media (max-width: 768px) {
+  .error-message.error-animate-show {
+    top: 55px; } }
 @media (max-width: 1200px) {
   .map-canvas {
     height: 1106px; } }

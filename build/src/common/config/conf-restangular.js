@@ -34,23 +34,121 @@ angular.module( 'ixlayer.config.restangular', [
 
   }])
 
-  .run( ['userAccessSrv', 'Restangular', 'errorHandler', "$log", '$state', '$timeout', function (userAccess, Restangular, errorHandler, $log, $state, $timeout) {
+  .run( ['userAccessSrv', 'Restangular', 'errorHandler', "$log", '$state', '$timeout',
+    function (userAccess, Restangular, errorHandler, $log, $state, $timeout) {
 
-    var goLoginPage = function(){
-      userAccess.cleanUser();
-      $log.debug("Go Login!");
-      $state.go('master.login');
-    };
+      var goLoginPage = function(){
+        userAccess.cleanUser();
+        $log.debug("Go Login!");
+        $state.go('master.login');
+      };
 
-    Restangular.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
-      // Let's renew the token on every successfully performed request -> make sure the token will be expired only after a certain amount of *inactive* time.
-      // So if the user makes any activity (do some network request, let's renew the valid token
-      if (userAccess.isAuthenticated()) {
-        userAccess.renewTokenIfNeeded();
-      }
+      var generalErrorHanding = function(response) {
 
-      return data;
-    });
+        //Get error message if presented!
+        $log.debug("Restangular error occurred", response);
+        var errorMessage = null;
+        if (response.data) {
+          errorMessage = response.data.detail;
+        }
 
-  }]);
+        //403 & Missing Authentication credentials -> 401
+        if (response.status == 403) {
+          $log.debug("403 -> Treated as 401");
+          errorMessage = null;
+          response.status = 401;
+        }
+
+        if (response.status == -1) {
+          $log.debug("Connection error!");
+          errorHandler.showConnectionError();
+          return;
+        }
+        else if (response.status == 400) {
+          $log.debug("Bad request");
+          errorMessage = errorMessage || "An error occurred. Please try later.";
+        } else if (response.status == 401) {
+          goLoginPage();
+        }
+        else if (response.status == 413) {
+          errorMessage = errorMessage || "The selected file is too large.";
+        }
+        else if (response.status == 404) {
+          $log.debug("Resource not available...");
+          errorMessage = errorMessage || "Not available.";
+          //goLoginPage();
+        } else {
+          errorMessage = errorMessage || "An error occurred. Please try later.";
+          $log.debug("Response received with HTTP error code: " + response.status );
+        }
+        if(errorMessage) {
+          errorHandler.showError(errorMessage);
+        }
+      };
+
+      Restangular.addErrorInterceptor(
+        function(response, deferred, responseHandler) {
+
+          if (response.config.timeout && response.config.timeout.state === 'fulfilled') {
+            //The request was cancelled by the client, no error handling at this case
+            return;
+          }
+
+          var generalHandlerTimer = $timeout(function() {
+            generalErrorHanding(response);
+          });
+          response.cancelGeneralHandler = function() {
+            $timeout.cancel(generalHandlerTimer);
+          };
+          return true; // continue the promise chain
+        }
+      );
+
+      Restangular.addErrorInterceptor(
+        function(response, deferred, responseHandler) {
+          if (response.status === 403 && response.data === 'Unauthorized IP') {
+            //Cancel the standard error handling
+            response.cancelGeneralHandler();
+
+            //Go to the No Permission page
+            $state.transitionTo('nopermission');
+
+            return false; // stop the promise chain
+          }
+
+
+          var reportErrorTimer = $timeout(function() {
+            Raven.captureException(new Error('HTTP response error'), {
+              extra: {
+                config: response.config,
+                status: response.status
+              }
+            });
+          });
+
+          response.cancelReportingError = function() {
+            $timeout.cancel(reportErrorTimer);
+          };
+
+          return true; // contiune the promise chain
+        }
+      );
+
+      Restangular.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
+        // Cleanup connection error
+        errorHandler.cleanConnectionError();
+        return data;
+      });
+
+      Restangular.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
+        // Let's renew the token on every successfully performed request -> make sure the token will be expired only after a certain amount of *inactive* time.
+        // So if the user makes any activity (do some network request, let's renew the valid token
+        if (userAccess.isAuthenticated()) {
+          userAccess.renewTokenIfNeeded();
+        }
+
+        return data;
+      });
+
+    }]);
 

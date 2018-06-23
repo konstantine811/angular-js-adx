@@ -1,5 +1,5 @@
 
 var appConfig = {
-    schema:   'https',
-    host:     'stage-api.adx.ixlayer.com'
+    schema:   'http',
+    host:     'localhost:8000'
 };
