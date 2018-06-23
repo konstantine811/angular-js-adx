@@ -1164,7 +1164,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" type=\"submit\" ng-disabled=\"form.$invalid\" test-hook=\"login-button\"><span class=\"txt-medium\">Sign in</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"master.register\" class=\"link-underline txt-blue txt-small txt-bold\">\n" +
+    "              <a href ui-sref=\"master.register\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
     "                I need to create an account\n" +
     "              </a>\n" +
     "            </div>\n" +
@@ -2047,7 +2047,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
-    "              <a href ui-sref=\"master.login\" class=\"link-underline txt-blue txt txt-small txt-bold\">\n" +
+    "              <a href ui-sref=\"master.login\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
     "                I have an account\n" +
     "              </a>\n" +
     "            </div>\n" +
