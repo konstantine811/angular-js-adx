@@ -39,7 +39,8 @@ angular.module( 'ixlayer.master', [
       $scope.$watch(function() {
         return $location.path();
       }, function(value) {
-        var path = value.slice(1);
+        var pathArray = value.split("/");
+        var path = pathArray[1];
         switch(path) {
           case 'home' :
             $scope.hideSideNavBar = false;
@@ -49,7 +50,11 @@ angular.module( 'ixlayer.master', [
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
             break;
-          case 'forgot_password' :
+          case 'forgot-password' :
+            $scope.hideSideNavBar = false;
+            $scope.showFooter = false;
+            break;
+          case 'verify-email':
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
             break;

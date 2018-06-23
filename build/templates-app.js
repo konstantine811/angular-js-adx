@@ -2049,8 +2049,8 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "              <p class=\"txt txt-black\">You registration was completed successfully. You should receive an email shortly with instruction on how to active your account.</p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <a href ui-sref=\"master_signedin.dashboard\" class=\"bt-round bt-round--blue-dark\">\n" +
-    "                Dashboard\n" +
+    "              <a href ui-sref=\"master.login\" class=\"bt-round bt-round--blue-dark\">\n" +
+    "                Sign-in\n" +
     "              </a>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -4856,11 +4856,29 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/verify_email/verify_email.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>Verify Email</h1>\n" +
-    "        <div ng-show=\"complete\">Great! You email address has been verified</div>\n" +
-    "        <div ng-show=\"!complete\">There was a problem validating your email address</div>\n" +
+    "<div class=\"register-page login-bgc\">\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "        <div class=\"register-form__wrap\">\n" +
+    "            <div class=\"register-form\">\n" +
+    "                <div ng-if=\"complete === true\" class=\"register-complete\">\n" +
+    "                    <h3 class=\"txt-medium txt-blue-dark txt-center\">Success!</h3>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">You email address has been verified. Press Sign-in below to continue.</p>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"button__wrap button--center\">\n" +
+    "                        <a href ui-sref=\"master.login\" class=\"bt-round bt-round--blue-dark\">\n" +
+    "                            Sign-in\n" +
+    "                        </a>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div ng-if=\"complete === false\" class=\"register-complete\">\n" +
+    "                    <h3 class=\"txt-medium txt-blue-dark txt-center\">On No!</h3>\n" +
+    "                    <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">There was a problem verifying your email address. The activation key is invalid.</p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);

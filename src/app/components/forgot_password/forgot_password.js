@@ -5,7 +5,7 @@ angular.module( 'ixlayer.forgotpassword', [
   
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'master.forgot_password', {
-      url: '/forgot_password',
+      url: '/forgot-password',
       controller: 'ForgotPasswordCtrl',
       templateUrl: 'components/forgot_password/forgot_password.tpl.html',
       data:{ pageTitle: 'Forgot Password' }

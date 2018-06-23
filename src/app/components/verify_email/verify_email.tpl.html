@@ -1,7 +1,25 @@
-<div class="container-fluid">
-    <div class="row">
-        <h1>Verify Email</h1>
-        <div ng-show="complete">Great! You email address has been verified</div>
-        <div ng-show="!complete">There was a problem validating your email address</div>
+<div class="register-page login-bgc">
+    <div class="container-fluid container-fluid--section">
+        <div class="register-form__wrap">
+            <div class="register-form">
+                <div ng-if="complete === true" class="register-complete">
+                    <h3 class="txt-medium txt-blue-dark txt-center">Success!</h3>
+                    <div class="txt__wrap">
+                        <p class="txt txt-black">You email address has been verified. Press Sign-in below to continue.</p>
+                    </div>
+                    <div class="button__wrap button--center">
+                        <a href ui-sref="master.login" class="bt-round bt-round--blue-dark">
+                            Sign-in
+                        </a>
+                    </div>
+                </div>
+                <div ng-if="complete === false" class="register-complete">
+                    <h3 class="txt-medium txt-blue-dark txt-center">On No!</h3>
+                    <div class="txt__wrap">
+                        <p class="txt txt-black">There was a problem verifying your email address. The activation key is invalid.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
