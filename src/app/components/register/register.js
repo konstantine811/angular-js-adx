@@ -1,9 +1,9 @@
 angular.module( 'ixlayer.register', [
-    'ui.router',
-    'ixlayer.djangoAuth',
-    'ui.bootstrap',
-    'ngAnimate'
-  ])
+  'ui.router',
+  'ixlayer.djangoAuth',
+  'ui.bootstrap',
+  'ngAnimate'
+])
   .config(function config( $stateProvider ) {
     $stateProvider.state( 'master.register', {
       url: '/register',
@@ -16,30 +16,28 @@ angular.module( 'ixlayer.register', [
       }
     });
   })
-  
+
   .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv',  function RegisterCtrl($scope, userAccessSrv) {
-    var vm = $scope;
+    $scope.complete = false;
+    $scope.error = null;
+    $scope.showPopup = false;
+    $scope.notChecked = false;
 
-    vm.complete = false;
-    vm.errors = null;
-    vm.showPopup = false;
-    vm.notChecked = false;
-
-
-    vm.submitForm = function (form) {
-      vm.showPopup = true;
-      vm.submitConsent = function() {
-        vm.showPopup = false;
-        userAccessSrv.register(form.first_name, form.last_name,
-          form.email, form.password,
-          {'consent': 1, 'terms': 1}).then(function (result) {
-          vm.complete = true;
+    $scope.submitForm = function (form) {
+      $scope.showPopup = true;
+      $scope.submitConsent = function() {
+        $scope.showPopup = false;
+        userAccessSrv.register(form.first_name, form.last_name, form.email, form.password,  {'consent': 1, 'terms': 1}).then(function (result) {
+          $scope.complete = true;
         }, function (error) {
-          vm.errors = error;
+            if (error.status === 0) {
+              $scope.error = {detail:  'Please check your Internet connection.'};
+            } else
+            {
+              $scope.error = error;
+            }
         });
       };
     };
-
-
 
   }]);

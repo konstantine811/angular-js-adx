@@ -43,7 +43,7 @@
                 I have an account
               </a>
             </div>
-            <div class="alert alert-danger" ng-repeat="error in errors">{{error}}</div>
+          <div class="alert alert-danger" ng-if="error">{{::error.detail}}</div>
           </div>
           <div ng-if="complete === true" class="register-complete">
             <h3 class="txt-medium txt-blue-dark txt-center">Suceess!</h3>

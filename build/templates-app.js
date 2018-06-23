@@ -1170,8 +1170,6 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "          </form>\n" +
     "          <br>\n" +
-    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "          <div class=\"alert alert-danger\" ng-repeat=\"error in errors.non_field_errors\">{{::error}}</div>\n" +
     "          <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -2051,7 +2049,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                I have an account\n" +
     "              </a>\n" +
     "            </div>\n" +
-    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors\">{{error}}</div>\n" +
+    "          <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
     "          </div>\n" +
     "          <div ng-if=\"complete === true\" class=\"register-complete\">\n" +
     "            <h3 class=\"txt-medium txt-blue-dark txt-center\">Suceess!</h3>\n" +

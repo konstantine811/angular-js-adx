@@ -28,7 +28,12 @@ angular.module( 'ixlayer.login', [
             $state.go('master_signedin.dashboard');
           },
           function (error) {
-            $scope.error = error;
+            if (error.status === 0) {
+              $scope.error = {detail:  'Please check your Internet connection.'};
+            } else
+            {
+              $scope.error = error;
+            }
           }
         );
       };
