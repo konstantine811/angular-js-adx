@@ -5,11 +5,7 @@ angular.module("ixLayer")
       scope: false,
       templateUrl: "shared/header/header.tpl.html",
 
-      controller: ['$scope', function($scope) {
-
-        $scope.showText = function() {
-          console.log('this is header text');
-        };
+      controller: ['$scope',  function($scope) {
 
         $scope.show = false;
           $scope.showMenu = function() {

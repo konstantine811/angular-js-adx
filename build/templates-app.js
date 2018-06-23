@@ -161,7 +161,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "         We are always within your reach. Send us a message and we'll respond as soon as possible.\n" +
     "       </div>\n" +
     "     </div>\n" +
-    "     <form action=\"\" class=\"form-space-top\">\n" +
+    "     <form action=\"https://formspree.io/info@ixlayer.com\" method=\"post\" class=\"form-space-top\">\n" +
     "       <div class=\"form-group-space-top\">\n" +
     "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Name\">\n" +
     "       </div>\n" +
