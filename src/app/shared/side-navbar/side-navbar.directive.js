@@ -13,8 +13,9 @@ angular.module("ixLayer")
             $scope.user = data.user;
           });
 
-          var status = 'pre-purchase';
+          var status = 'results';
           $scope.showResults = false;
+          $scope.activeHome = false;
 
           if (status === 'results') {
             $scope.showResults = true;
@@ -23,6 +24,7 @@ angular.module("ixLayer")
           }
 
           $scope.homeTransition = function(e) {
+            $scope.activeHome = true;
             e.preventDefault();
             switch (status) {
               case 'pre-purchase':
@@ -38,7 +40,10 @@ angular.module("ixLayer")
                 $scope.showResults = true;
                 break;
             }
-            console.log('click');
+          };
+
+          $scope.clickedResults = function() {
+            $scope.activeHome = false;
           };
 
           $scope.$watch(function() {

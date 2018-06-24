@@ -9337,8 +9337,12 @@ ul.box__wrap {
   background-color: #41c5eb; }
   .active-bgc-blue.navbar-link--second .link, .active-bgc-blue.navbar-link--second .txt {
     color: #fff !important; }
-  .active-bgc-blue.navbar-link--second .dna-blue-1, .active-bgc-blue.navbar-link--second .question-svg-1, .active-bgc-blue.navbar-link--second .users-svg-1 {
+  .active-bgc-blue.navbar-link--second .dna-blue-1, .active-bgc-blue.navbar-link--second .question-svg-1, .active-bgc-blue.navbar-link--second .users-svg-1, .active-bgc-blue.navbar-link--second .home-icon {
     fill: #fff; }
+
+.side-navbar-navigation-link__wrap--home {
+  position: relative;
+  top: 16px; }
 
 .home-head {
   position: relative;
