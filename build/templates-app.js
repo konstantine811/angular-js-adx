@@ -5184,7 +5184,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
@@ -5192,7 +5192,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
