@@ -5171,24 +5171,17 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "    <div class=\"row\">\n" +
     "      <div class=\"side-navbar__navigation\">\n" +
     "        <div class=\"side-navbar-navigation__wrap\">\n" +
-    "          <div class=\"bgc-wrap-content bgc-wrap-content--blue bgc-wrap-content--justify-left\">\n" +
-    "            <div class=\"status-icon__wrap\">\n" +
-    "              <i class=\"icon user-white\"></i>\n" +
-    "            </div>\n" +
-    "            <div class=\"status-txt__wrap\">\n" +
-    "              <div class=\"txt\">{{statusTitle}}</div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\"  ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link\">\n" +
-    "                  <span class=\"side-navbar-link__txt txt-center\">\n" +
-    "                    <span class=\"txt-large txt-bold txt-blue-dark\">Home</span>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\"  ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
     "                  </span>\n" +
+    "                  <span class=\"txt txt-black\">Home</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
-    "            </ul>\n" +
+    "\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
     "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
@@ -5223,7 +5216,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
-    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
+    "\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
     "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
