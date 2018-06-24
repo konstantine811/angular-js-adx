@@ -183,6 +183,15 @@ angular.module( 'ixlayer.results', [
         }
       }
 
+      $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
+        productStatus.custom_data['confirmation_code'] + '&req_number=' +
+        productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
+      if (results.length > 0) {
+        $scope.download_link = results[0].report;
+      } else {
+        $scope.download_link = '';
+      }
+
       $scope.$watch('consentAgreed', function () {
         if ($scope.consentAgreed) {
           resultsService.getResults(parseInt($stateParams.id)).then(function (result) {

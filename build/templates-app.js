@@ -2538,7 +2538,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -2548,7 +2548,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -2716,7 +2716,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -2726,7 +2726,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -2891,7 +2891,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -2901,7 +2901,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a ng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -3243,7 +3243,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -3253,7 +3253,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a hng-href=\"{{ results[0].report }}\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -3367,7 +3367,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -3377,7 +3377,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -3491,7 +3491,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -3501,7 +3501,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -3738,7 +3738,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -3748,7 +3748,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
@@ -3841,7 +3841,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "      </div>\n" +
     "      <div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
     "            </div>\n" +
@@ -3851,7 +3851,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "          </a>\n" +
     "        </div>\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
-    "          <a href=\"\" class=\"download__wrap\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +

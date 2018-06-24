@@ -6,7 +6,7 @@
       </div>
       <div class="result-head__download-button anim-content-transition">
         <div class="result-button-head__wrap">
-          <a href="" class="download__wrap">
+          <a target="_blank" ng-href="{{ schedule_link }}" class="download__wrap">
             <div class="flex-column">
               <div class="comments-button"><i class="fa fa-comments comments-button__inner" aria-hidden="true"></i></div>
             </div>
@@ -16,7 +16,7 @@
           </a>
         </div>
         <div class="result-button-head__wrap">
-          <a ng-href="{{ results[0].report }}" class="download__wrap">
+          <a target="_blank" ng-href="{{ download_link }}" class="download__wrap">
             <div class="flex-column">
               <div  class="download-button"></div>
             </div>
