@@ -15,11 +15,14 @@ angular.module("ixLayer")
 
           var status = 'pre-purchase';
           $scope.showResults = false;
+          $scope.activeHome = false;
 
           if (status === 'results') {
             $scope.showResults = true;
+            $scope.activeHome = false;
           } else {
             $scope.showResults = false;
+            $scope.activeHome = true;
           }
 
           $scope.homeTransition = function(e) {
@@ -28,17 +31,23 @@ angular.module("ixLayer")
               case 'pre-purchase':
                 $state.go('master_signedin.results.pre-purchase');
                 $scope.showResults = false;
+                $scope.activeHome = true;
                 break;
               case 'status-kit':
                 $state.go('master_signedin.results.status');
                 $scope.showResults = false;
+                $scope.activeHome = true;
                 break;
               case 'results':
                 $state.go('master_signedin.results.p1');
                 $scope.showResults = true;
+                $scope.activeHome = false;
                 break;
             }
-            console.log('click');
+          };
+
+          $scope.clickedResults = function() {
+            $scope.activeHome = false;
           };
 
           $scope.$watch(function() {

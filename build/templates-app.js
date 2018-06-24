@@ -5172,19 +5172,19 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "      <div class=\"side-navbar__navigation\">\n" +
     "        <div class=\"side-navbar-navigation__wrap\">\n" +
     "          <div class=\"side-navbar-navigation__link\">\n" +
-    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\"  ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ng-class=\"{'active-bgc-blue': activeHome}\"  ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
     "                  </span>\n" +
     "                  <span class=\"txt txt-black\">Home</span>\n" +
     "                </a>\n" +
     "              </li>\n" +
-    "\n" +
+    "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
@@ -5192,7 +5192,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
@@ -5200,7 +5200,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p3\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p3\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
@@ -5208,7 +5208,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p4\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p4\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
@@ -5216,9 +5216,9 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "            </ul>\n" +
-    "\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -5226,7 +5226,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.sharing\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.sharing\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -5234,7 +5234,7 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.questions\" ng-click=\"showMenu()\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.questions\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
     "                  </span>\n" +

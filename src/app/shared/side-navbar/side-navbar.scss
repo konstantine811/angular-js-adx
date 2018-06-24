@@ -97,9 +97,14 @@
   .link, .txt {
     color: $white !important;
   }
-  .dna-blue-1, .question-svg-1, .users-svg-1 {
+  .dna-blue-1, .question-svg-1, .users-svg-1, .home-icon {
     fill: $white;
   }
+}
+
+.side-navbar-navigation-link__wrap--home {
+  position: relative;
+  top: 16px;
 }
 
 
