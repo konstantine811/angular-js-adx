@@ -7765,7 +7765,7 @@ body {
   border-top: none !important; }
 
 .panel-title {
-  padding: 40px 0; }
+  padding: 16px 0; }
 
 .panel-open .panel-title {
   background-color: #41c5eb;
@@ -8213,7 +8213,7 @@ button[disabled].bt-round {
       animation: trans-arrow 1.5s forwards ease-in-out infinite; }
 
 .cross-button-open__wrap {
-  width: 100px;
+  width: 90px;
   height: 100%; }
 
 .cross-button-open {
@@ -8502,6 +8502,9 @@ a.link-underline {
 .txt-left-space {
   padding-left: 20px; }
 
+.txt-right-space {
+  padding-right: 20px; }
+
 .txt-wrap-space-left {
   width: auto;
   height: auto;
@@ -8579,7 +8582,7 @@ h1, .title-first {
   width: 100%;
   height: 100%;
   font-family: Roboto, sans-serif;
-  font-size: 36pt;
+  font-size: 28pt;
   font-weight: 500;
   line-height: 60px;
   color: #fff;
@@ -8597,7 +8600,7 @@ h2 {
 
 h3 {
   font-family: Roboto, sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 500;
   line-height: 43px;
   color: #fff;
@@ -8631,7 +8634,7 @@ h6 {
 
 .sub-header-txt {
   font-family: Roboto, sans-serif;
-  font-size: 26pt;
+  font-size: 16pt;
   font-weight: 300;
   line-height: 40px;
   color: #fff;
@@ -8647,7 +8650,7 @@ h6 {
 .txt__wrap {
   width: 100%;
   height: auto;
-  padding-top: 37px; }
+  padding-top: 15px; }
 
 .txt__wrap--border-bottom {
   border-bottom: 1px solid #E6E6E6;
@@ -8655,9 +8658,9 @@ h6 {
 
 .txt {
   font-family: Roboto, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 22pt;
   color: #fff;
   width: 100%;
   height: auto;
@@ -8836,7 +8839,7 @@ h6 {
   padding-top: 35px; }
 
 .title-section__wrap {
-  padding-top: 90px; }
+  padding-top: 10px; }
 
 .section__wrap.section__wrap--small-pad-top {
   padding-top: 25px; }
@@ -8956,7 +8959,7 @@ h6 {
   display: inline-block; }
 
 .img-middle {
-  max-width: 368px;
+  max-width: 260px;
   width: 100%;
   height: auto;
   display: inline-block; }
@@ -9264,7 +9267,7 @@ ul.box__wrap {
   box-shadow: -1px 0px 12px 0px #464646; }
 
 .side-navbar__logo {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 30px;
   padding-left: 18px; }
@@ -9277,7 +9280,7 @@ ul.box__wrap {
 .side-navbar__account {
   width: 100%;
   height: auto;
-  margin: 50px auto 0;
+  margin: 20px auto 0;
   padding: 9px 8px 15px 27px;
   border-bottom: 4px solid #F9FBFD; }
 
@@ -9397,7 +9400,7 @@ ul.box__wrap {
   padding-left: 9%; }
 
 .home-section-first__wrap {
-  padding: 133px 0 200px; }
+  padding: 100px 0 100px; }
 
 .home-section-first__title {
   width: 100%;
@@ -9446,7 +9449,7 @@ ul.box__wrap {
   background-image: url("../assets/images/home-page/bgc-section-second.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 235px;
+  margin-top: 100px;
   padding: 100px 0; }
 
 .home-section-second-bottom__wrap {
@@ -9663,7 +9666,7 @@ ul.box__wrap {
   position: fixed;
   width: 100%;
   min-height: 60px;
-  height: 100px;
+  height: 80px;
   background-color: #F9FBFD;
   z-index: 1000;
   box-shadow: 0 0 14px -1px #464646; }
@@ -9681,10 +9684,9 @@ ul.box__wrap {
 
 .header__logo {
   position: relative;
-  width: 236px;
-  height: 62px;
-  cursor: pointer;
-  margin: 6px 0px; }
+  width: 210px;
+  height: 50px;
+  cursor: pointer; }
 
 .header-nav__wrap {
   padding-right: 17px; }
@@ -9699,7 +9701,7 @@ ul.box__wrap {
 .header-nav-link {
   color: #063f5f;
   font-family: 'CircularStd-Medium', sans-serif;
-  font-size: 16.5pt;
+  font-size: 18px;
   font-weight: 400;
   cursor: pointer;
   transition: color 0.3s ease; }
@@ -11322,7 +11324,7 @@ textarea.form-control {
     font-size: 12pt; }
 
   .header {
-    height: 100px; }
+    height: 80px; }
 
   .header__wrap {
     padding-top: 12px; } }
@@ -11624,7 +11626,7 @@ a:hover, a:focus {
   position: relative;
   width: 100%; }
   .logged-out.page .container-page {
-    padding-top: 100px;
+    padding-top: 80px;
     border-top: none; }
 
 .page-transition-anim {

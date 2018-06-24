@@ -147,7 +147,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                If you are you interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Jon Doe</span></a>\n" +
+    "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Careers</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -225,7 +225,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  <div class=\"cross-button-open\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"content-title__wrap\">\n" +
-    "                  <h2 class=\"txt-blue-dark\">You’re not alone</h2>\n" +
+    "                  <h3 class=\"txt-blue-dark\">You’re not alone</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -246,7 +246,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  <div class=\"cross-button-open\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"content-title__wrap\">\n" +
-    "                  <h2 class=\"txt-blue-dark\">Genetic counseling</h2>\n" +
+    "                  <h3 class=\"txt-blue-dark\">Genetic counseling</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -263,7 +263,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  <div class=\"cross-button-open\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"content-title__wrap\">\n" +
-    "                  <h2 class=\"txt-blue-dark\">Power of emotions</h2>\n" +
+    "                  <h3 class=\"txt-blue-dark\">Power of emotions</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -284,7 +284,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  <div class=\"cross-button-open\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"content-title__wrap\">\n" +
-    "                  <h2 class=\"txt-blue-dark\">Lifestyle changes</h2>\n" +
+    "                  <h3 class=\"txt-blue-dark\">Lifestyle changes</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -301,7 +301,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  <div class=\"cross-button-open\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"content-title__wrap\">\n" +
-    "                  <h2 class=\"txt-blue-dark\">Connecting with community</h2>\n" +
+    "                  <h3 class=\"txt-blue-dark\">Connecting with community</h3>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -619,7 +619,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "          <div class=\"txt-large txt-black\">Whether you are 35 or 75, your Alzheimer’s genetics are the same.\n" +
     "            <br> It is never too early or too late to learn your genetic risk for late-onset Alzheimer’s disease.</div>\n" +
     "        </div>\n" +
-    "        <div class=\"home-section-first__content\">\n" +
+    "        <div class=\"home-section-first-content__second\">\n" +
     "          <div class=\"container-flex container-flex--column-reverse-md\">\n" +
     "            <div class=\"flex-column\">\n" +
     "              <div class=\"flex-column__wrap\">\n" +
@@ -1145,7 +1145,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"login-form__wrap\">\n" +
     "        <div class=\"login-form\">\n" +
-    "          <h6 class=\"txt-medium txt-blue-dark txt-center\">Sign-in to ADx Health</h6>\n" +
+    "          <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
     "          <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__login-wrap\">\n" +
@@ -1331,7 +1331,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column-2\">\n" +
-    "              <div class=\"container-sub-head\">\n" +
+    "              <div class=\"container-sub-head txt-left-space\">\n" +
     "                <h2 class=\"txt-blue-dark txt-center-md\">Is this test right for me?</h2>\n" +
     "                <div class=\"txt__wrap\">\n" +
     "                  <p class=\"txt txt-black txt-center-md\">The Alzheimer's ApoE Genetic Test is developed to help individuals interested in learning their genetic risk for late-onset Alzheimer’s disease and how their Alzheimer’s disease risk changes with age.</p>\n" +
@@ -1352,8 +1352,8 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column-2\">\n" +
-    "              <div class=\"container-sub-head\">\n" +
-    "                <h2 class=\"txt-blue-dark txt-left-space txt-center-md\"> Actionable insights</h2>\n" +
+    "              <div class=\"container-sub-head txt-left-space\">\n" +
+    "                <h2 class=\"txt-blue-dark txt-center-md\">Actionable insights</h2>\n" +
     "                <div class=\"txt__wrap\">\n" +
     "                  <p class=\"txt txt-black txt-center-md\">Along with your ApoE genotype, your report will include brain healthy lifestyle recommendations and links to support organizations and sources for more information on late-onset Alzheimer's disease.</p>\n" +
     "                </div>\n" +
@@ -1362,8 +1362,8 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "          </div>\n" +
     "          <div class=\"container-flex align-items--center txt__wrap container-flex--column-md\">\n" +
     "            <div class=\"flex-column-2\">\n" +
-    "              <div class=\"container-sub-head\">\n" +
-    "                <h2 class=\"txt-blue-dark txt-left-space txt-center-md\">Detailed explanations</h2>\n" +
+    "              <div class=\"container-sub-head txt-right-space\">\n" +
+    "                <h2 class=\"txt-blue-dark txt-center-md\">Detailed explanations</h2>\n" +
     "                <div class=\"txt__wrap txt-center-md\">\n" +
     "                  <p class=\"txt txt-black\"><b>Your report will provide a detailed explanation of: </b></p>\n" +
     "                  <p class=\"txt txt-black\"> - How ApoE works in your body</p>\n" +
@@ -2027,7 +2027,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "          <div ng-show=\"!complete\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__register-wrap\">\n" +
-    "                <h6 class=\"txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
+    "                <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
     "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +

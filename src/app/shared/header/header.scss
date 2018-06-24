@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   min-height: 60px;
-  height: 100px;
+  height: 80px;
   background-color: $silver;
   z-index: 1000;
   box-shadow: 0 0 14px -1px $black-light;
@@ -23,10 +23,9 @@
 
 .header__logo {
   position: relative;
-  width: 236px;
-  height: 62px;
+  width: 210px;
+  height: 50px;
   cursor: pointer;
-  margin: 6px 0px;
 }
 
 .header-nav__wrap {
@@ -44,7 +43,7 @@
 .header-nav-link {
   color: $blue-dark;
   font-family: 'CircularStd-Medium', sans-serif;
-  font-size: 16.5pt;
+  font-size: 18px;
   font-weight: 400;
   cursor: pointer;
   transition: color 0.3s ease;

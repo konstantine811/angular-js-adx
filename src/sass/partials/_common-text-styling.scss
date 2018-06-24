@@ -17,6 +17,10 @@ a.link-underline {
 .txt-left-space {
   padding-left: 20px;
 }
+.txt-right-space {
+  padding-right: 20px;
+}
+
 .txt-wrap-space-left {
   width: auto;
   height: auto;
@@ -119,7 +123,7 @@ h1, .title-first {
   width: 100%;
   height: 100%;
   font-family: Roboto, sans-serif;
-  font-size: 36pt;
+  font-size: 28pt;
   font-weight: 500;
   line-height: 60px;
   color: $white;
@@ -139,7 +143,7 @@ h2 {
 
 h3 {
   font-family: Roboto, sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 500;
   line-height: 43px;
   color: $white;
@@ -176,7 +180,7 @@ h6 {
 
 .sub-header-txt {
   font-family: Roboto, sans-serif;
-  font-size: 26pt;
+  font-size: 16pt;
   font-weight: 300;
   line-height: 40px;
   color: $white;
@@ -194,7 +198,7 @@ h6 {
 .txt__wrap {
   width: 100%;
   height: auto;
-  padding-top: 37px;
+  padding-top: 15px;
 }
 
 .txt__wrap--border-bottom {
@@ -204,9 +208,9 @@ h6 {
 
 .txt {
   font-family: Roboto, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 22pt;
   color: $white;
   width: 100%;
   height: auto;
