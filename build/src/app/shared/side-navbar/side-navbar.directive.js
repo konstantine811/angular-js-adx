@@ -13,6 +13,34 @@ angular.module("ixLayer")
             $scope.user = data.user;
           });
 
+          var status = 'pre-purchase';
+          $scope.showResults = false;
+
+          if (status === 'results') {
+            $scope.showResults = true;
+          } else {
+            $scope.showResults = false;
+          }
+
+          $scope.homeTransition = function(e) {
+            e.preventDefault();
+            switch (status) {
+              case 'pre-purchase':
+                $state.go('master_signedin.results.pre-purchase');
+                $scope.showResults = false;
+                break;
+              case 'status-kit':
+                $state.go('master_signedin.results.status');
+                $scope.showResults = false;
+                break;
+              case 'results':
+                $state.go('master_signedin.results.p1');
+                $scope.showResults = true;
+                break;
+            }
+            console.log('click');
+          };
+
           $scope.$watch(function() {
             return $stateParams.title;
           }, function(value) {

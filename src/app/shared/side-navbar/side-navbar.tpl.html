@@ -48,6 +48,15 @@
           <div class="side-navbar-navigation__link">
             <ul class="side-navbar-navigation-link__wrap">
               <li class="side-navbar-navigation-link__item">
+                <a ui-sref-active="active-number-blue"  ng-click="showMenu(); homeTransition($event)" class="navbar-link">
+                  <span class="side-navbar-link__txt txt-center">
+                    <span class="txt-large txt-bold txt-blue-dark">Home</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="side-navbar-navigation-link__wrap" ng-show="showResults">
+              <li class="side-navbar-navigation-link__item">
                 <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results.p1" ng-click="showMenu()" class="navbar-link">
                   <span class="number-bgc">1</span>
                   <span class="side-navbar-link__txt">

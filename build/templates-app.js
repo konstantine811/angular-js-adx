@@ -5182,6 +5182,15 @@ angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCac
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\"  ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link\">\n" +
+    "                  <span class=\"side-navbar-link__txt txt-center\">\n" +
+    "                    <span class=\"txt-large txt-bold txt-blue-dark\">Home</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
     "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +

@@ -41,14 +41,14 @@ angular.module( 'ixlayer.results', [
           }]
         },
         params : {
-          title: 'Current status'
+          title: 'Home'
         }
       })
       .state('master_signedin.results.pre-purchase', {
         url: '/pre-purchase',
         templateUrl: 'components/results/pages/prePurchase.tpl.html',
         params : {
-          title: 'Pre-purchase'
+          title: 'Home'
         }
       })
       .state('master_signedin.results.p1', {
@@ -138,6 +138,7 @@ angular.module( 'ixlayer.results', [
       } else {
         $scope.needPopup = product.product_consent_needed;
       }
+
 
       if (userInfo.helix_profile !== null) {
         $scope.seqStatus = userInfo.helix_profile.seq_status;
