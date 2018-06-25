@@ -8,54 +8,66 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "      <div uib-slide index=\"0\">\n" +
     "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
-    "            <div class=\"anim-content-transition txt-left\">\n" +
-    "              <h1>Our mission</h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap anim-content-transition\">\n" +
-    "              <div class=\"txt txt-left\">\n" +
-    "                At ADx Healthcare, we aim to provide individuals, families, and healthcare providers with answers for late-onset Alzheimer's disease.  We also seek to contribute to the scientific advancement of late-onset Alzheimer's disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "            <div class=\"about-page-header__txt\">\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <h1>Our mission</h1>\n" +
     "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"button__wrap text-left anim-content-transition\">\n" +
-    "              <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  At ADx Healthcare, we aim to provide individuals, families, and healthcare providers with answers for late-onset Alzheimer's disease.  We also seek to contribute to the scientific advancement of late-onset Alzheimer's disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"button__wrap text-left anim-content-transition\">\n" +
+    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
+    "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/medical-bgc-drop-dark.svg'\"></ng-include>\n" +
+    "            <div class=\"about-page-header__image\">\n" +
+    "              <ng-include class=\"img-large\" src=\"'./assets/images/svg/medical-bgc-drop-dark.svg'\"></ng-include>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"1\">\n" +
     "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
-    "            <div class=\"anim-content-transition txt-left\">\n" +
-    "              <div class=\"title-first\">ADx Healthcare</div>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap anim-content-transition\">\n" +
-    "              <div class=\"txt txt-left\">\n" +
-    "                ADx Healthcare is a physician-owned company that provides individuals with personal access to their medical and genetic information by offering private pay testing, while still providing the highest standard of patient care.\n" +
+    "            <div class=\"about-page-header__txt\">\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <div class=\"title-first\">ADx Healthcare</div>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  ADx Healthcare is a physician-owned company that provides individuals with personal access to their medical and genetic information by offering private pay testing, while still providing the highest standard of patient care.\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/adx-dropped.svg'\"></ng-include>\n" +
+    "            <div class=\"about-page-header__image\">\n" +
+    "              <ng-include class=\"img-large\" src=\"'./assets/images/svg/adx-dropped.svg'\"></ng-include>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"2\">\n" +
     "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
-    "            <div class=\"anim-content-transition txt-left\">\n" +
-    "              <div class=\"title-first\">Our offerings</div>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt__wrap anim-content-transition\">\n" +
-    "              <div class=\"txt txt-left\">\n" +
-    "                In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
+    "            <div class=\"about-page-header__txt\">\n" +
+    "              <div class=\"anim-content-transition txt-left\">\n" +
+    "                <div class=\"title-first\">Our offerings</div>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap anim-content-transition\">\n" +
+    "                <div class=\"txt txt-left\">\n" +
+    "                  In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"flex-column hide-xs-mobile anim-content-transition hide-mobile\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/human-health-dropped.svg'\"></ng-include>\n" +
+    "            <div class=\"about-page-header__image\">\n" +
+    "              <ng-include class=\"img-large\" src=\"'./assets/images/svg/human-health-dropped.svg'\"></ng-include>\n" +
+    "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
