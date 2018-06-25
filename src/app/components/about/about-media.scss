@@ -2,6 +2,21 @@
   .about-section-fourth_form-map-overlap {
     left: calc(36% - 235px);
   }
+
+  .about-page-header {
+    padding: 100px 0 40px;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .about-page-header {
+    padding: 80px 0 0;
+  }
+  .about-page-header__image {
+    svg {
+      height: 440px;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-md) {
@@ -15,18 +30,33 @@
     left: 0;
     right: 0;
   }
+  .about-page-header__image svg {
+    height: 314px;
+  }
+  .about-page-header__txt {
+    min-height: 440px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
 }
 
 
 @media (max-width: $breakpoint-sm) {
   .about-page-header {
-    min-height: 580px;
     padding: 50px 0 0;
+  }
+  .about-page-header__txt {
+    min-height: 369px;
   }
 }
 
 @media (max-width: $breakpoint-exs) {
   .about-page-header {
-    min-height: 680px;
+   padding: 0;
+    min-height: 0;
+  }
+  .about-page-header__txt {
+    min-height: 536px;
   }
 }

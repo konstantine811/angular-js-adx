@@ -4,7 +4,7 @@
   background-image: url("../assets/images/about-bgc.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 902px;
+  padding: 150px 0;
   display: flex;
   align-items: center;
 }
@@ -59,4 +59,10 @@
   width: 100%;
   padding: 30px 40px;
   margin: 26px;
+}
+
+.about-page-header__image {
+  svg {
+    height: 600px;
+  }
 }

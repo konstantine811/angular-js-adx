@@ -10421,7 +10421,7 @@ textarea.form-control {
   background-image: url("../assets/images/about-bgc.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 902px;
+  padding: 150px 0;
   display: flex;
   align-items: center; }
 
@@ -10469,6 +10469,9 @@ textarea.form-control {
   width: 100%;
   padding: 30px 40px;
   margin: 26px; }
+
+.about-page-header__image svg {
+  height: 600px; }
 
 .science-p-head {
   width: 100%;
@@ -11167,7 +11170,7 @@ textarea.form-control {
     width: 100%; }
 
   .carousel-control.right {
-    right: 0; }
+    right: calc(99px - 17vw); }
 
   .slider__wrap {
     padding: 0 50px; }
@@ -11181,7 +11184,10 @@ textarea.form-control {
       left: -36px; } }
 @media (max-width: 468px) {
   .carousel-control.right:after {
-    left: -17px; } }
+    left: -17px; }
+
+  .carousel-control.right {
+    right: 0; } }
 @media (max-width: 768px) {
   .hide-tabs.hide-tabs--show-sm {
     display: block;
@@ -11564,7 +11570,16 @@ textarea.form-control {
     height: 100%; } }
 @media (max-width: 1596px) {
   .about-section-fourth_form-map-overlap {
-    left: calc(36% - 235px); } }
+    left: calc(36% - 235px); }
+
+  .about-page-header {
+    padding: 100px 0 40px; } }
+@media (max-width: 1200px) {
+  .about-page-header {
+    padding: 80px 0 0; }
+
+  .about-page-header__image svg {
+    height: 440px; } }
 @media (max-width: 960px) {
   .about-section-fourth__data-map-overlap {
     position: relative;
@@ -11573,14 +11588,29 @@ textarea.form-control {
   .about-section-fourth_form-map-overlap {
     margin: 0 auto;
     left: 0;
-    right: 0; } }
+    right: 0; }
+
+  .about-page-header__image svg {
+    height: 314px; }
+
+  .about-page-header__txt {
+    min-height: 440px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; } }
 @media (max-width: 768px) {
   .about-page-header {
-    min-height: 580px;
-    padding: 50px 0 0; } }
+    padding: 50px 0 0; }
+
+  .about-page-header__txt {
+    min-height: 369px; } }
 @media (max-width: 468px) {
   .about-page-header {
-    min-height: 680px; } }
+    padding: 0;
+    min-height: 0; }
+
+  .about-page-header__txt {
+    min-height: 536px; } }
 @media (max-width: 1200px) {
   .science-p-head__img {
     padding-top: 30px; }
