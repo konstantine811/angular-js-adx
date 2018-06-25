@@ -16,7 +16,7 @@
     width: 100%;
   }
   .carousel-control.right {
-    right: 0;
+    right: calc(99px - 17vw);
   }
   .slider__wrap {
     padding: 0 50px;
@@ -36,5 +36,8 @@
 @media (max-width: $breakpoint-exs) {
   .carousel-control.right:after {
     left: -17px;
+  }
+  .carousel-control.right {
+    right: 0;
   }
 }

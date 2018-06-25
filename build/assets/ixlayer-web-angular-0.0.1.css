@@ -11170,7 +11170,7 @@ textarea.form-control {
     width: 100%; }
 
   .carousel-control.right {
-    right: 0; }
+    right: calc(99px - 17vw); }
 
   .slider__wrap {
     padding: 0 50px; }
@@ -11184,7 +11184,10 @@ textarea.form-control {
       left: -36px; } }
 @media (max-width: 468px) {
   .carousel-control.right:after {
-    left: -17px; } }
+    left: -17px; }
+
+  .carousel-control.right {
+    right: 0; } }
 @media (max-width: 768px) {
   .hide-tabs.hide-tabs--show-sm {
     display: block;
