@@ -12,7 +12,7 @@ angular.module( 'ixlayer.register', [
       data:{ pageTitle: 'Register' }
     });
     $stateProvider.state( 'master.register', {
-      url: '/register/:token',
+      url: '/register',
       controller: 'RegisterCtrl',
       templateUrl: 'components/register/register.tpl.html',
       data:{ pageTitle: 'Register' },
@@ -44,7 +44,7 @@ angular.module( 'ixlayer.register', [
               $scope.error = {detail:  'Please check your Internet connection.'};
             } else
             {
-              $scope.error = error;
+              $scope.error = {detail: error[0]};
             }
         });
       };

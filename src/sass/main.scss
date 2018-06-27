@@ -26,7 +26,7 @@
 @import './partials/carousel';
 @import './partials/tabs';
 //components
-@import '../app/shared/side-navbar/side-navbar.scss';
+@import '../app/components/master/side-navbar';
 @import '../app/components/home/home.scss';
 @import '../app/components/login/login.scss';
 @import '../app/components/forgot_password/forgot_password.scss';
@@ -62,7 +62,7 @@
 @import "../app/shared/header/header-media.scss";
 @import "../app/shared/footer/footer-media.scss";
 @import '../app/components/results/results-media.scss';
-@import '../app/shared/side-navbar/side-navbar-media.scss';
+@import '../app/components/master/side-navbar-media';
 @import '../app/components/profile/_profile-media.scss';
 @import '../app/components/products/_product-media.scss';
 @import '../app/components/login/_login-media.scss';

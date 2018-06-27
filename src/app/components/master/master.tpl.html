@@ -1,4 +1,5 @@
 <div class="page" ng-class="{'logged-out' :  !hideSideNavBar}">
+
   <div class="error-message error-animate-show" ng-show="error.displayMessage">
     <div class="container-fluid main-side-gap main-page-width">
       <div class="row">
@@ -9,7 +10,9 @@
       </div>
     </div>
   </div>
+
   <app-header class="hideSideNavBar"></app-header>
   <div class="container-page page-transition-anim" ui-view></div>
   <app-footer ng-show="showFooter"></app-footer>
+
 </div>

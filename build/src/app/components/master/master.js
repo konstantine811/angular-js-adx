@@ -1,4 +1,5 @@
 angular.module( 'ixlayer.master', [
+  'ixlayer.api.profile',
   'ui.router'
 ])
 
@@ -19,22 +20,25 @@ angular.module( 'ixlayer.master', [
     });
   })
 
-  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', '$transitions', '$window', 'djangoAuth',  'userAccessSrv', 'errorHandler',
-    function MasterCtrl ( $scope, $location, $state, $rootScope, $transitions, $window, djangoAuth, userAccessSrv, errorHandler ) {
+  .controller( 'MasterCtrl', ['$scope', '$location', '$state', '$rootScope', '$transitions', '$window', 'djangoAuth',  'userAccessSrv', 'errorHandler', '$stateParams', 'profileService',
+    function MasterCtrl ( $scope, $location, $state, $rootScope, $transitions, $window, djangoAuth, userAccessSrv, errorHandler, $stateParams, profileService) {
 
       $scope.logged = false;
       $scope.hideSideNavBar = true;
       $scope.showFooter = true;
+      $scope.error = errorHandler.error;
+      $scope.showResults = true;
+      $scope.activeHome = false;
 
-       $transitions.onSuccess('transition', function (transition) {
-            var title = transition.to().data.pageTitle;
-            if (title) {
-                if (title instanceof Function) {
-                    title = title.call(transition.to(), transition.params());
-                }
-                $window.document.title = title + ' | ADX Healthcare';
-            }
-        });
+      $transitions.onSuccess('transition', function (transition) {
+        var title = transition.to().data.pageTitle;
+        if (title) {
+          if (title instanceof Function) {
+            title = title.call(transition.to(), transition.params());
+          }
+          $window.document.title = title + ' | ADX Healthcare';
+        }
+      });
 
       $scope.$watch(function() {
         return $location.path();
@@ -93,8 +97,22 @@ angular.module( 'ixlayer.master', [
         }
       });
 
+      if (userAccessSrv.isAuthenticated()) {
+        $scope.userName = userAccessSrv.currentUserName();
+      }
 
-      $scope.error = errorHandler.error;
+      $scope.showResults = false;
+      $scope.menuTitle = 'Home';
+      $scope.isResultsActive = true;
+      $scope.mobileMenuVisible = false;
+
+      $scope.toggleMobileMenu = function() {
+        if (!$scope.mobileMenuVisible) {
+          $scope.mobileMenuVisible = true;
+        } else {
+          $scope.mobileMenuVisible = false;
+        }
+      };
 
       $scope.closeError = function () {
         errorHandler.cleanError();

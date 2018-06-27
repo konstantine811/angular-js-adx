@@ -1,8 +1,8 @@
 angular.module( 'ixlayer.profile', [
-  'ui.router',
+  'ixlayer.api.profile',
   'ixlayer.useraccess',
-  'ui.bootstrap',
-  'ixlayer.api.profile'
+  'ui.router',
+  'ui.bootstrap'
 ])
 
   .config(function config( $stateProvider ) {

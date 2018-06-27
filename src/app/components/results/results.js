@@ -6,216 +6,152 @@ angular.module( 'ixlayer.results', [
 ])
   .config(function config($stateProvider) {
     $stateProvider.state('master_signedin.results', {
-      url: '/results/:id',
+      url: '/results/:page',
       controller: 'ResultsCtrl',
       templateUrl: 'components/results/results.tpl.html',
       data:{ pageTitle: 'Products Results' },
-      params : {
-        title: 'Pre-result'
-      },
       abstract: false,
       resolve: {
         userInfo: ['userAccessSrv', function (userAccessSrv) {
           return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
         }],
         product: ['productsService', '$stateParams', function (productsService, $stateParams) {
-          return productsService.getProduct(parseInt($stateParams.id));
-        }],
-        productStatus: ['productsService', '$stateParams', function (productsService, $stateParams) {
-          return productsService.getProductStatus(parseInt($stateParams.id));
+          return productsService.getProduct(parseInt(1));
         }],
         results: ['resultsService', '$stateParams', function (resultsService, $stateParams) {
-          return resultsService.getResults(parseInt($stateParams.id));
+          return resultsService.getResults(1);
         }]
       }
-    })
-      .state('master_signedin.results.status', {
-        url: '/status',
-        templateUrl: 'components/results/pages/sequencingStatus.tpl.html',
-        resolve: {
-          userInfo: ['userAccessSrv', function (userAccessSrv) {
-            return userAccessSrv.currentUser() || userAccessSrv.autoLogin();
-          }],
-          profile: ['profileService', function (profileService) {
-            return profileService.getProfile();
-          }]
-        },
-        params : {
-          title: 'Home'
-        }
-      })
-      .state('master_signedin.results.pre-purchase', {
-        url: '/pre-purchase',
-        templateUrl: 'components/results/pages/prePurchase.tpl.html',
-        params : {
-          title: 'Home'
-        }
-      })
-      .state('master_signedin.results.p1', {
-        url: '/p1',
-        templateUrl: 'components/results/pages/result-p1.tpl.html',
-        params: {
-          title: 'Your result'
-        }
-      })
-      .state('master_signedin.results.p2', {
-        url: '/p2',
-        templateUrl: 'components/results/pages/result-p2.tpl.html',
-        params: {
-          title: 'About'
-        }
-      })
-      .state('master_signedin.results.p3', {
-        url: '/p3',
-        templateUrl: 'components/results/pages/result-p3.tpl.html',
-        params: {
-          title: 'Lifestyle'
-        }
-      })
-      .state('master_signedin.results.p4', {
-        url: '/p4',
-        templateUrl: 'components/results/pages/result-p4.tpl.html',
-        params: {
-          title: 'Next steps'
-        }
-      })
-      .state('master_signedin.results.science', {
-        url: '/science',
-        templateUrl: 'components/results/pages/result-science.tpl.html',
-        params: {
-          title: 'Science'
-        }
-      })
-      .state('master_signedin.results.sharing', {
-        url: '/sharing',
-        templateUrl: 'components/results/pages/result-sharing.tpl.html',
-        params: {
-          title: 'Family'
-        }
-      })
-      .state('master_signedin.results.questions', {
-        url: '/questions',
-        templateUrl: 'components/results/pages/result-questions.tpl.html',
-        params: {
-          title: 'General questions'
-        }
-      })
-      .state('master_signedin.results.view', {
-        url: '/view',
-        templateUrl: 'components/results/pages/result-view.tpl.html',
-        params: {
-          title: 'Welcome'
-        }
-      });
+    });
   })
 
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'productStatus', 'userInfo', '$window', 'results',
-    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, productStatus, userInfo,  $window, results) {
-
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results',
+    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, profileService, userInfo,  $window, results) {
 
       $scope.results = null;
+      $scope.hasProducts = false;
+      $scope.consentAgreed = false;
+      $scope.resultReady = false;
       $scope.user = userInfo.user;
-      $scope.noProducts = productStatus === undefined;
-      $scope.showResult = false;
-      var userGender = userInfo.gender;
+      $scope.showMobileMenu = false;
 
-      // set tabs for genders
-      if(userGender === 'male') {
-        $scope.activeTabGender = 0;
-      }
-      else if (userGender === 'female') {
-        $scope.activeTabGender = 1;
-      }
+      $scope.showSubPages = function (page) {
 
-
-      if ($scope.noProducts === false) {
-        $scope.consentAgreed = (productStatus.product_consent_agreed_date !== null);
-      } else {
-        $scope.consentAgreed = false;
-      }
-      if ($scope.consentAgreed) {
-        $scope.needPopup = false;
-      } else {
-        $scope.needPopup = product.product_consent_needed;
-      }
-
-
-      if (userInfo.helix_profile !== null) {
-        $scope.seqStatus = userInfo.helix_profile.seq_status;
-        switch (userInfo.helix_profile.seq_status) {
-          /* TODO */
-          case 'order_cancelled':
-            break;
-          case 'account_revoked':
-            break;
-          case 'account_closed':
-            break;
-          case 'physician_review': {
-            $scope.iconStatus = [true, false, false, false, false, false];
-            $scope.iconCurrent = [true, false, false, false, false, false];
-            break;
-          }
-          case 'kit_registered': {
-            $scope.iconStatus = [true, true, false, false, false, false];
-            $scope.iconCurrent = [false, true, false, false, false, false];
-            break;
-          }
-          case 'manifest_uploaded': {
-            $scope.iconStatus = [true, true, true, false, false, false];
-            $scope.iconCurrent = [false, false, true, false, false, false];
-            break;
-          }
-          case 'dna_extraction_completed': {
-            $scope.iconStatus = [true, true, true, true, false, false];
-            $scope.iconCurrent = [false, false, false, true, false, false];
-            break;
-          }
-          case 'dna_delivery_completed': {
-            $scope.iconStatus = [true, true, true, true, true, false];
-            $scope.iconCurrent = [false, false, false, false, true, false];
-            break;
-          }
-          case 'result_ready': {
-            $scope.iconStatus = [true, true, true, true, true, true];
-            $scope.iconCurrent = [false, false, false, false, false, true];
-            break;
+        // figure out the current status
+        $scope.profileLinked = $scope.profile.helix_profile !== null;
+        if ($scope.profileLinked) {
+          $scope.hasProducts = $scope.profile.helix_profile.product_status.length > 0;
+          if ($scope.hasProducts) {
+            $scope.consentAgreed = $scope.profile.helix_profile.product_status[0].product_consent_agreed_date !== null;
+            if ($scope.consentAgreed)
+            {
+              $scope.resultReady = $scope.profile.helix_profile.product_status[0].product_status === 'result_ready';
+            }
           }
         }
-      }
 
-      $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
-        productStatus.custom_data['confirmation_code'] + '&req_number=' +
-        productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
-      if (results.length > 0) {
-        $scope.download_link = results[0].report;
-      } else {
-        $scope.download_link = '';
-      }
+        $scope.resultReady = true;
 
-      $scope.$watch('consentAgreed', function () {
-        if ($scope.consentAgreed) {
-          resultsService.getResults(parseInt($stateParams.id)).then(function (result) {
-            $scope.results = result;
-          });
+        // figure out what to show based on the current status
+        if ($scope.resultReady) {
+          if (!$scope.consentAgreed) {
+            $scope.page = 'consent';
+          } else {
+            if ($stateParams.page !== '') {
+              $scope.page = $stateParams.page;
+            } else {
+              $scope.page = 'p1';
+            }
+            $scope.$parent.showResults = true;
+            $scope.$parent.menuTitle = 'Results';
+            $scope.$parent.isResultsActive = true;
+          }
+        } else if ($scope.hasProducts && !$scope.resultReady) {
+          $scope.page = 'sequencing-status';
+          $scope.$parent.showResults = false;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.isResultsActive = true;
+        } else if (!$scope.hasProducts) {
+          $scope.page = 'pre-purchase';
+          $scope.$parent.showResults = false;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.isResultsActive = true;
         }
-      });
 
-      $scope.agree = function(checked) {
-        if(checked)  {
-          var id = $stateParams.id;
-          resultsService.postConsentProduct(id);
+        // status specific
+        if (['sharing', 'science', 'questions'].includes($scope.page)) {
+          $scope.$parent.isResultsActive = false;
+        }
+        if ($scope.page === 'sequencing-status') {
+          var productStatus = profile.helix_profile.product_status[0];
+          $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
+            productStatus.custom_data['confirmation_code'] + '&req_number=' +
+            productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
+          if (results.length > 0) {
+            $scope.download_link = results[0].report;
+          } else {
+            $scope.download_link = '';
+          }
+          switch (productStatus.product_status) {
+            case 'ldt_submitted':
+              break;
+            case 'ldt_approved':
+              break;
+            case 'physician_review': {
+              $scope.iconStatus = [true, false, false, false, false, false];
+              $scope.iconCurrent = [true, false, false, false, false, false];
+              break;
+            }
+            case 'kit_registered': {
+              $scope.iconStatus = [true, true, false, false, false, false];
+              $scope.iconCurrent = [false, true, false, false, false, false];
+              break;
+            }
+            case 'manifest_uploaded': {
+              $scope.iconStatus = [true, true, true, false, false, false];
+              $scope.iconCurrent = [false, false, true, false, false, false];
+              break;
+            }
+            case 'dna_extraction_completed': {
+              $scope.iconStatus = [true, true, true, true, false, false];
+              $scope.iconCurrent = [false, false, false, true, false, false];
+              break;
+            }
+            case 'dna_delivery_completed': {
+              $scope.iconStatus = [true, true, true, true, true, false];
+              $scope.iconCurrent = [false, false, false, false, true, false];
+              break;
+            }
+            case 'result_ready': {
+              $scope.iconStatus = [true, true, true, true, true, true];
+              $scope.iconCurrent = [false, false, false, false, false, true];
+              break;
+            }
+          }
+        }
+      };
+
+      $scope.reloadProfile = function (page) {
+        profileService.getProfile().then(function (result){
+          $scope.profile = result;
+          $scope.showSubPages(page);
+        });
+      };
+
+      $scope.viewResultsClicked = function(consentResults) {
+        if(consentResults.checkReview && consentResults.checkUnderstood)  {
+          resultsService.postConsentProduct(1);
           $scope.needPopup = false;
           $scope.consentAgreed = true;
+
+          $window.scrollTo(0,0);
+          $scope.reloadProfile('p1');
         } else {
           $scope.consentAgreed = false;
         }
       };
 
-      $scope.noAgree = function() {
-        $scope.needPopup = false;
-        $scope.consentAgreed = false;
-      };
-
+      $scope.reloadProfile($scope.page);
 
       //tabs results
       $scope.tab = 1;
@@ -226,11 +162,6 @@ angular.module( 'ixlayer.results', [
 
       $scope.isSet = function(tabNum){
         return $scope.tab === tabNum;
-      };
-
-      $scope.showResults = function() {
-        $scope.showResult = true;
-        $window.scrollTo(0,0);
       };
 
     }]);

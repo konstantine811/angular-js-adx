@@ -41,7 +41,7 @@
                       <a ui-sref-active="active-mobile" ui-sref="master.login" ng-click="showMenu()" class="header-nav-link">Sign-in</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ng-show="logged" ui-sref="master_signedin.dashboard" ng-click="showMenu()" class="header-nav-link">My Results</a>
+                      <a ng-show="logged" ui-sref="master_signedin.results" ng-click="showMenu()" class="header-nav-link">My Results</a>
                       <a ng-show="!logged" ui-sref="master.register" ng-click="showMenu()" class="header-nav-link">Register</a>
                     </li>
                   </ul>
@@ -73,7 +73,7 @@
           </nav>
           <div class="header__button hide-mobile">
             <div class="button__login">
-                  <a ng-show="logged" ui-sref="master_signedin.dashboard" class="bt-round bt-round--header bt-round--blue">My Results</a>
+                  <a ng-show="logged" ui-sref="master_signedin.results({'page':''})" class="bt-round bt-round--header bt-round--blue">My Results</a>
                   <a ng-show="!logged" ui-sref="master.register" class="bt-round bt-round--header bt-round--blue">Register</a>
             </div>
             <div class="button__purchase">

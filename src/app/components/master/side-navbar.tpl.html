@@ -1,4 +1,4 @@
-<nav class="side-navbar" ng-class="{'open': show}">
+<nav class="side-navbar">
   <div class="container-fluid">
     <div class="row">
       <!--logo header-->
@@ -11,7 +11,7 @@
       
       <!--mobile button-->
       <div class="side-navbar__mobile-button hide-desktop-md">
-        <div class="mobile-button" ng-click="showMenu()" ng-class="{'toggle': show}">
+        <div class="mobile-button" ng-click="toggleMobileMenu()" ng-class="{'toggle': mobileMenuVisible}">
           <span class="line-1"></span>
           <span class="line-2"></span>
           <span class="line-3"></span>
@@ -24,13 +24,12 @@
       <div class="side-navbar__account">
         <div class="side-navbar-account__name">
           <div class="txt txt-medium txt-blue-dark txt-ellipsis">
-            {{ user.first_name }}
-            {{ user.last_name }}
+            {{ userName }}
           </div>
         </div>
         <div class="side-navbar-account__button">
-          <a ui-sref="master_signedin.profile" ng-click="showMenu()" class="button-circle" uib-tooltip="Profile"><i class="fa fa-cog" aria-hidden="true"></i></a>
-          <button uib-tooltip="Logout" ui-sref="master.logout"  class="button-circle" ng-click="showMenu()"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
+          <a ui-sref="master_signedin.profile" ng-click="toggleMobileMenu()" class="button-circle" uib-tooltip="Profile"><i class="fa fa-cog" aria-hidden="true"></i></a>
+          <button uib-tooltip="Logout" ui-sref="master.logout"  class="button-circle" ng-click="toggleMobileMenu()"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>
@@ -40,17 +39,17 @@
           <div class="side-navbar-navigation__link">
             <ul class="side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home">
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ng-class="{'active-bgc-blue': activeHome}"  ui-sref="master_signedin.dashboard" ng-click="showMenu(); homeTransition($event)" class="navbar-link navbar-link--second">
+                <a ng-class="{'active-bgc-blue': isResultsActive}" ui-sref="master_signedin.results({'page':''})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/home.svg'"></ng-include>
                   </span>
-                  <span class="txt txt-black">Home</span>
+                  <span class="txt txt-black">{{menuTitle}}</span>
                 </a>
               </li>
             </ul>
             <ul class="side-navbar-navigation-link__wrap" ng-show="showResults">
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results.p1" ng-click="showMenu()" class="navbar-link">
+                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p1'})" class="navbar-link">
                   <span class="number-bgc">1</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Your result</span>
@@ -58,7 +57,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results.p2" ng-click="showMenu()" class="navbar-link">
+                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p2'})"  class="navbar-link">
                   <span class="number-bgc">2</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">About Alzheimer’s disease</span>
@@ -66,7 +65,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results.p3" ng-click="showMenu(); clickedResults()" class="navbar-link">
+                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p3'})"  class="navbar-link">
                   <span class="number-bgc">3</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Lifestyle & other factor</span>
@@ -74,7 +73,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results.p4" ng-click="showMenu(); clickedResults()" class="navbar-link">
+                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p4'})"  class="navbar-link">
                   <span class="number-bgc">4</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Next steps</span>
@@ -84,7 +83,7 @@
             </ul>
             <ul class="side-navbar-navigation-link__wrap">
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results.science" ng-click="showMenu(); clickedResults()" class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'science'})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/dna-blue.svg'"></ng-include>
                   </span>
@@ -92,7 +91,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results.sharing" ng-click="showMenu(); clickedResults()" class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'sharing'})"  class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/users.svg'"></ng-include>
                   </span>
@@ -100,7 +99,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results.questions" ng-click="showMenu(); clickedResults()" class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'questions'})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/question.svg'"></ng-include>
                   </span>

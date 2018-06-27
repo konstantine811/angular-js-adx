@@ -7569,7 +7569,7 @@ body {
 
 .error-message.error-animate-show {
   position: fixed;
-  top: 100px;
+  top: 80px;
   width: 100%;
   z-index: 1000; }
 

@@ -24,10 +24,6 @@ angular.module( 'ixlayer.dashboard', [
       var helix_profile = profile.helix_profile;
       $scope.status = helix_profile;
 
-      if (helix_profile !== null && helix_profile.product_status.length > 0) {
-        $state.go('master_signedin.results.status', {'id':1});
-      } else {
-        $state.go('master_signedin.results.pre-purchase', {'id':1});
-      }
+      $state.go('master_signedin.results.status', {'page':''});
 
   }]);

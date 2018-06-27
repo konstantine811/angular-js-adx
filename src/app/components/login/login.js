@@ -25,7 +25,7 @@ angular.module( 'ixlayer.login', [
       $scope.loginUser = function (userForm) {
         userAccessSrv.cleanUser();
         userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
-            $state.go('master_signedin.dashboard');
+            $state.go('master_signedin.results', {'page':''});
           },
           function (error) {
             if (error.status === 0) {

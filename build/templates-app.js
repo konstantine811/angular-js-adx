@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "shared/side-navbar/side-navbar.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1215,18 +1215,8 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/master/master_signedin.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/master/master_signedin.tpl.html",
-    "<app-side-navbar ng-if=\"logged && hideSideNavBar\"></app-side-navbar>\n" +
-    "<div class=\"page\" ng-class=\"{'logged-out' : !logged || !hideSideNavBar}\">\n" +
-    "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
-    "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
-    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/master/master.tpl.html",
     "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
+    "\n" +
     "  <div class=\"error-message error-animate-show\" ng-show=\"error.displayMessage\">\n" +
     "    <div class=\"container-fluid main-side-gap main-page-width\">\n" +
     "      <div class=\"row\">\n" +
@@ -1237,11 +1227,155 @@ angular.module("components/master/master.tpl.html", []).run(["$templateCache", f
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "\n" +
+    "  <div ng-include=\"'components/master/side-navbar.tpl.html'\"></div>\n" +
+    "\n" +
+    "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
+    "    <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
+    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
+    "</div>");
+}]);
+
+angular.module("components/master/master.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/master/master.tpl.html",
+    "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
+    "\n" +
+    "  <div class=\"error-message error-animate-show\" ng-show=\"error.displayMessage\">\n" +
+    "    <div class=\"container-fluid main-side-gap main-page-width\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-lg-12 \">\n" +
+    "          <i class=\"fa fa-info-circle fa-lg space-right\"></i> {{error.displayMessage}}\n" +
+    "          <a class=\"pull-right\" ng-click=\"closeError()\"><i class=\"fa fa-close fa-lg\"></i></a>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "\n" +
     "  <app-header class=\"hideSideNavBar\"></app-header>\n" +
     "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
     "  <app-footer ng-show=\"showFooter\"></app-footer>\n" +
+    "\n" +
     "</div>\n" +
     "");
+}]);
+
+angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/master/side-navbar.tpl.html",
+    "<nav class=\"side-navbar\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <!--logo header-->\n" +
+    "      <div class=\"side-navbar__logo\">\n" +
+    "        <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
+    "          <img class=\"img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
+    "        </a>\n" +
+    "      </div>\n" +
+    "      <!--end logo header-->\n" +
+    "      \n" +
+    "      <!--mobile button-->\n" +
+    "      <div class=\"side-navbar__mobile-button hide-desktop-md\">\n" +
+    "        <div class=\"mobile-button\" ng-click=\"toggleMobileMenu()\" ng-class=\"{'toggle': mobileMenuVisible}\">\n" +
+    "          <span class=\"line-1\"></span>\n" +
+    "          <span class=\"line-2\"></span>\n" +
+    "          <span class=\"line-3\"></span>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <!--end mobile button-->\n" +
+    "      \n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"side-navbar__account\">\n" +
+    "        <div class=\"side-navbar-account__name\">\n" +
+    "          <div class=\"txt txt-medium txt-blue-dark txt-ellipsis\">\n" +
+    "            {{ userName }}\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"side-navbar-account__button\">\n" +
+    "          <a ui-sref=\"master_signedin.profile\" ng-click=\"toggleMobileMenu()\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
+    "          <button uib-tooltip=\"Logout\" ui-sref=\"master.logout\"  class=\"button-circle\" ng-click=\"toggleMobileMenu()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"side-navbar__navigation\">\n" +
+    "        <div class=\"side-navbar-navigation__wrap\">\n" +
+    "          <div class=\"side-navbar-navigation__link\">\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ng-class=\"{'active-bgc-blue': isResultsActive}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
+    "                  <span class=\"txt txt-black\">{{menuTitle}}</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"navbar-link\">\n" +
+    "                  <span class=\"number-bgc\">1</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p2'})\"  class=\"navbar-link\">\n" +
+    "                  <span class=\"number-bgc\">2</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p3'})\"  class=\"navbar-link\">\n" +
+    "                  <span class=\"number-bgc\">3</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p4'})\"  class=\"navbar-link\">\n" +
+    "                  <span class=\"number-bgc\">4</span>\n" +
+    "                  <span class=\"side-navbar-link__txt\">\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
+    "                  </span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'science'})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
+    "                  <span class=\"txt txt-black\">Science</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'sharing'})\"  class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
+    "                  <span class=\"txt txt-black\">Share results</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                  <span class=\"link-icon-inline\">\n" +
+    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
+    "                  </span>\n" +
+    "                  <span class=\"txt txt-black\">General questions</span>\n" +
+    "                </a>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav>");
 }]);
 
 angular.module("components/products/pages/about-products.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -2396,9 +2530,9 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "");
 }]);
 
-angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-p1.tpl.html",
-    "<div class=\"pre-result\" ng-if=\"!showResult\">\n" +
+angular.module("components/results/pages/result-consent.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-consent.tpl.html",
+    "<div class=\"pre-result\">\n" +
     "  <div class=\"result-head pre-result-head\">\n" +
     "    <div class=\"txt-rubric__wrap\">\n" +
     "      <div class=\"txt txt-bold txt-gray anim-content-transition\">Pre-Result</div>\n" +
@@ -2423,8 +2557,8 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
-    "  \n" +
+    "\n" +
+    "\n" +
     "  <!--section second with boxes-->\n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
@@ -2500,7 +2634,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      \n" +
+    "\n" +
     "      <form action=\"\" name=\"consentResults\">\n" +
     "        <div class=\"boxes__wrap\">\n" +
     "          <div class=\"box-shadow\">\n" +
@@ -2530,19 +2664,22 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap--large-top button--center\">\n" +
-    "              <button type=\"submit\" ui-sref=\"master_signedin.results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\" ng-disabled=\"consentResults.$invalid\" ng-click=\"showResults()\">View results</button>\n" +
+    "              <button type=\"submit\" ui-sref=\"master_signedin.results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\" ng-disabled=\"consentResults.$invalid\" ng-click=\"viewResultsClicked(consentResults)\">View results</button>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </form>\n" +
-    "    \n" +
-    "    \n" +
+    "\n" +
+    "\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <!--end section second with boxes-->\n" +
-    "</div>\n" +
-    "\n" +
-    "<div class=\"result\" ng-if=\"showResult\">\n" +
+    "</div>");
+}]);
+
+angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-p1.tpl.html",
+    "<div class=\"result\">\n" +
     "  <div class=\"result-head result-head--p1\">\n" +
     "    <div class=\"result-head__over\">\n" +
     "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
@@ -2712,7 +2849,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver txt-center\">\n" +
-    "      <a ui-sref=\"master_signedin.results.p2\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "      <a ui-sref=\"master_signedin.results({'page':'p2'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>");
@@ -2882,10 +3019,10 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
-    "          <a ui-sref=\"master_signedin.results.p1\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
     "        </div>\n" +
     "        <div class=\"button__wrap--step\">\n" +
-    "          <a ui-sref=\"master_signedin.results.p3\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p3'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -3232,10 +3369,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
-    "          <a ui-sref=\"master_signedin.results.p2\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p2'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
     "        </div>\n" +
     "        <div class=\"button__wrap--step\">\n" +
-    "          <a ui-sref=\"master_signedin.results.p4\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p4'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--dna bt-round-right-icon bt-round-right-icon--arrow\">Next step</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -3360,7 +3497,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "    <div class=\"section-bgc--silver\">\n" +
     "      <div class=\"container-md container-md-button-flex\">\n" +
     "        <div class=\"button__wrap--step\">\n" +
-    "          <a ui-sref=\"master_signedin.results.p3\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p3'})\" class=\"bt-round bt-round--blue-dark bt-round-left-icon bt-round-left-icon--arrow bt-round-right-icon bt-round-right-icon--dna\">Previous</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -3377,7 +3514,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "      <div class=\"txt-rubric__wrap\">\n" +
     "        <div class=\"txt txt-bold txt-gray anim-content-transition\">General Questions</div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "      <!--<div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
     "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
@@ -3398,7 +3535,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "              </span>\n" +
     "          </a>\n" +
     "        </div>\n" +
-    "      </div>\n" +
+    "      </div>-->\n" +
     "    </div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
@@ -3501,7 +3638,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "      <div class=\"txt-rubric__wrap\">\n" +
     "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Science</div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "      <!--<div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
     "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
@@ -3522,7 +3659,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "              </span>\n" +
     "          </a>\n" +
     "        </div>\n" +
-    "      </div>\n" +
+    "      </div>-->\n" +
     "    </div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
@@ -3748,7 +3885,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      <div class=\"txt-rubric__wrap\">\n" +
     "        <div class=\"txt txt-bold txt-gray anim-content-transition\">Family</div>\n" +
     "      </div>\n" +
-    "      <div class=\"result-head__download-button anim-content-transition\">\n" +
+    "      <!--<div class=\"result-head__download-button anim-content-transition\">\n" +
     "        <div class=\"result-button-head__wrap\">\n" +
     "          <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap\">\n" +
     "            <div class=\"flex-column\">\n" +
@@ -3769,7 +3906,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "              </span>\n" +
     "          </a>\n" +
     "        </div>\n" +
-    "      </div>\n" +
+    "      </div>-->\n" +
     "    </div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
@@ -4251,47 +4388,20 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
 angular.module("components/results/results.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/results.tpl.html",
     "<div ui-view class=\"page-transition-anim\"></div>\n" +
-    "<!--this is new end-->\n" +
     "\n" +
-    "<!--this is old  To be deleted -->\n" +
-    "<!--<div class=\"row\">\n" +
-    "  <div class=\"error\" ng-show=\"noProducts\">You have not purchased any products</div>\n" +
-    "  <div class=\"error\" ng-show=\"!noProducts && !consentAgreed\">You did not consent to viewing the results</div>\n" +
-    "  <div ng-show=\"consentAgreed\">\n" +
-    "    <div ng-repeat=\"result in results\">\n" +
-    "      <p>Product id: {{result.id}}</p>\n" +
-    "      <p>Product: {{result.product}}</p>\n" +
-    "      <p>Insight score: {{result.result.insight_score}}</p>\n" +
-    "      <p>Last update: {{result.last_updated}}</p>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "</div>\n" +
-    "<div class=\"popup\" ng-if=\"!noProducts && needPopup && !consentAgreed\">\n" +
-    "  <div class=\"popup-content\" ng-class=\"needPopup = 'popup-content-animation'\">\n" +
-    "    <div class=\"popup-condition-txt scrollme\" ng-scrollbar is-bar-shown=\"barShown\">\n" +
-    "      <p class=\"popup-condition-txt__inner\">\n" +
-    "        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit pariatur quis sit unde, veniam? Accusamus aut facilis in labore laboriosam necessitatibus nisi optio porro quasi, ratione voluptas voluptatem, voluptatum!</span><span>Architecto culpa, deleniti dicta dolorum earum labore odit recusandae rerum sit! A at dolorem eligendi itaque perspiciatis vel voluptate! A consequuntur debitis esse ex illo inventore libero porro sed voluptates.</span><span>Architecto assumenda consequatur cupiditate dolorem, exercitationem explicabo fugit in necessitatibus quo! A dicta dolorem eaque error ipsam ipsum magnam mollitia nam optio provident quam quos, reprehenderit sunt totam vitae voluptate.</span><span>Aliquam aut deleniti dicta dolorem error esse exercitationem, hic inventore ipsum minus pariatur perferendis provident quaerat qui sequi veniam voluptate. Accusamus, blanditiis cumque dicta molestiae quibusdam repellat similique sunt vero.</span><span>Ab deserunt dolorem eos eveniet fugit labore laudantium necessitatibus, praesentium quia quis quos, repudiandae, voluptates! Alias dolores molestias quaerat qui quibusdam? Aperiam, ipsum minus. Ab consequuntur eaque iusto nemo rem?</span><span>A amet atque beatae, eligendi hic in itaque nesciunt quas repudiandae tempore totam veniam voluptate. Adipisci alias aliquid at exercitationem ipsam magni maiores nesciunt, obcaecati officiis provident suscipit tenetur vitae.</span><span>At excepturi mollitia odio. Beatae dolor esse explicabo incidunt iusto libero minus! Accusantium distinctio hic inventore itaque necessitatibus quidem reprehenderit sapiente tempore temporibus voluptatibus. Commodi deleniti sed sunt! Amet, aperiam!</span><span>Accusamus delectus magnam totam. Deleniti eaque et facilis fuga, incidunt nam natus officia quia velit veritatis. Animi autem consequatur ea illo veniam voluptatem. Alias dolorum in necessitatibus pariatur possimus quibusdam.</span><span>Adipisci animi assumenda at corporis dicta, dolor doloremque eaque error et ex exercitationem id ipsa labore laboriosam laborum nisi non nulla numquam odit quisquam repudiandae similique sit soluta tenetur vero.</span><span>Alias, aut cumque debitis delectus impedit magni nulla obcaecati odit quaerat qui, quidem rem suscipit totam. A adipisci architecto distinctio, eos est in iste minima necessitatibus, obcaecati sapiente sequi, unde!</span>\n" +
-    "      </p>\n" +
-    "    </div>\n" +
-    "    <form class=\"form-popup\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <div class=\"form-check\">\n" +
-    "            <label class=\"i-checks\">\n" +
-    "              <input type=\"checkbox\" ng-model=\"checked\" required> <span>I agree</span>\n" +
-    "            </label>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-6\">\n" +
-    "          <button class=\"btn btn-primary\" type=\"button\" ng-click=\"agree(checked)\">OK</button>\n" +
-    "          <button class=\"btn btn-warning\" type=\"button\" ng-click=\"noAgree()\">Cancel</button>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </form>\n" +
-    "  </div>\n" +
-    "  <div class=\"popup-background\" ng-class=\"needPopup = 'popup-background-animation'\"></div>\n" +
-    "</div>\n" +
-    "-->");
+    "<div ng-show=\"page == 'consent'\" ng-include=\"'components/results/pages/result-consent.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'pre-purchase'\" ng-include=\"'components/results/pages/prePurchase.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'sequencing-status'\" ng-include=\"'components/results/pages/sequencingStatus.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'p1'\" ng-include=\"'components/results/pages/result-p1.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'p2'\" ng-include=\"'components/results/pages/result-p2.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'p3'\" ng-include=\"'components/results/pages/result-p3.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'p4'\" ng-include=\"'components/results/pages/result-p4.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'sharing'\" ng-include=\"'components/results/pages/result-sharing.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'science'\" ng-include=\"'components/results/pages/result-science.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'questions'\" ng-include=\"'components/results/pages/result-questions.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'view'\" ng-include=\"'components/results/pages/result-view.tpl.html'\"></div>\n" +
+    "\n" +
+    "");
 }]);
 
 angular.module("components/science/science.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -5092,7 +5202,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.login\" ng-click=\"showMenu()\" class=\"header-nav-link\">Sign-in</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu()\" class=\"header-nav-link\">My Results</a>\n" +
+    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.results\" ng-click=\"showMenu()\" class=\"header-nav-link\">My Results</a>\n" +
     "                      <a ng-show=\"!logged\" ui-sref=\"master.register\" ng-click=\"showMenu()\" class=\"header-nav-link\">Register</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
@@ -5124,7 +5234,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </nav>\n" +
     "          <div class=\"header__button hide-mobile\">\n" +
     "            <div class=\"button__login\">\n" +
-    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.dashboard\" class=\"bt-round bt-round--header bt-round--blue\">My Results</a>\n" +
+    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--header bt-round--blue\">My Results</a>\n" +
     "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
@@ -5140,124 +5250,4 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "    </div>\n" +
     "  </div>\n" +
     "</header>");
-}]);
-
-angular.module("shared/side-navbar/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("shared/side-navbar/side-navbar.tpl.html",
-    "<nav class=\"side-navbar\" ng-class=\"{'open': show}\">\n" +
-    "  <div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "      <!--logo header-->\n" +
-    "      <div class=\"side-navbar__logo\">\n" +
-    "        <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
-    "          <img class=\"img\" src=\"./assets/images/logo-img.png\" alt=\"\">\n" +
-    "        </a>\n" +
-    "      </div>\n" +
-    "      <!--end logo header-->\n" +
-    "      \n" +
-    "      <!--mobile button-->\n" +
-    "      <div class=\"side-navbar__mobile-button hide-desktop-md\">\n" +
-    "        <div class=\"mobile-button\" ng-click=\"showMenu()\" ng-class=\"{'toggle': show}\">\n" +
-    "          <span class=\"line-1\"></span>\n" +
-    "          <span class=\"line-2\"></span>\n" +
-    "          <span class=\"line-3\"></span>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "      <!--end mobile button-->\n" +
-    "      \n" +
-    "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "      <div class=\"side-navbar__account\">\n" +
-    "        <div class=\"side-navbar-account__name\">\n" +
-    "          <div class=\"txt txt-medium txt-blue-dark txt-ellipsis\">\n" +
-    "            {{ user.first_name }}\n" +
-    "            {{ user.last_name }}\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"side-navbar-account__button\">\n" +
-    "          <a ui-sref=\"master_signedin.profile\" ng-click=\"showMenu()\" class=\"button-circle\" uib-tooltip=\"Profile\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></a>\n" +
-    "          <button uib-tooltip=\"Logout\" ui-sref=\"master.logout\"  class=\"button-circle\" ng-click=\"showMenu()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i></button>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "      <div class=\"side-navbar__navigation\">\n" +
-    "        <div class=\"side-navbar-navigation__wrap\">\n" +
-    "          <div class=\"side-navbar-navigation__link\">\n" +
-    "            <ul class=\"side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home\">\n" +
-    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ng-class=\"{'active-bgc-blue': activeHome}\"  ui-sref=\"master_signedin.dashboard\" ng-click=\"showMenu(); homeTransition($event)\" class=\"navbar-link navbar-link--second\">\n" +
-    "                  <span class=\"link-icon-inline\">\n" +
-    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
-    "                  </span>\n" +
-    "                  <span class=\"txt txt-black\">Home</span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p1\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
-    "                  <span class=\"number-bgc\">1</span>\n" +
-    "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
-    "                  </span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p2\" ng-click=\"showMenu()\" class=\"navbar-link\">\n" +
-    "                  <span class=\"number-bgc\">2</span>\n" +
-    "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
-    "                  </span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p3\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
-    "                  <span class=\"number-bgc\">3</span>\n" +
-    "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
-    "                  </span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results.p4\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link\">\n" +
-    "                  <span class=\"number-bgc\">4</span>\n" +
-    "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
-    "                  </span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
-    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.science\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
-    "                  <span class=\"link-icon-inline\">\n" +
-    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
-    "                  </span>\n" +
-    "                  <span class=\"txt txt-black\">Science</span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.sharing\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
-    "                  <span class=\"link-icon-inline\">\n" +
-    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
-    "                  </span>\n" +
-    "                  <span class=\"txt txt-black\">Share results</span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results.questions\" ng-click=\"showMenu(); clickedResults()\" class=\"navbar-link navbar-link--second\">\n" +
-    "                  <span class=\"link-icon-inline\">\n" +
-    "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
-    "                  </span>\n" +
-    "                  <span class=\"txt txt-black\">General questions</span>\n" +
-    "                </a>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "</nav>");
 }]);
