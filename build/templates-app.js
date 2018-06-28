@@ -1215,19 +1215,18 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/master/master_signedin.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/master/master_signedin.tpl.html",
-    "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
-    "\n" +
-    "  <div class=\"error-message error-animate-show\" ng-show=\"error.displayMessage\">\n" +
-    "    <div class=\"container-fluid main-side-gap main-page-width\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-lg-12 \">\n" +
-    "          <i class=\"fa fa-info-circle fa-lg space-right\"></i> {{error.displayMessage}}\n" +
-    "          <a class=\"pull-right\" ng-click=\"closeError()\"><i class=\"fa fa-close fa-lg\"></i></a>\n" +
-    "        </div>\n" +
+    "<div class=\"error-message error-animate-show-signedin\" ng-show=\"error.displayMessage\">\n" +
+    "  <div class=\"container-fluid main-side-gap main-page-width\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <div class=\"col-lg-12 \">\n" +
+    "        <i class=\"fa fa-info-circle fa-lg space-right\"></i> {{error.displayMessage}}\n" +
+    "        <a class=\"pull-right\" ng-click=\"closeError()\"><i class=\"fa fa-close fa-lg\"></i></a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "</div>\n" +
     "\n" +
+    "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
     "  <div ng-include=\"'components/master/side-navbar.tpl.html'\"></div>\n" +
     "\n" +
     "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
@@ -1261,7 +1260,7 @@ angular.module("components/master/master.tpl.html", []).run(["$templateCache", f
 
 angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/master/side-navbar.tpl.html",
-    "<nav class=\"side-navbar\">\n" +
+    "<nav class=\"side-navbar\" ng-class=\"{'open': mobileMenuVisible}\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"row\">\n" +
     "      <!--logo header-->\n" +
@@ -1302,7 +1301,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ng-class=\"{'active-bgc-blue': isResultsActive}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ng-class=\"{'active-bgc-blue': isHomeActive}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -1312,7 +1311,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\" ng-show=\"showResults\">\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">1</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Your result</span>\n" +
@@ -1320,7 +1319,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p2'})\"  class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'p2'})\"  class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">2</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">About Alzheimer’s disease</span>\n" +
@@ -1328,7 +1327,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p3'})\"  class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'p3'})\"  class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
@@ -1336,7 +1335,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item\">\n" +
-    "                <a ui-sref-active=\"active-number-blue\" ui-sref=\"master_signedin.results({'page':'p4'})\"  class=\"navbar-link\">\n" +
+    "                <a ui-sref-active=\"active-number-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'p4'})\"  class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">4</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
     "                    <span class=\"txt-small txt-blue-dark\">Next steps</span>\n" +
@@ -1346,7 +1345,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "            </ul>\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'science'})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'science'})\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/dna-blue.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -1354,7 +1353,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'sharing'})\"  class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'sharing'})\"  class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/users.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -1362,7 +1361,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                </a>\n" +
     "              </li>\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ui-sref-active=\"active-bgc-blue\" ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ui-sref-active=\"active-bgc-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/question.svg'\"></ng-include>\n" +
     "                  </span>\n" +

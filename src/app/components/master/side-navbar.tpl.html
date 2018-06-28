@@ -1,4 +1,4 @@
-<nav class="side-navbar">
+<nav class="side-navbar" ng-class="{'open': mobileMenuVisible}">
   <div class="container-fluid">
     <div class="row">
       <!--logo header-->
@@ -39,7 +39,7 @@
           <div class="side-navbar-navigation__link">
             <ul class="side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home">
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ng-class="{'active-bgc-blue': isResultsActive}" ui-sref="master_signedin.results({'page':''})" class="navbar-link navbar-link--second">
+                <a ng-class="{'active-bgc-blue': isHomeActive}" ui-sref="master_signedin.results({'page':''})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/home.svg'"></ng-include>
                   </span>
@@ -49,7 +49,7 @@
             </ul>
             <ul class="side-navbar-navigation-link__wrap" ng-show="showResults">
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p1'})" class="navbar-link">
+                <a ui-sref-active="active-number-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'p1'})" class="navbar-link">
                   <span class="number-bgc">1</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Your result</span>
@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p2'})"  class="navbar-link">
+                <a ui-sref-active="active-number-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'p2'})"  class="navbar-link">
                   <span class="number-bgc">2</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">About Alzheimer’s disease</span>
@@ -65,7 +65,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p3'})"  class="navbar-link">
+                <a ui-sref-active="active-number-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'p3'})"  class="navbar-link">
                   <span class="number-bgc">3</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Lifestyle & other factor</span>
@@ -73,7 +73,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item">
-                <a ui-sref-active="active-number-blue" ui-sref="master_signedin.results({'page':'p4'})"  class="navbar-link">
+                <a ui-sref-active="active-number-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'p4'})"  class="navbar-link">
                   <span class="number-bgc">4</span>
                   <span class="side-navbar-link__txt">
                     <span class="txt-small txt-blue-dark">Next steps</span>
@@ -83,7 +83,7 @@
             </ul>
             <ul class="side-navbar-navigation-link__wrap">
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'science'})" class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'science'})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/dna-blue.svg'"></ng-include>
                   </span>
@@ -91,7 +91,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'sharing'})"  class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'sharing'})"  class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/users.svg'"></ng-include>
                   </span>
@@ -99,7 +99,7 @@
                 </a>
               </li>
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ui-sref-active="active-bgc-blue" ui-sref="master_signedin.results({'page':'questions'})" class="navbar-link navbar-link--second">
+                <a ui-sref-active="active-bgc-blue" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':'questions'})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/question.svg'"></ng-include>
                   </span>

@@ -27,8 +27,10 @@ angular.module( 'ixlayer.master', [
       $scope.hideSideNavBar = true;
       $scope.showFooter = true;
       $scope.error = errorHandler.error;
-      $scope.showResults = true;
-      $scope.activeHome = false;
+      $scope.showResults = false;
+      $scope.menuTitle = 'Home';
+      $scope.isHomeActive = false;
+      $scope.mobileMenuVisible = false;
 
       $transitions.onSuccess('transition', function (transition) {
         var title = transition.to().data.pageTitle;
@@ -100,11 +102,6 @@ angular.module( 'ixlayer.master', [
       if (userAccessSrv.isAuthenticated()) {
         $scope.userName = userAccessSrv.currentUserName();
       }
-
-      $scope.showResults = false;
-      $scope.menuTitle = 'Home';
-      $scope.isResultsActive = true;
-      $scope.mobileMenuVisible = false;
 
       $scope.toggleMobileMenu = function() {
         if (!$scope.mobileMenuVisible) {

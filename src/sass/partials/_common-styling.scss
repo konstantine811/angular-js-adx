@@ -11,6 +11,13 @@ body {
   z-index: 1000;
 }
 
+.error-message.error-animate-show-signedin {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
 //common styling
 .hide-desktop, .hide-desktop-md {
   display: none !important;

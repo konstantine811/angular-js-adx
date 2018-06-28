@@ -54,7 +54,7 @@ angular.module( 'ixlayer.results', [
 
         // figure out what to show based on the current status
         if ($scope.resultReady) {
-          if (!$scope.consentAgreed) {
+          if (!$scope.consentAgreed && (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page))) {
             $scope.page = 'consent';
           } else {
             if ($stateParams.page !== '') {
@@ -62,27 +62,38 @@ angular.module( 'ixlayer.results', [
             } else {
               $scope.page = 'p1';
             }
-            $scope.$parent.showResults = true;
-            $scope.$parent.menuTitle = 'Results';
-            $scope.$parent.isResultsActive = true;
           }
         } else if ($scope.hasProducts && !$scope.resultReady) {
           $scope.page = 'sequencing-status';
-          $scope.$parent.showResults = false;
-          $scope.$parent.menuTitle = 'Home';
-          $scope.$parent.isResultsActive = true;
         } else if (!$scope.hasProducts) {
           $scope.page = 'pre-purchase';
-          $scope.$parent.showResults = false;
-          $scope.$parent.menuTitle = 'Home';
-          $scope.$parent.isResultsActive = true;
         }
 
         // status specific
-        if (['sharing', 'science', 'questions'].includes($scope.page)) {
-          $scope.$parent.isResultsActive = false;
+        if ($scope.page === 'pre-purchase') {
+          $scope.$parent.showResults = false;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.isHomeActive = true;
         }
+        else if ($scope.page === 'consent') {
+            $scope.$parent.menuTitle = 'Home';
+            $scope.$parent.showResults = false;
+            $scope.$parent.isHomeActive = true;
+        }
+        else if ($scope.page === '' || $scope.page === 'p1') {
+            $scope.$parent.menuTitle = 'Results';
+            $scope.$parent.showResults = true;
+            $scope.$parent.isHomeActive = true;
+        }
+        else if (['sharing', 'science', 'questions'].includes($scope.page)) {
+            $scope.$parent.isHomeActive = false;
+            $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
+        } else
         if ($scope.page === 'sequencing-status') {
+          $scope.$parent.showResults = false;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.isHomeActive = true;
+
           var productStatus = profile.helix_profile.product_status[0];
           $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
             productStatus.custom_data['confirmation_code'] + '&req_number=' +
@@ -145,13 +156,13 @@ angular.module( 'ixlayer.results', [
           $scope.consentAgreed = true;
 
           $window.scrollTo(0,0);
-          $scope.reloadProfile('p1');
+          $window.location.reload();
         } else {
           $scope.consentAgreed = false;
         }
       };
 
-      $scope.reloadProfile($scope.page);
+      $scope.reloadProfile($stateParams.page);
 
       //tabs results
       $scope.tab = 1;

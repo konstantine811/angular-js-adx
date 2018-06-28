@@ -1,16 +1,15 @@
-<div class="page" ng-class="{'logged-out' :  !hideSideNavBar}">
-
-  <div class="error-message error-animate-show" ng-show="error.displayMessage">
-    <div class="container-fluid main-side-gap main-page-width">
-      <div class="row">
-        <div class="col-lg-12 ">
-          <i class="fa fa-info-circle fa-lg space-right"></i> {{error.displayMessage}}
-          <a class="pull-right" ng-click="closeError()"><i class="fa fa-close fa-lg"></i></a>
-        </div>
+<div class="error-message error-animate-show-signedin" ng-show="error.displayMessage">
+  <div class="container-fluid main-side-gap main-page-width">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <i class="fa fa-info-circle fa-lg space-right"></i> {{error.displayMessage}}
+        <a class="pull-right" ng-click="closeError()"><i class="fa fa-close fa-lg"></i></a>
       </div>
     </div>
   </div>
+</div>
 
+<div class="page" ng-class="{'logged-out' :  !hideSideNavBar}">
   <div ng-include="'components/master/side-navbar.tpl.html'"></div>
 
   <app-header ng-if="!logged || !hideSideNavBar"></app-header>
