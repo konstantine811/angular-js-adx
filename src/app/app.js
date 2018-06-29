@@ -22,6 +22,7 @@ angular.module( 'ixLayer', [
   'ui.router',
   'ngAnimate',
   'angular-google-analytics',
+  'updateMeta',
   'ui.bootstrap'
 ])
 

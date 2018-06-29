@@ -79,7 +79,8 @@ module.exports = {
       'vendor/raven-js/dist/raven.min.js',
       'vendor/angular-cookies/angular-cookies.min.js',
       'vendor/moment/min/moment.min.js',
-      'vendor/angular-google-analytics/dist/angular-google-analytics.min.js'
+      'vendor/angular-google-analytics/dist/angular-google-analytics.min.js',
+      'vendor/angular-update-meta/dist/update-meta.min.js'
       ],
     css: [
     ],

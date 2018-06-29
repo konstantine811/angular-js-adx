@@ -50,8 +50,6 @@ angular.module( 'ixlayer.results', [
           }
         }
 
-        $scope.resultReady = true;
-
         // figure out what to show based on the current status
         if ($scope.resultReady) {
           if (!$scope.consentAgreed && (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page))) {
@@ -65,15 +63,17 @@ angular.module( 'ixlayer.results', [
           }
         } else if ($scope.hasProducts && !$scope.resultReady) {
           $scope.page = 'sequencing-status';
-        } else if (!$scope.hasProducts) {
+        } else if (!$scope.hasProducts && $stateParams.page === '') {
           $scope.page = 'pre-purchase';
+        } else {
+          $scope.page = $stateParams.page;
         }
 
         // status specific
         if ($scope.page === 'pre-purchase') {
           $scope.$parent.showResults = false;
           $scope.$parent.menuTitle = 'Home';
-          $scope.$parent.isHomeActive = true;
+          $scope.$parent.isHomeActive = $stateParams.page === '';
         }
         else if ($scope.page === 'consent') {
             $scope.$parent.menuTitle = 'Home';

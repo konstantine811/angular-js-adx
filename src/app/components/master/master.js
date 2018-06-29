@@ -38,7 +38,7 @@ angular.module( 'ixlayer.master', [
           if (title instanceof Function) {
             title = title.call(transition.to(), transition.params());
           }
-          $window.document.title = title + ' | ADX Healthcare';
+          $window.document.title = title + ' | ADx Healthcare';
         }
       });
 

@@ -16,7 +16,8 @@
     "raven-js": "^3.22.3",
     "angular-cookies": "^1.6.9",
     "moment": "^2.20.1",
-    "angular-google-analytics": "^1.1.9"
+    "angular-google-analytics": "^1.1.9",
+    "angular-update-meta": "^2.0.1"
   },
   "resolutions": {
     "angular": "~1.6"

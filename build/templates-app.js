@@ -2,6 +2,9 @@ angular.module("templates-app", ["components/about/about.tpl.html", "components/
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - About\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - About\"></update-meta>\n" +
+    "\n" +
     "<section class=\"about-page-header\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
@@ -391,6 +394,9 @@ angular.module("components/dashboard/dashboard.tpl.html", []).run(["$templateCac
 
 angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/faq/faq.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - Frequently asked questions\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - Frequently asked questions\"></update-meta>\n" +
+    "\n" +
     "<div class=\"faq-p\">\n" +
     "    <div class=\"faq-p-head anim-content-transition\">\n" +
     "        <div class=\"container-fluid container-fluid--section \">\n" +
@@ -583,6 +589,9 @@ angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["
 
 angular.module("components/home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/home/home.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - Learn your Alzheimer’s ApoE genetic risk\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - Learn your Alzheimer’s ApoE genetic risk\"></update-meta>\n" +
+    "\n" +
     "<div class=\"container-fluid container-fluid--section\">\n" +
     "  <div class=\"home-head\">\n" +
     "    <div class=\"container-lg\">\n" +
@@ -1153,6 +1162,9 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/login/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/login/login.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - Sign In\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - Sign In\"></update-meta>\n" +
+    "\n" +
     "<div class=\"login-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"login-form__wrap\">\n" +
@@ -1379,6 +1391,9 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
 
 angular.module("components/products/pages/about-products.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/products/pages/about-products.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - Alzheimer's ApoE Genetic Test\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - Alzheimer's ApoE Genetic Test\"></update-meta>\n" +
+    "\n" +
     "<div class=\"about-products\">\n" +
     "  <div class=\"about-products-head\">\n" +
     "    <div class=\"container-fluid container-fluid--section\">\n" +
@@ -2164,6 +2179,9 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
 
 angular.module("components/register/register.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/register/register.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - Register\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - Register\"></update-meta>\n" +
+    "\n" +
     "<div class=\"register-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\">\n" +
@@ -4405,6 +4423,9 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
 
 angular.module("components/science/science.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/science/science.tpl.html",
+    "<update-meta property=\"og:title\" content=\"ADx Healthcare - The Alzheimer’s ApoE test is a single gene test that looks at your ApoE-related genetic risk for Alzheimer’s disease.\"></update-meta>\n" +
+    "<update-meta name=\"twitter:title\" content=\"ADx Healthcare - The Alzheimer’s ApoE test is a single gene test that looks at your ApoE-related genetic risk for Alzheimer’s disease.\"></update-meta>\n" +
+    "\n" +
     "<div class=\"science-p\">\n" +
     "  <div class=\"science-p-head\">\n" +
     "    <div class=\"container-fluid container-fluid--section\">\n" +
