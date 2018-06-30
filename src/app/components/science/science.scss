@@ -65,18 +65,26 @@
   }
 }
 
-.science-p-list-items--circle-silver-md {
+.science-p-list-items--circle-blue-md {
   padding-left: 68px;
   &:before {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
-    background-color: $gray;
+    background-color: $blue-6;
     border-radius: 50%;
     top: 0px;
     left: 0;
   }
+}
+
+.science-p-section-third__title {
+  max-width: 393px;
+}
+
+.science-p-section-fourth__title {
+  max-width: 373px;
 }
 
 .science-p-section-third__wrap {
@@ -98,10 +106,10 @@
     width: 100%;
   }
   .carousel-control {
-    display: none;
+
   }
   .carousel-indicators, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-      display: block
+      display: none;
   }
   .carousel-indicators {
     li {

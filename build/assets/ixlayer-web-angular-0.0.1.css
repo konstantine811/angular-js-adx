@@ -9014,9 +9014,13 @@ h6 {
   padding: 25px 0 0; }
 
 .box-wrap {
-  padding: 50px 15px 0;
-  width: 100%;
-  height: auto; }
+  padding: 50px 0 0;
+  width: 20%;
+  height: auto;
+  min-width: 370px; }
+
+.box-wrap--large {
+  width: 80%; }
 
 .box-shadow {
   background-color: white;
@@ -9205,6 +9209,15 @@ ul.box__wrap {
     background-image: url("../assets/images/svg/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center; }
+
+.carousel--arrow-silver .carousel-control.right:after, .carousel--arrow-silver .carousel-control.left:after {
+  height: 80px;
+  top: 44%;
+  background-image: url("../assets/images/svg/arrow-silver.svg"); }
+.carousel--arrow-silver .carousel-control.right:after {
+  transform: rotate(0); }
+.carousel--arrow-silver .carousel-control.left:after {
+  transform: rotate(180deg); }
 
 .carousel-control.right {
   right: -8%; }
@@ -9509,7 +9522,7 @@ ul.box__wrap {
 
 .home-section-fourth-head__title {
   width: 100%;
-  max-width: 783px;
+  max-width: 376px;
   margin: 0 auto;
   height: auto;
   padding: 0 20px; }
@@ -10535,17 +10548,23 @@ textarea.form-control {
     top: 8px;
     left: 0; }
 
-.science-p-list-items--circle-silver-md {
+.science-p-list-items--circle-blue-md {
   padding-left: 68px; }
-  .science-p-list-items--circle-silver-md:before {
+  .science-p-list-items--circle-blue-md:before {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
-    background-color: #E6E6E6;
+    background-color: #41c5eb;
     border-radius: 50%;
     top: 0px;
     left: 0; }
+
+.science-p-section-third__title {
+  max-width: 393px; }
+
+.science-p-section-fourth__title {
+  max-width: 373px; }
 
 .science-p-section-third__wrap {
   width: 100%;
@@ -10559,10 +10578,8 @@ textarea.form-control {
   padding: 70px 0 125px; }
 .science-p-section-fifth .carousel {
   width: 100%; }
-.science-p-section-fifth .carousel-control {
-  display: none; }
 .science-p-section-fifth .carousel-indicators, .science-p-section-fifth .carousel-control .glyphicon-chevron-left, .science-p-section-fifth .carousel-control .glyphicon-chevron-right {
-  display: block; }
+  display: none; }
 .science-p-section-fifth .carousel-indicators li {
   background-color: #E6E6E6;
   width: 25px;
@@ -11041,7 +11058,8 @@ textarea.form-control {
 
   .img--md {
     max-width: 360px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: inline-block; }
 
   .img__wrap--md {
     margin-top: 20px; }
@@ -11136,6 +11154,10 @@ textarea.form-control {
   .box-half-column {
     width: 100%; } }
 @media (max-width: 768px) {
+  .box-wrap, .box-wrap--large {
+    width: 100%;
+    min-width: 200px; }
+
   .section-box--space-only-height-sm {
     padding: 20px 0; }
 

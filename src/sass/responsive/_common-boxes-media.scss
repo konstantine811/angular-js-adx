@@ -60,6 +60,11 @@
 
 @media (max-width: $breakpoint-sm) {
 
+  .box-wrap, .box-wrap--large {
+    width: 100%;
+    min-width: 200px;
+  }
+
   .section-box--space-only-height-sm {
     padding: 20px 0;
   }

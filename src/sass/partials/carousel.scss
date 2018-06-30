@@ -17,6 +17,26 @@
   }
 }
 
+.carousel--arrow-silver {
+  .carousel-control.right, .carousel-control.left {
+    &:after {
+      height: 80px;
+      top: 44%;
+      background-image: url("../assets/images/svg/arrow-silver.svg");
+    }
+  }
+  .carousel-control.right {
+    &:after {
+      transform: rotate(0);
+    }
+  }
+  .carousel-control.left {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .carousel-control.right {
   right: -8%;
   &:after {

@@ -1,0 +1,16 @@
+<svg class="arrow-silver-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.425 106.934">
+  <defs>
+    <style>
+      .arrow-silver-svg-1 {
+        fill: none;
+        stroke: #8e8e8e;
+        stroke-miterlimit: 10;
+        stroke-width: 2.835px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1157" data-name="Group 1157" transform="translate(161.265 107.296) rotate(-90)">
+    <line id="Line_1" data-name="Line 1" class="arrow-silver-svg-1" x2="53.069" y2="26.776" transform="translate(1 -160)"/>
+    <line id="Line_2" data-name="Line 2" class="arrow-silver-svg-1" x1="53.069" y2="26.896" transform="translate(53.586 -160)"/>
+  </g>
+</svg>
