@@ -17,7 +17,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "              </div>\n" +
     "              <div class=\"txt__wrap anim-content-transition\">\n" +
     "                <div class=\"txt txt-left\">\n" +
-    "                  At ADx Healthcare, we aim to provide individuals, families, and healthcare providers with answers for late-onset Alzheimer's disease.  We also seek to contribute to the scientific advancement of late-onset Alzheimer's disease healthcare through collaborative technology offerings and research contributions.\n" +
+    "                  At ADx Healthcare, we  provide individuals, families, and healthcare providers with answers for late-onset Alzheimer's disease. We also  contribute to the scientific advancement of late-onset Alzheimer's disease healthcare through collaborative technology offerings and research contributions.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap text-left anim-content-transition\">\n" +
@@ -64,6 +64,15 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                <div class=\"txt txt-left\">\n" +
     "                  In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
     "                </div>\n" +
+    "                <div class=\"button__wrap text-left anim-content-transition\">\n" +
+    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">\n" +
+    "                  Vahid, When the user click on this new button can you open a new tab with the following address\n" +
+    "                  <br><br>\n" +
+    "                  https://adxhealthcare.com/product/brain-autopsy/\n" +
+    "                  <br><br>\n" +
+    "                  Please call this button \"ADx Services\"\n" +
+    "                </span></a>\n" +
+    "              </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -94,7 +103,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            <h4 class=\"txt-blue-dark txt-center-sm\">Responsibility</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
-    "                Your case is carefully reviewed by an independent physician to determine if Alzheimer’s genetic testing is right for you.  If needed, a genetic counselor or physician may contact you to ask some additional questions.  We are committed to taking the extra step to ensure we are offering Alzheimer’s genetic testing to individuals who understand the benefits and limitations of testing.\n" +
+    "                Your case is carefully reviewed by an independent physician to determine if late-onset Alzheimer’s disease genetic testing is right for you. If needed, a genetic counselor or physician may contact you to ask some additional questions. We are committed to taking the extra step to ensure we are offering late-onset Alzheimer’s disease genetic testing to individuals who understand the benefits and limitations of testing.\n" +
     "              </p>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -120,8 +129,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            <h4 class=\"txt-blue-dark txt--space-top-middle-sm txt-center-sm\">Action</h4>\n" +
     "            <div class=\"txt--indent-small\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
-    "                While our doctors and scientists participate in the Alzheimer’s research to develop standards of care for both detection and treatment,\n" +
-    "                the team at ADx Healthcare is committed to helping individuals and families learn their late-onset Alzheimer’s disease genetic risk and improving their cognitive health.\n" +
+    "                Our doctors and scientists participate in Alzheimer’s research to develop standards of care for both detection and treatment.The team at ADx Healthcare is committed to helping individuals and families learn their late-onset Alzheimer’s disease genetic risk and improving their cognitive health.\n" +
     "              </p>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -132,9 +140,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "              <h4 class=\"txt-blue-dark txt-center\">Empowerment</h4>\n" +
     "              <div class=\"txt--indent-small\">\n" +
     "                <p class=\"txt-middle txt-black txt-center\">\n" +
-    "                  We believe that you shouldn’t have to wait until your memory begins to fade to learn you are at risk for Alzheimer’s disease.\n" +
-    "                  We want to provide individuals who want to know their genetic risk with the knowledge and tools to make behavior changes to improve their cognitive health.\n" +
-    "                  Learn your risk, so you can start making lifestyle changes that may improve your cognitive health and protect your future self.\n" +
+    "                  We want to provide individuals who want to know their genetic risk with the knowledge and tools to make behavior changes to improve their cognitive health. Learn your risk, so you can start making lifestyle changes that may improve your cognitive health.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -200,13 +206,13 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "   </div>\n" +
     "    <div class=\"about-section-fourth__data-map-overlap\">\n" +
     "      <p class=\"txt\">Custom Service</p>\n" +
-    "      <p class=\"txt\">Email</p>\n" +
+    "      <!--<p class=\"txt\">Email:</p>-->\n" +
     "      <p class=\"txt\">support@adxhealthcare.com</p>\n" +
     "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <p class=\"txt\">Corporate Office</p>\n" +
     "        <p class=\"txt\">3614 Meridian Street</p>\n" +
-    "        <p class=\"txt\">Suite 101</p>\n" +
+    "        <p class=\"txt\">Suite 100</p>\n" +
     "        <p class=\"txt\">Bellingham, WA 98225</p>\n" +
     "        <p class=\"txt\">United States</p>\n" +
     "      </div>\n" +
@@ -246,10 +252,9 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                <div class=\"txt--indent\">\n" +
-    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
-    "                  ordering a test, completing your kit, or interpreting your results.\n" +
+    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -267,7 +272,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -305,7 +310,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
+    "                Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -321,11 +326,11 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
-    "              <div class=\"txt txt-black\">\n" +
-    "                We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
-    "              </div>\n" +
+    "              <!--<div class=\"txt txt-black\">-->\n" +
+    "                <!--We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.-->\n" +
+    "              <!--</div>-->\n" +
     "              <div class=\"txt--indent\">\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                <!--<a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>-->\n" +
     "                <div class=\"txt--indent\">\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
@@ -436,12 +441,11 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
-    "                                        <div class=\"txt--indent\">\n" +
-    "                                          For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
-    "                                          ordering a test, completing your kit, or interpreting your results.\n" +
-    "                                        </div>\n" +
+    "                                        From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                                    <div class=\"txt--indent\">\n" +
+    "                                      For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                                    </div>\n" +
+    "                                  </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
     "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
@@ -457,7 +461,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -495,7 +499,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
+    "                                        Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -511,11 +515,11 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                    </div>\n" +
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
-    "                                    <div class=\"txt txt-black\">\n" +
-    "                                        We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
-    "                                    </div>\n" +
+    "                                    <!--<div class=\"txt txt-black\">-->\n" +
+    "                                        <!--We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.-->\n" +
+    "                                    <!--</div>-->\n" +
     "                                    <div class=\"txt--indent\">\n" +
-    "                                        <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                                        <!--<a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>-->\n" +
     "                                        <div class=\"txt--indent\">\n" +
     "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
     "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
@@ -959,10 +963,9 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                <div class=\"txt--indent\">\n" +
-    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
-    "                  ordering a test, completing your kit, or interpreting your results.\n" +
+    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -980,7 +983,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1018,7 +1021,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
+    "                Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1034,11 +1037,11 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
-    "              <div class=\"txt txt-black\">\n" +
-    "                We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
-    "              </div>\n" +
+    "              <!--<div class=\"txt txt-black\">-->\n" +
+    "                <!--We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.-->\n" +
+    "              <!--</div>-->\n" +
     "              <div class=\"txt--indent\">\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                <!--<a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>-->\n" +
     "                <div class=\"txt--indent\">\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
@@ -1762,10 +1765,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                <div class=\"txt--indent\">\n" +
-    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE,\n" +
-    "                  ordering a test, completing your kit, or interpreting your results.\n" +
+    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1783,7 +1785,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1821,7 +1823,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
+    "                Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -1837,11 +1839,11 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
-    "              <div class=\"txt txt-black\">\n" +
-    "                We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
-    "              </div>\n" +
+    "              <!--<div class=\"txt txt-black\">-->\n" +
+    "                <!--We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.-->\n" +
+    "              <!--</div>-->\n" +
     "              <div class=\"txt--indent\">\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
+    "                <!--<a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>-->\n" +
     "                <div class=\"txt--indent\">\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
     "                  <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
@@ -4604,8 +4606,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "        <div class=\"container-lg\">\n" +
     "          <div class=\"science-p-section-fourth__wrap\">\n" +
     "            <div class=\"title__wrap txt-center container-exs\">\n" +
-    "              <h3 class=\"txt-blue\">Why haven’t I heard that I can reduce\n" +
-    "                my risk for Alzheimer’s disease?</h3>\n" +
+    "              <h3 class=\"txt-blue\">Why haven’t I heard that I can reduce my risk for Alzheimer’s disease?</h3>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap\">\n" +
     "              <ul class=\"science-p-list\">\n" +
@@ -4617,7 +4618,8 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                </li>\n" +
     "                <li class=\"science-p-list__items\">\n" +
     "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
-    "                    <p class=\"txt txt-black\">You may have seen headlines on news shows or on the internet highlighting some of the scientific breakthroughs on modifiable risk factors for late-onset Alzheimer’s disease, but may it takes awhile for emerging research to be communicated and implemented.\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      You may have seen headlines on news shows or on the internet highlighting some of the scientific breakthroughs on modifiable risk factors for late-onset Alzheimer’s disease, but may it takes awhile for emerging research to be communicated and implemented.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
     "                </li>\n" +
@@ -4629,11 +4631,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                  </div>\n" +
     "                </li>\n" +
     "                <li class=\"science-p-list__items\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-silver-md\">\n" +
-    "                    <p class=\"txt txt-black\">You aren’t limited by what your doctor’s office offers or what your insurance will cover.\n" +
-    "                      Genetic testing is now available through private pay. What sets ADx Healthcare apart is a physician will review your medical history to help you determine if the Alzheimer's ApoE Genetic Test is a good fit for you, and genetic counselors are available to help you understand your results… all at no additional cost to you.\n" +
+    "                  <!--<div class=\"science-p-list-items science-p-list-items&#45;&#45;circle-silver-md\">-->\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      You aren’t limited by what your doctor’s office offers or what your insurance will cover. Genetic testing is now available through private pay. What sets ADx Healthcare apart is a physician will review your medical history to help you determine if the Alzheimer's ApoE Genetic Test is a good fit for you, and genetic counselors are available to help you understand your results… all at no additional cost to you.\n" +
     "                    </p>\n" +
-    "                  </div>\n" +
+    "                  <!--</div>-->\n" +
     "                </li>\n" +
     "              </ul>\n" +
     "            </div>\n" +
@@ -4676,14 +4678,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    <div class=\"flex-column__wrap\">\n" +
     "                      <div class=\"container-exs\">\n" +
     "                        <div class=\"txt-left txt-center-md txt--space-top-sm\">\n" +
-    "                          <h3 class=\"txt-blue-3\" >Security and Privacy\n" +
-    "                            Your DNA is just for you</h3>\n" +
+    "                          <h3 class=\"txt-blue-3\" >Security and Privacy Your DNA is just for you</h3>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt__wrap\">\n" +
     "                          <p class=\"txt txt-black txt-left\">\n" +
-    "                            Your Alzheimer's ApoE Genetic Test report will be delivered to you via a secure, electronic report.\n" +
-    "                            our results will be kept confidential and we will  not share your results with anyone but you. You will receive a  copy of your results which you can share with anybody you choose such as your healthcare provider or family and friends.\n" +
-    "                            Our genetics counselors are available to go through your results with you too, if you choose.\n" +
+    "                            Alzheimer's ApoE Genetic Test report will be delivered to you via a secure, electronic report. Your results will be kept confidential and we will not share your results with anyone but you. You will receive an electronic and printable copy of your results which you can share with anybody you choose such as your healthcare provider or family and friends. Our genetic counselors are available to go through your results with you too, if you choose.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -4700,8 +4699,8 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          </div>\n" +
     "                          <div class=\"txt__wrap txt-right txt-left-sm\">\n" +
     "                            <p class=\"txt txt-black\">\n" +
-    "                              We will never share your name or data and you will never be included in any Alzheimer’s research without your\n" +
-    "                              prior written consen\n" +
+    "                              We will never share your name or data and you will never be included in any Alzheimer’s research without your prior written consent. Your health information is fully encrypted and secure. Regular security scans are performed to make sure your data remains safe.\n" +
+    "\n" +
     "                            </p>\n" +
     "                            <div class=\"txt--indent-small\">\n" +
     "                              <p class=\"txt txt-black\">\n" +
@@ -5092,8 +5091,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-center-sm\">\n" +
     "                        <div class=\"txt txt-black\">\n" +
-    "                          ApoE testing must be approved by your physician or other qualified health care provider.\n" +
-    "                          If you don’t have a health care provider ADx Healthcare can assist in helping you find a licensed provider.\n" +
+    "                          ApoE testing must be approved by a qualified healthcare provider. An independent physician will review the medical history you provide to be sure the Alzheimer’s ApoE Genetic Test is appropriate for you.\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
