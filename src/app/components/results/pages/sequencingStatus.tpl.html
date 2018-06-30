@@ -14,7 +14,7 @@
               <div class="status-progressbar-txt">
                 <p class="txt txt-bold progressbar-txt-color txt-center">Physician
                   Review</p>
-                <p class="txt-small txt-center progressbar-txt-color">A physician is determining if this test is appropriate for you</p>
+                <p class="txt-small txt-center progressbar-txt-color">A physician has determinted that this test is appropriate for you</p>
               </div>
             </li>
             <li class="status-progressbar-item" ng-class="{'active': iconStatus[1], 'active--current': iconCurrent[1]}">
@@ -68,8 +68,11 @@
         <div class="title__wrap txt-center anim-content-transition">
           <div class="container-xs-button-flex">
             <div class="test-ok active"></div>
-            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'physician_review'">
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'ldt_submitted'">
               We will mail out your collection kit once the review process is completed
+            </h4>
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'ldt_approved'">
+              A sample collection kit will be mailed out to you
             </h4>
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'kit_registered'">
               Make sure to mail back the collection kit to start the sequencing process
@@ -88,31 +91,6 @@
             </h4>
           </div>
         </div>
-        <!--
-        <div class="button__wrap--large-top button--center anim-content-transition">
-          <button class="button-border-rounded button-border-rounded--long button-border-rounded--blue-dark">Your results will be ready in 2-3 weeks</button>
-        </div>
-        <div class="txt--indent txt-wrap-under-button anim-content-transition">
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'physician_review'">
-              We will mail out your collection kit once the review process is completed.
-          </p>
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'kit_registered'">
-              Make sure to mail back the collection kit to start the sequencing process.
-          </p>
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'manifest_uploaded'">
-              We are currently unpacking to start the sequencing process.
-          </p>
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'dna_extraction_completed'">
-              We are currently extracting DNA from your sample.
-          </p>
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'dna_delivery_completed'">
-              We are currently interpreting the results to generate your report.
-          </p>
-          <p class="txt-small txt-black  txt-center anim-content-transition" ng-if="seqStatus === 'result_ready'">
-              Your DNA sample test results are now ready.
-          </p>
-        </div>
-        -->
       </div>
     </div>
   </div>
