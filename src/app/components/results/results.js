@@ -28,11 +28,12 @@ angular.module( 'ixlayer.results', [
   .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results',
     function ResultsCtrl($scope, $stateParams, $state, resultsService, product, profileService, userInfo,  $window, results) {
 
+      $scope.user = userInfo.user;
+
       $scope.results = null;
       $scope.hasProducts = false;
       $scope.consentAgreed = false;
       $scope.resultReady = false;
-      $scope.user = userInfo.user;
       $scope.showMobileMenu = false;
 
       $scope.showSubPages = function (page) {
@@ -92,9 +93,9 @@ angular.module( 'ixlayer.results', [
         if ($scope.page === 'sequencing-status') {
           $scope.$parent.showResults = false;
           $scope.$parent.menuTitle = 'Home';
-          $scope.$parent.isHomeActive = true;
+          $scope.$parent.isHomeActive = $stateParams.page === '';
 
-          var productStatus = profile.helix_profile.product_status[0];
+          var productStatus = $scope.profile.helix_profile.product_status[0];
           $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
             productStatus.custom_data['confirmation_code'] + '&req_number=' +
             productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
@@ -103,12 +104,12 @@ angular.module( 'ixlayer.results', [
           } else {
             $scope.download_link = '';
           }
-          switch (productStatus.product_status) {
+          $scope.seqStatus = productStatus.product_status;
+          switch ($scope.seqStatus) {
             case 'ldt_submitted':
+              // nothing to show
               break;
-            case 'ldt_approved':
-              break;
-            case 'physician_review': {
+            case 'ldt_approved': {
               $scope.iconStatus = [true, false, false, false, false, false];
               $scope.iconCurrent = [true, false, false, false, false, false];
               break;

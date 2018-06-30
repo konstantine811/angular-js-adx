@@ -3741,7 +3741,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Physician\n" +
     "                  Review</p>\n" +
-    "                <p class=\"txt-small txt-center progressbar-txt-color\">A physician is determining if this test is appropriate for you</p>\n" +
+    "                <p class=\"txt-small txt-center progressbar-txt-color\">A physician has determinted that this test is appropriate for you</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item\" ng-class=\"{'active': iconStatus[1], 'active--current': iconCurrent[1]}\">\n" +
@@ -3795,8 +3795,11 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "        <div class=\"title__wrap txt-center anim-content-transition\">\n" +
     "          <div class=\"container-xs-button-flex\">\n" +
     "            <div class=\"test-ok active\"></div>\n" +
-    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'physician_review'\">\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'ldt_submitted'\">\n" +
     "              We will mail out your collection kit once the review process is completed\n" +
+    "            </h4>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'ldt_approved'\">\n" +
+    "              A sample collection kit will be mailed out to you\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'kit_registered'\">\n" +
     "              Make sure to mail back the collection kit to start the sequencing process\n" +
@@ -3815,31 +3818,6 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            </h4>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <!--\n" +
-    "        <div class=\"button__wrap--large-top button--center anim-content-transition\">\n" +
-    "          <button class=\"button-border-rounded button-border-rounded--long button-border-rounded--blue-dark\">Your results will be ready in 2-3 weeks</button>\n" +
-    "        </div>\n" +
-    "        <div class=\"txt--indent txt-wrap-under-button anim-content-transition\">\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'physician_review'\">\n" +
-    "              We will mail out your collection kit once the review process is completed.\n" +
-    "          </p>\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'kit_registered'\">\n" +
-    "              Make sure to mail back the collection kit to start the sequencing process.\n" +
-    "          </p>\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'manifest_uploaded'\">\n" +
-    "              We are currently unpacking to start the sequencing process.\n" +
-    "          </p>\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'dna_extraction_completed'\">\n" +
-    "              We are currently extracting DNA from your sample.\n" +
-    "          </p>\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed'\">\n" +
-    "              We are currently interpreting the results to generate your report.\n" +
-    "          </p>\n" +
-    "          <p class=\"txt-small txt-black  txt-center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +
-    "              Your DNA sample test results are now ready.\n" +
-    "          </p>\n" +
-    "        </div>\n" +
-    "        -->\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
