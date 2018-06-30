@@ -4776,7 +4776,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
 angular.module("shared/header/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("shared/header/header.tpl.html",
     "<header class=\"header\">\n" +
-    "  <div class=\"container-fluid\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"header__wrap\">\n" +
     "        <!--logo-->\n" +
