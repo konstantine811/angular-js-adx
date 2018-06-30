@@ -21,7 +21,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap text-left anim-content-transition\">\n" +
-    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
+    "                <a ui-sref=\"master.science\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Learn about the science behind our platform</span></a>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -65,13 +65,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                  In addition to offering Alzheimer’s disease genetic testing, our board certified neuropathologist provides brain autopsy services to families and loved ones seeking definitive answers and closure as provided through a conclusive, post-mortem dementia type diagnosis.\n" +
     "                </div>\n" +
     "                <div class=\"button__wrap text-left anim-content-transition\">\n" +
-    "                <a class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">\n" +
-    "                  Vahid, When the user click on this new button can you open a new tab with the following address\n" +
-    "                  <br><br>\n" +
-    "                  https://adxhealthcare.com/product/brain-autopsy/\n" +
-    "                  <br><br>\n" +
-    "                  Please call this button \"ADx Services\"\n" +
-    "                </span></a>\n" +
+    "                <a href=\"https://adxhealthcare.com/product/brain-autopsy/\" target=\"_blank\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">ADx Services</span></a>\n" +
     "              </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
