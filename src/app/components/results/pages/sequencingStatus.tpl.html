@@ -89,6 +89,18 @@
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'result_ready'">
               Your results are ready
             </h4>
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'ldt_rejected'">
+              The physician has determined that the Alzheimer’s ApoE genetic test is not a good fit for you
+            </h4>
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'account_closed'">
+              Your account has been closed
+            </h4>
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'account_revoked'">
+              Your account has been revoked
+            </h4>
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'order_cancelled'">
+              Your order was cancelled
+            </h4>
           </div>
         </div>
       </div>
