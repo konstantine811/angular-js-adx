@@ -36,6 +36,7 @@ angular.module( 'ixlayer.results', [
       $scope.resultReady = false;
       $scope.showMobileMenu = false;
       $scope.productStatus = null;
+      $scope.openTab = false;
 
       $scope.showSubPages = function (page) {
 
@@ -67,7 +68,7 @@ angular.module( 'ixlayer.results', [
         } else if ($scope.hasProducts && !$scope.resultReady) {
           $scope.page = 'sequencing-status';
         } else if (!$scope.hasProducts && $stateParams.page === '') {
-          $scope.page = 'pre-purchase';
+          $scope.page = 'p1';
         } else {
           $scope.page = $stateParams.page;
         }
@@ -176,6 +177,15 @@ angular.module( 'ixlayer.results', [
 
       $scope.isSet = function(tabNum){
         return $scope.tab === tabNum;
+      };
+
+
+      $scope.openSlideTabs = function() {
+        if(!$scope.openTab) {
+          $scope.openTab = true;
+        } else {
+          $scope.openTab = false;
+        }
       };
 
     }]);

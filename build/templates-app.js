@@ -1092,7 +1092,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "                <a ui-sref-active=\"active-number-blue\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':'p3'})\"  class=\"navbar-link\">\n" +
     "                  <span class=\"number-bgc\">3</span>\n" +
     "                  <span class=\"side-navbar-link__txt\">\n" +
-    "                    <span class=\"txt-small txt-blue-dark\">Lifestyle & other factor</span>\n" +
+    "                    <span class=\"txt-small txt-blue-dark\">Take action</span>\n" +
     "                  </span>\n" +
     "                </a>\n" +
     "              </li>\n" +
@@ -2740,277 +2740,294 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "  <!--end result-p2 progress-bar-->\n" +
     "  \n" +
     "  <!--section second-->\n" +
-    "   <div class=\"section__wrap-sm\">\n" +
-    "     <div class=\"container-lg--dashboard container-lg--dashboard-not-space-sm\">\n" +
-    "       <div class=\"row\">\n" +
-    "         <div class=\"container-flex\">\n" +
-    "           <div class=\"flex-column-tabs flex-column-tabs--hide-sm\">\n" +
-    "             <div class=\"boxes__wrap boxes__wrap--padding-top anim-content-transition\">\n" +
-    "               <div class=\"box-shadow box-shadow--tabs\">\n" +
-    "                 <ul class=\"box__wrap\">\n" +
-    "                   <li class=\"box__item-link\">\n" +
-    "                     <a href ng-click=\"setTab(1)\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
-    "                       <div class=\"box-tab-image\">\n" +
-    "                         <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </li>\n" +
-    "                   <li class=\"box__item-link\">\n" +
-    "                     <a href ng-click=\"setTab(2)\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
-    "                       <div class=\"box-tab-image\">\n" +
-    "                         <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </li>\n" +
-    "                   <li class=\"box__item-link\">\n" +
-    "                     <a href ng-click=\"setTab(3)\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
-    "                       <div class=\"box-tab-image\">\n" +
-    "                         <img class=\"img\" src=\"./assets/images/results-page/horse-blue.png\" alt=\"\">\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </li>\n" +
-    "                   <li class=\"box__item-link\">\n" +
-    "                     <a href ng-click=\"setTab(4)\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
-    "                       <div class=\"box-tab-image\">\n" +
-    "                         <img class=\"img\" src=\"./assets/images/results-page/cake-blue-dark.png\" alt=\"\">\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </li>\n" +
-    "                   <li class=\"box__item-link\">\n" +
-    "                     <a href ng-click=\"setTab(5)\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
-    "                       <div class=\"box-tab-image\">\n" +
-    "                         <img class=\"img\" src=\"./assets/images/results-page/brain-orange.png\" alt=\"\">\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </li>\n" +
-    "                 </ul>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "  \n" +
-    "           <div class=\"flex-column-tabs-body\">\n" +
-    "             <div class=\"boxes__wrap boxes-wrap--results-p3 boxes__wrap--padding-top anim-content-transition\">\n" +
-    "               <div class=\"box-shadow box-shadow--tabs\">\n" +
-    "                 <div class=\"box-content\">\n" +
-    "                   <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
-    "                     <div class=\"title__wrap\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
-    "                     </div>\n" +
-    "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                       <img class=\"img\" src=\"./assets/images/results-page/month-and-stars.png\" alt=\"\">\n" +
-    "                     </div>\n" +
-    "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Overall, it is recommended that you aim to sleep about 7 to 8 hours nightly.  Ideally you should go to bed and rise at a similar time each day, as this will help set your body’s internal clock and lead to better sleep habits.  Also, try to limit your exposure to electronics, including televisions, cell phones, computer screens, and back-lit reading devices such as a Kindle, for at least one hour prior to bed.  The blue light emitted from these devices can impair your body’s natural ability to produce melatonin, and thus disrupt your sleep cycle (8). Also, if you often wake up feeling groggy, even after a full 7 to 8 hours of sleep each night, your partner complains of your snoring or you wake up with a sore throat frequently, share this information with your healthcare provider.  They can help identify if you may be a candidate for a sleep study.  §Sleep Apnea, or disordered breathing during sleep, increases the risk for stroke, heart disease, and cognitive disorders.16-20\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                     </div>\n" +
-    "                     <a href=\"#section-2\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                          <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                         </div>\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </div>\n" +
-    "                   <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
-    "                     <div class=\"title__wrap\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
-    "                     </div>\n" +
-    "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                       <img class=\"img\" src=\"./assets/images/results-page/heart-orange.png\" alt=\"\">\n" +
-    "                     </div>\n" +
-    "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels. Poor glucose control is a risk factor for Alzheimer’s disease, while exercise helps you gain better glucose control.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt  txt-black\">\n" +
-    "                           Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2\n" +
-    "                           Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells.1\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Finally, aerobic exercise also improves mood and sleep and reduces stress and anxiety. Depression, anxiety, stress, and poor sleep habits are all associated with increased risk of cognitive decline and Alzheimer’s disease.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           You should always consult with your healthcare provider before beginning a new exercise program.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                     </div>\n" +
-    "                     <a href=\"#section-3\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                         </div>\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </div>\n" +
-    "                   <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
-    "                     <div class=\"title__wrap\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
-    "                     </div>\n" +
-    "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
-    "                     </div>\n" +
-    "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue txt-center-sm\">Health Implications of Stress</h3>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.\n" +
-    "                           Psychological stress has been shown to raise blood cholesterol levels. The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.\n" +
-    "                           While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustaine.\n" +
-    "                         </p>\n" +
-    "                         <br>\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.\n" +
-    "                           Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed.\n" +
-    "                           Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.\n" +
-    "                           Hence it is imperative to provide a sense of autonomy and control for a dementia patient, as well as provide plenty of social support to reduce the impact of stressful events on their depressive symptoms.\n" +
-    "                           Dementia patients also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.\n" +
-    "                           Like depression, anxiety can be lessened by providing a dementia patient with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.\n" +
-    "                         </p>\n" +
-    "                         <br>\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping.\n" +
-    "                           Direct coping involves trying to eliminate or change the source of the stressor.\n" +
-    "                           Stress management for a person experiencing cognitive decline can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
-    "                           Relaxation techniques that may improve your stress outlook include yoga and stretching.\n" +
-    "                         </p>\n" +
-    "                         <br>\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent\">\n" +
-    "                         <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Read more about stress</a>\n" +
-    "                       </div>\n" +
-    "                     </div>\n" +
-    "                     <a href=\"#section-4\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                         </div>\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </div>\n" +
+    "  <div class=\"section__wrap-sm\">\n" +
+    "    <div class=\"container-lg--dashboard container-lg--dashboard-not-space-sm\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"container-flex\">\n" +
+    "          <div class=\"flex-column-tabs flex-column-tabs--hide-sm\">\n" +
+    "            <div class=\"boxes__wrap boxes__wrap--padding-top anim-content-transition\">\n" +
+    "              <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                <ul class=\"box__wrap\">\n" +
+    "                  <li class=\"box__item-link\">\n" +
+    "                    <a href ng-click=\"setTab(1)\">\n" +
+    "                      <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
+    "                      <div class=\"box-tab-image\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box__item-link\">\n" +
+    "                    <a href ng-click=\"setTab(2)\">\n" +
+    "                      <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
+    "                      <div class=\"box-tab-image\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/heart-red.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box__item-link\">\n" +
+    "                    <a href ng-click=\"setTab(3)\">\n" +
+    "                      <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
+    "                      <div class=\"box-tab-image\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box__item-link\">\n" +
+    "                    <a href ng-click=\"setTab(4)\">\n" +
+    "                      <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
+    "                      <div class=\"box-tab-image\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/broccoli.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </li>\n" +
+    "                  <li class=\"box__item-link\">\n" +
+    "                    <a href ng-click=\"setTab(5)\">\n" +
+    "                      <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
+    "                      <div class=\"box-tab-image\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/puzzle.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </li>\n" +
+    "                </ul>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          \n" +
+    "          <div class=\"flex-column-tabs-body\">\n" +
+    "            <div class=\"boxes__wrap boxes-wrap--results-p3 boxes__wrap--padding-top anim-content-transition\">\n" +
+    "              <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                <div class=\"box-content\">\n" +
+    "                  <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-hight': openTab}\">\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Overall, it is recommended that you aim to sleep about 7 to 8 hours nightly.  Ideally you should go to bed and rise at a similar time each day, as this will help set your body’s internal clock and lead to better sleep habits.  Also, try to limit your exposure to electronics, including televisions, cell phones, computer screens, and back-lit reading devices such as a Kindle, for at least one hour prior to bed.  The blue light emitted from these devices can impair your body’s natural ability to produce melatonin, and thus disrupt your sleep cycle (8). Also, if you often wake up feeling groggy, even after a full 7 to 8 hours of sleep each night, your partner complains of your snoring or you wake up with a sore throat frequently, share this information with your healthcare provider.  They can help identify if you may be a candidate for a sleep study.  §Sleep Apnea, or disordered breathing during sleep, increases the risk for stroke, heart disease, and cognitive disorders.16-20\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                      <div class=\"button__wrap button--center\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <a href=\"#section-2\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
+    "                      <div class=\"box-body-anchor__wrap\">\n" +
+    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </div>\n" +
+    "                  <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
+    "                    <div class=\"box-content__wrap\">\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/heart-red.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels. Poor glucose control is a risk factor for Alzheimer’s disease, while exercise helps you gain better glucose control.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt  txt-black\">\n" +
+    "                            Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2\n" +
+    "                            Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells.1\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Finally, aerobic exercise also improves mood and sleep and reduces stress and anxiety. Depression, anxiety, stress, and poor sleep habits are all associated with increased risk of cognitive decline and Alzheimer’s disease.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            You should always consult with your healthcare provider before beginning a new exercise program.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <a href=\"#section-3\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
+    "                      <div class=\"box-body-anchor__wrap\">\n" +
+    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </div>\n" +
+    "                  <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
+    "                    <div class=\"box-content__wrap\">\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Health Implications of Stress</h3>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.\n" +
+    "                            Psychological stress has been shown to raise blood cholesterol levels. The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.\n" +
+    "                            While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustaine.\n" +
+    "                          </p>\n" +
+    "                          <br>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.\n" +
+    "                            Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed.\n" +
+    "                            Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.\n" +
+    "                            Hence it is imperative to provide a sense of autonomy and control for a dementia patient, as well as provide plenty of social support to reduce the impact of stressful events on their depressive symptoms.\n" +
+    "                            Dementia patients also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.\n" +
+    "                            Like depression, anxiety can be lessened by providing a dementia patient with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.\n" +
+    "                          </p>\n" +
+    "                          <br>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping.\n" +
+    "                            Direct coping involves trying to eliminate or change the source of the stressor.\n" +
+    "                            Stress management for a person experiencing cognitive decline can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
+    "                            Relaxation techniques that may improve your stress outlook include yoga and stretching.\n" +
+    "                          </p>\n" +
+    "                          <br>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent\">\n" +
+    "                          <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Read more about stress</a>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <a href=\"#section-4\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
+    "                      <div class=\"box-body-anchor__wrap\">\n" +
+    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </div>\n" +
+    "                  \n" +
+    "                  <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
+    "                    <div class=\"box-content__wrap\">\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/broccoli.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h3>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            The Mediterranean Diet is one of the diets that has been associated with decreased risk of dementia, mild cognitive impairment, and Alzheimer’s disease (1-6).  The Mediterranean Diet focuses on:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"item-number-wrap\">\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Intake of fruits</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Intake of vegetables</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Intake of legumes</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Intake of grains/cereals</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\"> Intake of unsaturated fatty acids (primarily olive oil)</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Moderate to high intake of fish</p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Low to moderate intake of dairy products\n" +
+    "                              </p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and\n" +
+    "                              </p>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"item-number\">\n" +
+    "                              <p class=\"txt txt-black\">Regular but moderate intake of alcohol\n" +
+    "                              </p>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Researchers have also evaluated a diet called the Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <a href=\"#section-5\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
+    "                      <div class=\"box-body-anchor__wrap\">\n" +
+    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
+    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </a>\n" +
+    "                  </div>\n" +
+    "                  \n" +
+    "                  <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
+    "                    <div class=\"box-content__wrap\">\n" +
+    "                      <div class=\"title__wrap\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/puzzle.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Life-long learning and engagement is important for brain health.</h3>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
     "        \n" +
-    "                   <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
-    "                     <div class=\"title__wrap\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
-    "                     </div>\n" +
-    "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
-    "                     </div>\n" +
-    "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue txt-center-sm\">Researchers continue to investigate the relationship between Alzheimer’s disease and diet.</h3>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           The Mediterranean Diet is one of the diets that has been associated with decreased risk of dementia, mild cognitive impairment, and Alzheimer’s disease (1-6).  The Mediterranean Diet focuses on:\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <ul class=\"item-number-wrap\">\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Intake of fruits</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Intake of vegetables</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Intake of legumes</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Intake of grains/cereals</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\"> Intake of unsaturated fatty acids (primarily olive oil)</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Moderate to high intake of fish</p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Low to moderate intake of dairy products\n" +
-    "                             </p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and\n" +
-    "                             </p>\n" +
-    "                           </li>\n" +
-    "                           <li class=\"item-number\">\n" +
-    "                             <p class=\"txt txt-black\">Regular but moderate intake of alcohol\n" +
-    "                             </p>\n" +
-    "                           </li>\n" +
-    "                         </ul>\n" +
-    "                       </div>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Researchers have also evaluated a diet called the Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                     </div>\n" +
-    "                     <a href=\"#section-5\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                       <div class=\"box-body-anchor__wrap\">\n" +
-    "                         <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                         <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                           <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                         </div>\n" +
-    "                       </div>\n" +
-    "                     </a>\n" +
-    "                   </div>\n" +
-    "        \n" +
-    "                   <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
-    "                     <div class=\"title__wrap\">\n" +
-    "                       <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
-    "                     </div>\n" +
-    "                     <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
-    "                       <img class=\"img\" src=\"./assets/images/results-page/dna-icon-orange.png\" alt=\"\">\n" +
-    "                     </div>\n" +
-    "                     <div class=\"txt__wrap\">\n" +
-    "                       <h3 class=\"txt-blue txt-center-sm\">Life-long learning and engagement is important for brain health.</h3>\n" +
-    "                       <div class=\"txt--indent-small\">\n" +
-    "                         <p class=\"txt txt-black\">\n" +
-    "                           Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
-    "                         </p>\n" +
-    "                       </div>\n" +
-    "                     </div>\n" +
-    "                   </div>\n" +
-    "      \n" +
-    "                 </div>\n" +
-    "               </div>\n" +
-    "             </div>\n" +
-    "           </div>\n" +
-    "           \n" +
-    "         </div>\n" +
-    "       </div>\n" +
-    "     </div>\n" +
-    "   </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
     "  <!--end section second-->\n" +
     "  \n" +
     "  \n" +
@@ -3026,7 +3043,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
+    "\n" +
     "</div>\n" +
     "");
 }]);

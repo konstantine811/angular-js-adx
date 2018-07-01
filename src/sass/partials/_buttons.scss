@@ -76,6 +76,20 @@ a.bt.gray:hover, button.bt.gray:hover {
   text-align: center
 }
 
+.button-open {
+  cursor: pointer;
+  .box-body-button__arrow-down {
+    font-size: 54px;
+    line-height: 0;
+    position: relative;
+    bottom: 7px;
+    transition: transform 0.3s ease-out;
+    &.rotate-arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 //border button
 button.button-border-rounded, a.button-border-rounded {
   width: auto;

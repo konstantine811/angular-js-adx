@@ -182,7 +182,11 @@
   margin: 0 auto;
 }
 
-.boxes-wrap--results-p3 {
-  min-height: 1230px;
+.box-content__wrap {
+  max-height: 463px;
+  overflow: hidden;
+  &.open-hight {
+    max-height: 100%;
+  }
 }
 

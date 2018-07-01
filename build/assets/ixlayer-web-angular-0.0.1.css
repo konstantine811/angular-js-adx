@@ -7653,6 +7653,8 @@ body {
 .active-number-blue .number-bgc {
   background-color: #41c5eb;
   color: #fff; }
+.active-number-blue .txt-small {
+  font-weight: bold; }
 
 .link-icon {
   display: inline-block;
@@ -8025,6 +8027,17 @@ a.bt.gray:hover, button.bt.gray:hover {
 
 .button--center {
   text-align: center; }
+
+.button-open {
+  cursor: pointer; }
+  .button-open .box-body-button__arrow-down {
+    font-size: 54px;
+    line-height: 0;
+    position: relative;
+    bottom: 7px;
+    transition: transform 0.3s ease-out; }
+    .button-open .box-body-button__arrow-down.rotate-arrow {
+      transform: rotate(180deg); }
 
 button.button-border-rounded, a.button-border-rounded {
   width: auto;
@@ -9031,7 +9044,7 @@ h6 {
   width: 100%; }
 
 .box-shadow.box-shadow--tabs {
-  padding: 0px 4% 70px; }
+  padding: 0px 4% 40px; }
 
 ul.box__wrap {
   padding: 0; }
@@ -10395,8 +10408,11 @@ textarea.form-control {
   max-width: 63%;
   margin: 0 auto; }
 
-.boxes-wrap--results-p3 {
-  min-height: 1230px; }
+.box-content__wrap {
+  max-height: 463px;
+  overflow: hidden; }
+  .box-content__wrap.open-hight {
+    max-height: 100%; }
 
 .profile-page {
   background-image: url("../assets/images/bgc-polygon-silver.png");

@@ -1,0 +1,29 @@
+<svg class="broccoli-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .broccoli-svg-1 {
+        fill: #f9f9f9;
+      }
+
+      .broccoli-svg-2 {
+        fill: #8caf61;
+      }
+
+      .broccoli-svg-3 {
+        fill: #d4dc9a;
+      }
+
+      .broccoli-svg-4 {
+        fill: #a7c180;
+      }
+    </style>
+  </defs>
+  <g id="Group_1202" data-name="Group 1202" transform="translate(-756 -1445)">
+    <circle id="Ellipse_1745" data-name="Ellipse 1745" class="broccoli-svg-1" cx="35" cy="35" r="35" transform="translate(756 1445)"/>
+    <g id="broccoli-7035_440dd187-b5f5-429a-aa22-6ff8b449cb9c" transform="translate(770.483 1462.901)">
+      <path id="layer3" class="broccoli-svg-2" d="M38.777,20.72A4.67,4.67,0,0,0,31.4,15.091a8.693,8.693,0,0,0-17.2-1.149,4.007,4.007,0,0,0-5.523,3.717c0,.021.005.041.007.062A5.761,5.761,0,0,0,8,17.654,6.023,6.023,0,0,0,8,29.7a6,6,0,0,0,.883-.094,4,4,0,0,0,6.87,1.346h.023l-.428-4.358a8.659,8.659,0,0,0,9.128-2.415,8.749,8.749,0,0,0,4.073,3.9l-.62,3.1a4.673,4.673,0,0,0,8.407-.185c.157.013.308.047.468.047A5.348,5.348,0,0,0,38.78,20.718Z" transform="translate(-1.981 -6.961)"/>
+      <path id="layer2" class="broccoli-svg-3" d="M31.088,32.691a8.659,8.659,0,0,1-9.128,2.415l.43,4.36.936,9.456h9.369l1.846-9.235.62-3.1A8.749,8.749,0,0,1,31.088,32.691Z" transform="translate(-8.59 -15.473)"/>
+      <path id="layer1" class="broccoli-svg-4" d="M30.318,51.358V40.722a.669.669,0,1,0-1.338,0V51.358Z" transform="translate(-10.913 -17.909)"/>
+    </g>
+  </g>
+</svg>
