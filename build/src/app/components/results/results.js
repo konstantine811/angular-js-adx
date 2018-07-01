@@ -35,6 +35,7 @@ angular.module( 'ixlayer.results', [
       $scope.consentAgreed = false;
       $scope.resultReady = false;
       $scope.showMobileMenu = false;
+      $scope.productStatus = null;
 
       $scope.showSubPages = function (page) {
 
@@ -43,10 +44,11 @@ angular.module( 'ixlayer.results', [
         if ($scope.profileLinked) {
           $scope.hasProducts = $scope.profile.helix_profile.product_status.length > 0;
           if ($scope.hasProducts) {
-            $scope.consentAgreed = $scope.profile.helix_profile.product_status[0].product_consent_agreed_date !== null;
+            $scope.productStatus = $scope.profile.helix_profile.product_status[0];
+            $scope.consentAgreed = $scope.productStatus.product_consent_agreed_date !== null;
             if ($scope.consentAgreed)
             {
-              $scope.resultReady = $scope.profile.helix_profile.product_status[0].product_status === 'result_ready';
+              $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
             }
           }
         }

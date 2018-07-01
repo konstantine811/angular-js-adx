@@ -3810,6 +3810,18 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +
     "              Your results are ready\n" +
     "            </h4>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'ldt_rejected'\">\n" +
+    "              The physician has determined that the Alzheimer’s ApoE genetic test is not a good fit for you\n" +
+    "            </h4>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'account_closed'\">\n" +
+    "              Your account has been closed\n" +
+    "            </h4>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'account_revoked'\">\n" +
+    "              Your account has been revoked\n" +
+    "            </h4>\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'order_cancelled'\">\n" +
+    "              Your order was cancelled\n" +
+    "            </h4>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
