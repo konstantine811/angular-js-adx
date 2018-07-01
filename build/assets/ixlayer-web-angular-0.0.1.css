@@ -8435,7 +8435,7 @@ button[disabled].bt-round {
 .status-progressbar-inner {
   width: 115px;
   height: 115px;
-  position: relative;
+  position: absolute;
   border-radius: 50%;
   border: 4px solid #E6E6E6;
   top: -12px;
@@ -8480,7 +8480,7 @@ button[disabled].bt-round {
   margin: 0 auto;
   position: relative;
   right: 20px;
-  padding-top: 20px; }
+  padding-top: 137px; }
   .status-progressbar-txt .progressbar-txt-color {
     color: #E6E6E6; }
 
@@ -10708,7 +10708,7 @@ textarea.form-control {
   .active.active--current .status-progressbar-txt {
     display: inline-block;
     right: 0;
-    padding-top: 0;
+    padding-top: 95px;
     margin: 0 auto;
     width: 300px; }
   .active.active--current .status-progressbar-inner {

@@ -1,0 +1,121 @@
+<svg class="apoe-white-bgc-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287.207 287.207">
+  <defs>
+    <style>
+      .apoe-white-bgc-svg-1, .apoe-white-bgc-svg-7, .apoe-white-bgc-svg-8, .apoe-white-bgc-svg-9 {
+        fill: #fff;
+      }
+
+      .apoe-white-bgc-svg-2 {
+        fill: #41c5eb;
+      }
+
+      .apoe-white-bgc-svg-3 {
+        fill: #dff4fc;
+      }
+
+      .apoe-white-bgc-svg-4 {
+        fill: #fbaa51;
+      }
+
+      .apoe-white-bgc-svg-5 {
+        fill: #063f5f;
+      }
+
+      .apoe-white-bgc-svg-18, .apoe-white-bgc-svg-6 {
+        fill: none;
+      }
+
+      .apoe-white-bgc-svg-6 {
+        stroke: #fff;
+      }
+
+      .apoe-white-bgc-svg-7 {
+        font-size: 16px;
+      }
+
+      .apoe-white-bgc-svg-7, .apoe-white-bgc-svg-9 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .apoe-white-bgc-svg-8 {
+        opacity: 0.3;
+      }
+
+      .apoe-white-bgc-svg-9 {
+        font-size: 10px;
+      }
+
+      .apoe-white-bgc-svg-10 {
+        clip-path: url(#clip-path);
+      }
+
+      .apoe-white-bgc-svg-11 {
+        fill: #ffdb77;
+      }
+
+      .apoe-white-bgc-svg-12 {
+        fill: #ff905e;
+      }
+
+      .apoe-white-bgc-svg-13 {
+        fill: #28d2e4;
+      }
+
+      .apoe-white-bgc-svg-14 {
+        fill: #28c3e4;
+      }
+
+      .apoe-white-bgc-svg-15 {
+        fill: #b7b7b7;
+      }
+
+      .apoe-white-bgc-svg-16 {
+        fill: #8e8e8e;
+      }
+
+      .apoe-white-bgc-svg-17 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="apoe-white-bgc-svg-1" width="36.992" height="36.992"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1226" data-name="Group 1226" transform="translate(-696.27 -2118.27)">
+    <circle id="Ellipse_1802" data-name="Ellipse 1802" class="apoe-white-bgc-svg-1" cx="143.604" cy="143.604" r="143.604" transform="translate(696.27 2118.27)"/>
+    <g id="Group_1221" data-name="Group 1221" transform="matrix(0.966, -0.259, 0.259, 0.966, 750.442, 2193.811)">
+      <path id="Subtraction_4" data-name="Subtraction 4" class="apoe-white-bgc-svg-2" d="M35.579,74.358A10.542,10.542,0,0,1,25.037,63.817a10.632,10.632,0,0,1,.242-2.259H0V16.942A16.928,16.928,0,0,1,16.942,0H61.557V20.13a15.817,15.817,0,0,0,0,30.9V61.557H45.879a10.634,10.634,0,0,1,.242,2.259A10.542,10.542,0,0,1,35.579,74.358Z" transform="translate(0 25.131)"/>
+      <path id="Union_3" data-name="Union 3" class="apoe-white-bgc-svg-3" d="M0,74.358V56.487A15.9,15.9,0,0,0,12.424,41.038,15.9,15.9,0,0,0,0,25.589V12.8H20.762a10.542,10.542,0,1,1,20.6,0h20.2V57.416A16.927,16.927,0,0,1,44.615,74.358Z" transform="translate(67.205 79.535)"/>
+      <path id="Union_4" data-name="Union 4" class="apoe-white-bgc-svg-4" d="M88.759,86.407H59.247a15.818,15.818,0,0,0-30.769,0H13.083V70.944a10.542,10.542,0,1,1,0-20.467V0H72.1a16.645,16.645,0,0,1,16.66,16.66V86.406h0Z" transform="translate(54.404 0)"/>
+      <path id="Union_2" data-name="Union 2" class="apoe-white-bgc-svg-5" d="M16.942,61.557A16.929,16.929,0,0,1,0,44.615V0H20.13A15.9,15.9,0,0,0,35.579,12.424,15.9,15.9,0,0,0,51.028,0H61.557V17.938a10.542,10.542,0,1,1,0,20.6V61.557Z" transform="translate(0 92.336)"/>
+      <g id="info-help-6520_fc169e7b-edb8-46d1-ae1a-27dd3a1aeb5e" transform="translate(17.808 113.041)">
+        <g id="layer2" class="apoe-white-bgc-svg-6" transform="translate(0 0)">
+          <ellipse class="apoe-white-bgc-svg-17" cx="12.08" cy="12.08" rx="12.08" ry="12.08"/>
+          <ellipse class="apoe-white-bgc-svg-18" cx="12.08" cy="12.08" rx="11.58" ry="11.58"/>
+        </g>
+        <text id="_" data-name="!" class="apoe-white-bgc-svg-7" transform="translate(8.546 20.061) rotate(-1)"><tspan x="0" y="0">!</tspan></text>
+      </g>
+      <g id="search-find-6664_defd81e2-99fb-46af-9a4b-01b0d5a03aa3" transform="translate(14.711 42.772)">
+        <path id="layer3" class="apoe-white-bgc-svg-1" d="M1.9,0,9.127,7.233A1.39,1.39,0,0,1,7.163,9.2L0,2.036" transform="translate(14.66 14.127)"/>
+        <ellipse id="layer2-2" data-name="layer2" class="apoe-white-bgc-svg-1" cx="9.181" cy="9.181" rx="9.181" ry="9.181" transform="translate(0 0)"/>
+        <circle id="layer1" class="apoe-white-bgc-svg-2" cx="7.512" cy="7.512" r="7.512" transform="translate(1.669 1.669)"/>
+        <path id="opacity" class="apoe-white-bgc-svg-8" d="M12.855,5.344A7.487,7.487,0,0,0,10.618,0L0,10.618a7.485,7.485,0,0,0,5.343,2.236c.051,0,.1-.006.149-.008l7.355-7.353C12.849,5.443,12.855,5.394,12.855,5.344Z" transform="translate(3.838 3.838)"/>
+      </g>
+      <text id="ApoE" class="apoe-white-bgc-svg-9" transform="translate(85.277 44.529)"><tspan x="0" y="0">ApoE</tspan></text>
+      <g id="Mask_Group_1" data-name="Mask Group 1" class="apoe-white-bgc-svg-10" transform="matrix(0.985, -0.174, 0.174, 0.985, 79.486, 108.321)">
+        <g id="dna" transform="translate(0 0)">
+          <path id="Path_5" data-name="Path 5" class="apoe-white-bgc-svg-11" d="M8.481,10.493.417,2.429A1.423,1.423,0,0,1,2.429.417l8.064,8.064a1.423,1.423,0,1,1-2.012,2.012Z" transform="translate(10.913 15.168)"/>
+          <path id="Path_6" data-name="Path 6" class="apoe-white-bgc-svg-12" d="M6.044,4.032,2.012,0,0,2.012,4.032,6.044A1.423,1.423,0,0,0,6.044,4.032Z" transform="translate(15.362 19.617)"/>
+          <path id="Path_7" data-name="Path 7" class="apoe-white-bgc-svg-11" d="M8.481,10.493.417,2.429A1.423,1.423,0,0,1,2.429.417l8.064,8.064a1.423,1.423,0,1,1-2.012,2.012Z" transform="translate(23.402 2.679)"/>
+          <path id="Path_8" data-name="Path 8" class="apoe-white-bgc-svg-12" d="M6.044,4.032,2.012,0,0,2.012,4.032,6.044A1.423,1.423,0,0,0,6.044,4.032Z" transform="translate(27.851 7.128)"/>
+          <path id="Path_9" data-name="Path 9" class="apoe-white-bgc-svg-13" d="M8.481,10.493.417,2.429A1.423,1.423,0,0,1,2.429.417l8.064,8.064a1.423,1.423,0,0,1-2.012,2.012Z" transform="translate(2.679 23.403)"/>
+          <path id="Path_10" data-name="Path 10" class="apoe-white-bgc-svg-14" d="M6.044,4.032,2.012,0,0,2.012,4.032,6.044A1.423,1.423,0,0,0,6.044,4.032Z" transform="translate(7.128 27.851)"/>
+          <path id="Path_11" data-name="Path 11" class="apoe-white-bgc-svg-13" d="M8.481,10.493.417,2.429A1.423,1.423,0,0,1,2.429.417l8.064,8.064a1.423,1.423,0,1,1-2.012,2.012Z" transform="translate(15.168 10.914)"/>
+          <path id="Path_12" data-name="Path 12" class="apoe-white-bgc-svg-14" d="M6.044,4.032,2.012,0,0,2.012,4.032,6.044A1.423,1.423,0,0,0,6.044,4.032Z" transform="translate(19.617 15.363)"/>
+          <path id="Path_13" data-name="Path 13" class="apoe-white-bgc-svg-15" d="M26.473,13.985c2.684.317,7.338.376,10.1-2.387a1.423,1.423,0,1,0-2.012-2.012c-1.949,1.949-5.894,1.9-8.617,1.45-.383-2.285-.6-6.55,1.46-8.607A1.423,1.423,0,1,0,25.394.417c-2.763,2.763-2.7,7.417-2.387,10.1C13.936,9.446,9.423,13.74,10.518,23.007c-2.684-.317-7.339-.376-10.1,2.387a1.423,1.423,0,0,0,2.012,2.012c1.945-1.945,5.88-1.9,8.608-1.452.446,2.727.494,6.663-1.452,8.608A1.423,1.423,0,1,0,11.6,36.575c2.763-2.763,2.7-7.417,2.387-10.1C23.056,27.546,27.569,23.251,26.473,13.985Zm-2.947-.519c1.283,7.841-1.671,10.335-7.088,10.315a19.239,19.239,0,0,1-2.972-.255,19.234,19.234,0,0,1-.255-2.972C13.191,15.267,15.547,12.16,23.526,13.466Z" transform="translate(0)"/>
+          <path id="Path_14" data-name="Path 14" class="apoe-white-bgc-svg-16" d="M4.816,17.3C13.888,18.377,18.4,14.083,17.3,4.816c2.684.317,7.338.376,10.1-2.387A1.423,1.423,0,0,0,25.394.417c-1.947,1.947-5.886,1.9-8.608,1.452L14.357,4.3c1.283,7.841-1.671,10.335-7.088,10.315A19.24,19.24,0,0,1,4.3,14.357L1.869,16.786c.446,2.727.494,6.663-1.452,8.608a1.423,1.423,0,0,0,2.012,2.012C5.192,24.643,5.134,19.989,4.816,17.3Z" transform="translate(9.168 9.169)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
