@@ -3547,7 +3547,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              <div  class=\"download-button\"></div>\n" +
     "            </div>\n" +
     "            <span class=\"flex-column-2 hide-mobile\">\n" +
-    "                <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Download report</a>\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Download report</p>\n" +
     "              </span>\n" +
     "          </a>\n" +
     "        </div>\n" +
@@ -3577,58 +3577,93 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "    </ul>\n" +
     "  </div>\n" +
     "  \n" +
-    "  <div class=\"section__wrap\">\n" +
+    "  <div class=\"section__wrap-sm\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h3 class=\"txt-blue-dark anim-content-transition\">Talk to genetic counselor</h3>\n" +
+    "      <div class=\"container-flex container-flex--column-sm\">\n" +
+    "        <div class=\"flex-column\">\n" +
+    "          <div class=\"flex-column__wrap flex-column__wrap--not-left flex-column__wrap--not-space-sm\">\n" +
+    "            <div class=\"img__wrap img__wrap--not-top-space-sm img--center-sm\">\n" +
+    "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"title__wrap txt-center-sm\">\n" +
+    "              <h3 class=\"txt-blue-dark anim-content-transition\">Talk to a genetic counselor</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-center-sm\">\n" +
+    "              <p class=\"txt-middle txt-black\">\n" +
+    "                Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with you family?  Our genetics counselors are available to help answer your questions.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap txt-center-sm\">\n" +
+    "              <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap download__wrap--sm-center\">\n" +
+    "                <div class=\"flex-column\">\n" +
+    "                  <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
+    "                </div>\n" +
+    "                <span class=\"flex-column-2\">\n" +
+    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
+    "              </span>\n" +
+    "              </a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"flex-column\">\n" +
+    "          <div class=\"flex-column__wrap flex-column__wrap--not-space-sm\">\n" +
+    "            <div class=\"img__wrap img__wrap--not-top-space-sm img--center-sm\">\n" +
+    "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"title__wrap txt-center-sm\">\n" +
+    "              <h3 class=\"txt-blue-dark anim-content-transition\">Science</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-center-sm\">\n" +
+    "              <p class=\"txt-middle txt-black\">\n" +
+    "                The Alzheimer’s ApoE Genetic Test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Read more about genetics and the science behind ApoE test by ADx Healthcare.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap\">\n" +
+    "              <a href=\"\" class=\"bt-round bt-round--blue\">Science</a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"flex-column\">\n" +
+    "          <div class=\"flex-column__wrap flex-column__wrap--not-right flex-column__wrap--not-space-sm\">\n" +
+    "            <div class=\"img__wrap img__wrap--not-top-space-sm img--center-sm\">\n" +
+    "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
+    "            </div>\n" +
+    "            <div class=\"title__wrap txt-center-sm\">\n" +
+    "              <h3 class=\"txt-blue-dark anim-content-transition\">General Questions</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap txt-center-sm\">\n" +
+    "              <p class=\"txt-middle txt-black\">\n" +
+    "                The Alzheimer’s ApoE Genetic Test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Take a look at our General questions section to read more about genetics, ApoE,  lifestylle changes and other important topics.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"button__wrap\">\n" +
+    "              <a href=\"\" class=\"bt-round bt-round--orange\">General Question</a>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap-sm\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <h3 class=\"txt-blue-dark anim-content-transition\">Talking to a doctor</h3>\n" +
     "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
-    "          Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with your family? Our genetic counselors are available to help answer your questions.</p>\n" +
-    "      </div>\n" +
-    "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h3 class=\"txt-blue-dark\">Worried about memory loss?</h3>\n" +
-    "      </div>\n" +
-    "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
-    "        <p class=\"txt-middle txt-black\">If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family. Overall, your primary healthcare provider knows your overall health best.  It is good to check-in with them to discuss your ApoE test results so your ApoE genetic data can be paired with information about your other medical conditions.  Together you and your healthcare provider can develop a plan to modify your lifestyle and environmental factors to best optimize your cognitive health.  You should always consult a healthcare provider before making major lifestyle changes.\n" +
-    "        </p>\n" +
+    "          If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family.  Your healthcare provider knows your overall health best. Also, if you plan to make major lifestyle changes based on your test results, it is recommended you check-in with your health care provider to be sure those changes are safe based on your current health status.  They can evaluate your cognitive health and make recommendations based on your other medical conditions.</p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Download your results</a>\n" +
     "      </div>\n" +
-    "      <div class=\"title__wrap\">\n" +
+    "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h3 class=\"txt-blue-dark\">Sharing with Family members</h3>\n" +
     "      </div>\n" +
-    "      <div class=\"sub-header-txt__wrap\">\n" +
-    "        <p class=\"txt-middle txt-black\">\n" +
-    "          Having the social support of your loved ones can help you as you begin implementing new lifestyle behaviors into your routine. You can also print a copy of your results if you want to share them with family or your doctor. Having support can be very helpful when making behavior changes.  Also, your relatives or friends may benefit from hearing about your experience, and may wish to consider ApoE testing themselves.\n" +
-    "          <br><br>\n" +
-    "          It may be helpful to discuss with a genetic counselor the best way to share your results with your family.  If you are at increased genetic risk for Alzheimer's disease, they may be as well.\n" +
+    "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
+    "        <p class=\"txt-middle txt-black\">Having the social support of your loved ones can help you as you begin implementing new lifestyle behaviors into your routine. You can also print a copy of your results if you want to share them with family or your healthcare provider. Having support can be very helpful when making behavior changes.  Also, your relatives or friends may benefit from hearing about your experience, and may wish to consider ApoE testing themselves.\n" +
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <a ui-sref=\"master_signedin.results.sharing\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Learn about sharing with family</a>\n" +
-    "      </div>\n" +
-    "      <div class=\"title__wrap\">\n" +
-    "        <h3 class=\"txt-blue-dark\">\n" +
-    "          Science\n" +
-    "        </h3>\n" +
-    "      </div>\n" +
-    "      <div class=\"sub-header-txt__wrap\">\n" +
-    "        <p class=\"txt-middle txt-black\">Learn about the science behind the ApoE test.</p>\n" +
-    "      </div>\n" +
-    "      <div class=\"txt--indent-small\">\n" +
-    "        <a ui-sref=\"master.science\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Read more about science</a>\n" +
-    "      </div>\n" +
-    "      <div class=\"title__wrap\">\n" +
-    "        <h3 class=\"txt-blue-dark\">\n" +
-    "          General questions\n" +
-    "        </h3>\n" +
-    "      </div>\n" +
-    "      <div class=\"sub-header-txt__wrap\">\n" +
-    "        <p class=\"txt-middle txt-black\">Read about topics that may be helpful to answer your initial questions.\n" +
-    "        </p>\n" +
-    "      </div>\n" +
-    "      <div class=\"txt--indent-small\">\n" +
-    "        <a ui-sref=\"master.FAQ\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Go to general questions page</a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -4081,11 +4116,16 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
-    "          Your genetics, lifestyle, environment, other medical conditions, and age all play a role in your late-onset Alzheimer's disease risk. Your lifestyle and environmental risk factors can be reduced by implementing brain healthy behavior changes, which may also reduce the risk if you have by any other medical factors influencing your late-onset Alzheimer's disease risk.  Many brain healthy behaviors are also good for your heart health and inflammation.\n" +
+    "          Sharing the following information with someone you wish to share your results with may help answer any questions or concerns they have about your Alzheimer’s ApoE Genetic Test results.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <p class=\"txt-middle txt-black\">\n" +
-    "            Having a copy of the ApoE e4 variant does not guarantee that you will develop Alzheimer’s disease, and not carrying a copy does not guarantee that you won’t develop Alzheimer’s disease. The results of this test do not diagnose Alzheimer’s disease or any other medical condition.\n" +
+    "            Your genetics, lifestyle, environment, other medical conditions, and age all play a role in your Alzheimer’s disease risk. Your lifestyle and environmental risk factors may be reduced by implementing brain healthy behavior changes, which may also reduce the risk if you have any other medical factors influencing your Alzheimer’s risk. Many brain healthy behaviors are also good for your heart health, blood glucose control, and inflammation.\n" +
+    "          </p>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt--indent\">\n" +
+    "          <p class=\"txt-middle txt-black\">\n" +
+    "            Having a copy of the ApoE e4 variant does not guarantee that you will develop late-onset Alzheimer’s disease, and not carrying a copy does not guarantee that you won’t develop late-onset Alzheimer’s disease. The results of this test do not diagnose late-onset Alzheimer’s disease or any other medical condition.\n" +
     "          </p>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -4098,8 +4138,7 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "      </div>\n" +
     "      <div class=\"txt__wrap\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
-    "          Whether you are male or female, you are equally likely to pass on a copy of ApoE-e4 or inherit one.\n" +
-    "          If you carry a single copy of ApoE-e4, there is a 50% chance your siblings and children carry one also. You can make lifestyle changes today to begin reducing your risk for late-onset Alzheimer's disease or slowing the progression of memory decline.\n" +
+    "          Whether you are male or female, you are equally likely to pass on a copy of ApoE-e4 or inherit one. If you carry a single copy of ApoE-e4, there is a 50% chance your siblings and children carry one also. You can make lifestyle changes today that may reduce your risk for late-onset Alzheimer’s disease or slow the progression of memory decline.\n" +
     "        </p>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -4107,12 +4146,14 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h2 class=\"txt-blue-dark txt-center\">You are not in this alone. ADx Healthcare provides\n" +
-    "        genetic counselors to go over your report and\n" +
-    "        answer any questions you have.\n" +
-    "      </h2>\n" +
-    "      <div class=\"button__wrap button--center\">\n" +
-    "        <a href=\"\" class=\"bt-round bt-round--blue\">Download Reports</a>\n" +
+    "      <div class=\"container-txt-share-results\">\n" +
+    "        <h2 class=\"txt-blue-dark txt-center\">You are not in this alone. ADx Healthcare provides\n" +
+    "          genetics counselors to go over your report and\n" +
+    "          answer any questions you have.\n" +
+    "        </h2>\n" +
+    "        <div class=\"button__wrap button--center\">\n" +
+    "          <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +

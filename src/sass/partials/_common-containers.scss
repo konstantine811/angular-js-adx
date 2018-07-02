@@ -76,6 +76,14 @@
   padding: 0 5%;
 }
 
+.flex-column__wrap--not-left {
+  padding: 0 5% 0 0;
+}
+
+.flex-column__wrap--not-right {
+  padding: 0 0 0 5%;
+}
+
 .flex-column-tabs {
   width: 100%;
   max-width: 250px;

@@ -8797,6 +8797,12 @@ h6 {
 .flex-column__wrap {
   padding: 0 5%; }
 
+.flex-column__wrap--not-left {
+  padding: 0 5% 0 0; }
+
+.flex-column__wrap--not-right {
+  padding: 0 0 0 5%; }
+
 .flex-column-tabs {
   width: 100%;
   max-width: 250px; }
@@ -9015,6 +9021,9 @@ h6 {
 
 .doctor--bgc-silver .doctor-svg-1 {
   fill: #f3f3f3; }
+
+.doctor--bgc-white .doctor--bgc-silver-svg-1 {
+  fill: #fff; }
 
 .boxes__wrap {
   width: 100%;
@@ -10427,6 +10436,10 @@ textarea.form-control {
 .science-p-list.science-p-list--space-side {
   padding: 0 15px; }
 
+.container-txt-share-results {
+  max-width: 854px;
+  margin: 0 auto; }
+
 @keyframes anim-height {
   0% {
     max-height: 463px; }
@@ -11028,6 +11041,9 @@ textarea.form-control {
   .container-page {
     padding-top: 55px !important; }
 
+  .flex-column__wrap--not-space-sm {
+    padding: 0; }
+
   .section__wrap {
     padding-top: 50px; }
 
@@ -11109,6 +11125,9 @@ textarea.form-control {
 
   .img--center-sm {
     text-align: center; }
+
+  .img__wrap--not-top-space-sm {
+    padding: 0px 20px 0; }
 
   .img-bgc-wrap__rounded, .img-bgc-wrap-middle__rounded {
     height: 57vw;
@@ -11526,6 +11545,10 @@ textarea.form-control {
 
   .download__wrap {
     width: 60px; }
+
+  .download__wrap--sm-center {
+    width: 166px;
+    margin: 0 auto; }
 
   .box-content__wrap {
     max-height: 100%; } }
