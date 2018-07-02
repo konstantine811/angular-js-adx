@@ -5142,12 +5142,6 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "              <a href=\"https://www.instagram.com/adxhealthcare/\" class=\"link-icon instagram\"></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"txt__wrap txt-center txt-wrap-under-button\">\n" +
-    "            <p class=\"txt txt--exs-small txt-black\">\n" +
-    "              Good.life lets you chat with customers and\n" +
-    "              give them real-time support.\n" +
-    "            </p>\n" +
-    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
