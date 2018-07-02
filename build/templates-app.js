@@ -2795,10 +2795,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "          \n" +
     "          <div class=\"flex-column-tabs-body\">\n" +
     "            <div class=\"boxes__wrap boxes-wrap--results-p3 boxes__wrap--padding-top anim-content-transition\">\n" +
-    "              <div class=\"box-shadow box-shadow--tabs\">\n" +
-    "                <div class=\"box-content\">\n" +
-    "                  <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-hight': openTab}\">\n" +
+    "              <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
+    "                <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                  <div class=\"box-content\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
     "                      </div>\n" +
@@ -2806,15 +2806,180 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Health implications of stress</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep (1)  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.  Psychological stress has been shown to raise blood cholesterol levels.3, 4 The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.5 While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustained.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Overall, it is recommended that you aim to sleep about 7 to 8 hours nightly.  Ideally you should go to bed and rise at a similar time each day, as this will help set your body’s internal clock and lead to better sleep habits.  Also, try to limit your exposure to electronics, including televisions, cell phones, computer screens, and back-lit reading devices such as a Kindle, for at least one hour prior to bed.  The blue light emitted from these devices can impair your body’s natural ability to produce melatonin, and thus disrupt your sleep cycle (8). Also, if you often wake up feeling groggy, even after a full 7 to 8 hours of sleep each night, your partner complains of your snoring or you wake up with a sore throat frequently, share this information with your healthcare provider.  They can help identify if you may be a candidate for a sleep study.  §Sleep Apnea, or disordered breathing during sleep, increases the risk for stroke, heart disease, and cognitive disorders.16-20\n" +
+    "                            The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of\n" +
+    "                            Alzheimer’s disease.2\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.  Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed. Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.16 Hence it is imperative to provide a sense of autonomy and control, as well as provide plenty of social support to reduce the impact of stressful events on depressive symptoms.  Individuals experiencing dementia also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.  Like depression, anxiety can be lessened by providing the individual with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.16\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            BRAIN IMPACTS OF STRESS\n" +
+    "                            An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping. Direct coping involves trying to eliminate or change the source of the stressor.1 Stress management can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Relaxation techniques that may improve your stress outlook include:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">yoga,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">stretching</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">meditation</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">progressive muscular relaxation,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">deep breathing techniques,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">spending time outdoors,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">engaging in activities of humor,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">music therapy,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">touch therapy (such as massage), </p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">journaling, and </p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">art therapy</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Behavioral changes to reduce stress may include:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">stopping smoking, </p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">reduction of alcohol consumption,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">reduction of caffeine intake,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">engaging in physical exercise,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">getting adequate sleep,</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">making lists or using reminder apps (for memory difficulties),</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">developing routines (to combat anxiety),</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">keeping a stress log to identify stressful situations and strategize a way to mitigate them,\n" +
+    "                                  time management</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Support can include:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">seeking counseling (especially for grief and loss like divorce or death of a loved one),</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">joining a support group of people with similar experiences, </p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">social support from a church or volunteer organization, and</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">positive social interaction with peers</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Also, for some people interacting with an animal, such as a cat or dog, provides a form of support and relaxation as well.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Experiment with different stress management techniques to see which one(s) work best for you, because including daily stress management in your routine is important for brain health.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -2836,8 +3001,25 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                    </a>\n" +
     "                  </div>\n" +
-    "                  <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
-    "                    <div class=\"box-content__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
+    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(2)\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/heart-red.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Exercise & Alzheimer’s disease</p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
+    "                <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                  <div class=\"box-content\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
     "                      </div>\n" +
@@ -2845,27 +3027,45 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/heart-red.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly. </h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            First, when you exercise, your muscles use glucose for fuel, which causes your blood glucose levels to go down. This results in lower blood glucose and insulin levels. Poor glucose control is a risk factor for Alzheimer’s disease, while exercise helps you gain better glucose control.\n" +
+    "                            First, when you exercise, your muscles use glucose for fuel.  This results in lower blood glucose and insulin levels in your body. High blood glucose and insulin are risk factors for Alzheimer’s disease, so controlling them is important for brain health..\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt  txt-black\">\n" +
-    "                            Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2\n" +
-    "                            Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells.1\n" +
+    "                            Secondly, regular aerobic exercise reduces inflammation levels in the body, which is another important aspect of cognitive health.1,2 Aerobic exercise also stimulates the release of growth factors, which are chemicals in the brain that stimulate the growth of new blood vessels in the brain and promote the health and survival of brain cells. 1\n" +
+    "                            Also, aerobic exercise improves mood and sleep and reduces stress and anxiety. Depression, anxiety, stress, and poor sleep habits are all associated with increased risk of cognitive decline and Alzheimer’s disease. There is no one best exercise or routine. Choose activities you enjoy and incorporate movement into everyday activities whenever possible.  However, you should check with your healthcare provider to be sure certain types and duration of activity are safe for you.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
-    "                          <p class=\"txt txt-black\">\n" +
-    "                            Finally, aerobic exercise also improves mood and sleep and reduces stress and anxiety. Depression, anxiety, stress, and poor sleep habits are all associated with increased risk of cognitive decline and Alzheimer’s disease.\n" +
+    "                          <p class=\"txt  txt-black\">\n" +
+    "                            STRENGTH TRAINING BENEFITS FOR BRAIN HEALTH\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
-    "                          <p class=\"txt txt-black\">\n" +
+    "                          <p class=\"txt  txt-black\">\n" +
+    "                            People who do both aerobic and strength exercise have greater attention, faster information processing, and improved working memory compared to those who do aerobic exercise alone.5 For example, at the end of a 12 week strength training program, older women showed a 19% increase in cognitive capacity.6\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt  txt-black\">\n" +
+    "                            As you age, strength training is important to maintain the muscle mass needed for daily activities such as: standing from a seated position, opening jars, lifting grocery bags, vacuuming, and emptying the dishwasher.2,5,7  Also, bone mineral density decreases with age, which increases your risk for breaking a bone. Strength training helps to maintain or increase bone mineral density levels. This is important because each year more than more than one-third of people aged 65 or older fall, so building strong bones will protect your overall health as you age.8  To enhance cognitive health and maintain muscle strength, participate in strength training exercises at least two times per week on non-consecutive days, if your healthcare provider feels strength training is safe for you.3\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt  txt-black txt-bold\">\n" +
     "                            You should always consult with your healthcare provider before beginning a new exercise program.\n" +
     "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                      <div class=\"button__wrap button--center\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -2878,8 +3078,25 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                    </a>\n" +
     "                  </div>\n" +
-    "                  <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
-    "                    <div class=\"box-content__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
+    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(3)\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Sleep & Alzheimer’s disease</p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
+    "                <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                  <div class=\"box-content\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
     "                      </div>\n" +
@@ -2887,36 +3104,25 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Health Implications of Stress</h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.\n" +
-    "                            Psychological stress has been shown to raise blood cholesterol levels. The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.\n" +
-    "                            While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustaine.\n" +
-    "                          </p>\n" +
-    "                          <br>\n" +
-    "                          <p class=\"txt txt-black\">\n" +
-    "                            Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.\n" +
-    "                            Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed.\n" +
-    "                            Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.\n" +
-    "                            Hence it is imperative to provide a sense of autonomy and control for a dementia patient, as well as provide plenty of social support to reduce the impact of stressful events on their depressive symptoms.\n" +
-    "                            Dementia patients also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.\n" +
-    "                            Like depression, anxiety can be lessened by providing a dementia patient with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.\n" +
-    "                          </p>\n" +
-    "                          <br>\n" +
-    "                          <p class=\"txt txt-black\">\n" +
-    "                            An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping.\n" +
-    "                            Direct coping involves trying to eliminate or change the source of the stressor.\n" +
-    "                            Stress management for a person experiencing cognitive decline can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
-    "                            Relaxation techniques that may improve your stress outlook include yoga and stretching.\n" +
-    "                          </p>\n" +
-    "                          <br>\n" +
-    "                          <p class=\"txt txt-black\">\n" +
-    "                            The mechanisms for how stress impacts the brain were evaluated in a study where young mice were injected for seven days with a glucocorticoid similar to the body’s stress hormones (dexamethasone). Beta-amyloid protein levels in the mice’s brains increased by 60 percent, and the levels of another protein, called tau, also increased. Plaques form when beta-amyloid proteins mass together, and tau accumulation eventually leads to the formation of tangles in the brain, which are the two hallmark brain lesions of Alzheimer’s disease.\n" +
+    "                            Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
-    "                        <div class=\"txt--indent\">\n" +
-    "                          <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Read more about stress</a>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt  txt-black\">\n" +
+    "                            Overall, it is recommended that you aim to sleep about 7 to 8 hours nightly. Ideally you should go to bed and rise at a similar time each day, as this will help set your body’s internal clock and lead to better sleep habits. Also, try to limit your exposure to electronics, including televisions, cell phones, computer screens, and back-lit reading devices such as a Kindle, for at least one hour prior to bed. The blue light emitted from these devices can impair your body’s natural ability to produce melatonin, and thus disrupt your sleep cycle (8). Also, if you often wake up feeling groggy, even after a full 7 to 8 hours of sleep each night, your partner complains of your snoring or you wake up with a sore throat frequently, share this information with your healthcare provider. They can help identify if you may be a candidate for a sleep study. Sleep Apnea, or disordered breathing during sleep,\n" +
+    "                            increases the risk for stroke, heart disease, and cognitive disorders.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                      <div class=\"button__wrap button--center\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -2929,9 +3135,25 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                    </a>\n" +
     "                  </div>\n" +
-    "                  \n" +
-    "                  <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
-    "                    <div class=\"box-content__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
+    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(4)\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/broccoli.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Brain Stimulation & Alzheimer’s disease</p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
+    "                <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                  <div class=\"box-content\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
     "                      </div>\n" +
@@ -2951,43 +3173,258 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
-    "                          <ul class=\"item-number-wrap\">\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Intake of fruits</p>\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Intake of fruits</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Intake of vegetables</p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Intake of vegetables</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Intake of legumes</p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Intake of legumes</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Intake of grains/cereals</p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Intake of grains/cereals</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\"> Intake of unsaturated fatty acids (primarily olive oil)</p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Intake of unsaturated fatty acids (primarily olive oil)</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Moderate to high intake of fish</p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Moderate to high intake of ﬁsh</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Low to moderate intake of dairy products\n" +
-    "                              </p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Low to moderate intake of dairy products</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and\n" +
-    "                              </p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
-    "                            <li class=\"item-number\">\n" +
-    "                              <p class=\"txt txt-black\">Regular but moderate intake of alcohol\n" +
-    "                              </p>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Regular but moderate intake of alcohol</p>\n" +
+    "                              </div>\n" +
     "                            </li>\n" +
     "                          </ul>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Researchers have also evaluated a diet called the Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
+    "                            Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
     "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            The MIND Diet focuses on:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Adequate intake of:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Green leafy vegetables (daily)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Other vegetables (daily)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Nuts (> 5x/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Berries (> 2x/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Beans (> 3x/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Whole grains (> 3x/day)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Fish (> 1x/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Poultry (> 2x/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Olive oil (primary cooking oil)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Wine (1 serving per day)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Low intake of:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Red meat (< 4 servings/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Butter/margarine (<1 Tbsp/day)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Cheese (<1 serving/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Sweets/pastries (<5/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Fried/fast foods (<1/week)</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Results from a MIND diet study of 923 people ages 58-98 years of age found that individuals who closely followed the MIND diet had a 53% decreased risk of Alzheimer’s disease compared to individuals who did not follow the MIND diet closely. Individuals who followed the MIND diet  moderately well or very well had a 35% reduced risk of ALzheimer’s disease compared to those who followed the MIND diet less than moderately well (7).\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Ketogenic Diet: A ketogenic is traditionally 80% to 90% fat that results in decreased glucose levels and increased ketone body production by the liver. The ketogenic diet has been used to treat epilepsy and is being studied for possible effects on Alzheimer’s disease, Parkinson’s disease, and other neurologic disorder. Researcher believe that ketones reduce the brain’s reliance on glucose for energy (8, 9).  The ketogenic diet is not for everyone and should be carefully followed by a physician, as some people experience gastrointestinal upset, hypercholesterolemia, hypoglycemia, and cardiomyopathy (9). Ketosis can also be achieved by fasting.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            In addition to these specific diets, a number of individual foods and nutrients have been associated with increased and decreased risk of cognitive decline (16):\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            Dietary Fat:\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            In a study of 5386 people without dementia, eating fish had a lower risk of developing dementia and Alzheimer’s over 2 years, while eating a diet higher in total fat, saturated fat, and dietary cholesterol was associated with an increased risk of dementia (17) However, another study looking at the diets of 482 women aged 60 years and older, there was not an association between intake of saturated fat, trans fat, or dietary cholesterol and cognitive decline, but amongst those women who ate an increased amount of monounsaturated fatty acids, such as olive oil, nuts, and avocado, there was associated decrease of cognitive decline (18). Another study spanning 6.5 years  looked at the Mediterranean diet paired with consuming 1L extra virgin olive oil per week and the Mediterranean diet paired with eating 30g nuts per day compared to those assigned a low-fat diet (controls) in a total of 522 people aged 60 to 80 years.  The individuals who ate the Mediterranean diet with nuts or with olive oil had higher  cognitive test scores when compared to the controls on the low-fat diet(2). Another study following the food intake of 8,065 people aged 65 years of age and older over a period of 4 years found that regular intake of omega-3 oils and fish reduced the risk of dementia by 60%, while regular intake of omega-6 fats without regular intake of omega-3 fats increased the risk for dementia for people who do NOT have an ApoE-e4 allele (19).\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            Fish:\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Researchers evaluating the diets of 8,065 adults aged 65 and older found that those who ate fish 2 to 3 times weekly had a reduced risk of dementia and Alzheimer’s disease (19). Another study of 815 people ages 65 to 94 years old found that those who ate fish at least once weekly had a 60% reduced risk of Alzheimer’s disease over the study period compared to those who rarely or never ate fish. Many of the individuals with a higher total omega-3 and DHA intake also had a decreased risk of Alzheimer’s (21).\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            Vegetables:\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Research indicates that vegetable intake is associated with Alzheimer’s risk. In a study of 3718 people 65 years of age and older, cognitive decline was slowed by 38-40% over 6 years for those consuming between 2.8 and 4.1 servings vegetables per day compared to those consuming less than 1 serving of vegetables per day. There was no association between fruit intake and cognitive function (22). In a study of 1,233 adults without dementia, vegetable intake of more than 1 cup/day reduced the risk of Mild Cognitive Impairment (23). Also, In an ongoing study of 8065 people 65 years of age and older, daily consumption of fruits and vegetables decreased the risk for all-cause dementia by 30% (19).\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            Berries:\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Researchers found that eating berries 2 or more times per week was associated with decreased rate of cognitive decline (24)\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black txt-bold\">\n" +
+    "                            Artificial Sweeteners:\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            A research study looking at nearly 1500 adults over the age of 60 found an increased risk of stroke and dementia among those who drank soda sweetened with artificial sweeteners. (26).\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            Overall, a brain healthy diet aims to manage blood glucose levels, provide fat calories from unsaturated fats, and be rich in plant-based foods, especially colorful vegetables. The following recommendations are encouraged:\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                            <li class=\"science-p-list__items\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">At least 5 ½ cup servings of vegetables/day, with at least 1 serving coming from leafy greens</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Focus on whole fruit instead of dried fruit or juices, with berries recommended 2 or more times per week</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Try to include healthy fats (nuts, seeds, avocado, olive oil, fatty fish) with each meal and snack</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Aim to also have protein with most meals and snacks, focusing on plant based proteins (beans and lentils 3 or more times a week), fatty fish (salmon, mackerel, or sardines 2 to 3 times a week), and poultry (2 to 3 times a week or more).</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Choose single-ingredient starcher or grains, such as oats, sweet potato, or quinoa (keep serving size to ½ c to 1 cup) and avoid processed carbohydrate products, baked goods, and sweets.</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                          </ul>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt--indent-small\">\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            <span class=\"txt-bold\">Before making significant changes to your diet, you should consult with your healthcare provider, as no one single diet is right for all people.</span> Also, a ketogenic diet is not recommended without careful monitoring by a physician or dietitian.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                      <div class=\"button__wrap button--center\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -3000,9 +3437,25 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                    </a>\n" +
     "                  </div>\n" +
-    "                  \n" +
-    "                  <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
-    "                    <div class=\"box-content__wrap\">\n" +
+    "                </div>\n" +
+    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
+    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(5)\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/puzzle.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Exercise & Alzheimer’s disease</p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
+    "                <div class=\"box-shadow box-shadow--tabs\">\n" +
+    "                  <div class=\"box-content\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
     "                      </div>\n" +
@@ -3010,12 +3463,33 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/puzzle.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Life-long learning and engagement is important for brain health.</h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneficial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
+    "                            Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneﬁcial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
     "                          </p>\n" +
     "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                      <div class=\"button__wrap button--center\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
+    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(1)\">\n" +
+    "                    <div class=\"container-flex\">\n" +
+    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
+    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Stress & Alzheimer’s disease</p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +

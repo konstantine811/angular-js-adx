@@ -9094,6 +9094,9 @@ ul.box__wrap {
   margin: 0 auto;
   padding-top: 15px; }
 
+.box-tab-image--space-right {
+  margin-right: 16px; }
+
 .box {
   max-width: 508px;
   height: 448px;
@@ -10411,9 +10414,26 @@ textarea.form-control {
 .box-content__wrap {
   max-height: 463px;
   overflow: hidden; }
-  .box-content__wrap.open-hight {
-    max-height: 100%; }
+  .box-content__wrap.open-height {
+    animation: anim-height 1.5s forwards ease-in-out 1; }
 
+.tabs-link-bottom__wrap {
+  padding-left: 50px;
+  padding-top: 10px; }
+
+.science-p-list__items.science-p-list__items--small-space-top {
+  padding-top: 10px; }
+
+.science-p-list.science-p-list--space-side {
+  padding: 0 15px; }
+
+@keyframes anim-height {
+  0% {
+    max-height: 463px; }
+  80% {
+    max-height: 1000px; }
+  100% {
+    max-height: 100%; } }
 .profile-page {
   background-image: url("../assets/images/bgc-polygon-silver.png");
   background-repeat: no-repeat;
@@ -11495,7 +11515,10 @@ textarea.form-control {
     max-width: 100%; }
 
   .download__wrap {
-    width: 60px; } }
+    width: 60px; }
+
+  .box-content__wrap {
+    max-height: 100%; } }
 @media (max-width: 960px) {
   .side-navbar {
     height: 65px;

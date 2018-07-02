@@ -188,4 +188,5 @@ angular.module( 'ixlayer.results', [
         }
       };
 
+
     }]);
