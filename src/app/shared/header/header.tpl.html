@@ -71,14 +71,14 @@
               </li>
             </ul>
           </nav>
-          <div class="header__button hide-mobile">
+          <div class="header__button">
             <div class="button__login">
-                  <a ng-show="logged" ui-sref="master_signedin.results({'page':''})" class="bt-round bt-round--header bt-round--blue">My Results</a>
-                  <a ng-show="!logged" ui-sref="master.register" class="bt-round bt-round--header bt-round--blue">Register</a>
+                  <a ng-show="logged" ui-sref="master_signedin.results({'page':''})" class="bt-round bt-round--sm bt-round--header bt-round--blue">My Results</a>
+                  <a ng-show="!logged" ui-sref="master.register" class="bt-round bt-round--header bt-round--blue hide-mobile">Register</a>
             </div>
             <div class="button__purchase">
-              <a ng-show="!logged" ui-sref="master_signedin.results.pre-purchase" class="bt-round bt-round--header bt-round--blue-dark">Order</a>
-              <a ng-show="logged" ui-sref="master.logout" class="bt-round bt-round--header bt-round--blue-dark">Logout</a>
+              <a ng-show="!logged" ui-sref="master_signedin.results.pre-purchase" class="bt-round bt-round--sm bt-round--header bt-round--blue-dark">Order</a>
+              <a ng-show="logged" ui-sref="master.logout" class="bt-round bt-round--header bt-round--blue-dark hide-mobile">Logout</a>
             </div>
           </div>
           

@@ -66,12 +66,18 @@
   .header__button {
     justify-content: center;
     padding-left: 0;
+    position: absolute;
+    right: 0;
+    top: 9px;
   }
   .header-nav-wrap__inner {
     display: flex;
     flex-flow: column;
     padding: 0;
     text-align: center;
+  }
+  .button__purchase {
+    padding-right: 9px;
   }
   .header-nav-item {
     border-bottom: 1px solid $silver;

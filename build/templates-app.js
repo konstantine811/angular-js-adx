@@ -5190,14 +5190,14 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "              </li>\n" +
     "            </ul>\n" +
     "          </nav>\n" +
-    "          <div class=\"header__button hide-mobile\">\n" +
+    "          <div class=\"header__button\">\n" +
     "            <div class=\"button__login\">\n" +
-    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--header bt-round--blue\">My Results</a>\n" +
-    "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue\">Register</a>\n" +
+    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue\">My Results</a>\n" +
+    "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-show=\"!logged\" ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--header bt-round--blue-dark\">Order</a>\n" +
-    "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark\">Logout</a>\n" +
+    "              <a ng-show=\"!logged\" ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +

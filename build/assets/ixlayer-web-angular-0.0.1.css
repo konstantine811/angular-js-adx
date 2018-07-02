@@ -9776,7 +9776,7 @@ ul.box__wrap {
   width: 100vw;
   height: 0;
   background-color: #F9FBFD;
-  left: -15px;
+  left: 0;
   top: 49px;
   padding: 0;
   transition: all .5s linear;
@@ -10842,6 +10842,9 @@ textarea.form-control {
   .button__wrap.button__wrap--not-space-bottom-sm {
     padding-bottom: 0; }
 
+  .bt-round.bt-round--sm {
+    padding: 9px 26px; }
+
   .bt-round:before, .bt-round:after {
     height: 52%; }
 
@@ -11139,7 +11142,8 @@ textarea.form-control {
   .img-logo {
     margin: 0 auto;
     max-width: 110px;
-    bottom: 17px; } }
+    bottom: 17px;
+    right: 10px; } }
 @media (max-width: 1596px) {
   .box-with-header-colored {
     min-width: auto; } }
@@ -11448,13 +11452,19 @@ textarea.form-control {
 
   .header__button {
     justify-content: center;
-    padding-left: 0; }
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    top: 9px; }
 
   .header-nav-wrap__inner {
     display: flex;
     flex-flow: column;
     padding: 0;
     text-align: center; }
+
+  .button__purchase {
+    padding-right: 9px; }
 
   .header-nav-item {
     border-bottom: 1px solid #F9FBFD;
