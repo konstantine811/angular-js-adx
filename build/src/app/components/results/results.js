@@ -66,7 +66,7 @@ angular.module( 'ixlayer.results', [
               $scope.page = 'p1';
             }
           }
-        } else if ($scope.hasProducts && !$scope.resultReady) {
+        } else if ($scope.hasProducts && !$scope.resultReady && $stateParams.page === '') {
           $scope.page = 'sequencing-status';
         } else if (!$scope.hasProducts && $stateParams.page === '') {
           $scope.page = 'p1';
