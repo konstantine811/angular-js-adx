@@ -620,8 +620,9 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"home-head__wrap\">\n" +
     "        <div class=\"head-title__wrap\">\n" +
     "          <div class=\"head-title txt-center-sm anim-content-transition\">\n" +
-    "            <h2>Alzheimer's disease</h2>\n" +
-    "            <h3 class=\"txt-padding-top\">Learn your ApoE genetic risk</h3>\n" +
+    "            <h1 class=\"line-height-md\">Alzheimer's disease\n" +
+    "              know you risk</h1>\n" +
+    "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
     "            <button jq-slider class=\"button-border-rounded\">Order test</button>\n" +
@@ -5087,7 +5088,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "        </div>\n" +
     "        <!--end  progress-bar-->\n" +
     "        <div class=\"title__wrap txt-center anim-content-transition\">\n" +
-    "          <div class=\"container-xs-button-flex\">\n" +
+    "          <div class=\"container-xs-button-flex container-xs-button-flex--center\">\n" +
     "            <div class=\"test-ok active\"></div>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'ldt_submitted'\">\n" +
     "              We will mail out your collection kit once the review process is completed\n" +

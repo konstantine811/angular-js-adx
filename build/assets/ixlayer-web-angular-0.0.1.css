@@ -7797,7 +7797,7 @@ body {
 
 .test-ok {
   min-width: 70px;
-  min-height: 70px;
+  height: 70px;
   border: 6px solid #e6e6e6;
   border-radius: 50%;
   position: relative;
@@ -8610,6 +8610,8 @@ h1, .title-first {
   color: #fff;
   margin: 0;
   padding: 0; }
+  h1.line-height-md, .title-first.line-height-md {
+    line-height: 43px; }
 
 h2 {
   font-size: 22pt;
@@ -8772,6 +8774,8 @@ h6 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between; }
+  .container-xs-button-flex.container-xs-button-flex--center {
+    justify-content: center; }
 
 .txt-wrap-under-button {
   max-width: 256px;
@@ -9426,7 +9430,7 @@ ul.box__wrap {
   display: flex; }
 
 .head-title {
-  max-width: 487px;
+  max-width: 407px;
   widtH: 100%;
   height: auto; }
 

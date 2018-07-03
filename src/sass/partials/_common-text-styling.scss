@@ -129,6 +129,9 @@ h1, .title-first {
   color: $white;
   margin: 0;
   padding: 0;
+  &.line-height-md {
+    line-height: 43px;
+  }
 }
 
 h2 {
