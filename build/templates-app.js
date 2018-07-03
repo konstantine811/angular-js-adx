@@ -4694,7 +4694,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_extraction_completed'\">\n" +
     "              We are currently extracting DNA from your sample\n" +
     "            </h4>\n" +
-    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed'\">\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed' || seqStatus === 'ldt_results_sent'\">\n" +
     "              We are currently interpreting the results to generate your report\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +

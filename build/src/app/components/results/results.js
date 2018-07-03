@@ -135,7 +135,8 @@ angular.module( 'ixlayer.results', [
               $scope.iconCurrent = [false, false, false, true, false, false];
               break;
             }
-            case 'dna_delivery_completed': {
+            case 'dna_delivery_completed':
+            case 'ldt_results_sent':  {
               $scope.iconStatus = [true, true, true, true, true, false];
               $scope.iconCurrent = [false, false, false, false, true, false];
               break;
