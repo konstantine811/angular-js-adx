@@ -2720,7 +2720,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genotype indicates that you are at &lt; {{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -2746,15 +2746,20 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-section-first__img hide-xs-mobile anim-content-transition\">\n" +
-    "        <ng-include src=\"'./assets/images/svg/e2-e4.svg'\"></ng-include>\n" +
+    "        <div ng-show=\"results.name === 'e2/e2'\" ng-include=\"'assets/images/svg/e2-e2.svg'\"></div>\n" +
+    "        <div ng-show=\"results.name === 'e2/e3'\" ng-include=\"'assets/images/svg/e2-e3.svg'\"></div>\n" +
+    "        <div ng-show=\"results.name === 'e2/e4'\" ng-include=\"'assets/images/svg/e2-e4.svg'\"></div>\n" +
+    "        <div ng-show=\"results.name === 'e3/e3'\" ng-include=\"'assets/images/svg/e3-e3.svg'\"></div>\n" +
+    "        <div ng-show=\"results.name === 'e3/e4'\" ng-include=\"'assets/images/svg/e3-e4.svg'\"></div>\n" +
+    "        <div ng-show=\"results.name === 'e4/e4'\" ng-include=\"'assets/images/svg/e4-e4.svg'\"></div>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h1 class=\"txt-blue-dark\">{{ user.first_name }},</h1>\n" +
-    "        <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genetic Test result is &lte2/e2&gt.</h3>\n" +
+    "        <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genetic Test result is {{ results.name }}.</h3>\n" +
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genotype indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
@@ -3108,7 +3113,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          <h3 class=\"txt-blue-dark\">Understand ApoE</h3>\n" +
     "        </div>\n" +
     "        <div class=\"txt__wrap\">\n" +
-    "          <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype &lte2/e3&gt.</span>There are three common variants of the ApoE gene:</p>\n" +
+    "          <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype {{ results.name }}.</span> There are three common variants of the ApoE gene:</p>\n" +
     "          <ul class=\"txt--indent-small list-item-size\">\n" +
     "            <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
     "            <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +

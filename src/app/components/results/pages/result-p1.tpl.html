@@ -34,7 +34,7 @@
        </div>
         <div class="title__wrap">
           <div    class="txt txt-black anim-content-transition">
-            <b>Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.</b>
+            <b>Your ApoE genotype indicates that you are at &lt; {{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>
             <br>
           </div>
           <div class="txt txt-black anim-content-transition">
@@ -60,15 +60,20 @@
   <div class="section__wrap section__wrap--small-pad-top">
     <div class="container-lg--dashboard">
       <div class="result-section-first__img hide-xs-mobile anim-content-transition">
-        <ng-include src="'./assets/images/svg/e2-e4.svg'"></ng-include>
+        <div ng-show="results.name === 'e2/e2'" ng-include="'assets/images/svg/e2-e2.svg'"></div>
+        <div ng-show="results.name === 'e2/e3'" ng-include="'assets/images/svg/e2-e3.svg'"></div>
+        <div ng-show="results.name === 'e2/e4'" ng-include="'assets/images/svg/e2-e4.svg'"></div>
+        <div ng-show="results.name === 'e3/e3'" ng-include="'assets/images/svg/e3-e3.svg'"></div>
+        <div ng-show="results.name === 'e3/e4'" ng-include="'assets/images/svg/e3-e4.svg'"></div>
+        <div ng-show="results.name === 'e4/e4'" ng-include="'assets/images/svg/e4-e4.svg'"></div>
       </div>
       <div class="title__wrap anim-content-transition">
         <h1 class="txt-blue-dark">{{ user.first_name }},</h1>
-        <h3 class="txt-blue-dark txt-padding-top">Your ApoE Genetic Test result is &lte2/e2&gt.</h3>
+        <h3 class="txt-blue-dark txt-padding-top">Your ApoE Genetic Test result is {{ results.name }}.</h3>
       </div>
       <div class="txt__wrap anim-content-transition">
         <p class="txt txt-black">
-          Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.
+          Your ApoE genotype indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.
         </p>
         <div class="txt--indent">
           <div class="txt txt-black">

@@ -1,0 +1,56 @@
+<svg class="e3-e3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.042 398.135">
+  <defs>
+    <style>
+      .e3-e3-1 {
+        fill: #f2f2f2;
+      }
+
+      .e3-e3-2 {
+        fill: #42c5e9;
+      }
+
+      .e3-e3-3 {
+        fill: #fff;
+        stroke: #41c5eb;
+        stroke-width: 10px;
+      }
+
+      .e3-e3-4 {
+        font-size: 17px;
+      }
+
+      .e3-e3-4, .e3-e3-5 {
+        font-family: CircularStd-Medium, Circular Std;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+      }
+
+      .e3-e3-5 {
+        fill: #063f5f;
+        font-size: 61px;
+      }
+
+      .e3-e3-6 {
+        stroke: none;
+      }
+
+      .e3-e3-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_827" data-name="Group 827" transform="translate(-1245 -731)">
+    <circle id="Ellipse_157" data-name="Ellipse 157" class="e3-e3-1" cx="26.167" cy="26.167" r="26.167" transform="translate(1245 1007.774)"/>
+    <circle id="Ellipse_158" data-name="Ellipse 158" class="e3-e3-1" cx="14.888" cy="14.888" r="14.888" transform="translate(1295.078 802.047)"/>
+    <circle id="Ellipse_116" data-name="Ellipse 116" class="e3-e3-2" cx="114.151" cy="114.151" r="114.151" transform="translate(1288.433 814.525)"/>
+    <g id="Ellipse_159" data-name="Ellipse 159" class="e3-e3-3" transform="translate(1306.808 832.9)">
+      <circle class="e3-e3-6" cx="96.054" cy="96.054" r="96.054"/>
+      <circle class="e3-e3-7" cx="96.054" cy="96.054" r="91.054"/>
+    </g>
+    <text id="ApoE_Genotype" data-name="ApoE Genotype" class="e3-e3-4" transform="translate(1397.434 974.631)"><tspan x="-60.206" y="0">ApoE Genotype</tspan></text>
+    <text id="e3_e3" data-name="e3/e3" class="e3-e3-5" transform="translate(1328.525 931.208)"><tspan x="0" y="0">e3/e3</tspan></text>
+    <circle id="Ellipse_1381" data-name="Ellipse 1381" class="e3-e3-1" cx="23.228" cy="23.228" r="23.228" transform="translate(1270.374 731)"/>
+    <circle id="Ellipse_155" data-name="Ellipse 155" class="e3-e3-1" cx="31.581" cy="31.581" r="31.581" transform="translate(1490.88 758.285)"/>
+    <circle id="Ellipse_156" data-name="Ellipse 156" class="e3-e3-1" cx="40.604" cy="40.604" r="40.604" transform="translate(1443.058 1047.927)"/>
+  </g>
+</svg>

@@ -76,7 +76,22 @@ angular.module( 'ixlayer.results', [
             $scope.productStatus.custom_data['confirmation_code'] + '&req_number=' +
             $scope.productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
           if (results.length > 0) {
-            $scope.download_link = results[0].report;
+            $scope.results = results[0].result;
+            switch ($scope.results.name) {
+              case 'e2/e2':
+              case 'e2/e3':
+                $scope.riskLevel = 'lower';
+                break;
+              case 'e3/e3':
+                $scope.riskLevel = 'average';
+                break;
+              case 'e2/e4':
+              case 'e3/e4':
+              case 'e4/e4':
+                $scope.riskLevel = 'an increased';
+                break;
+            }
+            $scope.download_link = $scope.results.report;
           } else {
             $scope.download_link = '';
           }
