@@ -10440,6 +10440,9 @@ textarea.form-control {
   max-width: 854px;
   margin: 0 auto; }
 
+.tabs-link-bottom {
+  cursor: pointer; }
+
 @keyframes anim-height {
   0% {
     max-height: 463px; }
