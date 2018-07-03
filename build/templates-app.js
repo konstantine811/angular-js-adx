@@ -2721,7 +2721,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genotype indicates that you are at &lt; {{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genotype indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -4179,7 +4179,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap\">\n" +
-    "              <a href=\"\" class=\"bt-round bt-round--blue\">Science</a>\n" +
+    "              <a ui-sref=\"master_signedin.results({'page':'science'})\" class=\"bt-round bt-round--blue\">Science</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -4197,7 +4197,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap\">\n" +
-    "              <a href=\"\" class=\"bt-round bt-round--orange\">General Question</a>\n" +
+    "              <a ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"bt-round bt-round--orange\">General Questions</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -4213,7 +4213,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "          If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family.  Your healthcare provider knows your overall health best. Also, if you plan to make major lifestyle changes based on your test results, it is recommended you check-in with your health care provider to be sure those changes are safe based on your current health status.  They can evaluate your cognitive health and make recommendations based on your other medical conditions.</p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Download your results</a>\n" +
+    "        <a target=\"_blank\" ng-href=\"{{ download_link }}\"  class=\"txt-link txt-blue-2 txt-small txt-medium\">Download your results</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h3 class=\"txt-blue-dark\">Sharing with Family members</h3>\n" +
@@ -4223,7 +4223,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        </p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
-    "        <a ui-sref=\"master_signedin.results.sharing\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Learn about sharing with family</a>\n" +
+    "        <a ui-sref=\"master_signedin.results({'page':'sharing'})\" class=\"txt-link txt-blue-2 txt-small txt-medium\">Learn about sharing with family</a>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +

@@ -88,10 +88,10 @@ angular.module( 'ixlayer.results', [
               case 'e2/e4':
               case 'e3/e4':
               case 'e4/e4':
-                $scope.riskLevel = 'an increased';
+                $scope.riskLevel = 'increased';
                 break;
             }
-            $scope.download_link = $scope.results.report;
+            $scope.download_link = results[0].report;
           } else {
             $scope.download_link = '';
           }
@@ -116,6 +116,7 @@ angular.module( 'ixlayer.results', [
         else if (['sharing', 'science', 'questions'].includes($scope.page)) {
             $scope.$parent.isHomeActive = false;
             $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
+            $scope.$parent.menuTitle = $scope.$parent.showResults ? 'Results': 'Home';
         } else
         if ($scope.page === 'sequencing-status') {
           $scope.$parent.showResults = false;
