@@ -3430,7 +3430,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
     "                            <li class=\"science-p-list__items\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">yoga,</p>\n" +
+    "                                <p class=\"txt txt-black\">Yoga</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
@@ -3440,47 +3440,47 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">meditation</p>\n" +
+    "                                <p class=\"txt txt-black\">Meditation</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">progressive muscular relaxation,</p>\n" +
+    "                                <p class=\"txt txt-black\">Progressive muscular relaxation</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">deep breathing techniques,</p>\n" +
+    "                                <p class=\"txt txt-black\">Deep breathing techniques</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">spending time outdoors,</p>\n" +
+    "                                <p class=\"txt txt-black\">Spending time outdoors</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">engaging in activities of humor,</p>\n" +
+    "                                <p class=\"txt txt-black\">Engaging in activities of humor</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">music therapy,</p>\n" +
+    "                                <p class=\"txt txt-black\">Music therapy</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">touch therapy (such as massage), </p>\n" +
+    "                                <p class=\"txt txt-black\">Touch therapy (such as massage)</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">journaling, and </p>\n" +
+    "                                <p class=\"txt txt-black\">Journaling</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">art therapy</p>\n" +
+    "                                <p class=\"txt txt-black\">Art therapy</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                          </ul>\n" +
@@ -3494,42 +3494,42 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
     "                            <li class=\"science-p-list__items\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">stopping smoking, </p>\n" +
+    "                                <p class=\"txt txt-black\">Stopping smoking</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">reduction of alcohol consumption,</p>\n" +
+    "                                <p class=\"txt txt-black\">Reduction of alcohol consumption</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">reduction of caffeine intake,</p>\n" +
+    "                                <p class=\"txt txt-black\">Reduction of caffeine intake</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">engaging in physical exercise,</p>\n" +
+    "                                <p class=\"txt txt-black\">Engaging in physical exercise</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">getting adequate sleep,</p>\n" +
+    "                                <p class=\"txt txt-black\">Getting adequate sleep</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">making lists or using reminder apps (for memory difficulties),</p>\n" +
+    "                                <p class=\"txt txt-black\">Making lists or using reminder apps (for memory difficulties)</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">developing routines (to combat anxiety),</p>\n" +
+    "                                <p class=\"txt txt-black\">Developing routines (to combat anxiety)</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">keeping a stress log to identify stressful situations and strategize a way to mitigate them,\n" +
+    "                                <p class=\"txt txt-black\">Keeping a stress log to identify stressful situations and strategize a way to mitigate them,\n" +
     "                                  time management</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
@@ -3544,22 +3544,22 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
     "                            <li class=\"science-p-list__items\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">seeking counseling (especially for grief and loss like divorce or death of a loved one),</p>\n" +
+    "                                <p class=\"txt txt-black\">Seeking counseling (especially for grief and loss like divorce or death of a loved one)</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">joining a support group of people with similar experiences, </p>\n" +
+    "                                <p class=\"txt txt-black\">Joining a support group of people with similar experiences</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">social support from a church or volunteer organization, and</p>\n" +
+    "                                <p class=\"txt txt-black\">Social support from a church or volunteer organization</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">positive social interaction with peers</p>\n" +
+    "                                <p class=\"txt txt-black\">Positive social interaction with peers</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                          </ul>\n" +
