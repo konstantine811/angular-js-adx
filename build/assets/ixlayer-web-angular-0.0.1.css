@@ -10852,6 +10852,15 @@ textarea.form-control {
   .bt-space-top--md {
     margin-top: 20px; } }
 @media (max-width: 768px) {
+  .button-open {
+    background-color: #F9FBFD;
+    width: 100vw;
+    position: relative;
+    top: 38px; }
+
+  .button__wrap {
+    padding-bottom: 5px; }
+
   .button__wrap.button__wrap--not-space-bottom-sm {
     padding-bottom: 0; }
 
@@ -11210,6 +11219,9 @@ textarea.form-control {
   .box-half-column {
     width: 100%; } }
 @media (max-width: 768px) {
+  .box-shadow.box-shadow--tabs {
+    margin: 0; }
+
   .box-wrap, .box-wrap--large {
     width: 100%;
     min-width: 200px; }
@@ -11537,6 +11549,9 @@ textarea.form-control {
     min-height: 350px;
     padding-bottom: 50px; } }
 @media (max-width: 768px) {
+  .box-content__wrap {
+    padding: 0 15px; }
+
   .result-head {
     min-height: 0; }
 
@@ -11548,10 +11563,7 @@ textarea.form-control {
 
   .download__wrap--sm-center {
     width: 166px;
-    margin: 0 auto; }
-
-  .box-content__wrap {
-    max-height: 100%; } }
+    margin: 0 auto; } }
 @media (max-width: 960px) {
   .side-navbar {
     height: 65px;

@@ -59,6 +59,9 @@
 
 
 @media (max-width: $breakpoint-sm) {
+  .box-shadow.box-shadow--tabs {
+    margin: 0;
+  }
 
   .box-wrap, .box-wrap--large {
     width: 100%;

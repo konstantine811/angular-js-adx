@@ -176,6 +176,17 @@
 
 @media (max-width: $breakpoint-sm) {
 
+  .button-open {
+    background-color: $silver;
+    width: 100vw;
+    position: relative;
+    top: 38px;
+  }
+
+  .button__wrap {
+    padding-bottom: 5px;
+  }
+
   .button__wrap.button__wrap--not-space-bottom-sm {
     padding-bottom: 0;
   }

@@ -20,6 +20,11 @@
 }
 
 @media (max-width: $breakpoint-sm) {
+
+  .box-content__wrap {
+    padding: 0 15px;
+  }
+
   .result-head {
     min-height: 0;
   }
@@ -34,8 +39,5 @@
   .download__wrap--sm-center {
     width: 166px;
     margin: 0 auto;
-  }
-  .box-content__wrap {
-    max-height: 100%;
   }
 }

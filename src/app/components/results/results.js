@@ -36,7 +36,7 @@ angular.module( 'ixlayer.results', [
       $scope.resultReady = false;
       $scope.showMobileMenu = false;
       $scope.productStatus = null;
-      $scope.openTab = false;
+      $scope.accordionIsOpen = [];
 
       $scope.showSubPages = function (page) {
 
@@ -179,12 +179,14 @@ angular.module( 'ixlayer.results', [
         return $scope.tab === tabNum;
       };
 
-
-      $scope.openSlideTabs = function() {
-        if(!$scope.openTab) {
-          $scope.openTab = true;
+      $scope.accordionOpen = function(num) {
+        if(!$scope.accordionIsOpen[num]) {
+          $scope.accordionIsOpen[num] = false;
+        }
+        if($scope.accordionIsOpen[num] === true) {
+          $scope.accordionIsOpen[num] = false;
         } else {
-          $scope.openTab = false;
+          $scope.accordionIsOpen[num] = true;
         }
       };
 

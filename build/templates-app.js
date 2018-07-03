@@ -2798,7 +2798,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(1)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[0]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
     "                      </div>\n" +
@@ -2984,22 +2984,14 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                    <div ng-click=\"accordionOpen(0)\" class=\"button-open\">\n" +
     "                      <div class=\"button__wrap button--center\">\n" +
-    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
-    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!accordionIsOpen[0]\">more</span><span ng-show=\"accordionIsOpen[0]\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[0]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <a href=\"#section-2\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                      <div class=\"box-body-anchor__wrap\">\n" +
-    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                    </a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
@@ -3019,7 +3011,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div id=\"section-2\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(2)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[1]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
     "                      </div>\n" +
@@ -3061,22 +3053,14 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                    <div ng-click=\"accordionOpen(1)\" class=\"button-open\">\n" +
     "                      <div class=\"button__wrap button--center\">\n" +
-    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
-    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!accordionIsOpen[1]\">more</span><span ng-show=\"accordionIsOpen[1]\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[1]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <a href=\"#section-3\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                      <div class=\"box-body-anchor__wrap\">\n" +
-    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                    </a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
@@ -3096,7 +3080,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div id=\"section-3\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(3)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[2]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
     "                      </div>\n" +
@@ -3118,22 +3102,14 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                    <div ng-click=\"accordionOpen(2)\" class=\"button-open\">\n" +
     "                      <div class=\"button__wrap button--center\">\n" +
-    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
-    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!accordionIsOpen[2]\">more</span><span ng-show=\"accordionIsOpen[2]\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[2]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <a href=\"#section-4\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                      <div class=\"box-body-anchor__wrap\">\n" +
-    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                    </a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
@@ -3153,7 +3129,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[3]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
     "                      </div>\n" +
@@ -3420,22 +3396,14 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                    <div ng-click=\"accordionOpen(3)\" class=\"button-open\">\n" +
     "                      <div class=\"button__wrap button--center\">\n" +
-    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
-    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!accordionIsOpen[3]\">more</span><span ng-show=\"accordionIsOpen[3]\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[3]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <a href=\"#section-5\" smooth-scroll class=\"box-body-anchor hide-desktop\">\n" +
-    "                      <div class=\"box-body-anchor__wrap\">\n" +
-    "                        <p class=\"txt txt-static txt-blue-dark\">Read more</p>\n" +
-    "                        <div class=\"box-body-anchor__arrow-down\">\n" +
-    "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
-    "                        </div>\n" +
-    "                      </div>\n" +
-    "                    </a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
@@ -3455,7 +3423,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div id=\"section-5\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(5)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': openTab}\">\n" +
+    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[4]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Brain Stimulation</h3>\n" +
     "                      </div>\n" +
@@ -3471,10 +3439,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
-    "                    <div ng-click=\"openSlideTabs()\" class=\"button-open hide-mobile\">\n" +
+    "                    <div ng-click=\"accordionOpen(4)\" class=\"button-open\">\n" +
     "                      <div class=\"button__wrap button--center\">\n" +
-    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!openTab\">more</span><span ng-show=\"openTab\">less</span></div>\n" +
-    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': openTab}\">\n" +
+    "                        <div class=\"txt txt-medium txt-static txt-blue-dark\">Read <span ng-show=\"!accordionIsOpen[4]\">more</span><span ng-show=\"accordionIsOpen[4]\">less</span></div>\n" +
+    "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[4]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
     "                      </div>\n" +

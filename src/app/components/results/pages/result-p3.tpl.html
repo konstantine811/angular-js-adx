@@ -115,7 +115,7 @@
               <div class="hide-tabs hide-tabs--show-sm" ng-class="{'showTab': isSet(1)}">
                 <div class="box-shadow box-shadow--tabs">
                   <div class="box-content">
-                    <div class="box-content__wrap" ng-class="{'open-height': openTab}">
+                    <div class="box-content__wrap" ng-class="{'open-height': accordionIsOpen[0]}">
                       <div class="title__wrap">
                         <h3 class="txt-blue-dark txt-center">Sleep</h3>
                       </div>
@@ -301,22 +301,14 @@
                         </div>
                       </div>
                     </div>
-                    <div ng-click="openSlideTabs()" class="button-open hide-mobile">
+                    <div ng-click="accordionOpen(0)" class="button-open">
                       <div class="button__wrap button--center">
-                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!openTab">more</span><span ng-show="openTab">less</span></div>
-                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': openTab}">
+                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!accordionIsOpen[0]">more</span><span ng-show="accordionIsOpen[0]">less</span></div>
+                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': accordionIsOpen[0]}">
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                       </div>
                     </div>
-                    <a href="#section-2" smooth-scroll class="box-body-anchor hide-desktop">
-                      <div class="box-body-anchor__wrap">
-                        <p class="txt txt-static txt-blue-dark">Read more</p>
-                        <div class="box-body-anchor__arrow-down">
-                          <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
                 <div class="tabs-link-bottom hide-mobile">
@@ -336,7 +328,7 @@
               <div id="section-2" class="hide-tabs hide-tabs--show-sm" ng-class="{'showTab': isSet(2)}">
                 <div class="box-shadow box-shadow--tabs">
                   <div class="box-content">
-                    <div class="box-content__wrap" ng-class="{'open-height': openTab}">
+                    <div class="box-content__wrap" ng-class="{'open-height': accordionIsOpen[1]}">
                       <div class="title__wrap">
                         <h3 class="txt-blue-dark txt-center">Exercise</h3>
                       </div>
@@ -378,22 +370,14 @@
                         </div>
                       </div>
                     </div>
-                    <div ng-click="openSlideTabs()" class="button-open hide-mobile">
+                    <div ng-click="accordionOpen(1)" class="button-open">
                       <div class="button__wrap button--center">
-                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!openTab">more</span><span ng-show="openTab">less</span></div>
-                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': openTab}">
+                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!accordionIsOpen[1]">more</span><span ng-show="accordionIsOpen[1]">less</span></div>
+                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': accordionIsOpen[1]}">
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                       </div>
                     </div>
-                    <a href="#section-3" smooth-scroll class="box-body-anchor hide-desktop">
-                      <div class="box-body-anchor__wrap">
-                        <p class="txt txt-static txt-blue-dark">Read more</p>
-                        <div class="box-body-anchor__arrow-down">
-                          <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
                 <div class="tabs-link-bottom hide-mobile">
@@ -413,7 +397,7 @@
               <div id="section-3" class="hide-tabs hide-tabs--show-sm" ng-class="{'showTab': isSet(3)}">
                 <div class="box-shadow box-shadow--tabs">
                   <div class="box-content">
-                    <div class="box-content__wrap" ng-class="{'open-height': openTab}">
+                    <div class="box-content__wrap" ng-class="{'open-height': accordionIsOpen[2]}">
                       <div class="title__wrap">
                         <h3 class="txt-blue-dark txt-center">Stress</h3>
                       </div>
@@ -435,22 +419,14 @@
                         </div>
                       </div>
                     </div>
-                    <div ng-click="openSlideTabs()" class="button-open hide-mobile">
+                    <div ng-click="accordionOpen(2)" class="button-open">
                       <div class="button__wrap button--center">
-                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!openTab">more</span><span ng-show="openTab">less</span></div>
-                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': openTab}">
+                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!accordionIsOpen[2]">more</span><span ng-show="accordionIsOpen[2]">less</span></div>
+                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': accordionIsOpen[2]}">
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                       </div>
                     </div>
-                    <a href="#section-4" smooth-scroll class="box-body-anchor hide-desktop">
-                      <div class="box-body-anchor__wrap">
-                        <p class="txt txt-static txt-blue-dark">Read more</p>
-                        <div class="box-body-anchor__arrow-down">
-                          <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
                 <div class="tabs-link-bottom hide-mobile">
@@ -470,7 +446,7 @@
               <div id="section-4" class="hide-tabs hide-tabs--show-sm" ng-class="{'showTab': isSet(4)}">
                 <div class="box-shadow box-shadow--tabs">
                   <div class="box-content">
-                    <div class="box-content__wrap" ng-class="{'open-height': openTab}">
+                    <div class="box-content__wrap" ng-class="{'open-height': accordionIsOpen[3]}">
                       <div class="title__wrap">
                         <h3 class="txt-blue-dark txt-center">Nutrition</h3>
                       </div>
@@ -737,22 +713,14 @@
                         </div>
                       </div>
                     </div>
-                    <div ng-click="openSlideTabs()" class="button-open hide-mobile">
+                    <div ng-click="accordionOpen(3)" class="button-open">
                       <div class="button__wrap button--center">
-                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!openTab">more</span><span ng-show="openTab">less</span></div>
-                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': openTab}">
+                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!accordionIsOpen[3]">more</span><span ng-show="accordionIsOpen[3]">less</span></div>
+                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': accordionIsOpen[3]}">
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                       </div>
                     </div>
-                    <a href="#section-5" smooth-scroll class="box-body-anchor hide-desktop">
-                      <div class="box-body-anchor__wrap">
-                        <p class="txt txt-static txt-blue-dark">Read more</p>
-                        <div class="box-body-anchor__arrow-down">
-                          <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
                 <div class="tabs-link-bottom hide-mobile">
@@ -772,7 +740,7 @@
               <div id="section-5" class="hide-tabs hide-tabs--show-sm" ng-class="{'showTab': isSet(5)}">
                 <div class="box-shadow box-shadow--tabs">
                   <div class="box-content">
-                    <div class="box-content__wrap" ng-class="{'open-height': openTab}">
+                    <div class="box-content__wrap" ng-class="{'open-height': accordionIsOpen[4]}">
                       <div class="title__wrap">
                         <h3 class="txt-blue-dark txt-center">Brain Stimulation</h3>
                       </div>
@@ -788,10 +756,10 @@
                         </div>
                       </div>
                     </div>
-                    <div ng-click="openSlideTabs()" class="button-open hide-mobile">
+                    <div ng-click="accordionOpen(4)" class="button-open">
                       <div class="button__wrap button--center">
-                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!openTab">more</span><span ng-show="openTab">less</span></div>
-                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': openTab}">
+                        <div class="txt txt-medium txt-static txt-blue-dark">Read <span ng-show="!accordionIsOpen[4]">more</span><span ng-show="accordionIsOpen[4]">less</span></div>
+                        <div class="box-body-button__arrow-down" ng-class="{'rotate-arrow': accordionIsOpen[4]}">
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                       </div>
