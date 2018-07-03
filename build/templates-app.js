@@ -1010,12 +1010,15 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
     "                                <div class=\"row\">\n" +
     "                                    <div class=\"col-sm-6 anim-content-transition\">\n" +
     "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            <span class=\"txt-bold\">ADx Healthcare Privacy Policy (June 2018)</span>\n" +
+    "                                        </p>\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            ADx Healthcare respects your privacy and is committed to protecting it through our compliance with this privacy policy (“Privacy Policy”). This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit our website or use our Services (in accordance with our Terms of Service) and our practices for collecting, using, maintaining, protecting and disclosing that information. Please read our Privacy Policy carefully to understand how we collect, use, protect or otherwise handle your information. If you do not agree with our policies and practices, you may choose not to use our website and Services. By accessing or using the website and Services, you agree to this Privacy Policy.\n" +
     "                                        </p>\n" +
     "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Capitalized terms used but not defined in this Privacy Policy have the meaning given to them in our other policies (e.g., our Terms of Service and Consent Documents).\n" +
     "                                        </p>\n" +
-    "                                        <div class=\"txt--indent-small anim-content-transition\">\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
     "                                                <span class=\"txt-bold\">What information do we collect?</span><br>\n" +
     "                                                We collect several types of information from and about users of our Services and visitors to our website, blog, and app. When ordering or registering on our website, you may be asked to provide Personal Information (e.g., your name, email address, mailing address, phone number, username, and payment information). We also collect Web Behavior Information (e.g., browser type, Internet connection, and usage details) to help us improve your experience with our Services. If you decide to utilize our Services and provide a sample for analysis, we will collect your Genetic and Self-Reported Information to enable us to provide those Services. We will also collect information about the details of any transactions you carry out through our website.\n" +
