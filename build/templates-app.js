@@ -1005,41 +1005,250 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
     "                            </div>\n" +
     "                        </div>\n" +
     "                        <div class=\"section__wrap\">\n" +
-    "                            <h3 class=\"txt-blue txt-center anim-content-transition\">Privacy</h3>\n" +
+    "                            <h3 class=\"txt-blue txt-center anim-content-transition\">Privacy Policy</h3>\n" +
     "                            <div class=\"txt__wrap\">\n" +
     "                                <div class=\"row\">\n" +
     "                                    <div class=\"col-sm-6 anim-content-transition\">\n" +
     "                                        <p class=\"txt-middle txt-black\">\n" +
-    "                                            <span class=\"txt-bold\">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
+    "                                            ADx Healthcare respects your privacy and is committed to protecting it through our compliance with this privacy policy (“Privacy Policy”). This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit our website or use our Services (in accordance with our Terms of Service) and our practices for collecting, using, maintaining, protecting and disclosing that information. Please read our Privacy Policy carefully to understand how we collect, use, protect or otherwise handle your information. If you do not agree with our policies and practices, you may choose not to use our website and Services. By accessing or using the website and Services, you agree to this Privacy Policy.\n" +
+    "                                        </p>\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
+    "                                            Capitalized terms used but not defined in this Privacy Policy have the meaning given to them in our other policies (e.g., our Terms of Service and Consent Documents).\n" +
     "                                        </p>\n" +
     "                                        <div class=\"txt--indent-small anim-content-transition\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
-    "                                                <span class=\"txt-bold\">Duo Reges: constructio interrete.</span> Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
-    "                                            </p>\n" +
-    "                                        </div>\n" +
-    "                                        <div class=\"txt--indent-smal\">\n" +
-    "                                            <p class=\"txt-middle txt-black\">\n" +
-    "                                                <span class=\"txt-bold\">Idne consensisse de Calatino plurimas</span> gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
+    "                                                <span class=\"txt-bold\">What information do we collect?</span><br>\n" +
+    "                                                We collect several types of information from and about users of our Services and visitors to our website, blog, and app. When ordering or registering on our website, you may be asked to provide Personal Information (e.g., your name, email address, mailing address, phone number, username, and payment information). We also collect Web Behavior Information (e.g., browser type, Internet connection, and usage details) to help us improve your experience with our Services. If you decide to utilize our Services and provide a sample for analysis, we will collect your Genetic and Self-Reported Information to enable us to provide those Services. We will also collect information about the details of any transactions you carry out through our website.\n" +
     "                                            </p>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"txt--indent-small\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
-    "                                                Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil\n" +
+    "                                                <span class=\"txt-bold\">When do we collect information?</span><br>\n" +
+    "                                                We collect information directly when you provide it to us, for example when you register on our website, subscribe to a newsletter, respond to a survey, fill out a form, or enter information on our site. You may also provide User Content to be published or displayed on our website. We also automatically collect Web Behavior Information as you navigate through our website.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                You can review and change your Personal Information by logging into our website and visiting your account profile page. You may also send us an email at cs@adxhealthcare.com to request access to, or to correct or delete any Personal Information that you have provided to us. We cannot delete your Personal Information except by also deleting your account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                If you delete your User Content from the website, copies of your User Content may remain viewable in cached and archived pages, or might have been copied or stored by other users. Proper access and use of information provided on our website or through our Services, including User Content, is governed by our TOS.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">How do we use your information?</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We may use the information we collect from you in the following ways:\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div>\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <ul class=\"txt-middle txt-black\">\n" +
+    "                                                    <li>To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.</li>\n" +
+    "                                                    <li>To quickly process your transactions</li>\n" +
+    "                                                    <li>To provide you with information, products, or Services that you request from us.</li>\n" +
+    "                                                    <li>To send test results to your designated provider.</li>\n" +
+    "                                                    <li>To send periodic emails regarding your account, your order, or other products and services.</li>\n" +
+    "                                                    <li>To follow up after correspondence (live chat, email or phone inquiries).</li>\n" +
+    "                                                    <li>To notify you about changes to our website, our policies, terms, or any products or Services we offer or provide.</li>\n" +
+    "                                                    <li>To further ADx Healthcare Research, but only if you have given consent for your Genetic and Self-Reported Information to be used for such purposes.</li>\n" +
+    "                                                </ul>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We may also use your information to contact you about our own and third parties’ goods and services that may be of interest to you. If you do not want us to use your information in this way, please email us at cs@adxhealthcare.com to opt out.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">How do we use your information for ADx Healthcare Research?</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                If you have given consent for your Genetic Information and Self-Reported Information to be used in ADx Healthcare Research as described in the applicable Consent Document, we may include your information in the Aggregated Genetic Information and Self-Reported Information we disclose to third parties for the purpose of publication in a peer-reviewed scientific journal.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                ADx Healthcare will never disclose your individual-level Genetic Information and/or Self-Reported Information to any third party without asking for and receiving your explicit consent to do so, unless required by law.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">When may we disclose your Personal Information?</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We will not sell or trade your Personal Information to outside parties. However, we may disclose Personal Information that we collect or that you provide:</p>\n" +
+    "                                                <ul class=\"txt-middle txt-black\">\n" +
+    "                                                <li>To our subsidiaries and affiliates.</li>\n" +
+    "                                                <li>To partners, contractors, service providers and other third parties we use to support our business and who are bound by contractual obligations to keep Personal Information confidential and use it only for the purposes for which we disclose it to them.</li>\n" +
+    "                                                <li>To a buyer or other successor in the event of a merger, divestiture, restructuring, reorganization, dissolution or sale or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation or similar proceeding, in which Personal Information held by us about our users is among the assets transferred, and you agree to and do hereby consent to our assignment or transfer of rights to your Personal Information.</li>\n" +
+    "                                                <li>For any other purpose disclosed by us when you provide the information.</li>\n" +
+    "                                                <li>With your consent.</li>\n" +
+    "                                                </ul>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                You acknowledge and agree that ADx Healthcare is free to preserve and disclose any and all Personal Information to law enforcement or other regulatory agencies if required to do so by law or in the good faith belief that such preservation or disclosure is reasonably necessary to: (a) comply with any legal process (such as a judicial proceeding, court order, or government or regulatory inquiry); (b) enforce the ADx Healthcare TOS; (c) respond to claims that any content violates the rights of third parties; or (d) protect the rights, property, or personal safety of ADx Healthcare, its employees, its users, its clients, and the public. You understand that the technical processing and transmission of the Services, including your Personal Information, may involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks, or devices.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">How do we protect your information?</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We have implemented measures designed to secure your information from accidental loss and from unauthorized access, use, alteration and disclosure. Your information is stored behind secured networks and is only accessible to a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We do not collect credit card information; all transactions are processed through a gateway provider and are not stored or processed on our servers. We use regular Malware Scanning and implement a variety of other security measures when a user places an order, enters, submits, or accesses their information to maintain the safety of your Personal Information.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                The safety and security of your information also depends on you. You are responsible for maintaining the confidentiality of your password and account, and are fully responsible for all activities that occur under your password or account. You should not share your password with anyone. When accessing your account from a public or shared computer, you should use particular caution so that others are not able to view or record your password or your other information.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Unfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your Personal Information, we cannot guarantee the security of your Personal Information transmitted to our website. Any transmission of Personal Information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the website.\n" +
     "                                            </p>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                    <div class=\"col-sm-6\">\n" +
-    "                                        <p class=\"txt-middle txt-black\">\n" +
-    "                                            Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Scaevolam M. Sed in ceteris artibus cum dicitur artificiose, posterum quodam modo et consequens putandum est, quod illi §pigennhmatikÒn appellant; Sed ne, dum huic obsequor, vobis molestus sim. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Et nemo nimium beatus est; Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Qui si ea, quae dicit, ita sentiret, ut verba significant, quid inter eum et vel Pyrrhonem vel Aristonem interesset? Ita fit cum gravior, tum etiam splendidior oratio. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. Hunc vos beatum; Ratio quidem vestra sic cogit. An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat?\n" +
-    "                                        </p>\n" +
     "                                        <div class=\"txt--indent-small\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
-    "                                                Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Ego vero volo in virtute vim esse quam maximam; Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera. Quantum Aristoxeni ingenium consumptum videmus in musicis? Quis non odit sordidos, vanos, leves, futtiles? Primum cur ista res digna odio est, nisi quod est turpis? Aeque enim contingit omnibus fidibus, ut incontentae sint. Sed ad bona praeterita redeamus. Cur id non ita fit?\n" +
+    "                                                <span class=\"txt-bold\">Do we use ‘cookies’?</span>\n" +
     "                                            </p>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"txt--indent-small\">\n" +
     "                                            <p class=\"txt-middle txt-black\">\n" +
-    "                                                Conferam tecum, quam cuique verso rem subicias; Sed existimo te, sicut nostrum Triarium, minus ab eo delectari, quod ista Platonis, Aristoteli, Theophrasti orationis ornamenta neglexerit. Conferam tecum, quam cuique verso rem subicias; Numquam audivi in Epicuri schola Lycurgum, Solonem, Miltiadem, Themistoclem, Epaminondam nominari, qui in ore sunt ceterorum omnium philosophorum. Videsne igitur Zenonem tuum cum Aristone verbis concinere, re dissidere, cum Aristotele et illis re consentire, verbis discrepare? Nam quid possumus facere melius? Animadverti, ínquam, te isto modo paulo ante ponere, et scio ab Antiocho nostro dici sic solere; Dicimus aliquem hilare vivere; Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur?\n" +
+    "                                                Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Third-party links</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Some content, including advertisements and links, on our website are served by third parties, including advertisers, ad networks and servers, content providers and application providers. These third parties may use cookies alone or in conjunction with web beacons or other tracking technologies to collect information about you when you use our website. The information they collect may be associated with your Personal Information or they may collect information, including Personal Information, about your online activities over time and across different websites and other online services. They may use this information to provide you with interest-based (behavioral) advertising or other targeted content.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We do not control these third parties’ tracking technologies or how they may be used. If you have any questions about an advertisement or other targeted content, you should contact the responsible provider directly.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                For example, we use Google AdSense Advertising on our website. Google, as a third-party vendor, uses cookies to serve ads on our site. Google’s use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy. You can set your preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Genetic Information Nondisclosure Act (GINA)</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                GINA was signed into law in the United States in 2008 to protect against discrimination based on genetic information by employers and health insurance companies for employment and coverage issues. You should be careful about sharing your Genetic Information with others as Genetic Information that you share with others could be used against your interests. In addition, GINA does not protect against discrimination by, for example, long-term health, life, and disability insurance providers, or the military. Some, but not all, states and other jurisdictions have laws that protect individuals with regard to their Genetic Information. You may want to consult a lawyer to understand the extent of legal protection of your Genetic Information before you share it with anybody.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                Genetic Information that you choose to share with your physician or other healthcare provider may become part of your medical record and through that route may be accessible to other healthcare providers and/or insurance companies in the future. Genetic Information that you share with family, friends or employers may also be used against your interests. Even if you share Genetic Information that has limited or no meaning today, that information could have greater meaning in the future as new discoveries are made. In addition, if you are asked by an insurance company whether you have learned Genetic Information about your health conditions and you do not disclose this to them, this may be considered to be fraud.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Children’s Online Privacy Protection Act (“COPPA”)</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                When it comes to the collection of information from children under the age of 13 years old, the Children’s Online Privacy Protection Act (COPPA) puts parents in control. The United States Federal Trade Commission (“FTC”) enforces COPPA, which spells out what operators of websites and online services must do to protect children’s privacy and safety online. We comply with all applicable COPPA requirements and do not specifically market our Services to children under the age of 13 years old.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Fair Information Practices</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                The FTC has also set forth the Fair Information Practices Principles as guidelines for the use of information in an electronic marketplace. In line with the Fair Information Practices, should a data breach occur, within 7 business days, we will notify you via email and via notices or links to notices on the ADx Healthcare website.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                We also agree to follow the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the guidelines. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse through courts or government agencies to investigate and/or prosecute non-compliance by data processors.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">CAN-SPAM Act</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations. We collect your email address in order to:\n" +
+    "                                            </p>\n" +
+    "                                            <ul class=\"txt-middle txt-black\">\n" +
+    "                                                <li>Send information and respond to inquiries and/or other requests or questions;</li>\n" +
+    "                                                <li>Process orders and to send information and updates pertaining to orders;</li>\n" +
+    "                                                <li>Send you additional information related to your product and/or Services;</li>\n" +
+    "                                                <li>Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.</li>\n" +
+    "                                            </ul>\n" +
+    "                                            <p>\n" +
+    "                                                In accordance with CAN-SPAM, we agree to:\n" +
+    "                                            </p>\n" +
+    "                                            <ul class=\"txt-middle txt-black\">\n" +
+    "                                                <li>Not use false or misleading subjects or email addresses.</li>\n" +
+    "                                                <li>Identify the message as an advertisement in some reasonable way.</li>\n" +
+    "                                                <li>Include the physical address of our business or site headquarters.</li>\n" +
+    "                                                <li>Monitor third-party email marketing services for compliance, if one is used.</li>\n" +
+    "                                                <li>Honor opt-out/unsubscribe requests quickly.</li>\n" +
+    "                                                <li>Allow users to unsubscribe by using the link at the bottom of each email.</li>\n" +
+    "                                            </ul>\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                If at any time you would like to unsubscribe from receiving future emails, you can follow the instructions at the bottom of each email and we will promptly remove you from ALL correspondence.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Changes to this Privacy Policy</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                ADx Healthcare reserves the right to make changes to this Privacy Policy at any time. When these changes are made, we will make a new copy of the Privacy Policy available on this page. If we make material changes to how we treat our users’ personal information, we will notify you by email to the email address specified in your account and/or through a notice on our Privacy Policy page. All changes are effective immediately upon posting to this page; the date the Privacy Policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting this Privacy Policy page to check for any changes.\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                <span class=\"txt-bold\">Contacting Us</span>\n" +
+    "                                            </p>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"txt--indent-small\">\n" +
+    "                                            <p class=\"txt-middle txt-black\">\n" +
+    "                                                If you have any questions regarding this Privacy Policy, you may contact us using the information below.<br>\n" +
+    "                                                ADx Healthcare<br>\n" +
+    "                                                3614 Meridian Street, Suite 100<br>\n" +
+    "                                                Bellingham, WA 98225<br>\n" +
+    "                                                USA<br>\n" +
+    "                                                cs@adxhealthcare.com<br>\n" +
+    "                                                1.833.ADX.HELP<br>\n" +
     "                                            </p>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
@@ -5410,9 +5619,9 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                    <a ui-sref=\"master.legal\" class=\"title-fourth txt-blue txt-uppercase\">LEGAL</a>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-center-sm\">\n" +
-    "                    <a href=\"\" class=\"txt txt--exs-small txt-bold txt-black\">Terms of Service</a>\n" +
+    "                    <a ui-sref=\"master.legal\" class=\"txt txt--exs-small txt-bold txt-black\">Terms of Service</a>\n" +
     "                    <div class=\"link--indent\">\n" +
-    "                      <a href=\"\" class=\"txt txt--exs-small txt-bold txt-black\">Privacy Policy</a>\n" +
+    "                      <a ui-sref=\"master.legal\" class=\"txt txt--exs-small txt-bold txt-black\">Privacy Policy</a>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
