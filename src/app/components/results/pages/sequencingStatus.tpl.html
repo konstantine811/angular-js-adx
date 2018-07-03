@@ -102,6 +102,11 @@
               Your order was cancelled
             </h4>
           </div>
+
+          <div class="container-xs-button-flex">
+            <a ng-show="seqStatus === 'result_ready'"
+               ui-sref="master_signedin.results({'page':'p1'})" class="bt-round bt-round--sm bt-round--header bt-round--blue-dark">View Results</a>
+          </div>
         </div>
       </div>
     </div>

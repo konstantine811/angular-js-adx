@@ -47,10 +47,7 @@ angular.module( 'ixlayer.results', [
           if ($scope.hasProducts) {
             $scope.productStatus = $scope.profile.helix_profile.product_status[0];
             $scope.consentAgreed = $scope.productStatus.product_consent_agreed_date !== null;
-            if ($scope.consentAgreed)
-            {
-              $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
-            }
+            $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
           }
         } else {
         }

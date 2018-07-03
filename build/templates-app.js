@@ -4713,6 +4713,11 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              Your order was cancelled\n" +
     "            </h4>\n" +
     "          </div>\n" +
+    "\n" +
+    "          <div class=\"container-xs-button-flex\">\n" +
+    "            <a ng-show=\"seqStatus === 'result_ready'\"\n" +
+    "               ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">View Results</a>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
