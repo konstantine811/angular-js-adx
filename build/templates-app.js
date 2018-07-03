@@ -4181,7 +4181,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "        <div class=\"flex-column\">\n" +
     "          <div class=\"flex-column__wrap flex-column__wrap--not-right flex-column__wrap--not-space-sm\">\n" +
     "            <div class=\"img__wrap img__wrap--not-top-space-sm img--center-sm\">\n" +
-    "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
+    "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/questions-message.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"title__wrap txt-center-sm\">\n" +
     "              <h3 class=\"txt-blue-dark anim-content-transition\">General Questions</h3>\n" +
