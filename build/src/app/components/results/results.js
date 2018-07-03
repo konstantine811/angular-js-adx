@@ -47,11 +47,9 @@ angular.module( 'ixlayer.results', [
           if ($scope.hasProducts) {
             $scope.productStatus = $scope.profile.helix_profile.product_status[0];
             $scope.consentAgreed = $scope.productStatus.product_consent_agreed_date !== null;
-            if ($scope.consentAgreed)
-            {
-              $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
-            }
+            $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
           }
+        } else {
         }
 
         // figure out what to show based on the current status
@@ -65,12 +63,23 @@ angular.module( 'ixlayer.results', [
               $scope.page = 'p1';
             }
           }
-        } else if ($scope.hasProducts && !$scope.resultReady) {
+        } else if ($scope.hasProducts && !$scope.resultReady && $stateParams.page === '') {
           $scope.page = 'sequencing-status';
         } else if (!$scope.hasProducts && $stateParams.page === '') {
           $scope.page = 'p1';
         } else {
           $scope.page = $stateParams.page;
+        }
+
+        if ($scope.hasProducts && $scope.resultReady) {
+          $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
+            $scope.productStatus.custom_data['confirmation_code'] + '&req_number=' +
+            $scope.productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
+          if (results.length > 0) {
+            $scope.download_link = results[0].report;
+          } else {
+            $scope.download_link = '';
+          }
         }
 
         // status specific
@@ -98,16 +107,7 @@ angular.module( 'ixlayer.results', [
           $scope.$parent.menuTitle = 'Home';
           $scope.$parent.isHomeActive = $stateParams.page === '';
 
-          var productStatus = $scope.profile.helix_profile.product_status[0];
-          $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
-            productStatus.custom_data['confirmation_code'] + '&req_number=' +
-            productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
-          if (results.length > 0) {
-            $scope.download_link = results[0].report;
-          } else {
-            $scope.download_link = '';
-          }
-          $scope.seqStatus = productStatus.product_status;
+          $scope.seqStatus = $scope.productStatus.product_status;
           switch ($scope.seqStatus) {
             case 'ldt_submitted':
               // nothing to show
@@ -132,7 +132,8 @@ angular.module( 'ixlayer.results', [
               $scope.iconCurrent = [false, false, false, true, false, false];
               break;
             }
-            case 'dna_delivery_completed': {
+            case 'dna_delivery_completed':
+            case 'ldt_results_sent':  {
               $scope.iconStatus = [true, true, true, true, true, false];
               $scope.iconCurrent = [false, false, false, false, true, false];
               break;

@@ -315,9 +315,9 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                                        From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                                    <div class=\"txt--indent\">\n" +
-    "                                      For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
+    "                                      You don’t need to navigate this alone. We are here to support you through each step.\n" +
     "                                    </div>\n" +
     "                                  </div>\n" +
     "                                </div>\n" +
@@ -335,7 +335,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
+    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -346,16 +346,15 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
     "                                        <div class=\"content-title__wrap\">\n" +
-    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Power of emotions</h2>\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Emotions</h2>\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Genetics is only one part of your risk for developing late-onset Alzheimer's disease.\n" +
-    "                                        Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
+    "                                            Genetics is only one part of your risk for developing Alzheimer’s disease. While learning that you have a higher risk for developing a disease can be unsettling, there is also power in obtaining that knowledge.  Sometimes we find ourselves questioning if we would have made a choice earlier in life if we would have known the outcomes long-term.  Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
     "                                        <div class=\"txt--indent\">\n" +
-    "                                          Having the ApoE-e4 variant means that you have an increased genetic risk for late-onset Alzheimer's disease. This does not mean, however, that you will definitely develop Alzheimer's disease. Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                                            Having the ApoE-e4 variant  (high genetic risk for late-onset Alzheimer’s disease) does not guarantee you will develop Alzheimer’s.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
     "                                        </div>\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
@@ -373,7 +372,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
+    "                                        Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins  may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer’s disease.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -389,16 +388,161 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                    </div>\n" +
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
-    "                                    <!--<div class=\"txt txt-black\">-->\n" +
-    "                                        <!--We encourage you to share your results with your family and healthcare provider.  The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.-->\n" +
-    "                                    <!--</div>-->\n" +
-    "                                    <div class=\"txt--indent\">\n" +
-    "                                        <!--<a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>-->\n" +
-    "                                        <div class=\"txt--indent\">\n" +
-    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
-    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
-    "                                            <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Blog</a>\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
     "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">What gene is being tested?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        The Alzheimer’s APOE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Having the high risk copy of this gene (APOE e4) does not guarantee that you will develop Alzheimer’s disease. Likewise, not possessing a copy of the highest risk allele (APOE e4) does not mean you won’t ever develop Alzheimer’s disease. Alzheimer’s disease is influenced by genetics, environment, and lifestyle, so learning your genetic risk helps inform you how aggressively you want to address your lifestyle to optimize your cognitive health.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">What are the requirements for ordering a test?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Can I use my health insurance benefits to purchase this product?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        This test is not covered by insurance or Medicaid at this time.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">How will the test results be delivered?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">What will my test results tell me?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your relative risk for developing late-onset Alzheimer’s disease, based on your genetics, gender and current age. Your ApoE status will not change as you age, but your chance of developing late-onset Alzheimer’s disease will increase at a different rate dependent on which ApoE combination you have. A genetic counselor will be available to go through your results with you if you have questions.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Will someone be available to help me understand my results?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">What do I do with my test results?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Your test results are private. It is up to you if you want to share your test results with your family or healthcare provider.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                            <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">How can my test results help me make health decisions?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        Learning your genetic risk for late-onset Alzheimer’s disease can help you determine how aggressively you want to start making lifestyle changes to improve your cognitive health, such as addressing sleep habits, stress, nutrition, exercise, ongoing learning, socialization, and your exposure to chemicals and pollutants. Also, if you are identified as having an e4 allele, you may be able to enroll in clinical trials, which are research studies searching for the cure to Alzheimer’s. Enrollment gives you access to cutting edge prevention therapies and lets you participate in the search for a cure.\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                             </div>\n" +
+    "                             <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "                                <div uib-accordion-heading>\n" +
+    "                                    <div class=\"accordion-heading-wrap\">\n" +
+    "                                        <div class=\"cross-button-open__wrap\">\n" +
+    "                                            <div class=\"cross-button-open\"></div>\n" +
+    "                                        </div>\n" +
+    "                                        <div class=\"content-title__wrap\">\n" +
+    "                                            <h2 class=\"txt-blue-dark anim-content-transition\">Will my personal information be protected?</h2>\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "                                <div class=\"content-txt__wrap\">\n" +
+    "                                    <div class=\"txt txt-black\">\n" +
+    "                                        As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -3695,79 +3839,265 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
+    "\n" +
     "  <!--section first-->\n" +
     "  <div>\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <!--section dropdown txt-->\n" +
     "      <div class=\"section-dropdown-txt__wrap section-dropdown-txt__wrap--border-bottom\" uib-accordion close-others=\"false\">\n" +
-    "    \n" +
-    "        <!--dropdown content first-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
+    "\n" +
+    "        <div uib-accordion close-others=\"false\">\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">You’re not alone</h2>\n" +
+    "                </div>\n" +
     "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">Does this result mean I am not at risk for developing Alzheimer’s disease?</h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <div class=\"txt-middle txt-black\">\n" +
-    "              Everyone has some level of risk for Alzheimer’s disease. Your risk is a combination of genetics, lifestyle, environment, other medical conditions, and age. The genetic related risk for Alzheimer’s disease increases based on ApoE genotype, with e2/e2 having the lowest genetic risk and e4/e4 having the highest genetic risk.\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                (graphic or table here to show the increase of risk) e2/e2, e2/e3, e3/e3, e3/e4, and e4/e4.\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Genetic counseling</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Emotions</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Genetics is only one part of your risk for developing Alzheimer’s disease. While learning that you have a higher risk for developing a disease can be unsettling, there is also power in obtaining that knowledge.  Sometimes we find ourselves questioning if we would have made a choice earlier in life if we would have known the outcomes long-term.  Knowing that you have a high genetic risk for Alzheimer’s disease is unsettling, but it can help empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  Having the ApoE-e4 variant  (high genetic risk for late-onset Alzheimer’s disease) does not guarantee you will develop Alzheimer’s.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Lifestyle changes</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins  may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer’s disease.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Connecting with community</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">What gene is being tested?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                The Alzheimer’s APOE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Having the high risk copy of this gene (APOE e4) does not guarantee that you will develop Alzheimer’s disease. Likewise, not possessing a copy of the highest risk allele (APOE e4) does not mean you won’t ever develop Alzheimer’s disease. Alzheimer’s disease is influenced by genetics, environment, and lifestyle, so learning your genetic risk helps inform you how aggressively you want to address your lifestyle to optimize your cognitive health.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">What are the requirements for ordering a test?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Can I use my health insurance benefits to purchase this product?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                This test is not covered by insurance or Medicaid at this time.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">How will the test results be delivered?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">What will my test results tell me?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your relative risk for developing late-onset Alzheimer’s disease, based on your genetics, gender and current age. Your ApoE status will not change as you age, but your chance of developing late-onset Alzheimer’s disease will increase at a different rate dependent on which ApoE combination you have. A genetic counselor will be available to go through your results with you if you have questions.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Will someone be available to help me understand my results?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">What do I do with my test results?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Your test results are private. It is up to you if you want to share your test results with your family or healthcare provider.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">How can my test results help me make health decisions?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                Learning your genetic risk for late-onset Alzheimer’s disease can help you determine how aggressively you want to start making lifestyle changes to improve your cognitive health, such as addressing sleep habits, stress, nutrition, exercise, ongoing learning, socialization, and your exposure to chemicals and pollutants. Also, if you are identified as having an e4 allele, you may be able to enroll in clinical trials, which are research studies searching for the cure to Alzheimer’s. Enrollment gives you access to cutting edge prevention therapies and lets you participate in the search for a cure.\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div uib-accordion-group class=\"dropdown-txt__content\">\n" +
+    "            <div uib-accordion-heading>\n" +
+    "              <div class=\"accordion-heading-wrap\">\n" +
+    "                <div class=\"cross-button-open__wrap\">\n" +
+    "                  <div class=\"cross-button-open\"></div>\n" +
+    "                </div>\n" +
+    "                <div class=\"content-title__wrap\">\n" +
+    "                  <h2 class=\"txt-blue-dark anim-content-transition\">Will my personal information be protected?</h2>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"content-txt__wrap\">\n" +
+    "              <div class=\"txt txt-black\">\n" +
+    "                As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "        <!--end dropdown content first-->\n" +
-    "    \n" +
-    "        <!--dropdown content second-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
-    "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">Who will see my test results?</h3>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <div class=\"txt-middle txt-black\">\n" +
-    "              Your test results are delivered privately to you.  It is up to you whom you share them with after that.  However, we encourage you to discuss them with your primary health care provider or one of our genetics counselors if you have any questions about your results or how you can take action to reduce your Alzheimer’s risk.\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        <!--end dropdown content second-->\n" +
-    "    \n" +
-    "        <!--dropdown content third-->\n" +
-    "        <div uib-accordion-group class=\"dropdown-txt__content anim-content-transition\">\n" +
-    "          <div uib-accordion-heading>\n" +
-    "            <div class=\"accordion-heading-wrap\">\n" +
-    "              <div class=\"cross-button-open__wrap\">\n" +
-    "                <div class=\"cross-button-open\"></div>\n" +
-    "              </div>\n" +
-    "              <div class=\"content-title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">What else can cause late-onset Alzheimer’s beside the genetics?</h3>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"content-txt__wrap\">\n" +
-    "            <p class=\"txt-middle txt-black\">\n" +
-    "              Late-onset Alzheimer’s disease risk is influenced by your genetics, age, other medical conditions, and lifestyle and environmental factors.  For example, as you age from 65 to 85, your risk of Alzheimer’s disease increases.\n" +
-    "            </p>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <!--end dropdown content third-->\n" +
+    "\n" +
+    "\n" +
     "      </div>\n" +
     "      <!-- end section dropdown txt-->\n" +
     "    </div>\n" +
-    "  <!--end section first-->\n" +
+    "    <!--end section first-->\n" +
     "  </div>\n" +
     "\n" +
     "</div>");
@@ -4332,7 +4662,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_extraction_completed'\">\n" +
     "              We are currently extracting DNA from your sample\n" +
     "            </h4>\n" +
-    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed'\">\n" +
+    "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'dna_delivery_completed' || seqStatus === 'ldt_results_sent'\">\n" +
     "              We are currently interpreting the results to generate your report\n" +
     "            </h4>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'result_ready'\">\n" +
@@ -4350,6 +4680,11 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'order_cancelled'\">\n" +
     "              Your order was cancelled\n" +
     "            </h4>\n" +
+    "          </div>\n" +
+    "\n" +
+    "          <div class=\"container-xs-button-flex\">\n" +
+    "            <a ng-show=\"seqStatus === 'result_ready'\"\n" +
+    "               ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">View Results</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -5109,12 +5444,6 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"link-icon__wrap\">\n" +
     "              <a href=\"https://www.instagram.com/adxhealthcare/\" class=\"link-icon instagram\"></a>\n" +
     "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt__wrap txt-center txt-wrap-under-button\">\n" +
-    "            <p class=\"txt txt--exs-small txt-black\">\n" +
-    "              Good.life lets you chat with customers and\n" +
-    "              give them real-time support.\n" +
-    "            </p>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +

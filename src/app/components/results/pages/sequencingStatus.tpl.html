@@ -83,7 +83,7 @@
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'dna_extraction_completed'">
               We are currently extracting DNA from your sample
             </h4>
-            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'dna_delivery_completed'">
+            <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'dna_delivery_completed' || seqStatus === 'ldt_results_sent'">
               We are currently interpreting the results to generate your report
             </h4>
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'result_ready'">
@@ -101,6 +101,11 @@
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'order_cancelled'">
               Your order was cancelled
             </h4>
+          </div>
+
+          <div class="container-xs-button-flex">
+            <a ng-show="seqStatus === 'result_ready'"
+               ui-sref="master_signedin.results({'page':'p1'})" class="bt-round bt-round--sm bt-round--header bt-round--blue-dark">View Results</a>
           </div>
         </div>
       </div>
