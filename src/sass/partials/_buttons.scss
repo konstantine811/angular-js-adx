@@ -477,7 +477,7 @@ button[disabled].bt-round {
 //progressbar
 .progressbar-wrap {
   counter-reset: step;
-  max-width: 997px;
+  max-width: 666px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -493,7 +493,7 @@ button[disabled].bt-round {
   &:before {
     content: counter(step);
     counter-increment: step;
-    font-size: 37px;
+    font-size: 30px;
     font-family: Montserrat, sans-serif;
     width: 66px;
     height: 66px;
@@ -510,7 +510,7 @@ button[disabled].bt-round {
     content: '';
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 6px;
     background-color: $gray;
     top: 29px;
     left: -50%;
