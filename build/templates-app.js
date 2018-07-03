@@ -2508,11 +2508,11 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Based on your genetic testing you're at increased risk of develpoing late onset Alzheimer's disease. </b>\n" +
+    "            <b>Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
-    "            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
+    "            Please remember that genetics is just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -2538,107 +2538,226 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
     "        <h1 class=\"txt-blue-dark\">{{ user.first_name }},</h1>\n" +
-    "        <h3 class=\"txt-blue-dark txt-padding-top\">Consider Your ApoE Genetic Test result is &lte2/e4&gt.</h3>\n" +
+    "        <h3 class=\"txt-blue-dark txt-padding-top\">Your ApoE Genetic Test result is &lte2/e2&gt.</h3>\n" +
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
-    "        <div class=\"txt txt-black\">\n" +
-    "          Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
+    "        <p class=\"txt txt-black\">\n" +
+    "          Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "        </p>\n" +
+    "        <div class=\"txt--indent\">\n" +
+    "          <div class=\"txt txt-black\">\n" +
+    "            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap hide-mobile\">\n" +
+    "        <div class=\"box-shadow box-shadow--not-space-side box-shadow--result-p1\">\n" +
+    "          <div class=\"box-shadow__wrap\">\n" +
+    "            <div class=\"container-flex\">\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h6 class=\"txt-blue-dark txt-center\">Stress</h6>\n" +
+    "                  <div class=\"img__wrap-small txt-center\">\n" +
+    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h6 class=\"txt-blue-dark txt-center\">Exercise</h6>\n" +
+    "                  <div class=\"img__wrap-small txt-center\">\n" +
+    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/heart-orange.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h6 class=\"txt-blue-dark txt-center\">Sleep</h6>\n" +
+    "                  <div class=\"img__wrap-small txt-center\">\n" +
+    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h6 class=\"txt-blue-dark txt-center\">Nutrition</h6>\n" +
+    "                  <div class=\"img__wrap-small txt-center\">\n" +
+    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/broccoli-dark.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "              <div class=\"flex-column\">\n" +
+    "                <div class=\"flex-column__wrap\">\n" +
+    "                  <h6 class=\"txt-blue-dark txt-center\">Brain Stimulation</h6>\n" +
+    "                  <div class=\"img__wrap-small txt-center\">\n" +
+    "                    <ng-include class=\"img-exs human-brain-medical--bgc-silver\" src=\"'../assets/images/svg/human-brain-medical.svg'\"></ng-include>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <div class=\"box-shadow box-shadow--not-space-side box-shadow--result-p1-second\">\n" +
+    "          <div class=\"box-shadow__wrap\">\n" +
+    "            <h4 class=\"txt-blue-dark\">Limitations</h4>\n" +
+    "            <div class=\"txt__wrap\">\n" +
+    "              <p class=\"txt txt-black\">\n" +
+    "                Most of the studies on ApoE and risk for Alzheimer’s have been done in European populations and may be less accurate for other ethnicities.\n" +
+    "              </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"txt__wrap\">\n" +
+    "              <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">This test does not evaluate all genes that may cause an increased risk of late-onset Alzheimer’s disease. </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">This test is not testing for risk of early-onset Alzheimer’s disease. </p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">This test does not diagnosed Alzheimer’s disease or dementia.</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">This test does not include all possible variants or genes for late-onset Alzheimer’s disease.</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">This test does not include most variants or genes linked to early-onset Alzheimer’s disease.</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "              </ul>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title-first txt-blue-dark txt-center-sm\">Learn more</div>\n" +
+    "      <div class=\"section-p1-learn__wrap\">\n" +
+    "        <div class=\"container-flex container-flex--column-sm\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                <ng-include class=\"img-middle notebook-and-pen-svg--bgc-silver\" src=\"'../assets/images/svg/notebook-and-pen.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h4 class=\"txt-blue-dark\">About late-onset Alzheimer’s  disease</h4>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
+    "                  What do we know about late-onset Alzheimer’s disease?\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h4 class=\"txt-blue-dark\">Take action</h4>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
+    "                  Lifestyle and other factors can\n" +
+    "                  also influence the\n" +
+    "                  chances of developing late-\n" +
+    "                  onset Alzheimer’s disease.\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                <ng-include class=\"img-middle\" src=\"'../assets/images/svg/human-plus--bgc-silver.svg'\"></ng-include>\n" +
+    "              </div>\n" +
+    "              <div class=\"title__wrap txt-center\">\n" +
+    "                <h4 class=\"txt-blue-dark\">Share results</h4>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap txt-center\">\n" +
+    "                <p class=\"txt txt-black\">\n" +
+    "                  You may want to share your\n" +
+    "                  results or your experience with\n" +
+    "                  family or friends.\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"section__wrap-md section__wrap-md--sm-not-space\">\n" +
+    "          <div class=\"container-flex container-flex--column-sm\">\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                  <ng-include class=\"img-middle dna-molecule--bgc-silver\" src=\"'../assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap txt-center\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">Science</h4>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap txt-center\">\n" +
+    "                  <p class=\"txt txt-black\">\n" +
+    "                    Learn about the science behind the Alzheimer’s ApoE Genetic Test.\n" +
+    "                  </p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'../assets/images/svg/medical-mail.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap txt-center\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">General questions</h4>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap txt-center\">\n" +
+    "                  <p class=\"txt txt-black\">\n" +
+    "                    Answers to your questions\n" +
+    "                    about genetic testing,\n" +
+    "                    counseling and your results.\n" +
+    "                  </p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"flex-column\">\n" +
+    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
+    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
+    "                  <ng-include class=\"img-middle\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
+    "                </div>\n" +
+    "                <div class=\"title__wrap txt-center\">\n" +
+    "                  <h4 class=\"txt-blue-dark\">Genetic counselor</h4>\n" +
+    "                </div>\n" +
+    "                <div class=\"txt__wrap txt-center\">\n" +
+    "                  <p class=\"txt txt-black\">\n" +
+    "                    You are not in this alone. ADx\n" +
+    "                    Healthcare provides genetic\n" +
+    "                    counselors to go over your\n" +
+    "                    report and answer any\n" +
+    "                    questions you have.\n" +
+    "                  </p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "  <!--section first end-->\n" +
     "  \n" +
-    "  <!--section-seonond-->\n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top clear-both\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <!--chart-->\n" +
-    "      <div class=\"result-chart__wrap\">\n" +
-    "        <div class=\"results-p1-tabs\">\n" +
-    "          <div class=\"results-p1-tabs__wrap\">\n" +
-    "            <uib-tabset active=\"activeTabGender\"  type=\"pills\" class=\"tabs\">\n" +
-    "              <uib-tab  index=\"0\">\n" +
-    "                <uib-tab-heading class=\"btn-tabs\">Male</uib-tab-heading>\n" +
-    "                <div class=\"title__wrap\">\n" +
-    "                  <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
-    "                </div>\n" +
-    "                <div class=\"chart__wrap\">\n" +
-    "                  <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-bar-male.svg'\"></ng-include>\n" +
-    "                  <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-bar-female-mobile.svg'\"></ng-include>\n" +
-    "                </div>\n" +
-    "              </uib-tab>\n" +
-    "              <uib-tab index=\"1\">\n" +
-    "                <uib-tab-heading class=\"btn-tabs\">Female</uib-tab-heading>\n" +
-    "                <div class=\"title__wrap\">\n" +
-    "                  <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
-    "                </div>\n" +
-    "                <div class=\"chart__wrap\">\n" +
-    "                  <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-bar-female.svg'\"></ng-include>\n" +
-    "                  <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-bar-female-mobile.svg'\"></ng-include>\n" +
-    "                </div>\n" +
-    "              </uib-tab>\n" +
-    "            </uib-tabset>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "      <!--charts end-->\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--section second end-->\n" +
-    "  \n" +
-    "  <!--section third-->\n" +
-    "  <div class=\"section__wrap\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"col-sm-12\">\n" +
-    "          <div class=\"table__wrap\">\n" +
-    "            <table class=\"table\">\n" +
-    "              <thead>\n" +
-    "                <tr>\n" +
-    "                  <th scope=\"col\">Age</th>\n" +
-    "                  <th scope=\"col\">e2/e2 or</th>\n" +
-    "                  <th scope=\"col\">e3/e3</th>\n" +
-    "                  <th scope=\"col\">e2/e4</th>\n" +
-    "                  <th scope=\"col\">e3/e4</th>\n" +
-    "                  <th scope=\"col\">e4/e4</th>\n" +
-    "                </tr>\n" +
-    "              </thead>\n" +
-    "              <tbody>\n" +
-    "                <tr>\n" +
-    "                  <td>65</td>\n" +
-    "                  <td>0.2%</td>\n" +
-    "                  <td>0.2%</td>\n" +
-    "                  <td>0.2%</td>\n" +
-    "                  <td>0.2%</td>\n" +
-    "                  <td>0.2%</td>\n" +
-    "                </tr>\n" +
-    "                <tr>\n" +
-    "                  <td>75</td>\n" +
-    "                  <td>1%</td>\n" +
-    "                  <td>1%</td>\n" +
-    "                  <td>1%</td>\n" +
-    "                  <td>1%</td>\n" +
-    "                  <td>1%</td>\n" +
-    "                </tr>\n" +
-    "                <tr>\n" +
-    "                  <td>85</td>\n" +
-    "                  <td>7%</td>\n" +
-    "                  <td>7%</td>\n" +
-    "                  <td>7%</td>\n" +
-    "                  <td>7%</td>\n" +
-    "                  <td>7%</td>\n" +
-    "                </tr>\n" +
-    "              </tbody>\n" +
-    "            </table>\n" +
-    "          </div>\n" +
-    "          <div class=\"txt__wrap\">\n" +
-    "            <div class=\"txt-small txt-black\">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--section third end -->\n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver txt-center\">\n" +
@@ -2682,7 +2801,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "    <div class=\"container-lg--dashboard\">\n" +
     "      <div class=\"result-head__title anim-content-transition txt-left-sm\">\n" +
     "       <div class=\"title__wrap\">\n" +
-    "         <h2 class=\"txt-blue-dark anim-content-transition\">About late-onset Alzheimer's disease</h2>\n" +
+    "         <h1 class=\"txt-blue-dark anim-content-transition\">About late-onset Alzheimer's disease</h1>\n" +
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -2704,109 +2823,220 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "  </div>\n" +
     "  <!--end result-p2 progress-bar-->\n" +
     "  \n" +
-    "  <!--section second-->\n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h3 class=\"txt-blue-dark txt-center\">ApoE Status of US Population</h3>\n" +
-    "      </div>\n" +
-    "      <div class=\"chart__wrap anim-content-transition\">\n" +
-    "        <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-donut-1.svg'\"></ng-include>\n" +
-    "        <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-donut-mobile.svg'\"></ng-include>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--end section second -->\n" +
     "  \n" +
-    "  <!--section third-->\n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
+    "  <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title__wrap\">\n" +
-    "        <h3 class=\"txt-blue-dark\">Understand ApoE</h3>\n" +
+    "      <h2 class=\"txt-blue txt-center\">Symptoms and diagnoses</h2>\n" +
+    "      <div class=\"txt__wrap txt-center\">\n" +
+    "        <p class=\"txt-large txt-black\">Dementia is a term used to describe the symptoms of a loss of brain function. While memory loss is often the first symptom, dementia is actually when two or more brain functions are weakened together. These symptoms may include:</p>\n" +
     "      </div>\n" +
-    "      <div class=\"txt__wrap\">\n" +
-    "        <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype &lte2/e3&gt.</span>There are three common variants of the ApoE gene:</p>\n" +
-    "        <ul class=\"txt--indent-small \">\n" +
-    "          <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
-    "          <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +
-    "          <li><p class=\"txt txt-black\">ApoE-e4</p></li>\n" +
-    "        </ul>\n" +
-    "        <div class=\"txt--indent-small\">\n" +
-    "          <p class=\"txt txt-black\">Like all genes, you have two copies of ApoE, one from your mother and one from your father.  If you receive a different variant of the gene from your mother than from your father, then you are “heterozygous” for that gene (such as e3/e4). If you receive the same variant from each parent, then you have a “homozygous” genotype (such as e3/e3).\n" +
-    "            It is estimated that about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51 However,  when you look at the population based on disease status, two-thirds of the US population living with Alzheimer’s disease carry at least one copy of the ApoE-e4 variant.52,53 Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have a higher risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors.</p>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--end section third-->\n" +
-    "  \n" +
-    "  <!--section fourth-->\n" +
-    "  <div class=\"section__wrap section__wrap--small-pad-top\">\n" +
-    "    <div class=\"container-lg--dashboard container-lg--dashboard--not-space-exlg\">\n" +
-    "      <div class=\"title__wrap\">\n" +
-    "        <h3 class=\"txt-blue-dark txt-space-left-exlg\">Understand this test</h3>\n" +
-    "      </div>\n" +
-    "      <div class=\"boxes-row__wrap\">\n" +
-    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
-    "            <div class=\"box-txt-column__wrap\">\n" +
-    "              <h3 class=\"txt-blue-dark\">How it’s inherited</h3>\n" +
-    "              <div class=\"txt-padding-top\">\n" +
-    "                <p class=\"txt-middle txt-black\">\n" +
-    "                  Tests for the ε4 variant in the APOE gene associated with an increased risk of developing late-onset Alzheimer's disease.\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-image-column__wrap\">\n" +
-    "              <ng-include class=\"box-image-column__inner\" src=\"'./assets/images/svg/gray-puzzle.svg'\"></ng-include>\n" +
+    "      <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
+    "        <div class=\"container-flex container-flex--column-sm\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap txt-center-sm\">\n" +
+    "              <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"box-half-column box-half-column--flex box-shadow\">\n" +
-    "            <div class=\"box-txt-column__wrap\">\n" +
-    "              <h3 class=\"txt-blue-dark\">Limitations</h3>\n" +
-    "              <div class=\"txt-padding-top\">\n" +
-    "                <p class=\"txt-middle txt-black\">\n" +
-    "                  The ε4 variant included in this test is found and has been studied in many ethnicities. Detailed risk estimates have been studied the most in people of European descent.\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-image-column__wrap\">\n" +
-    "              <ng-include class=\"box-image-column__inner\" src=\"'./assets/images/svg/blue-puzzle.svg'\"></ng-include>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"boxes__wrap boxes__wrap--large\">\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <h3 class=\"txt-blue-dark\">Late onset test</h3>\n" +
-    "            <div class=\"box-txt__wrap\">\n" +
-    "              <ul>\n" +
-    "                <li class=\"txt--indent-small\"><p class=\"txt-middle txt-black\">Does not include all possible variants or genes associated with late-onset Alzheimer's disease.\n" +
-    "                </p></li>\n" +
-    "                <li class=\"txt--indent-small\"><p class=\"txt-middle txt-black\">Does not include all possible variants or genes associated with late-onset Alzheimer's disease.\n" +
-    "                </p></li>\n" +
-    "                <li class=\"txt--indent-small\"><p class=\"txt-middle txt-black\">Does not determine a person's full APOE genotype.\n" +
-    "                </p></li>\n" +
+    "          <div class=\"flex-column-2\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <ul class=\"science-p-list science-p-list--space-side\">\n" +
+    "                <li class=\"science-p-list__items\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Memory loss</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Behavioral changes such as agitation, delusions, and hallucinations</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Loss of interest in previously enjoyed activities</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Difficulty with problem solving</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Difficulty performing tasks that were previously easy</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Personality changes</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Loss of social skills and tendency to withdraw or isolate self</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
+    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                    <p class=\"txt txt-black\">Language problems including forgetting names of familiar objects</p>\n" +
+    "                    <p class=\"txt txt-blue\">Source</p>\n" +
+    "                  </div>\n" +
+    "                </li>\n" +
     "              </ul>\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"box-half-column box-shadow\">\n" +
-    "            <div class=\"txt-wrap__border\">\n" +
-    "              <h3 class=\"txt-blue-dark\">This test does not diagnose Alzheimer's disease or any other health conditions.</h3>\n" +
-    "            </div>\n" +
-    "            <div class=\"box-txt__wrap txt--indent-small\">\n" +
-    "              <p class=\"txt-middle txt-black\">Please talk to a healthcare professional if this condition runs in your family, you think you might have this condition, or you have any concerns about your results.\n" +
-    "              </p>\n" +
-    "            </div>\n" +
-    "            <div class=\"txt--indent-small\">\n" +
-    "              <div class=\"txt--indent-small\"><a ui-sref=\"master.science\" class=\"txt-link txt-blue-2 txt-small txt-medium\">See Scientific Details</a></div>\n" +
-    "              <div class=\"txt--indent-small\"><a ui-sref=\"master.FAQ\" class=\"txt-link txt-blue-2 txt-small txt-medium\">See Frequently Asked Questions</a></div>\n" +
-    "            </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div class=\"result-p2-section-silver__wrap\">\n" +
+    "    <div class=\"result-p2-section-silver\">\n" +
+    "      <div class=\"container-lg--dashboard\">\n" +
+    "        <div class=\"title__wrap\">\n" +
+    "          <h3 class=\"txt-blue-dark\">Understand ApoE</h3>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap\">\n" +
+    "          <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype &lte2/e3&gt.</span>There are three common variants of the ApoE gene:</p>\n" +
+    "          <ul class=\"txt--indent-small list-item-size\">\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e4</p></li>\n" +
+    "          </ul>\n" +
+    "          <p class=\"txt txt-black\">Like all genes, you have two copies of ApoE, one from your mother and one from your father.  &ltYou received the same variant f¬rom each parent, thus you have a “homozygous” genotype for the ApoE gene (e2/e2).&gt If you had received a different variant of the gene from your mother than from your father, then you would have been “heterozygous” for the ApoE gene (e2/e3). </p>\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">You are amongst the approximately 73% of the US population that does not carry a copy of the ApoE-e4 variant.  It is estimated that only about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51&gt</p>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        \n" +
+    "        <div class=\"result-p2-chart__wrap\">\n" +
+    "          <div class=\"chart__wrap anim-content-transition\">\n" +
+    "            <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-donut-1.svg'\"></ng-include>\n" +
+    "            <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-donut-mobile.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"txt__wrap txt--indent\">\n" +
+    "          <p class=\"txt txt-black\">\n" +
+    "            When you look at the population based on disease status, two-thirds of the US population living with Alzheimer’s disease carry at least one copy of the ApoE-e4 variant.52,53\n" +
+    "          </p>\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have an increased risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors. </p>\n" +
+    "          </div>\n" +
+    "  \n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have an increased risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors. </p>\n" +
+    "          </div>\n" +
+    "  \n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago54 and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
+    "          </div>\n" +
+    "  \n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">While some medical conditions are solely determined by genetics (for example, muscular dystrophy) and disease outcome is unavoidable, whether or not you carry the ApoE-e4 variant your genetics do not tell the entire story for your Alzheimer’s risk. Because a combination of genetic, medical, lifestyle, and environmental factors influence Alzheimer’s disease, people with the ApoE-e4 variant do not always develop Alzheimer’s disease during their lifespan, and some people who develop Alzheimer’s do not carry the ApoE-e4 variant. While your ApoE genotype is not a sole determinant of disease outcome, learning your genetic risk may help you decide on measured action to reduce your risk in other ways.</p>\n" +
+    "          </div>\n" +
+    "  \n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
+    "          </div>\n" +
+    "  \n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">To understand how this information relates to your genetic risk for Alzheimer’s disease:</p>\n" +
+    "            <ul class=\"science-p-list txt--indent-small\">\n" +
+    "              <li class=\"science-p-list__items\">\n" +
+    "                <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                  <p class=\"txt txt-black\">Identify the graph below with your biologic gender at birth;</p>\n" +
+    "                </div>\n" +
+    "              </li>\n" +
+    "              <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                  <p class=\"txt txt-black\">Locate the section that has your ApoE genotype listed on this report;</p>\n" +
+    "                </div>\n" +
+    "              </li>\n" +
+    "              <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                  <p class=\"txt txt-black\">Refer to each age bar to find the ApoE associated risk for that age level. The bars above your genotype show how your lifetime risk for Alzheimer’s disease increases as you age. It is important to remember that the risk levels for Alzheimer’s disease in the charts below are only based on ApoE status. The influence of other factors, such as lifestyle, environment, and other genetic variants that also contribute to risk were evaluated separately in the research studies used to develop these charts and tables.</p>\n" +
+    "                </div>\n" +
+    "              </li>\n" +
+    "            </ul>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <!--end section fourth-->\n" +
+    "  \n" +
+    "  <section>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <h3 class=\"txt-blue-dark txt-center\">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>\n" +
+    "      </div>\n" +
+    "      <div class=\"chart__wrap\">\n" +
+    "        <ng-include class=\"img hide-mobile\" src=\"'./assets/images/charts/chart-bar-male.svg'\"></ng-include>\n" +
+    "        <ng-include class=\"img hide-desktop\" src=\"'./assets/images/charts/chart-bar-female-mobile.svg'\"></ng-include>\n" +
+    "      </div>\n" +
+    "      <div class=\"section__wrap-md\">\n" +
+    "        <p class=\"txt txt-black\">\n" +
+    "          &ltFor your specific case, a male who lives to age 75, and has an e2/e2 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a male with an e2/e2 ApoE genotype who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 5%.&gt\n" +
+    "        </p>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </section>\n" +
+    "  \n" +
+    "  <div class=\"section__wrap\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"col-sm-12\">\n" +
+    "          <div class=\"table__wrap\">\n" +
+    "            <table class=\"table\">\n" +
+    "              <thead>\n" +
+    "              <tr>\n" +
+    "                <th scope=\"col\">Age</th>\n" +
+    "                <th scope=\"col\">e2/e2 or</th>\n" +
+    "                <th scope=\"col\">e3/e3</th>\n" +
+    "                <th scope=\"col\">e2/e4</th>\n" +
+    "                <th scope=\"col\">e3/e4</th>\n" +
+    "                <th scope=\"col\">e4/e4</th>\n" +
+    "              </tr>\n" +
+    "              </thead>\n" +
+    "              <tbody>\n" +
+    "              <tr>\n" +
+    "                <td>65</td>\n" +
+    "                <td>0.2%</td>\n" +
+    "                <td>0.2%</td>\n" +
+    "                <td>0.2%</td>\n" +
+    "                <td>0.2%</td>\n" +
+    "                <td>0.2%</td>\n" +
+    "              </tr>\n" +
+    "              <tr>\n" +
+    "                <td>75</td>\n" +
+    "                <td>1%</td>\n" +
+    "                <td>1%</td>\n" +
+    "                <td>1%</td>\n" +
+    "                <td>1%</td>\n" +
+    "                <td>1%</td>\n" +
+    "              </tr>\n" +
+    "              <tr>\n" +
+    "                <td>85</td>\n" +
+    "                <td>7%</td>\n" +
+    "                <td>7%</td>\n" +
+    "                <td>7%</td>\n" +
+    "                <td>7%</td>\n" +
+    "                <td>7%</td>\n" +
+    "              </tr>\n" +
+    "              </tbody>\n" +
+    "            </table>\n" +
+    "          </div>\n" +
+    "          <div class=\"txt__wrap txt-center\">\n" +
+    "            <div class=\"txt-small txt-black\">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>\n" +
+    "          </div>\n" +
+    "          <div class=\"section__wrap-md\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              The APOE-e4 variant is associated with stroke and cardiovascular disease risk. &ltAlthough you do not carry the ApoE-e4 variant&gt, living a heart healthy lifestyle is still recommended for your overall health.  There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.17\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
     "    <div class=\"section-bgc--silver\">\n" +

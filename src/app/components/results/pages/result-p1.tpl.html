@@ -34,11 +34,11 @@
        </div>
         <div class="title__wrap">
           <div    class="txt txt-black anim-content-transition">
-            <b>Based on your genetic testing you're at increased risk of develpoing late onset Alzheimer's disease. </b>
+            <b>Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.</b>
             <br>
           </div>
           <div class="txt txt-black anim-content-transition">
-            Please remember that genetics are just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.
+            Please remember that genetics is just one piece of your overall risk for Alzheimer’s disease.  The results of this test do not diagnose Alzheimer’s disease or any other type of dementia.
           </div>
         </div>
       </div>
@@ -64,107 +64,226 @@
       </div>
       <div class="title__wrap anim-content-transition">
         <h1 class="txt-blue-dark">{{ user.first_name }},</h1>
-        <h3 class="txt-blue-dark txt-padding-top">Consider Your ApoE Genetic Test result is &lte2/e4&gt.</h3>
+        <h3 class="txt-blue-dark txt-padding-top">Your ApoE Genetic Test result is &lte2/e2&gt.</h3>
       </div>
       <div class="txt__wrap anim-content-transition">
-        <div class="txt txt-black">
-          Your ApoE genotype indicates that you are at a higher genetic risk for Alzheimer’s disease compared to the average population. It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having a low-risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing the disease. Furthermore, as noted above, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49
+        <p class="txt txt-black">
+          Your ApoE genotype indicates that you are at &lta lower genetic risk&gt for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.
+        </p>
+        <div class="txt--indent">
+          <div class="txt txt-black">
+            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49
+          </div>
+        </div>
+      </div>
+      <div class="title__wrap hide-mobile">
+        <div class="box-shadow box-shadow--not-space-side box-shadow--result-p1">
+          <div class="box-shadow__wrap">
+            <div class="container-flex">
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <h6 class="txt-blue-dark txt-center">Stress</h6>
+                  <div class="img__wrap-small txt-center">
+                    <ng-include class="img-exs" src="'../assets/images/svg/human-brain-cloud.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <h6 class="txt-blue-dark txt-center">Exercise</h6>
+                  <div class="img__wrap-small txt-center">
+                    <ng-include class="img-exs" src="'../assets/images/svg/heart-orange.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <h6 class="txt-blue-dark txt-center">Sleep</h6>
+                  <div class="img__wrap-small txt-center">
+                    <ng-include class="img-exs" src="'../assets/images/svg/moon.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <h6 class="txt-blue-dark txt-center">Nutrition</h6>
+                  <div class="img__wrap-small txt-center">
+                    <ng-include class="img-exs" src="'../assets/images/svg/broccoli-dark.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="flex-column__wrap">
+                  <h6 class="txt-blue-dark txt-center">Brain Stimulation</h6>
+                  <div class="img__wrap-small txt-center">
+                    <ng-include class="img-exs human-brain-medical--bgc-silver" src="'../assets/images/svg/human-brain-medical.svg'"></ng-include>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title__wrap">
+        <div class="box-shadow box-shadow--not-space-side box-shadow--result-p1-second">
+          <div class="box-shadow__wrap">
+            <h4 class="txt-blue-dark">Limitations</h4>
+            <div class="txt__wrap">
+              <p class="txt txt-black">
+                Most of the studies on ApoE and risk for Alzheimer’s have been done in European populations and may be less accurate for other ethnicities.
+              </p>
+            </div>
+            <div class="txt__wrap">
+              <ul class="science-p-list science-p-list--space-side">
+                <li class="science-p-list__items">
+                  <div class="science-p-list-items science-p-list-items--circle-blue-sm">
+                    <p class="txt txt-black">This test does not evaluate all genes that may cause an increased risk of late-onset Alzheimer’s disease. </p>
+                  </div>
+                </li>
+                <li class="science-p-list__items science-p-list__items--small-space-top">
+                  <div class="science-p-list-items science-p-list-items--circle-blue-sm">
+                    <p class="txt txt-black">This test is not testing for risk of early-onset Alzheimer’s disease. </p>
+                  </div>
+                </li>
+                <li class="science-p-list__items science-p-list__items--small-space-top">
+                  <div class="science-p-list-items science-p-list-items--circle-blue-sm">
+                    <p class="txt txt-black">This test does not diagnosed Alzheimer’s disease or dementia.</p>
+                  </div>
+                </li>
+                <li class="science-p-list__items science-p-list__items--small-space-top">
+                  <div class="science-p-list-items science-p-list-items--circle-blue-sm">
+                    <p class="txt txt-black">This test does not include all possible variants or genes for late-onset Alzheimer’s disease.</p>
+                  </div>
+                </li>
+                <li class="science-p-list__items science-p-list__items--small-space-top">
+                  <div class="science-p-list-items science-p-list-items--circle-blue-sm">
+                    <p class="txt txt-black">This test does not include most variants or genes linked to early-onset Alzheimer’s disease.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section__wrap-md section__wrap-md--sm">
+    <div class="container-lg--dashboard">
+      <div class="title-first txt-blue-dark txt-center-sm">Learn more</div>
+      <div class="section-p1-learn__wrap">
+        <div class="container-flex container-flex--column-sm">
+          <div class="flex-column">
+            <div class="flex-column__wrap flex-column__wrap--sm">
+              <div class="img__wrap-section-p1-learn txt-center">
+                <ng-include class="img-middle notebook-and-pen-svg--bgc-silver" src="'../assets/images/svg/notebook-and-pen.svg'"></ng-include>
+              </div>
+              <div class="title__wrap txt-center">
+                <h4 class="txt-blue-dark">About late-onset Alzheimer’s  disease</h4>
+              </div>
+              <div class="txt__wrap txt-center">
+                <p class="txt txt-black">
+                  What do we know about late-onset Alzheimer’s disease?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-column__wrap flex-column__wrap--sm">
+              <div class="img__wrap-section-p1-learn txt-center">
+                <ng-include class="img-middle" src="'../assets/images/svg/human-brain-cloud.svg'"></ng-include>
+              </div>
+              <div class="title__wrap txt-center">
+                <h4 class="txt-blue-dark">Take action</h4>
+              </div>
+              <div class="txt__wrap txt-center">
+                <p class="txt txt-black">
+                  Lifestyle and other factors can
+                  also influence the
+                  chances of developing late-
+                  onset Alzheimer’s disease.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-column__wrap flex-column__wrap--sm">
+              <div class="img__wrap-section-p1-learn txt-center">
+                <ng-include class="img-middle" src="'../assets/images/svg/human-plus--bgc-silver.svg'"></ng-include>
+              </div>
+              <div class="title__wrap txt-center">
+                <h4 class="txt-blue-dark">Share results</h4>
+              </div>
+              <div class="txt__wrap txt-center">
+                <p class="txt txt-black">
+                  You may want to share your
+                  results or your experience with
+                  family or friends.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__wrap-md section__wrap-md--sm-not-space">
+          <div class="container-flex container-flex--column-sm">
+            <div class="flex-column">
+              <div class="flex-column__wrap flex-column__wrap--sm">
+                <div class="img__wrap-section-p1-learn txt-center">
+                  <ng-include class="img-middle dna-molecule--bgc-silver" src="'../assets/images/svg/dna-molecule.svg'"></ng-include>
+                </div>
+                <div class="title__wrap txt-center">
+                  <h4 class="txt-blue-dark">Science</h4>
+                </div>
+                <div class="txt__wrap txt-center">
+                  <p class="txt txt-black">
+                    Learn about the science behind the Alzheimer’s ApoE Genetic Test.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="flex-column__wrap flex-column__wrap--sm">
+                <div class="img__wrap-section-p1-learn txt-center">
+                  <ng-include class="img-middle" src="'../assets/images/svg/medical-mail.svg'"></ng-include>
+                </div>
+                <div class="title__wrap txt-center">
+                  <h4 class="txt-blue-dark">General questions</h4>
+                </div>
+                <div class="txt__wrap txt-center">
+                  <p class="txt txt-black">
+                    Answers to your questions
+                    about genetic testing,
+                    counseling and your results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="flex-column__wrap flex-column__wrap--sm">
+                <div class="img__wrap-section-p1-learn txt-center">
+                  <ng-include class="img-middle" src="'../assets/images/svg/doctor--bgc-silver.svg'"></ng-include>
+                </div>
+                <div class="title__wrap txt-center">
+                  <h4 class="txt-blue-dark">Genetic counselor</h4>
+                </div>
+                <div class="txt__wrap txt-center">
+                  <p class="txt txt-black">
+                    You are not in this alone. ADx
+                    Healthcare provides genetic
+                    counselors to go over your
+                    report and answer any
+                    questions you have.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!--section first end-->
   
-  <!--section-seonond-->
-  <div class="section__wrap section__wrap--small-pad-top clear-both">
-    <div class="container-lg--dashboard">
-      <!--chart-->
-      <div class="result-chart__wrap">
-        <div class="results-p1-tabs">
-          <div class="results-p1-tabs__wrap">
-            <uib-tabset active="activeTabGender"  type="pills" class="tabs">
-              <uib-tab  index="0">
-                <uib-tab-heading class="btn-tabs">Male</uib-tab-heading>
-                <div class="title__wrap">
-                  <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
-                </div>
-                <div class="chart__wrap">
-                  <ng-include class="img hide-mobile" src="'./assets/images/charts/chart-bar-male.svg'"></ng-include>
-                  <ng-include class="img hide-desktop" src="'./assets/images/charts/chart-bar-female-mobile.svg'"></ng-include>
-                </div>
-              </uib-tab>
-              <uib-tab index="1">
-                <uib-tab-heading class="btn-tabs">Female</uib-tab-heading>
-                <div class="title__wrap">
-                  <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
-                </div>
-                <div class="chart__wrap">
-                  <ng-include class="img hide-mobile" src="'./assets/images/charts/chart-bar-female.svg'"></ng-include>
-                  <ng-include class="img hide-desktop" src="'./assets/images/charts/chart-bar-female-mobile.svg'"></ng-include>
-                </div>
-              </uib-tab>
-            </uib-tabset>
-          </div>
-        </div>
-      </div>
-      <!--charts end-->
-    </div>
-  </div>
-  <!--section second end-->
-  
-  <!--section third-->
-  <div class="section__wrap">
-    <div class="container-lg--dashboard">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="table__wrap">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Age</th>
-                  <th scope="col">e2/e2 or</th>
-                  <th scope="col">e3/e3</th>
-                  <th scope="col">e2/e4</th>
-                  <th scope="col">e3/e4</th>
-                  <th scope="col">e4/e4</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>65</td>
-                  <td>0.2%</td>
-                  <td>0.2%</td>
-                  <td>0.2%</td>
-                  <td>0.2%</td>
-                  <td>0.2%</td>
-                </tr>
-                <tr>
-                  <td>75</td>
-                  <td>1%</td>
-                  <td>1%</td>
-                  <td>1%</td>
-                  <td>1%</td>
-                  <td>1%</td>
-                </tr>
-                <tr>
-                  <td>85</td>
-                  <td>7%</td>
-                  <td>7%</td>
-                  <td>7%</td>
-                  <td>7%</td>
-                  <td>7%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="txt__wrap">
-            <div class="txt-small txt-black">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--section third end -->
   
   <div class="section__wrap">
     <div class="section-bgc--silver txt-center">

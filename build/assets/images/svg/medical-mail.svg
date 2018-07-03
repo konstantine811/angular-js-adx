@@ -1,0 +1,29 @@
+<svg class="medical-mail-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 222">
+  <defs>
+    <style>
+      .medical-mail-svg-1 {
+        fill: #f7f7f7;
+      }
+
+      .medical-mail-svg-2 {
+        fill: #cbe5ff;
+      }
+
+      .medical-mail-svg-3 {
+        fill: #a7c5f2;
+      }
+
+      .medical-mail-svg-4 {
+        fill: #063f5f;
+      }
+    </style>
+  </defs>
+  <g id="Group_1037" data-name="Group 1037" transform="translate(-809 -4336)">
+    <circle id="Ellipse_1615" data-name="Ellipse 1615" class="medical-mail-svg-1" cx="111" cy="111" r="111" transform="translate(809 4336)"/>
+    <g id="electronic-medical-record-8787_93b8b898-b9a5-4b4c-852a-040f31e539de" transform="translate(882.603 4412.314)">
+      <path id="layer3" class="medical-mail-svg-2" d="M76.333,69a4,4,0,0,0,4-4V23.667A2.667,2.667,0,0,0,77.667,21h-64A2.667,2.667,0,0,0,11,23.667V65a4,4,0,0,1-4,4Z" transform="translate(-0.333 -5)"/>
+      <path id="layer2" class="medical-mail-svg-3" d="M71.333,25V19.667A2.667,2.667,0,0,0,68.667,17H26V11.667A2.667,2.667,0,0,0,23.333,9H4.667A2.667,2.667,0,0,0,2,11.667V69a4,4,0,0,0,4,4H8.667a4,4,0,0,0,4-4V27.667A2.667,2.667,0,0,1,15.333,25Z" transform="translate(-2 -9)"/>
+      <path id="layer1" class="medical-mail-svg-4" d="M52.667,38.333H43.333V29h-8v9.333H26v8h9.333v9.333h8V46.333h9.333Z" transform="translate(6 -2.333)"/>
+    </g>
+  </g>
+</svg>

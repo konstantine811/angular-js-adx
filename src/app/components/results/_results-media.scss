@@ -21,6 +21,10 @@
 
 @media (max-width: $breakpoint-sm) {
 
+  .section-p1-learn__wrap {
+    padding-top: 0;
+  }
+
   .box-content__wrap {
     padding: 0 15px;
   }

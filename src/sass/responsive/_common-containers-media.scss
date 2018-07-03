@@ -56,6 +56,20 @@
     padding: 0;
   }
 
+  .flex-column__wrap.flex-column__wrap--sm {
+    padding-top: 50px;
+    max-width: 335px;
+    margin: 0 auto;
+  }
+
+  .section__wrap-md--sm {
+    padding-top: 50px;
+  }
+
+  .section__wrap-md.section__wrap-md--sm-not-space {
+    padding: 0;
+  }
+
   .section__wrap {
     padding-top: 50px;
   }

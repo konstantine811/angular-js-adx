@@ -1,0 +1,44 @@
+<svg class="broccoli-dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.855 53.856">
+  <defs>
+    <style>
+      .broccoli-dark-svg-1 {
+        fill: #f9f9f9;
+      }
+
+      .broccoli-dark-svg-2 {
+        fill: #8caf61;
+      }
+
+      .broccoli-dark-svg-3 {
+        fill: #d4dc9a;
+      }
+
+      .broccoli-dark-svg-4 {
+        fill: #a7c180;
+      }
+
+      .broccoli-dark-svg-5 {
+        fill: #063f5f;
+      }
+
+      .broccoli-dark-svg-6 {
+        fill: #41c5eb;
+      }
+    </style>
+  </defs>
+  <g id="Group_866" data-name="Group 866" transform="translate(0)">
+    <g id="Group_861" data-name="Group 861" transform="translate(0)">
+      <circle id="Ellipse_1745" data-name="Ellipse 1745" class="broccoli-dark-svg-1" cx="26.928" cy="26.928" r="26.928"/>
+      <g id="broccoli-7035_440dd187-b5f5-429a-aa22-6ff8b449cb9c" transform="translate(11.143 13.772)">
+        <path id="layer3" class="broccoli-dark-svg-2" d="M30.291,17.547a3.593,3.593,0,0,0-5.679-4.331,6.688,6.688,0,0,0-13.232-.884,3.083,3.083,0,0,0-4.25,2.86c0,.016,0,.031.005.047a4.432,4.432,0,0,0-.521-.051,4.634,4.634,0,0,0,0,9.267,4.618,4.618,0,0,0,.679-.072,3.077,3.077,0,0,0,5.285,1.036H12.6l-.33-3.353a6.662,6.662,0,0,0,7.023-1.858,6.731,6.731,0,0,0,3.133,3l-.477,2.383a3.6,3.6,0,0,0,6.468-.143c.12.01.237.036.36.036a4.115,4.115,0,0,0,1.518-7.941Z" transform="translate(-1.981 -6.961)"/>
+        <path id="layer2" class="broccoli-dark-svg-3" d="M28.983,32.691a6.662,6.662,0,0,1-7.023,1.858l.331,3.355.72,7.275h7.208l1.42-7.1.477-2.383A6.731,6.731,0,0,1,28.983,32.691Z" transform="translate(-11.674 -19.444)"/>
+        <path id="layer1" class="broccoli-dark-svg-4" d="M30.01,48.751V40.568a.515.515,0,1,0-1.03,0v8.183Z" transform="translate(-15.08 -23.016)"/>
+      </g>
+    </g>
+    <g id="broccoli-7035_440dd187-b5f5-429a-aa22-6ff8b449cb9c-2" data-name="broccoli-7035_440dd187-b5f5-429a-aa22-6ff8b449cb9c" transform="translate(10.002 13.496)">
+      <path id="layer3-2" data-name="layer3" class="broccoli-dark-svg-5" d="M32.611,18.414a3.888,3.888,0,0,0-6.145-4.686,7.237,7.237,0,0,0-14.316-.956,3.336,3.336,0,0,0-4.6,3.094c0,.017,0,.034.006.051a4.8,4.8,0,0,0-.564-.056,5.013,5.013,0,0,0,0,10.027,5,5,0,0,0,.735-.078,3.329,3.329,0,0,0,5.719,1.121h.019L13.11,23.3a7.208,7.208,0,0,0,7.6-2.01,7.283,7.283,0,0,0,3.39,3.248l-.516,2.579a3.89,3.89,0,0,0,7-.154c.13.011.257.039.39.039a4.452,4.452,0,0,0,1.643-8.592Z" transform="translate(-1.981 -6.961)"/>
+      <path id="layer2-2" data-name="layer2" class="broccoli-dark-svg-6" d="M29.558,32.691a7.208,7.208,0,0,1-7.6,2.01l.358,3.63L23.1,46.2h7.8l1.537-7.687.516-2.579A7.283,7.283,0,0,1,29.558,32.691Z" transform="translate(-10.831 -18.358)"/>
+      <path id="layer1-2" data-name="layer1" class="broccoli-dark-svg-5" d="M30.094,49.464V40.61a.557.557,0,1,0-1.114,0v8.854Z" transform="translate(-13.94 -21.619)"/>
+    </g>
+  </g>
+</svg>

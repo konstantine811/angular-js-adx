@@ -1,55 +1,67 @@
-<svg class="donut-chart-first" xmlns="http://www.w3.org/2000/svg" viewBox="-5327 -3574 1301.199 303.458">
+<svg class="chart-donut-1-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 293.673">
   <defs>
     <style>
-      .donut-chart-first-1, .donut-chart-first-7 {
-        fill: #41c5eb;
-      }
-
-      .donut-chart-first-2, .donut-chart-first-5 {
+      .chart-donut-1-svg-1, .chart-donut-1-svg-3, .chart-donut-1-svg-6 {
         fill: #063f5f;
       }
 
-      .donut-chart-first-3, .donut-chart-first-6 {
+      .chart-donut-1-svg-1 {
+        font-size: 22px;
+        font-family: Roboto-Medium, Roboto;
+      }
+
+      .chart-donut-1-svg-1, .chart-donut-1-svg-6, .chart-donut-1-svg-7, .chart-donut-1-svg-8, .chart-donut-1-svg-9 {
+        font-weight: 500;
+      }
+
+      .chart-donut-1-svg-2, .chart-donut-1-svg-8 {
+        fill: #41c5eb;
+      }
+
+      .chart-donut-1-svg-4, .chart-donut-1-svg-7 {
         fill: #dd972a;
       }
 
-      .donut-chart-first-4 {
+      .chart-donut-1-svg-5 {
         fill: #f2f2f2;
         opacity: 0.29;
       }
 
-      .donut-chart-first-5, .donut-chart-first-6, .donut-chart-first-7, .donut-chart-first-8 {
-        font-size: 26px;
+      .chart-donut-1-svg-6, .chart-donut-1-svg-7, .chart-donut-1-svg-8, .chart-donut-1-svg-9 {
+        font-size: 18px;
         font-family: CircularStd-Medium, Circular Std Medium;
-        font-weight: 500;
       }
     </style>
   </defs>
-  <g id="Group_775" data-name="Group 775" transform="translate(-5807 -4422)">
-    <g id="Group_745" data-name="Group 745" transform="translate(10 -2164)">
-      <path id="Path_684" data-name="Path 684" class="donut-chart-first-1" d="M219.556-129.894A151.642,151.642,0,1,1,69.277,42.036L219.556,21.749Z" transform="translate(402.104 3141.894)"/>
-      <path id="Path_685" data-name="Path 685" class="donut-chart-first-2" d="M70.325,41.12A151.643,151.643,0,0,1,200.316-129.447q.593-.08,1.187-.155L220.6,20.832Z" transform="translate(401.056 3142.81)"/>
-      <path id="Path_686" data-name="Path 686" class="donut-chart-first-3" d="M100.945-128.686a151.639,151.639,0,0,1,19.1-1.208V21.749Z" transform="translate(501.614 3141.894)"/>
+  <g id="Group_833" data-name="Group 833" transform="translate(-480.467 -736.25)">
+    <text id="ApoE_breakdown_of_the_US_population" data-name="ApoE breakdown of the US population" class="chart-donut-1-svg-1" transform="translate(480.466 736.25)"><tspan x="23.956" y="21">ApoE breakdown of the US </tspan><tspan x="102.132" y="48">population</tspan></text>
+    <g id="Group_745" data-name="Group 745" transform="translate(514 814.653)">
+      <path id="Path_684" data-name="Path 684" class="chart-donut-1-svg-2" d="M175.884-129.894A107.574,107.574,0,0,1,283.457-22.32,107.574,107.574,0,0,1,175.884,85.254,107.574,107.574,0,0,1,69.277-7.928L175.884-22.32Z" transform="translate(-68.297 129.894)"/>
+      <path id="Path_685" data-name="Path 685" class="chart-donut-1-svg-3" d="M69.923-8.493a107.574,107.574,0,0,1,92.215-121q.421-.057.842-.11L176.53-22.885Z" transform="translate(-68.943 130.459)"/>
+      <path id="Path_686" data-name="Path 686" class="chart-donut-1-svg-4" d="M100.945-129.037a107.57,107.57,0,0,1,13.55-.857V-22.32Z" transform="translate(-6.909 129.894)"/>
     </g>
-    <path id="Path_687" data-name="Path 687" class="donut-chart-first-2" d="M318.691-144.929a151.643,151.643,0,1,1-55.823,292.636L318.691,6.714Z" transform="translate(1310.866 992.929)"/>
-    <path id="Path_689" data-name="Path 689" class="donut-chart-first-3" d="M315.455,44.225a151.643,151.643,0,0,1-77.062-67.939L371.279-96.768Z" transform="translate(1258.278 1096.411)"/>
-    <path id="Path_688" data-name="Path 688" class="donut-chart-first-1" d="M251.212,79.768A151.643,151.643,0,0,1,384.1-144.929V6.714Z" transform="translate(1245.459 992.929)"/>
-    <rect id="Rectangle_637" data-name="Rectangle 637" class="donut-chart-first-4" width="355.5" height="303.457" rx="54" transform="translate(953 848)"/>
-    <g id="Group_748" data-name="Group 748" transform="translate(4.626 -2164)">
-      <text id="_25_" data-name="25%" class="donut-chart-first-5" transform="translate(853.374 3086.038)"><tspan x="0" y="0">25%</tspan></text>
-      <text id="_56_" data-name="56%" class="donut-chart-first-5" transform="translate(1348.374 3086.038)"><tspan x="0" y="0">56%</tspan></text>
-      <text id="_2_" data-name="2%" class="donut-chart-first-6" transform="translate(867.374 3172.038)"><tspan x="0" y="0">2%</tspan></text>
-      <text id="_11_" data-name="11%" class="donut-chart-first-6" transform="translate(1348.374 3172.038)"><tspan x="0" y="0">11%</tspan></text>
-      <text id="_73_" data-name="73%" class="donut-chart-first-7" transform="translate(854.374 3258.038)"><tspan x="0" y="0">73%</tspan></text>
-      <text id="_33_" data-name="33%" class="donut-chart-first-7" transform="translate(1349.374 3258.038)"><tspan x="0" y="0">33%</tspan></text>
+    <rect id="Rectangle_637" data-name="Rectangle 637" class="chart-donut-1-svg-5" width="252.189" height="215.27" rx="54" transform="translate(815.543 814.653)"/>
+    <g id="Group_748" data-name="Group 748" transform="translate(748.15 848.731)">
+      <text id="_25_" data-name="25%" class="chart-donut-1-svg-6" transform="translate(0 18)"><tspan x="0" y="0">25%</tspan></text>
+      <text id="_56_" data-name="56%" class="chart-donut-1-svg-6" transform="translate(351.149 18)"><tspan x="0" y="0">56%</tspan></text>
+      <text id="_2_" data-name="2%" class="chart-donut-1-svg-7" transform="translate(9.931 79.008)"><tspan x="0" y="0">2%</tspan></text>
+      <text id="_11_" data-name="11%" class="chart-donut-1-svg-7" transform="translate(351.149 79.008)"><tspan x="0" y="0">11%</tspan></text>
+      <text id="_73_" data-name="73%" class="chart-donut-1-svg-8" transform="translate(0.709 140.015)"><tspan x="0" y="0">73%</tspan></text>
+      <text id="_33_" data-name="33%" class="chart-donut-1-svg-8" transform="translate(351.859 140.015)"><tspan x="0" y="0">33%</tspan></text>
     </g>
-    <g id="Group_749" data-name="Group 749" transform="translate(-1 -2164)">
-      <text id="One_copy_of_e4" data-name="One copy of e4" class="donut-chart-first-8" transform="translate(1058.374 3088.038)"><tspan x="0" y="0">One copy of e4</tspan></text>
-      <circle id="Ellipse_1642" data-name="Ellipse 1642" class="donut-chart-first-2" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3057)"/>
-      <text id="Two_copies_of_e4" data-name="Two copies of e4" class="donut-chart-first-8" transform="translate(1058.374 3174.038)"><tspan x="0" y="0">Two copies of e4</tspan></text>
-      <circle id="Ellipse_1642-2" data-name="Ellipse 1642" class="donut-chart-first-3" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3143)"/>
-      <text id="No_copies_of_e4" data-name="No copies of e4" class="donut-chart-first-8" transform="translate(1058.374 3260.038)"><tspan x="0" y="0">No copies of e4</tspan></text>
-      <circle id="Ellipse_1642-3" data-name="Ellipse 1642" class="donut-chart-first-1" cx="20.988" cy="20.988" r="20.988" transform="translate(1003 3229)"/>
+    <g id="Group_749" data-name="Group 749" transform="translate(850.303 846.576)">
+      <text id="One_copy_of_e4" data-name="One copy of e4" class="chart-donut-1-svg-9" transform="translate(39.282 21.574)"><tspan x="0" y="0">One copy of e4</tspan></text>
+      <circle id="Ellipse_1642" data-name="Ellipse 1642" class="chart-donut-1-svg-3" cx="14.889" cy="14.889" r="14.889" transform="translate(0 0)"/>
+      <text id="Two_copies_of_e4" data-name="Two copies of e4" class="chart-donut-1-svg-9" transform="translate(39.282 82.582)"><tspan x="0" y="0">Two copies of e4</tspan></text>
+      <circle id="Ellipse_1642-2" data-name="Ellipse 1642" class="chart-donut-1-svg-4" cx="14.889" cy="14.889" r="14.889" transform="translate(0 61.008)"/>
+      <text id="No_copies_of_e4" data-name="No copies of e4" class="chart-donut-1-svg-9" transform="translate(39.282 143.589)"><tspan x="0" y="0">No copies of e4</tspan></text>
+      <circle id="Ellipse_1642-3" data-name="Ellipse 1642" class="chart-donut-1-svg-2" cx="14.889" cy="14.889" r="14.889" transform="translate(0 122.015)"/>
     </g>
+    <g id="Group_1169" data-name="Group 1169" transform="translate(-23)">
+      <path id="Path_687" data-name="Path 687" class="chart-donut-1-svg-3" d="M302.468-144.929A107.574,107.574,0,0,1,410.042-37.355,107.574,107.574,0,0,1,302.468,70.219a107.575,107.575,0,0,1-39.6-7.554l39.6-100.02Z" transform="translate(993.018 959.582)"/>
+      <path id="Path_689" data-name="Path 689" class="chart-donut-1-svg-4" d="M293.06,3.252a107.574,107.574,0,0,1-54.667-48.2l94.268-51.824Z" transform="translate(962.826 1018.995)"/>
+      <path id="Path_688" data-name="Path 688" class="chart-donut-1-svg-2" d="M245.753,14.469A107.574,107.574,0,0,1,288.2-131.623a107.573,107.573,0,0,1,51.824-13.306V-37.355Z" transform="translate(955.466 959.582)"/>
+    </g>
+    <text id="ApoE_Status_of_US_Population_living_with_Alzheimer_s_disease" data-name="ApoE Status of US Population living with Alzheimer’s disease" class="chart-donut-1-svg-1" transform="translate(1074.466 736.25)"><tspan x="22.502" y="21">ApoE Status of US Population </tspan><tspan x="17.958" y="48">living with Alzheimer’s disease</tspan></text>
   </g>
 </svg>

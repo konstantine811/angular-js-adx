@@ -72,6 +72,12 @@
   padding: 45px 20px 0;
 }
 
+.img__wrap-small {
+  width: auto;
+  height: auto;
+  padding-top: 15px;
+}
+
 .img-border-wrap {
   width: 360px;
   height: 360px;
@@ -123,6 +129,13 @@
   display: inline-block;
 }
 
+.img-exs {
+  max-width: 55px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
 .img-logo {
   max-width: 80%;
   width: 100%;
@@ -138,8 +151,12 @@
   }
 }
 
-.dna-molecule--bgc-silver {
-  .dna-molecule-svg-1 {
+.dna-molecule--bgc-silver,
+.human-brain-medical--bgc-silver,
+.notebook-and-pen-svg--bgc-silver {
+  .dna-molecule-svg-1,
+  .human-brain-medical-svg-1,
+  .notebook-and-pen-svg-1 {
     fill: $silver-4;
   }
 }

@@ -29,6 +29,9 @@
   box-shadow: $box-shadow;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
+  &.box-shadow--not-space-side {
+    margin: 13px 0;
+  }
 }
 
 .box-shadow.box-shadow--tabs {

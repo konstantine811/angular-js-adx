@@ -7567,6 +7567,9 @@ body {
   font-family: Roboto, Montserrat, sans-serif;
   font-weight: 400; }
 
+.list-item-size {
+  font-size: 22px; }
+
 .error-message.error-animate-show {
   position: fixed;
   top: 80px;
@@ -8963,6 +8966,11 @@ h6 {
   height: auto;
   padding: 45px 20px 0; }
 
+.img__wrap-small {
+  width: auto;
+  height: auto;
+  padding-top: 15px; }
+
 .img-border-wrap {
   width: 360px;
   height: 360px;
@@ -9007,6 +9015,12 @@ h6 {
   height: auto;
   display: inline-block; }
 
+.img-exs {
+  max-width: 55px;
+  width: 100%;
+  height: auto;
+  display: inline-block; }
+
 .img-logo {
   max-width: 80%;
   width: 100%;
@@ -9016,7 +9030,15 @@ h6 {
 .human-brain-cloud--bgc-white .human-brain-cloud-svg-1 {
   fill: #fff; }
 
-.dna-molecule--bgc-silver .dna-molecule-svg-1 {
+.dna-molecule--bgc-silver .dna-molecule-svg-1,
+.dna-molecule--bgc-silver .human-brain-medical-svg-1,
+.dna-molecule--bgc-silver .notebook-and-pen-svg-1,
+.human-brain-medical--bgc-silver .dna-molecule-svg-1,
+.human-brain-medical--bgc-silver .human-brain-medical-svg-1,
+.human-brain-medical--bgc-silver .notebook-and-pen-svg-1,
+.notebook-and-pen-svg--bgc-silver .dna-molecule-svg-1,
+.notebook-and-pen-svg--bgc-silver .human-brain-medical-svg-1,
+.notebook-and-pen-svg--bgc-silver .notebook-and-pen-svg-1 {
   fill: #f3f3f3; }
 
 .doctor--bgc-silver .doctor-svg-1 {
@@ -9051,6 +9073,8 @@ h6 {
   box-shadow: 0 0 28px -3px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%; }
+  .box-shadow.box-shadow--not-space-side {
+    margin: 13px 0; }
 
 .box-shadow.box-shadow--tabs {
   padding: 0px 4% 40px; }
@@ -10443,6 +10467,25 @@ textarea.form-control {
 .tabs-link-bottom {
   cursor: pointer; }
 
+.box-shadow.box-shadow--result-p1 {
+  padding: 15px 30px;
+  max-width: 604px; }
+
+.box-shadow.box-shadow--result-p1-second {
+  padding: 35px 50px; }
+
+.section-p1-learn__wrap {
+  padding-top: 34px; }
+
+.result-p2-section-silver__wrap {
+  padding-top: 70px; }
+
+.result-p2-section-silver {
+  background-color: #F9FBFD;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px; }
+
 @keyframes anim-height {
   0% {
     max-height: 463px; }
@@ -11056,6 +11099,17 @@ textarea.form-control {
   .flex-column__wrap--not-space-sm {
     padding: 0; }
 
+  .flex-column__wrap.flex-column__wrap--sm {
+    padding-top: 50px;
+    max-width: 335px;
+    margin: 0 auto; }
+
+  .section__wrap-md--sm {
+    padding-top: 50px; }
+
+  .section__wrap-md.section__wrap-md--sm-not-space {
+    padding: 0; }
+
   .section__wrap {
     padding-top: 50px; }
 
@@ -11552,6 +11606,9 @@ textarea.form-control {
     min-height: 350px;
     padding-bottom: 50px; } }
 @media (max-width: 768px) {
+  .section-p1-learn__wrap {
+    padding-top: 0; }
+
   .box-content__wrap {
     padding: 0 15px; }
 

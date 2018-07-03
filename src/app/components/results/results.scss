@@ -212,6 +212,30 @@
   cursor: pointer;
 }
 
+.box-shadow.box-shadow--result-p1 {
+  padding: 15px 30px;
+  max-width: 604px;
+}
+
+.box-shadow.box-shadow--result-p1-second {
+  padding: 35px 50px;
+}
+
+.section-p1-learn__wrap {
+  padding-top: 34px;
+}
+
+
+.result-p2-section-silver__wrap {
+  padding-top: 70px;
+}
+
+.result-p2-section-silver {
+  background-color: $silver;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+}
 
 @keyframes anim-height {
   0% {
