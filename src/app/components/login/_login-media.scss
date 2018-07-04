@@ -1,6 +1,12 @@
-@media (max-width: $breakpoint-lg) {
-  .login-page {
+@media (max-height: 892px) {
+  .page .login-page {
     height: 100%;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .login-page {
+    height: calc(100vh - 55px);
   }
 }
 

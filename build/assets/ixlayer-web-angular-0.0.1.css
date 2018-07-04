@@ -9586,7 +9586,7 @@ ul.box__wrap {
   padding-bottom: 119px; }
 
 .login-page {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   width: 100%;
   padding-bottom: 55px; }
 
@@ -10266,7 +10266,7 @@ textarea.form-control {
   /* old ie */ }
 
 .register-page {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   width: 100%; }
 
 .register-form__wrap {
@@ -11729,18 +11729,24 @@ textarea.form-control {
   .info-about__img, .info-about__txt {
     width: 100%;
     max-width: 360px; } }
-@media (max-width: 1200px) {
-  .login-page {
+@media (max-height: 892px) {
+  .page .login-page {
     height: 100%; } }
+@media (max-width: 768px) {
+  .login-page {
+    height: calc(100vh - 55px); } }
 @media (max-width: 468px) {
   .login-form {
     padding: 15px; }
 
   .form-input__login-wrap {
     padding-top: 15px; } }
-@media (max-width: 1200px) {
-  .register-page {
+@media (max-height: 960px) {
+  .page .register-page {
     height: 100%; } }
+@media (max-width: 768px) {
+  .register-page {
+    height: calc(100vh - 55px); } }
 @media (max-width: 1596px) {
   .about-section-fourth_form-map-overlap {
     left: calc(36% - 235px); }

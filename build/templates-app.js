@@ -3201,7 +3201,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        <div ng-if=\"gender == 'F' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-female-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-female-chart.svg'\"></div>\n" +
     "      </div>\n" +
-    "      <div class=\"section__wrap-md\">\n" +
+    "      <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
     "        <p class=\"txt txt-black\">\n" +
     "          &ltFor your specific case, a male who lives to age 75, and has an e2/e2 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a male with an e2/e2 ApoE genotype who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 5%.&gt\n" +
     "        </p>\n" +
@@ -3228,7 +3228,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "            <div ng-if=\"gender == 'F' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-female-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-female-table.svg'\"></div>\n" +
     "          </div>\n" +
-    "          <div class=\"section__wrap-md\">\n" +
+    "          <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
     "            <p class=\"txt txt-black\">\n" +
     "              The APOE-e4 variant is associated with stroke and cardiovascular disease risk. &ltAlthough you do not carry the ApoE-e4 variant&gt, living a heart healthy lifestyle is still recommended for your overall health.  There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.17\n" +
     "            </p>\n" +
