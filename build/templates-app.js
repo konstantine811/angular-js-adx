@@ -1418,12 +1418,40 @@ angular.module("components/legal/legal.tpl.html", []).run(["$templateCache", fun
     "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            <span class=\"txt-bold\">29.	Miscellaneous</span><br>\n" +
     "                                            Entire Agreement. The TOS and all applicable additional terms, guidelines, or rules referenced herein (e.g., our Privacy Policy) constitute the entire agreement between you and ADx Healthcare and govern your use of the Services, superseding any prior agreements between you and ADx Healthcare on this subject. You also may be subject to additional terms and conditions that may apply when you use affiliate services, third-party content, or third-party software\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Applicable law and arbitration. Except for any disputes relating to intellectual property rights, obligations, or any infringement claims, any disputes with ADx Healthcare arising out of or relating to the TOS (\"Disputes\") shall be governed by Washington law regardless of your country of origin or where you access ADx Healthcare Services, and notwithstanding of any conflicts of law principles and the United Nations Convention for the International Sale of Goods. Any Disputes shall be resolved by final and binding arbitration under the rules and auspices of the American Arbitration Association, to be held in Bellingham, Washington, in English, with a written decision stating legal reasoning issued by the arbitrator(s) at either party's request, and with arbitration costs and reasonable documented attorneys' costs of both parties to be borne by the party that ultimately loses. Either party may obtain injunctive relief (preliminary or permanent) and orders to compel arbitration or enforce arbitral awards in any court of competent jurisdiction.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Waiver. The failure of ADx Healthcare to exercise or enforce any right or provision of the TOS shall not constitute a waiver of such right or provision. If any provision of the TOS is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give effect to the parties' intentions as reflected in the provision, and the other provisions of the TOS remain in full force and effect.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Term for cause of action. You agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to use of the Services or the TOS must be filed within one (1) year after such claim or cause of action arose or be forever barred.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Admissibility of printed version. A printed version of this agreement and of any notice given in electronic form shall be admissible in judicial or administrative proceedings based upon or relating to this agreement to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Section numbers and titles. The section numbers and titles in the TOS are for convenience only and have no legal or contractual effect.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Severability Clause. If any portion of these TOS is found to be unenforceable, the remaining portion will remain in full force and effect.\n" +
+    "                                        </p>\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt--indent-small\">\n" +
+    "                                        <p class=\"txt-middle txt-black\">\n" +
     "                                            Assignment: You may not assign or delegate any rights or obligations under the TOS. Any purported assignment and delegation shall be ineffective. We may freely assign or delegate all rights and obligations under the TOS, fully or partially without notice to you. We may also substitute, by way of unilateral novation, effective upon notice to you, ADx Healthcare for any third party that assumes our rights and obligations under this TOS.\n" +
     "                                        </p>\n" +
     "                                    </div>\n" +
