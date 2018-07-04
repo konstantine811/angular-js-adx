@@ -77,6 +77,8 @@ angular.module( 'ixlayer.results', [
             $scope.productStatus.custom_data['requisition_num'] + '&service_id=results-delivery-30&state_id=';
           if (results.length > 0) {
             $scope.results = results[0].result;
+            $scope.gender = $scope.results.gender;
+            $scope.probability = $scope.results.prob;
             switch ($scope.results.name) {
               case 'e2/e2':
               case 'e2/e3':

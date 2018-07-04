@@ -195,11 +195,22 @@
   <section>
     <div class="container-lg--dashboard">
       <div class="title__wrap">
-        <h3 class="txt-blue-dark txt-center">Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
+        <h3 class="txt-blue-dark txt-center">Your Lifetime Risk (%) for Alzheimer’s disease by Age and ApoE Genotype</h3>
       </div>
       <div class="chart__wrap">
-        <ng-include class="img hide-mobile" src="'./assets/images/charts/chart-bar-male.svg'"></ng-include>
-        <ng-include class="img hide-desktop" src="'./assets/images/charts/chart-bar-female-mobile.svg'"></ng-include>
+        <div ng-if="gender == 'M' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-male-chart.svg'"></div>
+        <div ng-if="gender == 'M' && results.name == 'e2/e4'" class="img" ng-include="'./assets/images/charts/e2-e4-male-chart.svg'"></div>
+        <div ng-if="gender == 'M' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-male-chart.svg'"></div>
+        <div ng-if="gender == 'M' && results.name == 'e3/e3'" class="img" ng-include="'./assets/images/charts/e3-e3-male-chart.svg'"></div>
+        <div ng-if="gender == 'M' && results.name == 'e3/e4'" class="img" ng-include="'./assets/images/charts/e3-e4-male-chart.svg'"></div>
+        <div ng-if="gender == 'M' && results.name == 'e4/e4'" class="img" ng-include="'./assets/images/charts/e4-e4-male-chart.svg'"></div>
+
+        <div ng-if="gender == 'F' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-female-chart.svg'"></div>
+        <div ng-if="gender == 'F' && results.name == 'e2/e4'" class="img" ng-include="'./assets/images/charts/e2-e4-female-chart.svg'"></div>
+        <div ng-if="gender == 'F' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-female-chart.svg'"></div>
+        <div ng-if="gender == 'F' && results.name == 'e3/e3'" class="img" ng-include="'./assets/images/charts/e3-e3-female-chart.svg'"></div>
+        <div ng-if="gender == 'F' && results.name == 'e3/e4'" class="img" ng-include="'./assets/images/charts/e3-e4-female-chart.svg'"></div>
+        <div ng-if="gender == 'F' && results.name == 'e4/e4'" class="img" ng-include="'./assets/images/charts/e4-e4-female-chart.svg'"></div>
       </div>
       <div class="section__wrap-md">
         <p class="txt txt-black">
@@ -213,48 +224,20 @@
     <div class="container-lg--dashboard">
       <div class="row">
         <div class="col-sm-12">
-          <div class="table__wrap">
-            <table class="table">
-              <thead>
-              <tr>
-                <th scope="col">Age</th>
-                <th scope="col">e2/e2 or</th>
-                <th scope="col">e3/e3</th>
-                <th scope="col">e2/e4</th>
-                <th scope="col">e3/e4</th>
-                <th scope="col">e4/e4</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>65</td>
-                <td>0.2%</td>
-                <td>0.2%</td>
-                <td>0.2%</td>
-                <td>0.2%</td>
-                <td>0.2%</td>
-              </tr>
-              <tr>
-                <td>75</td>
-                <td>1%</td>
-                <td>1%</td>
-                <td>1%</td>
-                <td>1%</td>
-                <td>1%</td>
-              </tr>
-              <tr>
-                <td>85</td>
-                <td>7%</td>
-                <td>7%</td>
-                <td>7%</td>
-                <td>7%</td>
-                <td>7%</td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="txt__wrap txt-center">
-            <div class="txt-small txt-black">*Adapted from Genin et al.56 Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details.</div>
+          <div class="chart__wrap">
+            <div ng-if="gender == 'M' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-male-table.svg'"></div>
+            <div ng-if="gender == 'M' && results.name == 'e2/e4'" class="img" ng-include="'./assets/images/charts/e2-e4-male-table.svg'"></div>
+            <div ng-if="gender == 'M' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-male-table.svg'"></div>
+            <div ng-if="gender == 'M' && results.name == 'e3/e3'" class="img" ng-include="'./assets/images/charts/e3-e3-male-table.svg'"></div>
+            <div ng-if="gender == 'M' && results.name == 'e3/e4'" class="img" ng-include="'./assets/images/charts/e3-e4-male-table.svg'"></div>
+            <div ng-if="gender == 'M' && results.name == 'e4/e4'" class="img" ng-include="'./assets/images/charts/e4-e4-male-table.svg'"></div>
+
+            <div ng-if="gender == 'F' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-female-table.svg'"></div>
+            <div ng-if="gender == 'F' && results.name == 'e2/e4'" class="img" ng-include="'./assets/images/charts/e2-e4-female-table.svg'"></div>
+            <div ng-if="gender == 'F' && results.name == 'e2/e2'" class="img" ng-include="'./assets/images/charts/e2-e2-female-table.svg'"></div>
+            <div ng-if="gender == 'F' && results.name == 'e3/e3'" class="img" ng-include="'./assets/images/charts/e3-e3-female-table.svg'"></div>
+            <div ng-if="gender == 'F' && results.name == 'e3/e4'" class="img" ng-include="'./assets/images/charts/e3-e4-female-table.svg'"></div>
+            <div ng-if="gender == 'F' && results.name == 'e4/e4'" class="img" ng-include="'./assets/images/charts/e4-e4-female-table.svg'"></div>
           </div>
           <div class="section__wrap-md">
             <p class="txt txt-black">
