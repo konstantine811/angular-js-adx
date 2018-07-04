@@ -31,11 +31,13 @@
 /* container styling */
 
 .container-pdf {
-  max-width: 842px;
+  max-width: 612px;
+  height: 792px;
   margin: 0 auto;
-  height: auto;
   padding: 22px 34px;
   width: 100%;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .container-sm {
@@ -189,6 +191,17 @@
   margin: 0 auto;
 }
 
+.txt-md-2 {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  color: black;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 h1, .title-first {
   font-family: Roboto, sans-serif;
   font-size: 22px;
@@ -270,24 +283,44 @@ h3 {
   padding-top: 5px;
 }
 
+.list-item__wrap--more-space {
+  padding-top: 8px;
+}
+
 .list-item__content {
   width: 100%;
   height: auto;
   position: relative;
-}
-
-.list-item__content--circle-blue-sm {
   padding-left: 14px;
 }
 
-.list-item__content--circle-blue-sm::before {
+.list-item__content::before {
   content: '';
   width: 6px;
   height: 6px;
   position: absolute;
-  background-color:#41C5EB;
   border-radius: 50%;
   top: 3px;
   left: 0;
 }
+
+
+.list-item__content--circle-blue-sm::before {
+  background-color:#41C5EB;
+}
+
+.list-item__content--circle-black-sm::before {
+  background-color:black;
+}
 /* end list item */
+
+
+.results-header {
+  width: 100%;
+}
+
+
+.results-footer {
+  align-self: center;
+  width: 100%;
+}
