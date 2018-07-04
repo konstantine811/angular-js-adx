@@ -5287,7 +5287,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "          </div>\n" +
     "          <div class=\"science-p__wrap-bottom\">\n" +
     "            <div class=\"title__wrap txt-center\">\n" +
-    "              <p class=\"txt-large txt-black txt-bold\">SOURCE: www.medhelp.org/senior-care/articles/Dementia-vs-Alzheimers-Whats-theDifference/161</p>\n" +
+    "              <p class=\"txt-large txt-black txt-bold\">SOURCE: <a target=\"_blank\" href=\"https://www.medhelp.org/senior-care/articles/Dementia-vs-Alzheimers-Whats-theDifference/161\">https://www.medhelp.org/senior-care/articles/Dementia-vs-Alzheimers-Whats-theDifference/161</a></p>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap txt-center\">\n" +
     "              <p class=\"txt-large txt-black\">Unfortunately, there is not a single universally accepted standard of care for diagnosing or treating Alzheimer’s disease in the US. This leaves many people seeking answers alone.</p>\n" +
