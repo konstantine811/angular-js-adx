@@ -225,35 +225,41 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/change_password/change_password.tpl.html",
-    "<div class=\"container-fluid\">\n" +
+    "<div class=\"login-bgc login-page\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"row\">\n" +
-    "        <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "            <h1>Change Password</h1>\n" +
-    "            <div class=\"panel\" ng-controller=\"ChangePasswordCtrl\">\n" +
-    "                <div ng-show=\"!success\">\n" +
-    "                <form name=\"form\" novalidate ng-submit=\"changeSubmit(userForm)\">\n" +
+    "      <div class=\"col-sm-8 col-sm-offset-2\">\n" +
+    "        <div class=\"fp-p-form fp-p-form-wrapper\">\n" +
+    "          <div class=\"title__wrap\">\n" +
+    "            <h1 class=\"txt-center\">Change Password</h1>\n" +
+    "          </div>\n" +
+    "          <div class=\"panel panel-wrapper\" ng-controller=\"ChangePasswordCtrl\">\n" +
+    "            <div ng-show=\"!success\">\n" +
+    "              <form name=\"form\" novalidate ng-submit=\"changeSubmit(userForm)\">\n" +
     "                <div class=\"form-group\">\n" +
-    "                    <label>New Password</label>\n" +
-    "                    <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
-    "                    <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
-    "                        <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
-    "                        <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
-    "                    </div>\n" +
+    "                  <label>New Password</label>\n" +
+    "                  <input type=\"password\" name=\"password\" class=\"form-control\" ng-model=\"userForm.password\" ng-minlength=\"5\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.password.$dirty\">\n" +
+    "                    <div class=\"error\" ng-show=\"form.password.$error.required\">This field is required</div>\n" +
+    "                    <div class=\"error\" ng-show=\"form.password.$error.minlength && !form.password.pristine\">Password must be at least 5 characters long</div>\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
-    "                    <label>Confirm Password</label>\n" +
-    "                    <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
-    "                    <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
+    "                  <label>Confirm Password</label>\n" +
+    "                  <input type=\"password\" name=\"confirm_password\" class=\"form-control\" ng-model=\"userForm.confirm_password\" password-verify match-target=\"userForm.password\" required>\n" +
+    "                  <div class=\"error\" ng-show=\"form.confirm_password.$error.match && form.confirm_password.$dirty\">Passwords do not match.</div>\n" +
     "                </div>\n" +
-    "                    <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
-    "                </form>\n" +
-    "                </div>\n" +
-    "                <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
-    "                <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
-    "                <div class=\"alert alert-success\" ng-if=\"success\">Great! Your password was changed successfully.</div>\n" +
+    "                <button class=\"btn btn-primary\" type=\"submit\" ng-disabled=\"form.$invalid\">Submit</button>\n" +
+    "              </form>\n" +
     "            </div>\n" +
+    "            <div class=\"alert alert-danger\" ng-repeat=\"error in errors.password\">{{::error}}</div>\n" +
+    "            <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "            <div class=\"alert alert-success\" ng-if=\"success\">Great! Your password was changed successfully.</div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
+    "      </div>\n" +
     "    </div>\n" +
+    "  </div>\n" +
     "</div>");
 }]);
 
@@ -557,7 +563,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<section class=\"fp-p login-bgc\">\n" +
+    "<section class=\"login-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"fp-p__wrap\">\n" +
     "      <div class=\"fp-p-form\">\n" +
