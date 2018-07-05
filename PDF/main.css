@@ -1,5 +1,49 @@
 /* common styling */
 
+
+/* grid style */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Row */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    position: relative;
+    float: left;
+}
+
+.col-1  { width: 8.33333333%; }
+.col-2  { width: 16.66666667%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33333333%; }
+.col-5  { width: 41.66666667%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33333333%; }
+.col-8  { width: 66.66666667%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33333333%; }
+.col-11 { width: 91.66666667%; }
+.col-12 { width: 100%; }
+
+/* end grid style */
+
 /* fonts */
 
 @font-face {
@@ -40,12 +84,10 @@
 
 .container-pdf {
   max-width: 612px;
-  height: 792px;
   margin: 0 auto;
-  padding: 22px 34px;
   width: 100%;
-  display: flex;
-  flex-flow: wrap;
+  height: 792px;
+  padding: 22px 34px;
 }
 
 .container-sm {
@@ -66,31 +108,6 @@
   float: right;
 }
 
-
-.container-flex {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-}
-
-.flex-column {
-  flex: 1;
-  width: 100%;
-}
-
-.flex-column__wrap {
-  padding: 0 5%;
-}
-
-.flex-column.align-bottom {
-  align-self: flex-end;
-}
-
-.flex-column.align-center {
-  align-self: center;
-}
 
 .wrapper-border-bottom {
   width: 100%;
@@ -351,6 +368,9 @@ h3 {
 }
 /* end list item */
 
+.results-header__logo {
+  padding-top: 25px;
+}
 
 .results-header {
   width: 100%;
@@ -358,6 +378,245 @@ h3 {
 
 
 .results-footer {
-  align-self: center;
   width: 100%;
 }
+
+
+.lifestyle__stress-content {
+  padding-top: 12px;
+}
+
+
+/*svg styling*/
+
+.adx-logo-svg-1 {
+  fill: #063f5f;
+}
+
+.adx-logo-svg-2 {
+  fill: #41c5eb;
+}
+
+.adx-logo-svg-3 {
+  fill: url(#linear-gradient);
+}
+
+.adx-logo-svg-4 {
+  fill: url(#linear-gradient-2);
+}
+
+.adx-logo-svg-5 {
+  fill: url(#linear-gradient-3);
+}
+
+.adx-logo-svg-6 {
+  fill: url(#linear-gradient-4);
+}
+
+.adx-logo-svg-7 {
+  fill: #eb2b90;
+}
+
+.adx-logo-svg-8 {
+  fill: #c06dab;
+}
+
+.adx-logo-svg-9 {
+  fill: #41c5ea;
+}
+
+.adx-logo-svg-10 {
+  fill: #ae71af;
+}
+
+.adx-logo-svg-11 {
+  fill: #1592a4;
+}
+
+.adx-logo-svg-12 {
+  fill: #3b7b96;
+}
+
+.adx-logo-svg-13 {
+  fill: #3c6db4;
+}
+
+.adx-logo-svg-14 {
+  fill: none;
+  stroke: #063f5f;
+  stroke-miterlimit: 10;
+  stroke-width: 6px;
+}
+
+/*human brain cloud*/
+.human-brain-cloud-svg-1 {
+  fill: #f9f9f9;
+}
+
+.human-brain-cloud-svg-2 {
+  fill: #71c3f3;
+}
+
+.human-brain-cloud-svg-3 {
+  fill: #000064;
+  opacity: 0.15;
+}
+
+.human-brain-cloud-svg-4 {
+  fill: #fff;
+}
+
+.human-brain-cloud-svg-5 {
+  fill: #ffdda4;
+}
+
+.human-brain-cloud-svg-6 {
+  fill: #41c5eb;
+}
+
+.human-brain-cloud-svg-7 {
+  fill: #fbaa51;
+}
+
+/*chart donut*/
+.chart-donut-svg-1, .chart-donut-svg-3, .chart-donut-svg-5 {
+  fill: #063f5f;
+}
+
+.chart-donut-svg-1 {
+  font-size: 11px;
+  font-family: Roboto-Medium, Roboto;
+}
+
+.chart-donut-svg-1, .chart-donut-svg-8 {
+  font-weight: 500;
+}
+
+.chart-donut-svg-2, .chart-donut-svg-7 {
+  fill: #41c5eb;
+}
+
+.chart-donut-svg-4, .chart-donut-svg-6 {
+  fill: #dd972a;
+}
+
+.chart-donut-svg-5, .chart-donut-svg-6, .chart-donut-svg-7 {
+  font-size: 12px;
+  font-family: Roboto-Regular, Roboto;
+}
+
+.chart-donut-svg-8 {
+  font-size: 8px;
+  font-family: CircularStd-Medium, Circular Std Medium;
+}
+
+/*chart diagram*/
+.chart-diagram-svg-1 {
+  fill: #ededed;
+}
+
+.chart-diagram-svg-2 {
+  fill: none;
+  stroke: #f2f2f2;
+  stroke-width: 2px;
+}
+
+.chart-diagram-svg-3 {
+  fill: #707070;
+  opacity: 0.31;
+}
+
+.chart-diagram-svg-3, .chart-diagram-svg-6 {
+  font-size: 7px;
+  font-family: Roboto-Medium, Roboto;
+}
+
+.chart-diagram-svg-10, .chart-diagram-svg-3, .chart-diagram-svg-6 {
+  font-weight: 500;
+}
+
+.chart-diagram-svg-4 {
+  fill: #41c5eb;
+}
+
+.chart-diagram-svg-5, .chart-diagram-svg-8 {
+  fill: #063f5f;
+}
+
+.chart-diagram-svg-7 {
+  fill: #ffbd24;
+}
+
+.chart-diagram-svg-8 {
+  font-size: 12px;
+  font-family: Roboto-Bold, Roboto;
+  font-weight: 700;
+}
+
+.chart-diagram-svg-9 {
+  fill: #f2f2f2;
+  opacity: 0.29;
+}
+
+.chart-diagram-svg-10 {
+  font-size: 8px;
+  font-family: CircularStd-Medium, Circular Std Medium;
+}
+
+/*table-result*/
+.table-result-svg-1 {
+  fill: none;
+  stroke: #f2f2f2;
+  stroke-width: 2px;
+}
+
+.table-result-svg-2 {
+  font-size: 12px;
+  font-family: Roboto-Medium, Roboto;
+  font-weight: 500;
+}
+
+.table-result-svg-3 {
+  font-size: 11px;
+  font-family: Roboto-Light, Roboto;
+  font-weight: 300;
+}
+
+/*e2-e4*/
+.e2-e4-svg-1 {
+  fill: #f2f2f2;
+}
+
+.e2-e4-svg-2 {
+  fill: #42c5e9;
+}
+
+.e2-e4-svg-3 {
+  fill: #fff;
+  stroke: #41c5eb;
+  stroke-width: 10px;
+}
+
+.e2-e4-svg-4 {
+  font-size: 10px;
+}
+
+.e2-e4-svg-4, .e2-e4-svg-5 {
+  font-family: CircularStd-Medium, Circular Std Medium;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.e2-e4-svg-5 {
+  fill: #063f5f;
+  font-size: 41px;
+}
+
+.e2-e4-svg-6 {
+  stroke: none;
+}
+
+.e2-e4-svg-7 {
+  fill: none;
+}
+/*end svg styling*/
