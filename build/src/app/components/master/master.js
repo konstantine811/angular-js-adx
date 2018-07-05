@@ -64,6 +64,10 @@ angular.module( 'ixlayer.master', [
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
             break;
+          case 'change_password':
+            $scope.hideSideNavBar = false;
+            $scope.showFooter = false;
+            break;
           case 'register' :
             $scope.hideSideNavBar = false;
             $scope.showFooter = false;
