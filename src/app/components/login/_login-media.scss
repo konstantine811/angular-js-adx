@@ -4,8 +4,14 @@
   }
 }
 
+@media (max-height: 620px) {
+  .page .change-psw-page {
+    height: 100%;
+  }
+}
+
 @media (max-width: $breakpoint-sm) {
-  .login-page {
+  .login-page, .change-psw-page {
     height: calc(100vh - 55px);
   }
 }

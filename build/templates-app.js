@@ -225,7 +225,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
 
 angular.module("components/change_password/change_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/change_password/change_password.tpl.html",
-    "<div class=\"login-bgc login-page\">\n" +
+    "<div class=\"login-bgc change-psw-page\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"col-sm-8 col-sm-offset-2\">\n" +

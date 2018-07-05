@@ -9585,7 +9585,7 @@ ul.box__wrap {
   height: auto;
   padding-bottom: 119px; }
 
-.login-page {
+.login-page, .change-psw-page {
   height: calc(100vh - 80px);
   width: 100%;
   padding-bottom: 55px; }
@@ -11731,8 +11731,11 @@ textarea.form-control {
 @media (max-height: 892px) {
   .page .login-page {
     height: 100%; } }
+@media (max-height: 620px) {
+  .page .change-psw-page {
+    height: 100%; } }
 @media (max-width: 768px) {
-  .login-page {
+  .login-page, .change-psw-page {
     height: calc(100vh - 55px); } }
 @media (max-width: 468px) {
   .login-form {
