@@ -229,7 +229,7 @@ angular.module("components/change_password/change_password.tpl.html", []).run(["
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"row\">\n" +
     "      <div class=\"col-sm-8 col-sm-offset-2\">\n" +
-    "        <div class=\"fp-p-form fp-p-form-wrapper\">\n" +
+    "        <div class=\"fp-p-form\">\n" +
     "          <div class=\"title__wrap\">\n" +
     "            <h1 class=\"txt-center\">Change Password</h1>\n" +
     "          </div>\n" +
@@ -564,11 +564,11 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
     "<section class=\"login-page login-bgc\">\n" +
-    "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"fp-p__wrap\">\n" +
+    "  <div class=\"container-fluid container-fluid--section\" ng-controller=\"ForgotPasswordCtrl\">\n" +
+    "    <div class=\"fp-p__wrap\" ng-class=\"{'success': success}\">\n" +
     "      <div class=\"fp-p-form\">\n" +
     "        <div class=\"fp-p-form__wrap\">\n" +
-    "          <div class=\"panel panel--fp\" ng-controller=\"ForgotPasswordCtrl\">\n" +
+    "          <div class=\"panel panel--fp\">\n" +
     "            <div ng-show=\"!success\">\n" +
     "              <form name=\"form\" novalidate ng-submit=\"forgotSubmit(userForm)\">\n" +
     "               <div class=\"txt-center\">\n" +

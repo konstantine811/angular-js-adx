@@ -9618,6 +9618,8 @@ ul.box__wrap {
   justify-content: center;
   padding-top: 50px;
   align-items: center; }
+  .fp-p__wrap.success {
+    padding-bottom: 72px; }
 
 .fp-p-form {
   max-width: 449px;
@@ -9625,9 +9627,6 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   border-radius: 7px; }
-
-.fp-p-form-wrapper {
-  padding: 0 15px; }
 
 .panel.panel--fp {
   padding: 50px 50px 80px; }
