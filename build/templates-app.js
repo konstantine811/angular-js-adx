@@ -1742,7 +1742,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"login-form__wrap\">\n" +
     "        <div class=\"login-form\">\n" +
-    "          <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
+    "          <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Sign in to ADx Healthcare</h6>\n" +
     "          <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__login-wrap\">\n" +
@@ -2939,7 +2939,7 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                <div class=\"txt__wrap\">\n" +
     "                  <p class=\"txt txt-black txt-bold\">Have you purchased an ADx Healthcare Genetic Test already?</p>\n" +
     "                  <p class=\"txt txt-black\">\n" +
-    "                    You should have recieved an email from ADx health to connect your Helix account. Follow the directions in the email.\n" +
+    "                    You should have received an email from ADx Healthcare to connect your Helix account. Follow the directions in the email.\n" +
     "                  </p>\n" +
     "                </div>\n" +
     "                <div class=\"txt__wrap\">\n" +
