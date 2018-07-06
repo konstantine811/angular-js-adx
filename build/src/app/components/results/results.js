@@ -36,6 +36,8 @@ angular.module( 'ixlayer.results', [
       $scope.resultReady = false;
       $scope.showMobileMenu = false;
       $scope.productStatus = null;
+      $scope.schedule_link = null;
+      $scope.download_link = null;
       $scope.accordionIsOpen = [];
 
       $scope.showSubPages = function (page) {
@@ -95,7 +97,6 @@ angular.module( 'ixlayer.results', [
             }
             $scope.download_link = results[0].report;
           } else {
-            $scope.download_link = '';
           }
         }
 

@@ -1762,7 +1762,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-right \">\n" +
     "              <a href ui-sref=\"master.forgot_password\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
-    "                Forgot your password ?\n" +
+    "                Forgot your password?\n" +
     "              </a>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
@@ -5346,8 +5346,8 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          genetics counselors to go over your report and\n" +
     "          answer any questions you have.\n" +
     "        </h2>\n" +
-    "        <div class=\"button__wrap button--center\">\n" +
-    "          <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
+    "        <div ng-if=\"download_link !== null\" class=\"button__wrap button--center\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"bt-round bt-round--blue\">Download Report</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
