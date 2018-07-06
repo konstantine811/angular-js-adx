@@ -180,7 +180,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "         We are always within your reach. Send us a message and we'll respond as soon as possible.\n" +
     "       </div>\n" +
     "     </div>\n" +
-    "     <form action=\"https://formspree.io/info@ixlayer.com\" method=\"post\" class=\"form-space-top\">\n" +
+    "     <form action=\"https://formspree.io/mdzwnwpm\" method=\"post\" class=\"form-space-top\">\n" +
     "       <div class=\"form-group-space-top\">\n" +
     "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Name\">\n" +
     "       </div>\n" +
@@ -199,9 +199,9 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "     </form>\n" +
     "   </div>\n" +
     "    <div class=\"about-section-fourth__data-map-overlap\">\n" +
-    "      <p class=\"txt\">Custom Service</p>\n" +
+    "      <p class=\"txt\">Customer Service</p>\n" +
     "      <!--<p class=\"txt\">Email:</p>-->\n" +
-    "      <p class=\"txt\">support@adxhealthcare.com</p>\n" +
+    "      <p class=\"txt\"><a href=\"mailto:support@adxhealthcare.com\">support@adxhealthcare.com</a></p>\n" +
     "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <p class=\"txt\">Corporate Office</p>\n" +
@@ -1742,7 +1742,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div class=\"login-form__wrap\">\n" +
     "        <div class=\"login-form\">\n" +
-    "          <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Sign in to ADx Health</h6>\n" +
+    "          <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Sign in to ADx Healthcare</h6>\n" +
     "          <form class=\"form--login\" name=\"form\" novalidate ng-submit=\"loginUser(userForm)\">\n" +
     "            <div class=\"form-input\">\n" +
     "              <div class=\"form-input__login-wrap\">\n" +
@@ -1762,7 +1762,7 @@ angular.module("components/login/login.tpl.html", []).run(["$templateCache", fun
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-right \">\n" +
     "              <a href ui-sref=\"master.forgot_password\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
-    "                Forgot your password ?\n" +
+    "                Forgot your password?\n" +
     "              </a>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
@@ -1995,7 +1995,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$249.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$70.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"container-flex txt--indent-small\">\n" +
@@ -2026,7 +2026,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                  <p class=\"txt txt-black\">Price:</p>\n" +
     "                </div>\n" +
     "                <div class=\"column\">\n" +
-    "                  <div class=\"txt-large txt-large--exl txt-black\">$338.00</div>\n" +
+    "                  <div class=\"txt-large txt-large--exl txt-black\">$159.00</div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
@@ -2676,29 +2676,60 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "  <div class=\"popup popup--space-bottom\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
     "    <div class=\"popup-content\">\n" +
     "      <div class=\"popup-content__wrap\">\n" +
-    "        <h6 class=\"txt-medium txt-blue-dark txt-center\">What you need to know before proceeding</h6>\n" +
+    "        <h6 class=\"txt-medium txt-blue-dark txt-center\">ADx Healthcare</h6>\n" +
     "        <div class=\"txt__wrap\">\n" +
-    "          <h6 class=\"txt-medium txt-blue-dark\">Section title</h6>\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Informed Consent</h6>\n" +
+    "            <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "              You consent to genetic testing in our partner’s lab. Also, we may use the test results to create a report. The testing may reveal that you are at risk for a disease or condition. You may need more testing to confirm any diagnosis.  Please discuss the results with your doctor or a genetic counselor.\n" +
+    "            </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Description of Product</h6>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            ADx Healthcare offers genetic testing related to disease risk assessment. Understanding your genetic risk for a disease such as Alzheimer’s disease can benefit you as you learn more about your personal health. While you cannot change your genetic makeup having information about your genetic risk can help you make decisions about your health that research indicates can have a positive impact on your cognitive health.\n" +
+    "          </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Genetic Conditions</h6>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            You may have a genetic condition even though the test results for that condition are negative.  Because of limits of technology, the test may not detect some changes in DNA or proteins that cause disease.\n" +
+    "          </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Risks and Considerations</h6>\n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <div class=\"txt-small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
-    "              <div class=\"txt--indent-small\">\n" +
-    "                Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
-    "              </div>\n" +
+    "            <div class=\"txt-small txt-black\">\n" +
+    "              Once you obtain your Genetic Information, the knowledge is irrevocable. You should not assume that any information we may be able to provide to you, whether now or as genetic research advances, will be welcome. You should also understand that as research advances, in order for you to assess the meaning of your DNA in the context of such advances, you may need to obtain further services from ADx Healthcare, your physician, a genetic counselor, or other healthcare provider.\n" +
+    "            </div>\n" +
+    "            <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "              We encourage you to talk to a genetic counselor, a health professional with special training in genetic conditions, prior to collecting your sample for testing to learn more so you can make an informed decision about whether testing is right for you. A genetic counselor also can help you understand your results and options.\n" +
+    "            </div>\n" +
+    "            <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "              Some people feel a little anxious about getting genetic health results. This is normal. If you feel very anxious, you should speak to your physician or a genetic counselor prior to collecting your sample for testing.\n" +
+    "            </div>\n" +
+    "            <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "              Genetic research is not comprehensive. Many ethnic groups are not represented in genetic studies. Because interpretations provided in our service rely on these published studies, some interpretations may not apply to you. Future scientific research may change the interpretation of your DNA as the scientific community may show previous research to be incomplete or inaccurate. Currently, there is no cure for Alzheimer’s disease and the origin or disease pathology is not well understood.\n" +
+    "            </div>\n" +
+    "            <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "              For most common diseases, the genes we know about are only responsible for a small fraction of the risk. There may be unknown genes, environmental factors, or lifestyle choices that are far more important predictors. If your data indicate that you are not at elevated genetic risk for a particular disease or condition, you should not feel that you are protected. The opposite is also true; if your data indicate you are at an elevated genetic risk for a particular disease or condition, it does not mean you will definitely develop the disease or condition\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div class=\"txt--indent-small\">\n" +
-    "            <h6 class=\"txt-medium txt-blue-dark\">Section title</h6>\n" +
-    "            <div class=\"txt--indent-small\">\n" +
-    "              <div class=\"txt-small txt-black\">Section title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quid nunc honeste dicit? Verba tu fingas et ea dicas, quae non sentias? Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Res enim se praeclare habebat, et quidem in utraque parte.\n" +
-    "                <div class=\"txt--indent-small\">\n" +
-    "                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
-    "                </div>\n" +
-    "                <div class=\"txt--indent-small\">\n" +
-    "                  Duo Reges: constructio interrete. Quorum altera prosunt, nocent altera. Frater et T. Atque his tribus generibus honestorum notatis quartum sequitur et in eadem pulchritudine et aptum ex illis tribus, in quo inest ordo et moderatio. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Te enim iudicem aequum puto, modo quae dicat ille bene noris. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quocirca eodem modo sapiens erit affectus erga amicum, quo in se ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Genetic Information Non-Disclosure Act (GINA)</h6>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            GINA was signed into law in the United States in 2008 to protect against discrimination based on genetic information by employers and health insurance companies for employment and coverage issues. You should be careful about sharing your Genetic Information with others as Genetic Information that you share with others could be used against your interests. In addition, GINA does not protect against discrimination by, for example, long-term health, life, and disability insurance providers, or the military. Some, but not all, states and other jurisdictions have laws that protect individuals with regard to their Genetic Information. You may want to consult a lawyer to understand the extent of legal protection of your Genetic Information before you share it with anybody.\n" +
     "          </div>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            Genetic Information that you choose to share with your physician or other healthcare provider may become part of your medical record and through that route may be accessible to other healthcare providers and/or insurance companies in the future. Genetic Information that you share with family, friends or employers may also be used against your interests. Even if you share Genetic Information that has limited or no meaning today, that information could have greater meaning in the future as new discoveries are made. In addition, if you are asked by an insurance company whether you have learned Genetic Information about your health conditions and you do not disclose this to them, this may be considered to be fraud.\n" +
+    "          </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Approval and Counsel</h6>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            A licensed health care provider must approve this testing. Genetic testing is complex and may show something not normal in the results. Because of this, we will provide a genetic counselor to discuss your results with you. Also, we will answer any other questions you have about the results. Also, the results will not be released to other parties without your written consent or as allowed or required by law. Genetic testing is by your own choice. For clarity, genetic counseling is available after you receive your genetic test results. The process is as follows: 1) you order your test; 2) a physician approves or denies the test; 3) if test is approved, a collection kit is mailed to you; 4) you provide a saliva specimen and return the specimen to the lab; 5) the lab processes and reports to the physician your test results; 6) the results are released to you via an email notice that will direct you to a web portal on the ADx Healthcare site.  The timeframe from test order to receipt of results is typically 4-6 weeks. If you are making a second genetic test purchase through our Helix partner, you will not have to provide an additional saliva sample. In such case, your result will be ready for you within 2-5 business days. Upon receipt of results, if you have chosen to review your results with a genetic counselor, you will be contacted by email or phone to set up a remote counseling session that will take place by phone.\n" +
+    "          </div>\n" +
+    "\n" +
+    "          <h6 class=\"txt-medium txt-blue-dark txt--indent-small\">Consent</h6>\n" +
+    "          <div class=\"txt-small txt-black txt--indent-small\">\n" +
+    "            By checking the box on the order form, you hereby consent to our access to and review of the genetic testing data and report described above.\n" +
+    "          </div>\n" +
+    "\n" +
     "        </div>\n" +
     "        <form class=\"form-consent button--center\" name=\"consentForm\" ng-submit=\"submitConsent()\">\n" +
     "          <div class=\"container-flex-center\">\n" +
@@ -2939,7 +2970,7 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                <div class=\"txt__wrap\">\n" +
     "                  <p class=\"txt txt-black txt-bold\">Have you purchased an ADx Healthcare Genetic Test already?</p>\n" +
     "                  <p class=\"txt txt-black\">\n" +
-    "                    You should have recieved an email from ADx health to connect your Helix account. Follow the directions in the email.\n" +
+    "                    You should have received an email from ADx Healthcare to connect your Helix account. Follow the directions in the email.\n" +
     "                  </p>\n" +
     "                </div>\n" +
     "                <div class=\"txt__wrap\">\n" +
@@ -5346,8 +5377,8 @@ angular.module("components/results/pages/result-sharing.tpl.html", []).run(["$te
     "          genetics counselors to go over your report and\n" +
     "          answer any questions you have.\n" +
     "        </h2>\n" +
-    "        <div class=\"button__wrap button--center\">\n" +
-    "          <a href=\"\" class=\"bt-round bt-round--blue\">Refer us</a>\n" +
+    "        <div ng-if=\"download_link !== null\" class=\"button__wrap button--center\">\n" +
+    "          <a target=\"_blank\" ng-href=\"{{ download_link }}\" class=\"bt-round bt-round--blue\">Download Report</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -6294,7 +6325,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-center-sm\">\n" +
     "                    <div class=\"txt txt--exs-small txt-black\">\n" +
-    "                      Visit ADxHealthare.com to find out more about ADx Healthcare and our other offerings.\n" +
+    "                      Visit ADXHealthcare.com to find out more about ADx Healthcare and our other offerings.\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +

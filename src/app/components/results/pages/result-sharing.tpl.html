@@ -95,8 +95,8 @@
           genetics counselors to go over your report and
           answer any questions you have.
         </h2>
-        <div class="button__wrap button--center">
-          <a href="" class="bt-round bt-round--blue">Refer us</a>
+        <div ng-if="download_link !== null" class="button__wrap button--center">
+          <a target="_blank" ng-href="{{ download_link }}" class="bt-round bt-round--blue">Download Report</a>
         </div>
       </div>
     </div>
