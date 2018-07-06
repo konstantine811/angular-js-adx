@@ -326,9 +326,9 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                                        From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                                    <div class=\"txt--indent\">\n" +
-    "                                      You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                                      For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                                    </div>\n" +
     "                                  </div>\n" +
     "                                </div>\n" +
@@ -346,7 +346,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -383,7 +383,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins  may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer’s disease.\n" +
+    "                                        Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -4788,9 +4788,9 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                From the physician review of your order, to the genetics counselors available to answer questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                  From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
     "                <div class=\"txt--indent\">\n" +
-    "                  You don’t need to navigate this alone. We are here to support you through each step.\n" +
+    "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -4808,7 +4808,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results, and what they mean for you.\n" +
+    "                You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -4845,7 +4845,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins  may improve your cognitive health. Living and overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer’s disease.\n" +
+    "                Stress management, nutrition, fitness, sleep, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
