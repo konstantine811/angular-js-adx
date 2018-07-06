@@ -180,7 +180,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "         We are always within your reach. Send us a message and we'll respond as soon as possible.\n" +
     "       </div>\n" +
     "     </div>\n" +
-    "     <form action=\"https://formspree.io/info@ixlayer.com\" method=\"post\" class=\"form-space-top\">\n" +
+    "     <form action=\"https://formspree.io/mdzwnwpm\" method=\"post\" class=\"form-space-top\">\n" +
     "       <div class=\"form-group-space-top\">\n" +
     "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Name\">\n" +
     "       </div>\n" +
@@ -199,9 +199,9 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "     </form>\n" +
     "   </div>\n" +
     "    <div class=\"about-section-fourth__data-map-overlap\">\n" +
-    "      <p class=\"txt\">Custom Service</p>\n" +
+    "      <p class=\"txt\">Customer Service</p>\n" +
     "      <!--<p class=\"txt\">Email:</p>-->\n" +
-    "      <p class=\"txt\">support@adxhealthcare.com</p>\n" +
+    "      <p class=\"txt\"><a href=\"mailto:support@adxhealthcare.com\">support@adxhealthcare.com</a></p>\n" +
     "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <p class=\"txt\">Corporate Office</p>\n" +
@@ -1995,7 +1995,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$249.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$70.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"container-flex txt--indent-small\">\n" +
@@ -2026,7 +2026,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                  <p class=\"txt txt-black\">Price:</p>\n" +
     "                </div>\n" +
     "                <div class=\"column\">\n" +
-    "                  <div class=\"txt-large txt-large--exl txt-black\">$338.00</div>\n" +
+    "                  <div class=\"txt-large txt-large--exl txt-black\">$159.00</div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
@@ -6294,7 +6294,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-center-sm\">\n" +
     "                    <div class=\"txt txt--exs-small txt-black\">\n" +
-    "                      Visit ADxHealthare.com to find out more about ADx Healthcare and our other offerings.\n" +
+    "                      Visit ADXHealthcare.com to find out more about ADx Healthcare and our other offerings.\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
