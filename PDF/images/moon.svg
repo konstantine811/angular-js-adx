@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9f9f9;
+      }
+
+      .cls-2 {
+        fill: #cce3ff;
+      }
+
+      .cls-3 {
+        fill: #000064;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <g id="Group_1207" data-name="Group 1207" transform="translate(-756 -1084)">
+    <circle id="Ellipse_1742" data-name="Ellipse 1742" class="cls-1" cx="27" cy="27" r="27" transform="translate(756 1084)"/>
+    <g id="crescent-moon-8371_cedb0b4b-1a02-4b5e-b101-7651d2d63388" transform="translate(769.5 1096.856)">
+      <path id="layer1" class="cls-2" d="M16.976,2.076A11.311,11.311,0,0,1,2.2,17.684,13.581,13.581,0,1,0,16.976,2.076Z" transform="translate(-2.2 -2.076)"/>
+      <path id="opacity" class="cls-3" d="M15.607,45.022a13.543,13.543,0,0,0,9.635-4.008l-9.984-9.986A11.282,11.282,0,0,1,2.2,33.522a13.579,13.579,0,0,0,13.407,11.5Z" transform="translate(-2.2 -17.914)"/>
+    </g>
+  </g>
+</svg>
