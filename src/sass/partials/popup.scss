@@ -2,6 +2,9 @@
   width: 100%;
   height: auto;
   z-index: 114;
+  &.popup--space-bottom {
+    padding-bottom: 69px;
+  }
 }
 .popup-content {
   position: relative;

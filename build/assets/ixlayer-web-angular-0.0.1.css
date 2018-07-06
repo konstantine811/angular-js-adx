@@ -9613,6 +9613,11 @@ ul.box__wrap {
   border-radius: 7px;
   padding: 47px 42px; }
 
+.fp-p {
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding-bottom: 55px; }
+
 .fp-p__wrap {
   display: flex;
   justify-content: center;
@@ -9631,6 +9636,9 @@ ul.box__wrap {
 .panel.panel--fp {
   padding: 50px 50px 80px; }
 
+@media (max-height: 604px) {
+  .page .fp-p {
+    height: 100%; } }
 .img.product-img--helix {
   width: 77%;
   margin-top: 66px; }
@@ -10121,6 +10129,8 @@ textarea.form-control {
   width: 100%;
   height: auto;
   z-index: 114; }
+  .popup.popup--space-bottom {
+    padding-bottom: 69px; }
 
 .popup-content {
   position: relative;
@@ -11734,8 +11744,8 @@ textarea.form-control {
 @media (max-height: 620px) {
   .page .change-psw-page {
     height: 100%; } }
-@media (max-width: 768px) {
-  .login-page, .change-psw-page {
+@media (max-width: 960px) {
+  .login-page, .change-psw-page, .fp-p {
     height: calc(100vh - 55px); } }
 @media (max-width: 468px) {
   .login-form {
@@ -11746,7 +11756,7 @@ textarea.form-control {
 @media (max-height: 960px) {
   .page .register-page {
     height: 100%; } }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .register-page {
     height: calc(100vh - 55px); } }
 @media (max-width: 1596px) {

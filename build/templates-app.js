@@ -568,7 +568,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
 
 angular.module("components/forgot_password/forgot_password.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/forgot_password/forgot_password.tpl.html",
-    "<section class=\"login-page login-bgc\">\n" +
+    "<section class=\"fp-p login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\" ng-controller=\"ForgotPasswordCtrl\">\n" +
     "    <div class=\"fp-p__wrap\" ng-class=\"{'success': success}\">\n" +
     "      <div class=\"fp-p-form\">\n" +
@@ -2673,7 +2673,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "  </div>\n" +
     "\n" +
     "  <!--start markup popup-->\n" +
-    "  <div class=\"popup\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
+    "  <div class=\"popup popup--space-bottom\" ng-if=\"showPopup\" test-hook=\"tour-start-popover\">\n" +
     "    <div class=\"popup-content\">\n" +
     "      <div class=\"popup-content__wrap\">\n" +
     "        <h6 class=\"txt-medium txt-blue-dark txt-center\">What you need to know before proceeding</h6>\n" +
