@@ -10283,6 +10283,8 @@ textarea.form-control {
   height: auto;
   position: relative;
   padding: 88px 15px 0; }
+  .register-form__wrap.complete {
+    padding: 88px 15px 265px; }
 
 .register-form {
   max-width: 573px;

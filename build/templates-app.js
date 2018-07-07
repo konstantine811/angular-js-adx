@@ -2611,7 +2611,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "\n" +
     "<div class=\"register-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\">\n" +
+    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\" ng-class=\"{'complete': complete}\">\n" +
     "      <div class=\"register-form\">\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
     "          <div ng-show=\"!complete\">\n" +

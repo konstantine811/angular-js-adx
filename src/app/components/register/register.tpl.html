@@ -3,7 +3,7 @@
 
 <div class="register-page login-bgc">
   <div class="container-fluid container-fluid--section">
-    <div class="register-form__wrap" ng-if="!showPopup">
+    <div class="register-form__wrap" ng-if="!showPopup" ng-class="{'complete': complete}">
       <div class="register-form">
         <form name="form"  ng-submit="submitForm(userForm)" novalidate>
           <div ng-show="!complete">

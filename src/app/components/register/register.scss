@@ -8,6 +8,9 @@
   height: auto;
   position: relative;
   padding: 88px 15px 0;
+  &.complete {
+    padding: 88px 15px 265px;
+  }
 }
 
 .register-form {
