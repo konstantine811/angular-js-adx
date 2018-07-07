@@ -3265,54 +3265,11 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
-    "      <div class=\"title__wrap hide-mobile\">\n" +
-    "        <div class=\"box-shadow box-shadow--not-space-side box-shadow--result-p1\">\n" +
-    "          <div class=\"box-shadow__wrap\">\n" +
-    "            <div class=\"container-flex\">\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h6 class=\"txt-blue-dark txt-center\">Stress</h6>\n" +
-    "                  <div class=\"img__wrap-small txt-center\">\n" +
-    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h6 class=\"txt-blue-dark txt-center\">Exercise</h6>\n" +
-    "                  <div class=\"img__wrap-small txt-center\">\n" +
-    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/heart-orange.svg'\"></ng-include>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h6 class=\"txt-blue-dark txt-center\">Sleep</h6>\n" +
-    "                  <div class=\"img__wrap-small txt-center\">\n" +
-    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h6 class=\"txt-blue-dark txt-center\">Nutrition</h6>\n" +
-    "                  <div class=\"img__wrap-small txt-center\">\n" +
-    "                    <ng-include class=\"img-exs\" src=\"'../assets/images/svg/broccoli-dark.svg'\"></ng-include>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "              <div class=\"flex-column\">\n" +
-    "                <div class=\"flex-column__wrap\">\n" +
-    "                  <h6 class=\"txt-blue-dark txt-center\">Brain Stimulation</h6>\n" +
-    "                  <div class=\"img__wrap-small txt-center\">\n" +
-    "                    <ng-include class=\"img-exs human-brain-medical--bgc-silver\" src=\"'../assets/images/svg/human-brain-medical.svg'\"></ng-include>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
+    "      <div class=\"title__wrap\">\n" +
+    "        <div style=\"width: 70%\" ng-show=\"gender === 'F'\"  ng-include=\"'assets/images/svg/adx-infographic-female.svg'\"></div>\n" +
+    "        <div style=\"width: 70%\" ng-show=\"gender === 'M'\"  ng-include=\"'assets/images/svg/adx-infographic-male.svg'\"></div>\n" +
     "      </div>\n" +
+    "\n" +
     "      <div class=\"title__wrap\">\n" +
     "        <div class=\"box-shadow box-shadow--not-space-side box-shadow--result-p1-second\">\n" +
     "          <div class=\"box-shadow__wrap\">\n" +
@@ -3853,7 +3810,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                  <div class=\"box-content\">\n" +
     "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[0]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
-    "                        <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
     "                      </div>\n" +
     "                      <div class=\"box-image__wrap box-image__wrap-padding-top\">\n" +
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
@@ -3876,9 +3833,9 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.  Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed. Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.16 Hence it is imperative to provide a sense of autonomy and control, as well as provide plenty of social support to reduce the impact of stressful events on depressive symptoms.  Individuals experiencing dementia also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.  Like depression, anxiety can be lessened by providing the individual with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.16\n" +
     "                          </p>\n" +
     "                        </div>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Brain impacts of stress</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            BRAIN IMPACTS OF STRESS\n" +
     "                            An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping. Direct coping involves trying to eliminate or change the source of the stressor.1 Stress management can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
@@ -3896,7 +3853,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">stretching</p>\n" +
+    "                                <p class=\"txt txt-black\">Stretching</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
@@ -3990,8 +3947,12 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">Keeping a stress log to identify stressful situations and strategize a way to mitigate them,\n" +
-    "                                  time management</p>\n" +
+    "                                <p class=\"txt txt-black\">Keeping a stress log to identify stressful situations and strategize a way to mitigate them</p>\n" +
+    "                              </div>\n" +
+    "                            </li>\n" +
+    "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
+    "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
+    "                                <p class=\"txt txt-black\">Time management</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                          </ul>\n" +
@@ -4091,7 +4052,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt  txt-black\">\n" +
-    "                            People who do both aerobic and strength exercise have greater attention, faster information processing, and improved working memory compared to those who do aerobic exercise alone.5 For example, at the end of a 12 week strength training program, older women showed a 19% increase in cognitive capacity.6\n" +
+    "                            People who do both aerobic and strength training exercise tend to have greater attention, faster information processing, and improved working memory compared to those who do aerobic exercise alone.5 For example, at the end of a 12 week strength training program, older women showed a 19% increase in cognitive capacity.6\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4141,10 +4102,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/moon.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease. </h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease.</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Poor sleep may be both a cause and a symptom of Alzheimer’s disease. Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                            inResearch indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4240,7 +4201,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids and</p>\n" +
+    "                                <p class=\"txt txt-black\">Low intake of meat and saturated fatty acids</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +

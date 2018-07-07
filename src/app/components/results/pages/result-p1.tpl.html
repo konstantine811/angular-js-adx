@@ -81,54 +81,11 @@
           </div>
         </div>
       </div>
-      <div class="title__wrap hide-mobile">
-        <div class="box-shadow box-shadow--not-space-side box-shadow--result-p1">
-          <div class="box-shadow__wrap">
-            <div class="container-flex">
-              <div class="flex-column">
-                <div class="flex-column__wrap">
-                  <h6 class="txt-blue-dark txt-center">Stress</h6>
-                  <div class="img__wrap-small txt-center">
-                    <ng-include class="img-exs" src="'../assets/images/svg/human-brain-cloud.svg'"></ng-include>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-column">
-                <div class="flex-column__wrap">
-                  <h6 class="txt-blue-dark txt-center">Exercise</h6>
-                  <div class="img__wrap-small txt-center">
-                    <ng-include class="img-exs" src="'../assets/images/svg/heart-orange.svg'"></ng-include>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-column">
-                <div class="flex-column__wrap">
-                  <h6 class="txt-blue-dark txt-center">Sleep</h6>
-                  <div class="img__wrap-small txt-center">
-                    <ng-include class="img-exs" src="'../assets/images/svg/moon.svg'"></ng-include>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-column">
-                <div class="flex-column__wrap">
-                  <h6 class="txt-blue-dark txt-center">Nutrition</h6>
-                  <div class="img__wrap-small txt-center">
-                    <ng-include class="img-exs" src="'../assets/images/svg/broccoli-dark.svg'"></ng-include>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-column">
-                <div class="flex-column__wrap">
-                  <h6 class="txt-blue-dark txt-center">Brain Stimulation</h6>
-                  <div class="img__wrap-small txt-center">
-                    <ng-include class="img-exs human-brain-medical--bgc-silver" src="'../assets/images/svg/human-brain-medical.svg'"></ng-include>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="title__wrap">
+        <div style="width: 70%" ng-show="gender === 'F'"  ng-include="'assets/images/svg/adx-infographic-female.svg'"></div>
+        <div style="width: 70%" ng-show="gender === 'M'"  ng-include="'assets/images/svg/adx-infographic-male.svg'"></div>
       </div>
+
       <div class="title__wrap">
         <div class="box-shadow box-shadow--not-space-side box-shadow--result-p1-second">
           <div class="box-shadow__wrap">
