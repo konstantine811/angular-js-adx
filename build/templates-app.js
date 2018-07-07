@@ -3326,27 +3326,12 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "              <ul class=\"science-p-list science-p-list--space-side\">\n" +
     "                <li class=\"science-p-list__items\">\n" +
     "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                    <p class=\"txt txt-black\">This test does not evaluate all genes that may cause an increased risk of late-onset Alzheimer’s disease. </p>\n" +
+    "                    <p class=\"txt txt-black\">This test does not diagnose Alzheimer’s disease or dementia.</p>\n" +
     "                  </div>\n" +
     "                </li>\n" +
     "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                    <p class=\"txt txt-black\">This test is not testing for risk of early-onset Alzheimer’s disease. </p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                    <p class=\"txt txt-black\">This test does not diagnosed Alzheimer’s disease or dementia.</p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                    <p class=\"txt txt-black\">This test does not include all possible variants or genes for late-onset Alzheimer’s disease.</p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                    <p class=\"txt txt-black\">This test does not include most variants or genes linked to early-onset Alzheimer’s disease.</p>\n" +
+    "                    <p class=\"txt txt-black\">This test does not include all possible genes for early-onset or  late-onset Alzheimer’s disease.</p>\n" +
     "                  </div>\n" +
     "                </li>\n" +
     "              </ul>\n" +
@@ -3636,21 +3621,17 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          <div class=\"txt--indent-small\">\n" +
     "            <p class=\"txt txt-black\">Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have an increased risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors. </p>\n" +
     "          </div>\n" +
-    "  \n" +
-    "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">Although not everyone who carries the ApoE-e4 variant will develop Alzheimer’s disease, those people with at least one copy of the ApoE-e4 variant have an increased risk for developing the disease.  While everyone should aim to live a cognitively healthy lifestyle, individuals with the high risk ApoE-e4 variant should seek their physician’s assistance to take action immediately by addressing modifiable lifestyle, environmental, and medical factors. </p>\n" +
-    "          </div>\n" +
-    "  \n" +
+    "\n" +
     "          <div class=\"txt--indent-small\">\n" +
     "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago54 and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">While some medical conditions are solely determined by genetics (for example, muscular dystrophy) and disease outcome is unavoidable, whether or not you carry the ApoE-e4 variant your genetics do not tell the entire story for your Alzheimer’s risk. Because a combination of genetic, medical, lifestyle, and environmental factors influence Alzheimer’s disease, people with the ApoE-e4 variant do not always develop Alzheimer’s disease during their lifespan, and some people who develop Alzheimer’s do not carry the ApoE-e4 variant. While your ApoE genotype is not a sole determinant of disease outcome, learning your genetic risk may help you decide on measured action to reduce your risk in other ways.</p>\n" +
+    "            <p class=\"txt txt-black\">Some medical conditions are solely determined by genetics  (for example muscular dystrophy), and disease outcome is unavoidable. Late-onset Alzheimer’s disease risk is influenced by factors in addition to genetics, so whether or not you carry the ApoE-e4 genetic variant does not tell the entire story for your Alzheimer’s disease risk.  Because a combination of genetic, medical, lifestyle, and environmental factors influence Alzheimer’s disease, people with the ApoE-e4 genetic variant do not always develop Alzheimer’s disease during their lifespan, and some people who develop Alzheimer’s disease do not carry the ApoE-e4 variant.  While your ApoE genotype is not a sole determinant of disease outcome, learning your genetic risk may help you decide on measured action to reduce your risk in other ways.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
+    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
