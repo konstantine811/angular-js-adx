@@ -3218,7 +3218,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genotype indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -3257,7 +3257,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genotype indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
@@ -3833,7 +3833,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Stress is also attributed to mental health decline, which is often already a symptom of cognitive impairment and dementia.  Vulnerability, perceived coping ability, and social support interact with stressful events to determine whether a person becomes depressed. Likewise, the effects of stressful life events on mental health are buffered by feelings of control and social support.16 Hence it is imperative to provide a sense of autonomy and control, as well as provide plenty of social support to reduce the impact of stressful events on depressive symptoms.  Individuals experiencing dementia also often suffer from anxiety, especially as the condition advances from mild to moderate and severe.  Like depression, anxiety can be lessened by providing the individual with a sense of control, routine, and social support, along with relaxation exercises to assist with the anxiety itself.16\n" +
     "                          </p>\n" +
     "                        </div>\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Brain impacts of stress</h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm txt--indent-small\">Brain impacts of stress</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
     "                            An important component of the stress cycle is what you do to deal with the source of stress and the impacts the stressor is having on you, which is called coping. Direct coping involves trying to eliminate or change the source of the stressor.1 Stress management can come in a variety of options including relaxation techniques, behavioral changes, and support.\n" +
@@ -4134,7 +4134,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
     "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
-    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Brain Stimulation & Alzheimer’s disease</p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Nutrition & Alzheimer’s disease</p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -4157,6 +4157,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Tracking eating habits in individuals can be difficult and not everyone responds well to the same diet.  Research has found some benefit for some people on a few different diets, as well as a relationship between intake of certain foods and nutrients and cognitive health.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm txt--indent-small\">Mediterranean Diet</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
     "                            The Mediterranean Diet is one of the diets that has been associated with decreased risk of dementia, mild cognitive impairment, and Alzheimer’s disease (1-6).  The Mediterranean Diet focuses on:\n" +
@@ -4211,9 +4212,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                          </ul>\n" +
     "                        </div>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm txt--indent-small\">MIND Diet</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
+    "                            Researchers have also evaluated Neurodegenerative Delay (MIND) diet, which is a combination of the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.  The goal of the MIND diet is to see how combining the concepts of heart healthy eating (DASH diet) and the concepts of the Mediterranean diet together impact cognitive function.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4319,9 +4321,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Results from a MIND diet study of 923 people ages 58-98 years of age found that individuals who closely followed the MIND diet had a 53% decreased risk of Alzheimer’s disease compared to individuals who did not follow the MIND diet closely. Individuals who followed the MIND diet  moderately well or very well had a 35% reduced risk of ALzheimer’s disease compared to those who followed the MIND diet less than moderately well (7).\n" +
     "                          </p>\n" +
     "                        </div>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm txt--indent-small\">Ketogenic Diet</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Ketogenic Diet: A ketogenic is traditionally 80% to 90% fat that results in decreased glucose levels and increased ketone body production by the liver. The ketogenic diet has been used to treat epilepsy and is being studied for possible effects on Alzheimer’s disease, Parkinson’s disease, and other neurologic disorder. Researcher believe that ketones reduce the brain’s reliance on glucose for energy (8, 9).  The ketogenic diet is not for everyone and should be carefully followed by a physician, as some people experience gastrointestinal upset, hypercholesterolemia, hypoglycemia, and cardiomyopathy (9). Ketosis can also be achieved by fasting.\n" +
+    "                            A ketogenic diet is traditionally 80% to 90% fat that results in decreased glucose levels and increased ketone body production by the liver. The ketogenic diet has been used to treat epilepsy and is being studied for possible effects on Alzheimer’s disease, Parkinson’s disease, and other neurologic disorder. Researchers believe that ketones reduce the brain’s reliance on glucose for energy (8, 9).  The ketogenic diet is not for everyone and should be carefully followed by a physician, as some people experience gastrointestinal upset, hypercholesterolemia, hypoglycemia, and cardiomyopathy (9). Ketosis can also be achieved by fasting.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4334,7 +4337,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Dietary Fat:\n" +
     "                          </p>\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            In a study of 5386 people without dementia, eating fish had a lower risk of developing dementia and Alzheimer’s over 2 years, while eating a diet higher in total fat, saturated fat, and dietary cholesterol was associated with an increased risk of dementia (17) However, another study looking at the diets of 482 women aged 60 years and older, there was not an association between intake of saturated fat, trans fat, or dietary cholesterol and cognitive decline, but amongst those women who ate an increased amount of monounsaturated fatty acids, such as olive oil, nuts, and avocado, there was associated decrease of cognitive decline (18). Another study spanning 6.5 years  looked at the Mediterranean diet paired with consuming 1L extra virgin olive oil per week and the Mediterranean diet paired with eating 30g nuts per day compared to those assigned a low-fat diet (controls) in a total of 522 people aged 60 to 80 years.  The individuals who ate the Mediterranean diet with nuts or with olive oil had higher  cognitive test scores when compared to the controls on the low-fat diet(2). Another study following the food intake of 8,065 people aged 65 years of age and older over a period of 4 years found that regular intake of omega-3 oils and fish reduced the risk of dementia by 60%, while regular intake of omega-6 fats without regular intake of omega-3 fats increased the risk for dementia for people who do NOT have an ApoE-e4 allele (19).\n" +
+    "                            In a study of 5386 people without dementia, eating fish had a lower risk of developing dementia and Alzheimer’s over 2 years, while eating a diet higher in total fat, saturated fat, and dietary cholesterol was associated with an increased risk of dementia.17 In another study looking at the diets of 482 women aged 60 years and older, there was not an association between intake of saturated fat, trans fat, or dietary cholesterol and cognitive decline. However,  amongst those women who ate an increased amount of monounsaturated fatty acids, such as olive oil, nuts, and avocado, there was associated decrease of cognitive decline.18 Another study spanning 6.5 years  looked at the effects of eating a Mediterranean diet paired with consuming extra virgin olive oil per week, the Mediterranean diet paired with eating nuts per day, and eating a low-fat diet (controls) in a total of 522 people aged 60 to 80 years.  The individuals who ate the Mediterranean diet with nuts or with olive oil had higher  cognitive test scores when compared to the individuals eating the low-fat diet.2 Another study following the food intake of 8,065 people aged 65 years of age and older over a period of 4 years found that regular intake of omega-3 oils and fish reduced the risk of dementia by 60%, while regular intake of omega-6 fats without regular intake of omega-3 oils increased the risk for dementia for people who do NOT have an ApoE-e4 allele.19\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4350,7 +4353,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Vegetables:\n" +
     "                          </p>\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Research indicates that vegetable intake is associated with Alzheimer’s risk. In a study of 3718 people 65 years of age and older, cognitive decline was slowed by 38-40% over 6 years for those consuming between 2.8 and 4.1 servings vegetables per day compared to those consuming less than 1 serving of vegetables per day. There was no association between fruit intake and cognitive function (22). In a study of 1,233 adults without dementia, vegetable intake of more than 1 cup/day reduced the risk of Mild Cognitive Impairment (23). Also, In an ongoing study of 8065 people 65 years of age and older, daily consumption of fruits and vegetables decreased the risk for all-cause dementia by 30% (19).\n" +
+    "                            Research indicates that vegetable intake is associated with Alzheimer’s risk. In a study of 3718 people 65 years of age and older, cognitive decline was slowed by 38-40% over 6 years for those consuming between 2.8 and 4.1 servings of vegetables per day compared to those consuming less than 1 serving of vegetables per day. There was no association between fruit intake and cognitive function (22). In a study of 1,233 adults without dementia, vegetable intake of more than 1 cup/day reduced the risk of Mild Cognitive Impairment (23). Also, In an ongoing study of 8065 people 65 years of age and older, daily consumption of fruits and vegetables decreased the risk for all-cause dementia by 30% (19).\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4358,7 +4361,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Berries:\n" +
     "                          </p>\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Researchers found that eating berries 2 or more times per week was associated with decreased rate of cognitive decline (24)\n" +
+    "                            Researchers found that eating berries 2 or more times per week was associated with decreased rate of cognitive decline. (24)\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4366,7 +4369,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            Artificial Sweeteners:\n" +
     "                          </p>\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            A research study looking at nearly 1500 adults over the age of 60 found an increased risk of stroke and dementia among those who drank soda sweetened with artificial sweeteners. (26).\n" +
+    "                            A research study looking at nearly 1,500 adults over the age of 60 found an increased risk of stroke and dementia among those who drank soda sweetened with artificial sweeteners. (26)\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4378,7 +4381,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                          <ul class=\"science-p-list science-p-list--space-side\">\n" +
     "                            <li class=\"science-p-list__items\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">At least 5 ½ cup servings of vegetables/day, with at least 1 serving coming from leafy greens</p>\n" +
+    "                                <p class=\"txt txt-black\">At least five ½ cup servings of vegetables/day, with at least 1 serving coming from leafy greens</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
@@ -4398,7 +4401,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                            </li>\n" +
     "                            <li class=\"science-p-list__items science-p-list__items--small-space-top\">\n" +
     "                              <div class=\"science-p-list-items science-p-list-items--circle-blue-sm\">\n" +
-    "                                <p class=\"txt txt-black\">Choose single-ingredient starcher or grains, such as oats, sweet potato, or quinoa (keep serving size to ½ c to 1 cup) and avoid processed carbohydrate products, baked goods, and sweets.</p>\n" +
+    "                                <p class=\"txt txt-black\">Choose single-ingredient starches or grains, such as oats, sweet potato, or quinoa (keep serving size to ½ c to 1 cup) and avoid processed carbohydrate products, baked goods, and sweets.</p>\n" +
     "                              </div>\n" +
     "                            </li>\n" +
     "                          </ul>\n" +
@@ -4428,7 +4431,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
     "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
-    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Exercise & Alzheimer’s disease</p>\n" +
+    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Brain Stimulation & Alzheimer’s disease</p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -4445,10 +4448,10 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <ng-include class=\"img\" src=\"'../assets/images/svg/puzzle.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
-    "                        <h3 class=\"txt-blue txt-center-sm\">Aerobic exercise benefits the brain both directly and indirectly.</h3>\n" +
+    "                        <h3 class=\"txt-blue txt-center-sm\">Life-long learning and engagement is important for brain health</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Neuroplasticity, i.e. the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneﬁcial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
+    "                            Neuroplasticity, the brain’s ability to reorganize synaptic connections in response to learning, experience, or injury, occurs across the human lifespan. Educational attainment7-9 and a complex and challenging career7,8, 10 are associated with decreased rates of dementia.  Lifelong cognitive stimulation is critical for the health and function of the brain and can occur through many means, including social interaction and novel experiences (2).  Even simple experiences such as taking a new route when driving can be beneﬁcial for cognitive health.8 Other examples include puzzles, discussion groups, reading, computer use, game playing, playing musical instruments12-16 and learning a new language,11 all of which are associated with improvement of “cognitive reserve.”\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -4459,19 +4462,6 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <div class=\"box-body-button__arrow-down\" ng-class=\"{'rotate-arrow': accordionIsOpen[4]}\">\n" +
     "                          <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i>\n" +
     "                        </div>\n" +
-    "                      </div>\n" +
-    "                    </div>\n" +
-    "                  </div>\n" +
-    "                </div>\n" +
-    "                <div class=\"tabs-link-bottom hide-mobile\">\n" +
-    "                  <div class=\"tabs-link-bottom__wrap\" ng-click=\"setTab(1)\">\n" +
-    "                    <div class=\"container-flex\">\n" +
-    "                      <div class=\"box-tab-image box-tab-image--space-right\">\n" +
-    "                        <ng-include class=\"img\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
-    "                      </div>\n" +
-    "                      <div class=\"txt__wrap\">\n" +
-    "                        <p class=\"txt txt-black\">Read more about other lifestyle factors </p>\n" +
-    "                        <p class=\"txt-large txt-blue-dark txt-medium\">Stress & Alzheimer’s disease</p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -4568,11 +4558,11 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"title__wrap txt-center-sm\">\n" +
-    "              <h3 class=\"txt-blue-dark anim-content-transition\">Talk to a genetic counselor</h3>\n" +
+    "              <h3 class=\"txt-blue-dark anim-content-transition\">Contact Genetic Counselor</h3>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap txt-center-sm\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
-    "                Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with you family?  Our genetics counselors are available to help answer your questions.\n" +
+    "                Do you have questions about your results or how to use them to make health decisions? Do you have questions about how to discuss your results with your family?  Our genetic counselors are available to help answer your questions.\n" +
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap txt-center-sm\">\n" +
@@ -4629,16 +4619,16 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "  \n" +
     "  <div class=\"section__wrap-sm\">\n" +
     "    <div class=\"container-lg--dashboard\">\n" +
-    "      <h3 class=\"txt-blue-dark anim-content-transition\">Talking to a doctor</h3>\n" +
+    "      <h3 class=\"txt-blue-dark anim-content-transition\">Worried About Memory?</h3>\n" +
     "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">\n" +
-    "          If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family.  Your healthcare provider knows your overall health best. Also, if you plan to make major lifestyle changes based on your test results, it is recommended you check-in with your health care provider to be sure those changes are safe based on your current health status.  They can evaluate your cognitive health and make recommendations based on your other medical conditions.</p>\n" +
+    "          If you are worried about memory loss, please make an appointment with your healthcare provider to assess your cognitive health. Also, you may want to discuss your concerns about your family history of Alzheimer’s disease or another dementia type if there is one in your family.  Your healthcare provider knows your overall health best. Also, if you plan to make major lifestyle changes based on your test results, it is recommended you check-in with your healthcare provider to be sure those changes are safe based on your current health status.  They can evaluate your cognitive health and make recommendations based on your other medical conditions.</p>\n" +
     "      </div>\n" +
     "      <div class=\"txt--indent-small\">\n" +
     "        <a target=\"_blank\" ng-href=\"{{ download_link }}\"  class=\"txt-link txt-blue-2 txt-small txt-medium\">Download your results</a>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap anim-content-transition\">\n" +
-    "        <h3 class=\"txt-blue-dark\">Sharing with Family members</h3>\n" +
+    "        <h3 class=\"txt-blue-dark\">Sharing with Family  Members</h3>\n" +
     "      </div>\n" +
     "      <div class=\"sub-header-txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt-middle txt-black\">Having the social support of your loved ones can help you as you begin implementing new lifestyle behaviors into your routine. You can also print a copy of your results if you want to share them with family or your healthcare provider. Having support can be very helpful when making behavior changes.  Also, your relatives or friends may benefit from hearing about your experience, and may wish to consider ApoE testing themselves.\n" +
@@ -5012,7 +5002,10 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "        <div class=\"title__wrap\">\n" +
     "          <p class=\"txt txt-black anim-content-transition\">\n" +
     "            The Alzheimer’s ApoE test is a single gene test that\n" +
-    "            looks at your genetic risk for Alzheimer’s disease.\n" +
+    "            looks at your genetic risk for late-onset Alzheimer’s disease.\n" +
+    "          </p>\n" +
+    "          <p class=\"txt txt-black anim-content-transition\">\n" +
+    "            Read more about genetics and the science behind the Alzheimer’s ApoE Genetic Test by ADx Healthcare.\n" +
     "          </p>\n" +
     "        </div>\n" +
     "      </div>\n" +
