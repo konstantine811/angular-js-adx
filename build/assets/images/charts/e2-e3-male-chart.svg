@@ -1,0 +1,107 @@
+<svg class="e2-e3-male-chart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 916.061 425.725">
+  <defs>
+    <style>
+      .e2-e3-male-chart-1 {
+        fill: #ededed;
+      }
+
+      .e2-e3-male-chart-2 {
+        fill: none;
+        stroke: #f2f2f2;
+        stroke-width: 2px;
+      }
+
+      .e2-e3-male-chart-3 {
+        fill: #707070;
+        opacity: 0.31;
+      }
+
+      .e2-e3-male-chart-3, .e2-e3-male-chart-6 {
+        font-size: 14px;
+        font-family: Roboto-Medium, Roboto;
+      }
+
+      .e2-e3-male-chart-3, .e2-e3-male-chart-6, .e2-e3-male-chart-9 {
+        font-weight: 500;
+      }
+
+      .e2-e3-male-chart-4 {
+        fill: #41c5eb;
+      }
+
+      .e2-e3-male-chart-10, .e2-e3-male-chart-5 {
+        fill: #063f5f;
+      }
+
+      .e2-e3-male-chart-7 {
+        fill: #ffbd24;
+      }
+
+      .e2-e3-male-chart-8 {
+        fill: #f2f2f2;
+        opacity: 0.29;
+      }
+
+      .e2-e3-male-chart-10, .e2-e3-male-chart-9 {
+        font-size: 19px;
+      }
+
+      .e2-e3-male-chart-9 {
+        font-family: CircularStd-Medium, Circular Std;
+      }
+
+      .e2-e3-male-chart-10 {
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Group_1217" data-name="Group 1217" transform="translate(-371 -3326.043)">
+    <rect id="Rectangle_824" data-name="Rectangle 824" class="e2-e3-male-chart-1" width="157" height="319" transform="translate(435 3332)"/>
+    <line id="Line_302" data-name="Line 302" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3372.313)"/>
+    <line id="Line_303" data-name="Line 303" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3408.862)"/>
+    <line id="Line_304" data-name="Line 304" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3445.411)"/>
+    <line id="Line_305" data-name="Line 305" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3481.96)"/>
+    <line id="Line_306" data-name="Line 306" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3518.509)"/>
+    <line id="Line_307" data-name="Line 307" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3555.058)"/>
+    <line id="Line_309" data-name="Line 309" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3591.607)"/>
+    <text id="_60" data-name="60" class="e2-e3-male-chart-3" transform="translate(371 3375.592)"><tspan x="0" y="0">60</tspan></text>
+    <line id="Line_308" data-name="Line 308" class="e2-e3-male-chart-2" x2="883.011" transform="translate(404.05 3335.764)"/>
+    <text id="_70" data-name="70" class="e2-e3-male-chart-3" transform="translate(371 3339.043)"><tspan x="0" y="0">70</tspan></text>
+    <text id="_50" data-name="50" class="e2-e3-male-chart-3" transform="translate(371 3412.141)"><tspan x="0" y="0">50</tspan></text>
+    <text id="_40" data-name="40" class="e2-e3-male-chart-3" transform="translate(371 3448.69)"><tspan x="0" y="0">40</tspan></text>
+    <text id="_30" data-name="30" class="e2-e3-male-chart-3" transform="translate(371 3485.24)"><tspan x="0" y="0">30</tspan></text>
+    <text id="_20" data-name="20" class="e2-e3-male-chart-3" transform="translate(371 3521.789)"><tspan x="0" y="0">20</tspan></text>
+    <text id="_10" data-name="10" class="e2-e3-male-chart-3" transform="translate(371 3558.338)"><tspan x="0" y="0">10</tspan></text>
+    <text id="_0" data-name="0" class="e2-e3-male-chart-3" transform="translate(380.332 3594.887)"><tspan x="0" y="0">0</tspan></text>
+    <rect id="Rectangle_588" data-name="Rectangle 588" class="e2-e3-male-chart-4" width="38.882" height="27.107" transform="translate(525.75 3565.667)"/>
+    <rect id="Rectangle_592" data-name="Rectangle 592" class="e2-e3-male-chart-5" width="38.882" height="3.111" transform="translate(486.868 3589.663)"/>
+    <text id="e2_e2_or_e2_e3" data-name="e2/e2 or
+e2/e3" class="e2-e3-male-chart-6" transform="translate(516.757 3617.438)"><tspan x="-26.428" y="0">e2/e2 or</tspan><tspan x="-18.238" y="16">e2/e3</tspan></text>
+    <rect id="Rectangle_585" data-name="Rectangle 585" class="e2-e3-male-chart-4" width="38.882" height="41.327" transform="translate(685.167 3551.447)"/>
+    <rect id="Rectangle_590" data-name="Rectangle 590" class="e2-e3-male-chart-5" width="38.882" height="5.443" transform="translate(645.507 3587.33)"/>
+    <text id="e3_e3" data-name="e3/e3" class="e2-e3-male-chart-6" transform="translate(679.838 3617.438)"><tspan x="-18.238" y="0">e3/e3</tspan></text>
+    <rect id="Rectangle_584" data-name="Rectangle 584" class="e2-e3-male-chart-4" width="38.882" height="104.204" transform="translate(836.029 3488.57)"/>
+    <rect id="Rectangle_589" data-name="Rectangle 589" class="e2-e3-male-chart-5" width="38.882" height="17.108" transform="translate(796.369 3575.666)"/>
+    <text id="e2_e4" data-name="e2/e4" class="e2-e3-male-chart-6" transform="translate(830.7 3617.438)"><tspan x="-18.238" y="0">e2/e4</tspan></text>
+    <rect id="Rectangle_583" data-name="Rectangle 583" class="e2-e3-male-chart-4" width="38.882" height="116.646" transform="translate(1007.11 3476.128)"/>
+    <rect id="Rectangle_587" data-name="Rectangle 587" class="e2-e3-male-chart-5" width="38.882" height="28.773" transform="translate(968.228 3564.001)"/>
+    <rect id="Rectangle_593" data-name="Rectangle 593" class="e2-e3-male-chart-7" width="38.882" height="3.111" transform="translate(928.568 3589.663)"/>
+    <text id="e3_e4" data-name="e3/e4" class="e2-e3-male-chart-6" transform="translate(1001.781 3617.438)"><tspan x="-18.238" y="0">e3/e4</tspan></text>
+    <g id="Group_1158" data-name="Group 1158" transform="translate(-159 1719.057)">
+      <rect id="Rectangle_614" data-name="Rectangle 614" class="e2-e3-male-chart-8" width="555.624" height="75.009" rx="37.505" transform="translate(704.969 1957.702)"/>
+      <text id="_85_years" data-name="85 years" class="e2-e3-male-chart-9" transform="translate(1172.273 1999.206)"><tspan x="-36.129" y="0">85 years</tspan></text>
+      <text id="_75_years" data-name="75 years" class="e2-e3-male-chart-9" transform="translate(1008.058 1999.29)"><tspan x="-35.359" y="0">75 years</tspan></text>
+      <text id="_65_years" data-name="65 years" class="e2-e3-male-chart-9" transform="translate(829.869 1999.29)"><tspan x="-36.299" y="0">65 years</tspan></text>
+      <circle id="Ellipse_1610" data-name="Ellipse 1610" class="e2-e3-male-chart-7" cx="16.321" cy="16.321" r="16.321" transform="translate(750.808 1977.149)"/>
+      <circle id="Ellipse_1634" data-name="Ellipse 1634" class="e2-e3-male-chart-5" cx="16.321" cy="16.321" r="16.321" transform="translate(928.608 1977.149)"/>
+      <circle id="Ellipse_1635" data-name="Ellipse 1635" class="e2-e3-male-chart-4" cx="16.321" cy="16.321" r="16.321" transform="translate(1092.517 1977.149)"/>
+    </g>
+    <rect id="Rectangle_582" data-name="Rectangle 582" class="e2-e3-male-chart-4" width="38.882" height="233.292" transform="translate(1195.299 3359.481)"/>
+    <rect id="Rectangle_586" data-name="Rectangle 586" class="e2-e3-male-chart-5" width="38.882" height="110.425" transform="translate(1156.417 3482.349)"/>
+    <rect id="Rectangle_591" data-name="Rectangle 591" class="e2-e3-male-chart-7" width="38.882" height="5.443" transform="translate(1116.757 3587.33)"/>
+    <text id="e4_e4" data-name="e4/e4" class="e2-e3-male-chart-6" transform="translate(1172.862 3617.438)"><tspan x="-18.238" y="0">e4/e4</tspan></text>
+    <text id="Your_ApoE_genetic_profile" data-name="Your ApoE 
+genetic profile" class="e2-e3-male-chart-10" transform="translate(512.975 3369.629)"><tspan x="-46.688" y="0">Your ApoE </tspan><tspan x="-61.513" y="23">genetic profile</tspan></text>
+  </g>
+</svg>

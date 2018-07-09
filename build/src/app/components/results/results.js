@@ -25,8 +25,8 @@ angular.module( 'ixlayer.results', [
     });
   })
 
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results',
-    function ResultsCtrl($scope, $stateParams, $state, resultsService, product, profileService, userInfo,  $window, results) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', '$transitions', '$location', '$anchorScroll', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results',
+    function ResultsCtrl($scope, $stateParams, $state, $transitions, $location, $anchorScroll, resultsService, product, profileService, userInfo,  $window, results) {
 
       $scope.user = userInfo.user;
 
@@ -208,6 +208,18 @@ angular.module( 'ixlayer.results', [
         } else {
           $scope.accordionIsOpen[num] = true;
         }
+      };
+
+      $scope.refScroll = function($event, num) {
+        $event.preventDefault();
+        $state.go('master.references');
+        $transitions.onSuccess({to: 'master.references'}, function(transitions) {
+          $anchorScroll.yOffset = 200;
+          transitions.promise.then(function() {
+            $location.hash(num);
+            $anchorScroll();
+          });
+        });
       };
 
 

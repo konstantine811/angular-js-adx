@@ -96,6 +96,10 @@ angular.module( 'ixlayer.master', [
             $scope.hideSideNavBar = false;
             $scope.showFooter = true;
             break;
+          case 'references' :
+            $scope.hideSideNavBar = false;
+            $scope.showFooter = true;
+            break;
           default:
             $scope.hideSideNavBar = true;
             $scope.showFooter = true;

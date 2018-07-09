@@ -13,6 +13,7 @@ angular.module( 'ixLayer', [
   'ixlayer.profile',
   'ixlayer.login',
   'ixlayer.legal',
+  'ixlayer.references',
   'ixlayer.dashboard',
   'ixlayer.verifyemail',
   'ixlayer.forgotpassword',

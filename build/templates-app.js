@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -757,8 +757,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  A physician will review your medical history and determine if the Alzheimer’s ApoE genetic test is right for you.\n" +
-    "                  If they need any additional information, they will reach out to you directly.\n" +
+    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -766,7 +765,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"home-section-second__fast-results\">\n" +
     "              <div class=\"title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">Your genes, your future health</h3>\n" +
+    "                <h3 class=\"txt-blue-dark\">Your genes, your health</h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
@@ -777,12 +776,12 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <div class=\"home-section-second__genes\">\n" +
     "              <div class=\"title__wrap\">\n" +
     "                <h3 class=\"txt-blue-dark\">\n" +
-    "                  Your Genes. Your Privacy.\n" +
+    "                  Confidential results\n" +
     "                </h3>\n" +
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  Once your results are ready, an electronic copy of your report will be delivered on our secure platform. A printable copy of your results will also be available. It is up to you whom you share your test results with.  A genetic counselor is available at no additional cost if you want to ask questions about your results.\n" +
+    "                  Learn your Alzheimer’s genetic risk from the privacy of your home with a simple saliva test. Once your results are ready, an electronic copy of your report will be delivered to you on our secure platform. A printable copy of your results will also be available.  Your results will be kept confidential. It is up to you if you share your test results with anyone and whom you share them with. A genetic counselor is available at no additional cost if you want to ask questions about your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -808,7 +807,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black\">\n" +
-    "                  A physician will review your medical history and determine if the Alzheimer's ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you.\n" +
+    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -844,7 +843,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black\">\n" +
-    "                  Obtain your results privately and securely online. We’ll help you schedule your free genetic counseling session if you would like to review your results with a genetic counselor. You can also print a copy of your results if you want to share them with family or your doctor.\n" +
+    "                  Obtain your results privately and securely online. We’ll help you schedule your free genetic counseling session if you would like to review your results with a genetic counselor. You can also print a copy of your results if you want to share them with family or your primary healthcare provider.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -861,8 +860,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black\">\n" +
-    "                  Get started reducing your risk for or delaying the onset of Alzheimer's disease and improving your cognitive health.\n" +
-    "                  Understand your genetic risk for late-onset Alzheimer's disease.\n" +
+    "                  Take action and reduce your risk for late-onset Alzheimer's disease or delay its onset.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -1982,7 +1980,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "          <div class=\"flex-column anim-content-transition\">\n" +
     "            <div class=\"flex-column__wrap\">\n" +
     "              <div class=\"title__wrap anim-content-transition\">\n" +
-    "                <h1 class=\"txt-blue-dark\">Alzheimer's ApoE Genetic Test</h1>\n" +
+    "                <h1 class=\"txt-blue-dark\">Alzheimer's ApoE<br>Genetic Test</h1>\n" +
     "              </div>\n" +
     "              <div class=\"txt--indent-small txt__wrap--border-bottom anim-content-transition\">\n" +
     "                <p class=\"txt txt-black\">\n" +
@@ -1995,7 +1993,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$70.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$159.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"container-flex txt--indent-small\">\n" +
@@ -2026,7 +2024,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                  <p class=\"txt txt-black\">Price:</p>\n" +
     "                </div>\n" +
     "                <div class=\"column\">\n" +
-    "                  <div class=\"txt-large txt-large--exl txt-black\">$159.00</div>\n" +
+    "                  <div class=\"txt-large txt-large--exl txt-black\">$248.00</div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
@@ -2222,7 +2220,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <h3 class=\"txt-blue-dark txt-center\">Results</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
-    "                    <p class=\"txt txt-black\">Obtain your results from your provider. We'll help you schedule your free genetic counseling session.</p>\n" +
+    "                    <p class=\"txt txt-black\">Obtain your results privately from your own home. your provider. We will help you schedule your free genetic counseling session.</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2601,6 +2599,520 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "    </div>\n" +
     "    <!--end section second-->\n" +
     "    \n" +
+    "</div>");
+}]);
+
+angular.module("components/references/references.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/references/references.tpl.html",
+    "<div class=\"references-p\">\n" +
+    "    <div class=\"references-p-head-bgc\"></div>\n" +
+    "    <div class=\"container-fluid container-fluid--section\">\n" +
+    "        <div class=\"section-box-shadow section-box-shadow--space-inner\">\n" +
+    "            <div class=\"container-lg\">\n" +
+    "                <div class=\"references-p-body\">\n" +
+    "                    <div class=\"references-p-body__wrap\">\n" +
+    "                        <div class=\"references-p-body__img anim-content-transition\">\n" +
+    "                            <ng-include class=\"img-small\" src=\"'./assets/images/svg/parcel.svg'\"></ng-include>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap anim-content-transition\">\n" +
+    "                            <h3 class=\"txt-blue-dark txt-center\">Result Science -  Test interpretation</h3>\n" +
+    "                        </div>\n" +
+    "                       <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"RS1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                                Vagelatos NT, Eslick GD (2013) <a\n" +
+    "                                    href=\"https://www.ncbi.nlm.nih.gov/pubmed/23314404\" target=\"_blank\">Type 2 diabetes as a risk factor for Alzheimer's disease: the confounders, interactions, and neuropathology associated with this relationship.</a> Epidemiological reviews 35, 152-160.\n" +
+    "                            </p>\n" +
+    "                       </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"RS2\"> <span class=\"txt txt-bold txt-black\">2.</span>\n" +
+    "                                Rodrigue KM, Rieck JR, Kennedy KM et al. (2013)<a\n" +
+    "                                    href=\"https://www.ncbi.nlm.nih.gov/pubmed/23553344\" target=\"_blank\">Risk factors for beta-amyloid deposition in healthy aging: vascular and genetic effects.</a> JAMA Neurol 70, 600-606.\n" +
+    "                                Guo Z, Fratiglioni L, Viitanen M et al. (2001) Apolipoprotein E genotypes and the\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"RS3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                                Guo Z, Fratiglioni L, Viitanen M et al. (2001)<a\n" +
+    "                                    href=\"https://www.ncbi.nlm.nih.gov/pubmed/23553344\" target=\"_blank\">R Apolipoprotein E genotypes and the incidence of Alzheimer's disease among persons aged 75 years and older: variation by use of antihypertensive medication?</a>American journal of epidemiology 153, 225-231.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap anim-content-transition\">\n" +
+    "                            <h3 class=\"txt-blue-dark txt-center\"> About Genetics</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                                Stolerman IP (ed). Encyclopedia of Psychopharmacology. 2010. Online ed. Berlin: Springer. ISBN 97835406869.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG2\"> <span class=\"txt txt-bold txt-black\">2.</span>\n" +
+    "                                Liu CC, Kanekiyo T, Xu B, Bu G. Apolipoprotein E and Alzheimer disease: risk, mechanisms, and therapy. Nature Reviews: Neurology. 2013; 9:106-118.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                                Mahley, R. W. & Rall, S. C. Jr. Apolipoprotein E: far more than a lipid transport protein. Annu. Rev. Genomics Hum Genet. 2000; 1:507–537.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
+    "                                Lahoz, C. et al. Apolipoprotein E genotype and cardiovascular disease in the Framingham Heart Study. Atherosclerosis. 2001;154:529–537.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                                5Harold, D. et al. Genome-wide association study identifies variants at CLU and PICALM associated with Alzheimer’s disease. Nat. Genet. 2009; 41:1088–1093.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                                Lambert, J. C. et al. Genome-wide association study identifies variants at CLU and CR1 associated with Alzheimer’s disease. Nat. Genet. 2009; 41:1094–1099.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG7\"> <span class=\"txt txt-bold txt-black\">7.</span>\n" +
+    "                                Farrer, L. A. et al. Effects of age, sex, and ethnicity on the association between apolipoprotein E genotype and Alzheimer disease: a meta-analysis. JAMA. 1997; 278: 1349–1356.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG8\"> <span class=\"txt txt-bold txt-black\">8.</span>\n" +
+    "                                Hallman DM, et al. The Apolipoprotein E polymorphism: a comparison of allele frequencies and effects in nine populations. Am J Hum Genet. 1991; 49: 338-349.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG9\"> <span class=\"txt txt-bold txt-black\">9.</span>\n" +
+    "                                Corder EH, et al. Gene dose of Apolipoprotein E type 4 allele and the risk of Alzheimer’s disease in late onset families. Science. 1993; 261:921-923.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG10\"> <span class=\"txt txt-bold txt-black\">10.</span>\n" +
+    "                                Haan, M. N., Shemanski, L., Jagust, W. J., Manolio, T. A. & Kuller, L. The role of APOE ε4 in modulating effects of other risk factors for cognitive decline in elderly persons. JAMA. 1999; 282:40–46.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG11\"> <span class=\"txt txt-bold txt-black\">11.</span>\n" +
+    "                                Peila, R., Rodriguez, B. L. & Launer, L. J. Type 2 diabetes, APOE gene, and the risk for dementia and related pathologies: the Honolulu-Asia Aging Study. Diabetes. 2002; 51: 1256–1262.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG12\"> <span class=\"txt txt-bold txt-black\">12.</span>\n" +
+    "                                Irie, F. et al. Enhanced risk for Alzheimer disease in persons with type 2 diabetes and APOE e4: the Cardiovascular Health Study Cognition Study. Arch. Neurol. 2008; 65:89–93..\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG13\"> <span class=\"txt txt-bold txt-black\">13.</span>\n" +
+    "                                Matsuzaki, T. et al. Insulin resistance is associated with the pathology of Alzheimer disease: the Hisayama study. Neurology. 2010; 75:764–770.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG14\"> <span class=\"txt txt-bold txt-black\">14.</span>\n" +
+    "                                Ngandu T. et al., A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomized controlled trial. The Lancet. 2014; 386: 2255-2263.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG15\"> <span class=\"txt txt-bold txt-black\">15.</span>\n" +
+    "                                PLOS Collections. Dementia: Across the Lifespan and Around the Globe.  Collection of articles on Alzheimer’s disease and dementia. Published March 2017. http://collections.plos.org/dementia.  Accessed September 23, 2017.ipoprotein E type 4 allele and the risk of Alzheimer’s disease in late onset families. Science. 1993; 261:921-923.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                            <p class=\"txt txt-black\" id=\"AG16\"> <span class=\"txt txt-bold txt-black\">16.</span>\n" +
+    "                                Clare L, Wu YT, Teale JC, et al. Potentially modifiable lifestyle factors, cognitive reserve, and cognitive function in later life: A cross-sectional study. PLoS Med. 2017;14(3):e10022259.\n" +
+    "                            </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap anim-content-transition\">\n" +
+    "                          <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                            Singh B, Parsaik AK, Mielke MM, et al. Association of Mediterranean diet with Mild Cognitive Impairment and Alzheimer’s disease: A systematic review and meta-analysis. J Alzheimers Dis. 2014;39(2):271-282.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N2\"> <span class=\"txt txt-bold txt-black\">2.</span>\n" +
+    "                            Martinez-Lapiscina EH, Claver P, Toledo E, et al. Mediterranean diet improves cognition: The PREMIED-NAVARRA randomized trial. J Neurol Neurosurg Psychiatry. 2013;84(12):1318-1325.\n" +
+    "\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                            Tagney CC, Kwasny MJ, Li H, et al. Adherence to a Mediterranean-type dietary pattern and cognitive decline in a community population. Am J Clin Nutr. 2011;93:601-607.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
+    "                            Scarmeas N, Stern Y, Tang MX, et al. Mediterranean diet and risk for Alzhiemers disease. Ann Neurology. 2006;59(6):912-921.\n" +
+    "                          </p>\n" +
+    "                        </div><div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"N5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                          Scarmeas N, Stern Y, Mayeux R, et al. Mediterranean diet and Mild Cognitive Impairment. Arch Neurol. 2009;66(2):216-225.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                            Tsivgoulis G, Judd S, Letter AJ, et al. Adherence to a Mediterranean diet and risk of incident cognitive impairment. Nerology. 2013;80:1684-1692.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N7\"> <span class=\"txt txt-bold txt-black\">7.</span>\n" +
+    "                            Morris MC, Tangney CC, Wang Y, et al. MIND diet associated with reduced incidence of Alzheimer’s diesea. Alzheimers Dement. 2015;11(9):1007-1014.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N8\"> <span class=\"txt txt-bold txt-black\">8.</span>\n" +
+    "                            Henderson ST. Ketone bodies as a therapeutic for Alzheimer’s disease. Neurotherapeutics. 2008;5:470-480.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N9\"> <span class=\"txt txt-bold txt-black\">9.</span>\n" +
+    "                            Branco AF, Ferreira A, Simoes RF, et al. Ketogenic diets: from cancer to mitochondrial diseases and beyond. Eur J Clin INvest. 2016;46(3):285-298.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N11\"> <span class=\"txt txt-bold txt-black\">11.</span>\n" +
+    "                            Henderson ST, Vogel JL, Barr LJ, et al. Study of the ketogenic agent AC-1202 in mild to moderate Alzheimer’s disease: a randomized, double-blind placebo-controlled, multicenter trial. J Nutr Metab. 2009;6:31-56.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N12\"> <span class=\"txt txt-bold txt-black\">12.</span>\n" +
+    "                            Reger MA, Henderson ST, Hale C. Effects of beta-hydroxybutyrate on cognition in memory-impaired adults. Neurobiol Aging. 2004;25(3):311-314.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N13\"> <span class=\"txt txt-bold txt-black\">13.</span>\n" +
+    "                            Newport MT, Vanltallie TB, Kashiwaya Y, et al. A new way to produce hyperketonemia: Use of ketone ester in a case of Alzheimers. Alzheimers Dement. 2015;11(1):99-103.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N14\"> <span class=\"txt txt-bold txt-black\">14.</span>\n" +
+    "                            Dehghan M, Mente A, Zhang X, et al. Associations of fats and carbohydrate intake with cardiovascular disease and mortality in 18 countries from five continents (PURE): A prospective cohort study. Lancet. Published 29 August 2017.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N15\"> <span class=\"txt txt-bold txt-black\">15.</span>\n" +
+    "                            Pasinetti GM, Wang J, Porter S, et al. Caloric intake, dietary lifestyles, macronutrient composition, and Alzheimer’ disease dementia. Int J Alzheimers Dis. Published online 2011 Jun 19.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N16\"> <span class=\"txt txt-bold txt-black\">16.</span>\n" +
+    "                            Cao L, Tan L, Wang HF, et al. Dietary patterns and risk of dementia: a systematic review and meta-analysis of cohort studies. Mol Neurobiol. 2016;53(9):6144-6154.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N17\"> <span class=\"txt txt-bold txt-black\">17.</span>\n" +
+    "                            Kalmijn S, Launer LJ, Ott A, et al. Dietary fat intake and the risk of incident dementia in the Rotterdam Study. Ann Neurol. 1997;42:776-782.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N18\"> <span class=\"txt txt-bold txt-black\">18.</span>\n" +
+    "                            Naqvi AZ, Harty B, Mukamal KJ, et al. Monounsaturated, trans, & saturated fatty acids and cognitive decline in women. J Am Geriatr Soc. 20111;59(5):837-843.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N19\"> <span class=\"txt txt-bold txt-black\">19.</span>\n" +
+    "                            Barberger-Gateau P, Raffaitin C, Letenneur L, et al. Dietary patterns and risk of dementia: The Three-City cohort study. Neurology. 2007;69:1921-1930.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N20\"> <span class=\"txt txt-bold txt-black\">20.</span>\n" +
+    "                            Lauretti E, Iuliano L, Pratico D. Extra-virgin olive oil ameliorates cognition and neuropathology of the 3xTg mice: Role of autophagy. Ann Clin Transl Neurol. 2017;4(8):564-574.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N21\"> <span class=\"txt txt-bold txt-black\">21.</span>\n" +
+    "                            Morris MC, Evans DA, Bienias JL, et al. Consumption of fish and n-3 fatty acids and risk of incident Alzheimer disease. Arch Neurol. 2003;60:940-946.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N22\"> <span class=\"txt txt-bold txt-black\">22.</span>\n" +
+    "                            Morris MC, Evans DA, Tangney CC, et al. Associations of vegetable and fruit consumption with age-related cognitive change. Neurology. 2006;67(8):1370-1376.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N23\"> <span class=\"txt txt-bold txt-black\">23.</span>\n" +
+    "                            Roberts RO, Geda YE, Cerhan JR, et al. Vegetables, unsaturated fats, moderate alcohol intake, and mild cognitive impairment. Dement Geriatr Cogn Disord. 2010;29:413-423.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N24\"> <span class=\"txt txt-bold txt-black\">24.</span>\n" +
+    "                            Devore EE, Kang JE, Breteler MMB, et al. Dietary intake of berries and flavonoids in relation to cognitive decline. Ann Neurol. 2012;72(1):135-143.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N25\"> <span class=\"txt txt-bold txt-black\">25.</span>\n" +
+    "                            Estemadi A, Sinha R, Ward MH, et al. Mortality from different causes associated with meat, heme iron, nitrates, and nitrites in the NIH-AARP Diet and Health Study: Population based cohort study. BMJ. 2018;357:1957-1968.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N26\"> <span class=\"txt txt-bold txt-black\">26.</span>\n" +
+    "                            Pase MP, Himali JJ, Beiser AS, et al. Sugar- and artificially sweetened beverages and the risks of incident stroke and dementia. Stroke. 2017;48(5):1139-1146.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"N27\"> <span class=\"txt txt-bold txt-black\">27.</span>\n" +
+    "                            Roberts RO, Roberts LA, Geda YE, et al. Relative intake of macronutrients impacts risk of Mild Cognitive Impairment or dementia. J Alzheimers Dis. 2012;32(2):329-339.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"title__wrap anim-content-transition\">\n" +
+    "                          <h3 class=\"txt-blue-dark txt-center\">Exercise</h3>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                            Harvard Health Publications: Harvard Medical School. Regular Exercise Changes the Brain to Improve Memory, Thinking Skills.\n" +
+    "                          </p>\n" +
+    "                          <p class=\"txt txt-black\">\n" +
+    "                            <a href=\"https://www.health.harvard.edu/blog/regular-exercise-changes-brain-improve-memory-thinking-skills-201404097110\" target=\"_blank\">http://www.health.harvard.edu/blog/regular-exercise-changes-brain-improve-memory-thinking-skills-201404097110.</a> Accessed July 14, 2017.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E2\"> <span class=\"txt txt-bold txt-black\">2.</span>\n" +
+    "                            Dimitrov S, Hulteng E, Hong S. Inflammation and exercise: Inhibition of monocytic intracellular TNF production by acute exercise via β2-adrenergic activation. Brain, behavior, & Immunity. March 2017.; 61: 60-68.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                            Centers for Disease Control and Prevention. How much physical activity do older adults need?<a href=\"https://www.cdc.gov/physicalactivity/basics/older_adults/index.htm\" target=\"_blank\">https://www.cdc.gov/physicalactivity/basics/older_adults/index.htm</a>   Accessed on March 9, 2017.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
+    "                            Office of Disease Prevention and Health Promotion. 2008 Physical Activity Guidelines for Americans, Chapter 5: Active Older Adults.\n" +
+    "                            <a href=\"https://health.gov/paguidelines/guidelines/chapter5.aspx%20Accessed%20March%209\" target=\"_blank\">https://health.gov/paguidelines/guidelines/chapter5.aspx Accessed March 9, </a>2017\n" +
+    "                          </p>\n" +
+    "                        </div><div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"E5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                          Smith PJ, Blumenthal JA, Hoffman BM, et al. Aerobic exercise and neurocognitive performance: a meta-analytic review of randomized controlled trials. Psychosomotor Medicine. 2010 Apr; 72(3):239-52.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                            Smolarek AC, Ferreira LH, Mascarenhas LP. The effects of strength training on cognitive performance in elderly women. Clinical Interventions in Aging. 2016 Jun 1;11:749-54.)\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E7\"> <span class=\"txt txt-bold txt-black\">7.</span>\n" +
+    "                            Forbes D, Forbes SC, Blake CM, Thiessen EJ, Forbes S. Exercise programs for people with dementia.<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25874613\" target=\"_blank\">Cochrane Database Syst Rev.</a>  2015 Apr 15;(4):CD006489.\n" +
+    "                          </p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap\">\n" +
+    "                          <p class=\"txt txt-black\" id=\"E8\"> <span class=\"txt txt-bold txt-black\">8.</span>\n" +
+    "                            National Institutes of Health NIHSeniorHealth. Exercise: Exercises to Try: Balance Exercises.</p>\n" +
+    "                          <p class=\"txt txt-black\"><a href=\"https://go4life.nia.nih.gov/exercises/balance\" target=\"_blank\">https://nihseniorhealth.gov/exerciseandphysicalactivityexercisestotry/balanceexercises/01.html.</a>Accessed on June 17, 2017.</p>\n" +
+    "                        </div>\n" +
+    "                      <div class=\"title__wrap anim-content-transition\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Sleep</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                          Buby OM, Brannick M, Mortimer J, et al. Sleep, Cognitive impairment and Alzheimer's disease: A systematic review and meta-analysis. Sleep. September 2106; pii: sp-00173-16\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S2\"> <span class=\"txt txt-bold txt-black\">2.</span>\n" +
+    "                          Lim AS, Kowgier M, Yu L, Buchman AS, Bennett DA. Sleep Fragmentation and the Risk of Incident Alzheimer's Disease and Cognitive Decline in Older Persons. Sleep. 2013 Jul 1; 36(7):1027-1032.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                          Harvard Medical School: Division of Sleep Medicine. Healthy Sleep: Why do we Sleep, Anyway?\n" +
+    "                        </p>\n" +
+    "                        <p class=\"txt txt-black\">\n" +
+    "                          <a href=\"http://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/why-do-we-sleep\" target=\"_blank\">http://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/why-do-we-sleep.</a>\n" +
+    "                        </p>\n" +
+    "                        <p class=\"txt txt-black\">Accessed July 1, 2017.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
+    "                          5. . Eugene AR, Masiak J.  The Neuroprotective Aspects of Sleep.  MEDtube Science. 2015 Mar; 3(1): 35-40.\n" +
+    "                        </p>\n" +
+    "                      </div><div class=\"txt__wrap\">\n" +
+    "                      <p class=\"txt txt-black\" id=\"S5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                        6. Xie L, Kang H, Xu Q, et al. Sleep drives metabolite clearance from the adult brain. Science. 2013 Oct 18; 342(6156):373-7.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                          7. Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proceedings of the National Academy of Sciences USA. 2007; 104(3): 1051-6.)\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S7\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                          <a href=\"https://www.health.harvard.edu/staying-healthy/blue-light-has-a-dark-side\" target=\"_blank\">https://www.health.harvard.edu/staying-healthy/blue-light-has-a-dark-side</a>\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S16\"> <span class=\"txt txt-bold txt-black\">16.</span>\n" +
+    "                          Young T. Rationale, design and findings from the Wisconsin Sleep Cohort Study: Toward understanding the total societal burden of sleep disordered breathing. Sleep Medicine Clinics. 2009 Mar 1;4(1):37-46.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S17\"> <span class=\"txt txt-bold txt-black\">17.</span>\n" +
+    "                          Redline S, Yenokyan G, Gottlieb DJ, et al. Obstructive sleep apnea hypopnea and incident stroke: The sleep heart health study. American Journal of Respiratory and Critical Care Medicine. 2010 Jul 15;182(2):269-77.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S18\"> <span class=\"txt txt-bold txt-black\">18.</span>\n" +
+    "                          Punjabi NM, Caffo BS, Goodwin JL, et al. Sleep-disordered breathing and mortality: A prospective cohort study. PLoS Medicine. 2009 Aug;6(8).\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S19\"> <span class=\"txt txt-bold txt-black\">19.</span>\n" +
+    "                          Pan W & Kastin AJ. Can sleep apnea cause Alzheimer’s disease? Neuroscience and Behavioral Reviews; 2014 Nov; 47: 656-669.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"S20\"> <span class=\"txt txt-bold txt-black\">20.</span>\n" +
+    "                          Belenky G, Wesensten NJ, Thorne DR, et al. Patterns of performance degradation and restoration during sleep restriction and subsequent recovery: a sleep dose-response study. J Sleep Res. March 2003; 12(1):1-12.)\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"title__wrap anim-content-transition\">\n" +
+    "                        <h3 class=\"txt-blue-dark txt-center\">Stress</h3>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str1\"> <span class=\"txt txt-bold txt-black\">1.</span>\n" +
+    "                          Singh B, Parsaik AK, Mielke MM, et al. Association of Mediterranean diet with Mild Cognitive Impairment and Alzheimer’s disease: A systematic review and meta-analysis. J Alzheimers Dis. 2014;39(2):271-282.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str2\"> <span class=\"txt txt-bold txt-black\">2.</span><a\n" +
+    "                            href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Green%20KN%5BAuthor%5D&cauthor=true&cauthor_uid=16943563\" target=\"_blank\">Green KN,</a>\n" +
+    "                          <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Billings%20LM%5BAuthor%5D&cauthor=true&cauthor_uid=16943563\" target=\"_blank\">Billings LM,</a>\n" +
+    "                          <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Roozendaal%20B%5BAuthor%5D&cauthor=true&cauthor_uid=16943563\" target=\"_blank\">Roozendaal B,</a>\n" +
+    "                          <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=McGaugh%20JL%5BAuthor%5D&cauthor=true&cauthor_uid=16943563\" target=\"_blank\">McGaugh JL,</a>\n" +
+    "                          <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=LaFerla%20FM%5BAuthor%5D&cauthor=true&cauthor_uid=16943563\" target=\"_blank\">LaFerla FM.</a> Glucocorticoids increase amyloid-beta and tau pathology in a mouse model of Alzheimer's disease. Journal of Neuroscience. 2006 Aug 30;26(35):9047-56.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str3\"> <span class=\"txt txt-bold txt-black\">3.</span>\n" +
+    "                          Dismdale JE, Herd JA. Variability of plasma lipids on response to emotional arousal.  Psychomatic Medicine. 1982; 44:413-430.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
+    "                          Mattiasson I, Lindgarde F, Nilsson JA, Thoerell T. Threat of unemployment and cardiovascular risk factors: Longitudinal study of quality of sleep and serum cholesterol concentrations in men threatened with redundancy. British Medical Journal. 1990; 301: 461-466.\n" +
+    "                        </p>\n" +
+    "                      </div><div class=\"txt__wrap\">\n" +
+    "                      <p class=\"txt txt-black\" id=\"Str5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                        Stoney CM, Matthews KA, McDonal RH, & Johnson CA.  Sex differences in lipid, lipoprotein, cardiovascular, and neuroendocrine responses to acute stress. Psychophysiology. 1988; 25: 645-656.\n" +
+    "                      </p>\n" +
+    "                    </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
+    "                          Muldoon MF, Bachen EA, Manuck SB, et al. Acute cholesterol responses to mental stress and changes in posture. Archives of Internal Medicine. 1992; 152: 775-780.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str7\"> <span class=\"txt txt-bold txt-black\">7.</span>\n" +
+    "                          Markovitz JH, Matthews KA, Kannel WB, Cobb JL, D’Agostino RB. Psychological predictors of hypertension in the Framingham study: Is there tension in hypertension? Journal of the American Medical Association. 1993; 270: 2439-2443.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str8\"> <span class=\"txt txt-bold txt-black\">8.</span>\n" +
+    "                          Schnall PL, Schwartz PA, Landsbergis PA, et al. Relation between job strain, alcohol, and ambulatory blood pressure. Hypertension. 1992; 19: 488-494.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str9\"> <span class=\"txt txt-bold txt-black\">9.</span>\n" +
+    "                          Rosengren A, Tibblin G, Wilhelmsen L. Self-perceived psychological stress and incidence of coronary artery disease in middle-aged men. American Journal of Cardiology. 1991; 68: 1171-1175.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str11\"> <span class=\"txt txt-bold txt-black\">11.</span>\n" +
+    "                          Yeung AC, Vekshtein VI, Krantz DS, et al. The effect of atherosclerosis on the vasomotor response of coronary arteries to mental stress.  New England Journal of Medicine. 1991; 325: 1551-1556.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str12\"> <span class=\"txt txt-bold txt-black\">12.</span>\n" +
+    "                          Davis M, Eshelman ER, McKay M. The relaxation and stress reduction workbook. 1995. Oakland, CA: New Harbinger Press.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str13\"> <span class=\"txt txt-bold txt-black\">13.</span>\n" +
+    "                          Lahad A, Malter AD, Berg AO, Deyo RA. The effectiveness of four interventions for the prevention of low back pain. Journal of the American Medical Association, 1994; 272: 1286-1291.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str14\"> <span class=\"txt txt-bold txt-black\">14.</span>\n" +
+    "                          Futterman AD, Kemeny ME, Shapiro D, Fahey JL. Immunological and physiological changes associated with induced positive and negative mood. Psychosomatic Medicine. 1994; 56: 499-511.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str15\"> <span class=\"txt txt-bold txt-black\">15.</span>\n" +
+    "                          Mills PJ, Berry CC, Dimsdale JE, et al. Lymphocyte subset redistribution in response to acute experimental stress: Effects of gender, ethnicity, hypertension, and the sympathetic nervous system. Brain, Behavior, and Immunity. 1995; 9: 61-69.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                      <div class=\"txt__wrap\">\n" +
+    "                        <p class=\"txt txt-black\" id=\"Str16\"> <span class=\"txt txt-bold txt-black\">16.</span>\n" +
+    "                          Brannon L, Feist J. Health Psychology: An Introduction to Behavior and Health. 1992. Belmont, CA: Wadsworth.\n" +
+    "                        </p>\n" +
+    "                      </div>\n" +
+    "                    </div>\n" +
+    "                  <div class=\"title__wrap anim-content-transition\">\n" +
+    "                    <h3 class=\"txt-blue-dark txt-center\">Education/Brain Stimulation</h3>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black txt-center\">\n" +
+    "                      Ngandu T. et al., A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomized controlled trial. The Lancet. 2014; 386: 2255-2263.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc7\"> <span class=\"txt txt-bold txt-black\">7.</span>\n" +
+    "                      White L, Katzman R, Losonczy K, et al. Association of education with incidence of cognitive impairment in three established populations for epidemiologic studies of the elderly. Journal of clinical epidemiology. 1994;47:363–74.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc8\"> <span class=\"txt txt-bold txt-black\">8.</span>\n" +
+    "                      Woollett K, Maguire EA. Acquiring “the Knowledge” of London’s layout drives structural brain changes. Current biology: CB. 2011;21:2109–14.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc9\"> <span class=\"txt txt-bold txt-black\">9.</span>\n" +
+    "                      Wilson RS, Hebert LE, Scherr PA, Barnes LL, Mendes de Leon CF, Evans DA. Educational attainment and cognitive decline in old age. Neurology. 2009;72:460–5.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc10\"> <span class=\"txt txt-bold txt-black\">10.</span>\n" +
+    "                      Scarmeas N, Stern Y, Tang MX, et al. Mediterranean diet and risk for Alzhiemers disease. Ann Neurology. 2006;59(6):912-921.\n" +
+    "                    </p>\n" +
+    "                  </div><div class=\"txt__wrap\">\n" +
+    "                  <p class=\"txt txt-black\" id=\"Edc5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
+    "                    Stern Y, Gurland B, Tatemichi TK, Tang MX, Wilder D, Mayeux R. Influence of education and occupation on the incidence of Alzheimer’s disease. JAMA: the Journal of the American Medical Association. 1994;271:1004–10.\n" +
+    "                  </p>\n" +
+    "                </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc11\"> <span class=\"txt txt-bold txt-black\">11.</span>\n" +
+    "                      Mechelli  A, Crinion  JT, Noppeney U, et al. Neurolinguistics: structural plasticity in the bilingual brain. Nature. October 2004; 14;431(7010):757\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc12\"> <span class=\"txt txt-bold txt-black\">12.</span>\n" +
+    "                      Gaser C, Schlaug G. Brain structures differ between musicians and non-musicians. Journal of Neuroscience. October 2003;23(27):9240-9245.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc13\"> <span class=\"txt txt-bold txt-black\">13.</span>\n" +
+    "                      Verghese J, Lipton RB, et al. Leisure Activities and the Risk of Dementia in the Elderly. New England Journal of Medicine. 2003; 348:2508-16\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc14\"> <span class=\"txt txt-bold txt-black\">14.</span>\n" +
+    "                      Crowe M, Andel R, Pedersen NL, Johansson B, Gatz M. Does participation in leisure activities lead to reduced risk of Alzheimer’s disease? A prospective study of Swedish twins. The journals of Gerontology Series B, Psychological Sciences and Social Sciences. 2003;58:P249–55.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc15\"> <span class=\"txt txt-bold txt-black\">15.</span>\n" +
+    "                      Scarmeas N, Levy G, Tang MX, Manly J, Stern Y. Influence of leisure activity on the incidence of Alzheimer’s disease. Neurology. 2001;57:2236–42.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                  <div class=\"txt__wrap\">\n" +
+    "                    <p class=\"txt txt-black\" id=\"Edc16\"> <span class=\"txt txt-bold txt-black\">16.</span>\n" +
+    "                      Wang HX, Karp A, Winblad B, Fratiglioni L. Late-life engagement in social and leisure activities is associated with a decreased risk of dementia: a longitudinal study from the Kungsholmen project. American Journal of Epidemiology. 2002;155:1081–7.\n" +
+    "                    </p>\n" +
+    "                  </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
     "</div>");
 }]);
 
@@ -3261,7 +3773,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
-    "            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. 1-17, 20-49\n" +
+    "            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. <a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\">1-17</a>,<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'AG15')\"> 20-49</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -3665,7 +4177,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "          <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
     "            <p class=\"txt txt-black\">\n" +
-    "              The APOE-e4 variant is associated with stroke and cardiovascular disease risk. &ltAlthough you do not carry the ApoE-e4 variant&gt, living a heart healthy lifestyle is still recommended for your overall health.  There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.17\n" +
+    "              The APOE-e4 variant is associated with stroke and cardiovascular disease risk. &ltAlthough you do not carry the ApoE-e4 variant&gt, living a heart healthy lifestyle is still recommended for your overall health.  There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'AG16')\"> 17</a>\n" +
     "            </p>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -5622,9 +6134,16 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </div>\n" +
     "                    <div class=\"txt__wrap anim-content-transition\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
-    "                        <!--Late-onset Alzheimer’s disease is a progressive form of dementia that is characterized by tau and plaques in the brain that result in brain cell death over time. Scientists believe that for most people the development of late-onset Alzheimer’s disease is caused by a combination of age, genetic, medical, lifestyle, and environmental factors.-->\n" +
-    "                        Alzheimer's disease comes in multiple forms: early-onset, familial,  and late-onset.  Early-onset is a rare form of Alzheimer's disease, representing about 5% of the cases. Early-onset Alzheimer's occurs in people younger than age 65.  Familial Alzheimer's is known to be linked to genetics, and is a rare form of early-onset Alzheimer's that represents less than 1% of all Alzheimer's cases.\n" +
-    "                        <br>Late-onset Alzheimer's disease is the most common form of the disease, with symptoms appearing on or after age 65.  Genetics is a risk factor for late-onset Alzheimer's disease, but not everyone who carries the ApoE-e4 gene will develop late-onset Alzheimer's disease and some of the people with late-onset Alzheimer's do not have a copy of ApoE-e4.\n" +
+    "                        There are two types of  Alzheimer’s disease: early-onset Alzheimer’s disease and late-onset Alzheimer’s disease, with a subtype of early-onset called early-onset Familial Alzheimer’s disease (eFAD).\n" +
+    "                      </p>\n" +
+    "                      <p class=\"txt txt-black txt--indent-small\">\n" +
+    "                        Neurologists believe that early-onset Alzheimer’s disease and late-onset Alzheimer’s disease function similarly, but are differentiated by age of onset. Early-onset Alzheimer’s disease is when symptoms occur before age 65 and late-onset Alzheimer’s disease is when symptoms begin at age 65 and older.\n" +
+    "                      </p>\n" +
+    "                      <p class=\"txt txt-black txt--indent-small\">\n" +
+    "                        Early-onset Alzheimer’s disease is uncommon and only accounts for about 5-10% of all Alzheimer’s disease cases. eFAD is a rare subgroup of early-onset Alzheimer’s disease. eFAD is known to be linked to genetics and accounts for only about 1% of all cases of Alzheimer’s disease. The three known genes that cause eFAD are: amyloid precursor protein (APP), presenilin-1 (PS1), and presenilin-2 (PS2).\n" +
+    "                      </p>\n" +
+    "                      <p class=\"txt txt-black txt--indent-small\">\n" +
+    "                        Late-onset Alzheimer’s disease is the most common form of Alzheimer’s  disease, with symptoms appearing on or after age 65.  Genetics is a risk factor for late-onset Alzheimer’s disease, but not everyone who carries the ApoE-e4 gene will develop late-onset Alzheimer’s disease and some of the people with late-onset Alzheimer’s disease do not have a copy of ApoE-e4.\n" +
     "                      </p>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -5764,29 +6283,14 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "      <div class=\"section-box-shadow\">\n" +
     "        <div class=\"container-lg\">\n" +
     "          <div class=\"science-p-section-fourth__wrap\">\n" +
-    "            <div class=\"title__wrap txt-center science-p-section-fourth__title\">\n" +
+    "            <div class=\"title__wrap txt-center\">\n" +
     "              <h3 class=\"txt-blue\">Why haven’t I heard that I can reduce my risk for Alzheimer’s disease?</h3>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap\">\n" +
     "              <ul class=\"science-p-list\">\n" +
     "                <li class=\"science-p-list__items\">\n" +
     "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-md\">\n" +
-    "                    <p class=\"txt txt-medium txt-black\">Emerging research can take a while to be accepted by mainstream\n" +
-    "                      healthcare providers.\n" +
-    "                    </p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-md\">\n" +
-    "                    <p class=\"txt txt-medium txt-black\">\n" +
-    "                      You may have seen headlines on news shows or on the internet highlighting some of the scientific breakthroughs on modifiable risk factors for Alzheimer’s disease, but may have not heard about them elsewhere yet.\n" +
-    "                    </p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-md\">\n" +
-    "                    <p class=\"txt txt-medium txt-black\">\n" +
-    "                      Also, because genetic testing for Alzheimer’s disease is still not covered by insurance, many medical practices are not equipped to handle these evaluation paths yet.\n" +
+    "                    <p class=\"txt txt-medium txt-black\">It takes awhile for emerging research to be communicated and integrated into medical practice.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
     "                </li>\n" +
@@ -5794,14 +6298,6 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-md\">\n" +
     "                    <p class=\"txt txt-medium txt-black\">\n" +
     "                      There is not a single universally accepted standard of care for diagnosing or treating Alzheimer’s disease in the US.\n" +
-    "                      This leaves many patients seeking answers alone.\n" +
-    "                    </p>\n" +
-    "                  </div>\n" +
-    "                </li>\n" +
-    "                <li class=\"science-p-list__items\">\n" +
-    "                  <div class=\"science-p-list-items science-p-list-items--circle-blue-md\">\n" +
-    "                    <p class=\"txt txt-medium txt-black\">\n" +
-    "                      You aren’t limited by what your doctor’s office offers or what your insurance will cover.  Genetic testing is now available through private pay. What sets ADx Healthcare apart is a physician will review your medical history to help you determine if the Alzheimer’s disease genetic test is a good fit for you, and genetics counselors are available to help you understand your results… all at no additional cost to you.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
     "                </li>\n" +
@@ -5846,11 +6342,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    <div class=\"flex-column__wrap\">\n" +
     "                      <div class=\"container-exs\">\n" +
     "                        <div class=\"txt-left txt-center-md txt--space-top-sm\">\n" +
-    "                          <h3 class=\"txt-blue-3\" >Security and Privacy Your DNA is just for you</h3>\n" +
+    "                          <h3 class=\"txt-blue-3\" >Security and Privacy: Your DNA is just for you</h3>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt__wrap\">\n" +
     "                          <p class=\"txt txt-black txt-left\">\n" +
-    "                            Alzheimer's ApoE Genetic Test report will be delivered to you via a secure, electronic report. Your results will be kept confidential and we will not share your results with anyone but you. You will receive an electronic and printable copy of your results which you can share with anybody you choose such as your healthcare provider or family and friends. Our genetic counselors are available to go through your results with you too, if you choose.\n" +
+    "                            ADx Healthcare is committed to maintaining your privacy, and we will not share your results with anyone but you. Your Alzheimer’s ApoE Genetic Test result will be delivered to you via a secure, electronic report.  You will also receive a printable copy of your results that you can share with anybody you choose, such as your healthcare provider or family and friends.  Our genetic counselors are available to go through your results with you too, if you choose.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -5868,13 +6364,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          <div class=\"txt__wrap txt-right txt-left-sm\">\n" +
     "                            <p class=\"txt txt-black\">\n" +
     "                              We will never share your name or data and you will never be included in any Alzheimer’s research without your prior written consent. Your health information is fully encrypted and secure. Regular security scans are performed to make sure your data remains safe.\n" +
-    "\n" +
     "                            </p>\n" +
-    "                            <div class=\"txt--indent-small\">\n" +
-    "                              <p class=\"txt txt-black\">\n" +
-    "                                Your health information is fully encrypted and secure. Regular security scans are performed to make sure your data remains safe.\n" +
-    "                              </p>\n" +
-    "                            </div>\n" +
     "                          </div>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -6256,11 +6746,11 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "              <div class=\"flex-column__wrap\">\n" +
     "                <div class=\"txt-wrap-under-button\">\n" +
     "                  <div class=\"title__wrap txt-center-sm\">\n" +
-    "                    <h4 class=\"txt-blue txt-uppercase\">ABOUT ADx HEALTHCARE</h4>\n" +
+    "                    <h4 class=\"txt-blue\">ABOUT ADx HEALTHCARE</h4>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-center-sm\">\n" +
     "                    <div class=\"txt txt--exs-small txt-black\">\n" +
-    "                      Visit ADXHealthcare.com to find out more about ADx Healthcare and our other offerings.\n" +
+    "                      Visit ADxHealthcare.com to find out more about ADx Healthcare and our other offerings.\n" +
     "                    </div>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -6463,7 +6953,7 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              You will receive your test results in a clear, electronic report.  It is up to you if you receive these results with a genetic counselor or on your own.  However, if you have additional questions about what these results mean to you or your family, our genetics counselors will still be available to discuss your results with you, for no additional charge.  We want to be sure you are getting the most from your Alzheimer’s ApoE genetic test and understand your results.\n" +
+    "              You will receive your test results in a clear, electronic report.  It is up to you if you receive these results with a genetic counselor or on your own.  However, if you have additional questions about what these results mean to you or your family, our genetics counselors will still be available to discuss your results with you, for no additional charge.  We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -6480,9 +6970,9 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              You will receive your test results in a clear, electronic report.  It is up to you if you receive these results with a genetic counselor or on your own.  However, if you have additional questions about what these results mean to you or your family, our genetics counselors will still be available to discuss your results with you, for no additional charge.  We want to be sure you are getting the most from your Alzheimer’s ApoE genetic test and understand your results.\n" +
+    "              Genetics is only one part of your risk for developing Alzheimer’s disease. While learning that you have an increased risk of developing a disease can be unsettling, there is also power in obtaining that knowledge.  Sometimes we find ourselves questioning if we would have made a choice earlier in life if we had know the outcome long-term.  Knowing that you have an increased genetic risk for late-onset Alzheimer’s disease may empower you to take measured action to live a cognitively healthy life in order to best protect your future self.\n" +
     "              <div class=\"txt--indent\">\n" +
-    "                Having the ApoE-e4 variant  (high genetic risk for Alzheimer’s disease) does not guarantee you will develop Alzheimer’s.  Learning your genetic risk can help you take measured steps towards improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease.  Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
+    "                Having the ApoE-e4 variant means that you have an increased genetic risk for late-onset Alzheimer's disease. This does not mean, however, that you will definitely develop Alzheimer's disease. Learning your genetic risk can help you take measured steps toward improving your cognitive health, so you can reduce your risk for or delay the onset of Alzheimer’s disease. Sometimes making lifestyle changes can be hard, but having a reason for why you are eating healthier, reducing your stress, and making fitness and sleep a priority can be motivating.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -6500,7 +6990,7 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              Sleep, stress, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc.), and environmental toxins each can impact your cognitive health.  Living an overall healthier life may also help you reduce your risk for Alzheimer’s disease.\n" +
+    "              Stress management, nutrition, fitness, social engagement, ongoing brain training (music, games, reading, crafts, etc), and avoiding environmental toxins may improve your cognitive health. Living an overall healthier life may also help reduce your risk for or delay the onset of late-onset Alzheimer's disease.\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
