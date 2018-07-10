@@ -131,13 +131,27 @@
             <li><p class="txt txt-black">ApoE-e3</p></li>
             <li><p class="txt txt-black">ApoE-e4</p></li>
           </ul>
-          <p class="txt txt-black">Like all genes, you have two copies of ApoE, one from your mother and one from your father.  &ltYou received the same variant f¬rom each parent, thus you have a “homozygous” genotype for the ApoE gene (e2/e2).&gt If you had received a different variant of the gene from your mother than from your father, then you would have been “heterozygous” for the ApoE gene (e2/e3). </p>
+          <p class="txt txt-black">Like all genes, you have two copies of ApoE, one from your mother and one from your father.
+            <span ng-if="results.name === 'e2/e3'">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e2/e3). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>
+            <span ng-if="results.name === 'e2/e2'">You received the same variant from each parent, thus you have a “homozygous” genotype for the ApoE gene (e2/e2). If you had received a different variant of the gene from your mother than from your father, then you would have been “heterozygous” for the ApoE gene (e2/e3).</span>
+            <span ng-if="results.name === 'e3/e3'">You received the same variant from each parent, thus you have a “homozygous” genotype for the ApoE gene (e3/e3). If you had received a different variant of the gene from your mother than from your father, then you would have been “heterozygous” for the ApoE gene (e2/e3).</span>
+            <span ng-if="results.name === 'e2/e4'">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e2/e4). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>
+            <span ng-if="results.name === 'e3/e4'">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e3/e4). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>
+            <span ng-if="results.name === 'e4/e4'">You received the same variant from each parent, thus you have a “homozygous” genotype for the ApoE gene (e4/e4). If you had received a different variant of the gene from your mother than from your father, then you would have been “heterozygous” for the ApoE gene (e3/e4). This means that any children you have will also have at least one copy of the ApoE-e4 gene.  The support section of your report includes information about deciding if and how you want to share your results with your family.  Also, the genetic counselor can answer any questions you may have about your results.</span>
+          </p>
           <div class="txt--indent-small">
-            <p class="txt txt-black">You are amongst the approximately 73% of the US population that does not carry a copy of the ApoE-e4 variant.  It is estimated that only about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51&gt</p>
+            <p class="txt txt-black">
+              <span ng-if="results.name === 'e2/e3'">You are amongst the approximately 73% of the US population that does not carry a copy of the ApoE-e4 variant.  It is estimated that only about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+              <span ng-if="results.name === 'e2/e2'">You are amongst the approximately 73% of the US population that does not carry a copy of the ApoE-e4 variant.  It is estimated that only about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+              <span ng-if="results.name === 'e3/e3'">You are amongst the approximately 73% of the US population that does not carry a copy of the ApoE-e4 variant.  It is estimated that only about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+              <span ng-if="results.name === 'e2/e4'">It is estimated that about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+              <span ng-if="results.name === 'e3/e4'">It is estimated that about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+              <span ng-if="results.name === 'e4/e4'">It is estimated that about 27% of the total US population carries at least one copy of the ApoE-e4 variant.50,51</span>
+            </p>
           </div>
         </div>
         
-        <div class="result-p2-chart__wrap">
+        <div class="result-p2-chart__wrap txt--indent">
           <div class="chart__wrap anim-content-transition">
             <ng-include class="img hide-mobile" src="'./assets/images/charts/chart-donut-1.svg'"></ng-include>
             <ng-include class="img hide-desktop" src="'./assets/images/charts/chart-donut-mobile.svg'"></ng-include>
@@ -210,7 +224,19 @@
       </div>
       <div class="section__wrap-md section__wrap-md--sm">
         <p class="txt txt-black">
-          &ltFor your specific case, a male who lives to age 75, and has an e2/e2 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a male with an e2/e2 ApoE genotype who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 5%.&gt
+          <span ng-if="gender === 'M' && results.name === 'e2/e3'">For your specific case, a male who lives to age 75, and has an e2/e3 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a male with an e2/e3 ApoE allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 5%.</span>
+          <span ng-if="gender === 'M' && results.name === 'e2/e2'">For your specific case, a male who lives to age 75, and has an e2/e2 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a male with an e2/e2 ApoE genotype who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 5%.</span>
+          <span ng-if="gender === 'M' && results.name === 'e3/e3'">For your specific case, a male who lives to age 75, and has an e3/e3 allele pair, has about a 2% ApoE-related risk for Alzheimer’s disease.  For a male who lives to age 85, and has an e3/e3 allele pair, the ApoE-related risk for Alzheimer’s disease increases to 7%.</span>
+          <span ng-if="gender === 'M' && results.name === 'e2/e4'">For your specific case, a male who lives to age 75, and has an e2/e4 allele pair, has about a 5% ApoE-related risk for Alzheimer’s disease.  For a male who lives to age 85 and has an e2/e4 allele pair, the ApoE-related risk for Alzheimer’s disease increases to 19%.</span>
+          <span ng-if="gender === 'M' && results.name === 'e3/e4'">For your specific case, a male who lives to age 75, and has an e3/e4 allele pair, has about an 8% ApoE-related risk for Alzheimer’s disease. For a male who lives to age 85 and has an e3/e4 allele pair, the ApoE-related risk for Alzheimer’s disease increases to 22%.</span>
+          <span ng-if="gender === 'M' && results.name === 'e4/e4'">For your specific case, a male who lives to age 65, and has an e4/e4 allele pair, has about a 4% ApoE-related risk for Alzheimer’s disease.  For a male with an e4/e4 genotype who lives to age 75, the ApoE-related risk for Alzheimer’s disease increases to 31%.  The ApoE-related Alzheimer’s disease risk for a male with an e4/e4 genotype who lives to age 85 is 51%.</span>
+
+          <span ng-if="gender === 'F' && results.name === 'e2/e3'">For your specific case, a female who lives to age 75, and has an e2/e3 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a female with an e2/e3 allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 7%.</span>
+          <span ng-if="gender === 'F' && results.name === 'e2/e2'">For your specific case, a female who lives to age 75, and has an e2/e2 allele pair, has about a 1% ApoE-related risk for Alzheimer’s disease.  For a female with an e2/e2 allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 7%.</span>
+          <span ng-if="gender === 'F' && results.name === 'e3/e3'">For your specific case, a female who lives to age 75, and has an e2/e3 allele pair, has about a 2% ApoE-related risk for Alzheimer’s disease.  For a female with an e2/e3 allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 11%.</span>
+          <span ng-if="gender === 'F' && results.name === 'e2/e4'">For your specific case, a female who lives to age 75, and has an e2/e4 allele pair, has about a 5% ApoE-related risk for Alzheimer’s disease.  For a female with an e2/e4 allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 29%.</span>
+          <span ng-if="gender === 'F' && results.name === 'e3/e4'">For your specific case, a female who lives to age 75, and has an e3/e4 allele pair, has about an 8% ApoE-related risk for Alzheimer’s disease.  For a female with an e3/e4 allele pair who lives to age 85, the ApoE-related risk for Alzheimer’s disease increases to 32%.</span>
+          <span ng-if="gender === 'F' && results.name === 'e4/e4'">For your specific case, a female who lives to age 65, and has an e4/e4 allele pair, has about a 2% ApoE-related risk for Alzheimer’s disease.  For a female with an e4/e4 allele pair who lives to age 75, the ApoE-related risk for Alzheimer’s disease increases to 30%.  The ApoE-related risk for a female with an e4/e4 genotype is 64% if she lives to age 85.</span>
         </p>
       </div>
     </div>
@@ -237,9 +263,14 @@
           </div>
           <div class="section__wrap-md section__wrap-md--sm">
             <p class="txt txt-black">
-              The APOE-e4 variant is associated with stroke and cardiovascular disease risk. &ltAlthough you do not carry the ApoE-e4 variant&gt, living a heart healthy lifestyle is still recommended for your overall health.  There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.<a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a>
+              <span ng-if="results.name=='e2/e3'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. Although you do not carry the ApoE-e4 variant, living a heart healthy lifestyle is still recommended for your overall health. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.<a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a></span>
+              <span ng-if="results.name=='e2/e2'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. Although you do not carry the ApoE-e4 variant, living a heart healthy lifestyle is still recommended for your overall health. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.<a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a></span>
+              <span ng-if="results.name=='e3/e3'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. Although you do not carry the ApoE-e4 variant, living a heart healthy lifestyle is still recommended for your overall health. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle.<a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a></span>
+              <span ng-if="results.name=='e2/e4'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle. <a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a> </span>
+              <span ng-if="results.name=='e3/e4'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle. <a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a> </span>
+              <span ng-if="results.name=='e4/e4'">The APOE-e4 variant is associated with stroke and cardiovascular disease risk. There is strong scientific evidence that living a heart healthy lifestyle is also appropriate for a brain healthy lifestyle. <a class="references-number-highlight" ng-click="refScroll($event, 'AG16')"> 17</a> </span>
             </p>
-          </div>
+          </p>
         </div>
       </div>
     </div>
