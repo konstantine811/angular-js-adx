@@ -2036,10 +2036,12 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
+    "        <!-- disclaimer commented out for now\n" +
     "        <div class=\"txt__wrap anim-content-transition\">\n" +
     "          <p class=\"txt txt-black txt-center\">To use this product, you must be 18 or older and be a U.S. resident. Not available for residents of Alaska, Arkansas, Delaware,\n" +
     "            Hawaii, Idaho, Maine, Missouri, Nevada, New York, Tennessee, West Virgina, Wisconsin, or Wyoming. Clarify your diabetes diagnosis</p>\n" +
     "        </div>\n" +
+    "        --->\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -6134,7 +6136,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </div>\n" +
     "                    <div class=\"txt__wrap anim-content-transition\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
-    "                        There are two types of  Alzheimer’s disease: early-onset Alzheimer’s disease and late-onset Alzheimer’s disease, with a subtype of early-onset called early-onset Familial Alzheimer’s disease (eFAD).\n" +
+    "                        When people discuss Alzheimer’s disease, they usually divide it into two classifications: early-onset Alzheimer’s disease and late-onset Alzheimer’s disease, with a subtype of early-onset called early-onset Familial Alzheimer’s disease (eFAD).\n" +
     "                      </p>\n" +
     "                      <p class=\"txt txt-black txt--indent-small\">\n" +
     "                        Neurologists believe that early-onset Alzheimer’s disease and late-onset Alzheimer’s disease function similarly, but are differentiated by age of onset. Early-onset Alzheimer’s disease is when symptoms occur before age 65 and late-onset Alzheimer’s disease is when symptoms begin at age 65 and older.\n" +
