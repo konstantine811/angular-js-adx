@@ -34,7 +34,7 @@
        </div>
         <div class="title__wrap">
           <div    class="txt txt-black anim-content-transition">
-            <b>Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>
+            <b>Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>
             <br>
           </div>
           <div class="txt txt-black anim-content-transition">
@@ -73,7 +73,7 @@
       </div>
       <div class="txt__wrap anim-content-transition">
         <p class="txt txt-black">
-          Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.
+          Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.
         </p>
         <div class="txt--indent">
           <div class="txt txt-black">
@@ -82,8 +82,8 @@
         </div>
       </div>
       <div class="title__wrap">
-        <div style="width: 70%" ng-show="gender === 'F'"  ng-include="'assets/images/svg/adx-infographic-female.svg'"></div>
-        <div style="width: 70%" ng-show="gender === 'M'"  ng-include="'assets/images/svg/adx-infographic-male.svg'"></div>
+        <img style="width: 70%" ng-if="gender === 'F'"  src="assets/images/results-page/adx-infographic-female@3x.png">
+        <img style="width: 70%" ng-if="gender === 'M'"  src="assets/images/results-page/adx-infographic-male@3x.png">
       </div>
 
       <div class="title__wrap">

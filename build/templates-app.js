@@ -3730,7 +3730,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -3769,7 +3769,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genetic test results indicates that you are at &lt;{{ riskLevel }} genetic risk&gt; for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
@@ -3778,8 +3778,8 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <div style=\"width: 70%\" ng-show=\"gender === 'F'\"  ng-include=\"'assets/images/svg/adx-infographic-female.svg'\"></div>\n" +
-    "        <div style=\"width: 70%\" ng-show=\"gender === 'M'\"  ng-include=\"'assets/images/svg/adx-infographic-male.svg'\"></div>\n" +
+    "        <img style=\"width: 70%\" ng-if=\"gender === 'F'\"  src=\"assets/images/results-page/adx-infographic-female@3x.png\">\n" +
+    "        <img style=\"width: 70%\" ng-if=\"gender === 'M'\"  src=\"assets/images/results-page/adx-infographic-male@3x.png\">\n" +
     "      </div>\n" +
     "\n" +
     "      <div class=\"title__wrap\">\n" +
