@@ -1,6 +1,10 @@
-.register-page {
+.register-page, .verify-page {
   height: calc(100vh - 80px);
   width: 100%;
+}
+
+.verify-page {
+  padding-bottom: 30px;
 }
 
 .register-form__wrap {

@@ -6711,7 +6711,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
 
 angular.module("components/verify_email/verify_email.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/verify_email/verify_email.tpl.html",
-    "<div class=\"register-page login-bgc\">\n" +
+    "<div class=\"verify-page login-bgc\">\n" +
     "    <div class=\"container-fluid container-fluid--section\">\n" +
     "        <div class=\"register-form__wrap\">\n" +
     "            <div class=\"register-form\">\n" +

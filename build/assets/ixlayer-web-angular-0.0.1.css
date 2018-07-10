@@ -10274,9 +10274,12 @@ textarea.form-control {
   -ms-filter: "alpha(opacity=60)";
   /* old ie */ }
 
-.register-page {
+.register-page, .verify-page {
   height: calc(100vh - 80px);
   width: 100%; }
+
+.verify-page {
+  padding-bottom: 30px; }
 
 .register-form__wrap {
   width: 100%;
@@ -11778,11 +11781,14 @@ textarea.form-control {
 
   .form-input__login-wrap {
     padding-top: 15px; } }
+@media (max-height: 710px) {
+  .page .verify-page {
+    height: 100%; } }
 @media (max-height: 960px) {
   .page .register-page {
     height: 100%; } }
 @media (max-width: 960px) {
-  .register-page {
+  .register-page, .verify-page {
     height: calc(100vh - 55px); } }
 @media (max-width: 1596px) {
   .about-section-fourth_form-map-overlap {
