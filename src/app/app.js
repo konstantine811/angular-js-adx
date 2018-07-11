@@ -9,7 +9,6 @@ angular.module( 'ixLayer', [
   'ixlayer.about',
   'ixlayer.products',
   'ixlayer.FAQ',
-  'ixlayer.contact',
   'ixlayer.register',
   'ixlayer.profile',
   'ixlayer.login',
