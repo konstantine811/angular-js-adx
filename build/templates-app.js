@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/contact/contact.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -199,7 +199,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "     </form>\n" +
     "   </div>\n" +
     "    <div class=\"about-section-fourth__data-map-overlap\">\n" +
-    "      <p class=\"txt\">Customer Service</p>\n" +
+    "      <p class=\"txt txt-bold\">Customer Service</p>\n" +
     "      <!--<p class=\"txt\">Email:</p>-->\n" +
     "      <p class=\"txt\"><a href=\"mailto:support@adxhealthcare.com\">support@adxhealthcare.com</a></p>\n" +
     "      <p class=\"txt\">Phone: 855-514-2273</p>\n" +
@@ -265,15 +265,6 @@ angular.module("components/change_password/change_password.tpl.html", []).run(["
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</div>");
-}]);
-
-angular.module("components/contact/contact.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/contact/contact.tpl.html",
-    "<div class=\"container-fluid\">\n" +
-    "    <div class=\"row\">\n" +
-    "        <h1>Contacts</h1>\n" +
-    "    </div>\n" +
     "</div>");
 }]);
 
@@ -636,7 +627,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
-    "            <button jq-slider class=\"button-border-rounded\">Order test</button>\n" +
+    "            <a ng-href=\"{{ order_url }}\" jq-slider class=\"button-border-rounded\">Order test</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"hide-mobile home-head-image__wrap anim-content-transition\">\n" +
@@ -656,7 +647,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "          <div class=\"button__purchase\">\n" +
-    "            <a ui-sref=\"\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "            <a ng-href=\"{{ order_url}}\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -3467,7 +3458,7 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                      The ApoE gene comes in three forms called variants: ApoE-e2, ApoE-e3, and ApoE-e4.  </div>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__wrap button--center\">\n" +
-    "                    <button class=\"bt-round bt-round--large bt-round--blue-dark\">Order</button>\n" +
+    "                    <a ng-href=\"{{ order_url }}\" class=\"bt-round bt-round--large bt-round--blue-dark\">Order</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -6920,7 +6911,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-show=\"!logged\" ui-sref=\"master_signedin.results.pre-purchase\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-show=\"!logged\" ng-href=\"{{ order_url}}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
     "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -7042,13 +7033,18 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "            <div class=\"txt txt-black\">\n" +
     "              The more support you have for implementing brain healthy lifestyle behaviors, the more likely you are to be successful at turning them into lifelong habits.\n" +
     "            </div>\n" +
-    "            <div class=\"txt--indent\">\n" +
-    "              <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Community</a>\n" +
-    "              <div class=\"txt--indent\">\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Facebook</a>\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Twitter</a>\n" +
-    "                <a href=\"\" class=\"link-padding-right txt txt-blue-dark\">Blog</a>\n" +
-    "              </div>\n" +
+    "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"https://www.facebook.com/adxhealthcare/\" class=\"link-icon facebook\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"https://twitter.com/ADxHealthcare\" class=\"link-icon twitter\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"https://www.linkedin.com/company/adxhealthcare/\" class=\"link-icon linkedIn\"></a>\n" +
+    "            </div>\n" +
+    "            <div class=\"link-icon__wrap\">\n" +
+    "              <a href=\"https://www.instagram.com/adxhealthcare/\" class=\"link-icon instagram\"></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +

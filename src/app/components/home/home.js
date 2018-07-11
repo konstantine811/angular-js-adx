@@ -14,7 +14,8 @@
  */
 angular.module( 'ixlayer.home', [
   'ui.router',
-  'ixlayer.master'
+  'ixlayer.master',
+  'ixlayer.config'
 ])
 
 /**
@@ -34,6 +35,7 @@ angular.module( 'ixlayer.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', ['$scope', function HomeCtrl($scope) {
+.controller( 'HomeCtrl', ['$scope', 'globals', function HomeCtrl($scope, globals) {
+  $scope.order_url = globals().order_url;
 }]);
 

@@ -1,6 +1,7 @@
 angular.module( 'ixlayer.results', [
   'ui.router',
   'ui.bootstrap',
+  'ixlayer.config',
   'ixlayer.api.results',
   'ngAnimate'
 ])
@@ -25,10 +26,11 @@ angular.module( 'ixlayer.results', [
     });
   })
 
-  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', '$transitions', '$location', '$anchorScroll', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results',
-    function ResultsCtrl($scope, $stateParams, $state, $transitions, $location, $anchorScroll, resultsService, product, profileService, userInfo,  $window, results) {
+  .controller('ResultsCtrl', ['$scope', '$stateParams', '$state', '$transitions', '$location', '$anchorScroll', 'resultsService', 'product', 'profileService', 'userInfo', '$window', 'results', 'globals',
+    function ResultsCtrl($scope, $stateParams, $state, $transitions, $location, $anchorScroll, resultsService, product, profileService, userInfo,  $window, results, globals) {
 
       $scope.user = userInfo.user;
+      $scope.order_url = globals().order_url;
 
       $scope.results = null;
       $scope.hasProducts = false;

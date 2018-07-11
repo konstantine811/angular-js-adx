@@ -4,6 +4,7 @@ angular.module( 'ixLayer', [
   'ixlayer.config',
   'ixlayer.config.routing',
   'ixlayer.master',
+  'ixlayer.header',
   'ixlayer.home',
   'ixlayer.about',
   'ixlayer.products',
