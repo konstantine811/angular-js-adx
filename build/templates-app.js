@@ -4143,14 +4143,14 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "      <div class=\"chart__wrap\">\n" +
     "        <div ng-if=\"gender == 'M' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-male-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'M' && results.name == 'e2/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e4-male-chart.svg'\"></div>\n" +
-    "        <div ng-if=\"gender == 'M' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-male-chart.svg'\"></div>\n" +
+    "        <div ng-if=\"gender == 'M' && results.name == 'e2/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e3-male-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'M' && results.name == 'e3/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e3-male-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'M' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-male-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'M' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-male-chart.svg'\"></div>\n" +
     "\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-female-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e2/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e4-female-chart.svg'\"></div>\n" +
-    "        <div ng-if=\"gender == 'F' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-female-chart.svg'\"></div>\n" +
+    "        <div ng-if=\"gender == 'F' && results.name == 'e2/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e3-female-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e3/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e3-female-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-female-chart.svg'\"></div>\n" +
     "        <div ng-if=\"gender == 'F' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-female-chart.svg'\"></div>\n" +
@@ -4182,14 +4182,14 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          <div class=\"chart__wrap\">\n" +
     "            <div ng-if=\"gender == 'M' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-male-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'M' && results.name == 'e2/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e4-male-table.svg'\"></div>\n" +
-    "            <div ng-if=\"gender == 'M' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-male-table.svg'\"></div>\n" +
+    "            <div ng-if=\"gender == 'M' && results.name == 'e2/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e3-male-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'M' && results.name == 'e3/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e3-male-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'M' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-male-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'M' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-male-table.svg'\"></div>\n" +
     "\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-female-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e2/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e4-female-table.svg'\"></div>\n" +
-    "            <div ng-if=\"gender == 'F' && results.name == 'e2/e2'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e2-female-table.svg'\"></div>\n" +
+    "            <div ng-if=\"gender == 'F' && results.name == 'e2/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e2-e3-female-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e3/e3'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e3-female-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e3/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e3-e4-female-table.svg'\"></div>\n" +
     "            <div ng-if=\"gender == 'F' && results.name == 'e4/e4'\" class=\"img\" ng-include=\"'./assets/images/charts/e4-e4-female-table.svg'\"></div>\n" +
