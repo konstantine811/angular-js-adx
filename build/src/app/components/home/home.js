@@ -36,6 +36,7 @@ angular.module( 'ixlayer.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', ['$scope', 'globals', function HomeCtrl($scope, globals) {
-  $scope.order_url = globals().order_url;
+  $scope.globals = globals();
+
 }]);
 

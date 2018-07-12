@@ -627,7 +627,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
-    "            <a ng-href=\"{{ order_url }}\" jq-slider class=\"button-border-rounded\">Order test</a>\n" +
+    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" jq-slider class=\"button-border-rounded\">Order test</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"hide-mobile home-head-image__wrap anim-content-transition\">\n" +
@@ -647,7 +647,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "          <div class=\"button__purchase\">\n" +
-    "            <a ng-href=\"{{ order_url}}\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -2000,7 +2000,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                </div>\n" +
     "                <div class=\"txt--indent-small pre-results-box-flex\">\n" +
     "                  <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
-    "                    <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\">\n" +
+    "                    <input ng-model=\"haveKit\" type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\" ng-change=\"checkboxChanged(haveKit)\">\n" +
     "                    <label for=\"checkbox-private\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
     "                  </div>\n" +
     "                  <div class=\"pre-results-box-flex-2 anim-content-transition\">\n" +
@@ -2015,11 +2015,11 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                  <p class=\"txt txt-black\">Price:</p>\n" +
     "                </div>\n" +
     "                <div class=\"column\">\n" +
-    "                  <div class=\"txt-large txt-large--exl txt-black\">$248.00</div>\n" +
+    "                  <div class=\"txt-large txt-large--exl txt-black\">{{ totalPrice | currency:\"$\" }}</div>\n" +
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
-    "                <button class=\"bt-round bt-round--all-width bt-round--blue-dark\"><span class=\"txt-large txt-bold\">Purchase with Helix</span></button>\n" +
+    "                <button class=\"bt-round bt-round--all-width bt-round--blue-dark\" ng-click=\"purchaseClicked()\"><span class=\"txt-large txt-bold\">{{ buttonTitle }}</span></button>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
     "                <button class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">Multiple order, contact us</span></button>\n" +
@@ -3458,7 +3458,7 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                      The ApoE gene comes in three forms called variants: ApoE-e2, ApoE-e3, and ApoE-e4.  </div>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__wrap button--center\">\n" +
-    "                    <a ng-href=\"{{ order_url }}\" class=\"bt-round bt-round--large bt-round--blue-dark\">Order</a>\n" +
+    "                    <a ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--large bt-round--blue-dark\">Order</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -6911,7 +6911,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-show=\"!logged\" ng-href=\"{{ order_url}}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-show=\"!logged\" ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
     "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +

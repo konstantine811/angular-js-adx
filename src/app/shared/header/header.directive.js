@@ -10,7 +10,7 @@ angular.module("ixlayer.header", [
 
       controller: ['$scope',  function($scope) {
 
-        $scope.order_url = globals().order_url;
+        $scope.globals = globals();
 
         $scope.show = false;
           $scope.showMenu = function() {

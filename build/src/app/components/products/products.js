@@ -1,6 +1,7 @@
 angular.module( 'ixlayer.products', [
   'ui.router',
   'ui.bootstrap',
+  'ixlayer.config',
   'ixlayer.api.products',
   'ngAnimate'
 ])
@@ -41,16 +42,33 @@ angular.module( 'ixlayer.products', [
     });
   })
 
-  .controller( 'ProductsCtrl', ['$scope', 'products', '$state', function ProductsCtrl( $scope, products, $state) {
+  .controller( 'ProductsCtrl', ['$scope', 'products', '$state', 'globals', function ProductsCtrl( $scope, products, $state, globals) {
     $scope.products = products;
+    $scope.globals = globals();
 
-    // var product_id = statusProducts[0].product_id;
-    //
-    // if (statusProducts[0].result_ready) {
-    //   $state.go('results', {id: product_id});
-    // }
+    $scope.checkboxChanged = function (value)
+    {
+      if (value) {
+        $scope.buttonTitle = 'Purchase APOE Test';
+        $scope.totalPrice = 159.00;
+        $scope.haveKit = true;
+      } else {
+        $scope.buttonTitle = 'Purchase with Helix';
+        $scope.totalPrice = 248.00;
+        $scope.haveKit = false;
+      }
+    };
+
+    $scope.purchaseClicked = function () {
+      if ($scope.haveKit) {
+        window.location.replace($scope.globals.order_url_without_kit);
+      } else {
+        window.location.replace($scope.globals.order_url_with_kit);
+      }
+    };
 
     $scope.tab = 1;
+    $scope.checkboxChanged(false);
 
     $scope.setTab = function(newTab){
       $scope.tab = newTab;

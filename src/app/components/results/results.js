@@ -30,7 +30,7 @@ angular.module( 'ixlayer.results', [
     function ResultsCtrl($scope, $stateParams, $state, $transitions, $location, $anchorScroll, resultsService, product, profileService, userInfo,  $window, results, globals) {
 
       $scope.user = userInfo.user;
-      $scope.order_url = globals().order_url;
+      $scope.globals = globals();
 
       $scope.results = null;
       $scope.hasProducts = false;

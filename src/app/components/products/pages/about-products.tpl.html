@@ -45,7 +45,7 @@
                 </div>
                 <div class="txt--indent-small pre-results-box-flex">
                   <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
-                    <input type="checkbox" id="checkbox-private" class="checkbox-input">
+                    <input ng-model="haveKit" type="checkbox" id="checkbox-private" class="checkbox-input" ng-change="checkboxChanged(haveKit)">
                     <label for="checkbox-private" class="checkbox-label checkbox-label--small"></label>
                   </div>
                   <div class="pre-results-box-flex-2 anim-content-transition">
@@ -60,11 +60,11 @@
                   <p class="txt txt-black">Price:</p>
                 </div>
                 <div class="column">
-                  <div class="txt-large txt-large--exl txt-black">$248.00</div>
+                  <div class="txt-large txt-large--exl txt-black">{{ totalPrice | currency:"$" }}</div>
                 </div>
               </div>
               <div class="button__wrap button__wrap--not-space-bottom-sm">
-                <button class="bt-round bt-round--all-width bt-round--blue-dark"><span class="txt-large txt-bold">Purchase with Helix</span></button>
+                <button class="bt-round bt-round--all-width bt-round--blue-dark" ng-click="purchaseClicked()"><span class="txt-large txt-bold">{{ buttonTitle }}</span></button>
               </div>
               <div class="button__wrap button__wrap--not-space-bottom-sm">
                 <button class="bt-round bt-round--all-width bt-round--gray"><span class="txt-large txt-gray txt-bold">Multiple order, contact us</span></button>

@@ -8,7 +8,8 @@ angular.module( 'ixlayer.config', [
 
   .constant('globals', function() {
     return {
-      order_url: 'https://www.helix.com'
+      order_url_with_kit: 'https://www.helix.com',
+      order_url_without_kit: 'https://www.helix.com',
     };
   })
 
