@@ -3766,7 +3766,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
-    "            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. <a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\">1-17</a>,<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'AG15')\"> 20-49</a>\n" +
+    "            Furthermore, other factors modify the risk, including both genetic and non-genetic factors. <a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1-17</sup></a> <a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'AG15')\"><sup>20-49</sup></a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
