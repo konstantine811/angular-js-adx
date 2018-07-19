@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/result-wrong.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -3559,7 +3559,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
-    "            <img class=\"pre-result-head-img__innner\" src=\"./assets/images/results-page/tablet-rounded.png\" />\n" +
+    "            <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -5973,6 +5973,66 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "</div>");
 }]);
 
+angular.module("components/results/pages/result-wrong.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-wrong.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"anim-content-transition\">\n" +
+    "        <div class=\"container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h1 class=\"txt-blue-dark anim-content-transition\">Something went wrong</h1>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap result-wrong-head-txt__wrap\">\n" +
+    "                <p class=\"txt txt-black anim-content-transition\">\n" +
+    "                  <b>We are sorry, but the sequencing data was insufficient for us to determine your result.</b>\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div class=\"section__wrap-sm section__wrap--space-bottom\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-wrong-content-txt__wrap\">\n" +
+    "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Why did I get this?</h1>\n" +
+    "        <div class=\"section__wrap-md container-sub-head txt-center anim-content-transition\">\n" +
+    "          <p class=\"txt txt-blue-dark\"><b>There could be many reasons for this:</b></p>\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              Please contact us at and we will try to help you and answer your questions regarding your results.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap--large-top button--center\">\n" +
+    "            <button contacts-scroll class=\"bt-round bt-round--blue-dark\">Contact us</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "</div>");
+}]);
+
 angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/sequencingStatus.tpl.html",
     "<div class=\"sequencing-status-page\">\n" +
@@ -6103,6 +6163,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div ng-show=\"page == 'consent'\" ng-include=\"'components/results/pages/result-consent.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'pre-purchase'\" ng-include=\"'components/results/pages/prePurchase.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'sequencing-status'\" ng-include=\"'components/results/pages/sequencingStatus.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'result-wrong'\" ng-include=\"'components/results/pages/result-wrong.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p1'\" ng-include=\"'components/results/pages/result-p1.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p2'\" ng-include=\"'components/results/pages/result-p2.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p3'\" ng-include=\"'components/results/pages/result-p3.tpl.html'\"></div>\n" +
@@ -6804,7 +6865,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "            <h4  class=\"txt-blue-dark txt-center\">© 2018 ADx Healthcare. All rights reserved.</h4>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
-    "            <a ng-click=\"scrollToContacts($event)\" target=\"_self\" class=\"txt-large txt-bold txt-blue-dark\">Contact Us</a>\n" +
+    "            <button contacts-scroll class=\"btn-reset\"><span class=\"txt-large txt-bold txt-blue-dark\">Contact Us</span></button>\n" +
     "            <a  ui-sref=\"master.about\" class=\"txt-large txt-bold txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +

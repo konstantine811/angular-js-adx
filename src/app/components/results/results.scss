@@ -96,8 +96,18 @@
  text-align: center;
 }
 
-.pre-result-head-img__innner {
-  max-width: 273px;
+
+.result-wrong-head-txt__wrap {
+  width: 100%;
+  max-width: 369px;
+  height: auto;
+}
+
+.result-wrong-content-txt__wrap {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .pre-result-head-txt {

@@ -1,5 +1,13 @@
 $animation-speed: 0.5s;
 
+
+.btn-reset {
+  border: none;
+  background: none;
+  width: auto;
+  display: inline-block;
+}
+
 a.bt, button.bt {
   margin: 10px;
   padding: 14px 24px;

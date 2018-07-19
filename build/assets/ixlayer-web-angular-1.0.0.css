@@ -7968,6 +7968,12 @@ svg .circle-row-2:nth-of-type(8) {
 @keyframes fade-in-x {
   100% {
     opacity: 1; } }
+.btn-reset {
+  border: none;
+  background: none;
+  width: auto;
+  display: inline-block; }
+
 a.bt, button.bt {
   margin: 10px;
   padding: 14px 24px;
@@ -9950,10 +9956,10 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   padding-top: 32px; }
-  .footer-bottom__link a:nth-of-type(1) {
+  .footer-bottom__link button.btn-reset {
     padding-right: 25px;
     border-right: 1px solid #063f5f; }
-  .footer-bottom__link a:nth-of-type(2) {
+  .footer-bottom__link a {
     padding-left: 25px; }
 
 .footer-bottom__content-bottom {
@@ -10394,8 +10400,16 @@ textarea.form-control {
 .pre-result-head-img {
   text-align: center; }
 
-.pre-result-head-img__innner {
-  max-width: 273px; }
+.result-wrong-head-txt__wrap {
+  width: 100%;
+  max-width: 369px;
+  height: auto; }
+
+.result-wrong-content-txt__wrap {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto; }
 
 .pre-result-head-txt {
   max-width: 422px; }
