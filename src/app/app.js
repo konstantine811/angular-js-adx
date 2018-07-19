@@ -50,7 +50,7 @@ angular.module( 'ixLayer', [
 
 .config(['AnalyticsProvider', function (AnalyticsProvider) {
    // Add configuration code as desired
-   AnalyticsProvider.setAccount('UA-113183089-2');
+   AnalyticsProvider.setAccount('UA-113183089-2', {trackEvent: true});
    AnalyticsProvider.trackPages(true);
 }]).run(['Analytics', function(Analytics) { }])
 

@@ -19,8 +19,8 @@ angular.module( 'ixlayer.register', [
     });
   })
 
-  .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv', '$stateParams',
-    function RegisterCtrl($scope, userAccessSrv, $stateParams) {
+  .controller( 'RegisterCtrl', ['$scope', 'userAccessSrv', '$stateParams', 'Analytics',
+    function RegisterCtrl($scope, userAccessSrv, $stateParams, Analytics) {
     $scope.complete = false;
     $scope.error = null;
     $scope.showPopup = false;
@@ -39,6 +39,7 @@ angular.module( 'ixlayer.register', [
           'token': $scope.token
         } ).then(function (result) {
           $scope.complete = true;
+          Analytics.trackEvent('register', { hasToken: $scope.hasToken});
         }, function (error) {
             if (error.status === 0) {
               $scope.error = {detail:  'Please check your Internet connection.'};

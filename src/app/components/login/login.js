@@ -18,13 +18,14 @@ angular.module( 'ixlayer.login', [
     });
   })
 
-  .controller( 'LoginCtrl', ['$scope', '$state', 'userAccessSrv',
-    function LoginCtrl( $scope, $state, userAccessSrv ) {
+  .controller( 'LoginCtrl', ['$scope', '$state', 'userAccessSrv', 'Analytics',
+    function LoginCtrl( $scope, $state, userAccessSrv, Analytics ) {
       $scope.error = null;
 
       $scope.loginUser = function (userForm) {
         userAccessSrv.cleanUser();
         userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
+            Analytics.trackEvent('login_success');
             $state.go('master_signedin.results', {'page':''});
           },
           function (error) {
@@ -34,6 +35,7 @@ angular.module( 'ixlayer.login', [
             {
               $scope.error = error;
             }
+            Analytics.trackEvent('login_failed', {error: $scope.error});
           }
         );
       };

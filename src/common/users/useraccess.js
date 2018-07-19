@@ -100,11 +100,6 @@ angular.module('ixlayer.useraccess', [
 
           currentUser = response;
 
-          //TO MOCK PP QUESTIONNAIRE:
-          // currentUser.network.config.enable_patient_questionnaires = 0;
-          //TO MOCK THE RATING FEATURE:
-          // currentUser.network.config.enable_treatmentplan_rating = 1;
-
           Raven.setUserContext({
             profile_id: currentUser.id,
             email: currentUser.user.email,

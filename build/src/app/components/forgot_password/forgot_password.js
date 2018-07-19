@@ -12,13 +12,16 @@ angular.module( 'ixlayer.forgotpassword', [
     });
   })
   
-  .controller( 'ForgotPasswordCtrl',  ['$scope', '$state', 'userAccessSrv', function ForgotPasswordCtrl( $scope, $state, userAccessSrv ) {
+  .controller( 'ForgotPasswordCtrl',  ['$scope', '$state', 'userAccessSrv', 'Analytics',
+    function ForgotPasswordCtrl( $scope, $state, userAccessSrv, Analytics ) {
+
       $scope.error = null;
       $scope.success = false;
 
       $scope.forgotSubmit = function () {
           userAccessSrv.resetPassword($scope.forgotForm.email).then(function (result) {
                 $scope.success = true;
+                Analytics.trackEvent('forgot_password');
               },
               function (error) {
                 $scope.error = error;
