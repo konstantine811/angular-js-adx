@@ -64,7 +64,7 @@ angular.module( 'ixlayer.results', [
             if ($stateParams.page !== '') {
               $scope.page = $stateParams.page;
             } else {
-              $scope.page = 'p1';
+              $scope.page = 'view';
             }
           }
         } else if ($scope.hasProducts && !$scope.resultReady && $stateParams.page === '') {
@@ -75,6 +75,7 @@ angular.module( 'ixlayer.results', [
           $scope.page = $stateParams.page;
         }
 
+        // Figure out result details if it is ready
         if ($scope.hasProducts && $scope.resultReady) {
           $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
             $scope.productStatus.custom_data['confirmation_code'] + '&req_number=' +
@@ -109,19 +110,24 @@ angular.module( 'ixlayer.results', [
           $scope.$parent.isHomeActive = $stateParams.page === '';
         }
         else if ($scope.page === 'consent') {
-            $scope.$parent.menuTitle = 'Home';
-            $scope.$parent.showResults = false;
-            $scope.$parent.isHomeActive = true;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = false;
+          $scope.$parent.isHomeActive = true;
         }
-        else if ($scope.page === '' || $scope.page === 'p1') {
-            $scope.$parent.menuTitle = 'Results';
-            $scope.$parent.showResults = true;
-            $scope.$parent.isHomeActive = true;
+        else if ($scope.page === 'view') {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = true;
+          $scope.$parent.isHomeActive = true;
+        }
+        else if (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page)) {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = true;
+          $scope.$parent.isHomeActive = true;
         }
         else if (['sharing', 'science', 'questions'].includes($scope.page)) {
-            $scope.$parent.isHomeActive = false;
-            $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
-            $scope.$parent.menuTitle = $scope.$parent.showResults ? 'Results': 'Home';
+          $scope.$parent.isHomeActive = false;
+          $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
+          $scope.$parent.menuTitle = $scope.$parent.showResults ? 'Results': 'Home';
         } else
         if ($scope.page === 'sequencing-status') {
           $scope.$parent.showResults = false;

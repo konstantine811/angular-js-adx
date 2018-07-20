@@ -5899,7 +5899,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "          </p>\n" +
     "        </div>\n" +
     "        <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "          <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"bt-round bt-round--blue-dark\">View results</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -5922,11 +5922,11 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "            </div>\n" +
     "            <div class=\"txt__wrap txt-wrap-under-button\">\n" +
     "              <div class=\"txt txt-black txt-center\">\n" +
-    "                ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
+    "                ADx is here to answer any questions you have about the test and your results. Click below scheduling a genetic counseling session now.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "              <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Schedule session</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -5944,7 +5944,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "              <a href=\"mailto:?subject=ADx Healthcare Alzheimer's test\" class=\"bt-round bt-round--blue\">Refer a friend</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -5963,7 +5963,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--orange\">View results</button>\n" +
+    "              <button contacts-scroll class=\"bt-round bt-round--orange\">Contact Us</button>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -6866,7 +6866,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
     "            <button contacts-scroll class=\"btn-reset\"><span class=\"txt-large txt-bold txt-blue-dark\">Contact Us</span></button>\n" +
-    "            <a  ui-sref=\"master.about\" class=\"txt-large txt-bold txt-blue-dark\">About Us</a>\n" +
+    "            <a ui-sref=\"master.about\" class=\"txt-large txt-bold txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
     "            <div class=\"link-icon__wrap\">\n" +
