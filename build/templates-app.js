@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/result-wrong.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-inconclusive.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -1992,7 +1992,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$89.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$80.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"txt--indent-small\">\n" +
@@ -3685,6 +3685,66 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "</div>");
 }]);
 
+angular.module("components/results/pages/result-inconclusive.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-inconclusive.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"anim-content-transition\">\n" +
+    "        <div class=\"container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h1 class=\"txt-blue-dark anim-content-transition\">Inconclusive results</h1>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap result-wrong-head-txt__wrap\">\n" +
+    "                <p class=\"txt txt-black anim-content-transition\">\n" +
+    "                  <b>We are sorry but the sequencing data was insufficient for us to determine your result.</b>\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div class=\"section__wrap-sm section__wrap--space-bottom\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-wrong-content-txt__wrap\">\n" +
+    "        <h2 class=\"txt-center txt-blue-dark anim-content-transition\">Contact us</h2>\n" +
+    "        <div class=\"section__wrap-exs container-sub-head txt-center anim-content-transition\">\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              We take great pride in providing accurate results to our customers. Our system has automatically notified us of this issue.\n" +
+    "              Please contact us and we will try to help you and answer your questions regarding your results.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap--large-top button--center\">\n" +
+    "            <button contacts-scroll class=\"bt-round bt-round--blue-dark\">Contact us</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "</div>");
+}]);
+
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p1.tpl.html",
     "<div class=\"result\">\n" +
@@ -3723,7 +3783,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genetic test results indicate that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -3762,7 +3822,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genetic test results indicate that you are at <span class=\"txt-bold\">{{ riskLevel }}</span> genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
@@ -4059,9 +4119,9 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        <div class=\"txt__wrap\">\n" +
     "          <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype {{ results.name }}.</span> There are three common variants of the ApoE gene:</p>\n" +
     "          <ul class=\"txt--indent-small list-item-size\">\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e4</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e2 (lowest risk)</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e3 (average risk)</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e4 (increased risk)</p></li>\n" +
     "          </ul>\n" +
     "          <p class=\"txt txt-black\">Like all genes, you have two copies of ApoE, one from your mother and one from your father.\n" +
     "            <span ng-if=\"results.name === 'e2/e3'\">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e2/e3). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>\n" +
@@ -4098,7 +4158,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "\n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago54 and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
+    "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>54</sup></a> and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
@@ -4106,7 +4166,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
+    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>56</sup></a> show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
@@ -4354,7 +4414,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <h3 class=\"txt-blue txt-center-sm\">Health implications of stress</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.  Psychological stress has been shown to raise blood cholesterol levels.3, 4 The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.5 While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustained.\n" +
+    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.  Psychological stress has been shown to raise blood cholesterol levels.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>3, 4</sup></a> The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.5 While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustained.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4640,7 +4700,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease.</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            inResearch indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                            Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -5973,66 +6033,6 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "</div>");
 }]);
 
-angular.module("components/results/pages/result-wrong.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-wrong.tpl.html",
-    "<div class=\"result\">\n" +
-    "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"result-head__over\">\n" +
-    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"anim-content-transition\">\n" +
-    "        <div class=\"container-flex\">\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap\">\n" +
-    "              <div class=\"title__wrap\">\n" +
-    "                <h1 class=\"txt-blue-dark anim-content-transition\">Something went wrong</h1>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap result-wrong-head-txt__wrap\">\n" +
-    "                <p class=\"txt txt-black anim-content-transition\">\n" +
-    "                  <b>We are sorry, but the sequencing data was insufficient for us to determine your result.</b>\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap\">\n" +
-    "              <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
-    "                <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  <!--section first-->\n" +
-    "  <div class=\"section__wrap-sm section__wrap--space-bottom\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-wrong-content-txt__wrap\">\n" +
-    "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Why did I get this?</h1>\n" +
-    "        <div class=\"section__wrap-md container-sub-head txt-center anim-content-transition\">\n" +
-    "          <p class=\"txt txt-blue-dark\"><b>There could be many reasons for this:</b></p>\n" +
-    "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">\n" +
-    "              Please contact us at and we will try to help you and answer your questions regarding your results.\n" +
-    "            </p>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap--large-top button--center\">\n" +
-    "            <button contacts-scroll class=\"bt-round bt-round--blue-dark\">Contact us</button>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  \n" +
-    "</div>");
-}]);
-
 angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/sequencingStatus.tpl.html",
     "<div class=\"sequencing-status-page\">\n" +
@@ -6163,7 +6163,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div ng-show=\"page == 'consent'\" ng-include=\"'components/results/pages/result-consent.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'pre-purchase'\" ng-include=\"'components/results/pages/prePurchase.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'sequencing-status'\" ng-include=\"'components/results/pages/sequencingStatus.tpl.html'\"></div>\n" +
-    "<div ng-show=\"page == 'result-wrong'\" ng-include=\"'components/results/pages/result-wrong.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'inconclusive'\" ng-include=\"'components/results/pages/result-inconclusive.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p1'\" ng-include=\"'components/results/pages/result-p1.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p2'\" ng-include=\"'components/results/pages/result-p2.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p3'\" ng-include=\"'components/results/pages/result-p3.tpl.html'\"></div>\n" +

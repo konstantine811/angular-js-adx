@@ -119,6 +119,11 @@ angular.module( 'ixlayer.results', [
           $scope.$parent.showResults = true;
           $scope.$parent.isHomeActive = true;
         }
+        else if ($scope.page === 'inconclusive') {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = false;
+          $scope.$parent.isHomeActive = true;
+        }
         else if (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page)) {
           $scope.$parent.menuTitle = 'Home';
           $scope.$parent.showResults = true;

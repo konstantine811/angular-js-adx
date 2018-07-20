@@ -54,7 +54,7 @@ angular.module( 'ixlayer.products', [
         $scope.haveKit = true;
       } else {
         $scope.buttonTitle = 'Purchase with Helix';
-        $scope.totalPrice = 248.00;
+        $scope.totalPrice = 239.00;
         $scope.haveKit = false;
       }
     };
