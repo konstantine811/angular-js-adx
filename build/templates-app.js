@@ -2405,7 +2405,7 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                        <div class=\"col-sm-6\">\n" +
     "                            <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "                                Your test result will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
@@ -3783,7 +3783,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genetic test results indicate that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genetic test result indicate that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the US population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -3822,7 +3822,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genetic test results indicate that you are at <span class=\"txt-bold\">{{ riskLevel }}</span> genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genetic test result indicate that you are at <span class=\"txt-bold\">{{ riskLevel }}</span> genetic risk for Alzheimer’s disease compared to the US population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +

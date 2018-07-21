@@ -40,6 +40,7 @@ angular.module( 'ixlayer.results', [
       $scope.productStatus = null;
       $scope.schedule_link = null;
       $scope.download_link = null;
+      $scope.resultInconclusive = false;
       $scope.accordionIsOpen = [];
 
       $scope.showSubPages = function (page) {
@@ -52,6 +53,7 @@ angular.module( 'ixlayer.results', [
             $scope.productStatus = $scope.profile.helix_profile.product_status[0];
             $scope.consentAgreed = $scope.productStatus.product_consent_agreed_date !== null;
             $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
+            $scope.resultInconclusive = results.length === 0 || ['e1/e1', 'e1/e2', 'e1/e4'].includes(results[0].result.name);
           }
         } else {
         }
@@ -61,10 +63,14 @@ angular.module( 'ixlayer.results', [
           if (!$scope.consentAgreed && (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page))) {
             $scope.page = 'consent';
           } else {
-            if ($stateParams.page !== '') {
-              $scope.page = $stateParams.page;
+            if ($scope.resultInconclusive) {
+              $scope.page = 'inconclusive';
             } else {
-              $scope.page = 'view';
+              if ($stateParams.page !== '') {
+                $scope.page = $stateParams.page;
+              } else {
+                $scope.page = 'view';
+              }
             }
           }
         } else if ($scope.hasProducts && !$scope.resultReady && $stateParams.page === '') {
