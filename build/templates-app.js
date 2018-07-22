@@ -1,4 +1,4 @@
-angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/result-wrong.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
+angular.module("templates-app", ["components/about/about.tpl.html", "components/change_password/change_password.tpl.html", "components/dashboard/dashboard.tpl.html", "components/faq/faq.tpl.html", "components/forgot_password/forgot_password.tpl.html", "components/home/home.tpl.html", "components/legal/legal.tpl.html", "components/login/login.tpl.html", "components/master/master_signedin.tpl.html", "components/master/master.tpl.html", "components/master/side-navbar.tpl.html", "components/products/pages/about-products.tpl.html", "components/products/products.tpl.html", "components/products/productsDetail.tpl.html", "components/profile/profileEdit.tpl.html", "components/profile/profileView.tpl.html", "components/references/references.tpl.html", "components/register/register.tpl.html", "components/results/pages/partials/info-products.tpl.html", "components/results/pages/prePurchase.tpl.html", "components/results/pages/result-consent.tpl.html", "components/results/pages/result-inconclusive.tpl.html", "components/results/pages/result-p1.tpl.html", "components/results/pages/result-p2.tpl.html", "components/results/pages/result-p3.tpl.html", "components/results/pages/result-p4.tpl.html", "components/results/pages/result-questions.tpl.html", "components/results/pages/result-science.tpl.html", "components/results/pages/result-sharing.tpl.html", "components/results/pages/result-view.tpl.html", "components/results/pages/sequencingStatus.tpl.html", "components/results/results.tpl.html", "components/science/science.tpl.html", "components/verify_email/verify_email.tpl.html", "shared/footer/footer.tpl.html", "shared/header/header.tpl.html", "templates/care_questions.tpl.html"]);
 
 angular.module("components/about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/about/about.tpl.html",
@@ -159,7 +159,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Careers at ADx</h1>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
     "              <p class=\"txt\">ADx Healthcare is dedicated to providing answers for Alzheimer's disease questions about risk and treatment.\n" +
-    "                If you are you interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
+    "                If you are interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
     "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Careers</span></a>\n" +
@@ -425,7 +425,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "                                        ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -459,7 +459,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "                                        Your test results will be delivered in an electronic report. A genetic counselor from PWNHealth will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -493,7 +493,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "                                        You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, an appointment can be scheduled with a genetic counselor from PWNHealth, for no additional charge, to discuss your test results with you.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -544,7 +544,10 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
+    "                                        Your data is protected throughout the process, including the physician approval and genetic counseling by PWNHealth, sequencing by Helix, and interpretation by ADx Healthcare.   As is explained in our Privacy Policy, your information will only be shared with the staff necessary for the review and processing of your order.  Your information will not be shared with anyone you do not authorize it to be shared with.\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt txt-black txt--indent\">\n" +
+    "                                      You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -736,9 +739,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  From start to finish you are never alone in the process.\n" +
-    "                  ADx Healthcare offers the addition of physician review to be sure you understand what test you are ordering,\n" +
-    "                  what it does and does not reveal, plus the support of genetic counseling to help you understand your results.\n" +
+    "                  From start to finish you are never alone in the process. ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  We want to be sure you understand what test you are ordering and what it does and does not reveal. Plus, a genetic counselor from PWNHealth is available for appointment via phone or video to go over your report and answer any questions you may have, at no additional cost to you.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -748,7 +749,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
+    "                  ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -772,7 +773,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  Learn your Alzheimer’s genetic risk from the privacy of your home with a simple saliva test. Once your results are ready, an electronic copy of your report will be delivered to you on our secure platform. A printable copy of your results will also be available.  Your results will be kept confidential. It is up to you if you share your test results with anyone and whom you share them with. A genetic counselor is available at no additional cost if you want to ask questions about your results.\n" +
+    "                  Learn your Alzheimer’s genetic risk from the privacy of your home with a simple saliva test. Once your results are ready, an electronic copy of your report will be delivered to you on our secure platform. A printable copy of your results will also be available.  Your results will be kept confidential. It is up to you if you share your test results with anyone and whom you share them with. A genetic counselor, from our partner PWNHealth, is available at no additional cost if you want to ask questions about your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -798,7 +799,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black\">\n" +
-    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
+    "                  ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -815,7 +816,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black txt-center\">\n" +
-    "                  Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
+    "                  Once an independent physician from PWNHealth authorizes your test, you will receive a sample kit in the mail. Collect your saliva sample and send the kit back to us for processing, in the prepaid packaging provided.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -890,6 +891,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "  </div>\n" +
     "  \n" +
     "  <!--section third-->\n" +
+    "  <!--\n" +
     "  <div class=\"home-section-third section-box-shadow\">\n" +
     "    <div class=\"title__wrap txt-center\">\n" +
     "      <h2 class=\"txt-blue-dark\">What people say about us</h2>\n" +
@@ -943,7 +945,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
+    "  -->\n" +
+    "\n" +
     "  <!--section fourth-->\n" +
     "  <div ng-include=\"'templates/care_questions.tpl.html'\"></div>\n" +
     "  \n" +
@@ -1992,7 +1995,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$89.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$80.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"txt--indent-small\">\n" +
@@ -2198,7 +2201,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <h3 class=\"txt-blue-dark txt-center\">Saliva Sample</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
-    "                    <p class=\"txt txt-black\">Collect your saliva sample and send the kit to us for processing. (Physician authorization will be required prior to lab processing)</p>\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      Once an independent physician from PWNHealth authorizes your test, you will receive a sample kit in the mail. Collect your saliva sample and send the kit back to us for processing, in the prepaid packaging provided.\n" +
+    "                    </p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2213,7 +2218,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <h3 class=\"txt-blue-dark txt-center\">Results</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
-    "                    <p class=\"txt txt-black\">Obtain your results privately from your own home. your provider. We will help you schedule your free genetic counseling session.</p>\n" +
+    "                    <p class=\"txt txt-black\">Obtain your results privately from your own home. We will help you schedule your free genetic counseling session.</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2254,7 +2259,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <div class=\"txt__wrap txt-center-md\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
     "                        Helix is a personal genomics company with a simple but powerful mission: to empower every person to improve their life through DNA.\n" +
-    "                        We’ve created the first marketplace for DNA-powered products where people can explore diverse and uniquely personalized products developed by highquality partners.\n" +
+    "                        We’ve created the first marketplace for DNA-powered products where people can explore diverse and uniquely personalized products developed by high quality partners.\n" +
     "                        <br>\n" +
     "                        Helix handles sample collection, DNA sequencing, and secure data storage so that our partners can integrate DNA insights into products across a range of categories, including ancestry, entertainment, family, fitness, health and nutrition. From profound insights to just-for-fun discoveries, Helix is here to help people live a fuller life.\n" +
     "                        Learn more at www.helix.com.\n" +
@@ -2405,7 +2410,7 @@ angular.module("components/products/productsDetail.tpl.html", []).run(["$templat
     "                        </div>\n" +
     "                        <div class=\"col-sm-6\">\n" +
     "                            <div class=\"txt txt-black\"><p class=\"txt-bold\">What will my results tell me?</p>\n" +
-    "                                Your test results will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
+    "                                Your test result will explain which combination of the ApoE alleles you have. This genetic combination will be further interpreted, to help you identify your lifetime risk for developing Alzheimer’s disease, based on your genetics and your current age. Your ApoE status will not change as you age, but as you age your chance of developing Alzheimer’s will increase at a different rate dependent on which ApoE combination you have. A genetics counselor will be available to go through your results with you if you have questions.\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
@@ -3685,6 +3690,66 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "</div>");
 }]);
 
+angular.module("components/results/pages/result-inconclusive.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("components/results/pages/result-inconclusive.tpl.html",
+    "<div class=\"result\">\n" +
+    "  <div class=\"result-head result-head--p1\">\n" +
+    "    <div class=\"result-head__over\">\n" +
+    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
+    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"anim-content-transition\">\n" +
+    "        <div class=\"container-flex\">\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"title__wrap\">\n" +
+    "                <h1 class=\"txt-blue-dark anim-content-transition\">Inconclusive results</h1>\n" +
+    "              </div>\n" +
+    "              <div class=\"txt__wrap result-wrong-head-txt__wrap\">\n" +
+    "                <p class=\"txt txt-black anim-content-transition\">\n" +
+    "                  <b>We are sorry but the sequencing data was insufficient for us to determine your result.</b>\n" +
+    "                </p>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div class=\"flex-column\">\n" +
+    "            <div class=\"flex-column__wrap\">\n" +
+    "              <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
+    "                <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <!--section first-->\n" +
+    "  <div class=\"section__wrap-sm section__wrap--space-bottom\">\n" +
+    "    <div class=\"container-lg--dashboard\">\n" +
+    "      <div class=\"result-wrong-content-txt__wrap\">\n" +
+    "        <h2 class=\"txt-center txt-blue-dark anim-content-transition\">Contact us</h2>\n" +
+    "        <div class=\"section__wrap-exs container-sub-head txt-center anim-content-transition\">\n" +
+    "          <div class=\"txt--indent-small\">\n" +
+    "            <p class=\"txt txt-black\">\n" +
+    "              We take great pride in providing accurate results to our customers. Our system has automatically notified us of this issue.\n" +
+    "              Please contact us and we will try to help you and answer your questions regarding your results.\n" +
+    "            </p>\n" +
+    "          </div>\n" +
+    "          <div class=\"button__wrap--large-top button--center\">\n" +
+    "            <button contacts-scroll class=\"bt-round bt-round--blue-dark\">Contact us</button>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  \n" +
+    "</div>");
+}]);
+
 angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("components/results/pages/result-p1.tpl.html",
     "<div class=\"result\">\n" +
@@ -3723,7 +3788,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.</b>\n" +
+    "            <b>Your ApoE genetic test result indicate that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the US population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -3762,7 +3827,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "      <div class=\"txt__wrap anim-content-transition\">\n" +
     "        <p class=\"txt txt-black\">\n" +
-    "          Your ApoE genetic test results indicates that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the average population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
+    "          Your ApoE genetic test result indicate that you are at <span class=\"txt-bold\">{{ riskLevel }}</span> genetic risk for Alzheimer’s disease compared to the US population.  It is important to note that although ApoE genotype is a powerful genetic risk factor for Alzheimer’s disease, the test itself is not diagnostic of the disease. Having a high-risk genotype (at least one copy of ApoE-e4) does not guarantee development of the disease, and having the lowest risk genotype (having the ApoE e2/e2 genotype) does not exclude the possibility of developing Alzheimer’s disease.\n" +
     "        </p>\n" +
     "        <div class=\"txt--indent\">\n" +
     "          <div class=\"txt txt-black\">\n" +
@@ -4059,9 +4124,9 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "        <div class=\"txt__wrap\">\n" +
     "          <p class=\"txt txt-black\"><span class=\"txt-bold\">You have ApoE genotype {{ results.name }}.</span> There are three common variants of the ApoE gene:</p>\n" +
     "          <ul class=\"txt--indent-small list-item-size\">\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e2</p></li>\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e3</p></li>\n" +
-    "            <li><p class=\"txt txt-black\">ApoE-e4</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e2 (lowest risk)</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e3 (average risk)</p></li>\n" +
+    "            <li><p class=\"txt txt-black\">ApoE-e4 (increased risk)</p></li>\n" +
     "          </ul>\n" +
     "          <p class=\"txt txt-black\">Like all genes, you have two copies of ApoE, one from your mother and one from your father.\n" +
     "            <span ng-if=\"results.name === 'e2/e3'\">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e2/e3). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>\n" +
@@ -4098,7 +4163,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "\n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago54 and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
+    "            <p class=\"txt txt-black\">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>54</sup></a> and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
@@ -4106,7 +4171,7 @@ angular.module("components/results/pages/result-p2.tpl.html", []).run(["$templat
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
+    "            <p class=\"txt txt-black\">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>56</sup></a> show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>\n" +
     "          </div>\n" +
     "  \n" +
     "          <div class=\"txt--indent-small\">\n" +
@@ -4354,7 +4419,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <h3 class=\"txt-blue txt-center-sm\">Health implications of stress</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.  Psychological stress has been shown to raise blood cholesterol levels.3, 4 The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.5 While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustained.\n" +
+    "                            Excessive stress can negatively impact many systems in the human body, beyond the brain, that in turn still negatively impact memory and cognition, increasing the risk for cognitive decline.  Psychological stress has been shown to raise blood cholesterol levels.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>3, 4</sup></a> The elevation of cholesterol after a stressful event occurs within minutes of the stress exposure and can last for over 30 minutes.5 While these individual increases in cholesterol level are not large, they may contribute to atherosclerosis if they are sustained.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -4640,7 +4705,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "                        <h3 class=\"txt-blue txt-center-sm\">Poor sleep may be both a cause and a symptom of Alzheimer’s disease.</h3>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            inResearch indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
+    "                            Research indicates that 15% of Alzheimer’s cases may be attributable to disrupted sleep(1).  Research also indicates that older adults with disturbed sleep experience a faster decline in cognition than those who sleep well (2). Sleep is an opportunity for the body to repair and restore itself.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
@@ -5363,7 +5428,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "                ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5397,7 +5462,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "                Your test results will be delivered in an electronic report. A genetic counselor from PWNHealth will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5431,7 +5496,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "                You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, an appointment can be scheduled with a genetic counselor from PWNHealth, for no additional charge, to discuss your test results with you.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5482,7 +5547,10 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
+    "                Your data is protected throughout the process, including the physician approval and genetic counseling by PWNHealth, sequencing by Helix, and interpretation by ADx Healthcare.   As is explained in our Privacy Policy, your information will only be shared with the staff necessary for the review and processing of your order.  Your information will not be shared with anyone you do not authorize it to be shared with.\n" +
+    "              </div>\n" +
+    "              <div class=\"txt txt-black txt--indent\">\n" +
+    "                You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5899,7 +5967,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "          </p>\n" +
     "        </div>\n" +
     "        <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "          <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "          <a ui-sref=\"master_signedin.results({'page':'p1'})\" class=\"bt-round bt-round--blue-dark\">View results</a>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
@@ -5922,11 +5990,11 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "            </div>\n" +
     "            <div class=\"txt__wrap txt-wrap-under-button\">\n" +
     "              <div class=\"txt txt-black txt-center\">\n" +
-    "                ADx is here to answer any questions you have about the test and your results. Contact us about scheduling a genetic counseling session now.\n" +
+    "                ADx is here to answer any questions you have about the test and your results. Click below scheduling a genetic counseling session now.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--blue-dark\">View results</button>\n" +
+    "              <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Schedule session</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -5944,7 +6012,7 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--blue\">View results</button>\n" +
+    "              <a href=\"mailto:?subject=ADx Healthcare Alzheimer's test\" class=\"bt-round bt-round--blue\">Refer a friend</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -5963,73 +6031,13 @@ angular.module("components/results/pages/result-view.tpl.html", []).run(["$templ
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center\">\n" +
-    "              <button class=\"bt-round bt-round--orange\">View results</button>\n" +
+    "              <button contacts-scroll class=\"bt-round bt-round--orange\">Contact Us</button>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  <!--end section first-->\n" +
-    "</div>");
-}]);
-
-angular.module("components/results/pages/result-wrong.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("components/results/pages/result-wrong.tpl.html",
-    "<div class=\"result\">\n" +
-    "  <div class=\"result-head result-head--p1\">\n" +
-    "    <div class=\"result-head__over\">\n" +
-    "      <div class=\"txt-rubric__wrap anim-content-transition\">\n" +
-    "        <div class=\"txt txt-bold txt-gray\">Results</div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"anim-content-transition\">\n" +
-    "        <div class=\"container-flex\">\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap\">\n" +
-    "              <div class=\"title__wrap\">\n" +
-    "                <h1 class=\"txt-blue-dark anim-content-transition\">Something went wrong</h1>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap result-wrong-head-txt__wrap\">\n" +
-    "                <p class=\"txt txt-black anim-content-transition\">\n" +
-    "                  <b>We are sorry, but the sequencing data was insufficient for us to determine your result.</b>\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap\">\n" +
-    "              <div class=\"flex-column pre-result-head-img hide-mobile anim-content-transition\">\n" +
-    "                <ng-include class=\"img-middle--md\" src=\"'../assets/images/svg/notebook-pulse-blue.svg'\"> </ng-include>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  <!--section first-->\n" +
-    "  <div class=\"section__wrap-sm section__wrap--space-bottom\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"result-wrong-content-txt__wrap\">\n" +
-    "        <h1 class=\"txt-center txt-blue-dark anim-content-transition\">Why did I get this?</h1>\n" +
-    "        <div class=\"section__wrap-md container-sub-head txt-center anim-content-transition\">\n" +
-    "          <p class=\"txt txt-blue-dark\"><b>There could be many reasons for this:</b></p>\n" +
-    "          <div class=\"txt--indent-small\">\n" +
-    "            <p class=\"txt txt-black\">\n" +
-    "              Please contact us at and we will try to help you and answer your questions regarding your results.\n" +
-    "            </p>\n" +
-    "          </div>\n" +
-    "          <div class=\"button__wrap--large-top button--center\">\n" +
-    "            <button contacts-scroll class=\"bt-round bt-round--blue-dark\">Contact us</button>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "  \n" +
     "</div>");
 }]);
 
@@ -6163,7 +6171,7 @@ angular.module("components/results/results.tpl.html", []).run(["$templateCache",
     "<div ng-show=\"page == 'consent'\" ng-include=\"'components/results/pages/result-consent.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'pre-purchase'\" ng-include=\"'components/results/pages/prePurchase.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'sequencing-status'\" ng-include=\"'components/results/pages/sequencingStatus.tpl.html'\"></div>\n" +
-    "<div ng-show=\"page == 'result-wrong'\" ng-include=\"'components/results/pages/result-wrong.tpl.html'\"></div>\n" +
+    "<div ng-show=\"page == 'inconclusive'\" ng-include=\"'components/results/pages/result-inconclusive.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p1'\" ng-include=\"'components/results/pages/result-p1.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p2'\" ng-include=\"'components/results/pages/result-p2.tpl.html'\"></div>\n" +
     "<div ng-show=\"page == 'p3'\" ng-include=\"'components/results/pages/result-p3.tpl.html'\"></div>\n" +
@@ -6479,7 +6487,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                        <p class=\"txt txt-black\">\n" +
     "                          As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
     "                          have you supported each step of the way.\n" +
-    "                          *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
+    "                          I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
     "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -6525,7 +6533,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
     "                        </div>\n" +
     "                        <div class=\"title__wrap\">\n" +
-    "                          <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                          <h3 class=\"txt-blue-dark\">Sharable insights</h3>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt__wrap txt-center\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
@@ -6556,7 +6564,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                        </h3>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-left\">\n" +
-    "                        <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                        <p class=\"txt txt-black\">\n" +
     "                          Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
     "                        </p>\n" +
     "                      </div>\n" +
@@ -6578,12 +6586,12 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          More about the test\n" +
     "                        </h3>\n" +
     "                      </div>\n" +
-    "                      <div class=\"txt__wrap txt-left\">\n" +
-    "                        <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                      <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
+    "                        <p class=\"txt txt-black\">The Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1,2</sup></a>  Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>4</sup></a>  Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>5,6</sup></a>\n" +
     "                        </p>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                            Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>7-16</sup></a>  Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -6668,7 +6676,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    <p class=\"txt txt-black\">\n" +
     "                      As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
     "                      have you supported each step of the way.\n" +
-    "                      *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
+    "                      I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
     "                    </p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -6714,7 +6722,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                      <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
     "                    </div>\n" +
     "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                      <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                      <h3 class=\"txt-blue-dark\">Sharable insights</h3>\n" +
     "                    </div>\n" +
     "                    <div class=\"txt__wrap txt-center\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
@@ -6743,7 +6751,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
-    "                    <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                    <p class=\"txt txt-black\">\n" +
     "                      Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
@@ -6766,11 +6774,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
-    "                    <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                    <p class=\"txt txt-black\">The Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1,2</sup></a>  Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>4</sup></a>  Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>5,6</sup></a>\n" +
     "                    </p>\n" +
     "                    <div class=\"txt--indent-small\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
-    "                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>7-16</sup></a>  Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
     "                      </p>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -6866,7 +6874,7 @@ angular.module("shared/footer/footer.tpl.html", []).run(["$templateCache", funct
     "          </div>\n" +
     "          <div class=\"footer-bottom__link txt-center\">\n" +
     "            <button contacts-scroll class=\"btn-reset\"><span class=\"txt-large txt-bold txt-blue-dark\">Contact Us</span></button>\n" +
-    "            <a  ui-sref=\"master.about\" class=\"txt-large txt-bold txt-blue-dark\">About Us</a>\n" +
+    "            <a ui-sref=\"master.about\" class=\"txt-large txt-bold txt-blue-dark\">About Us</a>\n" +
     "          </div>\n" +
     "          <div class=\"footer-bottom-link-icon__wrap\">\n" +
     "            <div class=\"link-icon__wrap\">\n" +
@@ -7017,9 +7025,12 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "              From the independent physician review of your order to the genetic counselor available to answer your questions about your test results, ADx Healthcare is committed to providing you with support through the entire process of learning your ApoE genetic risk for Alzheimer’s disease.\n" +
     "              <div class=\"txt--indent\">\n" +
     "                For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                *ADx Healthcare contracts with PWNHealth for both the independent physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test. Both services are included at no additional cost to you.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -7037,7 +7048,7 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              You will receive your test results in a clear, electronic report.  It is up to you if you receive these results with a genetic counselor or on your own.  However, if you have additional questions about what these results mean to you or your family, our genetics counselors will still be available to discuss your results with you, for no additional charge.  We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
+    "              You will receive your test results in a clear, electronic report. It is up to you if you receive these results with a genetic counselor or on your own. However, if you have additional questions about what these results mean to you or your family,  we offer genetic counseling with the independent provider network, PWNHealth, to you at no additional charge.We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +

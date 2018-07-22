@@ -126,9 +126,9 @@
         <div class="txt__wrap">
           <p class="txt txt-black"><span class="txt-bold">You have ApoE genotype {{ results.name }}.</span> There are three common variants of the ApoE gene:</p>
           <ul class="txt--indent-small list-item-size">
-            <li><p class="txt txt-black">ApoE-e2</p></li>
-            <li><p class="txt txt-black">ApoE-e3</p></li>
-            <li><p class="txt txt-black">ApoE-e4</p></li>
+            <li><p class="txt txt-black">ApoE-e2 (lowest risk)</p></li>
+            <li><p class="txt txt-black">ApoE-e3 (average risk)</p></li>
+            <li><p class="txt txt-black">ApoE-e4 (increased risk)</p></li>
           </ul>
           <p class="txt txt-black">Like all genes, you have two copies of ApoE, one from your mother and one from your father.
             <span ng-if="results.name === 'e2/e3'">You received a different variant of the gene from your mother than from your father, thus you are “heterozygous” for the ApoE gene (e2/e3). If you had received the same variant from each parent, then you would have had a “homozygous” genotype (such as e3/e3).</span>
@@ -165,7 +165,7 @@
           </div>
 
           <div class="txt--indent-small">
-            <p class="txt txt-black">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago54 and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>
+            <p class="txt txt-black">The details of exactly how ApoE-e4 increases the risk for Alzheimer’s disease are still being worked out, but the fact that it does increase risk is well established.  This was first demonstrated over 20 years ago<a class="references-number-highlight" ng-click="refScroll($event, 'RS1')"><sup>54</sup></a> and has been confirmed in numerous studies.  ApoE genotype is the most important genetic factor for Alzheimer’s disease risk for most people (not including the rare “familial” Alzheimer’s disease genes that cause a much less common form of the disease).  Compared to the most common genotype (e3/e3), the presence of a single ApoE-e4 allele (e3/e4) increases an individual’s risk for Alzheimer’s disease about 3- to 4-fold, and the presence of two e4 alleles (e4/e4) increases the risk about 12- to 14-fold.55 In contrast to the e4 allele, the e2 allele is associated with reduced risk for Alzheimer’s disease.</p>
           </div>
   
           <div class="txt--indent-small">
@@ -173,7 +173,7 @@
           </div>
   
           <div class="txt--indent-small">
-            <p class="txt txt-black">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below56 show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>
+            <p class="txt txt-black">Your genetics stay the same as you age, but your risk for Alzheimer’s disease increases with age, and it increases at different rates depending on your ApoE genotype. The table and graph below<a class="references-number-highlight" ng-click="refScroll($event, 'RS1')"><sup>56</sup></a> show approximate lifetime risk for late-onset Alzheimer’s disease at various ages based on ApoE genotype (“lifetime risk” is the risk of developing Alzheimer’s disease at or before a certain age, e.g. ages 65, 75 and 85 in the charts below).  Note that these risk figures account only for ApoE genotype, without consideration of other genetic, medical or lifestyle factors that also may modify a person’s risk for Alzheimer’s disease.</p>
           </div>
   
           <div class="txt--indent-small">

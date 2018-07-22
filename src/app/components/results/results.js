@@ -40,6 +40,7 @@ angular.module( 'ixlayer.results', [
       $scope.productStatus = null;
       $scope.schedule_link = null;
       $scope.download_link = null;
+      $scope.resultInconclusive = false;
       $scope.accordionIsOpen = [];
 
       $scope.showSubPages = function (page) {
@@ -52,6 +53,7 @@ angular.module( 'ixlayer.results', [
             $scope.productStatus = $scope.profile.helix_profile.product_status[0];
             $scope.consentAgreed = $scope.productStatus.product_consent_agreed_date !== null;
             $scope.resultReady = $scope.productStatus.product_status === 'result_ready';
+            $scope.resultInconclusive = results.length === 0 || ['e1/e1', 'e1/e2', 'e1/e4'].includes(results[0].result.name);
           }
         } else {
         }
@@ -61,10 +63,14 @@ angular.module( 'ixlayer.results', [
           if (!$scope.consentAgreed && (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page))) {
             $scope.page = 'consent';
           } else {
-            if ($stateParams.page !== '') {
-              $scope.page = $stateParams.page;
+            if ($scope.resultInconclusive) {
+              $scope.page = 'inconclusive';
             } else {
-              $scope.page = 'p1';
+              if ($stateParams.page !== '') {
+                $scope.page = $stateParams.page;
+              } else {
+                $scope.page = 'view';
+              }
             }
           }
         } else if ($scope.hasProducts && !$scope.resultReady && $stateParams.page === '') {
@@ -75,6 +81,7 @@ angular.module( 'ixlayer.results', [
           $scope.page = $stateParams.page;
         }
 
+        // Figure out result details if it is ready
         if ($scope.hasProducts && $scope.resultReady) {
           $scope.schedule_link = 'https://gc.pwnhealth.com/c/intake/partners/affirmativdx/new?confirmation_code=' +
             $scope.productStatus.custom_data['confirmation_code'] + '&req_number=' +
@@ -109,19 +116,29 @@ angular.module( 'ixlayer.results', [
           $scope.$parent.isHomeActive = $stateParams.page === '';
         }
         else if ($scope.page === 'consent') {
-            $scope.$parent.menuTitle = 'Home';
-            $scope.$parent.showResults = false;
-            $scope.$parent.isHomeActive = true;
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = false;
+          $scope.$parent.isHomeActive = true;
         }
-        else if ($scope.page === '' || $scope.page === 'p1') {
-            $scope.$parent.menuTitle = 'Results';
-            $scope.$parent.showResults = true;
-            $scope.$parent.isHomeActive = true;
+        else if ($scope.page === 'view') {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = true;
+          $scope.$parent.isHomeActive = true;
+        }
+        else if ($scope.page === 'inconclusive') {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = false;
+          $scope.$parent.isHomeActive = true;
+        }
+        else if (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page)) {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = true;
+          $scope.$parent.isHomeActive = true;
         }
         else if (['sharing', 'science', 'questions'].includes($scope.page)) {
-            $scope.$parent.isHomeActive = false;
-            $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
-            $scope.$parent.menuTitle = $scope.$parent.showResults ? 'Results': 'Home';
+          $scope.$parent.isHomeActive = false;
+          $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
+          $scope.$parent.menuTitle = $scope.$parent.showResults ? 'Results': 'Home';
         } else
         if ($scope.page === 'sequencing-status') {
           $scope.$parent.showResults = false;
