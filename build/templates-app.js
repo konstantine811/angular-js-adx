@@ -159,7 +159,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "            <h1 class=\"txt-blue-dark txt-center txt--space-top-sm\">Careers at ADx</h1>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
     "              <p class=\"txt\">ADx Healthcare is dedicated to providing answers for Alzheimer's disease questions about risk and treatment.\n" +
-    "                If you are you interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
+    "                If you are interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
     "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Careers</span></a>\n" +
@@ -425,7 +425,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "                                        ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -459,7 +459,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "                                        Your test results will be delivered in an electronic report. A genetic counselor from PWNHealth will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -493,7 +493,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "                                        You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, an appointment can be scheduled with a genetic counselor from PWNHealth, for no additional charge, to discuss your test results with you.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -544,7 +544,10 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
+    "                                        Your data is protected throughout the process, including the physician approval and genetic counseling by PWNHealth, sequencing by Helix, and interpretation by ADx Healthcare.   As is explained in our Privacy Policy, your information will only be shared with the staff necessary for the review and processing of your order.  Your information will not be shared with anyone you do not authorize it to be shared with.\n" +
+    "                                    </div>\n" +
+    "                                    <div class=\"txt txt-black txt--indent\">\n" +
+    "                                      You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -736,9 +739,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  From start to finish you are never alone in the process.\n" +
-    "                  ADx Healthcare offers the addition of physician review to be sure you understand what test you are ordering,\n" +
-    "                  what it does and does not reveal, plus the support of genetic counseling to help you understand your results.\n" +
+    "                  From start to finish you are never alone in the process. ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  We want to be sure you understand what test you are ordering and what it does and does not reveal. Plus, a genetic counselor from PWNHealth is available for appointment via phone or video to go over your report and answer any questions you may have, at no additional cost to you.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -748,7 +749,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
+    "                  ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -772,7 +773,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap\">\n" +
     "                <div class=\"txt txt-black\">\n" +
-    "                  Learn your Alzheimer’s genetic risk from the privacy of your home with a simple saliva test. Once your results are ready, an electronic copy of your report will be delivered to you on our secure platform. A printable copy of your results will also be available.  Your results will be kept confidential. It is up to you if you share your test results with anyone and whom you share them with. A genetic counselor is available at no additional cost if you want to ask questions about your results.\n" +
+    "                  Learn your Alzheimer’s genetic risk from the privacy of your home with a simple saliva test. Once your results are ready, an electronic copy of your report will be delivered to you on our secure platform. A printable copy of your results will also be available.  Your results will be kept confidential. It is up to you if you share your test results with anyone and whom you share them with. A genetic counselor, from our partner PWNHealth, is available at no additional cost if you want to ask questions about your results.\n" +
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -798,7 +799,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black\">\n" +
-    "                  An independent physician will review your medical history and determine if the Alzheimer’s ApoE Genetic Test is right for you.  If they need any additional information, they will reach out to you directly.\n" +
+    "                  ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -815,7 +816,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "              </div>\n" +
     "              <div class=\"txt__wrap txt-center\">\n" +
     "                <p class=\"txt txt-black txt-center\">\n" +
-    "                  Once your test is approved, you will receive your testing kit in the mail. Collect your saliva sample and mail it back in the prepaid envelope.\n" +
+    "                  Once an independent physician from PWNHealth authorizes your test, you will receive a sample kit in the mail. Collect your saliva sample and send the kit back to us for processing, in the prepaid packaging provided.\n" +
     "                </p>\n" +
     "              </div>\n" +
     "            </div>\n" +
@@ -890,6 +891,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "  </div>\n" +
     "  \n" +
     "  <!--section third-->\n" +
+    "  <!--\n" +
     "  <div class=\"home-section-third section-box-shadow\">\n" +
     "    <div class=\"title__wrap txt-center\">\n" +
     "      <h2 class=\"txt-blue-dark\">What people say about us</h2>\n" +
@@ -943,7 +945,8 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
+    "  -->\n" +
+    "\n" +
     "  <!--section fourth-->\n" +
     "  <div ng-include=\"'templates/care_questions.tpl.html'\"></div>\n" +
     "  \n" +
@@ -2198,7 +2201,9 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <h3 class=\"txt-blue-dark txt-center\">Saliva Sample</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
-    "                    <p class=\"txt txt-black\">Collect your saliva sample and send the kit to us for processing. (Physician authorization will be required prior to lab processing)</p>\n" +
+    "                    <p class=\"txt txt-black\">\n" +
+    "                      Once an independent physician from PWNHealth authorizes your test, you will receive a sample kit in the mail. Collect your saliva sample and send the kit back to us for processing, in the prepaid packaging provided.\n" +
+    "                    </p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2213,7 +2218,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <h3 class=\"txt-blue-dark txt-center\">Results</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt--indent-small txt-center\">\n" +
-    "                    <p class=\"txt txt-black\">Obtain your results privately from your own home. your provider. We will help you schedule your free genetic counseling session.</p>\n" +
+    "                    <p class=\"txt txt-black\">Obtain your results privately from your own home. We will help you schedule your free genetic counseling session.</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -2254,7 +2259,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <div class=\"txt__wrap txt-center-md\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
     "                        Helix is a personal genomics company with a simple but powerful mission: to empower every person to improve their life through DNA.\n" +
-    "                        We’ve created the first marketplace for DNA-powered products where people can explore diverse and uniquely personalized products developed by highquality partners.\n" +
+    "                        We’ve created the first marketplace for DNA-powered products where people can explore diverse and uniquely personalized products developed by high quality partners.\n" +
     "                        <br>\n" +
     "                        Helix handles sample collection, DNA sequencing, and secure data storage so that our partners can integrate DNA insights into products across a range of categories, including ancestry, entertainment, family, fitness, health and nutrition. From profound insights to just-for-fun discoveries, Helix is here to help people live a fuller life.\n" +
     "                        Learn more at www.helix.com.\n" +
@@ -5423,7 +5428,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                An independent physician will review your health history questions to ensure the test is right for you.  They will reach out to you if they have any additional questions.\n" +
+    "                ADx Healthcare contracts with PWNHealth, an independent provider for both physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test.  A physician from PWNHealth will review your health history questions to ensure the test is right for you.  Someone from PWNHealth may reach out to you if they have any additional questions.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5457,7 +5462,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                Your test results will be delivered in an electronic report. A genetic counselor will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
+    "                Your test results will be delivered in an electronic report. A genetic counselor from PWNHealth will be available to go through your results with you (at no additional charge) if you have any questions. A printable version of your report will be available to you to download.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5491,7 +5496,7 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, we have genetic counselors available, for no additional charge, to discuss your test results with you.\n" +
+    "                You will receive your test results in a clear report. However, if you have questions about what these results mean to you or your family, an appointment can be scheduled with a genetic counselor from PWNHealth, for no additional charge, to discuss your test results with you.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5542,7 +5547,10 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "            </div>\n" +
     "            <div class=\"content-txt__wrap\">\n" +
     "              <div class=\"txt txt-black\">\n" +
-    "                As is explained in our Privacy Policy, your information will not be shared with anyone you do not authorize it to be shared with. You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
+    "                Your data is protected throughout the process, including the physician approval and genetic counseling by PWNHealth, sequencing by Helix, and interpretation by ADx Healthcare.   As is explained in our Privacy Policy, your information will only be shared with the staff necessary for the review and processing of your order.  Your information will not be shared with anyone you do not authorize it to be shared with.\n" +
+    "              </div>\n" +
+    "              <div class=\"txt txt-black txt--indent\">\n" +
+    "                You may be given the opportunity to contribute your genetic data to research studies related to Alzheimer’s disease, but the decision to participate is up to you. ADx Healthcare will not share your information with anyone, including your healthcare provider, without your written consent.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -6479,7 +6487,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                        <p class=\"txt txt-black\">\n" +
     "                          As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
     "                          have you supported each step of the way.\n" +
-    "                          *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
+    "                          I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
     "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
@@ -6525,7 +6533,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          <ng-include class=\"img-middle--md\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
     "                        </div>\n" +
     "                        <div class=\"title__wrap\">\n" +
-    "                          <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                          <h3 class=\"txt-blue-dark\">Sharable insights</h3>\n" +
     "                        </div>\n" +
     "                        <div class=\"txt__wrap txt-center\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
@@ -6556,7 +6564,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                        </h3>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-left\">\n" +
-    "                        <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                        <p class=\"txt txt-black\">\n" +
     "                          Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
     "                        </p>\n" +
     "                      </div>\n" +
@@ -6578,12 +6586,12 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                          More about the test\n" +
     "                        </h3>\n" +
     "                      </div>\n" +
-    "                      <div class=\"txt__wrap txt-left\">\n" +
-    "                        <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                      <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
+    "                        <p class=\"txt txt-black\">The Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1,2</sup></a>  Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>4</sup></a>  Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>5,6</sup></a>\n" +
     "                        </p>\n" +
     "                        <div class=\"txt--indent-small\">\n" +
     "                          <p class=\"txt txt-black\">\n" +
-    "                            Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                            Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>7-16</sup></a>  Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -6668,7 +6676,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    <p class=\"txt txt-black\">\n" +
     "                      As simple as click, spit, and ship on your side.  The heavy lifting is our responsibility.  From physician review, to sample analysis, to data reporting, and genetic counselor interpretation, we\n" +
     "                      have you supported each step of the way.\n" +
-    "                      *I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
+    "                      I like this graphic from the Helix site to demonstrate the process. Can we use something like this to help demonstrate our process?\n" +
     "                    </p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
@@ -6714,7 +6722,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                      <ng-include class=\"img-middle--md img-middle--large-sm\" src=\"'./assets/images/svg/molecule-2-green.svg'\"></ng-include>\n" +
     "                    </div>\n" +
     "                    <div class=\"title__wrap txt-center-sm\">\n" +
-    "                      <h3 class=\"txt-blue-dark\">Sharable insignts</h3>\n" +
+    "                      <h3 class=\"txt-blue-dark\">Sharable insights</h3>\n" +
     "                    </div>\n" +
     "                    <div class=\"txt__wrap txt-center\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
@@ -6743,7 +6751,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
-    "                    <p class=\"txt txt-black\">How your DNA becomes a report\n" +
+    "                    <p class=\"txt txt-black\">\n" +
     "                      Once Helix laboratories have analyzed your saliva sample and sequenced your DNA, they identify your SNP’s specific to the ApoE test (rs429358 and rs7412). This information is then transferred to ADx Healthcare and interpreted to develop your personalized Alzheimer’s ApoE Genetic Test report.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
@@ -6766,11 +6774,11 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                    </h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap txt-left txt-center-sm\">\n" +
-    "                    <p class=\"txt txt-black\">HThe Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.1,2 Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.4 Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.5,6\n" +
+    "                    <p class=\"txt txt-black\">The Alzheimer’s ApoE test is a single gene test that looks at your genetic risk for Alzheimer’s disease. Genome-Wide Association Studies (GWAS) indicate that the e4 allele of ApoE is the strongest single genetic risk factor for Alzheimer’s disease.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1,2</sup></a>  Apolipoprotein E (ApoE) is a protein that is involved in the metabolism of fats in your body and injury repair in your brain.3 ApoE is associated with both cardiovascular disease and Alzheimer’s disease risk.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>4</sup></a>  Researchers have identified that ApoE plays a role in Aβ (amyloid-beta) aggregation and clearance in the brain, synaptic plasticity, neuroinflammation, glucose metabolism, neuronal signaling, and mitochondrial function.4 ApoE also mediates cholesterol metabolism, with the ApoE-e4 allele associated with both hyperlipidaemia and hypercholesterolaemia, which can lead to atherosclerosis, coronary heart disease and stroke.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>5,6</sup></a>\n" +
     "                    </p>\n" +
     "                    <div class=\"txt--indent-small\">\n" +
     "                      <p class=\"txt txt-black\">\n" +
-    "                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.7-24 Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
+    "                        Alzheimer's disease is influenced by genetics, environment, lifestyle, and other medical factors.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>7-16</sup></a>  Thus, having the high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer's disease and not possessing a copy of the highest risk allele (APOE e4) does not mean you won't ever develop Alzheimer's disease. You cannot change your genetics and your risk for Alzheimer’s disease increases as you age, but there is hope in the fight against Alzheimer’s.  Learning your genetic risk for Alzheimer’s disease before symptoms of memory loss begin helps inform you how aggressively you want to address your modifiable lifestyle factors to optimize your cognitive health.\n" +
     "                      </p>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -7017,9 +7025,12 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "              From the independent physician review of your order to the genetic counselor available to answer your questions about your test results, ADx Healthcare is committed to providing you with support through the entire process of learning your ApoE genetic risk for Alzheimer’s disease.\n" +
     "              <div class=\"txt--indent\">\n" +
     "                For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
+    "              </div>\n" +
+    "              <div class=\"txt--indent\">\n" +
+    "                *ADx Healthcare contracts with PWNHealth for both the independent physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test. Both services are included at no additional cost to you.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -7037,7 +7048,7 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              You will receive your test results in a clear, electronic report.  It is up to you if you receive these results with a genetic counselor or on your own.  However, if you have additional questions about what these results mean to you or your family, our genetics counselors will still be available to discuss your results with you, for no additional charge.  We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
+    "              You will receive your test results in a clear, electronic report. It is up to you if you receive these results with a genetic counselor or on your own. However, if you have additional questions about what these results mean to you or your family,  we offer genetic counseling with the independent provider network, PWNHealth, to you at no additional charge.We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
