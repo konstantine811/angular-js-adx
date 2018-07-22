@@ -1,7 +1,10 @@
 @media (max-width: $breakpoint) {
   .carousel {
-    width: 90%;
+    width: 80vw;
     margin: 0 auto;
+  }
+  .slider__wrap {
+    width: 100%;
   }
 }
 
@@ -13,7 +16,7 @@
 
 @media (max-width: $breakpoint-sm) {
   .carousel {
-    width: 100%;
+    width: 97vw;
   }
   .carousel-control.right {
     right: calc(99px - 17vw);

@@ -9032,10 +9032,10 @@ h6 {
   display: inline-block; }
 
 .img-logo {
-  max-width: 80%;
+  max-width: 46%;
   width: 100%;
   position: relative;
-  bottom: 22px; }
+  height: 64px; }
 
 .human-brain-cloud--bgc-white .human-brain-cloud-svg-1 {
   fill: #fff; }
@@ -9295,7 +9295,8 @@ ul.box__wrap {
   display: none; }
 
 .slider__wrap {
-  padding: 0 30px; }
+  padding: 0 30px;
+  width: 1200px; }
 
 .tabs .nav > li {
   position: relative;
@@ -9353,7 +9354,8 @@ ul.box__wrap {
 .header-logo__link {
   display: inline-block;
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-left: 13px; }
 
 .side-navbar__account {
   width: 100%;
@@ -9770,8 +9772,8 @@ ul.box__wrap {
 
 .header__logo {
   position: relative;
-  width: 210px;
-  height: 50px;
+  max-width: 210px;
+  width: 100%;
   cursor: pointer; }
 
 .header-nav__wrap {
@@ -9803,7 +9805,7 @@ ul.box__wrap {
 
 .header-nav {
   display: flex;
-  align-self: flex-end;
+  align-self: center;
   width: auto;
   height: auto;
   align-items: center; }
@@ -11238,8 +11240,7 @@ textarea.form-control {
     margin-top: 20px; }
 
   .img-logo {
-    max-width: 130px;
-    bottom: 21px; } }
+    max-width: 80px; } }
 @media (max-width: 768px) {
   .img-middle--large-sm {
     max-width: 368px; }
@@ -11280,10 +11281,7 @@ textarea.form-control {
     max-width: 366px; }
 
   .img-logo {
-    margin: 0 auto;
-    max-width: 110px;
-    bottom: 17px;
-    right: 10px; } }
+    max-width: 67px; } }
 @media (max-width: 1596px) {
   .box-with-header-colored {
     min-width: auto; } }
@@ -11368,14 +11366,17 @@ textarea.form-control {
     padding-top: 0; } }
 @media (max-width: 1596px) {
   .carousel {
-    width: 90%;
-    margin: 0 auto; } }
+    width: 80vw;
+    margin: 0 auto; }
+
+  .slider__wrap {
+    width: 100%; } }
 @media (max-width: 1200px) {
   .carousel-control.right {
     right: -2%; } }
 @media (max-width: 768px) {
   .carousel {
-    width: 100%; }
+    width: 97vw; }
 
   .carousel-control.right {
     right: calc(99px - 17vw); }
@@ -11587,7 +11588,8 @@ textarea.form-control {
     padding-top: 2px; }
 
   .header__logo {
-    width: 100%; }
+    width: 100%;
+    right: calc(50% - 150px); }
 
   .header-nav {
     padding-top: 3px;

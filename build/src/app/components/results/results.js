@@ -224,5 +224,4 @@ angular.module( 'ixlayer.results', [
         });
       };
 
-
     }]);
