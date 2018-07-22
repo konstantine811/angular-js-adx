@@ -9,7 +9,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
     "      <div uib-slide index=\"0\">\n" +
-    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -33,7 +33,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"1\">\n" +
-    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -54,7 +54,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"2\">\n" +
-    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -180,18 +180,18 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "         We are always within your reach. Send us a message and we'll respond as soon as possible.\n" +
     "       </div>\n" +
     "     </div>\n" +
-    "     <form action=\"https://formspree.io/mdzwnwpm\" method=\"post\" class=\"form-space-top\">\n" +
+    "     <form action=\"https://formspree.io/support@adxhealthcare.com \" method=\"POST\" class=\"form-space-top\">\n" +
     "       <div class=\"form-group-space-top\">\n" +
-    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Name\">\n" +
+    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Name\" name=\"name\">\n" +
     "       </div>\n" +
     "       <div class=\"form-group-space-top\">\n" +
-    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Email adress\">\n" +
+    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Email adress\" name=\"email\">\n" +
     "       </div>\n" +
     "       <div class=\"form-group-space-top\">\n" +
-    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Subject\">\n" +
+    "         <input class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Subject\" name=\"subject\">\n" +
     "       </div>\n" +
     "       <div class=\"form-group-space-top\">\n" +
-    "         <textarea rows=\"4\" cols=\"45\" class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Message\"></textarea>\n" +
+    "         <textarea rows=\"4\" cols=\"45\" class=\"form-control form-control-silver-border\" type=\"text\" placeholder=\"Message\" name=\"message\"></textarea>\n" +
     "       </div>\n" +
     "       <div class=\"button__wrap button--center\">\n" +
     "         <button type=\"submit\" class=\"bt-round bt-round--blue\">Contact us</button>\n" +
@@ -2022,10 +2022,10 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                </div>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
-    "                <button class=\"bt-round bt-round--all-width bt-round--blue-dark\" ng-click=\"purchaseClicked()\"><span class=\"txt-large txt-bold\">{{ buttonTitle }}</span></button>\n" +
+    "                <button class=\"bt-round bt-round--all-width bt-round--blue-dark\" ng-click=\"purchaseClicked()\"><span class=\"txt-large txt-bold\">Order Test</span></button>\n" +
     "              </div>\n" +
     "              <div class=\"button__wrap button__wrap--not-space-bottom-sm\">\n" +
-    "                <button class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">Multiple order, contact us</span></button>\n" +
+    "                <a href=\"mailto:support@adxhealthcare.com\" target=\"_top\" class=\"bt-round bt-round--all-width bt-round--gray\"><span class=\"txt-large txt-gray txt-bold\">Multiple order, contact us</span></a>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -2158,7 +2158,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "              </div>\n" +
     "            </div>\n" +
     "           <div class=\"box-wrap\">\n" +
-    "             <div class=\"box-with-header-colored\">\n" +
+    "             <div class=\"box-with-header-colored box-with-header-colored--not-shadow-left\">\n" +
     "               <div class=\"box-colored-head box-colored-head--blue\">\n" +
     "                 <h4 class=\"txt-center\">Others</h4>\n" +
     "               </div>\n" +
@@ -2262,7 +2262,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                        We’ve created the first marketplace for DNA-powered products where people can explore diverse and uniquely personalized products developed by high quality partners.\n" +
     "                        <br>\n" +
     "                        Helix handles sample collection, DNA sequencing, and secure data storage so that our partners can integrate DNA insights into products across a range of categories, including ancestry, entertainment, family, fitness, health and nutrition. From profound insights to just-for-fun discoveries, Helix is here to help people live a fuller life.\n" +
-    "                        Learn more at www.helix.com.\n" +
+    "                        Learn more at <a href=\"mailto:www.Helix.com\" target=\"_top\">www.helix.com.</a>\n" +
     "                      </p>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -5761,7 +5761,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                <div class=\"cross-button-open\"></div>\n" +
     "              </div>\n" +
     "              <div class=\"content-title__wrap\">\n" +
-    "                <h3 class=\"txt-blue-dark\">What is a DNA?</h3>\n" +
+    "                <h3 class=\"txt-blue-dark\">Ethnicity and population averages</h3>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -6421,7 +6421,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "        <div class=\"container-lg hide-mobile\">\n" +
     "          <div uib-carousel class=\"carousel--arrow-silver\" active=\"active\"  no-wrap=\"false\">\n" +
     "            <div uib-slide index=\"0\">\n" +
-    "              <div class=\"slider__wrap\">\n" +
+    "              <div class=\"slider__wrap slider__wrap--science\">\n" +
     "                <div class=\"container-flex align-items--center container-flex--column-sm\">\n" +
     "                  <div class=\"flex-column txt-left\">\n" +
     "                    <div class=\"flex-column__wrap\">\n" +
@@ -6473,7 +6473,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "            </div>\n" +
     "            <div uib-slide index=\"1\">\n" +
-    "              <div class=\"slider__wrap\">\n" +
+    "              <div class=\"slider__wrap slider__wrap--science\">\n" +
     "                <div class=\"container-flex container-flex--column-sm\">\n" +
     "                  <div class=\"flex-column\">\n" +
     "                    <div class=\"flex-column__wrap\">\n" +
@@ -6547,7 +6547,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "              </div>\n" +
     "            </div>\n" +
     "            <div uib-slide index=\"2\">\n" +
-    "              <div class=\"slider__wrap\">\n" +
+    "              <div class=\"slider__wrap slider__wrap--science\">\n" +
     "                <div class=\"container-flex container-flex--column-sm\">\n" +
     "                  <div class=\"flex-column\">\n" +
     "                    <div class=\"flex-column__wrap\">\n" +

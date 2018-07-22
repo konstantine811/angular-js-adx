@@ -104,7 +104,9 @@
   }
 
   .carousel {
-    width: 100%;
+    max-width: 110%;
+    position: relative;
+    right: 5%;
   }
   .carousel-control {
 

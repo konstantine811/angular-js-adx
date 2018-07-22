@@ -196,7 +196,10 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   background-color: $white;
-  box-shadow: 0 0 23px 0px rgba($black, 0.5);
+  box-shadow: 0 0 23px 0 rgba($black, 0.5);
+  &.box-with-header-colored--not-shadow-left {
+    box-shadow: 7px 0 27px -7px rgba($black, 0.5);
+  }
 }
 
 .box-colored-head {

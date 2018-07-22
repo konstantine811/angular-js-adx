@@ -9214,7 +9214,9 @@ ul.box__wrap {
   width: 100%;
   height: auto;
   background-color: #fff;
-  box-shadow: 0 0 23px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.5); }
+  .box-with-header-colored.box-with-header-colored--not-shadow-left {
+    box-shadow: 7px 0 27px -7px rgba(0, 0, 0, 0.5); }
 
 .box-colored-head {
   width: 100%;
@@ -9254,7 +9256,9 @@ ul.box__wrap {
   color: #063f5f; }
 
 .carousel {
-  width: 1200px; }
+  width: 1266px; }
+  .carousel .carousel-inner {
+    padding: 0 50px; }
 
 .carousel-control.right, .carousel-control.left {
   background: none; }
@@ -9278,25 +9282,29 @@ ul.box__wrap {
 .carousel--arrow-silver .carousel-control.left:after {
   transform: rotate(180deg); }
 
-.carousel-control.right {
-  right: -8%; }
-  .carousel-control.right:after {
-    transform: rotate(-90deg); }
+.carousel-control.right:after {
+  transform: rotate(-90deg); }
 
-.carousel-control.left {
-  left: -8%; }
-  .carousel-control.left:after {
-    transform: rotate(90deg);
-    left: 0; }
+.carousel-control.left:after {
+  transform: rotate(90deg);
+  left: 0; }
 
 .carousel-indicators,
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
   display: none; }
 
+.science-p-section-fifth .carousel .carousel-control {
+  top: 352px;
+  bottom: inherit; }
+
 .slider__wrap {
   padding: 0 30px;
   width: 1200px; }
+  .slider__wrap.slider__wrap--science {
+    width: 100%; }
+  .slider__wrap.slider__wrap--lg-padding {
+    padding: 0 90px; }
 
 .tabs .nav > li {
   position: relative;
@@ -9702,7 +9710,7 @@ ul.box__wrap {
   background-size: cover; }
 
 .about-products-head__img {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 120px; }
 
@@ -10704,7 +10712,9 @@ textarea.form-control {
 .science-p-section-fifth .slider__wrap {
   padding: 70px 0 125px; }
 .science-p-section-fifth .carousel {
-  width: 100%; }
+  max-width: 110%;
+  position: relative;
+  right: 5%; }
 .science-p-section-fifth .carousel-indicators, .science-p-section-fifth .carousel-control .glyphicon-chevron-left, .science-p-section-fifth .carousel-control .glyphicon-chevron-right {
   display: none; }
 .science-p-section-fifth .carousel-indicators li {

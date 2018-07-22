@@ -1,5 +1,8 @@
 .carousel {
-  width: 1200px;
+  width: 1266px;
+  .carousel-inner {
+    padding: 0 50px;
+  }
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -38,14 +41,12 @@
 }
 
 .carousel-control.right {
-  right: -8%;
   &:after {
     transform: rotate(-90deg);
   }
 }
 
 .carousel-control.left {
-  left: -8%;
   &:after {
     transform: rotate(90deg);
     left: 0;
@@ -58,7 +59,22 @@
   display: none;
 }
 
+.science-p-section-fifth {
+  .carousel {
+    .carousel-control {
+      top: 352px;
+      bottom: inherit;
+    }
+  }
+}
+
 .slider__wrap {
   padding: 0 30px;
   width: 1200px;
+  &.slider__wrap--science {
+    width: 100%;
+  }
+  &.slider__wrap--lg-padding {
+    padding: 0 90px;
+  }
 }
