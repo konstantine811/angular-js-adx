@@ -1806,9 +1806,7 @@ angular.module("components/master/master_signedin.tpl.html", []).run(["$template
     "<div class=\"page\" ng-class=\"{'logged-out' :  !hideSideNavBar}\">\n" +
     "  <div ng-include=\"'components/master/side-navbar.tpl.html'\"></div>\n" +
     "\n" +
-    "  <app-header ng-if=\"!logged || !hideSideNavBar\"></app-header>\n" +
-    "    <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
-    "  <app-footer ng-if=\"!logged || !hideSideNavBar\"></app-footer>\n" +
+    "  <div class=\"container-page page-transition-anim\" ui-view></div>\n" +
     "</div>");
 }]);
 
@@ -6975,12 +6973,12 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "          </nav>\n" +
     "          <div class=\"header__button\">\n" +
     "            <div class=\"button__login\">\n" +
-    "                  <a ng-show=\"logged\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue\">My Results</a>\n" +
-    "                  <a ng-show=\"!logged\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
+    "                  <a ng-class=\"{'ng-hide': !logged}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue\">My Results</a>\n" +
+    "                  <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-show=\"!logged\" ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
-    "              <a ng-show=\"logged\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
+    "              <a ng-class=\"{'ng-hide': !logged}\" ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +

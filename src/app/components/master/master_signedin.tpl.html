@@ -12,7 +12,5 @@
 <div class="page" ng-class="{'logged-out' :  !hideSideNavBar}">
   <div ng-include="'components/master/side-navbar.tpl.html'"></div>
 
-  <app-header ng-if="!logged || !hideSideNavBar"></app-header>
-    <div class="container-page page-transition-anim" ui-view></div>
-  <app-footer ng-if="!logged || !hideSideNavBar"></app-footer>
+  <div class="container-page page-transition-anim" ui-view></div>
 </div>
