@@ -630,7 +630,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
-    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" jq-slider class=\"button-border-rounded\">Order test</a>\n" +
+    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" jq-slider class=\"button-border-rounded\">Order test</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <div class=\"hide-mobile home-head-image__wrap anim-content-transition\">\n" +
@@ -650,7 +650,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "        </div>\n" +
     "        <div class=\"home-head-bottom__button anim-content-transition\">\n" +
     "          <div class=\"button__purchase\">\n" +
-    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
+    "            <a ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" class=\"bt-round bt-round--blue-dark\">Order</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -3461,7 +3461,7 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                      The ApoE gene comes in three forms called variants: ApoE-e2, ApoE-e3, and ApoE-e4.  </div>\n" +
     "                  </div>\n" +
     "                  <div class=\"button__wrap button--center\">\n" +
-    "                    <a ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--large bt-round--blue-dark\">Order</a>\n" +
+    "                    <a ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" class=\"bt-round bt-round--large bt-round--blue-dark\">Order</a>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
@@ -6977,7 +6977,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                  <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-class=\"{'ng-hide': !logged}\" ng-href=\"{{ globals.order_url_with_kit }}\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-class=\"{'ng-hide': !logged}\" ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
     "              <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +

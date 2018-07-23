@@ -61,9 +61,9 @@ angular.module( 'ixlayer.products', [
 
     $scope.purchaseClicked = function () {
       if ($scope.haveKit) {
-        window.location.replace($scope.globals.order_url_without_kit);
+        window.open($scope.globals.order_url_without_kit, '_blank');
       } else {
-        window.location.replace($scope.globals.order_url_with_kit);
+        window.open($scope.globals.order_url_with_kit, '_blank');
       }
     };
 
