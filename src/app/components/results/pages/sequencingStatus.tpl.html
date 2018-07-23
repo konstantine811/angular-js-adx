@@ -8,7 +8,7 @@
         <!--progress-bar-->
         <div class="status-progressbar__wrap anim-content-transition">
           <ul class="status-progressbar-container">
-            <li class="status-progressbar-item" ng-class="{'active': iconStatus[0], 'active--current': iconCurrent[0]}">
+            <li class="status-progressbar-item active active--current" ng-class="{'active': iconStatus[0], 'active--current': iconCurrent[0]}">
               <div class="status-progressbar-inner"></div>
               <div class="status-progressbar-icon icon-car"></div>
               <div class="status-progressbar-txt">
@@ -67,7 +67,7 @@
         <!--end  progress-bar-->
         <div class="title__wrap txt-center anim-content-transition">
           <div class="container-xs-button-flex container-xs-button-flex--center">
-            <div class="test-ok active"></div>
+            <div ng-if="seqStatus" class="test-ok active"></div>
             <h4 class="txt-blue-dark align-vertical--center anim-content-transition" ng-if="seqStatus === 'ldt_submitted'">
               We will mail out your collection kit once the review process is completed
             </h4>

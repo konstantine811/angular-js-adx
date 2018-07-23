@@ -198,6 +198,9 @@
   &.open-height {
     animation: anim-height 1.5s forwards ease-in-out 1;
   }
+  &.box-content__wrap--lg-height {
+    max-height: 478px;
+  }
 }
 
 .tabs-link-bottom__wrap {

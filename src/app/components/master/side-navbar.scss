@@ -14,7 +14,6 @@
 
 .side-navbar__logo {
   width: 60%;
-  margin: 0 auto;
   padding-top: 30px;
   padding-left: 18px;
 }
@@ -23,7 +22,9 @@
   display: inline-block;
   width: 100%;
   height: auto;
-  margin-left: 13px;
+  &.header-logo__link--space-left {
+    margin-left: 13px;
+  }
 }
 
 .side-navbar__account {

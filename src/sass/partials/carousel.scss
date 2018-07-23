@@ -1,7 +1,8 @@
 .carousel {
   width: 1266px;
   .carousel-inner {
-    padding: 0 50px;
+    max-width: 85%;
+    margin: 0 auto;
   }
 }
 
@@ -43,6 +44,7 @@
 .carousel-control.right {
   &:after {
     transform: rotate(-90deg);
+    right: 0;
   }
 }
 
@@ -69,12 +71,8 @@
 }
 
 .slider__wrap {
-  padding: 0 30px;
-  width: 1200px;
+    width: 100%;
   &.slider__wrap--science {
     width: 100%;
-  }
-  &.slider__wrap--lg-padding {
-    padding: 0 90px;
   }
 }

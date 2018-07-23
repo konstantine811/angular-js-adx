@@ -339,6 +339,7 @@ button[disabled].bt-round {
   perspective: 1200px;
   perspective-origin: center;
   z-index: 10;
+  display: inline-block;
   &:hover {
     cursor: pointer;
     .arrow-down-svg {

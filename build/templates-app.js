@@ -9,7 +9,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"container-fluid container-fluid--section\">\n" +
     "    <div uib-carousel active=\"active\"  no-wrap=\"false\">\n" +
     "      <div uib-slide index=\"0\">\n" +
-    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -33,7 +33,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"1\">\n" +
-    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -54,7 +54,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        </div>\n" +
     "      </div>\n" +
     "      <div uib-slide index=\"2\">\n" +
-    "        <div class=\"slider__wrap slider__wrap--lg-padding align-items--center container-flex\">\n" +
+    "        <div class=\"slider__wrap align-items--center container-flex\">\n" +
     "          <div class=\"flex-column\">\n" +
     "            <div class=\"about-page-header__txt\">\n" +
     "              <div class=\"anim-content-transition txt-left\">\n" +
@@ -152,7 +152,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "        <div class=\"row\">\n" +
     "          <div class=\"col-sm-6\">\n" +
     "            <div class=\"img-bgc-wrap-middle__rounded img-bgc-wrap-middle__rounded--white-2 img-bgc-wrap-middle__rounded--md-small\">\n" +
-    "              <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--logo\" src=\"'assets/images/svg/ADXHealth-icon.svg'\"></ng-include>\n" +
+    "              <ng-include class=\"svg-inner-rounded-middle svg-inner-rounded-middle--logo\" src=\"'assets/images/adx-healthCare-logo.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"col-sm-6\">\n" +
@@ -3119,22 +3119,22 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "\n" +
     "<div class=\"register-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\" ng-class=\"{'complete': complete}\">\n" +
+    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\" ng-class=\"{'complete':  consentFormSubmit}\">\n" +
     "      <div class=\"register-form\">\n" +
-    "        <form name=\"form\"  ng-submit=\"submitForm(userForm)\" novalidate>\n" +
+    "        <form name=\"form\"  ng-submit=\"submitForm()\" novalidate>\n" +
     "          <div ng-show=\"!complete\">\n" +
-    "            <div class=\"form-input\">\n" +
+    "            <div class=\"form-input\" ng-if=\"!consentFormSubmit\">\n" +
     "              <div class=\"form-input__register-wrap\">\n" +
     "                <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
     "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                  <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                  <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You First name is too short</p>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"last_name\">Last name</label>\n" +
-    "                  <input id=\"=last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                  <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                  <input id=\"last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
+    "                  <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You Last name is too short</p>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
@@ -3154,7 +3154,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"button__wrap button--center\">\n" +
+    "            <div class=\"button__wrap button--center\" ng-if=\"!consentFormSubmit\">\n" +
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
@@ -4741,7 +4741,7 @@ angular.module("components/results/pages/result-p3.tpl.html", []).run(["$templat
     "              <div id=\"section-4\" class=\"hide-tabs hide-tabs--show-sm\" ng-class=\"{'showTab': isSet(4)}\">\n" +
     "                <div class=\"box-shadow box-shadow--tabs\">\n" +
     "                  <div class=\"box-content\">\n" +
-    "                    <div class=\"box-content__wrap\" ng-class=\"{'open-height': accordionIsOpen[3]}\">\n" +
+    "                    <div class=\"box-content__wrap box-content__wrap--lg-height\" ng-class=\"{'open-height': accordionIsOpen[3]}\">\n" +
     "                      <div class=\"title__wrap\">\n" +
     "                        <h3 class=\"txt-blue-dark txt-center\">Nutrition</h3>\n" +
     "                      </div>\n" +
@@ -5164,14 +5164,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap txt-center-sm\">\n" +
-    "              <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"download__wrap download__wrap--sm-center\">\n" +
-    "                <div class=\"flex-column\">\n" +
-    "                  <div class=\"comments-button\"><i class=\"fa fa-comments comments-button__inner\" aria-hidden=\"true\"></i></div>\n" +
-    "                </div>\n" +
-    "                <span class=\"flex-column-2\">\n" +
-    "                <p class=\"txt txt-blue-dark txt-bold\">Contact genetic counselor</p>\n" +
-    "              </span>\n" +
-    "              </a>\n" +
+    "              <a ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"bt-round bt-round--blue-dark\">Genetic Counseling</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -6051,7 +6044,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "        <!--progress-bar-->\n" +
     "        <div class=\"status-progressbar__wrap anim-content-transition\">\n" +
     "          <ul class=\"status-progressbar-container\">\n" +
-    "            <li class=\"status-progressbar-item\" ng-class=\"{'active': iconStatus[0], 'active--current': iconCurrent[0]}\">\n" +
+    "            <li class=\"status-progressbar-item active active--current\" ng-class=\"{'active': iconStatus[0], 'active--current': iconCurrent[0]}\">\n" +
     "              <div class=\"status-progressbar-inner\"></div>\n" +
     "              <div class=\"status-progressbar-icon icon-car\"></div>\n" +
     "              <div class=\"status-progressbar-txt\">\n" +
@@ -6110,7 +6103,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "        <!--end  progress-bar-->\n" +
     "        <div class=\"title__wrap txt-center anim-content-transition\">\n" +
     "          <div class=\"container-xs-button-flex container-xs-button-flex--center\">\n" +
-    "            <div class=\"test-ok active\"></div>\n" +
+    "            <div ng-if=\"seqStatus\" class=\"test-ok active\"></div>\n" +
     "            <h4 class=\"txt-blue-dark align-vertical--center anim-content-transition\" ng-if=\"seqStatus === 'ldt_submitted'\">\n" +
     "              We will mail out your collection kit once the review process is completed\n" +
     "            </h4>\n" +
@@ -6904,7 +6897,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"header__wrap\">\n" +
     "        <!--logo-->\n" +
     "        <div class=\"header__logo\">\n" +
-    "          <a ui-sref=\"master.home\" class=\"header-logo__link\">\n" +
+    "          <a ui-sref=\"master.home\" class=\"header-logo__link header-logo__link--space-left\">\n" +
     "            <div class=\"img-logo\" ng-include=\"'assets/images/adx-healthCare-logo.svg'\"></div>\n" +
     "          </a>\n" +
     "        </div>\n" +

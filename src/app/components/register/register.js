@@ -25,15 +25,18 @@ angular.module( 'ixlayer.register', [
     $scope.error = null;
     $scope.showPopup = false;
     $scope.notChecked = false;
+    $scope.consentFormSubmit = false;
+    $scope.userForm = {};
 
     $scope.hasToken = $stateParams.activation_key !== "";
     $scope.token = $scope.hasToken? $stateParams.activation_key : null;
 
-    $scope.submitForm = function (form) {
+    $scope.submitForm = function () {
       $scope.showPopup = true;
       $scope.submitConsent = function() {
+        $scope.consentFormSubmit = true;
         $scope.showPopup = false;
-        userAccessSrv.register(form.first_name, form.last_name, form.email, form.password,  {
+        userAccessSrv.register($scope.userForm.first_name, $scope.userForm.last_name, $scope.userForm.email, $scope.userForm.password,  {
           'consent': 1,
           'terms': 1,
           'token': $scope.token
