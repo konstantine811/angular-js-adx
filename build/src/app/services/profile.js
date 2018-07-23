@@ -5,6 +5,10 @@ angular.module('ixlayer.api.profile', [
   .factory('profileService', ['$q', 'profileResource', function($q, profileResource) {
     var profile = null;
 
+    var clear = function () {
+      profile = null;
+    };
+
     var getProfile = function() {
       if (profile) {
         return $q.when(profile);
@@ -21,6 +25,7 @@ angular.module('ixlayer.api.profile', [
     };
 
     return {
+      clear: clear,
       getProfile: getProfile,
       updateProfile: updateProfile
     };

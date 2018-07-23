@@ -130,11 +130,6 @@ angular.module( 'ixlayer.results', [
           $scope.$parent.showResults = false;
           $scope.$parent.isHomeActive = true;
         }
-        else if (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page)) {
-          $scope.$parent.menuTitle = 'Home';
-          $scope.$parent.showResults = true;
-          $scope.$parent.isHomeActive = true;
-        }
         else if (['sharing', 'science', 'questions'].includes($scope.page)) {
           $scope.$parent.isHomeActive = false;
           $scope.$parent.showResults = $scope.resultReady && $scope.consentAgreed;
@@ -182,6 +177,10 @@ angular.module( 'ixlayer.results', [
               break;
             }
           }
+        } else if (['', 'p1', 'p2', 'p3', 'p4'].includes($stateParams.page)) {
+          $scope.$parent.menuTitle = 'Home';
+          $scope.$parent.showResults = true;
+          $scope.$parent.isHomeActive = true;
         }
       };
 

@@ -6,6 +6,10 @@ angular.module('ixlayer.api.results', [
     function (resultsResource, productStatusResource, $q) {
       var results = null;
 
+      var clear = function () {
+        results = null;
+      };
+
       var getResults = function(id) {
         if(results) {
           return $q.when(results);
@@ -24,6 +28,7 @@ angular.module('ixlayer.api.results', [
       };
 
       return {
+        clear: clear,
         postConsentProduct: postConsentProduct,
         getResults: getResults
       };

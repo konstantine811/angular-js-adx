@@ -1,5 +1,7 @@
 angular.module( 'ixlayer.login', [
   'ixlayer.useraccess',
+  'ixlayer.api.products',
+  'ixlayer.api.results',
   'ui.router',
   'ui.bootstrap'
 ])
@@ -18,14 +20,16 @@ angular.module( 'ixlayer.login', [
     });
   })
 
-  .controller( 'LoginCtrl', ['$scope', '$state', 'userAccessSrv', 'Analytics',
-    function LoginCtrl( $scope, $state, userAccessSrv, Analytics ) {
+  .controller( 'LoginCtrl', ['$scope', '$state', 'userAccessSrv', 'Analytics', 'profileService', 'resultsService',
+    function LoginCtrl( $scope, $state, userAccessSrv, Analytics, profileService, resultsService ) {
       $scope.error = null;
 
       $scope.loginUser = function (userForm) {
         userAccessSrv.cleanUser();
         userAccessSrv.login(userForm.email, userForm.password).then(function (result) {
             Analytics.trackEvent('login_success');
+            profileService.clear();
+            resultsService.clear();
             $state.go('master_signedin.results', {'page':''});
           },
           function (error) {
