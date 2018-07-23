@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 935.256 378.989">
+  <defs>
+    <style>
+      .e4e4-male-table-1 {
+        fill: #ededed;
+      }
+
+      .e4e4-male-table-2 {
+        fill: #063f5f;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .e4e4-male-table-2, .e4e4-male-table-8 {
+        font-size: 19px;
+      }
+
+      .e4e4-male-table-3 {
+        fill: none;
+        stroke: #f2f2f2;
+        stroke-width: 2px;
+      }
+
+      .e4e4-male-table-4 {
+        font-size: 17px;
+      }
+
+      .e4e4-male-table-4, .e4e4-male-table-6, .e4e4-male-table-7 {
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+      }
+
+      .e4e4-male-table-5, .e4e4-male-table-6 {
+        font-size: 20px;
+      }
+
+      .e4e4-male-table-5, .e4e4-male-table-8 {
+        font-family: Roboto-Light, Roboto;
+        font-weight: 300;
+      }
+
+      .e4e4-male-table-7 {
+        font-size: 12px;
+      }
+
+      .e4e4-male-table-9 {
+        font-size: 14px;
+      }
+
+      .e4e4-male-table-10, .e4e4-male-table-9 {
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .e4e4-male-table-10 {
+        font-size: 8px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1199" data-name="Group 1199" transform="translate(-36 -455.146)">
+    <rect id="Rectangle_796" data-name="Rectangle 796" class="e4e4-male-table-1" width="153.342" height="291.058" transform="translate(817.914 455.145)"/>
+    <text id="Your_ApoE_genetic_profile" data-name="Your ApoE 
+genetic profile" class="e4e4-male-table-2" transform="translate(892.974 496.629)"><tspan x="-46.688" y="0">Your ApoE </tspan><tspan x="-61.513" y="23">genetic profile</tspan></text>
+    <g id="Group_1056" data-name="Group 1056" transform="translate(36 554.734)">
+      <line id="Line_312" data-name="Line 312" class="e4e4-male-table-3" x2="910.449" transform="translate(0 99.421)"/>
+      <line id="Line_313" data-name="Line 313" class="e4e4-male-table-3" x2="910.449" transform="translate(0 145.49)"/>
+      <line id="Line_314" data-name="Line 314" class="e4e4-male-table-3" x2="910.449" transform="translate(0 191.56)"/>
+      <line id="Line_315" data-name="Line 315" class="e4e4-male-table-3" x2="910.449" transform="translate(0 53.352)"/>
+      <text id="Age" class="e4e4-male-table-4" transform="translate(20.592 25.587)"><tspan x="-15.037" y="0">Age</tspan></text>
+      <text id="_65" data-name="65" class="e4e4-male-table-5" transform="translate(23.31 76.901)"><tspan x="-11.084" y="0">65</tspan></text>
+      <text id="_75" data-name="75" class="e4e4-male-table-5" transform="translate(23.31 123.539)"><tspan x="-11.084" y="0">75</tspan></text>
+      <text id="_85" data-name="85" class="e4e4-male-table-5" transform="translate(23.31 168.917)"><tspan x="-11.084" y="0">85</tspan></text>
+      <text id="e4_e4" data-name="e4/e4" class="e4e4-male-table-6" transform="translate(868.029 30.263)"><tspan x="-26.055" y="0">e4/e4</tspan></text>
+      <text id="e2_e2_or_e2_e3" data-name="e2/e2 or e2/e3" class="e4e4-male-table-7" transform="translate(156.3)"><tspan x="5.926" y="11">e2/e2 or e2/</tspan><tspan x="32.445" y="25">e3</tspan></text>
+      <text id="e3_e3" data-name="e3/e3" class="e4e4-male-table-6" transform="translate(373.918 30.263)"><tspan x="-26.055" y="0">e3/e3</tspan></text>
+      <text id="e2_e4" data-name="e2/e4" class="e4e4-male-table-6" transform="translate(549.126 30.263)"><tspan x="-26.055" y="0">e2/e4</tspan></text>
+      <text id="e3_e4" data-name="e3/e4" class="e4e4-male-table-6" transform="translate(724.333 30.263)"><tspan x="-26.055" y="0">e3/e4</tspan></text>
+      <text id="_0.2_" data-name="0.2%" class="e4e4-male-table-5" transform="translate(189.085 76.901)"><tspan x="-20.859" y="0">0.2%</tspan></text>
+      <text id="_1_" data-name="1%" class="e4e4-male-table-8" transform="translate(191.001 122.539)"><tspan x="-12.283" y="0">1%</tspan></text>
+      <text id="_5_" data-name="5%" class="e4e4-male-table-8" transform="translate(191.001 167.917)"><tspan x="-12.283" y="0">5%</tspan></text>
+      <text id="_0.2_2" data-name="0.2%" class="e4e4-male-table-5" transform="translate(370.288 76.901)"><tspan x="-20.859" y="0">0.2%</tspan></text>
+      <text id="_2_" data-name="2%" class="e4e4-male-table-8" transform="translate(372.205 122.539)"><tspan x="-12.283" y="0">2%</tspan></text>
+      <text id="_7_" data-name="7%" class="e4e4-male-table-8" transform="translate(372.205 167.917)"><tspan x="-12.283" y="0">7%</tspan></text>
+      <text id="_0.2_3" data-name="0.2%" class="e4e4-male-table-5" transform="translate(549.278 76.901)"><tspan x="-20.859" y="0">0.2%</tspan></text>
+      <text id="_5_2" data-name="5%" class="e4e4-male-table-8" transform="translate(551.194 122.539)"><tspan x="-12.283" y="0">5%</tspan></text>
+      <text id="_19_" data-name="19%" class="e4e4-male-table-8" transform="translate(551.194 167.917)"><tspan x="-17.548" y="0">19%</tspan></text>
+      <text id="_1_2" data-name="1%" class="e4e4-male-table-5" transform="translate(729.527 76.901)"><tspan x="-12.93" y="0">1%</tspan></text>
+      <text id="_8_" data-name="8%" class="e4e4-male-table-8" transform="translate(731.443 122.539)"><tspan x="-12.283" y="0">8%</tspan></text>
+      <text id="_22_" data-name="22%" class="e4e4-male-table-8" transform="translate(731.443 167.917)"><tspan x="-17.548" y="0">22%</tspan></text>
+      <text id="_4_" data-name="4%" class="e4e4-male-table-5" transform="translate(868.181 76.901)"><tspan x="-12.93" y="0">4%</tspan></text>
+      <text id="_31_" data-name="31%" class="e4e4-male-table-8" transform="translate(870.097 122.539)"><tspan x="-17.548" y="0">31%</tspan></text>
+      <text id="_51_" data-name="51%" class="e4e4-male-table-8" transform="translate(870.097 167.917)"><tspan x="-17.548" y="0">51%</tspan></text>
+      <text id="_Adapted_from_Genin_et_al._Listed_rates_are_the_average_of_Rochester_and_PAQUID_incidence_rates._Figures_are_rounded_for_simplicity_and_95_confidence_intervals_are_not_show._Please_see_original_publication_for_complete_details." data-name="*Adapted from Genin et al.  Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% confidence intervals are not show. Please see original publication for complete details." class="e4e4-male-table-9" transform="translate(0 228.401)"><tspan x="18.349" y="13" xml:space="preserve">*Adapted from Genin et al.  Listed rates are the average of Rochester and PAQUID incidence rates. Figures are rounded for simplicity and 95% </tspan><tspan x="187.187" y="29">confidence intervals are not show. Please see original publication for complete details.</tspan></text>
+      <text id="_17" data-name="17" class="e4e4-male-table-10" transform="translate(172 226.401)"><tspan x="7.044" y="7">17</tspan></text>
+    </g>
+  </g>
+</svg>
