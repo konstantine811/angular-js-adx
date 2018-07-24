@@ -625,8 +625,7 @@ angular.module("components/home/home.tpl.html", []).run(["$templateCache", funct
     "      <div class=\"home-head__wrap\">\n" +
     "        <div class=\"head-title__wrap\">\n" +
     "          <div class=\"head-title txt-center-sm anim-content-transition\">\n" +
-    "            <h1 class=\"line-height-md\">Alzheimer's disease\n" +
-    "              know you risk</h1>\n" +
+    "            <h1 class=\"line-height-md\">Alzheimer's disease know your risk</h1>\n" +
     "            <h3 class=\"txt-padding-top\">Get an ApoE genetic test today</h3>\n" +
     "          </div>\n" +
     "          <div class=\"head-button__wrap txt-center-sm anim-content-transition\">\n" +
