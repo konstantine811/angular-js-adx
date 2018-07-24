@@ -73,7 +73,7 @@ angular.module( 'ixlayer.profile', [
 
       $scope.hidePopup = function() {
         $scope.showPopup = false;
-      }
+      };
 
   }])
 
