@@ -162,7 +162,7 @@ angular.module("components/about/about.tpl.html", []).run(["$templateCache", fun
     "                If you are interested in a rewarding career that puts you in the middle of the cutting edge science for late-onset Alzheimer's disease, please contact our team to learn about staff position openings.</p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap button--center anim-content-transition\">\n" +
-    "              <a href=\"mailto:carrers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Careers</span></a>\n" +
+    "              <a href=\"mailto:careers@adxhealthcare.com\" class=\"button-border-rounded button-border-rounded--small-line-height\"><span class=\"txt-middle\">Careers</span></a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -3480,9 +3480,6 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                    You should have received an email from ADx Healthcare to connect your Helix account. Follow the directions in the email.\n" +
     "                  </p>\n" +
     "                </div>\n" +
-    "                <div class=\"txt__wrap\">\n" +
-    "                  <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">General Questions</a>\n" +
-    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"flex-column\">\n" +
@@ -5658,7 +5655,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "                Precision medicine involves providing a therapeutic approach to the whole person. By analyzing your personal genetics and biochemistry, physicians can tailor preventive and therapeutic medicine that will best optimize your unique overall health.  Alzheimer’s genetic testing provides a risk measure for Alzheimer’s disease long before the usual age of symptom onset, affording individuals time to act upon environmental and lifestyle factors, as well as other medical comorbidities that influence the onset of Alzheimer’s disease.\n" +
     "              </div>\n" +
     "              <div class=\"txt--indent\">\n" +
-    "                Visit <a class=\"txt-blue\" href=\"\">Genetics Home Reference</a> to learn more about ApoE.\n" +
+    "                Visit <a class=\"txt-blue\" href=\"https://ghr.nlm.nih.gov/\" target=\"_blank\">Genetics Home Reference</a> to learn more about ApoE.\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -5717,7 +5714,7 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "      <div class=\"sub-header-txt__wrap\">\n" +
     "        <p class=\"txt txt-black\">\n" +
     "          ApoE comes in three forms: ApoE-e2, ApoE-e3, and ApoE-e4.  Having a high risk copy of this gene (ApoE-e4) does not guarantee that you will develop Alzheimer’s disease. Likewise, possessing a copy of the lowest risk variant (ApoE-e2) does not mean you won’t develop Alzheimer’s disease.  Learning your ApoE -related genetic risk can be paired with your age, gender, medical health and lifestyle habits to help assess your Alzheimer’s disease risk. Knowing your overall risk can help you decide how aggressively you want to address your cognitive health. Visit\n" +
-    "          <a href=\"\" class=\"txt-blue\">Genetics Home Reference</a> to learn more about ApoE.\n" +
+    "          <a href=\"https://ghr.nlm.nih.gov/\" target=\"_blank\" class=\"txt-blue\">Genetics Home Reference</a> to learn more about ApoE.\n" +
     "        </p>\n" +
     "      </div>\n" +
     "      <!--section dropdown txt-->\n" +
@@ -5780,20 +5777,8 @@ angular.module("components/results/pages/result-science.tpl.html", []).run(["$te
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <p class=\"txt txt-black\">\n" +
-    "              The association between type-2 diabetes and Alzheimer’s disease is greater in ApoE-e4 carriers.1 Also, based on results from observational studies, managing midlife hypertension may be more impactful for reducing Alzheimer’s disease risk for ApoE-e4 carriers than for non-carriers. 2,3  Thus, monitoring blood pressure and working to prevent or manage type-2 diabetes is important for all, but carries great importance for individuals who carry and ApoE-e4 allele.\n" +
+    "              The association between type-2 diabetes and Alzheimer’s disease is greater in ApoE-e4 carriers.<a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>1</sup></a> Also, based on results from observational studies, managing midlife hypertension may be more impactful for reducing Alzheimer’s disease risk for ApoE-e4 carriers than for non-carriers. <a class=\"references-number-highlight\" ng-click=\"refScroll($event, 'RS1')\"><sup>2,3</sup></a>  Thus, monitoring blood pressure and working to prevent or manage type-2 diabetes is important for all, but carries great importance for individuals who carry and ApoE-e4 allele.\n" +
     "            </p>\n" +
-    "            <div class=\"title__wrap\">\n" +
-    "              <h3 class=\"txt-blue-dark\">References</h3>\n" +
-    "            </div>\n" +
-    "            <ul class=\"item-decimal\">\n" +
-    "              <li class=\"txt__wrap\"><p class=\"txt txt-black\">Vagelatos NT, Eslick GD (2013) Type 2 diabetes as a risk factor for Alzheimer’s disease: the confounders, interactions, and neuropathology associated with this relationship. Epidemiological reviews 35, 152-160.</p>\n" +
-    "              </li>\n" +
-    "              <li class=\"txt__wrap\"><p class=\"txt txt-black\"> Rodrigue KM, Rieck JR, Kennedy KM et al. (2013) Risk factors for beta-amyloid deposition in healthy aging: vascular and genetic effects. JAMA Neurol 70, 600-606.\n" +
-    "              </p>\n" +
-    "              </li>\n" +
-    "              <li class=\"txt__wrap\"><p class=\"txt txt-black\">Guo Z, Fratiglioni L, Viitanen M et al. (2001) Apolipoprotein E genotypes and the incidence of Alzheimer's disease among persons aged 75 years and older: variation by use of antihypertensive medication?American journal of epidemiology 153, 225-231.</p>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "        <!--end dropdown content third-->\n" +
