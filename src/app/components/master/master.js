@@ -109,6 +109,7 @@ angular.module( 'ixlayer.master', [
 
       if (userAccessSrv.isAuthenticated()) {
         $scope.userName = userAccessSrv.currentUserName();
+        console.log($scope.userName);
       }
 
       $scope.toggleMobileMenu = function() {

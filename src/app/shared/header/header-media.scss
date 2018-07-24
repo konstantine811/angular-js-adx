@@ -76,22 +76,23 @@
     flex-flow: column;
     padding: 0;
     text-align: center;
+    margin: 0;
   }
   .button__purchase {
     padding-right: 9px;
   }
   .header-nav-item {
     border-bottom: 1px solid $silver;
-    padding: 5px 0;
+    padding: 0;
     background-color: $silver;
     color: white;
   }
   .header-nav-link {
     color: $silver;
+    display: block;
+    padding: 10px 0;
   }
-  .header-nav-item {
-    padding-top: 9px;
-  }
+
   .header__wrap {
     flex-flow: row-reverse;
   }

@@ -101,7 +101,6 @@
 }
 .mobile-menu-show-anim {
   height: auto;
-  padding: 0 0 11px;
   transition: all .5s linear;
 }
 
@@ -124,7 +123,7 @@
 }
 
 .mobile-menu__wrap.mobile-menu-show {
-  height: 233px;
+  height: 100%;
   opacity: 1;
   .header-nav__wrap {
     .header-nav-item {

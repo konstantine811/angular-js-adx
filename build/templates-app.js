@@ -1875,7 +1875,7 @@ angular.module("components/master/side-navbar.tpl.html", []).run(["$templateCach
     "          <div class=\"side-navbar-navigation__link\">\n" +
     "            <ul class=\"side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home\">\n" +
     "              <li class=\"side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space\">\n" +
-    "                <a ng-class=\"{'active-bgc-blue': isHomeActive}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"navbar-link navbar-link--second\">\n" +
+    "                <a ng-class=\"{'active-bgc-blue': isHomeActive}\" ng-click=\"toggleMobileMenu()\" ui-sref=\"master_signedin.results({'page':''})\" class=\"navbar-link navbar-link--second\">\n" +
     "                  <span class=\"link-icon-inline\">\n" +
     "                    <ng-include class=\"link-icon--inner\" src=\"'./assets/images/icon/home.svg'\"></ng-include>\n" +
     "                  </span>\n" +
@@ -3118,11 +3118,11 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "\n" +
     "<div class=\"register-page login-bgc\">\n" +
     "  <div class=\"container-fluid container-fluid--section\">\n" +
-    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\" ng-class=\"{'complete':  consentFormSubmit}\">\n" +
+    "    <div class=\"register-form__wrap\" ng-if=\"!showPopup\" ng-class=\"{'complete':  consentFormSubmit || !error}\">\n" +
     "      <div class=\"register-form\">\n" +
     "        <form name=\"form\"  ng-submit=\"submitForm()\" novalidate>\n" +
     "          <div ng-show=\"!complete\">\n" +
-    "            <div class=\"form-input\" ng-if=\"!consentFormSubmit\">\n" +
+    "            <div class=\"form-input\" ng-if=\"!consentFormSubmit || error\">\n" +
     "              <div class=\"form-input__register-wrap\">\n" +
     "                <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "                <div class=\"form-group\">\n" +
@@ -3153,7 +3153,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"button__wrap button--center\" ng-if=\"!consentFormSubmit\">\n" +
+    "            <div class=\"button__wrap button--center\" ng-if=\"!consentFormSubmit || error\">\n" +
     "              <button class=\"bt-round bt-round--large bt-round--blue-dark\" test-hook=\"submit-register\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"form.$invalid\"><span class=\"txt-medium\">Register</span></button>\n" +
     "            </div>\n" +
     "            <div class=\"txt--indent-small txt-center\">\n" +
@@ -3830,8 +3830,8 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "        </div>\n" +
     "      </div>\n" +
     "      <div class=\"title__wrap\">\n" +
-    "        <img style=\"width: 70%\" ng-if=\"gender === 'F'\"  src=\"assets/images/results-page/adx-infographic-female@3x.png\">\n" +
-    "        <img style=\"width: 70%\" ng-if=\"gender === 'M'\"  src=\"assets/images/results-page/adx-infographic-male@3x.png\">\n" +
+    "        <img ng-if=\"gender === 'F'\" class=\"img-info\" src=\"assets/images/results-page/adx-infographic-female@3x.png\">\n" +
+    "        <img ng-if=\"gender === 'M'\" class=\"img-info\" src=\"assets/images/results-page/adx-infographic-male@3x.png\">\n" +
     "      </div>\n" +
     "\n" +
     "      <div class=\"title__wrap\">\n" +
@@ -6911,14 +6911,11 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                    <li class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.FAQ\" ng-click=\"showMenu()\" class=\"header-nav-link\">FAQ</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.contact\" ng-click=\"showMenu()\" class=\"header-nav-link\">Contact</a>\n" +
-    "                    </li>\n" +
     "                    <li ng-show=\"!logged\"  class=\"header-nav-item\">\n" +
     "                      <a ui-sref-active=\"active-mobile\" ui-sref=\"master.login\" ng-click=\"showMenu()\" class=\"header-nav-link\">Sign-in</a>\n" +
     "                    </li>\n" +
     "                    <li class=\"header-nav-item\">\n" +
-    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.results\" ng-click=\"showMenu()\" class=\"header-nav-link\">My Results</a>\n" +
+    "                      <a ng-show=\"logged\" ui-sref=\"master_signedin.results({'page':''})\" ng-click=\"showMenu()\" class=\"header-nav-link\">My Results</a>\n" +
     "                      <a ng-show=\"!logged\" ui-sref=\"master.register\" ng-click=\"showMenu()\" class=\"header-nav-link\">Register</a>\n" +
     "                    </li>\n" +
     "                  </ul>\n" +
@@ -6949,7 +6946,7 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "            </ul>\n" +
     "          </nav>\n" +
     "          <div class=\"header__button\">\n" +
-    "            <div class=\"button__login\">\n" +
+    "            <div class=\"button__login hide-mobile\">\n" +
     "                  <a ng-class=\"{'ng-hide': !logged}\" ui-sref=\"master_signedin.results({'page':''})\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue\">My Results</a>\n" +
     "                  <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +

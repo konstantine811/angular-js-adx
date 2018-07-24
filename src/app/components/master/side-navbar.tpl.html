@@ -39,7 +39,7 @@
           <div class="side-navbar-navigation__link">
             <ul class="side-navbar-navigation-link__wrap side-navbar-navigation-link__wrap--home">
               <li class="side-navbar-navigation-link__item side-navbar-navigation-link__item--not-space">
-                <a ng-class="{'active-bgc-blue': isHomeActive}" ui-sref="master_signedin.results({'page':''})" class="navbar-link navbar-link--second">
+                <a ng-class="{'active-bgc-blue': isHomeActive}" ng-click="toggleMobileMenu()" ui-sref="master_signedin.results({'page':''})" class="navbar-link navbar-link--second">
                   <span class="link-icon-inline">
                     <ng-include class="link-icon--inner" src="'./assets/images/icon/home.svg'"></ng-include>
                   </span>

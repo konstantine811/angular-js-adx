@@ -3,11 +3,11 @@
 
 <div class="register-page login-bgc">
   <div class="container-fluid container-fluid--section">
-    <div class="register-form__wrap" ng-if="!showPopup" ng-class="{'complete':  consentFormSubmit}">
+    <div class="register-form__wrap" ng-if="!showPopup" ng-class="{'complete':  consentFormSubmit || !error}">
       <div class="register-form">
         <form name="form"  ng-submit="submitForm()" novalidate>
           <div ng-show="!complete">
-            <div class="form-input" ng-if="!consentFormSubmit">
+            <div class="form-input" ng-if="!consentFormSubmit || error">
               <div class="form-input__register-wrap">
                 <h6 class="txt-small txt-medium txt-blue-dark txt-center">Create an account</h6>
                 <div class="form-group">
@@ -38,7 +38,7 @@
                 </div>
               </div>
             </div>
-            <div class="button__wrap button--center" ng-if="!consentFormSubmit">
+            <div class="button__wrap button--center" ng-if="!consentFormSubmit || error">
               <button class="bt-round bt-round--large bt-round--blue-dark" test-hook="submit-register" type="submit" class="btn btn-primary" ng-disabled="form.$invalid"><span class="txt-medium">Register</span></button>
             </div>
             <div class="txt--indent-small txt-center">

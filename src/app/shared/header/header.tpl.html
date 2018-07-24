@@ -34,14 +34,11 @@
                     <li class="header-nav-item">
                       <a ui-sref-active="active-mobile" ui-sref="master.FAQ" ng-click="showMenu()" class="header-nav-link">FAQ</a>
                     </li>
-                    <li class="header-nav-item">
-                      <a ui-sref-active="active-mobile" ui-sref="master.contact" ng-click="showMenu()" class="header-nav-link">Contact</a>
-                    </li>
                     <li ng-show="!logged"  class="header-nav-item">
                       <a ui-sref-active="active-mobile" ui-sref="master.login" ng-click="showMenu()" class="header-nav-link">Sign-in</a>
                     </li>
                     <li class="header-nav-item">
-                      <a ng-show="logged" ui-sref="master_signedin.results" ng-click="showMenu()" class="header-nav-link">My Results</a>
+                      <a ng-show="logged" ui-sref="master_signedin.results({'page':''})" ng-click="showMenu()" class="header-nav-link">My Results</a>
                       <a ng-show="!logged" ui-sref="master.register" ng-click="showMenu()" class="header-nav-link">Register</a>
                     </li>
                   </ul>
@@ -72,7 +69,7 @@
             </ul>
           </nav>
           <div class="header__button">
-            <div class="button__login">
+            <div class="button__login hide-mobile">
                   <a ng-class="{'ng-hide': !logged}" ui-sref="master_signedin.results({'page':''})" class="bt-round bt-round--sm bt-round--header bt-round--blue">My Results</a>
                   <a ng-class="{'ng-hide': logged}" ui-sref="master.register" class="bt-round bt-round--header bt-round--blue hide-mobile">Register</a>
             </div>

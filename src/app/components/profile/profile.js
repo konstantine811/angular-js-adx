@@ -63,6 +63,7 @@ angular.module( 'ixlayer.profile', [
     $scope.profile = profile;
 
     $scope.submitForm = function(data) {
+      $scope.$parent.userName = data.user.first_name + ' ' + data.user.last_name;
       profileService.updateProfile(data).then(function(result) {
         $state.go('master_signedin.profile');
       });

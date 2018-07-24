@@ -25,9 +25,7 @@
   }
   .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo {
     svg {
-      width: 202px;
-      left: 6px;
-      top: 76px;
+      max-width: 130px;
     }
   }
 
@@ -67,6 +65,7 @@
 
   .img-middle--large-sm {
     max-width: 368px;
+    height: auto;
   }
 
   .img--center-sm {
@@ -93,23 +92,22 @@
   .img-bgc-wrap__rounded--float-right {
     float: none;
   }
-  .svg-inner-rounded-middle svg {
-    position: absolute;
-    left: 24%;
-    top: 23%;
-  }
 
   .img-bgc-wrap-middle__rounded--md-small .svg-inner-rounded-middle--logo svg {
-    width: 202px;
-    left: 31px;
-    top: 102px;
+    max-width: 130px;
   }
 
   .img-large {
     max-width: 366px;
+    height: auto;
   }
   .img-logo {
     max-width: 67px;
+    height: auto;
+  }
+
+  .img-middle--md {
+    height: auto;
   }
 }
 
