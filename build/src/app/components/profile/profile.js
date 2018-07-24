@@ -51,9 +51,29 @@ angular.module( 'ixlayer.profile', [
     });
   })
 
-  .controller('ProfileViewCtrl', ['$scope', 'profile',
-    function ProfileViewCtrl($scope, profile) {
+  .controller('ProfileViewCtrl', ['$scope', 'profile', 'userAccessSrv', 'Analytics',
+    function ProfileViewCtrl($scope, profile, userAccessSrv, Analytics) {
     $scope.profile = profile;
+    $scope.showPopup = false;
+    $scope.success = false;
+    $scope.error = false;
+
+      $scope.changePassword = function() {
+        userAccessSrv.resetPassword($scope.profile.user.email).then(function (result) {
+            $scope.showPopup = true;
+            $scope.success = true;
+            Analytics.trackEvent('change_password');
+          },
+          function (error) {
+            $scope.error = error;
+            $scope.showPopup = true;
+          }
+        );
+      };
+
+      $scope.hidePopup = function() {
+        $scope.showPopup = false;
+      }
 
   }])
 

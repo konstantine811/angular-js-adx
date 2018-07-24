@@ -10143,6 +10143,9 @@ textarea.form-control {
   z-index: 114; }
   .popup.popup--space-bottom {
     padding-bottom: 69px; }
+  .popup.popup--profile {
+    position: absolute;
+    top: 12%; }
 
 .popup-content {
   position: relative;
@@ -10155,9 +10158,19 @@ textarea.form-control {
   height: calc(88vh - 100px);
   overflow-y: scroll; }
 
+.popup-content-profile {
+  position: relative;
+  z-index: 100;
+  background: #F9FBFD;
+  margin: 0 auto;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  padding: 139px 15px; }
+
 .popup.ng-animate {
   transition: all 0.6s ease; }
-  .popup.ng-animate .popup-content {
+  .popup.ng-animate .popup-content, .popup.ng-animate .popup-content-profile {
     transition: all 0.6s ease-out; }
   .popup.ng-animate .popup-background {
     transition: all 0.6s ease; }

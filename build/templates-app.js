@@ -2518,7 +2518,27 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                            <div class=\"txt txt-blue-dark txt-medium\">Password</div>\n" +
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
-    "                            <a class=\"txt txt-blue\"> Change Password</a>\n" +
+    "                            <button class=\"txt-left btn-reset\" ng-click=\"changePassword()\"><span class=\"txt txt-blue\">Change Password</span></button>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"popup popup--profile\" ng-if=\"showPopup\">\n" +
+    "            <div class=\"popup-content-profile\">\n" +
+    "                <div class=\"popup-content__wrap\">\n" +
+    "                    <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
+    "                    <div class=\"form-success\" ng-if=\"success\">\n" +
+    "                        <div class=\"txt-center\">\n" +
+    "                            <h6 class=\"txt-medium txt-blue-dark\">Password reset email sent!</h6>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"txt__wrap txt-center\">\n" +
+    "                            <p class=\"about-title-txt txt-black-light\">If your email address matches our records, we will send an email with instructions to reset your account password</p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"fp-form-button\">\n" +
+    "                            <div class=\"button__wrap button--center\">\n" +
+    "                                <button ng-click=\"hidePopup()\" class=\"bt-round bt-round--blue-dark\" type=\"submit\">Back to account information</button>\n" +
+    "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +

@@ -27,7 +27,27 @@
                             <div class="txt txt-blue-dark txt-medium">Password</div>
                         </div>
                         <div class="col-xs-8">
-                            <a class="txt txt-blue"> Change Password</a>
+                            <button class="txt-left btn-reset" ng-click="changePassword()"><span class="txt txt-blue">Change Password</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup--profile" ng-if="showPopup">
+            <div class="popup-content-profile">
+                <div class="popup-content__wrap">
+                    <div class="alert alert-danger" ng-if="error">{{::error.detail}}</div>
+                    <div class="form-success" ng-if="success">
+                        <div class="txt-center">
+                            <h6 class="txt-medium txt-blue-dark">Password reset email sent!</h6>
+                        </div>
+                        <div class="txt__wrap txt-center">
+                            <p class="about-title-txt txt-black-light">If your email address matches our records, we will send an email with instructions to reset your account password</p>
+                        </div>
+                        <div class="fp-form-button">
+                            <div class="button__wrap button--center">
+                                <button ng-click="hidePopup()" class="bt-round bt-round--blue-dark" type="submit">Back to account information</button>
+                            </div>
                         </div>
                     </div>
                 </div>

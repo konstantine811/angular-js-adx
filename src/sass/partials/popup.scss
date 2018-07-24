@@ -5,6 +5,10 @@
   &.popup--space-bottom {
     padding-bottom: 69px;
   }
+  &.popup--profile {
+    position: absolute;
+    top: 12%;
+  }
 }
 .popup-content {
   position: relative;
@@ -18,10 +22,21 @@
   overflow-y: scroll;
 }
 
+.popup-content-profile {
+  position: relative;
+  z-index: 100;
+  background: $silver;
+  margin: 0 auto;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  padding: 139px 15px;
+}
+
 
 .popup.ng-animate {
   transition: all 0.6s ease;
-  .popup-content {
+  .popup-content, .popup-content-profile {
     transition: all 0.6s ease-out;
   }
   .popup-background {
