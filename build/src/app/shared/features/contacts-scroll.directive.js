@@ -1,5 +1,7 @@
 angular.module("ixLayer").
-directive('contactsScroll', function($state, $transitions, $location, $anchorScroll, $timeout) {
+directive('contactsScroll', ['$state', '$transitions', '$location', '$anchorScroll', '$timeout',
+  function($state, $transitions, $location, $anchorScroll, $timeout) {
+
   return {
     restrict: 'A',
     link: function($scope, element, attr) {
@@ -24,4 +26,4 @@ directive('contactsScroll', function($state, $transitions, $location, $anchorScr
       });
     }
   };
-});
+}]);

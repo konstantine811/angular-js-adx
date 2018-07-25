@@ -12,6 +12,7 @@ angular.module( 'ixlayer.legal', [
     });
   })
   
-  .controller( 'LegalCtrl', function LegalCtrl( $scope ) {
+  .controller( 'LegalCtrl', ['$scope',
+    function LegalCtrl( $scope ) {
     
-  });
+  }]);

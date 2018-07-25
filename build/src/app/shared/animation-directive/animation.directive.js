@@ -1,5 +1,7 @@
 angular.module("ixLayer")
-  .directive('animationOnChange', function($timeout) {
+  .directive('animationOnChange', ['timeout',
+    function($timeout) {
+    
     return function(scope, element, attr) {
      scope.$watch(attr.animationOnChange, function(nv, ov) {
        if(nv!=ov) {
@@ -10,4 +12,4 @@ angular.module("ixLayer")
        }
      });
     };
-  });
+  }]);

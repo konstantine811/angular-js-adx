@@ -12,6 +12,7 @@ angular.module( 'ixlayer.references', [
     });
   })
   
-  .controller( 'ReferencesCtrl', function ReferencesCtrl( $scope ) {
+  .controller( 'ReferencesCtrl', ['$scope',
+    function ReferencesCtrl( $scope ) {
     
-  });
+  }]);

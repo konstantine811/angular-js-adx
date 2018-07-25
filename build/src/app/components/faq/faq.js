@@ -12,6 +12,7 @@ angular.module( 'ixlayer.FAQ', [
     });
   })
   
-  .controller( 'FAQCtrl', function FAQCtrl( $scope ) {
+  .controller( 'FAQCtrl', ['$scope',
+    function FAQCtrl( $scope ) {
     
-  });
+  }]);
