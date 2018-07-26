@@ -317,10 +317,13 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        From the independent physician review of your order, to the genetic counselors available to answer your questions about your test results, ADx Healthcare will support you through the process.\n" +
+    "                                        From the independent physician review of your order to the genetic counselor available to answer your questions about your test results, ADx Healthcare is committed to providing you with support through the entire process of learning your ApoE genetic risk for Alzheimer’s disease.\n" +
     "                                    <div class=\"txt--indent\">\n" +
-    "                                      For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
+    "                                        For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                                    </div>\n" +
+    "                                      <div class=\"txt--indent\">\n" +
+    "                                        *ADx Healthcare contracts with PWNHealth for both the independent physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test. Both services are included at no additional cost to you.\n" +
+    "                                      </div>\n" +
     "                                  </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -337,7 +340,7 @@ angular.module("components/faq/faq.tpl.html", []).run(["$templateCache", functio
     "                                </div>\n" +
     "                                <div class=\"content-txt__wrap\">\n" +
     "                                    <div class=\"txt txt-black\">\n" +
-    "                                        You can choose to receive your results while speaking with a genetic counselor, or you can receive them on your own. You can always choose to speak with a genetic counselor after you have had time to review your results about what they mean for you or your family. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
+    "                                        You will receive your test results in a clear, electronic report. It is up to you if you receive these results with a genetic counselor or on your own. However, if you have additional questions about what these results mean to you or your family,  we offer genetic counseling with the independent provider network, PWNHealth, to you at no additional charge.We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
     "                                    </div>\n" +
     "                                </div>\n" +
     "                            </div>\n" +
@@ -3802,7 +3805,7 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "       </div>\n" +
     "        <div class=\"title__wrap\">\n" +
     "          <div    class=\"txt txt-black anim-content-transition\">\n" +
-    "            <b>Your ApoE genetic test result indicate that you are at {{ riskLevel }} genetic risk for Alzheimer’s disease compared to the US population.</b>\n" +
+    "            <b>Your ApoE genetic test result is associated with an {{ riskLevel }} genetic risk for Alzheimer's disease when compared to the US population.</b>\n" +
     "            <br>\n" +
     "          </div>\n" +
     "          <div class=\"txt txt-black anim-content-transition\">\n" +
@@ -5331,6 +5334,9 @@ angular.module("components/results/pages/result-questions.tpl.html", []).run(["$
     "                <div class=\"txt--indent\">\n" +
     "                  For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "                </div>\n" +
+    "                <div class=\"txt--indent\">\n" +
+    "                  *ADx Healthcare contracts with PWNHealth for both the independent physician authorization and genetic counseling for our Alzheimer’s ApoE Genetic Test. Both services are included at no additional cost to you.\n" +
+    "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -6433,7 +6439,7 @@ angular.module("components/science/science.tpl.html", []).run(["$templateCache",
     "                        </div>\n" +
     "                        <div class=\"txt__wrap\">\n" +
     "                          <p class=\"txt txt-black txt-left\">\n" +
-    "                            ADx Healthcare is committed to maintaining your privacy, and we will not share your results with anyone but you. Your Alzheimer’s ApoE Genetic Test result will be delivered to you via a secure, electronic report.  You will also receive a printable copy of your results that you can share with anybody you choose, such as your healthcare provider or family and friends.  Our genetic counselors are available to go through your results with you too, if you choose.\n" +
+    "                            ADx Healthcare is committed to maintaining your privacy, and we will not share your results with anyone but you. Your Alzheimer’s ApoE Genetic Test result will be delivered to you via a secure, electronic report.  You will also receive a printable copy of your results that you can share with anybody you choose, such as your healthcare provider or family and friends. If you have questions about what these results mean to you or your family, we offer genetic counseling with the independent provider network, PWNHealth, to you at no additional charge. We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results.\n" +
     "                          </p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
@@ -7017,7 +7023,7 @@ angular.module("templates/care_questions.tpl.html", []).run(["$templateCache", f
     "          </div>\n" +
     "          <div class=\"content-txt__wrap\">\n" +
     "            <div class=\"txt txt-black\">\n" +
-    "              From the independent physician review of your order to the genetic counselor available to answer your questions about your test results, ADx Healthcare is committed to providing you with support through the entire process of learning your ApoE genetic risk for Alzheimer’s disease.\n" +
+    "                From the independent physician review of your order to the genetic counselor available to answer your questions about your test results, ADx Healthcare is committed to providing you with support through the entire process of learning your ApoE genetic risk for Alzheimer’s disease.\n" +
     "              <div class=\"txt--indent\">\n" +
     "                For all the steps in between, our customer support team is available to discuss your questions about the science behind ApoE, ordering a test, completing your kit, or interpreting your results.\n" +
     "              </div>\n" +
