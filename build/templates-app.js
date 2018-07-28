@@ -3514,9 +3514,9 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                        <ng-include class=\"img-small\" src=\"'../assets/images/svg/mail-pointer.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-center\">\n" +
-    "                        <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
+    "                        <p class=\"txt-small txt-medium txt-black\">\n" +
     "                          Check email\n" +
-    "                        </a>\n" +
+    "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -3526,9 +3526,9 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                        <ng-include class=\"img-small\" src=\"'../assets/images/svg/woman-link-account.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-center\">\n" +
-    "                        <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
+    "                        <p class=\"txt-small txt-medium txt-black\">\n" +
     "                          Link account\n" +
-    "                        </a>\n" +
+    "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -3538,9 +3538,9 @@ angular.module("components/results/pages/prePurchase.tpl.html", []).run(["$templ
     "                        <ng-include class=\"img-small\" src=\"'../assets/images/svg/laptop-success.svg'\"></ng-include>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap txt-center\">\n" +
-    "                        <a href=\"\" class=\"txt-link txt-blue-2 txt-small txt-medium\">\n" +
+    "                        <p class=\"txt-small txt-medium txt-black\">\n" +
     "                          Success\n" +
-    "                        </a>\n" +
+    "                        </p>\n" +
     "                      </div>\n" +
     "                    </div>\n" +
     "                  </div>\n" +
@@ -3885,122 +3885,6 @@ angular.module("components/results/pages/result-p1.tpl.html", []).run(["$templat
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  \n" +
-    "  <div class=\"section__wrap-md section__wrap-md--sm\">\n" +
-    "    <div class=\"container-lg--dashboard\">\n" +
-    "      <div class=\"title-first txt-blue-dark txt-center-sm\">Learn more</div>\n" +
-    "      <div class=\"section-p1-learn__wrap\">\n" +
-    "        <div class=\"container-flex container-flex--column-sm\">\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                <ng-include class=\"img-middle notebook-and-pen-svg--bgc-silver\" src=\"'../assets/images/svg/notebook-and-pen.svg'\"></ng-include>\n" +
-    "              </div>\n" +
-    "              <div class=\"title__wrap txt-center\">\n" +
-    "                <h4 class=\"txt-blue-dark\">About late-onset Alzheimer’s  disease</h4>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <p class=\"txt txt-black\">\n" +
-    "                  What do we know about late-onset Alzheimer’s disease?\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'../assets/images/svg/human-brain-cloud.svg'\"></ng-include>\n" +
-    "              </div>\n" +
-    "              <div class=\"title__wrap txt-center\">\n" +
-    "                <h4 class=\"txt-blue-dark\">Take action</h4>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <p class=\"txt txt-black\">\n" +
-    "                  Lifestyle and other factors can\n" +
-    "                  also influence the\n" +
-    "                  chances of developing late-\n" +
-    "                  onset Alzheimer’s disease.\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "          <div class=\"flex-column\">\n" +
-    "            <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "              <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                <ng-include class=\"img-middle\" src=\"'../assets/images/svg/human-plus--bgc-silver.svg'\"></ng-include>\n" +
-    "              </div>\n" +
-    "              <div class=\"title__wrap txt-center\">\n" +
-    "                <h4 class=\"txt-blue-dark\">Share results</h4>\n" +
-    "              </div>\n" +
-    "              <div class=\"txt__wrap txt-center\">\n" +
-    "                <p class=\"txt txt-black\">\n" +
-    "                  You may want to share your\n" +
-    "                  results or your experience with\n" +
-    "                  family or friends.\n" +
-    "                </p>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"section__wrap-md section__wrap-md--sm-not-space\">\n" +
-    "          <div class=\"container-flex container-flex--column-sm\">\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                  <ng-include class=\"img-middle dna-molecule--bgc-silver\" src=\"'../assets/images/svg/dna-molecule.svg'\"></ng-include>\n" +
-    "                </div>\n" +
-    "                <div class=\"title__wrap txt-center\">\n" +
-    "                  <h4 class=\"txt-blue-dark\">Science</h4>\n" +
-    "                </div>\n" +
-    "                <div class=\"txt__wrap txt-center\">\n" +
-    "                  <p class=\"txt txt-black\">\n" +
-    "                    Learn about the science behind the Alzheimer’s ApoE Genetic Test.\n" +
-    "                  </p>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                  <ng-include class=\"img-middle\" src=\"'../assets/images/svg/medical-mail.svg'\"></ng-include>\n" +
-    "                </div>\n" +
-    "                <div class=\"title__wrap txt-center\">\n" +
-    "                  <h4 class=\"txt-blue-dark\">General questions</h4>\n" +
-    "                </div>\n" +
-    "                <div class=\"txt__wrap txt-center\">\n" +
-    "                  <p class=\"txt txt-black\">\n" +
-    "                    Answers to your questions\n" +
-    "                    about genetic testing,\n" +
-    "                    counseling and your results.\n" +
-    "                  </p>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"flex-column\">\n" +
-    "              <div class=\"flex-column__wrap flex-column__wrap--sm\">\n" +
-    "                <div class=\"img__wrap-section-p1-learn txt-center\">\n" +
-    "                  <ng-include class=\"img-middle\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
-    "                </div>\n" +
-    "                <div class=\"title__wrap txt-center\">\n" +
-    "                  <h4 class=\"txt-blue-dark\">Genetic counselor</h4>\n" +
-    "                </div>\n" +
-    "                <div class=\"txt__wrap txt-center\">\n" +
-    "                  <p class=\"txt txt-black\">\n" +
-    "                    You are not in this alone. ADx\n" +
-    "                    Healthcare provides genetic\n" +
-    "                    counselors to go over your\n" +
-    "                    report and answer any\n" +
-    "                    questions you have.\n" +
-    "                  </p>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "  <!--section first end-->\n" +
     "  \n" +
     "  \n" +
     "  <div class=\"section__wrap\">\n" +
