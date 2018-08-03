@@ -2997,16 +2997,16 @@ angular.module("components/references/references.tpl.html", []).run(["$templateC
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
     "                        <p class=\"txt txt-black\" id=\"S4\"> <span class=\"txt txt-bold txt-black\">4.</span>\n" +
-    "                          5. . Eugene AR, Masiak J.  The Neuroprotective Aspects of Sleep.  MEDtube Science. 2015 Mar; 3(1): 35-40.\n" +
+    "                          Eugene AR, Masiak J.  The Neuroprotective Aspects of Sleep.  MEDtube Science. 2015 Mar; 3(1): 35-40.\n" +
     "                        </p>\n" +
     "                      </div><div class=\"txt__wrap\">\n" +
     "                      <p class=\"txt txt-black\" id=\"S5\"> <span class=\"txt txt-bold txt-black\">5.</span>\n" +
-    "                        6. Xie L, Kang H, Xu Q, et al. Sleep drives metabolite clearance from the adult brain. Science. 2013 Oct 18; 342(6156):373-7.\n" +
+    "                          Xie L, Kang H, Xu Q, et al. Sleep drives metabolite clearance from the adult brain. Science. 2013 Oct 18; 342(6156):373-7.\n" +
     "                      </p>\n" +
     "                    </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
     "                        <p class=\"txt txt-black\" id=\"S6\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
-    "                          7. Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proceedings of the National Academy of Sciences USA. 2007; 104(3): 1051-6.)\n" +
+    "                          Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proceedings of the National Academy of Sciences USA. 2007; 104(3): 1051-6.)\n" +
     "                        </p>\n" +
     "                      </div>\n" +
     "                      <div class=\"txt__wrap\">\n" +
@@ -3125,7 +3125,7 @@ angular.module("components/references/references.tpl.html", []).run(["$templateC
     "                    <h3 class=\"txt-blue-dark txt-center\">Education/Brain Stimulation</h3>\n" +
     "                  </div>\n" +
     "                  <div class=\"txt__wrap\">\n" +
-    "                    <p class=\"txt txt-black txt-center\">\n" +
+    "                    <p class=\"txt txt-black\"> <span class=\"txt txt-bold txt-black\">6.</span>\n" +
     "                      Ngandu T. et al., A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomized controlled trial. The Lancet. 2014; 386: 2255-2263.\n" +
     "                    </p>\n" +
     "                  </div>\n" +
