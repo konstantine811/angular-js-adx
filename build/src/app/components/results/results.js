@@ -197,8 +197,7 @@ angular.module( 'ixlayer.results', [
           $scope.needPopup = false;
           $scope.consentAgreed = true;
 
-          $window.scrollTo(0,0);
-          $window.location.reload();
+          $state.go('master_signedin.results', {'page':'p1'});
         } else {
           $scope.consentAgreed = false;
         }
