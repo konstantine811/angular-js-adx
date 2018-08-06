@@ -6917,8 +6917,8 @@ angular.module("shared/header/header.tpl.html", []).run(["$templateCache", funct
     "                  <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.register\" class=\"bt-round bt-round--header bt-round--blue hide-mobile\">Register</a>\n" +
     "            </div>\n" +
     "            <div class=\"button__purchase\">\n" +
-    "              <a ng-class=\"{'ng-hide': !logged}\" ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
-    "              <a ng-class=\"{'ng-hide': logged}\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
+    "              <a ng-class=\"{'ng-hide': logged}\" ng-href=\"{{ globals.order_url_with_kit }}\" target=\"_blank\" class=\"bt-round bt-round--sm bt-round--header bt-round--blue-dark\">Order</a>\n" +
+    "              <a ng-class=\"{'ng-hide': !logged}\" ui-sref=\"master.logout\" class=\"bt-round bt-round--header bt-round--blue-dark hide-mobile\">Logout</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "          \n" +
