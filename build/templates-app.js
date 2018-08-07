@@ -3243,7 +3243,7 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "          <div class=\"alert alert-danger\" ng-if=\"error\">{{::error.detail}}</div>\n" +
     "          </div>\n" +
     "          <div ng-if=\"complete === true\" class=\"register-complete\">\n" +
-    "            <h3 class=\"txt-medium txt-blue-dark txt-center\">Suceess!</h3>\n" +
+    "            <h3 class=\"txt-medium txt-blue-dark txt-center\">Success!</h3>\n" +
     "            <div class=\"txt__wrap\">\n" +
     "              <p class=\"txt txt-black\">You registration was completed successfully. You should receive an email shortly with instructions on how to active your account.</p>\n" +
     "            </div>\n" +
