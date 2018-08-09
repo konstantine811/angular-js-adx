@@ -3206,13 +3206,13 @@ angular.module("components/register/register.tpl.html", []).run(["$templateCache
     "                <h6 class=\"txt-small txt-medium txt-blue-dark txt-center\">Create an account</h6>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"first_name\">First name</label>\n" +
-    "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                  <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You First name is too short</p>\n" +
+    "                  <input id=\"first_name\" type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"userForm.first_name\" required>\n" +
+    "                  <p ng-show=\"form.first_name.$error.required && form.first_name.$dirty\" class=\"error\">Please enter a value</p>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"last_name\">Last name</label>\n" +
-    "                  <input id=\"last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                  <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You Last name is too short</p>\n" +
+    "                  <input id=\"last_name\" type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"userForm.last_name\"  required>\n" +
+    "                  <p ng-show=\"form.last_name.$error.required && form.last_name.$dirty\" class=\"error\">Please enter a value</p>\n" +
     "                </div>\n" +
     "                <div class=\"form-group\">\n" +
     "                  <label class=\"input-label txt--exs-small txt txt-blue-2 txt-medium\" for=\"email\">Email address</label>\n" +
