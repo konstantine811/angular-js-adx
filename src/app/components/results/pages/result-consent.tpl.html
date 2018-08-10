@@ -42,7 +42,7 @@
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
-                <h4 class="txt-blue-dark txt-center">Low risk does not mean no risk.</h4>
+                <h4 class="txt-blue-dark txt-center">Low risk does not mean no risk</h4>
               </div>
               <div class="box-txt__wrap">
                 <div class="txt-small txt-black txt-center">
@@ -57,7 +57,7 @@
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
-                <h4 class="txt-blue-dark txt-center">High risk does not mean certain development of Alzheimer’s disease.</h4>
+                <h4 class="txt-blue-dark txt-center">High risk does not mean certain development of Alzheimer’s disease</h4>
               </div>
               <div class="box-txt__wrap">
                 <div class="txt-small txt-black txt-center">
@@ -74,7 +74,7 @@
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
-                <h4 class="txt-blue-dark txt-center">Other factors influence your risk.</h4>
+                <h4 class="txt-blue-dark txt-center">Other factors influence your risk</h4>
               </div>
               <div class="box-txt__wrap">
                 <div class="txt-small txt-black txt-center">
@@ -89,7 +89,7 @@
             </div>
             <div class="box-txt">
               <div class="box-title__wrap box-title__wrap--not-space-mobile">
-                <h4 class="txt-blue-dark txt-center">Knowledge is power.</h4>
+                <h4 class="txt-blue-dark txt-center">Knowledge is power</h4>
               </div>
               <div class="box-txt__wrap">
                 <div class="txt-small txt-black txt-center">
@@ -101,23 +101,28 @@
         </div>
       </div>
 
-      <form action="" name="consentResults">
-        <div class="boxes__wrap">
-          <div class="box-shadow">
-            <div class="title__wrap title__wrap--not-space-mobile">
-              <h3 class="txt-blue-dark txt-center">Please consent before proceeding.</h3>
+      <div class="boxes__wrap boxes__wrap--large">
+        <div class="box-half-column box-half-column--mobile-flex box-shadow">
+          <div class="box-image__wrap">
+            <ng-include src="'./assets/images/svg/notebook-pulse-blue-graybg.svg'"></ng-include>
+          </div>
+          <div class="box-txt">
+            <div class="box-title__wrap box-title__wrap--not-space-mobile">
+              <h4 class="txt-blue-dark txt-center">View your results on your own</h4>
             </div>
-            <div class="txt__wrap pre-results-box-flex">
-              <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
-                <input type="checkbox" id="checkbox-results" class="checkbox-input" ng-model="consentResults.checkReview" required="required">
-                <label for="checkbox-results" class="checkbox-label checkbox-label--small"></label>
-              </div>
-              <div class="pre-results-box-flex-2">
-                <div class="txt-small txt-black">
-                  I would like to <span class="txt-bold">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.
+            <form action="" name="consentResults">
+              <div class="txt__wrap pre-results-box-flex">
+                <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
+                  <input type="checkbox" id="checkbox-results" class="checkbox-input" ng-model="consentResults.checkReview" required="required">
+                  <label for="checkbox-results" class="checkbox-label checkbox-label--small"></label>
+                </div>
+                <div class="pre-results-box-flex-2">
+                  <div class="txt-small txt-black">
+                    I would like to <span class="txt-bold">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.
+                  </div>
                 </div>
               </div>
-            </div>
+            </form>
             <div class="txt__wrap pre-results-box-flex">
               <div class="pre-results-box-flex-1 checkbox checkbox--not-space">
                 <input type="checkbox" id="checkbox-private" class="checkbox-input" ng-model="consentResults.checkUnderstood" required="required">
@@ -134,8 +139,25 @@
             </div>
           </div>
         </div>
-      </form>
 
+        <div class="box-half-column box-half-column--mobile-flex box-shadow">
+          <div class="box-image__wrap boxes__wrap--large">
+            <ng-include src="'./assets/images/svg/gc.svg'"></ng-include>
+          </div>
+          <div class="box-txt">
+            <div class="box-title__wrap box-title__wrap--not-space-mobile">
+              <h4 class="txt-blue-dark txt-center">Review your results with a<br> Genetic Counselor</h4>
+            </div>
+            <br><br><br><br>
+            <div class="txt-black txt-small txt-center">
+              We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.
+            </div>
+          </div>
+          <div ng-if="schedule_link !== null" class="button__wrap button--center" style="position: relative; bottom: 0">
+            <a target="_blank" ng-href="{{ schedule_link }}" class="bt-round bt-round--blue-dark">Contact genetic counselor</a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

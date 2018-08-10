@@ -3662,7 +3662,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h4 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk.</h4>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Low risk does not mean no risk</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -3677,7 +3677,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h4 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease.</h4>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">High risk does not mean certain development of Alzheimer’s disease</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -3694,7 +3694,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h4 class=\"txt-blue-dark txt-center\">Other factors influence your risk.</h4>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Other factors influence your risk</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -3709,7 +3709,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "            <div class=\"box-txt\">\n" +
     "              <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
-    "                <h4 class=\"txt-blue-dark txt-center\">Knowledge is power.</h4>\n" +
+    "                <h4 class=\"txt-blue-dark txt-center\">Knowledge is power</h4>\n" +
     "              </div>\n" +
     "              <div class=\"box-txt__wrap\">\n" +
     "                <div class=\"txt-small txt-black txt-center\">\n" +
@@ -3721,23 +3721,28 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "        </div>\n" +
     "      </div>\n" +
     "\n" +
-    "      <form action=\"\" name=\"consentResults\">\n" +
-    "        <div class=\"boxes__wrap\">\n" +
-    "          <div class=\"box-shadow\">\n" +
-    "            <div class=\"title__wrap title__wrap--not-space-mobile\">\n" +
-    "              <h3 class=\"txt-blue-dark txt-center\">Please consent before proceeding.</h3>\n" +
+    "      <div class=\"boxes__wrap boxes__wrap--large\">\n" +
+    "        <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "          <div class=\"box-image__wrap\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/notebook-pulse-blue-graybg.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-txt\">\n" +
+    "            <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "              <h4 class=\"txt-blue-dark txt-center\">View your results on your own</h4>\n" +
     "            </div>\n" +
-    "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
-    "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
-    "                <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\" ng-model=\"consentResults.checkReview\" required=\"required\">\n" +
-    "                <label for=\"checkbox-results\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pre-results-box-flex-2\">\n" +
-    "                <div class=\"txt-small txt-black\">\n" +
-    "                  I would like to <span class=\"txt-bold\">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
+    "            <form action=\"\" name=\"consentResults\">\n" +
+    "              <div class=\"txt__wrap pre-results-box-flex\">\n" +
+    "                <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
+    "                  <input type=\"checkbox\" id=\"checkbox-results\" class=\"checkbox-input\" ng-model=\"consentResults.checkReview\" required=\"required\">\n" +
+    "                  <label for=\"checkbox-results\" class=\"checkbox-label checkbox-label--small\"></label>\n" +
+    "                </div>\n" +
+    "                <div class=\"pre-results-box-flex-2\">\n" +
+    "                  <div class=\"txt-small txt-black\">\n" +
+    "                    I would like to <span class=\"txt-bold\">review the results on my own.</span>  I understand that I may still schedule a genetic counseling appointment if I have any questions after I view my results.\n" +
+    "                  </div>\n" +
     "                </div>\n" +
     "              </div>\n" +
-    "            </div>\n" +
+    "            </form>\n" +
     "            <div class=\"txt__wrap pre-results-box-flex\">\n" +
     "              <div class=\"pre-results-box-flex-1 checkbox checkbox--not-space\">\n" +
     "                <input type=\"checkbox\" id=\"checkbox-private\" class=\"checkbox-input\" ng-model=\"consentResults.checkUnderstood\" required=\"required\">\n" +
@@ -3754,8 +3759,25 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
-    "      </form>\n" +
     "\n" +
+    "        <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
+    "          <div class=\"box-image__wrap boxes__wrap--large\">\n" +
+    "            <ng-include src=\"'./assets/images/svg/gc.svg'\"></ng-include>\n" +
+    "          </div>\n" +
+    "          <div class=\"box-txt\">\n" +
+    "            <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
+    "              <h4 class=\"txt-blue-dark txt-center\">Review your results with a<br> Genetic Counselor</h4>\n" +
+    "            </div>\n" +
+    "            <br><br><br><br>\n" +
+    "            <div class=\"txt-black txt-small txt-center\">\n" +
+    "              We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <div ng-if=\"schedule_link !== null\" class=\"button__wrap button--center\" style=\"position: relative; bottom: 0\">\n" +
+    "            <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Contact genetic counselor</a>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
     "\n" +
     "    </div>\n" +
     "  </div>\n" +
