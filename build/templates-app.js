@@ -3762,7 +3762,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "\n" +
     "        <div class=\"box-half-column box-half-column--mobile-flex box-shadow\">\n" +
     "          <div class=\"box-image__wrap boxes__wrap--large\">\n" +
-    "            <ng-include src=\"'./assets/images/svg/gc.svg'\"></ng-include>\n" +
+    "            <ng-include src=\"'./assets/images/svg/GC.svg'\"></ng-include>\n" +
     "          </div>\n" +
     "          <div class=\"box-txt\">\n" +
     "            <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
