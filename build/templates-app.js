@@ -3774,7 +3774,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "          </div>\n" +
     "          <div class=\"button--center button-bottom\">\n" +
-    "            <a  ng-if=\"schedule_link !== null\" target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--default-size bt-round--blue-dark\">Schedule appointment r</a>\n" +
+    "            <a  ng-if=\"schedule_link !== null\" target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--default-size bt-round--blue-dark\">Schedule appointment</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
