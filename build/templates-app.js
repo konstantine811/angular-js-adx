@@ -3726,7 +3726,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "          <div class=\"box-image__wrap\">\n" +
     "            <ng-include src=\"'./assets/images/svg/notebook-pulse-blue-graybg.svg'\"></ng-include>\n" +
     "          </div>\n" +
-    "          <div class=\"box-txt\">\n" +
+    "          <div class=\"box-txt box-txt--padding-bottom\">\n" +
     "            <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
     "              <h4 class=\"txt-blue-dark txt-center\">View your results on your own</h4>\n" +
     "            </div>\n" +
@@ -3754,7 +3754,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "                </div>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "            <div class=\"button__wrap--large-top button--center\">\n" +
+    "            <div class=\"button--center button-bottom\">\n" +
     "              <button type=\"submit\" ui-sref=\"master_signedin.results.p1\" type=\"submit\" class=\"bt-round bt-round--large bt-round--blue-dark\" ng-disabled=\"consentResults.$invalid\" ng-click=\"viewResultsClicked(consentResults)\">View results</button>\n" +
     "            </div>\n" +
     "          </div>\n" +
@@ -3764,7 +3764,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "          <div class=\"box-image__wrap boxes__wrap--large\">\n" +
     "            <ng-include src=\"'./assets/images/svg/GC.svg'\"></ng-include>\n" +
     "          </div>\n" +
-    "          <div class=\"box-txt\">\n" +
+    "          <div class=\"box-txt box-txt--padding-bottom\">\n" +
     "            <div class=\"box-title__wrap box-title__wrap--not-space-mobile\">\n" +
     "              <h4 class=\"txt-blue-dark txt-center\">Review your results with a<br> Genetic Counselor</h4>\n" +
     "            </div>\n" +
@@ -3773,8 +3773,8 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "              We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.\n" +
     "            </div>\n" +
     "          </div>\n" +
-    "          <div ng-if=\"schedule_link !== null\" class=\"button__wrap button--center\" style=\"position: relative; bottom: 0\">\n" +
-    "            <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Schedule appointment r</a>\n" +
+    "          <div class=\"button--center button-bottom\">\n" +
+    "            <a  ng-if=\"schedule_link !== null\" target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--default-size bt-round--blue-dark\">Schedule appointment r</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +

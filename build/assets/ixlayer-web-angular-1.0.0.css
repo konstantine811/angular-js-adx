@@ -8507,6 +8507,12 @@ button[disabled].bt-round {
   .status-progressbar-txt .progressbar-txt-color {
     color: #838383; }
 
+.button-bottom {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  right: 0; }
+
 @keyframes anim-text-btn-round {
   0% {
     transform: scale(0.3); }
@@ -9097,10 +9103,13 @@ ul.box__wrap {
 .box-txt {
   max-width: 340px;
   margin: 0 auto; }
+  .box-txt.box-txt--padding-bottom {
+    padding-bottom: 40px; }
 
 .box-half-column {
   width: 50%;
-  height: auto; }
+  height: auto;
+  position: relative; }
 
 .box-half-column--flex {
   display: flex;
@@ -10876,6 +10885,10 @@ textarea.form-control {
   button.button-border-rounded, a.bt-round {
     padding: 5px 20px;
     min-width: 112px; }
+
+  button.bt-round--default-size, a.bt-round--default-size {
+    min-width: 162px;
+    padding: 9px 57px; }
 
   .bt-round.bt-round--lg {
     padding: 5px 38px; }

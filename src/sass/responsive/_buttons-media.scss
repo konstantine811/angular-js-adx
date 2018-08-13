@@ -30,6 +30,11 @@
     min-width: 112px;
   }
 
+  button.bt-round--default-size, a.bt-round--default-size {
+    min-width: 162px;
+    padding: 9px 57px;
+  }
+
   .bt-round.bt-round--lg {
     padding: 5px 38px;
   }

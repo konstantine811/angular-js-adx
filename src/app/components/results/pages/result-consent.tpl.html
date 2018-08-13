@@ -106,7 +106,7 @@
           <div class="box-image__wrap">
             <ng-include src="'./assets/images/svg/notebook-pulse-blue-graybg.svg'"></ng-include>
           </div>
-          <div class="box-txt">
+          <div class="box-txt box-txt--padding-bottom">
             <div class="box-title__wrap box-title__wrap--not-space-mobile">
               <h4 class="txt-blue-dark txt-center">View your results on your own</h4>
             </div>
@@ -134,7 +134,7 @@
                 </div>
               </div>
             </div>
-            <div class="button__wrap--large-top button--center">
+            <div class="button--center button-bottom">
               <button type="submit" ui-sref="master_signedin.results.p1" type="submit" class="bt-round bt-round--large bt-round--blue-dark" ng-disabled="consentResults.$invalid" ng-click="viewResultsClicked(consentResults)">View results</button>
             </div>
           </div>
@@ -144,7 +144,7 @@
           <div class="box-image__wrap boxes__wrap--large">
             <ng-include src="'./assets/images/svg/GC.svg'"></ng-include>
           </div>
-          <div class="box-txt">
+          <div class="box-txt box-txt--padding-bottom">
             <div class="box-title__wrap box-title__wrap--not-space-mobile">
               <h4 class="txt-blue-dark txt-center">Review your results with a<br> Genetic Counselor</h4>
             </div>
@@ -153,8 +153,8 @@
               We want to be sure you are getting the most from your Alzheimer’s ApoE Genetic Test and understand your results, so we offer genetic counseling to you at no additional charge.
             </div>
           </div>
-          <div ng-if="schedule_link !== null" class="button__wrap button--center" style="position: relative; bottom: 0">
-            <a target="_blank" ng-href="{{ schedule_link }}" class="bt-round bt-round--blue-dark">Schedule appointment r</a>
+          <div class="button--center button-bottom">
+            <a  ng-if="schedule_link !== null" target="_blank" ng-href="{{ schedule_link }}" class="bt-round bt-round--default-size bt-round--blue-dark">Schedule appointment r</a>
           </div>
         </div>
       </div>

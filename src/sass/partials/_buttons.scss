@@ -699,6 +699,13 @@ button[disabled].bt-round {
   }
 }
 
+.button-bottom {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  right: 0;
+}
+
 //animation
 @keyframes anim-text-btn-round {
   0% {
