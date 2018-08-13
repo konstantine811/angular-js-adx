@@ -3774,7 +3774,7 @@ angular.module("components/results/pages/result-consent.tpl.html", []).run(["$te
     "            </div>\n" +
     "          </div>\n" +
     "          <div ng-if=\"schedule_link !== null\" class=\"button__wrap button--center\" style=\"position: relative; bottom: 0\">\n" +
-    "            <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Contact genetic counselor</a>\n" +
+    "            <a target=\"_blank\" ng-href=\"{{ schedule_link }}\" class=\"bt-round bt-round--blue-dark\">Schedule appointment r</a>\n" +
     "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -5137,7 +5137,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              <ng-include class=\"img-middle--small doctor--bgc-white\" src=\"'../assets/images/svg/doctor--bgc-silver.svg'\"></ng-include>\n" +
     "            </div>\n" +
     "            <div class=\"title__wrap txt-center-sm\">\n" +
-    "              <h3 class=\"txt-blue-dark anim-content-transition\">Contact Genetic Counselor</h3>\n" +
+    "              <h3 class=\"txt-blue-dark anim-content-transition\">Schedule appointment</h3>\n" +
     "            </div>\n" +
     "            <div class=\"txt__wrap txt-center-sm\">\n" +
     "              <p class=\"txt-middle txt-black\">\n" +
