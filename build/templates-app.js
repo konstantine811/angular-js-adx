@@ -6022,7 +6022,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Physician\n" +
     "                  Review</p>\n" +
-    "                <p class=\"txt-small txt-center txt-black\">A physician has determinted that this test is appropriate for you</p>\n" +
+    "                <p class=\"txt-small txt-center txt-black\">A physician is reviewing your order to determine if this is appropriate for you.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item\" ng-class=\"{'active': iconStatus[1], 'active--current': iconCurrent[1]}\">\n" +
@@ -6040,7 +6040,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">Sample\n" +
     "                  Uploaded</p>\n" +
-    "                <p class=\"txt-small txt-center txt-black\">Your sample has been received by the lab</p>\n" +
+    "                <p class=\"txt-small txt-center txt-black\">Your sample has been received by the lab.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item\" ng-class=\"{'active': iconStatus[3], 'active--current': iconCurrent[3]}\">\n" +
@@ -6049,7 +6049,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold progressbar-txt-color txt-center\">DNA Extraction\n" +
     "                  Complete</p>\n" +
-    "                <p class=\"txt-small txt-center txt-black\">Your sample is currently being processed by the lab</p>\n" +
+    "                <p class=\"txt-small txt-center txt-black\">Your sample is currently being processed by the lab.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li class=\"status-progressbar-item\" ng-class=\"{'active': iconStatus[4], 'active--current': iconCurrent[4]}\">\n" +
@@ -6067,7 +6067,7 @@ angular.module("components/results/pages/sequencingStatus.tpl.html", []).run(["$
     "              <div class=\"status-progressbar-txt\">\n" +
     "                <p class=\"txt txt-bold txt-center progressbar-txt-color\">Results ready\n" +
     "                  for view</p>\n" +
-    "                <p class=\"txt-small txt-center txt-black\">Follow the instructions below to view your results</p>\n" +
+    "                <p class=\"txt-small txt-center txt-black\">Follow the instructions below to view your results.</p>\n" +
     "              </div>\n" +
     "            </li>\n" +
     "          </ul>\n" +
