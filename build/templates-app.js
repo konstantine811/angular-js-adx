@@ -2051,7 +2051,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Helix DNA kit</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$80.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$40.00</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"txt--indent-small\">\n" +
