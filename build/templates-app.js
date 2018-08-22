@@ -5145,7 +5145,7 @@ angular.module("components/results/pages/result-p4.tpl.html", []).run(["$templat
     "              </p>\n" +
     "            </div>\n" +
     "            <div class=\"button__wrap txt-center-sm\">\n" +
-    "              <a ui-sref=\"master_signedin.results({'page':'questions'})\" class=\"bt-round bt-round--blue-dark\">Genetic Counseling</a>\n" +
+    "              <a ng-href=\"{{ schedule_link }}\" target=\"_blank\" class=\"bt-round bt-round--blue-dark\">Genetic Counseling</a>\n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
