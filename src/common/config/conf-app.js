@@ -10,6 +10,7 @@ angular.module( 'ixlayer.config', [
     return {
       order_url_with_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP-HDNAK',
       order_url_without_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP',
+      order_url_pdp: 'https://www.helix.com/products/adx-healthcare-alzheimers-apoe-test',
     };
   })
 
