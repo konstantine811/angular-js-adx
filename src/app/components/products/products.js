@@ -50,11 +50,11 @@ angular.module( 'ixlayer.products', [
     {
       if (value) {
         $scope.buttonTitle = 'Purchase APOE Test';
-        $scope.totalPrice = 159.00;
+        $scope.totalPrice = 159.99;
         $scope.haveKit = true;
       } else {
         $scope.buttonTitle = 'Purchase with Helix';
-        $scope.totalPrice = 199.00;
+        $scope.totalPrice = 199.99;
         $scope.haveKit = false;
       }
     };
