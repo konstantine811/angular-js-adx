@@ -77,14 +77,17 @@ angular.module( 'ixlayer.profile', [
 
   }])
 
-  .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService',
-    function ProfileEditCtrl($scope, $state, profile, profileService) {
+  .controller('ProfileEditCtrl', ['$scope', '$state', 'profile', 'profileService', 'moment',
+    function ProfileEditCtrl($scope, $state, profile, profileService, moment) {
 
     $scope.profile = profile;
+    $scope.dob = profile.date_of_birth.slice(0, 10);
 
     $scope.submitForm = function(data) {
-      $scope.$parent.userName = data.user.first_name + ' ' + data.user.last_name;
+      var dt = moment($scope.dob);
+      data.date_of_birth = dt.toISOString().slice(0, 10);
       profileService.updateProfile(data).then(function(result) {
+        $scope.$parent.userName = data.user.first_name + ' ' + data.user.last_name;
         $state.go('master_signedin.profile');
       });
     };

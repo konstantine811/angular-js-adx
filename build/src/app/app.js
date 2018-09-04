@@ -24,7 +24,8 @@ angular.module( 'ixLayer', [
   'ngAnimate',
   'angular-google-analytics',
   'updateMeta',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angularMoment'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

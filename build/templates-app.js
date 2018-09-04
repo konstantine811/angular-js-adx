@@ -2043,7 +2043,7 @@ angular.module("components/products/pages/about-products.tpl.html", []).run(["$t
     "                    <p class=\"txt-large txt-black\">Alzheimer’s Genetic Test</p>\n" +
     "                  </div>\n" +
     "                  <div class=\"column\">\n" +
-    "                    <p class=\"txt txt-black\">$159.00</p>\n" +
+    "                    <p class=\"txt txt-black\">$159.99</p>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "                <div class=\"container-flex txt--indent-small\">\n" +
@@ -2494,13 +2494,13 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                            <div ng-show=\"!complete\">\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Firstname</label>\n" +
-    "                                    <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"profile.user.first_name\"  ng-minlength=\"3\" required>\n" +
-    "                                    <p ng-show=\"form.first_name.$error.minlength && !form.first_name.pristine\" class=\"error\">You firstname is too short</p>\n" +
+    "                                    <input type=\"text\" name=\"first_name\" class=\"form-control\" ng-model=\"profile.user.first_name\" required>\n" +
+    "                                    <span ng-show=\"form.first_name.$error.required\">Please enter a value</span>\n" +
     "                                </div>\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Lastname</label>\n" +
-    "                                    <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"profile.user.last_name\"  ng-minlength=\"3\" required>\n" +
-    "                                    <p ng-show=\"form.last_name.$error.minlength && !form.last_name.pristine\" class=\"error\">You lastname is too short</p>\n" +
+    "                                    <input type=\"text\" name=\"last_name\" class=\"form-control\" ng-model=\"profile.user.last_name\" required>\n" +
+    "                                    <span ng-show=\"form.last_name.$error.required\">Please enter a value</span>\n" +
     "                                </div>\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Email</label>\n" +
@@ -2522,7 +2522,7 @@ angular.module("components/profile/profileEdit.tpl.html", []).run(["$templateCac
     "                                </div>\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Date of Birth</label>\n" +
-    "                                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"profile.date_of_birth\" placeholder=\"YYYY-MM-DD\" required>\n" +
+    "                                    <input type=\"date_of_birth\" name=\"date_of_birth\" class=\"form-control\" ng-model=\"dob\" placeholder=\"YYYY-MM-DD\" required>\n" +
     "                                </div>\n" +
     "                                <div class=\"form-group\">\n" +
     "                                    <label>Phone</label>\n" +

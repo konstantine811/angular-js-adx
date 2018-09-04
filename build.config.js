@@ -80,7 +80,8 @@ module.exports = {
       'vendor/angular-cookies/angular-cookies.min.js',
       'vendor/moment/min/moment.min.js',
       'vendor/angular-google-analytics/dist/angular-google-analytics.min.js',
-      'vendor/angular-update-meta/dist/update-meta.min.js'
+      'vendor/angular-update-meta/dist/update-meta.min.js',
+      'vendor/angular-moment/angular-moment.min.js'
       ],
     css: [
     ],

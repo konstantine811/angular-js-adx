@@ -17,7 +17,8 @@
     "angular-cookies": "^1.6.9",
     "moment": "^2.20.1",
     "angular-google-analytics": "^1.1.9",
-    "angular-update-meta": "^2.0.1"
+    "angular-update-meta": "^2.0.1",
+    "angular-moment": "^1.2.0"
   },
   "resolutions": {
     "angular": "~1.6"
