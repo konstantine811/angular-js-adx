@@ -2650,7 +2650,7 @@ angular.module("components/profile/profileView.tpl.html", []).run(["$templateCac
     "                        </div>\n" +
     "                        <div class=\"col-xs-8\">\n" +
     "                            <div class=\"txt txt-black\">\n" +
-    "                                {{profile.date_of_birth}}\n" +
+    "                                {{dob}}\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +

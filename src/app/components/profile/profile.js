@@ -57,6 +57,7 @@ angular.module( 'ixlayer.profile', [
     $scope.showPopup = false;
     $scope.success = false;
     $scope.error = false;
+    $scope.dob = profile.date_of_birth.slice(0,10);
 
       $scope.changePassword = function() {
         userAccessSrv.resetPassword($scope.profile.user.email).then(function (result) {
