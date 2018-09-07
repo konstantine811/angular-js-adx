@@ -8,9 +8,9 @@ angular.module( 'ixlayer.config', [
 
   .constant('globals', function() {
     return {
-      order_url_with_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP-HDNAK&utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare-genetics-homepage',
-      order_url_without_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP&utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare-genetics-homepage',
-      order_url_pdp: 'https://www.helix.com/products/adx-healthcare-alzheimers-apoe-test?utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare-genetics-homepage',
+      order_url_with_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP-HDNAK&utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare&utm_content=genetics_website',
+      order_url_without_kit: 'https://store.helix.com/order?sku=FFRMTVDGNSTCS-LZHMRSP&utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare&utm_content=genetics_website',
+      order_url_pdp: 'https://www.helix.com/products/adx-healthcare-alzheimers-apoe-test?utm_source=adx-healthcare&utm_medium=referral&utm_campaign=adx-healthcare&utm_content=genetics_website',
     };
   })
 
