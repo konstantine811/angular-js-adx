@@ -37,7 +37,11 @@ angular.module( 'ixlayer.login', [
               $scope.error = {detail:  'Please check your Internet connection.'};
             } else
             {
-              $scope.error = error;
+              if (error.detail === 'Account closed' || error.detail === 'Account revoked') {
+                  $scope.error = {detail: 'Your account has been disabled because you had requested to have your account revoked/closed. If you have any questions please contact support@adxhealthcare.com'};
+              } else {
+                  $scope.error = error;
+              }
             }
             Analytics.trackEvent('login_failed', {error: $scope.error});
           }
