@@ -1,6 +1,6 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: vahidkowsari/buildenv-fe
+image: vahidkowsari/buildenv-fe:initial
 
 pipelines:
   default:
