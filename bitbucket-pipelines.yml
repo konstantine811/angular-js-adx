@@ -6,7 +6,10 @@ pipelines:
   default:
     - step:
         script: # Modify the commands below to build your repository.
+          - /bin/bash << EOF
+          - cd /code--
           - npm -g install grunt-cli karma bower protractor
           - npm install
           - bower --allow-root install
           - grunt build
+          - EOF-
